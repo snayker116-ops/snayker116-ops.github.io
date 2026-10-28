@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Здесь — кофейня на Горького, 140 · Нижний Новгород</title>
+<meta name="description" content="Кофейня «Здесь» на Горьковской: капучино от 200 ₽, фирменные рафы, лимонады, бамблы и сэндвичи. Пн–пт с 7:30. Можно с собакой, кофе с собой.">
+<meta property="og:title" content="Здесь — кофейня на Горького, 140">
+<meta property="og:description" content="Кофе от 190 ₽, фирменные рафы и сэндвичи. Нижний Новгород, Горьковская.">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/16323929/2a00000199282407bdcae8334a12b513b5b6/XXXL">
+<meta name="theme-color" content="#1B2545">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Здесь","telephone":"+7 905 666-00-52","priceRange":"180–390 ₽","servesCuisine":"Кофе","address":{"@type":"PostalAddress","streetAddress":"ул. Максима Горького, 140","addressLocality":"Нижний Новгород","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":56.314402,"longitude":43.994946},"openingHours":["Mo-Fr 07:30-21:00","Sa 09:00-21:00","Su 10:00-21:00"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","ratingCount":"128"}}</script>
+<style>
+:root {
+  --navy: #1B2545; --navy-2: #24305A; --coral: #EE6A43; --coral-2: #F48A5E; --rust: #C9502E;
+  --cream: #F7EDE0; --paper: #FFF8EF; --ink: #1B2545; --wood: #B97A4A; --mint: #9FD3C1;
+  --display: 'Dela Gothic One', 'Arial Black', sans-serif; --sans: 'Manrope', system-ui, sans-serif;
+  --r: 28px; --gut: clamp(18px, 4vw, 56px); --ease: cubic-bezier(.2, .8, .2, 1);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--cream); color: var(--ink); font: 500 17px/1.55 var(--sans); overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+button { font: inherit; color: inherit; cursor: pointer; }
+section { scroll-margin-top: 20px; }
+.noimg { background: linear-gradient(135deg, var(--coral), var(--rust)) !important; }
+.noimg img, img.noimg { opacity: 0; }
+
+/* top chips */
+.chip-logo { position: fixed; left: var(--gut); top: 18px; z-index: 50; display: flex; align-items: center; gap: 10px; text-decoration: none; background: var(--paper); color: var(--navy); padding: 9px 16px 9px 10px; border-radius: 99px; box-shadow: 0 6px 22px rgba(27, 37, 69, .18); font: 400 18px/1 var(--display); letter-spacing: .02em; transform: rotate(-2deg); }
+.chip-logo i { width: 26px; height: 26px; border-radius: 50% 50% 50% 0; background: var(--coral); transform: rotate(-45deg); display: block; }
+.chip-status { position: fixed; right: var(--gut); top: 20px; z-index: 50; padding: 9px 14px; border-radius: 99px; background: var(--navy); color: var(--cream); font: 700 12px/1 var(--sans); letter-spacing: .06em; text-transform: uppercase; box-shadow: 0 6px 22px rgba(27, 37, 69, .25); }
+.chip-status::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #7CE0A9; margin-right: 8px; vertical-align: 1px; }
+.chip-status.is-closed::before { background: var(--coral); }
+
+/* bottom dock — the site's navigation */
+.dock { position: fixed; left: 50%; bottom: 18px; z-index: 60; display: flex; gap: 4px; padding: 6px; background: rgba(27, 37, 69, .92); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-radius: 99px; transform: translate(-50%, calc((1 - var(--dock, 1)) * 140%)); box-shadow: 0 14px 40px rgba(10, 14, 30, .35); }
+.dock a { text-decoration: none; color: var(--cream); padding: 12px 18px; border-radius: 99px; font: 700 14px/1 var(--sans); white-space: nowrap; transition: background .3s; }
+.dock a:hover { background: rgba(255, 255, 255, .1); }
+.dock a.call { background: var(--coral); color: #fff; }
+
+/* hero: the pin drops into the word, then the photo opens from the pin */
+.hero { position: relative; height: 260vh; background: var(--navy); }
+.stage { position: sticky; top: 0; height: 100vh; overflow: hidden; }
+.word { position: absolute; inset: 0; display: grid; place-items: center; color: var(--cream); }
+.word h1 { margin: 0; font: 400 clamp(84px, 21vw, 360px)/.82 var(--display); letter-spacing: -.02em; display: flex; }
+.word h1 span { display: inline-block; transform: translateX(calc(var(--dx) * var(--open, 0) * 1vw)) rotate(calc(var(--dr) * var(--open, 0) * 1deg)); }
+.word .sub { position: absolute; left: 0; right: 0; bottom: 12vh; text-align: center; font: 700 14px/1.4 var(--sans); letter-spacing: .22em; text-transform: uppercase; color: var(--coral-2); opacity: calc(1 - var(--open, 0) * 2); }
+.pin { position: absolute; left: 50%; top: 50%; width: clamp(64px, 9vw, 130px); aspect-ratio: 1; margin: calc(clamp(64px, 9vw, 130px) / -1) 0 0 calc(clamp(64px, 9vw, 130px) / -2); transform: translateY(calc((1 - var(--drop, 0)) * -120vh)) scale(var(--sx, 1), var(--sy, 1)); transform-origin: 50% 100%; z-index: 3; }
+.pin svg { width: 100%; height: 100%; display: block; filter: drop-shadow(0 18px 30px rgba(0, 0, 0, .35)); }
+.ring { position: absolute; left: 50%; top: 50%; width: 10px; height: 10px; margin: -5px; border: 3px solid var(--coral); border-radius: 50%; opacity: 0; z-index: 2; }
+.reveal { position: absolute; inset: 0; z-index: 4; clip-path: circle(var(--cr, 0px) at 50% 50%); }
+.reveal img { width: 100%; height: 100%; object-fit: cover; transform: scale(calc(1.25 - var(--open, 0) * .25)); }
+.reveal::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(27, 37, 69, .92), rgba(27, 37, 69, .1) 60%), linear-gradient(90deg, rgba(27, 37, 69, .6), transparent 60%); }
+.hero-copy { position: absolute; left: var(--gut); right: var(--gut); bottom: 14vh; z-index: 5; color: var(--cream); max-width: 760px; opacity: var(--copy, 0); transform: translateY(calc((1 - var(--copy, 0)) * 40px)); }
+.hero-copy .kick { font: 800 13px/1 var(--sans); letter-spacing: .2em; text-transform: uppercase; color: var(--coral-2); }
+.hero-copy h2 { margin: 14px 0 16px; font: 400 clamp(38px, 6vw, 84px)/.98 var(--display); }
+.hero-copy p { margin: 0 0 26px; font-size: 19px; max-width: 520px; color: rgba(247, 237, 224, .86); }
+.btn { display: inline-flex; align-items: center; gap: 10px; padding: 16px 26px; border-radius: 99px; border: 0; background: var(--coral); color: #fff; text-decoration: none; font: 800 15px/1 var(--sans); letter-spacing: .02em; box-shadow: 0 10px 30px rgba(238, 106, 67, .35); transition: transform .3s var(--ease); }
+.btn:hover { transform: translateY(-3px) rotate(-1deg); }
+.btn.ghost { background: transparent; box-shadow: inset 0 0 0 2px rgba(247, 237, 224, .5); color: var(--cream); }
+
+/* stickers / reveal */
+[data-in] { opacity: 0; transform: translateY(36px) rotate(var(--rot, 0deg)); transition: opacity .9s var(--ease), transform .9s var(--ease); }
+[data-in].in { opacity: 1; transform: none; }
+.motion [data-in].pop { transform: scale(.6) rotate(-8deg); }
+.motion [data-in].pop.in { transform: rotate(var(--rot, 0deg)); transition-timing-function: cubic-bezier(.3, 1.6, .5, 1); }
+
+.sec { padding: clamp(80px, 12vw, 150px) var(--gut); position: relative; }
+.title { font: 400 clamp(44px, 7.5vw, 112px)/.92 var(--display); margin: 0; letter-spacing: -.01em; }
+.title em { font-style: normal; color: var(--coral); }
+.lede { font-size: clamp(17px, 1.6vw, 21px); max-width: 560px; margin: 22px 0 0; color: rgba(27, 37, 69, .78); }
+.sticker { display: inline-block; padding: 8px 16px; border-radius: 99px; background: var(--coral); color: #fff; font: 800 13px/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; transform: rotate(-3deg); }
+
+/* feature: the cup fills up to the size you choose */
+.cupsec { background: var(--cream); }
+.cup-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(30px, 6vw, 90px); align-items: center; }
+.cupsec .title { font-size: clamp(40px, 4.6vw, 70px); }
+.cupsec .drinks { margin-top: 30px; }
+.cup { width: min(290px, 74vw); }
+.drinks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.drink { text-align: left; border: 0; border-radius: 18px; padding: 16px 18px; background: var(--paper); box-shadow: inset 0 0 0 2px rgba(27, 37, 69, .08); transition: transform .3s var(--ease), background .3s, color .3s; }
+.drink b { display: block; font: 800 16px/1.2 var(--sans); }
+.drink small { display: block; margin-top: 4px; font-size: 13px; color: rgba(27, 37, 69, .6); }
+.drink:hover { transform: translateY(-2px); }
+.drink.on { background: var(--navy); color: var(--cream); }
+.drink.on small { color: var(--coral-2); }
+.cupbox { position: relative; display: grid; justify-items: center; }
+.cup { width: min(340px, 74vw); }
+.cup svg { width: 100%; display: block; overflow: visible; }
+.liquid { transition: y .9s var(--ease), height .9s var(--ease), fill .7s; }
+.foam { transition: y .9s var(--ease), opacity .6s, fill .7s; }
+.sizes { display: flex; gap: 8px; margin-top: 18px; }
+.size { border: 0; border-radius: 99px; padding: 12px 18px; background: var(--paper); box-shadow: inset 0 0 0 2px rgba(27, 37, 69, .12); font: 800 14px/1 var(--sans); }
+.size.on { background: var(--coral); color: #fff; box-shadow: none; }
+.size:disabled { opacity: .3; cursor: default; }
+.cup-price { margin-top: 18px; text-align: center; }
+.cup-price b { display: block; font: 400 clamp(48px, 6vw, 76px)/1 var(--display); color: var(--navy); }
+.cup-price span { display: block; margin-top: 8px; font-size: 15px; color: rgba(27, 37, 69, .7); max-width: 320px; }
+.cup-tag { position: absolute; top: 4%; right: 6%; transform: rotate(9deg); }
+
+/* menu: posters ride sideways while you scroll down */
+.menu { background: var(--navy); color: var(--cream); padding: 0; }
+.menu-pin { height: 340vh; position: relative; }
+.menu-stage { position: sticky; top: 0; height: 100vh; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-start; padding-top: 86px; }
+.menu-head .title { font-size: clamp(40px, 5.4vw, 78px); }
+.menu-head { padding: 0 var(--gut); display: flex; justify-content: space-between; align-items: end; gap: 24px; }
+.menu-head .title { color: var(--cream); }
+.menu-head p { max-width: 340px; margin: 0; color: rgba(247, 237, 224, .7); }
+.rail { display: flex; align-items: flex-start; gap: 22px; padding: 30px var(--gut) 20px; transform: translateX(calc(var(--mx, 0) * -1px)); will-change: transform; }
+.poster { flex: 0 0 auto; width: clamp(290px, 28vw, 380px); border-radius: var(--r); padding: 26px 24px 22px; background: var(--paper); color: var(--navy); transform: rotate(var(--rot)); box-shadow: 0 30px 60px rgba(0, 0, 0, .3); }
+.poster:nth-child(3n+2) { background: var(--coral); color: #fff; }
+.poster:nth-child(3n+3) { background: var(--mint); }
+.poster h3 { margin: 0 0 4px; font: 400 30px/1 var(--display); }
+.poster .cnt { font: 700 12px/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; opacity: .65; }
+.poster ul { list-style: none; padding: 0; margin: 18px 0 0; }
+.poster li { display: grid; grid-template-columns: 38px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 6px 0; border-top: 1.5px dashed currentColor; border-top-color: rgba(27, 37, 69, .18); }
+.poster:nth-child(3n+2) li { border-top-color: rgba(255, 255, 255, .35); }
+.poster li .th { width: 38px; height: 38px; border-radius: 12px; overflow: hidden; background: rgba(27, 37, 69, .1); }
+.poster li .th img { width: 100%; height: 100%; object-fit: cover; }
+.poster li b { font: 700 14px/1.25 var(--sans); }
+.poster li small { display: block; font-size: 12px; opacity: .7; line-height: 1.35; }
+.poster li em { font: 400 18px/1 var(--display); font-style: normal; white-space: nowrap; }
+
+/* proof */
+.proof { background: var(--coral); color: #fff; overflow: hidden; }
+.proof .title { color: #fff; }
+.proof .title em { color: var(--navy); }
+.stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-top: 50px; }
+.stat { background: rgba(255, 255, 255, .14); border-radius: var(--r); padding: 26px 22px; }
+.stat b { display: block; font: 400 clamp(46px, 5vw, 72px)/1 var(--display); }
+.stat span { display: block; margin-top: 10px; font-weight: 700; line-height: 1.35; }
+.perks { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
+.perks span { padding: 12px 18px; border-radius: 99px; background: var(--paper); color: var(--navy); font-weight: 800; font-size: 15px; transform: rotate(var(--rot, 0deg)); }
+.ticker { margin: 60px calc(var(--gut) * -1) -20px; white-space: nowrap; font: 400 clamp(40px, 6vw, 80px)/1 var(--display); color: var(--navy); }
+.ticker div { display: inline-block; animation: tick 26s linear infinite; }
+@keyframes tick { to { transform: translateX(-50%); } }
+
+/* wall of posters */
+.wall { background: var(--navy); color: var(--cream); }
+.wall .title { color: var(--cream); }
+.frames { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 22px; margin-top: 60px; align-items: start; }
+.frame { border: 10px solid var(--paper); border-radius: 6px; box-shadow: 0 30px 50px rgba(0, 0, 0, .35); background: var(--navy-2); overflow: hidden; transform: rotate(var(--rot)); }
+.frame img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: var(--ar, 4/5); }
+.f1 { grid-column: 1 / span 5; --rot: -2deg; } .f2 { grid-column: 6 / span 4; margin-top: 80px; --rot: 2.5deg; --ar: 1; }
+.f3 { grid-column: 10 / span 3; margin-top: 20px; --rot: -3deg; --ar: 3/4; } .f4 { grid-column: 2 / span 4; --rot: 3deg; --ar: 1; }
+.f5 { grid-column: 7 / span 5; margin-top: -60px; --rot: -1.5deg; --ar: 4/3; }
+
+/* you are here */
+.here { background: var(--paper); }
+.here-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: clamp(30px, 5vw, 70px); margin-top: 50px; align-items: stretch; }
+.card { background: var(--cream); border-radius: var(--r); padding: 30px; }
+.card h4 { margin: 0 0 8px; font: 800 13px/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--coral); }
+.card .big { font: 400 30px/1.15 var(--display); margin: 0 0 22px; }
+.week { list-style: none; padding: 0; margin: 0 0 22px; }
+.week li { display: flex; justify-content: space-between; padding: 10px 0; border-top: 1.5px dashed rgba(27, 37, 69, .18); font-weight: 700; }
+.week li.today { color: var(--coral); }
+.week li.today span:first-child::after { content: " · сегодня"; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
+.links { display: flex; flex-wrap: wrap; gap: 10px; }
+.links a { padding: 12px 18px; border-radius: 99px; background: var(--navy); color: var(--cream); text-decoration: none; font-weight: 800; font-size: 15px; }
+.links a.alt { background: transparent; color: var(--navy); box-shadow: inset 0 0 0 2px var(--navy); }
+.mapbox { position: relative; border-radius: var(--r); overflow: hidden; min-height: 460px; background: var(--navy-2); }
+.mapbox iframe { position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 140px); border: 0; }
+.mapbox .bubble { position: absolute; left: 22px; top: 22px; z-index: 2; background: var(--coral); color: #fff; padding: 12px 18px; border-radius: 18px 18px 18px 4px; font: 800 15px/1.2 var(--sans); box-shadow: 0 10px 30px rgba(0, 0, 0, .25); }
+footer { background: var(--navy); color: rgba(247, 237, 224, .6); padding: 40px var(--gut) 120px; font-size: 14px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 14px; }
+footer b { font: 400 22px/1 var(--display); color: var(--cream); }
+
+@media (max-width: 900px) {
+  .cup-grid, .here-grid { grid-template-columns: minmax(0, 1fr); }
+  .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 700px) {
+  body { font-size: 16px; }
+  .dock a { padding: 11px 13px; font-size: 13px; }
+  .dock a.hide-s { display: none; }
+  .chip-status { top: 22px; font-size: 10.5px; padding: 8px 11px; }
+  .chip-logo { font-size: 15px; }
+  .word h1 { font-size: 18.5vw; }
+  .hero-copy { bottom: 16vh; }
+  .hero-copy p { font-size: 16px; }
+  .drinks { display: flex; overflow-x: auto; gap: 8px; margin: 0 calc(var(--gut) * -1); padding: 4px var(--gut) 10px; scrollbar-width: none; }
+  .drinks::-webkit-scrollbar { display: none; }
+  .drink { flex: 0 0 auto; padding: 12px 14px; }
+  .cup { width: min(230px, 60vw); }
+  .cup-grid { gap: 22px; }
+  .stat b { font-size: 40px; }
+  .menu-pin { height: auto; }
+  .menu-stage { position: relative; height: auto; padding: 90px 0 60px; }
+  .menu-head { flex-direction: column; align-items: start; }
+  .rail { transform: none !important; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 30px; }
+  .poster { scroll-snap-align: center; width: 84vw; }
+  .frames { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 14px; }
+  .frames .frame { grid-column: auto; margin-top: 0; border-width: 6px; }
+  .frames .f1 { grid-column: 1 / -1; }
+  .mapbox { min-height: 340px; }
+  .stat { padding: 20px 16px; }
+}
+@media (prefers-reduced-motion: reduce) { .ticker div { animation: none; } }
+</style>
+</head>
+<body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]],"2":[[7,30,21,0]],"3":[[7,30,21,0]],"4":[[7,30,21,0]],"5":[[7,30,21,0]],"6":[[9,0,21,0]]}'>
+
+<a class="chip-logo" href="#top" aria-label="Здесь — наверх"><i></i>здесь</a>
+<div class="chip-status" data-status>Горького, 140</div>
+
+<nav class="dock" aria-label="Разделы">
+  <a href="#cup">Стакан</a>
+  <a href="#menu">Меню</a>
+  <a href="#here" class="hide-s">Как найти</a>
+  <a href="tel:+79056660052" class="call">Позвонить</a>
+</nav>
+
+<header class="hero" id="top">
+  <div class="stage">
+    <div class="word">
+      <h1 aria-label="Здесь"><span style="--dx:-14;--dr:-12">З</span><span style="--dx:-7;--dr:-6">Д</span><span style="--dx:0;--dr:0">Е</span><span style="--dx:7;--dr:6">С</span><span style="--dx:14;--dr:12">Ь</span></h1>
+      <div class="sub">Кофейня на Горьковской · листайте вниз</div>
+    </div>
+    <i class="ring" id="r1"></i><i class="ring" id="r2"></i>
+    <div class="pin" aria-hidden="true"><svg viewBox="0 0 100 100"><path d="M50 98C50 98 12 60 12 36a38 38 0 0 1 76 0c0 24-38 62-38 62Z" fill="#EE6A43"/><circle cx="50" cy="36" r="15" fill="#F7EDE0"/></svg></div>
+    <div class="reveal" data-ph><img src="https://avatars.mds.yandex.net/get-altay/15294995/2a000001992823b6806a3597caab7f2baf7c/XXXL" alt="Интерьер кофейни «Здесь»: синяя стена, постеры и стойка у окна" referrerpolicy="no-referrer" fetchpriority="high"></div>
+    <div class="hero-copy">
+      <div class="kick">Кофейня · ул. Максима Горького, 140</div>
+      <h2>Кофе, который ждёт вас здесь</h2>
+      <p>Классика от 190 ₽, фирменные рафы, бамблы и лимонады. По будням открываемся в 7:30: успеете до работы.</p>
+      <a class="btn" href="#cup">Налить мне кофе →</a>
+      <a class="btn ghost" href="#here">Как дойти</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="sec cupsec" id="cup">
+  <div class="cup-grid">
+    <div>
+      <span class="sticker" data-in>Фишка</span>
+      <h2 class="title" style="margin-top:18px" data-in>Выберите напиток —<br><em>стакан нальётся сам</em></h2>
+      <p class="lede" data-in>Нажмите на напиток и объём. Уровень в стакане и цена меняются по нашему меню.</p>
+      <div class="drinks" id="drinks" role="listbox" aria-label="Напитки"></div>
+    </div>
+    <div class="cupbox">
+      <div class="cup" aria-hidden="true">
+        <svg viewBox="0 0 240 300">
+          <defs><clipPath id="cupclip"><path d="M30 40 L210 40 L188 286 Q186 296 176 296 L64 296 Q54 296 52 286 Z"/></clipPath></defs>
+          <path d="M30 40 L210 40 L188 286 Q186 296 176 296 L64 296 Q54 296 52 286 Z" fill="#FFF8EF"/>
+          <g clip-path="url(#cupclip)">
+            <rect class="liquid" id="liq" x="0" y="300" width="240" height="300" fill="#8A5A3B"/>
+            <rect class="foam" id="foam" x="0" y="300" width="240" height="16" fill="#F2DCC2"/>
+          </g>
+          <path d="M30 40 L210 40 L188 286 Q186 296 176 296 L64 296 Q54 296 52 286 Z" fill="none" stroke="#1B2545" stroke-width="5" stroke-linejoin="round"/>
+          <rect x="18" y="22" width="204" height="22" rx="8" fill="#1B2545"/>
+          <rect x="44" y="8" width="152" height="18" rx="8" fill="#1B2545"/>
+          <g id="lines" stroke="#1B2545" stroke-width="2" stroke-dasharray="4 5" opacity=".35"></g>
+          <circle cx="120" cy="170" r="34" fill="#EE6A43"/>
+          <text x="120" y="176" text-anchor="middle" font-family="Dela Gothic One, sans-serif" font-size="17" fill="#fff">здесь</text>
+        </svg>
+      </div>
+      <span class="sticker cup-tag" id="tag">350 мл</span>
+      <div class="sizes" id="sizes"></div>
+      <div class="cup-price" aria-live="polite"><b id="price">240 ₽</b><span id="pdesc"></span></div>
+    </div>
+  </div>
+</section>
+
+<section class="menu" id="menu" aria-label="Меню">
+  <div class="menu-pin" id="menuPin">
+    <div class="menu-stage">
+      <div class="menu-head">
+        <h2 class="title">Всё меню —<br><em style="color:var(--coral)">на стене</em></h2>
+        <p>36 позиций: от двойного эспрессо до бабл ти. Цены — как в кофейне, по данным нашего прайса.</p>
+      </div>
+      <div class="rail" id="rail"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec proof" id="proof">
+  <h2 class="title" data-in>Гости ставят <em>пять</em></h2>
+  <div class="stats">
+    <div class="stat" data-in><b data-count="5.0">0</b><span>средняя оценка на Яндекс Картах</span></div>
+    <div class="stat" data-in style="transition-delay:.08s"><b data-count="128">0</b><span>оценок и 116 отзывов</span></div>
+    <div class="stat" data-in style="transition-delay:.16s"><b>88/91</b><span>отзыва о напитках — положительные</span></div>
+    <div class="stat" data-in style="transition-delay:.24s"><b>74/77</b><span>отзыва хвалят персонал</span></div>
+  </div>
+  <div class="perks">
+    <span data-in class="pop" style="--rot:-2deg">Можно с собакой</span>
+    <span data-in class="pop" style="--rot:2deg">Кофе с собой</span>
+    <span data-in class="pop" style="--rot:-1deg">Завтраки</span>
+    <span data-in class="pop" style="--rot:3deg">СБП, карта, QR</span>
+    <span data-in class="pop" style="--rot:-3deg">Средний чек 220–500 ₽</span>
+  </div>
+  <div class="ticker" aria-hidden="true"><div>капучино · раф · бамбл · матча · лимонад · сэндвич · капучино · раф · бамбл · матча · лимонад · сэндвич · </div></div>
+</section>
+
+<section class="sec wall" id="wall">
+  <h2 class="title" data-in>Синие стены,<br><em>оранжевые постеры</em></h2>
+  <p class="lede" style="color:rgba(247,237,224,.75)" data-in>Окна на Горького, деревянные стойки, скамейка у входа и стаканы с надписью «здесь».</p>
+  <div class="frames">
+    <figure class="frame f1" data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/16136409/2a000001992827e6ed671d9b4e85b4f9759b/XXL" alt="Интерьер кофейни: синяя стена и постеры" loading="lazy" referrerpolicy="no-referrer"></figure>
+    <figure class="frame f2" data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/15431134/2a0000019882d6b53f376a6ac601854dfbbc/XXL" alt="Кофе с собой и сэндвич" loading="lazy" referrerpolicy="no-referrer"></figure>
+    <figure class="frame f3" data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/16323929/2a00000198979b23677f1257949c333af8ac/XXL" alt="Стакан кофе у окна кофейни" loading="lazy" referrerpolicy="no-referrer"></figure>
+    <figure class="frame f4" data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/16323929/2a00000199282407bdcae8334a12b513b5b6/XXL" alt="Капучино и сэндвич на столике" loading="lazy" referrerpolicy="no-referrer"></figure>
+    <figure class="frame f5" data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/16264361/2a00000198979b443584d51694bdeaebdf18/XXL" alt="Вход в кофейню «Здесь» на Горького" loading="lazy" referrerpolicy="no-referrer"></figure>
+  </div>
+</section>
+
+<section class="sec here" id="here">
+  <h2 class="title" data-in>Вы <em>здесь</em>.<br>А мы — рядом</h2>
+  <div class="here-grid">
+    <div class="card" data-in>
+      <h4>Адрес</h4>
+      <p class="big">Нижний Новгород,<br>ул. Максима Горького, 140</p>
+      <h4>Часы</h4>
+      <ul class="week" id="week">
+        <li data-d="1"><span>Понедельник — пятница</span><span>7:30–21:00</span></li>
+        <li data-d="6"><span>Суббота</span><span>9:00–21:00</span></li>
+        <li data-d="0"><span>Воскресенье</span><span>10:00–21:00</span></li>
+      </ul>
+      <div class="links">
+        <a href="tel:+79056660052">+7 905 666-00-52</a>
+        <a href="tel:+79506074738" class="alt">+7 950 607-47-38</a>
+        <a href="https://t.me/zdes_nn" class="alt" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://vk.com/club236831708" class="alt" target="_blank" rel="noopener">ВКонтакте</a>
+      </div>
+    </div>
+    <div class="mapbox" data-in>
+      <div class="bubble">Мы здесь ☕</div>
+      <iframe src="https://yandex.ru/map-widget/v1/?ll=43.994946%2C56.314402&amp;z=16&amp;pt=43.994946%2C56.314402%2Cpm2rdm&amp;l=map" title="«Здесь» на Яндекс Картах" loading="lazy" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <b>здесь</b>
+  <span>Кофейня «Здесь» · ул. Максима Горького, 140, Нижний Новгород · <a href="https://yandex.ru/maps/org/zdes/102798654354/" target="_blank" rel="noopener">Яндекс Карты</a></span>
+</footer>
+
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  var P = function (id) { return 'https://avatars.mds.yandex.net/get-sprav-products/' + id + '/200x200'; };
+  // menu as in the price list; sizes in ml → price
+  var CUP = [
+    { n: 'Капучино', d: 'эспрессо и молоко с нежной пеной', s: { 250: 200, 350: 240, 450: 270 }, c: '#B47A55', f: '#F2DCC2' },
+    { n: 'Латте', d: 'молочный кофе с воздушной пенкой', s: { 350: 240, 450: 280 }, c: '#C99A73', f: '#F6E6D2' },
+    { n: 'Раф', d: 'сливочный вкус, бархатная текстура', s: { 350: 300, 450: 300 }, c: '#D6B08C', f: '#FAEFE1' },
+    { n: 'Американо', d: 'чёрный кофе на основе эспрессо', s: { 200: 190, 300: 230, 400: 270 }, c: '#3B2418', f: '#7A4E33' },
+    { n: 'Флэт уайт', d: 'двойной эспрессо и молоко', s: { 250: 240 }, c: '#9B6644', f: '#EBCFB1' },
+    { n: 'Матча латте', d: 'сливочный вкус и травяные ноты', s: { 350: 280, 450: 320 }, c: '#8DB86B', f: '#E4F0D5' },
+    { n: 'Какао', d: 'натуральный шоколадный вкус', s: { 350: 250, 450: 290 }, c: '#5B3423', f: '#C79A7A' },
+    { n: 'Орешкин раф', d: 'арахисовый раф, фирменный', s: { 350: 340 }, c: '#C99766', f: '#E8C99A' },
+    { n: 'Бамбл Апельсин', d: 'сок, лёд и двойной эспрессо', s: { 350: 290 }, c: '#F09A3E', f: '#4A2A1A' },
+    { n: 'Бабл ти манго', d: 'жасмин, манго и маракуйя', s: { 450: 390 }, c: '#F4C35A', f: '#FCE7A6' }
+  ];
+  var MENU = [
+    { t: 'Классика', i: [['Двойной эспрессо', '38 г', 180, '9854027/2a0000019ed9a8d7c7cb114580fa0a7ec564'], ['Американо', '200 / 300 / 400 мл', '190–270', '5235338/2a0000019f14b009b3c09c31c161266cfc38'], ['Капучино', '250 / 350 / 450 мл', '200–270', '5632604/2a0000019ed9a26fa4da80f26b2345793ee2'], ['Латте', '350 / 450 мл', '240–280', '9685839/2a0000019f14b178cd52d66a9a9a1f474418'], ['Флэт уайт', '250 мл', 240, '5512660/2a0000019ed9d980860c1437cda2fc4ebda8'], ['Раф', '350 / 450 мл', 300, '5514775/2a0000019f14b2cbfba29896303e325ef13c']] },
+    { t: 'Фирменные', i: [['Орешкин раф', 'арахис сверху · 350 мл', 340, '5280674/2a0000019f14b3a4b99b1a3d12bc8090bfc5'], ['Сырный раф', 'сливочный вкус · 350 мл', 340, '9685839/2a0000019efecd51925d4f5abf233c0cd3ef'], ['Латте «Грушевая биржа»', 'груша и солёная карамель', 340, '2808945/2a0000019edc733d10efc747272f092f2c06']] },
+    { t: 'Лето 2026', i: [['Раф персик — белый шоколад', '', 340, '9685839/2a0000019efecd51925d4f5abf233c0cd3ef'], ['Капучино банан-карамель', '350 мл', 340, '9685839/2a0000019efed1b69925f65f988372d63b2e'], ['Клубника и крем-какао', '450 мл', 320, '5512660/2a0000019efed3c1190fa06c6e9c7fa5c470'], ['Лимонад «Малиновая роза»', '450 мл', 320, '17700615/2a0000019efed6cc2e968466f0ec4f8840d7']] },
+    { t: 'Охлаждайся', i: [['Бамбл апельсин / вишня', 'сок, лёд, двойной эспрессо', 290, '20222640/2a0000019efeeb05a7714159cd1409969391'], ['Лимонад грейпфрут-мята', '450 мл', 290, '1358381/2a0000019efedb2b30095eecc2917cfa6531'], ['Эспрессо-тоник', '450 мл', 390, '20340178/2a0000019f04a40218218ace49e0e5d65dc9'], ['Изотоник смородина-юдзу', '450 мл', 320, '9685839/2a0000019eff02a07ef5062d3430b44a6e0e'], ['Изотоник «Грушевая сирень»', '450 мл', 320, '17791271/2a0000019f049c5af727967dcef1c9644fc6'], ['Бабл ти жасмин-манго-маракуйя', '450 мл', 390, '13488316/2a0000019eff04547065c4eb841f743aec18'], ['Молочный коктейль', '450 мл', 310, '19861719/2a0000019f14bb5209940e451261a4babea4'], ['Шейк клубничный / смородиновый', '450 мл', 390, '17763327/2a0000019f04a9d1f2e9ceaa31b8ec7e171a']] },
+    { t: 'Не кофе', i: [['Матча латте', '350 / 450 мл', '280–320', '17791271/2a0000019f04ad01da2fede9635688a4bd3a'], ['Какао', '350 / 450 мл', '250–290', '8331772/2a0000019f04b346b509e25438a0570dc75e']] },
+    { t: 'Сэндвичи', i: [['Цезарь Классик', 'хрустящий и сочный', 290, '4472294/2a0000019ef464b26e4037a4fc864e405f45'], ['BBQ Стрит', 'много начинки, яркий соус', 290, '20340178/2a0000019ef467cf9ff491b64df55b5922ec'], ['Острый Штрих', 'с лёгкой остринкой', 290, '5280674/2a0000019ef46cbf86d24be479739d487d97']] }
+  ];
+  var fmt = function (v) { return typeof v === 'number' ? v + ' ₽' : v.replace('–', '–') + ' ₽'; };
+
+  // rail
+  var rail = document.getElementById('rail'), rots = [-2, 1.5, -1, 2, -2.5, 1];
+  rail.innerHTML = MENU.map(function (c, k) {
+    return '<article class="poster" style="--rot:' + rots[k % rots.length] + 'deg"><div class="cnt">' + c.i.length + ' ' + (c.i.length < 5 ? 'позиции' : 'позиций') + '</div><h3>' + c.t + '</h3><ul>' +
+      c.i.map(function (it) { return '<li><span class="th" data-ph><img src="' + P(it[3]) + '" alt="" loading="lazy" referrerpolicy="no-referrer"></span><span><b>' + it[0] + '</b>' + (it[1] ? '<small>' + it[1] + '</small>' : '') + '</span><em>' + fmt(it[2]) + '</em></li>'; }).join('') + '</ul></article>';
+  }).join('');
+
+  // cup builder
+  var box = document.getElementById('drinks'), sizes = document.getElementById('sizes'), liq = document.getElementById('liq'), foam = document.getElementById('foam');
+  var cur = 0, size = 350, MAXML = 450;
+  box.innerHTML = CUP.map(function (d, i) { var p = Object.keys(d.s).map(function (k) { return d.s[k]; }); var lo = Math.min.apply(0, p), hi = Math.max.apply(0, p); return '<button class="drink" role="option" data-i="' + i + '"><b>' + d.n + '</b><small>' + (lo === hi ? lo + ' ₽' : lo + '–' + hi + ' ₽') + '</small></button>'; }).join('');
+  // fill line marks for 200…450 ml
+  var lines = document.getElementById('lines'), Y = function (ml) { return 296 - (ml / MAXML) * 236; };
+  [250, 350, 450].forEach(function (ml) { var l = document.createElementNS('http://www.w3.org/2000/svg', 'line'); l.setAttribute('x1', 40); l.setAttribute('x2', 70); l.setAttribute('y1', Y(ml)); l.setAttribute('y2', Y(ml)); lines.appendChild(l); });
+  function paint() {
+    var d = CUP[cur], keys = Object.keys(d.s).map(Number);
+    if (keys.indexOf(size) < 0) size = keys[Math.min(1, keys.length - 1)] || keys[0];
+    box.querySelectorAll('.drink').forEach(function (b, i) { b.classList.toggle('on', i === cur); b.setAttribute('aria-selected', i === cur); });
+    sizes.innerHTML = [200, 250, 300, 350, 400, 450].filter(function (ml) { return keys.indexOf(ml) >= 0; }).map(function (ml) { return '<button class="size' + (ml === size ? ' on' : '') + '" data-ml="' + ml + '">' + ml + ' мл</button>'; }).join('');
+    var y = Y(size);
+    liq.setAttribute('y', y); liq.setAttribute('height', 300 - y); liq.setAttribute('fill', d.c);
+    foam.setAttribute('y', y - 2); foam.setAttribute('fill', d.f);
+    document.getElementById('tag').textContent = size + ' мл';
+    document.getElementById('price').textContent = d.s[size] + ' ₽';
+    document.getElementById('pdesc').textContent = d.n + ' — ' + d.d;
+  }
+  box.addEventListener('click', function (e) { var b = e.target.closest('.drink'); if (b) { cur = +b.dataset.i; paint(); } });
+  sizes.addEventListener('click', function (e) { var b = e.target.closest('.size'); if (b) { size = +b.dataset.ml; paint(); } });
+  paint();
+
+  // hero: drop, squash, ripple, open
+  var hero = document.querySelector('.hero'), stage = hero.querySelector('.stage'), r1 = document.getElementById('r1'), r2 = document.getElementById('r2');
+  var dock = document.querySelector('.dock');
+  RT.onScroll(function () {
+    var p = RT.motion ? RT.progress(hero) : 1;
+    var drop = RT.ease(RT.clamp(p / .26));
+    var land = RT.clamp((p - .24) / .08), squash = Math.sin(land * Math.PI) * .22;
+    var open = RT.ease(RT.clamp((p - .36) / .4));
+    var vmax = Math.max(innerWidth, innerHeight);
+    stage.style.setProperty('--drop', drop);
+    stage.style.setProperty('--sx', 1 + squash); stage.style.setProperty('--sy', 1 - squash);
+    stage.style.setProperty('--open', open);
+    stage.style.setProperty('--cr', (open * vmax * .9) + 'px');
+    stage.style.setProperty('--copy', RT.ease(RT.clamp((p - .72) / .2)));
+    [r1, r2].forEach(function (r, k) { var t = RT.clamp((p - .26 - k * .05) / .2); r.style.opacity = t > 0 && t < 1 ? 1 - t : 0; r.style.transform = 'scale(' + (1 + t * 40) + ')'; });
+    dock.style.setProperty('--dock', innerWidth < 700 ? 1 : RT.clamp((p - .6) / .2 + (scrollY > hero.offsetHeight ? 1 : 0)));
+  });
+
+  // menu rail: sideways with vertical scroll on desktop
+  var pin = document.getElementById('menuPin');
+  RT.onScroll(function () {
+    if (innerWidth <= 700) return;
+    var max = rail.scrollWidth - innerWidth;
+    rail.style.setProperty('--mx', (RT.progress(pin) * Math.max(0, max)).toFixed(1));
+  });
+
+  // today in the hours card (Moscow time)
+  var md = new Date(Date.now() + new Date().getTimezoneOffset() * 6e4 + 3 * 36e5).getDay();
+  document.querySelectorAll('#week li').forEach(function (li) { var d = +li.dataset.d; if (d === md || (d === 1 && md >= 1 && md <= 5)) li.classList.add('today'); });
+
+  window.REEL = {
+    hero: '.hero', heroAt: .5, feature: '#cup', featureOff: 70, featureM: '#drinks', featureOffM: -70, prices: '#menu', pricesAt: .3,
+    demo: [function () { cur = 1; size = 450; paint(); }, function () { cur = 5; size = 350; paint(); }, function () { cur = 3; size = 400; paint(); }]
+  };
+})();
+</script>
+</body>
+</html>

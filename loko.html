@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Локо — лазерная эпиляция, воск и LPG-массаж · Дзержинск, Циолковского, 76</title>
+<meta name="description" content="Центр эпиляции и массажа «Локо» в Дзержинске: лазерная эпиляция от 2 000 ₽, подмышки и верхняя губа 490 ₽, воск, электроэпиляция, LPG-массаж, кавитация. Абонементы от 940 ₽ за зону. Ежедневно 9:00–21:00.">
+<meta property="og:title" content="Локо — центр эпиляции и массажа в Дзержинске">
+<meta property="og:description" content="Лазер, воск, LPG. Абонементы от 940 ₽ за зону. Рейтинг 5,0.">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/18005133/2a00000199812459931aa70493e70d56678c/XXXL">
+<meta name="theme-color" content="#FFD21F">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;700;800&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HealthAndBeautyBusiness","name":"Локо — центр эпиляции и массажа","telephone":"+7 960 198-51-41","priceRange":"490–47000 ₽","address":{"@type":"PostalAddress","streetAddress":"просп. Циолковского, 76","addressLocality":"Дзержинск","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":56.22755,"longitude":43.400855},"openingHours":"Mo-Su 09:00-21:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","ratingCount":"72"}}</script>
+<style>
+:root {
+  --bg: #F6F6F3; --white: #FFFFFF; --ink: #1D1E21; --ink-2: #5E6168; --line: #DADBD6; --yellow: #FFD21F; --yellow-2: #FFE680; --laser: #FF3B30;
+  --sans: 'Geologica', system-ui, sans-serif; --mono: 'IBM Plex Mono', ui-monospace, monospace;
+  --rail: 260px; --gut: clamp(18px, 3.4vw, 54px); --ease: cubic-bezier(.2, .8, .2, 1);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 300 17px/1.6 var(--sans); overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+button { font: inherit; color: inherit; cursor: pointer; }
+section { scroll-margin-top: 0; }
+.noimg { background: repeating-linear-gradient(45deg, #E9E9E4 0 12px, #F2F2EE 12px 24px) !important; }
+.noimg img, img.noimg { opacity: 0; }
+.mono { font-family: var(--mono); }
+
+/* sticky index rail on the left — the site's navigation */
+.rail { position: fixed; left: 0; top: 0; bottom: 0; width: var(--rail); z-index: 40; background: var(--white); border-right: 1px solid var(--line); display: flex; flex-direction: column; padding: 28px 26px; }
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.brand i { width: 44px; height: 44px; background: var(--yellow); display: grid; place-items: center; font: 800 18px/1 var(--sans); font-style: normal; clip-path: polygon(50% 0, 100% 100%, 0 100%); padding-top: 14px; }
+.brand b { font: 800 26px/1 var(--sans); letter-spacing: .04em; }
+.brand small { display: block; font: 400 11px/1.3 var(--mono); color: var(--ink-2); letter-spacing: .04em; margin-top: 4px; }
+.index { list-style: none; margin: 44px 0 0; padding: 0; counter-reset: s; }
+.index a { display: grid; grid-template-columns: 34px 1fr; padding: 11px 0; text-decoration: none; border-top: 1px solid var(--line); font: 400 15px/1.3 var(--sans); color: var(--ink-2); transition: color .3s; }
+.index a span { font: 500 12px/1.6 var(--mono); }
+.index a.on { color: var(--ink); font-weight: 700; }
+.index a.on span { color: var(--ink); background: var(--yellow); padding: 0 4px; justify-self: start; }
+.rail .foot { margin-top: auto; display: grid; gap: 10px; }
+.st { font: 500 12px/1.4 var(--mono); color: var(--ink-2); }
+.st::before { content: "●"; color: #22B573; margin-right: 6px; }
+.st.is-closed::before { color: var(--laser); }
+.cta { display: block; text-align: center; padding: 15px 16px; background: var(--ink); color: var(--white); text-decoration: none; font: 700 15px/1 var(--sans); transition: background .3s, color .3s; }
+.cta:hover { background: var(--yellow); color: var(--ink); }
+.cta.y { background: var(--yellow); color: var(--ink); }
+.topbar { display: none; }
+.content { margin-left: var(--rail); }
+
+/* hero: the laser line scans down — above it the photo is sharp, below it's still soft */
+.hero { position: relative; height: 240vh; }
+.stage { position: sticky; top: 0; height: 100vh; overflow: hidden; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); }
+.copy { padding: clamp(40px, 7vh, 80px) var(--gut); display: flex; flex-direction: column; justify-content: space-between; position: relative; z-index: 2; }
+.copy .kick { font: 500 12px/1.4 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-2); }
+.copy h1 { margin: 0; font: 800 clamp(56px, 7.4vw, 136px)/.88 var(--sans); letter-spacing: -.045em; }
+.copy h1 em { font-style: normal; background: linear-gradient(transparent 58%, var(--yellow) 58%, var(--yellow) 92%, transparent 92%); background-size: calc(var(--hl, 0) * 100%) 100%; background-repeat: no-repeat; }
+.copy p { margin: 22px 0 0; font-size: clamp(17px, 1.4vw, 20px); max-width: 480px; color: var(--ink-2); }
+.figs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--ink); }
+.figs div { padding: 14px 12px 0 0; }
+.figs b { display: block; font: 700 clamp(26px, 2.6vw, 40px)/1 var(--sans); letter-spacing: -.02em; }
+.figs span { display: block; margin-top: 6px; font: 400 12px/1.35 var(--mono); color: var(--ink-2); }
+.scan { position: relative; overflow: hidden; background: #DCDCD6; }
+.scan img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.scan .soft { filter: blur(14px) grayscale(.7) brightness(1.08); transform: scale(1.06); }
+.scan .sharp { clip-path: inset(0 0 calc(100% - var(--y, 0%)) 0); }
+.scan .beam { position: absolute; left: -2%; right: -2%; top: var(--y, 0%); height: 2px; background: var(--laser); box-shadow: 0 0 10px 2px rgba(255, 59, 48, .9), 0 0 40px 10px rgba(255, 210, 31, .55); transform: translateY(-1px); opacity: var(--beam, 1); }
+.scan .grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(255, 255, 255, .35) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, .35) 1px, transparent 1px); background-size: 40px 40px; clip-path: inset(var(--y, 0%) 0 0 0); mix-blend-mode: overlay; }
+.scan .tag { position: absolute; right: 18px; top: calc(var(--y, 0%) + 10px); font: 500 12px/1 var(--mono); background: var(--ink); color: var(--yellow); padding: 6px 8px; opacity: var(--beam, 1); }
+
+/* blocks */
+[data-in] { opacity: 0; transform: translateY(24px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
+[data-in].in { opacity: 1; transform: none; }
+.blk { padding: clamp(70px, 9vw, 120px) var(--gut); border-top: 1px solid var(--line); }
+.hd { display: grid; grid-template-columns: 90px minmax(0, 1fr); gap: 20px; align-items: start; }
+.hd .n { font: 500 13px/1 var(--mono); padding-top: 14px; color: var(--ink-2); }
+.hd h2 { margin: 0; font: 800 clamp(40px, 5.6vw, 92px)/.95 var(--sans); letter-spacing: -.04em; }
+.hd h2 em { font-style: normal; color: var(--ink-2); font-weight: 300; }
+.hd p { margin: 18px 0 0; max-width: 640px; font-size: 19px; color: var(--ink-2); }
+.under { margin-left: 110px; }
+
+/* feature: subscription calculator */
+.calc { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0; margin-top: 50px; border: 1px solid var(--ink); background: var(--white); }
+.calc .ctrl { padding: 30px; border-right: 1px solid var(--ink); }
+.seg { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; border: 1px solid var(--ink); margin: 10px 0 24px; }
+.seg button { border: 0; background: transparent; padding: 14px 10px; font: 500 15px/1.2 var(--sans); border-right: 1px solid var(--ink); transition: background .3s; }
+.seg button:last-child { border-right: 0; }
+.seg button.on { background: var(--yellow); font-weight: 700; }
+.seg button:disabled { color: #B9BBB5; cursor: default; }
+.lbl { font: 500 12px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-2); }
+.dots { display: grid; grid-template-columns: repeat(10, 1fr); gap: 7px; margin-top: 14px; }
+.dots i { aspect-ratio: 1; border-radius: 50%; border: 1.5px solid var(--line); transition: background .4s var(--ease), border-color .4s, transform .4s var(--ease); transition-delay: calc(var(--k) * 12ms); }
+.dots i.on { background: var(--yellow); border-color: var(--ink); transform: scale(1.05); }
+.calc .out { padding: 30px; display: grid; align-content: space-between; gap: 20px; }
+.per b { display: block; font: 800 clamp(64px, 7vw, 116px)/.9 var(--sans); letter-spacing: -.05em; }
+.per span { font: 500 13px/1.4 var(--mono); color: var(--ink-2); }
+.tbl { display: grid; grid-template-columns: 1fr auto; border-top: 1px solid var(--ink); }
+.tbl div { padding: 12px 0; border-bottom: 1px solid var(--line); }
+.tbl div:nth-child(2n) { text-align: right; font-weight: 700; }
+.save { display: inline-block; padding: 6px 10px; background: var(--ink); color: var(--yellow); font: 500 13px/1.3 var(--mono); }
+
+/* club card */
+.club { background: var(--ink); color: var(--white); border-top: 0; }
+.club .hd .n, .club .hd p { color: #A6A9AF; }
+.club .hd h2 em { color: var(--yellow); font-weight: 800; }
+.card3d { margin: 50px 0 0 110px; width: min(460px, 100%); aspect-ratio: 1.586; border-radius: 18px; background: linear-gradient(135deg, var(--yellow), #FFB800); color: var(--ink); padding: 26px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 40px 80px rgba(0, 0, 0, .45); transform: perspective(900px) rotateX(calc(var(--tx, 0) * 1deg)) rotateY(calc(var(--ty, 0) * 1deg)); transition: transform .2s; }
+.card3d b { font: 800 30px/1 var(--sans); letter-spacing: .02em; }
+.card3d .big { font: 800 64px/1 var(--sans); letter-spacing: -.04em; }
+.card3d .mono { font-size: 13px; }
+.compare { margin: 40px 0 0 110px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid #3A3C41; }
+.compare div { padding: 18px 16px 18px 0; border-bottom: 1px solid #3A3C41; }
+.compare s { color: #8A8D93; font: 400 15px/1 var(--mono); }
+.compare b { display: block; margin-top: 6px; font: 700 26px/1 var(--sans); color: var(--yellow); }
+.compare span { display: block; margin-top: 6px; font: 400 13px/1.35 var(--mono); color: #A6A9AF; }
+
+/* price table */
+.price { margin: 46px 0 0 110px; border-top: 2px solid var(--ink); }
+.prow { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.2fr) minmax(0, .8fr); gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); align-items: baseline; }
+.prow h3 { margin: 0; font: 700 21px/1.2 var(--sans); }
+.prow .d { color: var(--ink-2); font-size: 15.5px; }
+.prow .p { text-align: right; font: 500 15px/1.5 var(--mono); }
+.prow .p b { font: 700 19px/1.3 var(--sans); }
+.foot-note { margin: 18px 0 0 110px; font: 400 13px/1.6 var(--mono); color: var(--ink-2); max-width: 760px; }
+
+/* room */
+.room { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px; margin: 46px 0 0 110px; }
+.room figure { margin: 0; position: relative; overflow: hidden; background: #E9E9E4; }
+.room img { width: 100%; height: 100%; object-fit: cover; }
+.room figcaption { position: absolute; left: 0; bottom: 0; background: var(--white); padding: 6px 10px; font: 500 12px/1.3 var(--mono); }
+.r1 { grid-column: span 3; grid-row: span 2; aspect-ratio: 4/5; } .r2 { grid-column: span 3; aspect-ratio: 16/10; } .r3, .r4 { grid-column: span 3; } .r3 { aspect-ratio: 1; grid-column: span 2; } .r4 { grid-column: span 1; aspect-ratio: 1/2; }
+.score { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin: 30px 0 0 110px; }
+.score div { background: var(--white); border: 1px solid var(--line); padding: 20px; }
+.score b { display: block; font: 800 40px/1 var(--sans); letter-spacing: -.03em; }
+.score span { font: 400 13px/1.35 var(--mono); color: var(--ink-2); }
+.score i { display: block; height: 4px; background: var(--yellow); margin-top: 12px; }
+
+/* contact */
+.cgrid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 0; margin: 46px 0 0 110px; border: 1px solid var(--ink); background: var(--white); }
+.cgrid .info { padding: 30px; border-right: 1px solid var(--ink); display: grid; gap: 22px; align-content: start; }
+.cgrid .info p { margin: 4px 0 0; font-size: 20px; font-weight: 500; }
+.cgrid .info a { text-decoration: none; }
+.mapbox { position: relative; min-height: 420px; overflow: hidden; }
+.mapbox iframe { position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 140px); border: 0; filter: grayscale(1) contrast(1.05); }
+footer { margin-left: var(--rail); padding: 26px var(--gut) 40px; border-top: 1px solid var(--line); font: 400 12px/1.6 var(--mono); color: var(--ink-2); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+
+@media (max-width: 1100px) { :root { --rail: 220px; } .compare { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 900px) {
+  .rail { display: none; }
+  .content, footer { margin-left: 0; }
+  .topbar { display: flex; position: fixed; inset: 0 0 auto; z-index: 40; background: rgba(255, 255, 255, .95); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); padding: 10px 16px; align-items: center; justify-content: space-between; gap: 12px; }
+  .topbar .brand i { width: 30px; height: 30px; font-size: 12px; padding-top: 10px; }
+  .topbar .brand b { font-size: 20px; }
+  .topbar .cta { padding: 11px 14px; font-size: 13px; }
+  .hero { height: 220vh; }
+  .stage { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); padding-top: 58px; }
+  .copy { padding: 22px 18px 18px; gap: 18px; }
+  .copy h1 { font-size: 64px; }
+  .copy p { font-size: 15.5px; margin-top: 12px; }
+  .figs b { font-size: 24px; }
+  .hd { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+  .hd .n { padding-top: 0; }
+  .under, .card3d, .compare, .price, .foot-note, .room, .score, .cgrid { margin-left: 0; }
+  .calc, .cgrid { grid-template-columns: minmax(0, 1fr); }
+  .calc .ctrl, .cgrid .info { border-right: 0; border-bottom: 1px solid var(--ink); }
+  .prow { grid-template-columns: minmax(0, 1fr) auto; }
+  .prow .d { grid-column: 1 / -1; order: 3; margin-top: -10px; }
+  .score { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .room { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .room figure { grid-column: span 1 !important; grid-row: auto !important; aspect-ratio: 1 !important; }
+  .room .r1 { grid-column: span 2 !important; aspect-ratio: 4/3 !important; }
+  .blk { scroll-margin-top: 58px; }
+}
+</style>
+</head>
+<body data-hours='{"0":[[9,0,21,0]],"1":[[9,0,21,0]],"2":[[9,0,21,0]],"3":[[9,0,21,0]],"4":[[9,0,21,0]],"5":[[9,0,21,0]],"6":[[9,0,21,0]]}'>
+
+<aside class="rail" aria-label="Разделы">
+  <a class="brand" href="#top"><i>L</i><span><b>ЛОКО</b><small>эпиляция · LPG · массаж</small></span></a>
+  <ol class="index" id="index">
+    <li><a href="#top" data-s="top"><span>01</span>Гладко</a></li>
+    <li><a href="#abon" data-s="abon"><span>02</span>Абонемент</a></li>
+    <li><a href="#club" data-s="club"><span>03</span>Клубная карта</a></li>
+    <li><a href="#price" data-s="price"><span>04</span>Цены</a></li>
+    <li><a href="#room" data-s="room"><span>05</span>Кабинеты</a></li>
+    <li><a href="#contact" data-s="contact"><span>06</span>Запись</a></li>
+  </ol>
+  <div class="foot">
+    <span class="st" data-status>ежедневно 9–21</span>
+    <a class="cta y" href="tel:+79601985141">+7 960 198-51-41</a>
+    <a class="cta" href="https://wa.me/79601985141" target="_blank" rel="noopener">Записаться в WhatsApp</a>
+  </div>
+</aside>
+<div class="topbar"><a class="brand" href="#top"><i>L</i><b>ЛОКО</b></a><a class="cta y" href="tel:+79601985141">Записаться</a></div>
+
+<div class="content">
+<header class="hero" id="top">
+  <div class="stage">
+    <div class="copy">
+      <span class="kick">Центр эпиляции и массажа · Дзержинск, просп. Циолковского, 76</span>
+      <div>
+        <h1>Гладко.<br><em>Надолго.</em></h1>
+        <p>Лазерная, восковая и электроэпиляция, LPG-массаж и кавитация. Подмышки и верхняя губа — 490 ₽.</p>
+      </div>
+      <div class="figs">
+        <div><b>5,0</b><span>Яндекс Карты · 72 оценки</span></div>
+        <div><b>53/53</b><span>отзыва хвалят персонал</span></div>
+        <div><b>9–21</b><span>каждый день</span></div>
+      </div>
+    </div>
+    <div class="scan" data-ph>
+      <img class="soft" src="https://avatars.mds.yandex.net/get-altay/18005133/2a00000199812459931aa70493e70d56678c/XXXL" alt="" aria-hidden="true" referrerpolicy="no-referrer">
+      <img class="sharp" src="https://avatars.mds.yandex.net/get-altay/18005133/2a00000199812459931aa70493e70d56678c/XXXL" alt="Процедура лазерной эпиляции в «Локо»" referrerpolicy="no-referrer" fetchpriority="high">
+      <i class="grid"></i><i class="beam"></i><span class="tag" id="ytag">0%</span>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="blk" id="abon">
+  <div class="hd"><span class="n">02 / Абонемент</span><div><h2 data-in>Чем больше зон —<br><em>тем дешевле каждая</em></h2><p data-in>Выберите абонемент и количество зон. Цены — по прайсу центра: от 1 230 до 940 ₽ за зону на лазере.</p></div></div>
+  <div class="calc" data-in>
+    <div class="ctrl">
+      <span class="lbl">Процедура</span>
+      <div class="seg" id="kind"><button data-v="laser">Лазер</button><button data-v="wax">Воск</button></div>
+      <span class="lbl">Абонемент</span>
+      <div class="seg" id="plan"><button data-v="ego">«Эгоист» — для одного</button><button data-v="fr">«Друзья, товарищи» — на нескольких</button></div>
+      <span class="lbl">Сколько зон</span>
+      <div class="seg" id="zones"></div>
+      <span class="lbl">Зоны в абонементе</span>
+      <div class="dots" id="dots"></div>
+    </div>
+    <div class="out" aria-live="polite">
+      <div class="per"><span>цена одной зоны</span><b id="per">1 230 ₽</b><span id="perNote"></span></div>
+      <div class="tbl">
+        <div>Абонемент целиком</div><div id="tot">6 150 ₽</div>
+        <div>Срок действия</div><div id="term">3 месяца</div>
+        <div>Кому</div><div id="who">одному человеку</div>
+      </div>
+      <div><span class="save" id="save">—</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="blk club" id="club">
+  <div class="hd"><span class="n">03 / Клубная карта</span><div><h2 data-in>Оставьте отзыв —<br><em>получите скидку до 40%</em></h2><p data-in>За отзыв центр выдаёт Клубную Карту: скидка от 20% до 40% на все услуги центра и скидки от партнёров. Карта действует месяц.</p></div></div>
+  <div class="card3d" id="card" data-in><div style="display:flex;justify-content:space-between;align-items:start"><b>ЛОКО</b><span class="mono">КЛУБНАЯ КАРТА</span></div><div class="big">−20…40%</div><span class="mono">на все услуги · 1 месяц</span></div>
+  <div class="compare">
+    <div data-in><s>3 200 ₽</s><b>1 890 ₽</b><span>LPG-массаж по карте</span></div>
+    <div data-in><s>от 2 000 ₽</s><b>от 1 200 ₽</b><span>лазерная эпиляция по карте</span></div>
+    <div data-in><s>от 1 100 ₽</s><b>от 880 ₽</b><span>воск по карте</span></div>
+    <div data-in><s>45 / 55 / 65 ₽</s><b>40 / 50 / 60 ₽</b><span>электроэпиляция по карте (стажёр / специалист / эксперт)</span></div>
+  </div>
+</section>
+
+<section class="blk" id="price">
+  <div class="hd"><span class="n">04 / Цены</span><div><h2 data-in>Прайс <em>без звёздочек</em></h2></div></div>
+  <div class="price">
+    <div class="prow" data-in><h3>Лазерная эпиляция</h3><span class="d">Подмышечные впадины и верхняя губа — фиксированная цена</span><span class="p"><b>от 2 000 ₽</b><br>490 ₽ — подмышки, губа</span></div>
+    <div class="prow" data-in><h3>Депиляция полимерным воском</h3><span class="d">Подмышки и верхняя губа — фиксированная цена</span><span class="p"><b>от 1 100 ₽</b><br>490 ₽ — подмышки, губа</span></div>
+    <div class="prow" data-in><h3>Электроэпиляция</h3><span class="d">Цена зависит от уровня специалиста</span><span class="p"><b>45 · 55 · 65 ₽</b><br>стажёр · специалист · эксперт</span></div>
+    <div class="prow" data-in><h3>LPG-массаж</h3><span class="d">Пробная процедура — 990 ₽. Курсы — 10 700 и 20 200 ₽</span><span class="p"><b>3 200 ₽</b><br>по карте 1 890 ₽</span></div>
+    <div class="prow" data-in><h3>4D массаж тела</h3><span class="d">Пробная процедура — 1 100 ₽. Делается раз в неделю</span><span class="p"><b>3 300 ₽</b></span></div>
+    <div class="prow" data-in><h3>3D массаж лица</h3><span class="d">Пробная процедура — 890 ₽. Делается раз в неделю</span><span class="p"><b>3 100 ₽</b></span></div>
+    <div class="prow" data-in><h3>Кавитация</h3><span class="d">Пробная процедура — 990 ₽. Делается раз в неделю</span><span class="p"><b>от 2 590 ₽</b></span></div>
+  </div>
+  <p class="foot-note">Также: массаж лица, коррекционный, лимфодренажный, лифтинг- и relax-массаж. Цены — по данным центра на Яндекс Картах; стоимость конкретной зоны уточняйте при записи.</p>
+</section>
+
+<section class="blk" id="room">
+  <div class="hd"><span class="n">05 / Кабинеты</span><div><h2 data-in>Светло, чисто,<br><em>по записи</em></h2></div></div>
+  <div class="room">
+    <figure class="r1" data-in data-ph><img src="https://avatars.mds.yandex.net/get-altay/16609617/2a00000199812466da503dc6965bd25110bf/XXL" alt="Лазерная эпиляция" loading="lazy" referrerpolicy="no-referrer"><figcaption>Лазер</figcaption></figure>
+    <figure class="r2" data-in data-ph><img src="https://avatars.mds.yandex.net/get-altay/16609617/2a0000019aa0971bcb8fc69190a290be086a/XXL" alt="Кабинет «Локо»" loading="lazy" referrerpolicy="no-referrer"><figcaption>Кабинет</figcaption></figure>
+    <figure class="r3" data-in data-ph><img src="https://avatars.mds.yandex.net/get-altay/16823151/2a0000019aa097980fc2964e5b3d7afc5cd8/XL" alt="Аппарат для лазерной эпиляции" loading="lazy" referrerpolicy="no-referrer"><figcaption>Оборудование</figcaption></figure>
+    <figure class="r4" data-in data-ph><img src="https://avatars.mds.yandex.net/get-altay/16899665/2a0000019aa09796b5e2703db9dd682bca61/XL" alt="Аппарат в кабинете" loading="lazy" referrerpolicy="no-referrer"></figure>
+  </div>
+  <div class="score">
+    <div data-in><b>53/53</b><span>о персонале</span><i></i></div>
+    <div data-in><b>26/26</b><span>об эпиляции</span><i></i></div>
+    <div data-in><b>15/15</b><span>об атмосфере</span><i></i></div>
+    <div data-in><b>12/12</b><span>о времени ожидания</span><i></i></div>
+  </div>
+  <p class="foot-note">Все положительные — по отзывам на Яндекс Картах (5,0, 72 оценки, 57 отзывов).</p>
+</section>
+
+<section class="blk" id="contact">
+  <div class="hd"><span class="n">06 / Запись</span><div><h2 data-in>Запишитесь <em>на удобное время</em></h2></div></div>
+  <div class="cgrid" data-in>
+    <div class="info">
+      <div><span class="lbl">Адрес</span><p>Дзержинск, просп. Циолковского, 76</p></div>
+      <div><span class="lbl">Часы</span><p>Ежедневно 9:00–21:00</p></div>
+      <div><span class="lbl">Запись</span><p><a href="tel:+79601985141">+7 960 198-51-41</a></p></div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap"><a class="cta y" href="https://wa.me/79601985141" target="_blank" rel="noopener">WhatsApp</a><a class="cta" href="https://t.me/lokodzr" target="_blank" rel="noopener">Telegram</a><a class="cta" href="https://vk.com/pmce_dzr" target="_blank" rel="noopener">ВКонтакте</a></div>
+      <span class="st">Есть парковка · оплата картой, СБП, QR</span>
+    </div>
+    <div class="mapbox"><iframe src="https://yandex.ru/map-widget/v1/?ll=43.400855%2C56.22755&amp;z=16&amp;pt=43.400855%2C56.22755%2Cpm2ywm&amp;l=map" title="«Локо» на Яндекс Картах" loading="lazy" allowfullscreen></iframe></div>
+  </div>
+</section>
+</main>
+</div>
+
+<footer><span>Локо · центр эпиляции и массажа · Дзержинск, просп. Циолковского, 76</span><a href="https://yandex.ru/maps/org/loko/124064905572/" target="_blank" rel="noopener">Яндекс Карты</a></footer>
+
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  var PLANS = {
+    // [zones, price per zone, months, price of the whole subscription] — as in the price list
+    laser: { ego: [[5, 1230, 3, 6150], [10, 1080, 6, 10800], [20, 1050, 9, 21000]], fr: [[30, 997, 12, 29900], [40, 950, 12, 38000], [50, 940, 12, 47000]] },
+    wax: { fr: [[30, 833, 12, 25000], [40, 825, 12, 33000], [50, 800, 12, 40000]] }
+  };
+  var kind = 'laser', plan = 'ego', idx = 0;
+  var $kind = document.getElementById('kind'), $plan = document.getElementById('plan'), $zones = document.getElementById('zones'), $dots = document.getElementById('dots');
+  $dots.innerHTML = Array.from({ length: 50 }, function (_, k) { return '<i style="--k:' + k + '"></i>'; }).join('');
+  var money = function (v) { return String(v).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+  var months = function (m) { return m + ' ' + (m === 3 ? 'месяца' : 'месяцев'); };
+  function paint() {
+    if (!PLANS[kind][plan]) plan = Object.keys(PLANS[kind])[0];
+    var list = PLANS[kind][plan]; if (!list[idx]) idx = 0;
+    var z = list[idx];
+    $kind.querySelectorAll('button').forEach(function (b) { b.classList.toggle('on', b.dataset.v === kind); });
+    $plan.querySelectorAll('button').forEach(function (b) { b.classList.toggle('on', b.dataset.v === plan); b.disabled = !PLANS[kind][b.dataset.v]; });
+    $zones.innerHTML = list.map(function (x, i) { return '<button data-i="' + i + '" class="' + (i === idx ? 'on' : '') + '">' + x[0] + '</button>'; }).join('');
+    $dots.querySelectorAll('i').forEach(function (d, k) { d.classList.toggle('on', k < z[0]); });
+    document.getElementById('per').textContent = money(z[1]);
+    document.getElementById('perNote').textContent = (kind === 'laser' ? 'лазерная эпиляция' : 'полимерный воск') + ' · ' + z[0] + ' зон в абонементе';
+    document.getElementById('tot').textContent = money(z[3]);
+    document.getElementById('term').textContent = months(z[2]);
+    document.getElementById('who').textContent = plan === 'ego' ? 'одному человеку' : 'на нескольких (можно и одному)';
+    var base = kind === 'laser' ? 1230 : 833, pct = Math.round((1 - z[1] / base) * 100);
+    document.getElementById('save').textContent = pct > 0 ? 'зона на ' + pct + '% дешевле, чем в самом маленьком абонементе' : 'самый короткий абонемент — попробовать';
+  }
+  [$kind, $plan].forEach(function (el) { el.addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b || b.disabled) return; if (el === $kind) kind = b.dataset.v; else plan = b.dataset.v; idx = 0; paint(); }); });
+  $zones.addEventListener('click', function (e) { var b = e.target.closest('button'); if (b) { idx = +b.dataset.i; paint(); } });
+  paint();
+
+  // tilt the club card with the pointer
+  var card = document.getElementById('card');
+  card.addEventListener('mousemove', function (e) { var r = card.getBoundingClientRect(); card.style.setProperty('--ty', ((e.clientX - r.left) / r.width - .5) * 16); card.style.setProperty('--tx', -((e.clientY - r.top) / r.height - .5) * 16); });
+  card.addEventListener('mouseleave', function () { card.style.setProperty('--tx', 0); card.style.setProperty('--ty', 0); });
+
+  // hero scan + rail highlight
+  var hero = document.querySelector('.hero'), stage = hero.querySelector('.stage'), ytag = document.getElementById('ytag');
+  var links = document.querySelectorAll('#index a');
+  RT.onScroll(function () {
+    var p = RT.motion ? RT.progress(hero) : 1, y = RT.clamp(p / .78) * 100;
+    stage.style.setProperty('--y', y + '%');
+    stage.style.setProperty('--beam', y >= 100 ? 0 : 1);
+    stage.style.setProperty('--hl', RT.ease(RT.clamp((p - .6) / .3)));
+    ytag.textContent = Math.round(y) + '%';
+    var cur = 'top';
+    ['abon', 'club', 'price', 'room', 'contact'].forEach(function (id) { if (document.getElementById(id).getBoundingClientRect().top < innerHeight * .45) cur = id; });
+    links.forEach(function (a) { a.classList.toggle('on', a.dataset.s === cur); });
+  });
+
+  window.REEL = {
+    hero: '.hero', heroAt: .42, feature: '#abon', featureOff: 120, featureM: '.calc', featureOffM: -70, prices: '#price', pricesOff: 0,
+    demo: [function () { kind = 'laser'; plan = 'ego'; idx = 2; paint(); }, function () { kind = 'laser'; plan = 'fr'; idx = 2; paint(); }, function () { kind = 'wax'; plan = 'fr'; idx = 1; paint(); }],
+    holds: [44, 50, 50]
+  };
+})();
+</script>
+</body>
+</html>

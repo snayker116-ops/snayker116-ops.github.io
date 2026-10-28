@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Сапфир — ювелирная мастерская · Нижний Новгород, проспект Ленина, 41</title>
+<meta name="description" content="Ювелирная мастерская «Сапфир» на проспекте Ленина, 41: срочный ремонт ювелирных изделий, изменение размера кольца, пайка цепочек, замки, вставка камней, полировка и чистка, авторские работы по эскизу. Вт–пт 10–19, сб 10–18.">
+<meta property="og:title" content="Сапфир — ювелирная мастерская на проспекте Ленина">
+<meta property="og:description" content="Срочный ремонт, размер кольца, цепочки, камни, авторские работы. Рейтинг 5,0.">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/16410529/2a00000198e819e09a5f29197c15cdf96056/XXXL">
+<meta name="theme-color" content="#0B1A3A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oranienbaum&amp;family=Didact+Gothic&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"JewelryStore","name":"Сапфир — ювелирная мастерская","telephone":"+7 950 627-06-53","address":{"@type":"PostalAddress","streetAddress":"просп. Ленина, 41","addressLocality":"Нижний Новгород","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":56.283605,"longitude":43.925022},"openingHours":["Tu-Fr 10:00-13:00","Tu-Fr 14:00-19:00","Sa 10:00-13:00","Sa 14:00-18:00"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","ratingCount":"124"}}</script>
+<style>
+:root {
+  --deep: #081430; --sap: #0F2559; --sap-2: #1B3A86; --gold: #D9B66C; --gold-2: #F2DCA2; --ivory: #F4EFE6; --mist: #9FB0D6;
+  --serif: 'Oranienbaum', 'Times New Roman', serif; --sans: 'Didact Gothic', system-ui, sans-serif;
+  --gut: clamp(18px, 4vw, 56px); --ease: cubic-bezier(.22, .7, .2, 1);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--deep); color: var(--ivory); font: 400 17.5px/1.7 var(--sans); overflow-x: hidden;
+  background-image: radial-gradient(1200px 800px at 50% -10%, rgba(27, 58, 134, .55), transparent 70%), radial-gradient(900px 700px at 100% 60%, rgba(15, 37, 89, .7), transparent 70%); background-attachment: fixed; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+button, input { font: inherit; color: inherit; }
+button { cursor: pointer; }
+section { scroll-margin-top: 30px; }
+.noimg { background: linear-gradient(135deg, var(--sap), var(--deep)) !important; }
+.noimg img, img.noimg { opacity: 0; }
+.gold { background: linear-gradient(100deg, #B8914A, var(--gold-2) 40%, #C9A25B 60%, var(--gold-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+/* jewellery-box menu: one button that fans the sections out */
+.box { position: fixed; left: 50%; bottom: 20px; z-index: 60; transform: translateX(-50%); }
+.box > button { position: relative; z-index: 2; width: 66px; height: 66px; border-radius: 50%; border: 1px solid var(--gold); background: radial-gradient(circle at 35% 30%, #23468F, var(--deep)); box-shadow: 0 10px 30px rgba(0, 0, 0, .5), inset 0 0 0 6px rgba(217, 182, 108, .15); color: var(--gold-2); font: 400 13px/1 var(--sans); letter-spacing: .1em; }
+.box a { position: absolute; left: 50%; bottom: 14px; z-index: 1; white-space: nowrap; transform: translate(-50%, 0) scale(.6); opacity: 0; pointer-events: none; padding: 10px 16px; border-radius: 99px; background: rgba(8, 20, 48, .92); border: 1px solid rgba(217, 182, 108, .5); text-decoration: none; font-size: 14px; color: var(--gold-2); transition: transform .5s var(--ease), opacity .4s; }
+.box.open a { opacity: 1; pointer-events: auto; transform: translate(calc(-50% + var(--x)), var(--y)) scale(1); }
+.top-call { position: fixed; right: var(--gut); top: 18px; z-index: 50; padding: 10px 16px; border-radius: 99px; border: 1px solid rgba(217, 182, 108, .55); text-decoration: none; font-size: 14px; color: var(--gold-2); background: rgba(8, 20, 48, .6); backdrop-filter: blur(8px); }
+.mark { position: fixed; left: var(--gut); top: 16px; z-index: 50; font: 400 24px/1 var(--serif); letter-spacing: .28em; text-decoration: none; }
+
+/* hero: a cut stone turns in the light while you scroll */
+.hero { position: relative; height: 240vh; }
+.stage { position: sticky; top: 0; height: 100vh; overflow: hidden; display: grid; place-items: center; }
+.gem { width: min(54vmin, 480px); aspect-ratio: 1; margin-top: -24vh; transform: rotate(calc(var(--p, 0) * 140deg)) scale(calc(.55 + var(--g, 0) * .45)); filter: drop-shadow(0 30px 80px rgba(27, 80, 220, .55)); }
+.gem svg { width: 100%; height: 100%; display: block; overflow: visible; }
+.gem .f { transition: fill .2s; stroke: rgba(210, 225, 255, .35); stroke-width: .6; }
+.spark { position: absolute; width: 18px; height: 18px; background: radial-gradient(circle, #fff 0 2px, transparent 3px), linear-gradient(#fff, #fff) 50% / 2px 100% no-repeat, linear-gradient(90deg, #fff, #fff) 50% / 100% 2px no-repeat; opacity: 0; filter: drop-shadow(0 0 6px #fff); }
+.lockup { position: absolute; left: 0; right: 0; bottom: 9vh; text-align: center; opacity: var(--t, 0); }
+.lockup h1 { margin: 0; font: 400 clamp(60px, 10vw, 160px)/.9 var(--serif); letter-spacing: calc(.6em - var(--t, 0) * .48em); text-transform: uppercase; }
+.lockup p { margin: 14px auto 0; max-width: 620px; padding: 0 20px; color: var(--mist); font-size: clamp(15px, 1.4vw, 19px); }
+.hint { position: absolute; top: 14vh; left: 0; right: 0; text-align: center; font-size: 13px; letter-spacing: .3em; text-transform: uppercase; color: var(--mist); opacity: calc(1 - var(--t, 0) * 2); }
+
+/* vitrine sections */
+.vit { max-width: 1120px; margin: 0 auto; padding: clamp(80px, 10vw, 130px) var(--gut); text-align: center; }
+.ov { font-size: 13px; letter-spacing: .34em; text-transform: uppercase; color: var(--gold); }
+.h2 { margin: 16px 0 0; font: 400 clamp(46px, 6.4vw, 96px)/1 var(--serif); }
+.lede { margin: 18px auto 0; max-width: 640px; color: var(--mist); font-size: 19px; }
+.rule { width: 140px; height: 1px; margin: 26px auto 0; background: linear-gradient(90deg, transparent, var(--gold), transparent); }
+[data-in] { opacity: 0; transform: translateY(26px); transition: opacity 1.1s var(--ease), transform 1.1s var(--ease); }
+[data-in].in { opacity: 1; transform: none; }
+.glass { background: linear-gradient(160deg, rgba(255, 255, 255, .08), rgba(255, 255, 255, .02)); border: 1px solid rgba(217, 182, 108, .35); border-radius: 22px; box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 30px 60px rgba(0, 0, 0, .35); backdrop-filter: blur(6px); }
+
+/* feature: ring size */
+.sizer { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0; margin-top: 46px; text-align: left; overflow: hidden; }
+.sizer .ctrl { padding: 34px; border-right: 1px solid rgba(217, 182, 108, .25); }
+.tabs { display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap; }
+.tabs button { border: 1px solid rgba(217, 182, 108, .45); background: transparent; border-radius: 99px; padding: 10px 16px; font-size: 14.5px; color: var(--gold-2); }
+.tabs button.on { background: var(--gold); color: var(--deep); }
+.how { color: var(--mist); font-size: 16px; margin: 0 0 20px; }
+.rng { width: 100%; accent-color: var(--gold); }
+.val { display: flex; justify-content: space-between; margin-top: 8px; font-size: 14px; color: var(--mist); }
+.val b { font: 400 30px/1 var(--serif); color: var(--ivory); }
+.sizer .out { padding: 34px; display: grid; justify-items: center; align-content: center; gap: 12px; text-align: center; }
+.ring { width: 220px; height: 220px; }
+.ring svg { width: 100%; height: 100%; overflow: visible; }
+.size b { display: block; font: 400 clamp(80px, 9vw, 120px)/.9 var(--serif); }
+.size span { display: block; font-size: 14px; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); }
+.adv { max-width: 380px; color: var(--mist); font-size: 15.5px; }
+
+/* services */
+.svc { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 46px; text-align: left; }
+.svc article { padding: 26px 24px; transition: transform .5s var(--ease), border-color .4s; }
+.svc article:hover { transform: translateY(-6px); border-color: var(--gold); }
+.svc svg { width: 40px; height: 40px; }
+.svc h3 { margin: 14px 0 6px; font: 400 27px/1.15 var(--serif); color: var(--gold-2); }
+.svc p { margin: 0; color: var(--mist); font-size: 15.5px; }
+.promise { margin-top: 30px; display: inline-flex; gap: 22px; flex-wrap: wrap; justify-content: center; padding: 16px 26px; }
+.promise span::before { content: "◆ "; color: var(--gold); }
+
+/* works */
+.works { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 46px; }
+.works figure { margin: 0; padding: 12px; }
+.works .im { aspect-ratio: 1; overflow: hidden; border-radius: 14px; background: var(--sap); }
+.works img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease); }
+.works figure:hover img { transform: scale(1.06); }
+.works figcaption { margin-top: 12px; font: 400 22px/1.2 var(--serif); color: var(--gold-2); }
+
+/* trust + visit */
+.trust { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 40px; }
+.trust div { padding: 26px; }
+.trust b { display: block; font: 400 64px/1 var(--serif); }
+.trust span { color: var(--mist); font-size: 15px; }
+.visit { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 0; margin-top: 40px; text-align: left; overflow: hidden; }
+.visit .info { padding: 32px; border-right: 1px solid rgba(217, 182, 108, .25); display: grid; gap: 18px; align-content: start; }
+.visit .k { font-size: 12.5px; letter-spacing: .24em; text-transform: uppercase; color: var(--gold); }
+.visit p { margin: 4px 0 0; font: 400 24px/1.3 var(--serif); }
+.visit a { text-decoration: none; }
+.st { font-size: 14px; color: var(--mist); }
+.st.is-open { color: #9BE3B6; }
+.mapbox { position: relative; min-height: 420px; overflow: hidden; }
+.mapbox iframe { position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 140px); border: 0; filter: invert(.92) hue-rotate(190deg) saturate(.7); }
+footer { padding: 30px var(--gut) 120px; text-align: center; font-size: 14px; color: var(--mist); }
+
+@media (max-width: 900px) {
+  .sizer, .visit { grid-template-columns: minmax(0, 1fr); }
+  .sizer .ctrl, .visit .info { border-right: 0; border-bottom: 1px solid rgba(217, 182, 108, .25); }
+  .svc, .works, .trust { grid-template-columns: minmax(0, 1fr); }
+  .works { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 700px) {
+  body { font-size: 16.5px; background-attachment: scroll; }
+  .mark { font-size: 18px; }
+  .top-call { font-size: 12.5px; padding: 8px 12px; }
+  .gem { width: 70vw; margin-top: -26vh; }
+  .lockup h1 { font-size: 15vw; }
+  .sizer .ctrl, .sizer .out { padding: 24px 20px; }
+  .ring { width: 170px; height: 170px; }
+}
+</style>
+</head>
+<body data-hours='{"2":[[10,0,13,0],[14,0,19,0]],"3":[[10,0,13,0],[14,0,19,0]],"4":[[10,0,13,0],[14,0,19,0]],"5":[[10,0,13,0],[14,0,19,0]],"6":[[10,0,13,0],[14,0,18,0]]}'>
+
+<a class="mark gold" href="#top">САПФИР</a>
+<a class="top-call" href="tel:+79506270653">+7 950 627-06-53</a>
+<div class="box" id="box">
+  <a href="#size" style="--x:-180px;--y:-96px">Размер кольца</a>
+  <a href="#services" style="--x:-90px;--y:-150px">Услуги</a>
+  <a href="#works" style="--x:0px;--y:-176px">Работы</a>
+  <a href="#trust" style="--x:90px;--y:-150px">Отзывы</a>
+  <a href="#visit" style="--x:180px;--y:-96px">Адрес</a>
+  <button id="boxBtn" aria-expanded="false" aria-label="Открыть разделы">меню</button>
+</div>
+
+<header class="hero" id="top">
+  <div class="stage">
+    <div class="hint">Ювелирная мастерская · листайте</div>
+    <div class="gem" id="gem"><svg viewBox="-110 -110 220 220" id="gsvg" aria-hidden="true"></svg></div>
+    <div class="lockup">
+      <h1 class="gold">Сапфир</h1>
+      <p>Ювелирная мастерская на проспекте Ленина, 41. Срочный ремонт, размер кольца, цепочки и замки, камни, полировка — и авторские работы по эскизу мастера.</p>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="vit" id="size">
+  <span class="ov">Фишка мастерской</span>
+  <h2 class="h2" data-in>Узнайте <span class="gold">размер кольца</span></h2>
+  <p class="lede" data-in>Оберните палец ниткой или измерьте кольцо, которое подходит. В России размер кольца — это его внутренний диаметр в миллиметрах.</p>
+  <div class="sizer glass" data-in>
+    <div class="ctrl">
+      <div class="tabs" id="mode"><button data-m="c" class="on">По нитке на пальце</button><button data-m="d">По диаметру кольца</button></div>
+      <p class="how" id="how"></p>
+      <input class="rng" id="rng" type="range" aria-label="Значение в миллиметрах">
+      <div class="val"><span id="vmin"></span><b id="vcur"></b><span id="vmax"></span></div>
+    </div>
+    <div class="out" aria-live="polite">
+      <div class="ring"><svg viewBox="-110 -110 220 220"><defs><linearGradient id="rg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#F2DCA2"/><stop offset=".5" stop-color="#B8914A"/><stop offset="1" stop-color="#F2DCA2"/></linearGradient></defs><circle id="ringC" r="80" fill="none" stroke="url(#rg)" stroke-width="16"/><line id="dia" x1="-72" x2="72" y1="0" y2="0" stroke="#9FB0D6" stroke-dasharray="4 4"/><text id="diaT" x="0" y="-8" text-anchor="middle" fill="#9FB0D6" font-size="12"></text><polygon points="0,-112 9,-98 0,-90 -9,-98" fill="#2B5AD8" stroke="#D2E0FF" stroke-width="1"/></svg></div>
+      <div class="size"><span>ваш размер</span><b id="sz">17</b></div>
+      <p class="adv" id="adv"></p>
+    </div>
+  </div>
+</section>
+
+<section class="vit" id="services">
+  <span class="ov">Что делаем</span>
+  <h2 class="h2" data-in>Ремонт — <span class="gold">срочно</span>,<br>авторские работы — с душой</h2>
+  <div class="svc">
+    <article class="glass" data-in><svg viewBox="0 0 40 40"><circle cx="20" cy="22" r="12" fill="none" stroke="#D9B66C" stroke-width="2"/><path d="M14 9 L20 4 L26 9 L20 13 Z" fill="#2B5AD8" stroke="#D2E0FF"/></svg><h3>Размер кольца</h3><p>Уменьшим или увеличим. В отзывах — раскатали обручальное кольцо с бриллиантом и гравировкой за 20 минут.</p></article>
+    <article class="glass" data-in><svg viewBox="0 0 40 40"><path d="M6 20 C 10 12, 16 12, 20 20 S 30 28, 34 20" fill="none" stroke="#D9B66C" stroke-width="2"/><circle cx="6" cy="20" r="3" fill="#D9B66C"/><circle cx="34" cy="20" r="3" fill="#D9B66C"/></svg><h3>Цепочки и браслеты</h3><p>Паяем порвавшиеся цепочки, чиним и подтягиваем замки.</p></article>
+    <article class="glass" data-in><svg viewBox="0 0 40 40"><polygon points="20,6 32,16 20,34 8,16" fill="#1B3A86" stroke="#D2E0FF"/><path d="M8 16 H32 M14 16 L20 6 L26 16 L20 34 Z" fill="none" stroke="#D2E0FF" stroke-width=".8"/></svg><h3>Вставка камней</h3><p>Возвращаем выпавший камень на место и закрепляем.</p></article>
+    <article class="glass" data-in><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="10" fill="none" stroke="#D9B66C" stroke-width="2"/><path d="M8 8 L12 12 M32 8 L28 12 M8 32 L12 28 M32 32 L28 28" stroke="#F2DCA2" stroke-width="2"/></svg><h3>Полировка и чистка</h3><p>После чистки кольцо «стало как новое» — из отзыва.</p></article>
+    <article class="glass" data-in><svg viewBox="0 0 40 40"><path d="M8 32 L26 14 M24 8 L32 16 L28 20 L20 12 Z" fill="none" stroke="#D9B66C" stroke-width="2"/></svg><h3>Авторские работы</h3><p>Изделия по эскизу мастера, в том числе с бриллиантами, и подвески на заказ.</p></article>
+    <article class="glass" data-in><svg viewBox="0 0 40 40"><circle cx="13" cy="22" r="7" fill="none" stroke="#D9B66C" stroke-width="2"/><circle cx="27" cy="22" r="7" fill="none" stroke="#D9B66C" stroke-width="2"/><path d="M20 22 H20" stroke="#D9B66C"/></svg><h3>Очки и часы</h3><p>На вывеске мастерской — ещё ремонт очков и часов.</p></article>
+  </div>
+  <div class="promise glass" data-in><span>Стоимость и сроки — сразу</span><span>Квитанция и чек</span><span>Бывает, готово раньше срока</span></div>
+  <p class="lede" style="font-size:15px">Прайса на Яндекс Картах нет: цену мастер называет, посмотрев изделие.</p>
+</section>
+
+<section class="vit" id="works">
+  <span class="ov">Из карточки мастерской</span>
+  <h2 class="h2" data-in>Работы <span class="gold">мастера</span></h2>
+  <div class="works">
+    <figure class="glass" data-in><div class="im" data-ph><img src="https://avatars.mds.yandex.net/get-altay/16410529/2a00000198e819e09a5f29197c15cdf96056/XL" alt="Золотая цепь с подвеской-сердцами" loading="lazy" referrerpolicy="no-referrer"></div><figcaption>Подвеска с камнями</figcaption></figure>
+    <figure class="glass" data-in><div class="im" data-ph><img src="https://avatars.mds.yandex.net/get-altay/11937297/2a0000018e2f7ccd310584a47dea6712ad64/XL" alt="Кольцо после ремонта" loading="lazy" referrerpolicy="no-referrer"></div><figcaption>Кольцо после ремонта</figcaption></figure>
+    <figure class="glass" data-in><div class="im" data-ph><img src="https://avatars.mds.yandex.net/get-altay/16374562/2a00000198e819fab00c6b03c084e8be5cbb/XL" alt="Подвеска на заказ" loading="lazy" referrerpolicy="no-referrer"></div><figcaption>Подвеска на заказ</figcaption></figure>
+  </div>
+</section>
+
+<section class="vit" id="trust">
+  <span class="ov">Отзывы</span>
+  <h2 class="h2" data-in>Пять <span class="gold">лет</span> подряд — к одному мастеру</h2>
+  <p class="lede" data-in>Так пишет одна из постоянных клиенток. А вот общие оценки на Яндекс Картах:</p>
+  <div class="trust">
+    <div class="glass" data-in><b class="gold">5,0</b><span>124 оценки · 70 отзывов</span></div>
+    <div class="glass" data-in><b class="gold">30/31</b><span>отзыв о сроках — положительный</span></div>
+    <div class="glass" data-in><b class="gold">42/50</b><span>отзыва хвалят мастера</span></div>
+  </div>
+</section>
+
+<section class="vit" id="visit">
+  <span class="ov">Адрес</span>
+  <h2 class="h2" data-in>Проспект <span class="gold">Ленина, 41</span></h2>
+  <div class="visit glass" data-in>
+    <div class="info">
+      <div><span class="k">Адрес</span><p>Нижний Новгород,<br>просп. Ленина, 41</p></div>
+      <div><span class="k">Часы</span><p>Вт–пт 10:00–19:00<br>Сб 10:00–18:00</p><span class="st">Перерыв 13:00–14:00 · вс, пн — выходные</span><br><span class="st" data-status>часы</span></div>
+      <div><span class="k">Телефоны</span><p><a href="tel:+79506270653">+7 950 627-06-53</a><br><a href="tel:+79290507954">+7 929 050-79-54</a><br><a href="tel:+78312127901">+7 831 212-79-01</a></p></div>
+    </div>
+    <div class="mapbox"><iframe src="https://yandex.ru/map-widget/v1/?ll=43.925022%2C56.283605&amp;z=16&amp;pt=43.925022%2C56.283605%2Cpm2dbm&amp;l=map" title="«Сапфир» на Яндекс Картах" loading="lazy" allowfullscreen></iframe></div>
+  </div>
+</section>
+</main>
+
+<footer>Сапфир · ювелирная мастерская · Нижний Новгород, просп. Ленина, 41 · <a href="https://yandex.ru/maps/org/sapfir/1202003835/" target="_blank" rel="noopener">Яндекс Карты</a></footer>
+
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  // build a brilliant-cut stone (top view): table, star facets, kite facets, girdle facets
+  var NS = 'http://www.w3.org/2000/svg', g = document.getElementById('gsvg'), facets = [];
+  var P = function (r, a) { return [r * Math.cos(a), r * Math.sin(a)]; }, N = 8, T = 44, S = 72, G = 100;
+  function poly(pts, base) { var el = document.createElementNS(NS, 'polygon'); el.setAttribute('points', pts.map(function (p) { return p.join(','); }).join(' ')); el.setAttribute('class', 'f'); g.appendChild(el); facets.push([el, base]); }
+  var table = []; for (var i = 0; i < N; i++) table.push(P(T, i / N * Math.PI * 2));
+  poly(table, Math.PI / 4);
+  for (i = 0; i < N; i++) {
+    var a0 = i / N * Math.PI * 2, a1 = (i + 1) / N * Math.PI * 2, am = (a0 + a1) / 2;
+    poly([P(T, a0), P(T, a1), P(S, am)], am);
+    poly([P(T, a1), P(S, am), P(G, a1), P(S, am + Math.PI / N * 2)], a1);
+    poly([P(S, am), P(G, a0 + (a1 - a0) / 2), P(G, a1)], am + .2);
+    poly([P(S, am), P(G, a0), P(G, a0 + (a1 - a0) / 2)], am - .2);
+  }
+  var ring = document.createElementNS(NS, 'circle'); ring.setAttribute('r', G); ring.setAttribute('fill', 'none'); ring.setAttribute('stroke', 'rgba(217,182,108,.6)'); ring.setAttribute('stroke-width', '1.2'); g.appendChild(ring);
+  function light(angle) {
+    facets.forEach(function (f) { var k = (Math.cos(f[1] - angle) + 1) / 2, l = 18 + k * 50, s = 75 + k * 10; f[0].setAttribute('fill', 'hsl(' + (222 - k * 8) + ' ' + s + '% ' + l + '%)'); });
+  }
+  // sparkles around the stone
+  var stage = document.querySelector('.hero .stage'), sparks = [];
+  for (i = 0; i < 7; i++) { var s = document.createElement('i'); s.className = 'spark'; s.style.left = (30 + Math.random() * 40) + '%'; s.style.top = (25 + Math.random() * 40) + '%'; stage.appendChild(s); sparks.push([s, Math.random() * 6.28]); }
+  var t0 = RT.now();
+  RT.loop(function (t) { var k = (t - t0) / 1000; sparks.forEach(function (sp, j) { var v = Math.max(0, Math.sin(k * 1.6 + sp[1] * 3)); sp[0].style.opacity = Math.pow(v, 6); sp[0].style.transform = 'scale(' + (.5 + Math.pow(v, 6)) + ') rotate(' + (k * 40 + j * 20) + 'deg)'; }); });
+
+  var hero = document.querySelector('.hero');
+  RT.onScroll(function () {
+    var p = RT.motion ? RT.progress(hero) : 1;
+    stage.style.setProperty('--p', p);
+    stage.style.setProperty('--g', RT.ease(RT.clamp(p / .5)));
+    stage.style.setProperty('--t', RT.ease(RT.clamp((p - .5) / .3)));
+    light(-Math.PI / 2 + p * Math.PI * 3);
+  });
+
+  // jewellery-box menu
+  var box = document.getElementById('box'), btn = document.getElementById('boxBtn');
+  btn.addEventListener('click', function () { var o = box.classList.toggle('open'); btn.setAttribute('aria-expanded', o); btn.textContent = o ? '✕' : 'меню'; });
+  box.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { box.classList.remove('open'); btn.textContent = 'меню'; }); });
+
+  // ring size: Russian size = inner diameter in mm
+  var mode = 'c', val = 54, rng = document.getElementById('rng');
+  function setMode(m) {
+    mode = m;
+    document.querySelectorAll('#mode button').forEach(function (b) { b.classList.toggle('on', b.dataset.m === m); });
+    if (m === 'c') { rng.min = 44; rng.max = 75; rng.step = 1; document.getElementById('how').textContent = 'Плотно оберните ниткой основание пальца, отметьте и измерьте длину линейкой.'; if (val < 44) val = Math.round(val * Math.PI); }
+    else { rng.min = 14; rng.max = 24; rng.step = .5; document.getElementById('how').textContent = 'Положите кольцо на линейку и измерьте внутренний диаметр — от края до края внутри.'; if (val > 30) val = Math.round(val / Math.PI * 2) / 2; }
+    document.getElementById('vmin').textContent = rng.min + ' мм'; document.getElementById('vmax').textContent = rng.max + ' мм';
+    rng.value = val; paint();
+  }
+  function paint() {
+    val = +rng.value;
+    var d = mode === 'c' ? val / Math.PI : val, size = Math.round(d * 2) / 2;
+    document.getElementById('vcur').textContent = (mode === 'c' ? val + ' мм по нитке' : val.toString().replace('.', ',') + ' мм');
+    document.getElementById('sz').textContent = String(size).replace('.', ',');
+    var r = 50 + (d - 14) / 10 * 40;
+    document.getElementById('ringC').setAttribute('r', r);
+    document.getElementById('dia').setAttribute('x1', -r + 8); document.getElementById('dia').setAttribute('x2', r - 8);
+    document.getElementById('diaT').textContent = '⌀ ' + d.toFixed(1).replace('.', ',') + ' мм';
+    document.getElementById('adv').textContent = 'Кольцо не того размера? Мастер уменьшит или увеличит его — принесите кольцо и назовите размер ' + String(size).replace('.', ',') + '.';
+  }
+  document.getElementById('mode').addEventListener('click', function (e) { var b = e.target.closest('button'); if (b) setMode(b.dataset.m); });
+  rng.addEventListener('input', paint);
+  setMode('c');
+
+  window.REEL = {
+    hero: '.hero', heroAt: .72, feature: '#size', featureOff: 170, featureM: '.sizer', featureOffM: -70, prices: '#services', pricesOff: 80,
+    demo: [function () { rng.value = 52; paint(); }, function () { rng.value = 58; paint(); }, function () { setMode('d'); rng.value = 17.5; paint(); }],
+    holds: [40, 40, 50]
+  };
+})();
+</script>
+</body>
+</html>

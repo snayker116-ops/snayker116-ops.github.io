@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Хвостунишки — груминг собак и кошек · Нижний Новгород, Бориса Корнилова, 5</title>
+<meta name="description" content="Зоосалон «Хвостунишки» в Нижнем Новгороде: комплекс и гигиена для собак от 1 900 ₽, кошки от 1 500 ₽, стрижка когтей 300 ₽, чистка зубов 300 ₽. Ежедневно 10:00–20:00. Школа груминга, подарочные сертификаты.">
+<meta property="og:title" content="Хвостунишки — груминг в Нижнем Новгороде">
+<meta property="og:description" content="Шпицы, йорки, пудели, кошки. Ежедневно 10–20. Рейтинг 5,0.">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/16494614/2a0000019b5353c75fce338a2d36359b3b4a/XXXL">
+<meta name="theme-color" content="#FF8A1F">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&amp;family=Montserrat+Alternates:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"PetStore","name":"Хвостунишки — зоосалон","telephone":"+7 905 011-38-73","priceRange":"300–3300 ₽","address":{"@type":"PostalAddress","streetAddress":"ул. Бориса Корнилова, 5, корп. 1","addressLocality":"Нижний Новгород","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":56.299831,"longitude":44.04289},"openingHours":"Mo-Su 10:00-20:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","ratingCount":"94"}}</script>
+<style>
+:root {
+  --orange: #FF8A1F; --orange-2: #FFB25E; --cream: #FFF4E6; --choc: #3B2416; --choc-2: #6B4A36; --teal: #17A39C; --pink: #FF6F91; --white: #FFFFFF;
+  --round: 'Comfortaa', system-ui, sans-serif; --sans: 'Montserrat Alternates', system-ui, sans-serif;
+  --gut: clamp(18px, 4vw, 60px); --pop: cubic-bezier(.3, 1.6, .5, 1); --ease: cubic-bezier(.2, .8, .2, 1);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--cream); color: var(--choc); font: 500 16.5px/1.6 var(--sans); overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+button, input { font: inherit; color: inherit; }
+button { cursor: pointer; }
+section { scroll-margin-top: 0; }
+.noimg { background: var(--orange-2) !important; }
+.noimg img, img.noimg { opacity: 0; }
+
+/* dot navigation on the right */
+.dots { position: fixed; right: 18px; top: 50%; z-index: 50; transform: translateY(-50%); display: grid; gap: 12px; }
+.dots a { position: relative; display: block; width: 16px; height: 16px; border-radius: 50%; background: var(--white); box-shadow: 0 0 0 3px var(--choc); transition: transform .3s var(--pop), background .3s; }
+.dots a.on { background: var(--teal); transform: scale(1.3); }
+.dots a span { position: absolute; right: 28px; top: 50%; transform: translateY(-50%) translateX(8px); white-space: nowrap; background: var(--choc); color: var(--cream); padding: 6px 10px; border-radius: 99px; font: 700 12px/1 var(--sans); opacity: 0; pointer-events: none; transition: opacity .3s, transform .3s var(--ease); }
+.dots a:hover span { opacity: 1; transform: translateY(-50%); }
+.paw { position: fixed; right: 18px; bottom: 18px; z-index: 50; display: flex; align-items: center; gap: 10px; padding: 14px 20px 14px 14px; border-radius: 99px; background: var(--choc); color: var(--cream); text-decoration: none; font: 700 15px/1 var(--sans); box-shadow: 0 12px 30px rgba(59, 36, 22, .35); transition: transform .3s var(--pop); }
+.paw:hover { transform: scale(1.05) rotate(-2deg); }
+.paw svg { width: 26px; height: 26px; }
+.brand { position: fixed; left: var(--gut); top: 18px; z-index: 50; padding: 10px 16px; background: var(--white); border-radius: 99px; box-shadow: 0 6px 18px rgba(59, 36, 22, .18); font: 700 17px/1 var(--round); text-decoration: none; transform: rotate(-2deg); }
+.brand span { color: var(--orange); }
+
+/* hero: pets fly in as stickers and slap onto the orange board */
+.hero { position: relative; height: 250vh; background: var(--orange); }
+.stage { position: sticky; top: 0; height: 100vh; overflow: hidden; }
+.stage::before { content: ""; position: absolute; inset: 0; background-image: radial-gradient(rgba(255, 255, 255, .22) 2px, transparent 2.5px); background-size: 30px 30px; }
+.stk { position: absolute; width: var(--w); aspect-ratio: 1; padding: 9px; background: var(--white); border-radius: 28px; box-shadow: 0 calc(var(--s, 1) * 18px) calc(var(--s, 1) * 34px) rgba(90, 40, 0, .35);
+  transform: translate(calc((1 - var(--k, 0)) * var(--fx, 0) * 1vw), calc((1 - var(--k, 0)) * -110vh)) rotate(calc(var(--r) + (1 - var(--k, 0)) * var(--rr, 40deg))) scale(calc(1 + (1 - var(--k, 0)) * .5)); }
+.stk img { width: 100%; height: 100%; object-fit: cover; border-radius: 20px; }
+.stk.round { border-radius: 50%; } .stk.round img { border-radius: 50%; }
+.s1 { --w: clamp(150px, 19vw, 300px); left: 6vw; top: 12vh; --r: -8deg; --fx: -20; }
+.s2 { --w: clamp(130px, 16vw, 250px); left: 22vw; top: 62vh; --r: 6deg; --fx: 10; --rr: -40deg; }
+.s3 { --w: clamp(140px, 17vw, 270px); right: 8vw; top: 10vh; --r: 9deg; --fx: 30; }
+.s4 { --w: clamp(120px, 14vw, 220px); right: 22vw; top: 60vh; --r: -5deg; --fx: -10; --rr: -30deg; }
+.s5 { --w: clamp(110px, 12vw, 190px); left: 4vw; bottom: 6vh; --r: 4deg; --fx: -30; }
+.s6 { --w: clamp(110px, 12vw, 190px); right: 4vw; bottom: 8vh; --r: -9deg; --fx: 20; }
+.title { position: absolute; left: 0; right: 0; top: 34vh; z-index: 5; text-align: center; color: var(--white); pointer-events: none; }
+.title h1 { margin: 0; font: 700 clamp(54px, 10vw, 170px)/.9 var(--round); letter-spacing: -.02em; text-shadow: 0 6px 0 var(--choc), 0 18px 40px rgba(90, 40, 0, .35); }
+.title h1 .ch { display: inline-block; transform: translateY(calc((1 - var(--t, 0)) * 120px)) scale(calc(.4 + var(--t, 0) * .6)); opacity: var(--t, 0); transition: none; }
+.title p { margin: 20px auto 0; max-width: 560px; padding: 12px 20px; background: var(--choc); color: var(--cream); border-radius: 18px; font-weight: 600; opacity: var(--t2, 0); transform: rotate(-1.5deg) translateY(calc((1 - var(--t2, 0)) * 20px)); }
+
+/* sections */
+[data-in] { opacity: 0; transform: scale(.92) rotate(-1.5deg); transition: opacity .7s var(--ease), transform .8s var(--pop); }
+[data-in].in { opacity: 1; transform: none; }
+.slide { min-height: 100vh; padding: clamp(80px, 10vw, 130px) var(--gut); position: relative; }
+.h2 { margin: 0; font: 700 clamp(40px, 6vw, 92px)/1 var(--round); letter-spacing: -.02em; }
+.h2 mark { background: none; color: var(--orange); }
+.sub { margin: 16px 0 0; font-size: 19px; max-width: 620px; color: var(--choc-2); }
+
+/* feature: grooming ticket */
+.tal { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .85fr); gap: clamp(26px, 4vw, 60px); margin-top: 40px; align-items: start; }
+.step { margin-bottom: 22px; }
+.step h4 { margin: 0 0 10px; font: 700 13px/1 var(--sans); letter-spacing: .1em; text-transform: uppercase; color: var(--teal); }
+.pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.pill { border: 0; border-radius: 99px; padding: 11px 16px; background: var(--white); box-shadow: 0 0 0 2px rgba(59, 36, 22, .12); font: 600 14.5px/1 var(--sans); transition: transform .3s var(--pop), background .3s, color .3s; }
+.pill:hover { transform: translateY(-2px) rotate(-1deg); }
+.pill.on { background: var(--choc); color: var(--cream); box-shadow: none; }
+.pill.add.on { background: var(--teal); }
+.pill:disabled { opacity: .35; cursor: default; }
+.name { width: 100%; max-width: 360px; border: 0; border-radius: 16px; padding: 14px 16px; background: var(--white); box-shadow: 0 0 0 2px rgba(59, 36, 22, .12); font: 600 16px/1 var(--sans); }
+.name:focus { outline: 3px solid var(--teal); }
+.ticket { position: sticky; top: 90px; background: var(--white); border-radius: 26px; padding: 26px 26px 22px; box-shadow: 0 30px 60px rgba(59, 36, 22, .18); overflow: hidden; }
+.ticket::before, .ticket::after { content: ""; position: absolute; top: 152px; width: 34px; height: 34px; border-radius: 50%; background: var(--cream); }
+.ticket::before { left: -17px; } .ticket::after { right: -17px; }
+.ticket .top { display: flex; gap: 16px; align-items: center; padding-bottom: 22px; border-bottom: 3px dashed rgba(59, 36, 22, .15); min-height: 130px; }
+.ticket .ava { flex: 0 0 96px; height: 96px; border-radius: 50%; overflow: hidden; background: var(--orange-2); box-shadow: 0 0 0 5px var(--orange); }
+.ticket .ava img { width: 100%; height: 100%; object-fit: cover; }
+.ticket .who small { display: block; font: 700 12px/1 var(--sans); letter-spacing: .1em; text-transform: uppercase; color: var(--teal); }
+.ticket .who b { display: block; margin-top: 6px; font: 700 28px/1.05 var(--round); }
+.ticket .who span { display: block; margin-top: 4px; color: var(--choc-2); font-size: 14.5px; }
+.ticket ul { list-style: none; padding: 18px 0 0; margin: 0; }
+.ticket li { display: flex; justify-content: space-between; gap: 12px; padding: 7px 0; font-size: 15px; }
+.ticket li b { white-space: nowrap; }
+.ticket .sum { display: flex; justify-content: space-between; align-items: baseline; margin-top: 12px; padding-top: 14px; border-top: 3px solid var(--choc); }
+.ticket .sum b { font: 700 40px/1 var(--round); color: var(--orange); }
+.ticket .go { display: block; margin-top: 18px; text-align: center; padding: 16px; border-radius: 16px; background: var(--teal); color: var(--white); text-decoration: none; font-weight: 800; transition: transform .3s var(--pop); }
+.ticket .go:hover { transform: scale(1.03); }
+.ticket .fine { margin: 10px 0 0; font-size: 12.5px; color: var(--choc-2); text-align: center; }
+
+/* prices */
+.price { background: var(--choc); color: var(--cream); }
+.price .h2 mark { color: var(--orange-2); }
+.price .sub { color: rgba(255, 244, 230, .7); }
+.breeds { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 40px; }
+.br { background: rgba(255, 255, 255, .06); border: 2px solid rgba(255, 255, 255, .1); border-radius: 20px; padding: 16px 16px 14px; transition: transform .3s var(--pop), background .3s; }
+.br:hover { transform: translateY(-4px) rotate(-1deg); background: rgba(255, 138, 31, .14); }
+.br b { display: block; font: 700 17px/1.25 var(--round); }
+.br div { display: flex; gap: 14px; margin-top: 10px; font-size: 13px; color: rgba(255, 244, 230, .65); }
+.br div span b { display: inline; font: 800 17px/1 var(--sans); color: var(--orange-2); white-space: nowrap; }
+.cats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; margin-top: 26px; }
+.box { background: var(--cream); color: var(--choc); border-radius: 24px; padding: 24px 26px; }
+.box h3 { margin: 0 0 10px; font: 700 24px/1.1 var(--round); }
+.box .ln { display: flex; justify-content: space-between; gap: 12px; padding: 9px 0; border-top: 2px dashed rgba(59, 36, 22, .14); }
+.box .ln b { white-space: nowrap; }
+.note { margin-top: 18px; font-size: 14px; color: rgba(255, 244, 230, .6); }
+
+/* stars */
+.sheet { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 26px; margin-top: 50px; }
+.star { position: relative; aspect-ratio: 1; background: var(--white); padding: 10px; border-radius: 30px; box-shadow: 0 16px 30px rgba(59, 36, 22, .16); transform: rotate(var(--r)); transition: transform .4s var(--pop); }
+.star:hover { transform: rotate(0) scale(1.05); }
+.star:nth-child(2n) { border-radius: 50%; } .star:nth-child(2n) img { border-radius: 50%; }
+.star img { width: 100%; height: 100%; object-fit: cover; border-radius: 22px; }
+.star span { position: absolute; left: 50%; bottom: -14px; transform: translateX(-50%) rotate(-3deg); background: var(--orange); color: var(--white); padding: 6px 12px; border-radius: 99px; font: 700 13px/1 var(--sans); white-space: nowrap; }
+
+/* info */
+.info { background: var(--teal); color: var(--white); }
+.info .h2 mark { color: var(--choc); }
+.perks { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 40px; }
+.perk { background: rgba(255, 255, 255, .14); border-radius: 22px; padding: 22px; }
+.perk b { display: block; font: 700 22px/1.15 var(--round); }
+.perk span { display: block; margin-top: 6px; opacity: .85; }
+.rate { display: flex; align-items: center; gap: 22px; margin-top: 30px; flex-wrap: wrap; }
+.rate b { font: 700 clamp(70px, 9vw, 130px)/1 var(--round); color: var(--choc); }
+.cgrid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 22px; margin-top: 40px; }
+.card { background: var(--white); color: var(--choc); border-radius: 26px; padding: 26px; }
+.card h4 { margin: 18px 0 4px; font: 700 13px/1 var(--sans); letter-spacing: .1em; text-transform: uppercase; color: var(--teal); }
+.card h4:first-child { margin-top: 0; }
+.card p { margin: 0; font-size: 18px; font-weight: 600; }
+.card a { text-decoration: none; }
+.st { display: inline-block; margin-top: 10px; padding: 6px 12px; border-radius: 99px; background: var(--cream); font: 700 13px/1 var(--sans); }
+.st.is-open { background: #DDF6EE; color: #0E7A55; }
+.mapbox { position: relative; min-height: 400px; border-radius: 26px; overflow: hidden; background: var(--white); }
+.mapbox iframe { position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 140px); border: 0; }
+footer { background: var(--choc); color: rgba(255, 244, 230, .7); padding: 28px var(--gut) 100px; font-size: 14px; text-align: center; }
+
+@media (max-width: 1000px) { .breeds { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 900px) {
+  .tal, .cgrid, .cats { grid-template-columns: minmax(0, 1fr); }
+  .ticket { position: relative; top: 0; }
+  .perks { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 700px) {
+  body { font-size: 15.5px; }
+  .dots { display: none; }
+  .paw { padding: 12px 16px 12px 12px; font-size: 14px; }
+  .s1 { left: -4vw; top: 10vh; } .s3 { right: -4vw; top: 12vh; } .s2 { left: 6vw; top: 62vh; } .s4 { right: 4vw; top: 60vh; } .s5, .s6 { display: none; }
+  .title { top: 38vh; }
+  .title h1 { font-size: 12.4vw; }
+  .title p { margin: 14px 18px 0; font-size: 14.5px; }
+  .breeds { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .br { padding: 14px 12px 12px; }
+  .br div { flex-direction: column; gap: 4px; }
+  .sheet { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+  .slide { min-height: 0; }
+  .ticket .who b { font-size: 24px; }
+  .mapbox { min-height: 320px; }
+}
+</style>
+</head>
+<body data-hours='{"0":[[10,0,20,0]],"1":[[10,0,20,0]],"2":[[10,0,20,0]],"3":[[10,0,20,0]],"4":[[10,0,20,0]],"5":[[10,0,20,0]],"6":[[10,0,20,0]]}'>
+
+<a class="brand" href="#top">Хвост<span>унишки</span></a>
+<nav class="dots" aria-label="Разделы">
+  <a href="#top" data-s="top"><span>Привет!</span></a>
+  <a href="#talon" data-s="talon"><span>Талон на груминг</span></a>
+  <a href="#price" data-s="price"><span>Цены</span></a>
+  <a href="#stars" data-s="stars"><span>Наши звёзды</span></a>
+  <a href="#info" data-s="info"><span>Адрес и запись</span></a>
+</nav>
+<a class="paw" href="tel:+79050113873"><svg viewBox="0 0 40 40" aria-hidden="true"><g fill="#FFB25E"><ellipse cx="20" cy="27" rx="9" ry="7.5"/><circle cx="9.5" cy="18" r="4.2"/><circle cx="15.5" cy="10.5" r="4.2"/><circle cx="24.5" cy="10.5" r="4.2"/><circle cx="30.5" cy="18" r="4.2"/></g></svg>Записать питомца</a>
+
+<header class="hero" id="top">
+  <div class="stage">
+    <div class="stk s1" data-ph><img src="https://avatars.mds.yandex.net/get-altay/16494614/2a0000019b5353c75fce338a2d36359b3b4a/XL" alt="Шпиц после стрижки" referrerpolicy="no-referrer" fetchpriority="high"></div>
+    <div class="stk round s2" data-ph><img src="https://avatars.mds.yandex.net/get-altay/16873746/2a0000019914dbff82e4f3a3c0fd0b994246/XL" alt="Кошка после стрижки «лев»" referrerpolicy="no-referrer"></div>
+    <div class="stk s3" data-ph><img src="https://avatars.mds.yandex.net/get-altay/16542720/2a000001964350b138397d86c3977c2dbebc/XL" alt="Йоркширский терьер после груминга" referrerpolicy="no-referrer"></div>
+    <div class="stk round s4" data-ph><img src="https://avatars.mds.yandex.net/get-altay/17788144/2a0000019bd67fcecfd2ed4a86a978bc81dd/XL" alt="Той-пудель на лежанке" referrerpolicy="no-referrer"></div>
+    <div class="stk s5" data-ph><img src="https://avatars.mds.yandex.net/get-altay/16243748/2a000001970b3e8dad2c0a60772f96f1b246/L" alt="Белый шпиц на прогулке" referrerpolicy="no-referrer"></div>
+    <div class="stk round s6" data-ph><img src="https://avatars.mds.yandex.net/get-altay/14076755/2a00000196cecb5638e9e742c25f073f81a2/L" alt="Папийон в поле" referrerpolicy="no-referrer"></div>
+    <div class="title">
+      <h1 data-split>Хвостунишки</h1>
+      <p>Зоосалон для собак и кошек на Бориса Корнилова · каждый день с 10 до 20</p>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="slide" id="talon">
+  <h2 class="h2" data-in>Соберите <mark>талон</mark><br>на груминг</h2>
+  <p class="sub" data-in>Выберите питомца и услугу — талон посчитает цену по прайсу салона и подготовит сообщение для записи.</p>
+  <div class="tal">
+    <div>
+      <div class="step"><h4>1 · Кто придёт</h4><div class="pills" id="kind"></div></div>
+      <div class="step"><h4>2 · Порода</h4><div class="pills" id="breed"></div></div>
+      <div class="step"><h4>3 · Услуга</h4><div class="pills" id="svc"></div></div>
+      <div class="step"><h4>4 · Добавить</h4><div class="pills" id="adds"></div></div>
+      <div class="step"><h4>5 · Как зовут питомца</h4><input class="name" id="pname" maxlength="24" placeholder="например, Бусинка" aria-label="Кличка питомца"></div>
+    </div>
+    <aside class="ticket" aria-live="polite">
+      <div class="top">
+        <div class="ava" data-ph><img id="ava" src="https://avatars.mds.yandex.net/get-altay/16494614/2a0000019b5353c75fce338a2d36359b3b4a/M" alt="" referrerpolicy="no-referrer"></div>
+        <div class="who"><small>Талон на груминг</small><b id="tname">Ваш питомец</b><span id="tbreed">Шпиц · комплекс</span></div>
+      </div>
+      <ul id="tlist"></ul>
+      <div class="sum"><span>Итого по прайсу</span><b id="tsum">0 ₽</b></div>
+      <a class="go" id="go" href="https://wa.me/79877564353" target="_blank" rel="noopener">Отправить талон в WhatsApp</a>
+      <p class="fine">Комплекс — купание в три этапа, модельная стрижка, сушка, когти, уши, глаза. Гигиена — купание, когти и гигиенические зоны.</p>
+    </aside>
+  </div>
+</section>
+
+<section class="slide price" id="price">
+  <h2 class="h2" data-in>Цены — <mark>по породам</mark></h2>
+  <p class="sub" data-in>Комплекс и гигиена для собак, уход для кошек и отдельные процедуры. По прайсу салона на Яндекс Картах.</p>
+  <div class="breeds" id="breeds"></div>
+  <div class="cats">
+    <div class="box" data-in><h3>Кошки</h3><div class="ln"><span>Экспресс-линька (короткая шерсть)</span><b>1 500 ₽</b></div><div class="ln"><span>Стрижка «лев»</span><b>2 400 ₽</b></div><div class="ln"><span>Комплекс для кошки</span><b>2 500 ₽</b></div></div>
+    <div class="box" data-in><h3>Для всех хвостов</h3><div class="ln"><span>Стрижка когтей со шлифовкой</span><b>300 ₽</b></div><div class="ln"><span>Чистка зубов пастой</span><b>300 ₽</b></div><div class="ln"><span>Чистка параанальных желёз</span><b>350 ₽</b></div><div class="ln"><span>Расчёсывание колтунов</span><b>500 ₽</b></div><div class="ln"><span>Подравнивание лап, головы или зон</span><b>600 ₽</b></div></div>
+  </div>
+  <p class="note">Если питомец сильно нервничает или кусается, может быть доплата 500 ₽ — так указано в прайсе салона.</p>
+</section>
+
+<section class="slide" id="stars">
+  <h2 class="h2" data-in>Наши <mark>звёзды</mark></h2>
+  <p class="sub" data-in>Фото из карточки салона на Яндекс Картах — до и после груминга.</p>
+  <div class="sheet">
+    <div class="star" style="--r:-4deg" data-in data-ph><img src="https://avatars.mds.yandex.net/get-altay/16494614/2a0000019b5353c75fce338a2d36359b3b4a/XL" alt="Шпиц" loading="lazy" referrerpolicy="no-referrer"><span>Шпиц</span></div>
+    <div class="star" style="--r:3deg" data-in data-ph><img src="https://avatars.mds.yandex.net/get-altay/16873746/2a0000019914dbff82e4f3a3c0fd0b994246/XL" alt="Кошка" loading="lazy" referrerpolicy="no-referrer"><span>«Лев»</span></div>
+    <div class="star" style="--r:-2deg" data-in data-ph><img src="https://avatars.mds.yandex.net/get-altay/16542720/2a000001964350b138397d86c3977c2dbebc/XL" alt="Йорк" loading="lazy" referrerpolicy="no-referrer"><span>Йорк</span></div>
+    <div class="star" style="--r:5deg" data-in data-ph><img src="https://avatars.mds.yandex.net/get-altay/17788144/2a0000019bd67fcecfd2ed4a86a978bc81dd/XL" alt="Пудель" loading="lazy" referrerpolicy="no-referrer"><span>Той-пудель</span></div>
+    <div class="star" style="--r:2deg" data-in data-ph><img src="https://avatars.mds.yandex.net/get-altay/16874376/2a0000019914954f33f17335d80dcd92afb5/XL" alt="Грумер за работой" loading="lazy" referrerpolicy="no-referrer"><span>В работе</span></div>
+    <div class="star" style="--r:-5deg" data-in data-ph><img src="https://avatars.mds.yandex.net/get-altay/16243748/2a000001970b3e8dad2c0a60772f96f1b246/XL" alt="Белый шпиц" loading="lazy" referrerpolicy="no-referrer"><span>После салона</span></div>
+    <div class="star" style="--r:4deg" data-in data-ph><img src="https://avatars.mds.yandex.net/get-altay/14076755/2a00000196cecb5638e9e742c25f073f81a2/XL" alt="Папийон" loading="lazy" referrerpolicy="no-referrer"><span>Папийон</span></div>
+    <div class="star" style="--r:-3deg" data-in data-ph><img src="https://avatars.mds.yandex.net/get-altay/15344916/2a00000196e9439b84b170ed7aadb83d983e/XL" alt="Амуниция в салоне" loading="lazy" referrerpolicy="no-referrer"><span>Амуниция</span></div>
+  </div>
+</section>
+
+<section class="slide info" id="info">
+  <h2 class="h2" data-in>Ждём <mark>хвостиков</mark></h2>
+  <div class="rate" data-in><b>5,0</b><span>на Яндекс Картах<br>94 оценки · 76 отзывов</span></div>
+  <div class="perks">
+    <div class="perk" data-in><b>Школа груминга</b><span>Салон учит грумеров — спросите о наборе.</span></div>
+    <div class="perk" data-in><b>Подарочный сертификат</b><span>Хороший подарок владельцу пушистого.</span></div>
+    <div class="perk" data-in><b>Скидки и акции</b><span>Есть дисконтная система — уточните при записи.</span></div>
+  </div>
+  <div class="cgrid">
+    <div class="card" data-in>
+      <h4>Адрес</h4><p>Нижний Новгород, ул. Бориса Корнилова, 5, корп. 1</p>
+      <h4>Часы</h4><p>Ежедневно 10:00–20:00</p><span class="st" data-status>открыто</span>
+      <h4>Запись</h4><p><a href="tel:+79050113873">+7 905 011-38-73</a></p>
+      <p style="margin-top:10px;font-size:16px"><a href="https://wa.me/79877564353" target="_blank" rel="noopener">WhatsApp</a> · <a href="https://t.me/hvostyn" target="_blank" rel="noopener">Telegram</a> · <a href="https://vk.com/hvostyn" target="_blank" rel="noopener">ВКонтакте</a></p>
+      <h4>Удобства</h4><p style="font-size:16px;font-weight:500">Парковка и велопарковка, оплата картой, QR и наличными</p>
+    </div>
+    <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=44.04289%2C56.299831&amp;z=16&amp;pt=44.04289%2C56.299831%2Cpm2orm&amp;l=map" title="«Хвостунишки» на Яндекс Картах" loading="lazy" allowfullscreen></iframe></div>
+  </div>
+</section>
+</main>
+
+<footer>Хвостунишки · зоосалон · Нижний Новгород, ул. Бориса Корнилова, 5, корп. 1 · <a href="https://yandex.ru/maps/org/khvostunishki/8237408149/" target="_blank" rel="noopener">Яндекс Карты</a></footer>
+
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  // dogs: [breed, complex, hygiene]
+  var DOGS = [['Шпиц', 2900, 2100], ['Йоркширский терьер', 2700, 1900], ['Бивер-йорк', 2700, 1900], ['Той-пудель 23–28 см', 3100, 2200], ['Пудель карликовый 28–35 см', 3300, null], ['Мальтипу / кавапу', 3100, 2000], ['Мальтезе', 2800, 2000], ['Пекинес', 2700, 2000], ['Чихуахуа длинношёрстный', 2200, null], ['Чихуахуа короткошёрстный', 1900, null], ['Брюссельский грифон, тримминг', 3100, 1900], ['Джек-рассел, тримминг', 3100, null], ['Джек-рассел гладкошёрстный', 2300, null], ['Сиба-ину', 2700, null], ['Мопс', 2300, null], ['Папийон', 2600, null], ['Кавалер-кинг-чарльз', 2700, null], ['Пти-брабансон', 2000, null], ['Китайская хохлатая пуховка', 2700, null], ['Китайская хохлатая голая', 2200, null], ['Метис до 5 кг', 2200, null], ['Без породы 5–10 кг', 2600, null]];
+  var CATS = [['Кошка', 2500, null, 'Комплекс'], ['Кошка «лев»', 2400, null, 'Стрижка «лев»'], ['Кошка, короткая шерсть', 1500, null, 'Экспресс-линька']];
+  var ADDS = [['Когти со шлифовкой', 300], ['Чистка зубов', 300], ['Параанальные железы', 350], ['Колтуны', 500]];
+  var AVA = { dog: 'https://avatars.mds.yandex.net/get-altay/16494614/2a0000019b5353c75fce338a2d36359b3b4a/M', cat: 'https://avatars.mds.yandex.net/get-altay/16873746/2a0000019914dbff82e4f3a3c0fd0b994246/M' };
+  var st = { kind: 'dog', breed: 0, svc: 'c', adds: {}, name: '' };
+  var money = function (v) { return String(v).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+  var $k = document.getElementById('kind'), $b = document.getElementById('breed'), $s = document.getElementById('svc'), $a = document.getElementById('adds');
+
+  // price cards
+  document.getElementById('breeds').innerHTML = DOGS.map(function (d) { return '<div class="br" data-in><b>' + d[0] + '</b><div><span>комплекс <b>' + money(d[1]) + '</b></span>' + (d[2] ? '<span>гигиена <b>' + money(d[2]) + '</b></span>' : '') + '</div></div>'; }).join('');
+
+  function list() { return st.kind === 'dog' ? DOGS : CATS; }
+  function paint() {
+    var L = list(), b = L[st.breed] || L[0];
+    if (st.svc === 'h' && !b[2]) st.svc = 'c';
+    $k.innerHTML = '<button class="pill' + (st.kind === 'dog' ? ' on' : '') + '" data-k="dog">🐶 Собака</button><button class="pill' + (st.kind === 'cat' ? ' on' : '') + '" data-k="cat">🐱 Кошка</button>';
+    $b.innerHTML = L.map(function (x, i) { return '<button class="pill' + (i === st.breed ? ' on' : '') + '" data-i="' + i + '">' + x[0] + '</button>'; }).join('');
+    $s.innerHTML = st.kind === 'dog' ? '<button class="pill' + (st.svc === 'c' ? ' on' : '') + '" data-s="c">Комплекс · ' + money(b[1]) + '</button><button class="pill' + (st.svc === 'h' ? ' on' : '') + '" data-s="h"' + (b[2] ? '' : ' disabled') + '>Гигиена' + (b[2] ? ' · ' + money(b[2]) : ' — нет в прайсе') + '</button>' : '<button class="pill on">' + b[3] + ' · ' + money(b[1]) + '</button>';
+    $a.innerHTML = ADDS.map(function (x, i) { return '<button class="pill add' + (st.adds[i] ? ' on' : '') + '" data-a="' + i + '">+ ' + x[0] + ' · ' + money(x[1]) + '</button>'; }).join('');
+    var main = st.kind === 'dog' ? (st.svc === 'h' ? ['Гигиена', b[2]] : ['Комплекс', b[1]]) : [b[3], b[1]];
+    var rows = [[main[0], main[1]]], sum = main[1];
+    ADDS.forEach(function (x, i) { if (st.adds[i]) { rows.push(x); sum += x[1]; } });
+    var nm = st.name.trim() || (st.kind === 'dog' ? 'Ваш пёсик' : 'Ваша кошка');
+    document.getElementById('tname').textContent = nm;
+    document.getElementById('tbreed').textContent = b[0] + ' · ' + main[0].toLowerCase();
+    document.getElementById('ava').src = AVA[st.kind];
+    document.getElementById('tlist').innerHTML = rows.map(function (r) { return '<li><span>' + r[0] + '</span><b>' + money(r[1]) + '</b></li>'; }).join('');
+    document.getElementById('tsum').textContent = money(sum);
+    var msg = 'Здравствуйте! Хочу записать питомца: ' + nm + ' (' + b[0].toLowerCase() + '), услуги: ' + rows.map(function (r) { return r[0].toLowerCase(); }).join(', ') + '. По прайсу ' + sum + ' ₽. Когда есть время?';
+    document.getElementById('go').href = 'https://wa.me/79877564353?text=' + encodeURIComponent(msg);
+  }
+  $k.addEventListener('click', function (e) { var x = e.target.closest('[data-k]'); if (x) { st.kind = x.dataset.k; st.breed = 0; st.svc = 'c'; paint(); } });
+  $b.addEventListener('click', function (e) { var x = e.target.closest('[data-i]'); if (x) { st.breed = +x.dataset.i; paint(); } });
+  $s.addEventListener('click', function (e) { var x = e.target.closest('[data-s]'); if (x && !x.disabled) { st.svc = x.dataset.s; paint(); } });
+  $a.addEventListener('click', function (e) { var x = e.target.closest('[data-a]'); if (x) { var i = +x.dataset.a; if (st.adds[i]) delete st.adds[i]; else st.adds[i] = 1; paint(); } });
+  document.getElementById('pname').addEventListener('input', function (e) { st.name = e.target.value; paint(); });
+  paint();
+
+  // hero: stickers land one by one, then the letters bounce up
+  var hero = document.querySelector('.hero'), stage = hero.querySelector('.stage'), stk = stage.querySelectorAll('.stk'), dots = document.querySelectorAll('.dots a');
+  RT.onScroll(function () {
+    var p = RT.motion ? RT.progress(hero) : 1;
+    stk.forEach(function (el, i) {
+      var t = RT.clamp((p - i * .07) / .16), k = t < 1 ? 1 - Math.pow(1 - t, 3) : 1;
+      el.style.setProperty('--k', k); el.style.setProperty('--s', .4 + .6 * k);
+    });
+    var t = RT.clamp((p - .45) / .25);
+    stage.querySelectorAll('.title .ch').forEach(function (c, i, all) { var tt = RT.clamp(t * 1.6 - i / all.length * .6); var e = tt < 1 ? 1 + 2.4 * Math.pow(tt - 1, 3) + 1.4 * Math.pow(tt - 1, 2) : 1; c.style.setProperty('--t', RT.clamp(e, 0, 1.2)); });
+    stage.style.setProperty('--t2', RT.ease(RT.clamp((p - .72) / .15)));
+    var cur = 'top';
+    ['talon', 'price', 'stars', 'info'].forEach(function (id) { if (document.getElementById(id).getBoundingClientRect().top < innerHeight * .5) cur = id; });
+    dots.forEach(function (a) { a.classList.toggle('on', a.dataset.s === cur); });
+  });
+
+  window.REEL = {
+    hero: '.hero', heroAt: .82, feature: '#talon', featureOff: 100, featureM: '#breed', featureOffM: -90, prices: '#price', pricesOff: 80,
+    demo: [function () { st.kind = 'dog'; st.breed = 1; st.svc = 'c'; st.adds = { 0: 1 }; st.name = 'Бусинка'; paint(); }, function () { st.breed = 0; st.svc = 'h'; st.adds = { 0: 1, 1: 1 }; st.name = 'Кузя'; paint(); }, function () { st.kind = 'cat'; st.breed = 1; st.svc = 'c'; st.adds = { 0: 1 }; st.name = 'Муся'; paint(); }],
+    holds: [46, 50, 54]
+  };
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Комп-Студия — ремонт ноутбуков, компьютеров и телефонов · Дзержинск</title>
+<meta name="description" content="Сервисный центр «Комп-Студия» в Дзержинске, ул. Матросова, 36: замена экранов телефонов от 1 500 ₽, матрицы ноутбука от 2 000 ₽, ремонт видеокарт, сборка ПК на заказ. Пн–пт 11:00–18:00.">
+<meta property="og:title" content="Комп-Студия — сервисный центр в Дзержинске">
+<meta property="og:description" content="Ноутбуки, телефоны, видеокарты, сборка ПК. Рейтинг 5,0 на Яндекс Картах.">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/18781639/2a0000019f2359a2c6f7fc0f34695b96381e/XXXL">
+<meta name="theme-color" content="#0C0F14">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&amp;family=Fira+Sans:wght@400;500;700;800;900&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ComputerStore","name":"Комп-Студия, сервисный центр","telephone":"+7 903 602-20-24","priceRange":"1000–4500 ₽","address":{"@type":"PostalAddress","streetAddress":"ул. Матросова, 36","addressLocality":"Дзержинск","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":56.252712,"longitude":43.451995},"openingHours":"Mo-Fr 11:00-18:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","ratingCount":"168"}}</script>
+<style>
+:root {
+  --bg: #0C0F14; --bg-2: #121721; --win: #161C28; --win-2: #1C2433; --line: rgba(160, 190, 255, .14); --txt: #DCE6F7; --dim: #8796B0;
+  --green: #5CF2A4; --cyan: #4FD8FF; --pink: #FF4FD8; --amber: #FFC857;
+  --mono: 'Fira Code', ui-monospace, monospace; --sans: 'Fira Sans', system-ui, sans-serif;
+  --gut: clamp(16px, 3vw, 40px); --ease: cubic-bezier(.2, .8, .2, 1);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--txt); font: 400 16.5px/1.6 var(--sans); overflow-x: hidden; }
+body::before { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 0; background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px); background-size: 48px 48px; opacity: .35; mask-image: radial-gradient(ellipse at 50% 30%, #000, transparent 75%); -webkit-mask-image: radial-gradient(ellipse at 50% 30%, #000, transparent 75%); }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+button { font: inherit; color: inherit; cursor: pointer; }
+section { scroll-margin-top: 20px; position: relative; z-index: 1; }
+.noimg { background: linear-gradient(135deg, #2a1b4d, #0f3550) !important; }
+.noimg img, img.noimg { opacity: 0; }
+.mono { font-family: var(--mono); }
+
+/* taskbar: the site's navigation */
+.task { position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; height: 52px; display: flex; align-items: center; gap: 6px; padding: 0 12px; background: rgba(12, 15, 20, .86); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-top: 1px solid var(--line); font: 500 13px/1 var(--mono); transform: translateY(calc((1 - var(--tb, 0)) * 100%)); transition: transform .5s var(--ease); }
+.task .start { display: flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 8px; background: linear-gradient(135deg, var(--pink), var(--cyan)); color: #0C0F14; font-weight: 700; text-decoration: none; }
+.task a.app { text-decoration: none; padding: 9px 12px; border-radius: 8px; color: var(--dim); }
+.task a.app:hover, .task a.app.on { background: var(--win-2); color: var(--txt); }
+.task .tray { margin-left: auto; display: flex; align-items: center; gap: 14px; color: var(--dim); }
+.task .tray .st { color: var(--green); }
+.task .tray .st.is-closed { color: var(--amber); }
+.task .tray a { color: var(--txt); text-decoration: none; }
+
+/* hero: boot log types out while you scroll, then the screen shrinks into a window on the desktop */
+.hero { position: relative; height: 260vh; z-index: 1; }
+.stage { position: sticky; top: 0; height: 100vh; overflow: hidden; }
+.boot { position: absolute; inset: 0; z-index: 4; background: #05070A; padding: clamp(24px, 5vw, 70px); font: 500 clamp(13px, 1.25vw, 17px)/1.75 var(--mono); color: #B9C7DD; transform-origin: 50% 40%; transform: scale(calc(1 - var(--shrink, 0) * .62)) translateY(calc(var(--shrink, 0) * -18vh)); border-radius: calc(var(--shrink, 0) * 22px); box-shadow: 0 0 0 1px rgba(79, 216, 255, calc(var(--shrink, 0) * .5)), 0 40px 120px rgba(0, 0, 0, calc(var(--shrink, 0) * .6)); overflow: hidden; }
+.boot .logo { font: 700 clamp(22px, 2.6vw, 36px)/1 var(--mono); letter-spacing: .04em; color: var(--txt); margin-bottom: 22px; }
+.boot .logo span { background: linear-gradient(90deg, var(--pink), var(--cyan)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.boot .ln { white-space: pre-wrap; opacity: 0; }
+.boot .ln.on { opacity: 1; }
+.boot .ok { color: var(--green); }
+.boot .hl { color: var(--cyan); }
+.boot .am { color: var(--amber); }
+.boot .cur::after { content: "█"; animation: blink 1s steps(1) infinite; color: var(--green); }
+@keyframes blink { 50% { opacity: 0; } }
+.desk { position: absolute; inset: 0; z-index: 2; opacity: var(--desk, 0); }
+.desk::before { content: ""; position: absolute; inset: 0; background: radial-gradient(60% 60% at 80% 20%, rgba(255, 79, 216, .25), transparent 60%), radial-gradient(50% 60% at 15% 80%, rgba(79, 216, 255, .22), transparent 60%); }
+.w { position: absolute; background: var(--win); border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 30px 80px rgba(0, 0, 0, .5); overflow: hidden; }
+.bar { display: flex; align-items: center; gap: 7px; height: 34px; padding: 0 12px; background: var(--win-2); border-bottom: 1px solid var(--line); font: 500 12.5px/1 var(--mono); color: var(--dim); }
+.bar i { width: 11px; height: 11px; border-radius: 50%; background: #FF5F57; } .bar i:nth-child(2) { background: #FEBC2E; } .bar i:nth-child(3) { background: #28C840; margin-right: 8px; }
+.bar span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.w-photo { right: 4vw; top: 9vh; width: 38vw; height: 58vh; transform: translateX(calc((1 - var(--win, 0)) * 60vw)) rotate(calc((1 - var(--win, 0)) * 6deg)); }
+.w-photo .im { position: absolute; inset: 34px 0 0; }
+.w-photo img { width: 100%; height: 100%; object-fit: cover; }
+.w-card { left: 4vw; bottom: 9vh; width: min(560px, 44vw); transform: translateX(calc((1 - var(--win, 0)) * -60vw)); padding-bottom: 26px; }
+.w-card .in { padding: 22px 26px 0; }
+.w-card h1 { margin: 0; font: 900 clamp(34px, 4vw, 60px)/1 var(--sans); letter-spacing: -.02em; }
+.w-card h1 em { font-style: normal; background: linear-gradient(90deg, var(--pink), var(--cyan)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.w-card p { margin: 14px 0 20px; color: var(--dim); font-size: 17px; }
+.w-rate { right: 6vw; bottom: 8vh; width: 250px; transform: translateY(calc((1 - var(--win, 0)) * 50vh)); }
+.w-rate .in { padding: 16px 20px; font: 500 14px/1.5 var(--mono); }
+.w-rate b { display: block; font: 800 44px/1 var(--sans); color: var(--green); margin-bottom: 6px; }
+.btn { display: inline-flex; align-items: center; gap: 10px; padding: 14px 20px; border-radius: 10px; border: 0; background: var(--txt); color: var(--bg); font: 700 14px/1 var(--mono); text-decoration: none; transition: transform .3s var(--ease), box-shadow .3s; }
+.btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(79, 216, 255, .25); }
+.btn.alt { background: transparent; color: var(--txt); box-shadow: inset 0 0 0 1px var(--line); margin-left: 6px; }
+
+/* windows in the page flow */
+.sec { padding: clamp(70px, 9vw, 120px) var(--gut); max-width: 1320px; margin: 0 auto; }
+.win { background: var(--win); border: 1px solid var(--line); border-radius: 16px; box-shadow: 0 30px 80px rgba(0, 0, 0, .45); overflow: hidden; }
+.win > .bar { height: 38px; }
+.win > .body { padding: clamp(22px, 3vw, 40px); }
+.h2 { margin: 0; font: 900 clamp(36px, 5vw, 72px)/1 var(--sans); letter-spacing: -.02em; }
+.h2 em { font-style: normal; color: var(--cyan); }
+.sub { margin: 14px 0 0; color: var(--dim); max-width: 640px; font-size: 18px; }
+.prompt { font: 500 13px/1 var(--mono); color: var(--green); margin-bottom: 14px; }
+[data-in] { opacity: 0; transform: translateY(30px) scale(.985); transition: opacity .8s var(--ease), transform .8s var(--ease); }
+[data-in].in { opacity: 1; transform: none; }
+
+/* feature: diagnostics terminal */
+.diag { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: 22px; margin-top: 30px; }
+.pick h4 { margin: 0 0 10px; font: 600 12px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--dim); }
+.devs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; }
+.dev { border: 1px solid var(--line); background: var(--bg-2); border-radius: 10px; padding: 10px 14px; font: 500 14px/1 var(--mono); transition: border-color .3s, background .3s, color .3s; }
+.dev.on { border-color: var(--cyan); background: rgba(79, 216, 255, .12); color: var(--cyan); }
+.issues { display: grid; gap: 6px; }
+.iss { text-align: left; border: 1px solid transparent; background: var(--bg-2); border-radius: 10px; padding: 11px 14px; font: 400 15px/1.35 var(--sans); display: flex; justify-content: space-between; gap: 12px; transition: border-color .3s, background .3s; }
+.iss small { font: 500 12.5px/1.3 var(--mono); color: var(--dim); white-space: nowrap; }
+.iss.on { border-color: var(--green); background: rgba(92, 242, 164, .08); }
+.term { background: #05070A; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; min-height: 420px; }
+.term pre { margin: 0; padding: 20px 22px; font: 500 14.5px/1.75 var(--mono); color: #B9C7DD; white-space: pre-wrap; flex: 1; }
+.term .g { color: var(--green); } .term .c { color: var(--cyan); } .term .a { color: var(--amber); } .term .p { color: var(--pink); } .term .d { color: var(--dim); }
+.term .cur::after { content: "█"; color: var(--green); animation: blink 1s steps(1) infinite; }
+.term .act { display: flex; gap: 8px; padding: 14px 18px; border-top: 1px solid var(--line); flex-wrap: wrap; }
+
+/* prices: file-manager table */
+.tabs { display: flex; gap: 6px; flex-wrap: wrap; margin: 26px 0 14px; }
+.tab { border: 1px solid var(--line); background: transparent; border-radius: 8px; padding: 9px 14px; font: 500 13.5px/1 var(--mono); color: var(--dim); }
+.tab.on { background: var(--txt); color: var(--bg); border-color: var(--txt); }
+table { width: 100%; border-collapse: collapse; font-size: 15.5px; }
+th { text-align: left; font: 600 11.5px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--dim); padding: 12px 10px; border-bottom: 1px solid var(--line); }
+td { padding: 13px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+td.ic { width: 34px; color: var(--cyan); font-family: var(--mono); }
+td.pr { text-align: right; white-space: nowrap; font: 600 15px/1.3 var(--mono); color: var(--green); }
+td small { display: block; color: var(--dim); font-size: 13.5px; margin-top: 2px; }
+tr { transition: background .25s; }
+tbody tr:hover { background: rgba(79, 216, 255, .05); }
+.fine { margin-top: 16px; font: 400 13px/1.6 var(--mono); color: var(--dim); }
+
+/* build gallery: image viewer */
+.viewer { display: grid; grid-template-columns: minmax(0, 1fr) 150px; gap: 14px; margin-top: 26px; }
+.main-im { position: relative; aspect-ratio: 16/10; border-radius: 12px; overflow: hidden; background: var(--bg-2); }
+.main-im img { width: 100%; height: 100%; object-fit: cover; transition: opacity .5s; }
+.thumbs { display: grid; gap: 10px; align-content: start; }
+.thumbs button { padding: 0; border: 2px solid transparent; border-radius: 10px; overflow: hidden; background: var(--bg-2); aspect-ratio: 1; }
+.thumbs button.on { border-color: var(--pink); }
+.thumbs img { width: 100%; height: 100%; object-fit: cover; }
+
+/* stats + info */
+.grid3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.kpi b { display: block; font: 900 clamp(46px, 5vw, 70px)/1 var(--sans); background: linear-gradient(90deg, var(--green), var(--cyan)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.kpi span { display: block; margin-top: 8px; color: var(--dim); }
+.meter { margin-top: 12px; height: 8px; border-radius: 99px; background: var(--bg-2); overflow: hidden; }
+.meter i { display: block; height: 100%; width: calc(var(--v) * 1%); background: linear-gradient(90deg, var(--pink), var(--cyan)); transform: scaleX(0); transform-origin: left; transition: transform 1.4s var(--ease); }
+.in .meter i { transform: none; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.chips span { padding: 8px 12px; border-radius: 8px; background: var(--bg-2); border: 1px solid var(--line); font: 500 13px/1 var(--mono); color: var(--txt); }
+
+.contact { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 18px; }
+.contact dl { margin: 0; font: 400 16px/1.5 var(--sans); }
+.contact dt { font: 600 11.5px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--dim); margin-top: 18px; }
+.contact dt:first-child { margin-top: 0; }
+.contact dd { margin: 6px 0 0; font-size: 18px; }
+.contact dd a { text-decoration: none; border-bottom: 1px solid var(--line); }
+.mapbox { position: relative; min-height: 400px; border-radius: 12px; overflow: hidden; background: var(--bg-2); }
+.mapbox iframe { position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 140px); border: 0; filter: invert(.9) hue-rotate(180deg) saturate(.6); }
+footer { position: relative; z-index: 1; padding: 30px var(--gut) 90px; color: var(--dim); font: 400 13px/1.6 var(--mono); text-align: center; }
+
+@media (max-width: 900px) {
+  .diag, .contact { grid-template-columns: minmax(0, 1fr); }
+  .viewer { grid-template-columns: minmax(0, 1fr); }
+  .thumbs { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .grid3 { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 700px) {
+  body { font-size: 15.5px; }
+  .task a.app, .task .tray .clock { display: none; }
+  .task .tray { gap: 10px; font-size: 12px; }
+  .boot { font-size: 11.5px; padding: 22px 18px; }
+  .w-photo { left: 4vw; right: 4vw; width: auto; top: 8vh; height: 34vh; }
+  .w-card { left: 4vw; right: 4vw; width: auto; bottom: 12vh; }
+  .w-card h1 { font-size: 34px; }
+  .w-card p { font-size: 15px; }
+  .w-rate { display: none; }
+  .term { min-height: 300px; }
+  .term pre { font-size: 12.5px; padding: 16px; }
+  th:nth-child(3), td:nth-child(3) { display: none; }
+  table { font-size: 14.5px; }
+}
+</style>
+</head>
+<body data-hours='{"1":[[11,0,18,0]],"2":[[11,0,18,0]],"3":[[11,0,18,0]],"4":[[11,0,18,0]],"5":[[11,0,18,0]]}'>
+
+<nav class="task" id="task" aria-label="Разделы">
+  <a class="start" href="#top">◆ Комп-Студия</a>
+  <a class="app" href="#diag">диагностика.exe</a>
+  <a class="app" href="#price">прайс.xls</a>
+  <a class="app" href="#build">сборка_пк.jpg</a>
+  <a class="app" href="#contact">контакты.txt</a>
+  <div class="tray"><span class="st" data-status>пн–пт 11–18</span><span class="clock" id="clock">--:--</span><a href="tel:+79036022024">☎ позвонить</a></div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="stage">
+    <div class="desk">
+      <div class="w w-photo"><div class="bar"><i></i><i></i><i></i><span>сборка_игрового_пк.jpg</span></div><div class="im" data-ph><img src="https://avatars.mds.yandex.net/get-altay/18781639/2a0000019f2359a2c6f7fc0f34695b96381e/XXXL" alt="Игровой компьютер с подсветкой, собранный в Комп-Студии" referrerpolicy="no-referrer" fetchpriority="high"></div></div>
+      <div class="w w-card"><div class="bar"><i></i><i></i><i></i><span>readme.txt — Комп-Студия</span></div>
+        <div class="in">
+          <div class="prompt">C:\Дзержинск\Матросова_36&gt;</div>
+          <h1>Ремонт техники <em>без ожидания</em></h1>
+          <p>Ноутбуки, компьютеры, телефоны, видеокарты и сборка ПК на заказ. Все 79 отзывов о сроках — положительные.</p>
+          <a class="btn" href="#diag">▶ Запустить диагностику</a><a class="btn alt" href="#price">Прайс</a>
+        </div>
+      </div>
+      <div class="w w-rate"><div class="bar"><i></i><i></i><i></i><span>рейтинг.log</span></div><div class="in"><b>5,0 ★</b>168 оценок · 130 отзывов<br>Яндекс Карты</div></div>
+    </div>
+    <div class="boot" id="boot" aria-hidden="true">
+      <div class="logo"><span>КОМП-СТУДИЯ</span> BIOS v.36</div>
+      <div class="ln">Сервисный центр · Дзержинск, ул. Матросова, 36</div>
+      <div class="ln d">────────────────────────────────────────────</div>
+      <div class="ln">Проверка: ремонт ноутбуков ................ <span class="ok">[ OK ]</span></div>
+      <div class="ln">Проверка: замена экранов телефонов ........ <span class="ok">[ OK ]</span></div>
+      <div class="ln">Проверка: видеокарты RX / RTX / GTX ....... <span class="ok">[ OK ]</span></div>
+      <div class="ln">Проверка: прошивка BIOS на программаторе .. <span class="ok">[ OK ]</span></div>
+      <div class="ln">Проверка: сборка ПК на заказ .............. <span class="ok">[ OK ]</span></div>
+      <div class="ln">Проверка: геймпады Xbox / PS ............. <span class="ok">[ OK ]</span></div>
+      <div class="ln">Рейтинг на Яндекс Картах ................. <span class="hl">5,0 ★ · 168 оценок</span></div>
+      <div class="ln">Отзывы о сроках .......................... <span class="hl">79 из 79 положительные</span></div>
+      <div class="ln">Награда Яндекс Карт ...................... <span class="am">«Хорошее место»</span></div>
+      <div class="ln d">────────────────────────────────────────────</div>
+      <div class="ln cur">Загрузка рабочего стола </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="sec" id="diag">
+  <div class="win" data-in>
+    <div class="bar"><i></i><i></i><i></i><span>диагностика.exe — что сломалось?</span></div>
+    <div class="body">
+      <h2 class="h2">Опишите поломку — <em>терминал посчитает</em></h2>
+      <p class="sub">Выберите устройство и проблему. Цены — за работу, по прайсу сервиса; запчасть, если нужна, оплачивается отдельно.</p>
+      <div class="diag">
+        <div class="pick">
+          <h4>1 · Устройство</h4>
+          <div class="devs" id="devs"></div>
+          <h4>2 · Проблема</h4>
+          <div class="issues" id="issues"></div>
+        </div>
+        <div class="term" aria-live="polite">
+          <div class="bar"><i></i><i></i><i></i><span>terminal — diag</span></div>
+          <pre id="out"></pre>
+          <div class="act"><a class="btn" href="tel:+79036022024">☎ +7 903 602-20-24</a><a class="btn alt" href="https://t.me/komp_studio" target="_blank" rel="noopener">Telegram</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="price">
+  <div class="win" data-in>
+    <div class="bar"><i></i><i></i><i></i><span>прайс.xls — 25 позиций</span></div>
+    <div class="body">
+      <h2 class="h2">Прайс <em>за работу</em></h2>
+      <div class="tabs" id="tabs"></div>
+      <table><thead><tr><th></th><th>Услуга</th><th>Подробности</th><th style="text-align:right">Цена</th></tr></thead><tbody id="rows"></tbody></table>
+      <p class="fine">// Цены «от» — за работу, по данным сервиса. Стоимость запчасти и доставки, если она нужна, — отдельно. Точную сумму мастер назовёт после осмотра.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="build">
+  <div class="win" data-in>
+    <div class="bar"><i></i><i></i><i></i><span>сборка_пк — просмотр изображений</span></div>
+    <div class="body">
+      <h2 class="h2">Соберём ПК <em>под задачу</em></h2>
+      <p class="sub">Игровые и офисные компьютеры из новых комплектующих — от 3 500 ₽ за сборку. Ниже — работы мастерской из карточки на Яндекс Картах.</p>
+      <div class="viewer">
+        <div class="main-im" data-ph><img id="vimg" src="https://avatars.mds.yandex.net/get-altay/20244164/2a0000019f235799ecd0487b9101c76539e5/XXL" alt="Компьютер с подсветкой" loading="lazy" referrerpolicy="no-referrer"></div>
+        <div class="thumbs" id="thumbs">
+          <button class="on" data-src="https://avatars.mds.yandex.net/get-altay/20244164/2a0000019f235799ecd0487b9101c76539e5/XXL"><img src="https://avatars.mds.yandex.net/get-altay/20244164/2a0000019f235799ecd0487b9101c76539e5/M" alt="Сборка ПК 1" loading="lazy" referrerpolicy="no-referrer"></button>
+          <button data-src="https://avatars.mds.yandex.net/get-altay/12850229/2a0000018e5da5873a61fb696892fa2e168b/XXL"><img src="https://avatars.mds.yandex.net/get-altay/12850229/2a0000018e5da5873a61fb696892fa2e168b/M" alt="Сборка ПК 2" loading="lazy" referrerpolicy="no-referrer"></button>
+          <button data-src="https://avatars.mds.yandex.net/get-altay/876204/2a000001862840a09886b757f5860d04722c/XXL"><img src="https://avatars.mds.yandex.net/get-altay/876204/2a000001862840a09886b757f5860d04722c/M" alt="Сборка ПК 3" loading="lazy" referrerpolicy="no-referrer"></button>
+          <button data-src="https://avatars.mds.yandex.net/get-altay/13929277/2a000001918dd9567db528dc8fd33a5f26ea/XXL"><img src="https://avatars.mds.yandex.net/get-altay/13929277/2a000001918dd9567db528dc8fd33a5f26ea/M" alt="Материнская плата на ремонте" loading="lazy" referrerpolicy="no-referrer"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="trust">
+  <div class="grid3">
+    <div class="win kpi" data-in><div class="bar"><i></i><i></i><i></i><span>rating.log</span></div><div class="body"><b>5,0</b><span>на Яндекс Картах · 168 оценок, 130 отзывов</span></div></div>
+    <div class="win kpi" data-in><div class="bar"><i></i><i></i><i></i><span>сроки.log</span></div><div class="body"><b>79 / 79</b><span>отзывов о времени ожидания — положительные</span><div class="meter"><i style="--v:100"></i></div></div></div>
+    <div class="win kpi" data-in><div class="bar"><i></i><i></i><i></i><span>мастера.log</span></div><div class="body"><b>71 / 81</b><span>отзыв хвалит персонал</span><div class="meter"><i style="--v:88"></i></div></div></div>
+  </div>
+  <div class="win" data-in style="margin-top:18px">
+    <div class="bar"><i></i><i></i><i></i><span>system.info</span></div>
+    <div class="body">
+      <h2 class="h2" style="font-size:clamp(28px,3vw,44px)">Работаем с брендами</h2>
+      <div class="chips"><span>Samsung</span><span>Apple</span><span>Xiaomi</span><span>Huawei / Honor</span><span>Asus</span><span>Acer</span><span>Lenovo</span><span>HP</span><span>DELL</span><span>MSI</span><span>DNS</span><span>Toshiba</span><span>LG</span><span>Meizu</span><span>Nokia</span></div>
+      <div class="chips"><span style="color:var(--green)">✓ предварительная запись</span><span style="color:var(--green)">✓ скидки льготным категориям</span><span style="color:var(--green)">✓ дисконтная система</span><span style="color:var(--green)">✓ ремонт мониторов</span><span style="color:var(--green)">✓ оборудование для майнинга</span><span style="color:var(--green)">✓ можно с животными</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="contact">
+  <div class="win" data-in>
+    <div class="bar"><i></i><i></i><i></i><span>контакты.txt</span></div>
+    <div class="body contact">
+      <dl>
+        <dt>Адрес</dt><dd>Дзержинск, ул. Матросова, 36</dd>
+        <dt>Часы</dt><dd>Пн–пт 11:00–18:00 · сб, вс — выходные</dd>
+        <dt>Телефоны</dt><dd><a href="tel:+79036022024">+7 903 602-20-24</a><br><a href="tel:+79036022124">+7 903 602-21-24</a></dd>
+        <dt>Написать</dt><dd><a href="https://t.me/komp_studio" target="_blank" rel="noopener">Telegram</a> · <a href="https://wa.me/79036022124" target="_blank" rel="noopener">WhatsApp</a> · <a href="https://vk.com/komp_studio_com" target="_blank" rel="noopener">ВКонтакте</a> · <a href="https://ok.ru/komp.studio" target="_blank" rel="noopener">ОК</a></dd>
+      </dl>
+      <div class="mapbox"><iframe src="https://yandex.ru/map-widget/v1/?ll=43.451995%2C56.252712&amp;z=16&amp;pt=43.451995%2C56.252712%2Cpm2blm&amp;l=map" title="Комп-Студия на Яндекс Картах" loading="lazy" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>Сервисный центр «Комп-Студия» · Дзержинск, ул. Матросова, 36 · <a href="https://yandex.ru/maps/org/servisny_tsentr_komp_studiya/138453660889/" target="_blank" rel="noopener">Яндекс Карты</a></footer>
+
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  // [device, issue shown to the client, price list item, price, details]
+  var DATA = [
+    ['Телефон', 'Разбит экран Samsung (A, J, S, Note)', 'Замена дисплея Samsung', 1750, 'дисплейный модуль вместе с тачскрином'],
+    ['Телефон', 'Разбит экран Xiaomi (Redmi, Note, Mi, Mix)', 'Замена экрана Xiaomi', 1500, 'дисплейный модуль с тачскрином'],
+    ['Телефон', 'Разбит экран Huawei / Honor', 'Замена дисплейного модуля Huawei', 1500, 'все модели P, Nova, Lite, Pro'],
+    ['Телефон', 'Разбит экран Asus', 'Замена экрана на телефоне Asus', 1500, 'дисплейный модуль, стекло'],
+    ['Телефон', 'Не включается или не заряжается Xiaomi', 'Ремонт цепи питания Xiaomi', 2500, 'контроллеры питания или зарядки'],
+    ['Телефон', 'Не заряжается (разъём MicroUSB)', 'Замена разъёма зарядки MicroUSB', 1000, 'телефон или планшет'],
+    ['Телефон', 'Треснула задняя крышка', 'Замена задней крышки Honor / Xiaomi', 1500, 'от 2 часов · наличие и цвет уточняйте'],
+    ['Ноутбук', 'Разбит или не показывает экран', 'Замена матрицы ноутбука', 2000, 'от 4 часов при наличии · гарантия от 6 месяцев'],
+    ['Ноутбук', 'Не работают клавиши', 'Замена клавиатуры ноутбука', 1250, 'от 1 часа при наличии · под заказ 1–2 дня'],
+    ['Ноутбук', 'Клавиатура в топ-кейсе', 'Замена клавиатуры в топ-кейсе', 2500, 'переклёпываем клавиатуру в корпусе'],
+    ['Ноутбук', 'Греется и шумит', 'Чистка и замена термопасты', 2000, 'чистка системы охлаждения, смазка кулера'],
+    ['Ноутбук', 'Не заряжается (разъём питания)', 'Замена разъёма питания ноутбука', 2000, 'Acer, Asus, DNS, HP, MSI, Lenovo, Samsung'],
+    ['Ноутбук', 'Не заряжается (Type-C)', 'Замена разъёма Type-C', 1250, 'Xiaomi, Huawei, Lenovo, Asus — ремонт от 2 500 ₽'],
+    ['Компьютер', 'Нужен новый компьютер', 'Сборка компьютера на заказ', 3500, 'игровые и офисные, из новых комплектующих'],
+    ['Компьютер', 'Слетела прошивка BIOS', 'Прошивка BIOS на программаторе', 1500, 'восстановление после неудачной прошивки'],
+    ['Компьютер', 'Погнуты ножки сокета CPU', 'Правка или замена сокета', 2500, 'AM4, AM5, 1200, 1700'],
+    ['Компьютер', 'Нужна чистая Windows', 'Установка Windows 10 x64', 1500, 'официальная чистая система'],
+    ['Видеокарта', 'Не включается, ошибки, артефакты', 'Ремонт видеокарты RX / RTX / GTX', 1000, 'цена «от», дальше по модели'],
+    ['Видеокарта', 'Нужно заменить видеопамять', 'Замена видеопамяти GDDR5 / 6 / 6X', 2500, 'зависит от модели и объёма'],
+    ['Видеокарта', 'Перегревается', 'Замена термопрокладок', 2000, 'по конкретной модели'],
+    ['Геймпад', 'Дрифт стиков, не работают кнопки', 'Ремонт геймпада Xbox / PS4 / PRO', 1500, 'плюс запчасть, если нужна']
+  ];
+  var ICON = { 'Телефон': '▯', 'Ноутбук': '⌨', 'Компьютер': '▣', 'Видеокарта': '▤', 'Геймпад': '◎' };
+  var devs = Object.keys(ICON), dev = 'Ноутбук', pick = 7;
+  var $devs = document.getElementById('devs'), $iss = document.getElementById('issues'), out = document.getElementById('out');
+  var money = function (v) { return 'от ' + String(v).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+  $devs.innerHTML = devs.map(function (d) { return '<button class="dev" data-d="' + d + '">' + ICON[d] + ' ' + d + '</button>'; }).join('');
+
+  // the terminal types its answer on the shared clock (so the video records it at real speed)
+  var typing = null;
+  function type(html) {
+    var plain = html.replace(/<[^>]+>/g, ''), t0 = RT.now(), cps = RT.motion ? 260 : 1e9;
+    typing = { html: html, len: plain.length };
+    var me = typing;
+    RT.loop(function (t) {
+      if (typing !== me) return false;
+      var n = Math.min(me.len, Math.floor((t - t0) / 1000 * cps)), k = 0, res = '', inTag = false;
+      for (var i = 0; i < html.length && k <= n; i++) { var ch = html[i]; if (ch === '<') inTag = true; if (inTag || k < n) res += ch; if (!inTag) k++; if (ch === '>') inTag = false; }
+      out.innerHTML = res + (n < me.len ? '<span class="cur"></span>' : '\n<span class="g">$</span> <span class="cur"></span>');
+      return n < me.len;
+    });
+  }
+  function paint() {
+    $devs.querySelectorAll('.dev').forEach(function (b) { b.classList.toggle('on', b.dataset.d === dev); });
+    var list = DATA.map(function (r, i) { return [r, i]; }).filter(function (x) { return x[0][0] === dev; });
+    if (!list.some(function (x) { return x[1] === pick; })) pick = list[0][1];
+    $iss.innerHTML = list.map(function (x) { return '<button class="iss' + (x[1] === pick ? ' on' : '') + '" data-i="' + x[1] + '"><span>' + x[0][1] + '</span><small>' + money(x[0][3]) + '</small></button>'; }).join('');
+    var r = DATA[pick];
+    type('<span class="g">$</span> diag --device "' + r[0].toLowerCase() + '" --issue "' + r[1].toLowerCase() + '"\n' +
+      '<span class="d">> анализ прайса… найдено совпадение</span>\n\n' +
+      '<span class="c">РАБОТА </span>  ' + r[2] + '\n' +
+      '<span class="c">ЦЕНА   </span>  <span class="g">' + money(r[3]) + '</span> за работу\n' +
+      '<span class="c">ДЕТАЛИ </span>  ' + r[4] + '\n' +
+      '<span class="c">ДАЛЕЕ  </span>  <span class="a">позвоните или напишите — мастер уточнит по модели</span>');
+  }
+  $devs.addEventListener('click', function (e) { var b = e.target.closest('.dev'); if (b) { dev = b.dataset.d; pick = -1; paint(); } });
+  $iss.addEventListener('click', function (e) { var b = e.target.closest('.iss'); if (b) { pick = +b.dataset.i; paint(); } });
+  paint();
+
+  // price table with tabs
+  var TABS = { 'Все': null, 'Телефоны': 'Телефон', 'Ноутбуки': 'Ноутбук', 'ПК и видеокарты': ['Компьютер', 'Видеокарта', 'Геймпад'] }, tab = 'Все';
+  var $tabs = document.getElementById('tabs'), $rows = document.getElementById('rows');
+  function table() {
+    $tabs.innerHTML = Object.keys(TABS).map(function (t) { return '<button class="tab' + (t === tab ? ' on' : '') + '" data-t="' + t + '">' + t + '</button>'; }).join('');
+    var f = TABS[tab];
+    $rows.innerHTML = DATA.filter(function (r) { return !f || (Array.isArray(f) ? f.indexOf(r[0]) >= 0 : r[0] === f); })
+      .map(function (r) { return '<tr><td class="ic">' + ICON[r[0]] + '</td><td>' + r[2] + '<small>' + r[0] + '</small></td><td><small>' + r[4] + '</small></td><td class="pr">' + money(r[3]) + '</td></tr>'; }).join('');
+  }
+  $tabs.addEventListener('click', function (e) { var b = e.target.closest('.tab'); if (b) { tab = b.dataset.t; table(); } });
+  table();
+
+  // image viewer
+  var vimg = document.getElementById('vimg');
+  document.getElementById('thumbs').addEventListener('click', function (e) {
+    var b = e.target.closest('button'); if (!b) return;
+    this.querySelectorAll('button').forEach(function (x) { x.classList.toggle('on', x === b); });
+    vimg.style.opacity = 0; setTimeout(function () { vimg.src = b.dataset.src; vimg.style.opacity = 1; }, 250);
+  });
+
+  // clock in the tray (Moscow time)
+  var clock = document.getElementById('clock');
+  var tickClock = function () { var m = new Date(Date.now() + new Date().getTimezoneOffset() * 6e4 + 3 * 36e5); clock.textContent = String(m.getHours()).padStart(2, '0') + ':' + String(m.getMinutes()).padStart(2, '0'); };
+  tickClock(); setInterval(tickClock, 30000);
+
+  // hero: boot lines by scroll, then the screen shrinks and the desktop windows slide in
+  var hero = document.querySelector('.hero'), stage = hero.querySelector('.stage'), lines = document.querySelectorAll('#boot .ln'), task = document.getElementById('task');
+  RT.onScroll(function () {
+    var p = RT.motion ? RT.progress(hero) : 1;
+    var shown = Math.round(RT.clamp(p / .4) * lines.length) + 2;
+    lines.forEach(function (l, i) { l.classList.toggle('on', i < shown); });
+    var sh = RT.ease(RT.clamp((p - .42) / .3));
+    stage.style.setProperty('--shrink', sh);
+    document.getElementById('boot').style.opacity = 1 - RT.clamp((p - .66) / .1);
+    stage.style.setProperty('--desk', RT.clamp((p - .45) / .2));
+    stage.style.setProperty('--win', RT.ease(RT.clamp((p - .58) / .3)));
+    task.style.setProperty('--tb', RT.clamp((p - .6) / .1) + (scrollY > hero.offsetHeight - innerHeight ? 1 : 0));
+  });
+
+  window.REEL = {
+    hero: '.hero', heroAt: .8, feature: '#diag', featureOff: 40, featureM: '#devs', featureOffM: -110, prices: '#price', pricesOff: 20,
+    demo: [function () { dev = 'Телефон'; pick = 0; paint(); }, function () { dev = 'Видеокарта'; pick = 18; paint(); }, function () { dev = 'Ноутбук'; pick = 7; paint(); }],
+    holds: [70, 70, 80]
+  };
+})();
+</script>
+</body>
+</html>

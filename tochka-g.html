@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Точка G — кофейня с завтраками · Дзержинск, Петрищева, 31</title>
+<meta name="description" content="Кофейня «Точка G» в Дзержинске: капучино 180–210 ₽, Батина вафля, круассаны с креветками, форелью и шоколадом. Можно с ноутбуком и с собакой, бесплатная парковка. Пн–пт 8:00–20:00, сб–вс 8:00–19:00.">
+<meta property="og:title" content="Точка G — кофейня с завтраками в Дзержинске">
+<meta property="og:description" content="Кофе, завтраки, круассаны. Петрищева, 31. Рейтинг 5,0.">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/15167717/2a000001956145132581f0ab31db4e8ecd94/XXXL">
+<meta name="theme-color" content="#1B1714">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&amp;family=Ubuntu:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Точка G","telephone":"+7 952 448-38-01","priceRange":"180–520 ₽","address":{"@type":"PostalAddress","streetAddress":"ул. Петрищева, 31","addressLocality":"Дзержинск","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":56.231288,"longitude":43.415658},"openingHours":["Mo-Fr 08:00-20:00","Sa-Su 08:00-19:00"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","ratingCount":"119"}}</script>
+<style>
+:root {
+  --char: #1B1714; --char-2: #2A231E; --cream: #F3EDE4; --cream-2: #E7DED1; --emerald: #1E5B4E; --emerald-2: #2F7B69; --honey: #D8A24A; --ink-2: #6C625A;
+  --serif: 'Cormorant Garamond', Georgia, serif; --sans: 'Ubuntu', system-ui, sans-serif;
+  --gut: clamp(20px, 4vw, 64px); --ease: cubic-bezier(.22, .7, .2, 1);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--cream); color: var(--char); font: 300 17px/1.65 var(--sans); overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+button { font: inherit; color: inherit; cursor: pointer; }
+section { scroll-margin-top: 30px; }
+.noimg { background: var(--char-2) !important; }
+.noimg img, img.noimg { opacity: 0; }
+.dot { display: inline-block; width: .22em; height: .22em; border-radius: 50%; background: var(--honey); vertical-align: baseline; margin-left: .04em; }
+
+/* minimal top line with the logo dot */
+.top { position: fixed; inset: 0 0 auto; z-index: 50; display: flex; align-items: center; gap: 26px; padding: 18px var(--gut); mix-blend-mode: difference; color: #fff; }
+.top .logo { font: 600 26px/1 var(--serif); font-style: italic; text-decoration: none; }
+.top nav { display: flex; gap: 22px; margin-left: auto; }
+.top a { text-decoration: none; font: 400 14px/1 var(--sans); letter-spacing: .06em; }
+.top .ph { padding: 10px 16px; border: 1px solid currentColor; border-radius: 99px; }
+
+/* hero: the interior appears through halftone dots that grow and merge */
+.hero { position: relative; height: 230vh; background: var(--char); }
+.stage { position: sticky; top: 0; height: 100vh; overflow: hidden; }
+.half { position: absolute; inset: 0; }
+.half img { width: 100%; height: 100%; object-fit: cover; transform: scale(calc(1.12 - var(--k, 0) * .12));
+  -webkit-mask-image: radial-gradient(circle, #000 var(--r, 1px), transparent calc(var(--r, 1px) + .5px)); mask-image: radial-gradient(circle, #000 var(--r, 1px), transparent calc(var(--r, 1px) + .5px));
+  -webkit-mask-size: 22px 22px; mask-size: 22px 22px; }
+.half::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(27, 23, 20, .85), rgba(27, 23, 20, .1) 55%); opacity: var(--k, 0); }
+.word { position: absolute; left: var(--gut); right: var(--gut); bottom: 10vh; color: var(--cream); }
+.word h1 { margin: 0; font: 500 clamp(80px, 15vw, 250px)/.8 var(--serif); font-style: italic; letter-spacing: -.03em; }
+.word h1 .dot { transform: scale(calc(1 + (1 - var(--k, 0)) * 3)); transform-origin: 50% 100%; }
+.word p { margin: 22px 0 0; max-width: 560px; font-size: clamp(16px, 1.4vw, 20px); color: rgba(243, 237, 228, .8); opacity: var(--k, 0); }
+.word .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; opacity: var(--k, 0); }
+.word .chips span { padding: 8px 14px; border: 1px solid rgba(243, 237, 228, .35); border-radius: 99px; font-size: 14px; }
+
+/* split screen: sticky picture on the left, the story scrolls on the right */
+.split { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); }
+.pane { position: sticky; top: 0; height: 100vh; overflow: hidden; background: var(--char); }
+.pane figure { position: absolute; inset: 0; margin: 0; opacity: 0; transition: opacity .9s var(--ease); }
+.pane figure.on { opacity: 1; }
+.pane img { width: 100%; height: 100%; object-fit: cover; }
+.pane .cap { position: absolute; left: 24px; bottom: 24px; z-index: 2; padding: 8px 14px; background: rgba(27, 23, 20, .7); color: var(--cream); border-radius: 99px; font-size: 13px; letter-spacing: .04em; }
+.story > section { min-height: 100vh; padding: clamp(80px, 10vw, 140px) var(--gut) clamp(60px, 8vw, 110px); border-bottom: 1px solid var(--cream-2); }
+.kick { font: 500 12px/1 var(--sans); letter-spacing: .24em; text-transform: uppercase; color: var(--emerald); }
+.h2 { margin: 16px 0 0; font: 500 clamp(46px, 5.6vw, 92px)/.95 var(--serif); letter-spacing: -.02em; }
+.h2 i { color: var(--emerald); }
+.p { margin: 20px 0 0; max-width: 560px; font-size: 18.5px; color: var(--ink-2); }
+[data-in] { opacity: 0; transform: translateY(26px); transition: opacity 1s var(--ease), transform 1s var(--ease); }
+[data-in].in { opacity: 1; transform: none; }
+
+/* feature: anatomy of the waffle */
+.anat { position: relative; margin-top: 40px; background: var(--char); color: var(--cream); border-radius: 28px; padding: 26px 26px 22px; }
+.anat svg { width: 100%; display: block; overflow: visible; }
+.layer { transition: transform .9s var(--ease), opacity .5s; transform: translateY(calc(var(--e, 0) * var(--dy) * 1px)); }
+.layer.dim { opacity: .28; }
+.lbl { font: 400 15px var(--sans); fill: var(--cream); opacity: calc(var(--e, 0) * 1.4 - .2); transition: opacity .6s; }
+.lbl tspan.pr { fill: var(--honey); }
+.ctl { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 14px; }
+.ctl button { border: 1px solid rgba(243, 237, 228, .3); background: transparent; color: var(--cream); border-radius: 99px; padding: 11px 18px; font-size: 14.5px; transition: background .3s, color .3s; }
+.ctl button.on { background: var(--honey); color: var(--char); border-color: var(--honey); }
+.ctl .price { margin-left: auto; font: 600 italic 40px/1 var(--serif); color: var(--honey); }
+
+/* menu cards */
+.menu { display: grid; gap: 0; margin-top: 40px; border-top: 1px solid var(--char); }
+.it { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 20px; padding: 22px 0; border-bottom: 1px solid var(--cream-2); }
+.it h3 { margin: 0; font: 600 30px/1.1 var(--serif); }
+.it b { font: 600 italic 30px/1 var(--serif); color: var(--emerald); white-space: nowrap; }
+.it p { grid-column: 1 / -1; margin: 0; color: var(--ink-2); font-size: 16px; }
+.board-note { margin-top: 22px; padding: 18px 20px; background: var(--cream-2); border-radius: 16px; font-size: 15.5px; color: var(--ink-2); }
+
+/* shelves */
+.shelf { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 36px; }
+.shelf figure { margin: 0; border-radius: 18px; overflow: hidden; aspect-ratio: 3/4; background: var(--cream-2); }
+.shelf img { width: 100%; height: 100%; object-fit: cover; }
+
+/* why here */
+.why { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 36px; }
+.why div { padding: 20px; border: 1px solid var(--cream-2); border-radius: 18px; background: #FBF8F3; }
+.why b { display: block; font: 600 24px/1.1 var(--serif); }
+.why span { display: block; margin-top: 6px; font-size: 15px; color: var(--ink-2); }
+.asp { margin-top: 30px; display: grid; gap: 10px; }
+.asp div { display: grid; grid-template-columns: 110px minmax(0, 1fr) 64px; gap: 14px; align-items: center; font-size: 15px; }
+.asp i { height: 8px; border-radius: 99px; background: var(--cream-2); overflow: hidden; }
+.asp i::after { content: ""; display: block; height: 100%; width: calc(var(--v) * 1%); background: var(--emerald); border-radius: 99px; transform: scaleX(0); transform-origin: left; transition: transform 1.4s var(--ease); }
+.asp.in i::after { transform: none; }
+.asp b { font-weight: 500; text-align: right; }
+
+/* find */
+.find dl { margin: 30px 0 0; display: grid; grid-template-columns: 140px minmax(0, 1fr); gap: 14px 20px; font-size: 18px; }
+.find dt { font: 500 12px/1.8 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--emerald); }
+.find dd { margin: 0; }
+.st { display: inline-block; padding: 4px 10px; border-radius: 99px; background: var(--cream-2); font-size: 13px; }
+.st.is-open { background: #D8EDE6; color: var(--emerald); }
+.mapbox { position: relative; height: 340px; margin-top: 30px; border-radius: 22px; overflow: hidden; background: var(--cream-2); }
+.mapbox iframe { position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 140px); border: 0; filter: sepia(.25) saturate(.8); }
+.btn { display: inline-block; margin-top: 26px; padding: 16px 26px; border-radius: 99px; background: var(--emerald); color: var(--cream); text-decoration: none; font-weight: 500; }
+.btn.alt { background: transparent; color: var(--char); box-shadow: inset 0 0 0 1px var(--char); margin-left: 8px; }
+footer { background: var(--char); color: rgba(243, 237, 228, .6); padding: 30px var(--gut) 40px; font-size: 14px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+footer b { font: 600 italic 24px/1 var(--serif); color: var(--cream); }
+
+@media (max-width: 900px) {
+  .split { grid-template-columns: minmax(0, 1fr); }
+  .pane { position: relative; height: 46vh; }
+  .story > section { min-height: 0; padding-top: 96px; }
+  .shelf { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  .why { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 700px) {
+  body { font-size: 16px; }
+  .top nav a:not(.ph) { display: none; }
+  .word h1 { font-size: 23vw; white-space: nowrap; }
+  .anat { padding: 16px 12px 14px; border-radius: 20px; }
+  .lbl { font-size: 22px; }
+  .ctl .price { font-size: 30px; }
+  .it h3, .it b { font-size: 25px; }
+  .find dl { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+  .find dd { margin-bottom: 12px; }
+  .btn.alt { margin-left: 0; }
+}
+</style>
+</head>
+<body data-hours='{"0":[[8,0,19,0]],"1":[[8,0,20,0]],"2":[[8,0,20,0]],"3":[[8,0,20,0]],"4":[[8,0,20,0]],"5":[[8,0,20,0]],"6":[[8,0,19,0]]}'>
+
+<header class="top">
+  <a class="logo" href="#top">Точка G</a>
+  <nav aria-label="Разделы"><a href="#waffle">Вафля</a><a href="#menu">Меню</a><a href="#why">Почему здесь</a><a href="#find">Как найти</a><a class="ph" href="tel:+79524483801">+7 952 448-38-01</a></nav>
+</header>
+
+<div class="hero" id="top">
+  <div class="stage">
+    <div class="half" data-ph><img src="https://avatars.mds.yandex.net/get-altay/15167717/2a000001956145132581f0ab31db4e8ecd94/XXXL" alt="Зал кофейни «Точка G»: круглые столики и зелёные кресла" referrerpolicy="no-referrer" fetchpriority="high"></div>
+    <div class="word">
+      <h1>Точка G<span class="dot"></span></h1>
+      <p>Кофейня с завтраками на Петрищева, 31. Капучино 180–210 ₽, фирменные вафли и круассаны, полки с кофе и чаем домой.</p>
+      <div class="chips"><span>с ноутбуком</span><span>с собакой</span><span>бесплатная парковка</span><span>с 8:00 каждый день</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="split">
+  <aside class="pane" aria-hidden="true">
+    <figure data-k="waffle" class="on" data-ph><img src="https://avatars.mds.yandex.net/get-altay/15112342/2a00000195614519a3d8e6153677d1a40209/XXL" alt="" loading="lazy" referrerpolicy="no-referrer"><span class="cap">Стойка и доска с меню</span></figure>
+    <figure data-k="menu" data-ph><img src="https://avatars.mds.yandex.net/get-altay/1583511/2a00000184d725fc648ec63353d825b8809b/XXL" alt="" loading="lazy" referrerpolicy="no-referrer"><span class="cap">Обожжённое дерево и чёрный металл</span></figure>
+    <figure data-k="shelf" data-ph><img src="https://avatars.mds.yandex.net/get-altay/947364/2a00000184d72603da244e2dc547a82a88a5/XXL" alt="" loading="lazy" referrerpolicy="no-referrer"><span class="cap">Полки с кофе, чаем и мёдом</span></figure>
+    <figure data-k="why" data-ph><img src="https://avatars.mds.yandex.net/get-altay/15167717/2a000001956145132581f0ab31db4e8ecd94/XXL" alt="" loading="lazy" referrerpolicy="no-referrer"><span class="cap">3–5 столиков у окна</span></figure>
+    <figure data-k="find" data-ph><img src="https://avatars.mds.yandex.net/get-altay/4961567/2a0000018d7ef5652a7ba282d28f0d9e79e6/XXL" alt="" loading="lazy" referrerpolicy="no-referrer"><span class="cap">Петрищева, 31</span></figure>
+  </aside>
+  <main class="story">
+    <section id="waffle" data-k="waffle">
+      <span class="kick">Фирменное · разберём по слоям</span>
+      <h2 class="h2" data-in>Батина вафля<br><i>изнутри</i></h2>
+      <p class="p" data-in>Две картофельные вафли, глазунья, ветчина из индейки, томат и творожный сыр. Нажмите «Разобрать» — и посмотрите, из чего собран завтрак за 520 ₽.</p>
+      <div class="anat" data-in>
+        <svg viewBox="40 0 720 470" id="waf" aria-label="Слои Батиной вафли">
+          <defs>
+            <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><rect width="28" height="28" fill="#C98A3E"/><rect x="4" y="4" width="20" height="20" rx="4" fill="#A86C2B"/></pattern>
+          </defs>
+          <g class="layer" data-l="w2" style="--dy:-150"><ellipse cx="300" cy="240" rx="200" ry="44" fill="url(#grid)" stroke="#7A4A1A" stroke-width="3"/><text class="lbl" x="520" y="244">Картофельная вафля</text></g>
+          <g class="layer" data-l="ch" style="--dy:-95"><ellipse cx="300" cy="246" rx="176" ry="30" fill="#F4F0E6"/><text class="lbl" x="500" y="250">Творожный сыр</text></g>
+          <g class="layer" data-l="to" style="--dy:-45"><g fill="#D2452F"><ellipse cx="230" cy="246" rx="44" ry="13"/><ellipse cx="320" cy="250" rx="44" ry="13"/><ellipse cx="398" cy="244" rx="38" ry="12"/></g><text class="lbl" x="470" y="250">Томат</text></g>
+          <g class="layer" data-l="ha" style="--dy:5"><path d="M128 252 C 170 226, 260 232, 300 244 C 350 228, 440 228, 474 252 C 440 270, 350 266, 300 258 C 250 270, 160 272, 128 252 Z" fill="#E9A0A0"/><text class="lbl" x="500" y="258">Ветчина из индейки</text></g>
+          <g class="layer" data-l="eg" style="--dy:55"><path d="M170 256 C 160 228, 230 214, 300 222 C 380 214, 440 232, 428 258 C 420 280, 200 284, 170 256 Z" fill="#FFF9EE"/><ellipse cx="305" cy="246" rx="34" ry="16" fill="#F2B526"/><text class="lbl" x="470" y="262">Глазунья</text></g>
+          <g class="layer" data-l="w1" style="--dy:110"><ellipse cx="300" cy="262" rx="200" ry="44" fill="url(#grid)" stroke="#7A4A1A" stroke-width="3"/><text class="lbl" x="520" y="266">Картофельная вафля</text></g>
+        </svg>
+        <div class="ctl">
+          <button id="openW">Разобрать</button><button id="closeW">Собрать</button>
+          <span class="price">520 ₽</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" data-k="menu">
+      <span class="kick">Меню · что есть на Яндекс Картах</span>
+      <h2 class="h2" data-in>Круассаны<br><i>и вафли</i></h2>
+      <div class="menu">
+        <div class="it" data-in><h3>Батина вафля</h3><b>520 ₽</b><p>Две картофельные вафли с глазуньей, ветчиной из индейки, томатом и творожным сыром</p></div>
+        <div class="it" data-in><h3>Круассан с креветками</h3><b>390 ₽</b><p>Творожный сыр, королевские креветки и руккола</p></div>
+        <div class="it" data-in><h3>Круассан с форелью</h3><b>390 ₽</b><p>Творожный сыр, слабосолёная форель, огурец и соус унаги</p></div>
+        <div class="it" data-in><h3>Круассан с шоколадной пастой</h3><b>260 ₽</b><p>Шоколадная паста и банан, мягкая карамель и катаифи</p></div>
+        <div class="it" data-in><h3>Капучино</h3><b>180–210 ₽</b><p>Кофе, чай, напитки — гости хвалят напитки в 60 отзывах из 64</p></div>
+      </div>
+      <p class="board-note" data-in>На Яндекс Картах опубликованы только фирменные позиции. Остальное меню — завтраки, десерты, чай — на доске у стойки; цены уточняйте в кофейне.</p>
+    </section>
+
+    <section id="shelf" data-k="shelf">
+      <span class="kick">Полки · домой и в подарок</span>
+      <h2 class="h2" data-in>Кофе и чай<br><i>с собой</i></h2>
+      <p class="p" data-in>На полках — дрип-кофе, чай, мёд и подарочные наборы. Есть подарочный сертификат.</p>
+      <div class="shelf">
+        <figure data-in data-ph><img src="https://avatars.mds.yandex.net/get-altay/1001354/2a00000187cd51dfef295bab2e36bca328cb/XL" alt="Дрип-кофе на полке" loading="lazy" referrerpolicy="no-referrer"></figure>
+        <figure data-in data-ph><img src="https://avatars.mds.yandex.net/get-altay/13970739/2a00000193f9eef4a3ab9775e05af9642c99/XL" alt="Чай и мёд в подарок" loading="lazy" referrerpolicy="no-referrer"></figure>
+        <figure data-in data-ph><img src="https://avatars.mds.yandex.net/get-altay/14329771/2a00000193f9eefebc9e6982391405d3c623/XL" alt="Новогодний подарочный набор" loading="lazy" referrerpolicy="no-referrer"></figure>
+      </div>
+    </section>
+
+    <section id="why" data-k="why">
+      <span class="kick">Почему здесь</span>
+      <h2 class="h2" data-in>Можно<br><i>задержаться</i></h2>
+      <div class="why">
+        <div data-in><b>С ноутбуком</b><span>Работать за чашкой — нормально и удобно</span></div>
+        <div data-in><b>С собакой</b><span>Можно со всеми животными</span></div>
+        <div data-in><b>Бесплатная парковка</b><span>Рядом с кофейней</span></div>
+        <div data-in><b>Питьевая вода</b><span>И туалет для гостей</span></div>
+      </div>
+      <div class="asp" data-in>
+        <div><span>Атмосфера</span><i style="--v:97"></i><b>39/40</b></div>
+        <div><span>Чай</span><i style="--v:94"></i><b>16/17</b></div>
+        <div><span>Напитки</span><i style="--v:94"></i><b>60/64</b></div>
+        <div><span>Завтраки</span><i style="--v:93"></i><b>13/14</b></div>
+        <div><span>Кофе</span><i style="--v:91"></i><b>58/64</b></div>
+      </div>
+      <p class="p" style="font-size:15px">Доля положительных упоминаний в отзывах на Яндекс Картах. Общая оценка — 5,0 при 119 оценках.</p>
+    </section>
+
+    <section id="find" data-k="find">
+      <span class="kick">Как найти</span>
+      <h2 class="h2" data-in>Петрищева, <i>31</i></h2>
+      <dl class="find" data-in>
+        <dt>Адрес</dt><dd>Дзержинск, ул. Петрищева, 31</dd>
+        <dt>Часы</dt><dd>Пн–пт 8:00–20:00<br>Сб–вс 8:00–19:00<br><span class="st" data-status>часы работы</span></dd>
+        <dt>Телефон</dt><dd><a href="tel:+79524483801">+7 952 448-38-01</a></dd>
+        <dt>Оплата</dt><dd>Наличными или банковским переводом</dd>
+      </dl>
+      <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=43.415658%2C56.231288&amp;z=16&amp;pt=43.415658%2C56.231288%2Cpm2gnm&amp;l=map" title="«Точка G» на Яндекс Картах" loading="lazy" allowfullscreen></iframe></div>
+      <a class="btn" href="tel:+79524483801">Позвонить</a><a class="btn alt" href="https://vk.com/tochkag_dzr" target="_blank" rel="noopener">ВКонтакте</a>
+    </section>
+  </main>
+</div>
+
+<footer><b>Точка G</b><span>Кофейня с завтраками · Дзержинск, ул. Петрищева, 31 · <a href="https://yandex.ru/maps/org/tochka_g/72987923876/" target="_blank" rel="noopener">Яндекс Карты</a></span></footer>
+
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  var waf = document.getElementById('waf'), openB = document.getElementById('openW'), closeB = document.getElementById('closeW');
+  function setW(e, focus) {
+    waf.style.setProperty('--e', e);
+    openB.classList.toggle('on', e > .5); closeB.classList.toggle('on', e <= .5);
+    waf.querySelectorAll('.layer').forEach(function (l) { l.classList.toggle('dim', !!focus && l.dataset.l !== focus); });
+  }
+  openB.addEventListener('click', function () { setW(1); });
+  closeB.addEventListener('click', function () { setW(0); });
+  waf.querySelectorAll('.layer').forEach(function (l) { l.addEventListener('mouseenter', function () { if (+getComputedStyle(waf).getPropertyValue('--e') > .5) setW(1, l.dataset.l); }); l.addEventListener('mouseleave', function () { if (+getComputedStyle(waf).getPropertyValue('--e') > .5) setW(1); }); });
+  setW(0);
+
+  // hero halftone + sticky pane follows the story
+  var hero = document.querySelector('.hero'), stage = hero.querySelector('.stage'), figs = document.querySelectorAll('.pane figure');
+  var secs = document.querySelectorAll('.story > section');
+  RT.onScroll(function () {
+    var p = RT.motion ? RT.progress(hero) : 1, k = RT.ease(RT.clamp(p / .8));
+    stage.style.setProperty('--r', (1 + k * 15) + 'px');
+    stage.style.setProperty('--k', k);
+    var cur = 'waffle';
+    secs.forEach(function (s) { if (s.getBoundingClientRect().top < innerHeight * .5) cur = s.dataset.k; });
+    figs.forEach(function (f) { f.classList.toggle('on', f.dataset.k === cur); });
+  });
+  // the waffle opens by itself the first time it comes into view
+  var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { setTimeout(function () { setW(1); }, 400); io.disconnect(); } }); }, { threshold: .6 });
+  if (RT.motion) io.observe(waf);
+
+  window.REEL = {
+    hero: '.hero', heroAt: .55, feature: '#waffle', featureOff: 150, featureM: '.anat', featureOffM: -80, prices: '#menu', pricesOff: 60,
+    demo: [function () { setW(0); }, function () { setW(1, 'eg'); }, function () { setW(1); }],
+    holds: [30, 60, 50]
+  };
+})();
+</script>
+</body>
+</html>

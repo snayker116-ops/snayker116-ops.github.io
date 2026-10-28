@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Бабин и ко — веломастерская · Нижний Новгород, Генкиной, 26</title>
+<meta name="description" content="Веломастерская «Бабин и ко» на ул. Генкиной, 26: ТО велосипеда, настройка переключателей, сборка колёс, ремонт втулок и каретки, детские велосипеды. Пн–пт 10:00–20:00. Рейтинг 5,0.">
+<meta property="og:title" content="Бабин и ко — веломастерская в Нижнем Новгороде">
+<meta property="og:description" content="ТО, переключатели, колёса, втулки, каретки. Рейтинг 5,0 при 178 оценках.">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/4660612/2a00000178a2d61549d0f2e866ac79e1e77e/XXXL">
+<meta name="theme-color" content="#1C3F7A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;600;700&amp;family=PT+Sans:ital,wght@0,400;0,700;1,400&amp;family=Neucha&amp;family=PT+Mono&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BikeStore","name":"Бабин и ко — веломастерская","telephone":"+7 951 908-91-76","address":{"@type":"PostalAddress","streetAddress":"ул. Генкиной, 26","addressLocality":"Нижний Новгород","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":56.311582,"longitude":44.012611},"openingHours":"Mo-Fr 10:00-20:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","ratingCount":"178"}}</script>
+<style>
+:root {
+  --blue: #1C3F7A; --blue-2: #24508F; --line: rgba(220, 235, 255, .85); --line-2: rgba(220, 235, 255, .22); --paper: #EFE7D7; --paper-2: #E2D7C2; --ink: #15223F; --ink-2: #4F5A70; --orange: #FF7A2F;
+  --cond: 'Yanone Kaffeesatz', 'Arial Narrow', sans-serif; --sans: 'PT Sans', system-ui, sans-serif; --hand: 'Neucha', cursive; --mono: 'PT Mono', ui-monospace, monospace;
+  --gut: clamp(16px, 4vw, 56px); --ease: cubic-bezier(.2, .8, .2, 1);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 17.5px/1.6 var(--sans); overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+button { font: inherit; color: inherit; cursor: pointer; }
+section { scroll-margin-top: 10px; }
+.noimg { background: var(--blue-2) !important; }
+.noimg img, img.noimg { opacity: 0; }
+.bp { background-color: var(--blue); color: #EAF2FF; background-image: linear-gradient(var(--line-2) 1px, transparent 1px), linear-gradient(90deg, var(--line-2) 1px, transparent 1px), linear-gradient(rgba(220, 235, 255, .08) 1px, transparent 1px), linear-gradient(90deg, rgba(220, 235, 255, .08) 1px, transparent 1px); background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px; }
+
+/* title block (engineering drawing stamp) — the site's navigation */
+.stampnav { position: fixed; right: 14px; bottom: 14px; z-index: 50; display: grid; grid-template-columns: repeat(3, auto); border: 2px solid var(--ink); background: var(--paper); font: 400 12px/1 var(--mono); box-shadow: 6px 6px 0 rgba(21, 34, 63, .25); }
+.stampnav b { grid-column: 1 / -1; padding: 8px 10px; border-bottom: 2px solid var(--ink); font: 600 22px/1 var(--cond); letter-spacing: .02em; }
+.stampnav a { padding: 8px 10px; text-decoration: none; border-right: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }
+.stampnav a:nth-of-type(3n) { border-right: 0; }
+.stampnav a:hover, .stampnav a.on { background: var(--orange); color: #fff; }
+.stampnav .call { grid-column: 1 / -1; text-align: center; background: var(--ink); color: var(--paper); border: 0; padding: 10px; }
+
+/* hero: wheels spin with the scroll, the frame is drawn, notes appear */
+.hero { position: relative; height: 240vh; }
+.stage { position: sticky; top: 0; height: 100vh; overflow: hidden; display: grid; place-items: center; }
+.bike { width: min(900px, 72vw); margin: -22vh 0 0 18vw; }
+.bike svg { width: 100%; display: block; overflow: visible; }
+.bike .ln { fill: none; stroke: #EAF2FF; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.bike .thin { fill: none; stroke: var(--line); stroke-width: 1.4; }
+.bike .dash { fill: none; stroke: var(--line); stroke-width: 1.2; stroke-dasharray: 6 6; }
+.bike .note { font: 400 21px var(--hand); fill: #FFD7B8; opacity: var(--nt, 0); }
+.bike .lead { fill: none; stroke: #FFD7B8; stroke-width: 1.5; opacity: var(--nt, 0); }
+.ttl { position: absolute; left: var(--gut); bottom: 8vh; z-index: 3; opacity: var(--tt, 0); transform: translateY(calc((1 - var(--tt, 0)) * 30px)); }
+.ttl h1 { margin: 0; font: 700 clamp(64px, 9vw, 150px)/.85 var(--cond); letter-spacing: .01em; text-transform: uppercase; }
+.ttl h1 span { color: var(--orange); }
+.ttl p { margin: 12px 0 0; font: 400 clamp(16px, 1.5vw, 20px)/1.5 var(--sans); max-width: 520px; color: #C9DAF5; }
+.dims { position: absolute; right: var(--gut); top: 24px; font: 400 12px/1.6 var(--mono); color: #C9DAF5; text-align: right; }
+
+/* sheets */
+.sheet { position: relative; padding: clamp(80px, 10vw, 130px) var(--gut) clamp(60px, 8vw, 100px); }
+.sheet::before { content: ""; position: absolute; inset: 14px; border: 2px solid currentColor; opacity: .25; pointer-events: none; }
+.sh { display: flex; align-items: baseline; gap: 16px; font: 400 13px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; opacity: .75; }
+.h2 { margin: 12px 0 0; font: 700 clamp(48px, 7vw, 110px)/.88 var(--cond); text-transform: uppercase; letter-spacing: .005em; }
+.h2 span { color: var(--orange); }
+.lead2 { margin: 18px 0 0; max-width: 640px; font-size: 19px; opacity: .85; }
+[data-in] { opacity: 0; transform: translateY(26px); transition: opacity .9s var(--ease), transform .9s var(--ease); }
+[data-in].in { opacity: 1; transform: none; }
+
+/* feature: clickable drawing */
+.fx { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, .6fr); gap: clamp(20px, 3vw, 44px); margin-top: 40px; align-items: start; }
+.draw { position: relative; border: 2px solid rgba(220, 235, 255, .5); padding: 20px; }
+.draw svg { width: 100%; display: block; }
+.hs { position: absolute; transform: translate(-50%, -50%); width: 40px; height: 40px; border-radius: 50%; border: 2px solid #fff; background: var(--orange); color: #fff; font: 700 18px/36px var(--cond); text-align: center; padding: 0; box-shadow: 0 0 0 6px rgba(255, 122, 47, .25); transition: transform .3s var(--ease), background .3s; }
+.hs:hover { transform: translate(-50%, -50%) scale(1.12); }
+.hs.on { background: #fff; color: var(--blue); }
+.memo { background: var(--paper); color: var(--ink); padding: 26px 24px; box-shadow: 8px 8px 0 rgba(0, 0, 0, .25); transform: rotate(1deg); position: relative; }
+.memo::before { content: ""; position: absolute; left: 50%; top: -12px; width: 90px; height: 24px; margin-left: -45px; background: rgba(255, 210, 120, .7); transform: rotate(-3deg); }
+.memo .k { font: 400 12px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--orange); }
+.memo h3 { margin: 8px 0 10px; font: 700 40px/.95 var(--cond); text-transform: uppercase; }
+.memo p { margin: 0 0 12px; }
+.memo .rv { font: 400 21px/1.35 var(--hand); color: var(--ink-2); border-left: 3px solid var(--orange); padding-left: 12px; }
+.memo .pr { margin-top: 14px; padding-top: 12px; border-top: 2px dashed var(--paper-2); font: 400 14px/1.5 var(--mono); }
+.list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.list button { border: 1.5px solid rgba(220, 235, 255, .55); background: transparent; color: #EAF2FF; padding: 9px 13px; font: 400 14px/1 var(--mono); }
+.list button.on { background: var(--orange); border-color: var(--orange); }
+
+/* honest prices */
+.honest { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(30px, 5vw, 70px); margin-top: 40px; align-items: start; }
+.spec { border: 2px solid var(--ink); }
+.spec div { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px; padding: 14px 18px; border-bottom: 1px solid var(--ink); }
+.spec div:last-child { border-bottom: 0; }
+.spec span:last-child { font: 400 14px/1.4 var(--mono); color: var(--ink-2); text-align: right; }
+.say { font: 400 clamp(24px, 2.6vw, 34px)/1.3 var(--hand); }
+.say small { display: block; margin-top: 10px; font: 400 14px/1.5 var(--mono); color: var(--ink-2); }
+
+/* workshop photos as pinned prints */
+.prints { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 18px; margin-top: 46px; align-items: start; }
+.print { margin: 0; background: #fff; padding: 10px 10px 34px; box-shadow: 6px 8px 0 rgba(21, 34, 63, .18); transform: rotate(var(--r)); position: relative; }
+.print img { width: 100%; aspect-ratio: var(--ar, 4/3); object-fit: cover; }
+.print span { position: absolute; left: 12px; bottom: 8px; font: 400 18px/1 var(--hand); }
+.print::before { content: ""; position: absolute; left: 50%; top: -8px; width: 16px; height: 16px; margin-left: -8px; border-radius: 50%; background: var(--orange); box-shadow: inset -3px -3px 0 rgba(0, 0, 0, .2); }
+.p1 { grid-column: 1 / span 6; --r: -1.5deg; } .p2 { grid-column: 7 / span 6; --r: 2deg; margin-top: 40px; } .p3 { grid-column: 2 / span 4; --r: 1.5deg; --ar: 1; } .p4 { grid-column: 7 / span 5; --r: -2deg; --ar: 3/4; margin-top: -60px; }
+
+/* route */
+.route { position: relative; margin-top: 40px; }
+.route svg { width: 100%; display: block; overflow: visible; }
+.route .path { fill: none; stroke: var(--orange); stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+.route .stop circle { fill: var(--blue); stroke: #fff; stroke-width: 3; }
+.route .stop text { font: 400 20px var(--hand); fill: #EAF2FF; }
+.route .stop { opacity: 0; transition: opacity .5s; }
+.route .stop.on { opacity: 1; }
+.src { margin-top: 18px; font: 400 13px/1.6 var(--mono); opacity: .7; }
+
+/* proof + contacts */
+.proof { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; margin-top: 40px; border: 2px solid var(--ink); }
+.proof div { padding: 22px; border-right: 1px solid var(--ink); }
+.proof div:last-child { border-right: 0; }
+.proof b { display: block; font: 700 clamp(56px, 6vw, 90px)/.9 var(--cond); color: var(--orange); }
+.proof span { font: 400 14px/1.45 var(--mono); }
+.cgrid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 0; margin-top: 30px; border: 2px solid var(--ink); }
+.cgrid .info { padding: 26px; border-right: 2px solid var(--ink); display: grid; gap: 16px; align-content: start; }
+.cgrid .info .k { font: 400 12px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-2); }
+.cgrid .info p { margin: 4px 0 0; font: 600 26px/1.15 var(--cond); }
+.cgrid .info a { text-decoration: none; }
+.st { font: 400 13px/1.4 var(--mono); }
+.st.is-open { color: #2E7D32; }
+.mapbox { position: relative; min-height: 400px; overflow: hidden; background: var(--paper-2); }
+.mapbox iframe { position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 140px); border: 0; filter: sepia(.25) saturate(.8); }
+footer { padding: 26px var(--gut) 120px; font: 400 13px/1.6 var(--mono); color: var(--ink-2); }
+
+@media (max-width: 900px) {
+  .fx, .honest, .cgrid { grid-template-columns: minmax(0, 1fr); }
+  .cgrid .info { border-right: 0; border-bottom: 2px solid var(--ink); }
+  .prints { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .print { grid-column: auto !important; margin-top: 0 !important; }
+  .proof { grid-template-columns: minmax(0, 1fr); }
+  .proof div { border-right: 0; border-bottom: 1px solid var(--ink); }
+}
+@media (max-width: 700px) {
+  body { font-size: 16.5px; }
+  .stampnav { grid-template-columns: 1fr 1fr; right: 10px; bottom: 10px; font-size: 11px; }
+  .stampnav a:nth-of-type(n+3):not(.call) { display: none; }
+  .stampnav a { border-right: 1px solid var(--ink); }
+  .stampnav b { font-size: 18px; }
+  .bike { width: 100vw; margin: -30vh 0 0; }
+  .bike .note { font-size: 28px; }
+  .ttl { bottom: 13vh; }
+  .ttl h1 { font-size: 62px; }
+  .dims { display: none; }
+  .hs { width: 32px; height: 32px; font-size: 15px; line-height: 28px; }
+  .draw { padding: 8px; }
+  .route .stop text { font-size: 30px; display: none; }
+  .route .stop:first-child text, .route .stop:last-child text { display: block; }
+}
+</style>
+</head>
+<body data-hours='{"1":[[10,0,20,0]],"2":[[10,0,20,0]],"3":[[10,0,20,0]],"4":[[10,0,20,0]],"5":[[10,0,20,0]]}'>
+
+<nav class="stampnav" aria-label="Разделы">
+  <b>Бабин и ко</b>
+  <a href="#fix" data-s="fix">Л.2 Узлы</a><a href="#price" data-s="price">Л.3 Цены</a><a href="#shop" data-s="shop">Л.4 Цех</a>
+  <a href="#route" data-s="route">Л.5 Маршрут</a><a href="#find" data-s="find">Л.6 Адрес</a><a href="#top" data-s="top">Л.1</a>
+  <a class="call" href="tel:+79519089176">☎ +7 951 908-91-76</a>
+</nav>
+
+<header class="hero bp" id="top">
+  <div class="stage">
+    <div class="dims">ЛИСТ 1 · ВЕЛОМАСТЕРСКАЯ<br>Н. НОВГОРОД, ГЕНКИНОЙ, 26<br>МАСШТАБ 1:1 · ПРОВЕРЕНО МАСТЕРОМ</div>
+    <div class="bike">
+      <svg viewBox="0 0 900 520" aria-hidden="true" id="bk">
+        <g id="wR"><circle class="ln" cx="230" cy="350" r="132"/><circle class="thin" cx="230" cy="350" r="118"/><circle class="ln" cx="230" cy="350" r="12"/><g class="thin" id="spR"></g></g>
+        <g id="wF"><circle class="ln" cx="680" cy="350" r="132"/><circle class="thin" cx="680" cy="350" r="118"/><circle class="ln" cx="680" cy="350" r="12"/><g class="thin" id="spF"></g></g>
+        <g id="frame">
+          <path class="ln fr" d="M230 350 L 430 358 L 385 170 Z"/>
+          <path class="ln fr" d="M385 170 L 612 182 L 430 358"/>
+          <path class="ln fr" d="M612 182 L 626 226 L 680 350"/>
+          <path class="ln fr" d="M378 150 L 385 170 M350 146 C 360 140, 402 140, 414 148 Z"/>
+          <path class="ln fr" d="M606 160 L 612 182 M590 152 C 610 140, 640 142, 652 160"/>
+          <circle class="ln fr" cx="430" cy="358" r="24"/>
+          <path class="dash fr" d="M230 350 L 430 334 M230 350 L 430 382"/>
+        </g>
+        <g>
+          <path class="lead" d="M430 358 L 470 440 L 560 440"/><text class="note" x="566" y="446">каретка</text>
+          <path class="lead" d="M230 350 L 150 470 L 70 470"/><text class="note" x="12" y="476">втулка</text>
+          <path class="lead" d="M612 182 L 700 110 L 790 110"/><text class="note" x="796" y="116">рулевая</text>
+          <path class="lead" d="M200 380 L 120 260 L 40 260"/><text class="note" x="6" y="252">переключатель</text>
+          <path class="lead" d="M680 220 L 760 200 L 840 200"/><text class="note" x="780" y="190">обод · спицы</text>
+        </g>
+      </svg>
+    </div>
+    <div class="ttl">
+      <h1>Бабин <span>и ко</span></h1>
+      <p>Веломастерская на Генкиной, 26. ТО, переключатели, колёса, втулки и каретки — мастер берётся почти за любой велосипед.</p>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="sheet bp" id="fix">
+  <div class="sh"><span>Лист 2</span><span>Что скрипит?</span></div>
+  <h2 class="h2" data-in>Ткните в узел — <span>расскажем,</span><br>что с ним сделаем</h2>
+  <p class="lead2" data-in>Описания — по отзывам клиентов мастерской на Яндекс Картах.</p>
+  <div class="fx">
+    <div class="draw" data-in>
+      <svg viewBox="0 0 900 520" aria-hidden="true">
+        <circle class="ln" cx="230" cy="350" r="132" fill="none" stroke="#EAF2FF" stroke-width="3"/><circle cx="230" cy="350" r="118" fill="none" stroke="rgba(220,235,255,.6)"/>
+        <circle cx="680" cy="350" r="132" fill="none" stroke="#EAF2FF" stroke-width="3"/><circle cx="680" cy="350" r="118" fill="none" stroke="rgba(220,235,255,.6)"/>
+        <path d="M230 350 L 430 358 L 385 170 Z M385 170 L 612 182 L 430 358 M612 182 L 626 226 L 680 350 M378 150 L 385 170 M350 146 C 360 140, 402 140, 414 148 Z M606 160 L 612 182 M590 152 C 610 140, 640 142, 652 160" fill="none" stroke="#EAF2FF" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+        <circle cx="430" cy="358" r="24" fill="none" stroke="#EAF2FF" stroke-width="3"/>
+      </svg>
+      <div id="spots"></div>
+    </div>
+    <div>
+      <div class="memo" aria-live="polite"><span class="k" id="mk">узел</span><h3 id="mh">—</h3><p id="mp"></p><div class="rv" id="mr"></div><div class="pr">Цена — после осмотра. Прайса на Яндекс Картах нет; в отзывах пишут, что мастер не накручивает цены.</div></div>
+      <div class="list" id="extra"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sheet" id="price">
+  <div class="sh"><span>Лист 3</span><span>Про деньги и сроки</span></div>
+  <h2 class="h2" data-in>Честно, <span>на месте</span></h2>
+  <div class="honest">
+    <div class="spec" data-in>
+      <div><span>ТО велосипеда (даже нового)</span><span>после осмотра</span></div>
+      <div><span>Настройка переключателей</span><span>в отзыве — за полчаса</span></div>
+      <div><span>Сборка колеса</span><span>после осмотра</span></div>
+      <div><span>Подшипники в барабане втулки</span><span>ремонт, а не замена</span></div>
+      <div><span>Торцевание кареточного узла</span><span>есть торцеватель</span></div>
+      <div><span>Детские велосипеды, самокаты</span><span>тоже берём</span></div>
+      <div><span>Запчасти</span><span>часто в наличии</span></div>
+    </div>
+    <div class="say" data-in>Цену называем, посмотрев велосипед: у каждого своя история. Многие ремонты занимают около часа — так пишут в отзывах.<small>По отзывам на Яндекс Картах. Точные сроки зависят от поломки и наличия запчастей.</small></div>
+  </div>
+</section>
+
+<section class="sheet" id="shop" style="background:var(--paper-2)">
+  <div class="sh"><span>Лист 4</span><span>Цех</span></div>
+  <h2 class="h2" data-in>Стена ключей, <span>винил и чай</span></h2>
+  <p class="lead2" data-in>Гости пишут, что это не просто мастерская, а место встречи велосипедистов города.</p>
+  <div class="prints">
+    <figure class="print p1" data-in data-ph><img src="https://avatars.mds.yandex.net/get-altay/4660612/2a00000178a2d61549d0f2e866ac79e1e77e/XXL" alt="Мастер ремонтирует велосипед" loading="lazy" referrerpolicy="no-referrer"><span>Мастер за работой</span></figure>
+    <figure class="print p2" data-in data-ph><img src="https://avatars.mds.yandex.net/get-altay/3986639/2a00000178a2d616976ecbd84465a7948aea/XXL" alt="Стена инструментов в мастерской" loading="lazy" referrerpolicy="no-referrer"><span>Инструменты</span></figure>
+    <figure class="print p3" data-in data-ph><img src="https://avatars.mds.yandex.net/get-altay/11385005/2a0000019063160e2747b394fba2d3875bb0/XL" alt="Велосипед на фоне неба" loading="lazy" referrerpolicy="no-referrer"><span>Готов к сезону</span></figure>
+    <figure class="print p4" data-in data-ph><img src="https://avatars.mds.yandex.net/get-altay/217470/2a00000185e750dc08ca5a76700d28c0be0a/XL" alt="Ограда из покрышек у входа" loading="lazy" referrerpolicy="no-referrer"><span>Вход с покрышками</span></figure>
+  </div>
+</section>
+
+<section class="sheet bp" id="route">
+  <div class="sh"><span>Лист 5</span><span>Маршрут выходного дня</span></div>
+  <h2 class="h2" data-in>Перед поездкой — <span>на ТО</span></h2>
+  <div class="route">
+    <svg viewBox="0 0 1000 340" aria-hidden="true">
+      <path class="path" id="rp" d="M40 280 C 120 280, 140 200, 230 200 S 330 110, 410 120 S 520 220, 600 190 S 700 70, 780 90 S 900 200, 960 140"/>
+      <g id="stops"></g>
+    </svg>
+  </div>
+  <p class="src">Маршрут — из группы мастерской ВКонтакте: Нижний Новгород — Толоконцево — Линда-Пустынь — Зарубино — Сухаренки — Зиняки — Ступино — Кантаурово, берег Линды. Чай, кофе — и домой.</p>
+</section>
+
+<section class="sheet" id="find">
+  <div class="sh"><span>Лист 6</span><span>Как найти</span></div>
+  <div class="proof" data-in>
+    <div><b>5,0</b><span>на Яндекс Картах · 178 оценок, 84 отзыва</span></div>
+    <div><b>14/14</b><span>отзывов о качестве — положительные</span></div>
+    <div><b>45/56</b><span>отзывов хвалят мастера</span></div>
+  </div>
+  <div class="cgrid" data-in>
+    <div class="info">
+      <div><span class="k">Адрес</span><p>Нижний Новгород, ул. Генкиной, 26</p></div>
+      <div><span class="k">Часы</span><p>Пн–пт 10:00–20:00</p><span class="st" data-status>часы</span></div>
+      <div><span class="k">Телефоны</span><p><a href="tel:+79519089176">+7 951 908-91-76</a><br><a href="tel:+79202929578">+7 920 292-95-78</a></p></div>
+      <div><span class="k">Группа</span><p><a href="https://vk.com/club1529863" target="_blank" rel="noopener">ВКонтакте</a></p></div>
+    </div>
+    <div class="mapbox"><iframe src="https://yandex.ru/map-widget/v1/?ll=44.012611%2C56.311582&amp;z=16&amp;pt=44.012611%2C56.311582%2Cpm2orm&amp;l=map" title="«Бабин и ко» на Яндекс Картах" loading="lazy" allowfullscreen></iframe></div>
+  </div>
+</section>
+</main>
+
+<footer>Бабин и ко · веломастерская · Нижний Новгород, ул. Генкиной, 26 · <a href="https://yandex.ru/maps/org/babin_i_ko/179713305511/" target="_blank" rel="noopener">Яндекс Карты</a></footer>
+
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  var NS = 'http://www.w3.org/2000/svg';
+  // spokes
+  [['spR', 230], ['spF', 680]].forEach(function (w) {
+    var g = document.getElementById(w[0]);
+    for (var i = 0; i < 18; i++) { var a = i / 18 * Math.PI * 2, l = document.createElementNS(NS, 'line'); l.setAttribute('x1', w[1] + Math.cos(a) * 12); l.setAttribute('y1', 350 + Math.sin(a) * 12); l.setAttribute('x2', w[1] + Math.cos(a + .5) * 118); l.setAttribute('y2', 350 + Math.sin(a + .5) * 118); g.appendChild(l); }
+  });
+  // feature hotspots: [key, x%, y%, title, what we do, from reviews]
+  var SPOTS = [
+    ['gear', 17, 77, 'Переключатели', 'Настраиваем переключение скоростей и регулируем весь велосипед.', 'Заедало переключение — мастер настроил за полчаса, ещё и отрегулировал всё остальное.'],
+    ['hub', 27, 64, 'Втулки', 'Перебираем и смазываем втулки, чиним подшипники в барабане — там, где в магазине предлагают только замену целиком.', 'Подшипники в барабане починили, хотя в магазине предлагали только замену.'],
+    ['bb', 48, 69, 'Каретка', 'Смазываем каретку, торцуем кареточный узел — для этого в мастерской есть свой торцеватель.', 'У мастера есть инструмент, которого нет в других мастерских.'],
+    ['wheel', 75, 45, 'Колёса', 'Собираем и обслуживаем колёса.', 'Сборку колеса сделали хорошо, качественно и довольно быстро.'],
+    ['head', 68, 35, 'Вилка и рулевая', 'Закрепляем и обслуживаем вилку, рулевую колонку.', 'После ТО закрепили вилку, смазали втулки и каретку — велосипед поехал быстрее.']
+  ];
+  var EXTRA = [['to', 'Полное ТО', 'Обслуживание целиком — даже для нового велосипеда из магазина: после ТО переключения работают чётко.', 'Новый велосипед после 170 км отдали на ТО — «другой велосипед, небо и земля».'], ['kids', 'Детские и самокаты', 'Ремонтируем детские велосипеды, берёмся даже за самокаты.', 'Отремонтировали два детских велосипеда в обещанный срок.']];
+  var spots = document.getElementById('spots'), extra = document.getElementById('extra'), cur = 'gear';
+  spots.innerHTML = SPOTS.map(function (s, i) { return '<button class="hs" data-k="' + s[0] + '" style="left:' + s[1] + '%;top:' + s[2] + '%" aria-label="' + s[3] + '">' + (i + 1) + '</button>'; }).join('');
+  extra.innerHTML = EXTRA.map(function (s) { return '<button data-k="' + s[0] + '">' + s[1] + '</button>'; }).join('');
+  function show(k) {
+    cur = k;
+    var s = SPOTS.concat(EXTRA.map(function (e) { return [e[0], 0, 0, e[1], e[2], e[3]]; })).filter(function (x) { return x[0] === k; })[0];
+    document.getElementById('mk').textContent = SPOTS.some(function (x) { return x[0] === k; }) ? 'узел № ' + (SPOTS.findIndex(function (x) { return x[0] === k; }) + 1) : 'услуга';
+    document.getElementById('mh').textContent = s[3]; document.getElementById('mp').textContent = s[4]; document.getElementById('mr').textContent = '«' + s[5] + '» — пересказ отзыва';
+    document.querySelectorAll('.hs, #extra button').forEach(function (b) { b.classList.toggle('on', b.dataset.k === k); });
+  }
+  document.querySelector('.fx').addEventListener('click', function (e) { var b = e.target.closest('[data-k]'); if (b) show(b.dataset.k); });
+  show('gear');
+
+  // route stops along the path
+  var rp = document.getElementById('rp'), L = rp.getTotalLength(), sg = document.getElementById('stops');
+  var STOPS = ['Н. Новгород', 'Толоконцево', 'Линда-Пустынь', 'Зарубино', 'Сухаренки', 'Зиняки', 'Ступино', 'Кантаурово'];
+  STOPS.forEach(function (n, i) { var t = i / (STOPS.length - 1), pt = rp.getPointAtLength(L * t), g = document.createElementNS(NS, 'g'); g.setAttribute('class', 'stop'); g.dataset.t = t; g.innerHTML = '<circle cx="' + pt.x + '" cy="' + pt.y + '" r="9"/><text x="' + (pt.x - 30) + '" y="' + (pt.y + (i % 2 ? 40 : -20)) + '">' + n + '</text>'; sg.appendChild(g); });
+  rp.style.strokeDasharray = L;
+
+  // hero
+  var hero = document.querySelector('.hero'), stage = hero.querySelector('.stage'), wR = document.getElementById('wR'), wF = document.getElementById('wF');
+  var fr = document.querySelectorAll('#frame .fr'); fr.forEach(function (p) { var l = p.getTotalLength ? p.getTotalLength() : 600; p.style.strokeDasharray = l; p.dataset.l = l; });
+  var navs = document.querySelectorAll('.stampnav a[data-s]'), route = document.getElementById('route');
+  RT.onScroll(function () {
+    var p = RT.motion ? RT.progress(hero) : 1;
+    var roll = RT.ease(RT.clamp(p / .35)), x = (1 - roll) * -700;
+    wR.setAttribute('transform', 'translate(' + x + ' 0) rotate(' + (p * 900) + ' 230 350)');
+    wF.setAttribute('transform', 'translate(' + x + ' 0) rotate(' + (p * 900) + ' 680 350)');
+    var d = RT.clamp((p - .3) / .35);
+    fr.forEach(function (f, i) { var k = RT.clamp(d * fr.length - i * .6); f.style.strokeDashoffset = f.dataset.l * (1 - k); });
+    stage.style.setProperty('--nt', RT.clamp((p - .62) / .12));
+    stage.style.setProperty('--tt', RT.ease(RT.clamp((p - .7) / .18)));
+    // route draws itself while the sheet passes
+    var r = RT.clamp((RT.pass(route) - .2) / .45);
+    rp.style.strokeDashoffset = L * (1 - r);
+    sg.querySelectorAll('.stop').forEach(function (s) { s.classList.toggle('on', r >= +s.dataset.t - .01); });
+    var cur = 'top';
+    ['fix', 'price', 'shop', 'route', 'find'].forEach(function (id) { if (document.getElementById(id).getBoundingClientRect().top < innerHeight * .5) cur = id; });
+    navs.forEach(function (a) { a.classList.toggle('on', a.dataset.s === cur); });
+  });
+
+  window.REEL = {
+    hero: '.hero', heroAt: .85, feature: '#fix', featureOff: 170, featureM: '.draw', featureOffM: -60, prices: '#price', pricesOff: 40,
+    demo: [function () { show('hub'); }, function () { show('bb'); }, function () { show('to'); }],
+    holds: [50, 50, 50]
+  };
+})();
+</script>
+</body>
+</html>
