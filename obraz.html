@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Салон красоты «1 ∞ 1 Образ» — Дзержинск, проспект Чкалова, 50А</title>
+<meta name="description" content="Салон красоты «1 ∞ 1 Образ» в Дзержинске: женские, мужские и детские стрижки от 600 ₽, окрашивание, укладки, кератин, маникюр, педикюр, наращивание ресниц. Пн–пт 9:00–19:00, сб–вс 9:00–17:00. Рейтинг 5,0.">
+<meta property="og:title" content="«1 ∞ 1 Образ» — салон красоты, Дзержинск">
+<meta property="og:description" content="Стрижки для всей семьи, окрашивание, укладки. Онлайн-запись.">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/18152412/2a0000019c565dc626369d41dc72ae65911f/XXXL">
+<meta name="theme-color" content="#F6F1EA">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&amp;family=Raleway:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BeautySalon","name":"1 ∞ 1 Образ","telephone":"+7 908 169-42-08","address":{"@type":"PostalAddress","streetAddress":"просп. Чкалова, 50А","addressLocality":"Дзержинск","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":56.252782,"longitude":43.467967},"openingHours":["Mo-Fr 09:00-19:00","Sa-Su 09:00-17:00"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","ratingCount":"71"}}</script>
+<style>
+:root {
+  --cream: #F6F1EA; --cream-2: #EDE4D8; --ink: #1E1B19; --ink-2: #6E655D; --gold: #B08D57; --gold-2: #D9BE8C; --rose: #E9D6CF; --ok: #4E9B6E; --no: #C0533F;
+  --serif: 'Cormorant Garamond', Georgia, serif; --sans: 'Raleway', Arial, sans-serif;
+  --gut: clamp(16px, 4vw, 52px); --ease: cubic-bezier(.2, .75, .2, 1);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--cream); color: var(--ink); font: 400 17px/1.65 var(--sans); overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+
+/* nav mirrors itself around the logo */
+.nav { position: fixed; z-index: 30; top: 0; left: 0; right: 0; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; padding: 14px var(--gut); background: rgba(246,241,234,.86); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(176,141,87,.25); transform: translateY(calc(-100% * (1 - var(--nb, 0)))); transition: transform .4s var(--ease); }
+.nav .l, .nav .r { display: flex; gap: 22px; font: 600 13px/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; }
+.nav .l { justify-content: flex-end; padding-right: 28px; } .nav .r { padding-left: 28px; }
+.nav a { text-decoration: none; color: var(--ink-2); }
+.nav a:hover { color: var(--gold); }
+.nav b { font: 600 24px/1 var(--serif); letter-spacing: .06em; }
+.nav b i { font-style: normal; color: var(--gold); }
+@media (max-width: 760px) { .nav { grid-template-columns: auto 1fr; } .nav .l { display: none; } .nav .r { justify-content: flex-end; } .nav .r a:not(.bk) { display: none; } }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 15px 26px; border-radius: 40px; background: var(--ink); color: var(--cream); font: 600 14px/1 var(--sans); letter-spacing: .1em; text-transform: uppercase; text-decoration: none; border: 0; cursor: pointer; }
+.btn.g { background: var(--gold); color: #fff; }
+.btn.o { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1.5px var(--ink); }
+
+/* hero: the infinity sign draws itself, two portraits sit in its loops */
+.hero { position: relative; height: 220vh; }
+.st { position: sticky; top: 0; height: 100vh; min-height: 620px; overflow: hidden; display: grid; place-items: center; }
+.inf { position: relative; width: min(900px, 82vw); aspect-ratio: 2.3; margin-top: -22vh; }
+.inf svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.inf path { fill: none; stroke: var(--gold); stroke-width: 2.4; stroke-dasharray: 1; stroke-dashoffset: calc(1 - var(--d, 0)); }
+.loop { position: absolute; top: 9%; width: 36%; aspect-ratio: 1; border-radius: 50%; overflow: hidden; background: var(--cream-2); transform: scale(calc(.6 + .4 * var(--ph, 0))); opacity: var(--ph, 0); box-shadow: 0 30px 60px -20px rgba(60,40,20,.35); }
+.loop img { width: 100%; height: 100%; object-fit: cover; }
+.loop.a { left: 7%; } .loop.b { right: 7%; }
+.loop.b img { object-position: 40% 30%; }
+.center { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); text-align: center; }
+.center small { display: block; font: 600 12px/1 var(--sans); letter-spacing: .34em; text-transform: uppercase; color: var(--gold); }
+.title { position: absolute; left: 0; right: 0; bottom: 4vh; text-align: center; }
+.title h1 { margin: 0; font: 600 clamp(52px, 8vw, 120px)/.9 var(--serif); letter-spacing: .04em; }
+.title h1 em { font-style: normal; color: var(--gold); font-weight: 500; }
+.title .refl { margin-top: -.18em; font: 600 clamp(52px, 8vw, 120px)/.9 var(--serif); letter-spacing: .04em; transform: scaleY(-1); opacity: .12; -webkit-mask-image: linear-gradient(transparent 40%, #000); mask-image: linear-gradient(transparent 40%, #000); height: .55em; overflow: hidden; }
+.title p { margin: 6px 0 0; color: var(--ink-2); font-size: clamp(14px, 1.3vw, 17px); letter-spacing: .06em; opacity: var(--tt, 0); }
+.title .row { display: flex; gap: 10px; justify-content: center; margin-top: 16px; opacity: var(--tt, 0); flex-wrap: wrap; }
+@media (max-width: 760px) { .inf { width: 100vw; margin-top: -26vh; } .title { bottom: 8vh; } }
+
+/* mirrored sections: a centre axis with an ∞ bead travelling down */
+.mir::before { content: ""; position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: rgba(176,141,87,.5); }
+.mir::after { content: "∞"; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); padding: 6px 10px; background: var(--cream); color: var(--gold); font: 600 32px/1 var(--serif); }
+.mir { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: clamp(40px, 8vw, 140px); padding: clamp(80px, 11vw, 150px) var(--gut); max-width: 1240px; margin: 0 auto; align-items: center; scroll-margin-top: 50px; }
+.mir.flip > :first-child { order: 2; }
+.kick { font: 600 12px/1 var(--sans); letter-spacing: .32em; text-transform: uppercase; color: var(--gold); }
+h2 { margin: 14px 0 16px; font: 600 clamp(38px, 5vw, 72px)/1 var(--serif); }
+h2 em { font-style: italic; font-weight: 500; color: var(--gold); }
+.lead { color: var(--ink-2); max-width: 520px; margin: 0 0 22px; }
+.frame { position: relative; aspect-ratio: 4/5; border-radius: 300px 300px 12px 12px; overflow: hidden; background: var(--cream-2); }
+.frame img { width: 100%; height: 100%; object-fit: cover; }
+.frame.r { border-radius: 12px 12px 300px 300px; }
+.frame.mirror img { transform: scaleX(-1); }
+@media (max-width: 860px) { .mir { grid-template-columns: 1fr; gap: 30px; } .mir.flip > :first-child { order: 0; } .mir::before, .mir::after { display: none; } }
+
+/* family visit */
+.fam { display: grid; gap: 16px; }
+.add { display: flex; flex-wrap: wrap; gap: 8px; }
+.add button { display: inline-flex; align-items: center; gap: 8px; padding: 11px 16px; border-radius: 30px; border: 1.5px solid var(--ink); background: transparent; font: 600 14px/1 var(--sans); cursor: pointer; color: var(--ink); }
+.add button::before { content: "+"; font-size: 18px; color: var(--gold); }
+.people { display: grid; gap: 10px; }
+.pp { display: grid; grid-template-columns: 46px 1fr auto 30px; gap: 12px; align-items: center; padding: 12px 14px; background: #fff; border-radius: 16px; box-shadow: 0 8px 20px -14px rgba(60,40,20,.4); }
+.pp svg { width: 46px; height: 46px; }
+.pp select { width: 100%; font: 500 15px/1.2 var(--sans); padding: 8px 10px; border-radius: 10px; border: 1px solid var(--cream-2); background: var(--cream); color: var(--ink); }
+.pp b { font: 700 22px/1 var(--serif); white-space: nowrap; }
+.pp .x { width: 30px; height: 30px; border-radius: 50%; border: 0; background: var(--cream-2); cursor: pointer; font-size: 16px; color: var(--ink-2); }
+.pp .who { font: 600 12px/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--gold); margin-bottom: 4px; }
+.total { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; padding: 18px 20px; border-radius: 16px; background: var(--ink); color: var(--cream); }
+.total b { font: 600 clamp(34px, 4vw, 48px)/1 var(--serif); color: var(--gold-2); }
+.total span { font-size: 14px; opacity: .8; }
+.mirror-row { display: flex; justify-content: center; gap: 8px; padding: 22px; border-radius: 300px 300px 20px 20px; background: linear-gradient(var(--cream-2), #fff); min-height: 180px; align-items: flex-end; position: relative; overflow: hidden; }
+.mirror-row svg { width: clamp(46px, 7vw, 74px); height: auto; animation: pop .5s var(--ease); }
+.mirror-row svg.kid { width: clamp(34px, 5vw, 54px); }
+.mirror-row::after { content: "∞"; position: absolute; top: 16px; left: 50%; transform: translateX(-50%); font: 600 34px/1 var(--serif); color: var(--gold); }
+@keyframes pop { from { transform: translateY(20px); opacity: 0; } }
+
+/* price list as two mirrored columns */
+.plist { display: grid; grid-template-columns: 1fr 1fr; gap: 0 clamp(30px, 6vw, 90px); }
+.plist h3 { grid-column: span 1; margin: 0 0 8px; font: 600 26px/1.2 var(--serif); }
+.pr { display: flex; align-items: baseline; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--cream-2); }
+.pr span { flex: 1; }
+.pr b { font: 700 20px/1 var(--serif); }
+.col.l { text-align: right; }
+.col.l .pr { flex-direction: row-reverse; }
+.more { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+.more span { padding: 8px 14px; border-radius: 30px; background: #fff; font-size: 14px; color: var(--ink-2); }
+@media (max-width: 760px) { .plist { grid-template-columns: 1fr; } .col.l { text-align: left; } .col.l .pr { flex-direction: row; } }
+
+/* masters */
+.mast { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.ms { background: #fff; border-radius: 200px 200px 16px 16px; padding: 30px 22px 22px; text-align: center; }
+.ms .n { font: 600 34px/1 var(--serif); }
+.ms .r { font: 600 12px/1 var(--sans); letter-spacing: .2em; text-transform: uppercase; color: var(--gold); margin: 8px 0 14px; }
+.ms p { margin: 0; color: var(--ink-2); font-size: 15.5px; font-style: italic; }
+@media (max-width: 860px) { .mast { grid-template-columns: 1fr; } }
+.perks { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 26px; }
+.perks div { text-align: center; padding: 16px 10px; border-top: 1px solid var(--gold-2); font-size: 15px; color: var(--ink-2); }
+.perks b { display: block; font: 600 22px/1.1 var(--serif); color: var(--ink); margin-bottom: 4px; }
+@media (max-width: 760px) { .perks { grid-template-columns: 1fr 1fr; } }
+
+.vis { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; max-width: 1100px; margin: 0 auto; padding: clamp(70px, 10vw, 130px) var(--gut); scroll-margin-top: 50px; }
+.vis .ln { display: flex; justify-content: space-between; gap: 14px; padding: 12px 0; border-bottom: 1px solid var(--cream-2); }
+.vis .ln span { color: var(--ink-2); }
+.vis .ln b { text-align: right; font-weight: 600; }
+.live { display: inline-flex; align-items: center; gap: 8px; }
+.live i { width: 9px; height: 9px; border-radius: 50%; background: #aaa; }
+.live.is-open i { background: var(--ok); box-shadow: 0 0 8px var(--ok); } .live.is-closed i { background: var(--no); }
+.mapbox { position: relative; min-height: 380px; border-radius: 200px 200px 16px 16px; overflow: hidden; }
+.mapbox iframe { position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 140px); border: 0; filter: sepia(.15); }
+@media (max-width: 860px) { .vis { grid-template-columns: 1fr; } }
+footer { text-align: center; padding: 30px var(--gut); color: var(--ink-2); font-size: 14px; border-top: 1px solid var(--cream-2); }
+footer b { font: 600 22px/1 var(--serif); color: var(--ink); }
+
+.motion [data-in] { opacity: 0; transform: translateY(24px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
+.motion [data-in].in { opacity: 1; transform: none; }
+.noimg { background: linear-gradient(135deg, var(--cream-2), var(--rose)); }
+.noimg img { opacity: 0; }
+</style>
+</head>
+<body data-hours='{"0":[[9,0,17,0]],"1":[[9,0,19,0]],"2":[[9,0,19,0]],"3":[[9,0,19,0]],"4":[[9,0,19,0]],"5":[[9,0,19,0]],"6":[[9,0,17,0]]}'>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="w" viewBox="0 0 60 100"><circle cx="30" cy="20" r="13" fill="#B08D57"/><path d="M17 20 Q14 40 18 46 L42 46 Q46 40 43 20" fill="#6E5235"/><path d="M12 98 L16 56 Q30 46 44 56 L48 98Z" fill="#1E1B19"/></symbol>
+  <symbol id="m" viewBox="0 0 60 100"><circle cx="30" cy="20" r="13" fill="#B08D57"/><path d="M17 16 Q30 2 43 16 L43 12 Q30 0 17 12Z" fill="#3a2a1c"/><path d="M10 98 L14 54 Q30 44 46 54 L50 98Z" fill="#3B3632"/></symbol>
+  <symbol id="k" viewBox="0 0 60 100"><circle cx="30" cy="30" r="15" fill="#B08D57"/><path d="M16 26 Q30 8 44 26 Q30 18 16 26Z" fill="#6E5235"/><path d="M14 98 L18 60 Q30 50 42 60 L46 98Z" fill="#D9BE8C"/></symbol>
+</defs></svg>
+
+<header class="nav" id="nav">
+  <div class="l"><a href="#family">Семья</a><a href="#price">Цены</a></div>
+  <b>1 <i>∞</i> 1 Образ</b>
+  <div class="r"><a href="#masters">Мастера</a><a href="#visit">Адрес</a><a class="bk" href="https://dikidi.net/1349620" target="_blank" rel="noopener">Записаться</a></div>
+</header>
+
+<main>
+<section class="hero" id="top">
+  <div class="st" id="st">
+    <div class="inf">
+      <svg viewBox="0 0 1100 480" aria-hidden="true"><path pathLength="1" d="M550 240 C 450 110, 330 40, 220 40 C 100 40, 40 140, 40 240 C 40 340, 100 440, 220 440 C 330 440, 450 370, 550 240 C 650 110, 770 40, 880 40 C 1000 40, 1060 140, 1060 240 C 1060 340, 1000 440, 880 440 C 770 440, 650 370, 550 240 Z"/></svg>
+      <div class="loop a" data-ph><img src="https://avatars.mds.yandex.net/get-altay/18152412/2a0000019c565dc626369d41dc72ae65911f/XXL" alt="Окрашивание в салоне «1 ∞ 1 Образ»" fetchpriority="high"></div>
+      <div class="loop b" data-ph><img src="https://avatars.mds.yandex.net/get-altay/988435/2a000001903a768731193fb5913bc409af9a/XXL" alt="Укладка локонами" fetchpriority="high"></div>
+      
+    </div>
+    <div class="title">
+      <small style="display:block;font:600 12px/1 var(--sans);letter-spacing:.34em;text-transform:uppercase;color:var(--gold);margin-bottom:10px">Дзержинск · проспект Чкалова, 50А</small>
+      <h1>1 <em>∞</em> 1 Образ</h1>
+      <div class="refl" aria-hidden="true">1 ∞ 1 Образ</div>
+      <p>Салон красоты, куда ходят всей семьёй: стрижки, окрашивание, укладки, ногти и ресницы</p>
+      <div class="row"><a class="btn" href="https://dikidi.net/1349620" target="_blank" rel="noopener">Записаться онлайн</a><a class="btn o" href="tel:+79081694208">+7 908 169-42-08</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="mir" id="family">
+  <div>
+    <span class="kick" data-in>Семейный визит</span>
+    <h2 data-in>Ходите <em>всей семьёй?</em></h2>
+    <p class="lead" data-in>Так и пишут в отзывах. Соберите, кто идёт, и посмотрите, сколько выйдет. Цены с Яндекс Карт, итог уточнит администратор.</p>
+    <div class="fam" data-in>
+      <div class="add" id="add"><button data-t="w">Женщина</button><button data-t="m">Мужчина</button><button data-t="k">Ребёнок</button></div>
+      <div class="people" id="people"></div>
+      <div class="total"><span id="cnt">Пока никого</span><b id="sum">0 ₽</b></div>
+    </div>
+  </div>
+  <div data-in>
+    <div class="mirror-row" id="mrow"></div>
+    <p style="text-align:center;color:var(--ink-2);margin-top:14px;font-style:italic">«Отличный салон, ходим всей семьёй, отличные мастера, отличные цены»</p>
+  </div>
+</section>
+
+<section class="mir flip" id="price">
+  <div class="frame r" data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/11004775/2a0000018c78c5a9e3a11bb61ae44004f718/XXL" alt="Рабочее место парикмахера" loading="lazy"></div>
+  <div>
+    <span class="kick" data-in>Цены</span>
+    <h2 data-in>Стрижки <em>и не только</em></h2>
+    <div class="plist" data-in>
+      <div class="col">
+        <h3>Женщинам</h3>
+        <div class="pr"><span>Короткие волосы</span><b>700 ₽</b></div>
+        <div class="pr"><span>Средние волосы</span><b>900 ₽</b></div>
+        <div class="pr"><span>Длинные волосы</span><b>1 000 ₽</b></div>
+        <div class="pr"><span>Подравнивание</span><b>400 ₽</b></div>
+        <div class="pr"><span>Оформление чёлки</span><b>350 ₽</b></div>
+      </div>
+      <div class="col">
+        <h3>Мужчинам и детям</h3>
+        <div class="pr"><span>Мужская стрижка</span><b>700 ₽</b></div>
+        <div class="pr"><span>Стрижка машинкой</span><b>600 ₽</b></div>
+        <div class="pr"><span>Детская стрижка</span><b>600 ₽</b></div>
+        <div class="pr"><span>Ваксинг</span><b>300 ₽</b></div>
+      </div>
+    </div>
+    <div class="more" data-in><span>Окрашивание и мелирование</span><span>Кератиновое выпрямление</span><span>Вечерние и свадебные укладки</span><span>Локоны, керли, гофре</span><span>Уход и лечение волос</span><span>Маникюр и педикюр</span><span>Наращивание ресниц</span></div>
+  </div>
+</section>
+
+<section class="mir" id="masters">
+  <div>
+    <span class="kick" data-in>Мастера</span>
+    <h2 data-in>Тех, кого <em>называют по имени</em></h2>
+    <div class="mast">
+      <div class="ms" data-in><div class="n">Дарья</div><div class="r">окрашивание</div><p>«Очень долго решалась выйти из тёмного в блонд. Цвет бомба с первого раза, я снова блонд!»</p></div>
+      <div class="ms" data-in><div class="n">Наталья</div><div class="r">мастер салона</div><p>«Хожу всегда к Наталье: выслушает и подскажет, как лучше. Мастер своего дела!»</p></div>
+      <div class="ms" data-in><div class="n">Галина</div><div class="r">парикмахер</div><p>«Галина просто фея. Сын ходит к ней с 5 лет, а ему уже 18».</p></div>
+    </div>
+  </div>
+  <div>
+    <div class="frame mirror" data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/19534558/2a0000019c565d83c6729d9e79e33eddcb43/XXL" alt="Лилии и чай с конфетами в салоне" loading="lazy"></div>
+    <div class="perks">
+      <div data-in><b>Чай и кофе</b>с конфетками</div>
+      <div data-in><b>Чисто</b>и инструменты тоже</div>
+      <div data-in><b>Парковка</b>рядом</div>
+      <div data-in><b>5,0 ★</b>71 оценка</div>
+    </div>
+  </div>
+</section>
+
+<section class="vis" id="visit">
+  <div>
+    <span class="kick" data-in>Адрес</span>
+    <h2 data-in>Чкалова, <em>50А</em></h2>
+    <div class="ln"><span>Адрес</span><b>Дзержинск, просп. Чкалова, 50А</b></div>
+    <div class="ln"><span>Будни</span><b>9:00–19:00</b></div>
+    <div class="ln"><span>Выходные</span><b>9:00–17:00</b></div>
+    <div class="ln"><span>Сейчас</span><b class="live" data-live><i></i><span data-status>…</span></b></div>
+    <div class="ln"><span>Телефон</span><b><a href="tel:+79081694208">+7 908 169-42-08</a></b></div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:20px"><a class="btn g" href="https://dikidi.net/1349620" target="_blank" rel="noopener">Онлайн-запись</a><a class="btn o" href="https://vk.ru/10ne0braz1" target="_blank" rel="noopener">ВКонтакте</a><a class="btn o" href="https://yandex.ru/maps/org/1_1_obraz/233718653304/" target="_blank" rel="noopener">Маршрут</a></div>
+  </div>
+  <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=43.467967%2C56.252782&amp;z=16&amp;pt=43.467967%2C56.252782%2Cpm2rdm&amp;l=map" title="«1 ∞ 1 Образ» на Яндекс Картах" loading="lazy" allowfullscreen></iframe></div>
+</section>
+</main>
+
+<footer><b>1 ∞ 1 Образ</b><br>салон красоты · Дзержинск, проспект Чкалова, 50А</footer>
+
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  var hero = document.querySelector('.hero'), st = document.getElementById('st'), nav = document.getElementById('nav');
+  RT.onScroll(function () {
+    var p = RT.motion ? RT.progress(hero) : 1;
+    st.style.setProperty('--d', RT.ease(RT.clamp(.08 + p / .5)));
+    st.style.setProperty('--ph', RT.ease(RT.clamp((p - .2) / .35)));
+    st.style.setProperty('--tt', RT.ease(RT.clamp((p - .4) / .3)));
+    nav.style.setProperty('--nb', scrollY > hero.offsetHeight - innerHeight ? 1 : 0);
+  });
+  function live() { var s = RT.status(); if (!s) return; document.querySelectorAll('[data-live]').forEach(function (e) { e.classList.toggle('is-open', s.open); e.classList.toggle('is-closed', !s.open); }); }
+  document.addEventListener('DOMContentLoaded', live); setInterval(live, 60000);
+
+  // family visit calculator
+  var OPT = {
+    w: { who: 'Женщина', o: [['Стрижка, короткие волосы', 700], ['Стрижка, средние волосы', 900], ['Стрижка, длинные волосы', 1000], ['Подравнивание', 400], ['Оформление чёлки', 350]] },
+    m: { who: 'Мужчина', o: [['Мужская стрижка', 700], ['Стрижка машинкой', 600], ['Ваксинг', 300]] },
+    k: { who: 'Ребёнок', o: [['Детская стрижка', 600]] }
+  };
+  var list = [], id = 0, $p = document.getElementById('people'), $m = document.getElementById('mrow');
+  function render() {
+    $p.innerHTML = list.map(function (x) {
+      var o = OPT[x.t];
+      return '<div class="pp" data-id="' + x.id + '"><svg viewBox="0 0 60 100"><use href="#' + x.t + '"/></svg><div><div class="who">' + o.who + '</div><select>' + o.o.map(function (s, i) { return '<option value="' + i + '"' + (i === x.s ? ' selected' : '') + '>' + s[0] + '</option>'; }).join('') + '</select></div><b>' + RT.money(o.o[x.s][1]) + '</b><button class="x" aria-label="Убрать">×</button></div>';
+    }).join('');
+    $m.innerHTML = list.map(function (x) { return '<svg class="' + (x.t === 'k' ? 'kid' : '') + '" viewBox="0 0 60 100"><use href="#' + x.t + '"/></svg>'; }).join('');
+    var sum = list.reduce(function (a, x) { return a + OPT[x.t].o[x.s][1]; }, 0), n = list.length;
+    document.getElementById('sum').textContent = RT.money(sum);
+    document.getElementById('cnt').textContent = n ? n + ' ' + (n === 1 ? 'человек' : n < 5 ? 'человека' : 'человек') + ' за один визит' : 'Пока никого';
+  }
+  function add(t, s) { list.push({ id: ++id, t: t, s: s || 0 }); render(); }
+  document.getElementById('add').addEventListener('click', function (e) { var b = e.target.closest('button'); if (b) add(b.dataset.t, b.dataset.t === 'w' ? 1 : 0); });
+  $p.addEventListener('change', function (e) { var r = e.target.closest('.pp'); if (!r) return; list.forEach(function (x) { if (x.id === +r.dataset.id) x.s = +e.target.value; }); render(); });
+  $p.addEventListener('click', function (e) { if (!e.target.closest('.x')) return; var r = e.target.closest('.pp'); list = list.filter(function (x) { return x.id !== +r.dataset.id; }); render(); });
+  add('w', 1); add('k', 0);
+
+  window.REEL = {
+    hero: '.hero', heroAt: .5, feature: '#family', featureOff: 60, featureM: '.fam', featureOffM: -120, prices: '#price', pricesOff: 80,
+    demo: [function () { add('m', 0); }, function () { add('k', 0); }, function () { list[0].s = 2; render(); }],
+    holds: [40, 40, 45]
+  };
+})();
+</script>
+</body>
+</html>

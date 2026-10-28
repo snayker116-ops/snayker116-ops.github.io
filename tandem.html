@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Тандем — кинологический центр и груминг · Дзержинск, Ситнова, 2</title>
+<meta name="description" content="Кинологический центр «Тандем» в Дзержинске: групповые занятия по бытовому послушанию, индивидуальные занятия с кинологом 2000 ₽, клуб для собак до 10 кг «Остров мелкашей», группа «Юный кинолог», груминг. Ежедневно 10:00–19:00. Рейтинг 5,0.">
+<meta property="og:title" content="«Тандем» — дрессировка и груминг, Дзержинск">
+<meta property="og:description" content="Базовый курс, индивидуальные занятия, «Остров мелкашей», груминг.">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/14795029/2a00000199bd99241b9ee390791686c8bdf7/XXXL">
+<meta name="theme-color" content="#16897F">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&amp;family=Nunito+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Тандем, кинологический центр","telephone":"+7 920 038-65-45","address":{"@type":"PostalAddress","streetAddress":"ул. Ситнова, 2","addressLocality":"Дзержинск","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":56.245575,"longitude":43.429214},"openingHours":"Mo-Su 10:00-19:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","ratingCount":"72"}}</script>
+<style>
+:root {
+  --tl: #16897F; --tl-2: #D6F0EC; --or: #FF8A3D; --or-2: #FFE3CF; --cream: #FFFBF4; --ink: #1D2523; --mut: #5E6B67; --ok: #23A35D; --no: #D9493E;
+  --fun: 'Balsamiq Sans', 'Comic Sans MS', sans-serif; --body: 'Nunito Sans', Arial, sans-serif;
+  --gut: clamp(16px, 4vw, 52px); --ease: cubic-bezier(.2, .75, .2, 1);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--cream); color: var(--ink); font: 400 17px/1.6 var(--body); overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+
+.top { position: fixed; z-index: 30; top: 0; left: 0; right: 0; display: flex; align-items: center; gap: 16px; padding: 12px var(--gut); background: rgba(255,251,244,.92); backdrop-filter: blur(8px); box-shadow: 0 1px 0 rgba(0,0,0,.05); }
+.top b { font: 700 22px/1 var(--fun); color: var(--tl); }
+.top b i { font-style: normal; color: var(--or); }
+.top nav { margin-left: auto; display: flex; gap: 18px; font-weight: 700; font-size: 14.5px; }
+.top nav a { text-decoration: none; color: var(--mut); }
+.top nav a:hover { color: var(--tl); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 22px; border-radius: 16px; background: var(--or); color: #fff; font: 800 15px/1 var(--body); text-decoration: none; border: 0; cursor: pointer; box-shadow: 0 4px 0 #D9682A; }
+.btn.t { background: var(--tl); box-shadow: 0 4px 0 #0E6560; }
+.btn.o { background: #fff; color: var(--tl); box-shadow: inset 0 0 0 2px var(--tl); }
+@media (max-width: 760px) { .top nav { display: none; } .top .btn { margin-left: auto; padding: 10px 14px; } }
+
+/* hero: commands pop one by one */
+.hero { position: relative; height: 300vh; }
+.ring { position: sticky; top: 0; height: 100vh; min-height: 620px; overflow: hidden; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: 30px; padding: 80px var(--gut) 30px; }
+.cmds { position: relative; height: 1.1em; font: 700 clamp(64px, 11vw, 170px)/1 var(--fun); }
+.cmd { position: absolute; left: 0; top: 0; white-space: nowrap; color: var(--tl); opacity: 0; transform: translateY(40px) rotate(-4deg); transition: opacity .35s var(--ease), transform .45s cubic-bezier(.3, 1.6, .5, 1); }
+.cmd.on { opacity: 1; transform: none; }
+.cmd:nth-child(2n) { color: var(--or); }
+.sub { margin: 16px 0 22px; max-width: 520px; font-size: clamp(16px, 1.5vw, 19px); color: var(--mut); }
+.sub b { color: var(--ink); }
+.dog { position: relative; justify-self: center; width: min(40vw, 480px); aspect-ratio: 1; }
+.dog figure { position: absolute; inset: 0; margin: 0; border-radius: 50%; overflow: hidden; opacity: 0; transform: scale(.85) rotate(-6deg); transition: opacity .4s, transform .6s cubic-bezier(.3, 1.4, .5, 1); box-shadow: 0 0 0 12px #fff, 0 30px 60px -20px rgba(0,0,0,.35); }
+.dog figure.on { opacity: 1; transform: none; }
+.dog img { width: 100%; height: 100%; object-fit: cover; }
+.bubble { position: absolute; right: -6%; top: 2%; z-index: 3; background: #fff; border-radius: 22px; padding: 12px 16px; font: 700 18px/1.2 var(--fun); box-shadow: 0 10px 20px -10px rgba(0,0,0,.3); }
+.bubble::after { content: ""; position: absolute; left: 20px; bottom: -12px; border: 12px solid transparent; border-top-color: #fff; border-bottom: 0; }
+.dots { display: flex; gap: 8px; margin-top: 16px; }
+.dots i { width: 10px; height: 10px; border-radius: 50%; background: var(--tl-2); }
+.dots i.on { background: var(--tl); }
+@media (max-width: 860px) { .ring { grid-template-columns: 1fr; align-content: center; } .dog { width: 62vw; order: -1; } .cmds { font-size: 18vw; } .bubble { font-size: 14px; } }
+
+/* the trail that connects all sections */
+.trailwrap { position: relative; }
+#trail { position: absolute; left: 0; top: 0; width: 100%; pointer-events: none; z-index: 0; }
+#trail path { fill: none; stroke: var(--tl); stroke-width: 4; stroke-dasharray: 2 14; stroke-linecap: round; opacity: .45; }
+#trail .paw { fill: var(--or); }
+.st { position: relative; z-index: 1; padding: clamp(70px, 10vw, 130px) var(--gut); max-width: 1180px; margin: 0 auto; scroll-margin-top: 60px; }
+.flag { display: inline-flex; align-items: center; gap: 10px; padding: 8px 14px; border-radius: 30px; background: var(--tl); color: #fff; font: 700 14px/1 var(--fun); }
+.flag i { font-style: normal; background: #fff; color: var(--tl); width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; font-size: 13px; }
+h2 { margin: 14px 0 14px; font: 700 clamp(34px, 5vw, 62px)/1.05 var(--fun); }
+h2 em { font-style: normal; color: var(--or); }
+.lead { max-width: 640px; color: var(--mut); margin: 0 0 26px; }
+
+/* course picker */
+.quiz { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(18px, 3vw, 40px); align-items: start; }
+.qs { display: grid; gap: 16px; }
+.q { background: #fff; border-radius: 22px; padding: 18px; box-shadow: 0 14px 30px -24px rgba(0,0,0,.5); }
+.q b { display: block; font: 700 18px/1.2 var(--fun); margin-bottom: 10px; }
+.opts { display: flex; flex-wrap: wrap; gap: 8px; }
+.opts button { font: 700 14.5px/1 var(--body); padding: 11px 14px; border-radius: 14px; border: 2px solid var(--tl-2); background: #fff; color: var(--ink); cursor: pointer; }
+.opts button.on { background: var(--tl); color: #fff; border-color: var(--tl); }
+.res { position: sticky; top: 90px; background: var(--tl); color: #fff; border-radius: 26px; padding: clamp(22px, 3vw, 32px); }
+.res .k { font: 700 14px/1 var(--fun); color: var(--or-2); }
+.res h3 { margin: 10px 0 8px; font: 700 clamp(26px, 3vw, 36px)/1.1 var(--fun); }
+.res p { margin: 0 0 14px; color: #e3f6f3; }
+.res .pr { display: inline-block; background: #fff; color: var(--tl); padding: 10px 14px; border-radius: 14px; font: 800 22px/1 var(--body); margin-bottom: 16px; }
+.res .also { margin: 0 0 16px; padding: 12px 14px; border-radius: 14px; background: rgba(255,255,255,.12); font-size: 15px; }
+@media (max-width: 860px) { .quiz { grid-template-columns: 1fr; } .res { position: relative; top: 0; } }
+
+/* programs */
+.progs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.pg { background: #fff; border-radius: 24px; padding: 22px; display: grid; gap: 8px; align-content: start; border-top: 6px solid var(--c); }
+.pg b { font: 700 20px/1.2 var(--fun); }
+.pg p { margin: 0; color: var(--mut); font-size: 15px; }
+.pg span { font: 800 22px/1 var(--body); color: var(--c); }
+@media (max-width: 900px) { .progs { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 520px) { .progs { grid-template-columns: 1fr; } }
+
+/* groom + parties */
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.box { background: #fff; border-radius: 26px; overflow: hidden; }
+.box figure { margin: 0; aspect-ratio: 16/10; overflow: hidden; background: var(--tl-2); }
+.box img { width: 100%; height: 100%; object-fit: cover; }
+.box div { padding: 20px 22px 22px; }
+.box h3 { margin: 0 0 8px; font: 700 24px/1.15 var(--fun); }
+.box p { margin: 0; color: var(--mut); font-size: 15.5px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.chips span { padding: 6px 10px; border-radius: 30px; background: var(--or-2); font-size: 13.5px; font-weight: 700; }
+.polaroids { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; padding: 14px; }
+.polaroids figure { margin: 0; aspect-ratio: 1; border-radius: 16px; overflow: hidden; transform: rotate(var(--r)); }
+@media (max-width: 860px) { .two { grid-template-columns: 1fr; } }
+
+/* reviews */
+.revs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.rv { background: #fff; border-radius: 24px; padding: 20px; position: relative; }
+.rv .who { font: 700 15px/1 var(--fun); color: var(--tl); margin-bottom: 8px; }
+.rv p { margin: 0; font-size: 15.5px; }
+@media (max-width: 900px) { .revs { grid-template-columns: 1fr; } }
+
+.vis { display: grid; grid-template-columns: 1fr 1.2fr; gap: 26px; align-items: center; }
+.vis .ln { display: flex; justify-content: space-between; gap: 12px; padding: 11px 0; border-bottom: 2px dotted var(--tl-2); }
+.vis .ln span { color: var(--mut); }
+.vis .ln b { text-align: right; }
+.live { display: inline-flex; align-items: center; gap: 8px; }
+.live i { width: 9px; height: 9px; border-radius: 50%; background: #aaa; }
+.live.is-open i { background: var(--ok); box-shadow: 0 0 8px var(--ok); } .live.is-closed i { background: var(--no); }
+.mapbox { position: relative; min-height: 400px; border-radius: 26px; overflow: hidden; border: 4px solid #fff; box-shadow: 0 20px 40px -26px rgba(0,0,0,.5); }
+.mapbox iframe { position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 140px); border: 0; }
+@media (max-width: 860px) { .vis { grid-template-columns: 1fr; } }
+footer { text-align: center; padding: 30px var(--gut); color: var(--mut); font-size: 14px; }
+footer b { font: 700 22px/1 var(--fun); color: var(--tl); }
+
+.motion [data-in] { opacity: 0; transform: translateY(24px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.motion [data-in].in { opacity: 1; transform: none; }
+.noimg { background: linear-gradient(135deg, var(--tl-2), var(--or-2)); }
+.noimg img { opacity: 0; }
+</style>
+</head>
+<body data-hours='{"0":[[10,0,19,0]],"1":[[10,0,19,0]],"2":[[10,0,19,0]],"3":[[10,0,19,0]],"4":[[10,0,19,0]],"5":[[10,0,19,0]],"6":[[10,0,19,0]]}'>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="paw" viewBox="0 0 40 40"><ellipse cx="20" cy="27" rx="10" ry="8.5"/><ellipse cx="8" cy="15" rx="4.5" ry="6"/><ellipse cx="16" cy="8" rx="4.5" ry="6"/><ellipse cx="25" cy="8" rx="4.5" ry="6"/><ellipse cx="33" cy="15" rx="4.5" ry="6"/></symbol>
+</defs></svg>
+
+<header class="top">
+  <b>Тандем<i>.</i></b>
+  <nav><a href="#pick">Подбор занятия</a><a href="#programs">Программы</a><a href="#groom">Груминг</a><a href="#voices">Отзывы</a><a href="#visit">Адрес</a></nav>
+  <a class="btn" href="tel:+79200386545">Записаться</a>
+</header>
+
+<main class="trailwrap" id="tw">
+<svg id="trail" aria-hidden="true"><path id="tp" d=""/><g id="paws"></g></svg>
+
+<section class="hero" id="top">
+  <div class="ring" id="ring">
+    <div>
+      <div class="cmds" id="cmds"><span class="cmd on">Сидеть!</span><span class="cmd">Рядом!</span><span class="cmd">Фу!</span><span class="cmd">Ко мне!</span></div>
+      <p class="sub"><b>«Тандем»</b>, кинологический центр в Дзержинске. Учим собак и их людей понимать друг друга: группы, индивидуальные занятия, клуб для малышей до 10 кг и груминг.</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn" href="#pick">Подобрать занятие</a><a class="btn o" href="tel:+79200386545">+7 920 038-65-45</a></div>
+      <div class="dots" id="dots"><i class="on"></i><i></i><i></i><i></i></div>
+    </div>
+    <div class="dog" id="dog">
+      <figure class="on" data-ph><img src="https://avatars.mds.yandex.net/get-altay/17639913/2a0000019ed05966f60dfe66c7872e1a605f/XXL" alt="Хаски на занятии" fetchpriority="high"></figure>
+      <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/15416336/2a00000199b97193bad9c134d7ae672fa13a/XXL" alt="Чихуахуа в шлейке" fetchpriority="high"></figure>
+      <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/14795029/2a00000199bd99241b9ee390791686c8bdf7/XXL" alt="Учимся не подбирать с земли" fetchpriority="high"></figure>
+      <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/14907426/2a00000199b97198117450c63dcbeba52b23/XXL" alt="Шпиц знакомится с другой собакой" fetchpriority="high"></figure>
+      <span class="bubble" id="bub">Гав!</span>
+    </div>
+  </div>
+</section>
+
+<section class="st" id="pick">
+  <span class="flag" data-in><i>1</i>Подбор занятия</span>
+  <h2 data-in>Три вопроса, <em>и мы знаем, с чего начать</em></h2>
+  <p class="lead" data-in>Ответьте про свою собаку. Это подсказка: кинолог уточнит всё на первом разговоре.</p>
+  <div class="quiz">
+    <div class="qs" id="qs">
+      <div class="q" data-in><b>Сколько собаке?</b><div class="opts" data-q="age"><button data-v="pup" class="on">Щенок до 6 месяцев</button><button data-v="teen">Подросток 6–12 месяцев</button><button data-v="adult">Взрослая</button></div></div>
+      <div class="q" data-in><b>Сколько весит?</b><div class="opts" data-q="size"><button data-v="small" class="on">До 10 кг</button><button data-v="big">Больше 10 кг</button></div></div>
+      <div class="q" data-in><b>Что хотите решить?</b><div class="opts" data-q="goal"><button data-v="basic" class="on">Базовые команды</button><button data-v="leash">Тянет поводок</button><button data-v="ground">Подбирает с земли</button><button data-v="shy">Боится, лает от испуга</button><button data-v="dom">Доминирует, не слушается</button></div></div>
+    </div>
+    <div class="res" id="res" data-in><span class="k">Вам подойдёт</span><h3 id="rh"></h3><p id="rp"></p><div class="pr" id="rpr"></div><div class="also" id="ra"></div><a class="btn" href="tel:+79200386545">Записаться к кинологу</a></div>
+  </div>
+</section>
+
+<section class="st" id="programs">
+  <span class="flag" data-in><i>2</i>Программы и цены</span>
+  <h2 data-in>Чем <em>занимаемся</em></h2>
+  <div class="progs">
+    <div class="pg" style="--c:var(--tl)" data-in><b>Бытовое послушание</b><p>Групповые занятия. По отзывам, базовый курс состоит из 4 занятий: социализация, команды, прогулки, знакомство с другими собаками.</p><span>5 000 ₽</span></div>
+    <div class="pg" style="--c:var(--or)" data-in><b>Индивидуально с кинологом</b><p>Разбор вашей ситуации один на один: подростковый возраст, страхи, непослушание.</p><span>2 000 ₽</span></div>
+    <div class="pg" style="--c:#8E6BD8" data-in><b>«Остров мелкашей»</b><p>Клуб для собак до 10 кг: занятия в группе маленьких собак. Клиенты пишут, что бегут туда каждую субботу.</p><span>500 ₽</span></div>
+    <div class="pg" style="--c:#E0457B" data-in><b>«Юный кинолог»</b><p>Группа для детей и их собак.</p><span>5 000 ₽</span></div>
+  </div>
+</section>
+
+<section class="st" id="groom">
+  <span class="flag" data-in><i>3</i>Груминг и праздники</span>
+  <h2 data-in>После тренировки <em>красота</em></h2>
+  <div class="two">
+    <div class="box" data-in><figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/17863912/2a0000019a12a8f5eeff4342dae5a834eb10/XL" alt="Груминг-зал «Тандема»" loading="lazy"></figure><div><h3>Груминг для собак и кошек</h3><p>Стрижка, купание и спа, вычёсывание и экспресс-линька, когти, уши и зубы, креативный груминг. Стоимость зависит от породы: уточните по телефону.</p><div class="chips"><span>стрижка</span><span>спа</span><span>экспресс-линька</span><span>креативный груминг</span></div></div></div>
+    <div class="box" data-in><div class="polaroids"><figure style="--r:-3deg" data-ph><img src="https://avatars.mds.yandex.net/get-altay/16114102/2a0000019a418b0f1a32fcd63e6a7f076d17/L" alt="Хэллоуин в «Тандеме»" loading="lazy"></figure><figure style="--r:2deg" data-ph><img src="https://avatars.mds.yandex.net/get-altay/15294995/2a00000199b971a7115377a0e712c893a8a7/L" alt="Пиратская вечеринка" loading="lazy"></figure><figure style="--r:-1deg" data-ph><img src="https://avatars.mds.yandex.net/get-altay/16134335/2a00000199b9718d9082e5b05ac0ddeff67e/L" alt="Праздник «Остров мелкашей»" loading="lazy"></figure></div><div><h3>Праздники для своих</h3><p>Хэллоуин, пиратская вечеринка «Острова мелкашей» и другие поводы собраться с собаками. Фото с этих праздников есть в карточке «Тандема» на Яндекс Картах.</p></div></div>
+  </div>
+</section>
+
+<section class="st" id="voices">
+  <span class="flag" data-in><i>4</i>Отзывы</span>
+  <h2 data-in>Жизнь <em>«до» и «после»</em></h2>
+  <div class="revs">
+    <div class="rv" data-in><div class="who">Корги Альма</div><p>«Улучшилось внимание к хозяину и снизилась реакция на отвлекающие факторы. Начались спокойные прогулки без натяжения».</p></div>
+    <div class="rv" data-in><div class="who">Щенок амстаффа</div><p>«Пришли в полном отчаянии: подростковый возраст и первые попытки доминирования. Наша жизнь разделилась на „до“ и „после“».</p></div>
+    <div class="rv" data-in><div class="who">Той-пудель Тедди</div><p>«Курс из 4 занятий формирует фундамент знаний для воспитания послушной собаки. Мария доносит информацию понятно».</p></div>
+    <div class="rv" data-in><div class="who">Шпиц Стеша</div><p>«Собака очень стеснительная и лает от испуга. Начали с группы для маленьких собак „Остров мелкашей“».</p></div>
+    <div class="rv" data-in><div class="who">«Моя тугодумка»</div><p>«До тренировок неделю учили команду „сидеть“ почти безуспешно. Грамотная работа кинолога показала обратное».</p></div>
+    <div class="rv" data-in><div class="who">Первая собака</div><p>«Собаке было 3,5 месяца, я совсем не понимала, как её воспитывать. Мария Викторовна рассказала и показала».</p></div>
+  </div>
+</section>
+
+<section class="st" id="visit">
+  <span class="flag" data-in><i>5</i>Финиш</span>
+  <div class="vis">
+    <div>
+      <h2 data-in>Ситнова, <em>2</em></h2>
+      <div class="ln"><span>Адрес</span><b>Дзержинск, ул. Ситнова, 2</b></div>
+      <div class="ln"><span>Часы</span><b>Ежедневно 10:00–19:00</b></div>
+      <div class="ln"><span>Сейчас</span><b class="live" data-live><i></i><span data-status>…</span></b></div>
+      <div class="ln"><span>Телефоны</span><b><a href="tel:+79200386545">+7 920 038-65-45</a><br><a href="tel:+79290381617">+7 929 038-16-17</a></b></div>
+      <div class="ln"><span>Кинолог</span><b>Мария Соколова</b></div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:20px"><a class="btn" href="tel:+79200386545">Позвонить</a><a class="btn t" href="https://t.me/tandemdzr" target="_blank" rel="noopener">Telegram</a><a class="btn o" href="https://yandex.ru/maps/org/tandem/86170125234/" target="_blank" rel="noopener">Маршрут</a></div>
+    </div>
+    <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=43.429214%2C56.245575&amp;z=16&amp;pt=43.429214%2C56.245575%2Cpm2rdm&amp;l=map" title="«Тандем» на Яндекс Картах" loading="lazy" allowfullscreen></iframe></div>
+  </div>
+</section>
+</main>
+
+<footer><b>Тандем</b> · кинологический центр и груминг · Дзержинск, ул. Ситнова, 2 · ★ 5,0, 72 оценки</footer>
+
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  // hero: four commands, four dogs
+  var hero = document.querySelector('.hero'), cmds = document.querySelectorAll('.cmd'), figs = document.querySelectorAll('#dog figure'), dots = document.querySelectorAll('#dots i'), bub = document.getElementById('bub'), cur = -1;
+  var BUB = ['Сижу!', 'Иду рядом', 'Не трогаю!', 'Бегу!'];
+  RT.onScroll(function () {
+    var p = RT.motion ? RT.progress(hero) : 0, i = Math.min(3, Math.floor(p * 4.4));
+    if (i === cur) return; cur = i;
+    cmds.forEach(function (c, k) { c.classList.toggle('on', k === i); });
+    figs.forEach(function (f, k) { f.classList.toggle('on', k === i); });
+    dots.forEach(function (d, k) { d.classList.toggle('on', k <= i); });
+    bub.textContent = BUB[i];
+  });
+
+  // trail: a dotted path snakes through the sections, paws appear as you reach them
+  var tw = document.getElementById('tw'), trail = document.getElementById('trail'), tp = document.getElementById('tp'), paws = document.getElementById('paws');
+  function layout() {
+    var secs = tw.querySelectorAll('section.st'), W = tw.clientWidth, H = tw.scrollHeight, pts = [], top0 = tw.getBoundingClientRect().top + scrollY;
+    trail.setAttribute('width', W); trail.setAttribute('height', H); trail.setAttribute('viewBox', '0 0 ' + W + ' ' + H); trail.style.height = H + 'px';
+    secs.forEach(function (s, i) { var r = s.getBoundingClientRect(); pts.push([i % 2 ? W * .93 : W * .07, r.top + scrollY - top0 + 70]); });
+    var d = 'M' + pts[0][0] + ' ' + pts[0][1];
+    for (var i = 1; i < pts.length; i++) { var a = pts[i - 1], b = pts[i], my = (a[1] + b[1]) / 2; d += ' C' + a[0] + ' ' + my + ' ' + b[0] + ' ' + my + ' ' + b[0] + ' ' + b[1]; }
+    tp.setAttribute('d', d);
+    paws.innerHTML = pts.map(function (p, i) { return '<use class="paw" href="#paw" x="' + (p[0] - 18) + '" y="' + (p[1] - 18) + '" width="36" height="36" data-y="' + p[1] + '" opacity="0"/>'; }).join('');
+  }
+  layout(); addEventListener('resize', layout); setTimeout(layout, 1500);
+  RT.onScroll(function () {
+    var y = scrollY + innerHeight * .6 - (tw.getBoundingClientRect().top + scrollY);
+    paws.querySelectorAll('use').forEach(function (u) { u.setAttribute('opacity', +u.dataset.y < y ? 1 : 0); });
+  });
+
+  // course picker
+  var A = { age: 'pup', size: 'small', goal: 'basic' };
+  function result() {
+    var h, p, pr, also = '';
+    if (A.goal === 'dom' || (A.goal === 'shy' && A.age !== 'pup') || A.goal === 'ground' && A.age === 'adult') { h = 'Индивидуальное занятие с кинологом'; p = 'Разберёте ситуацию один на один: кинолог посмотрит на собаку и даст план. Например, так помогли подростку амстаффа с первыми попытками доминирования.'; pr = '2 000 ₽ за занятие'; }
+    else { h = 'Групповой курс бытового послушания'; p = A.age === 'pup' ? 'Чем раньше, тем проще: с собакой 3,5 месяца клиенты уже ходили на курс. В программе социализация, команды и прогулки.' : 'Базовый курс из 4 занятий: команды, спокойная прогулка без натяжения поводка, знакомство с другими собаками.'; pr = '5 000 ₽ за курс'; }
+    if (A.size === 'small') also = 'Для собаки до 10 кг есть клуб «Остров мелкашей»: 500 ₽ за занятие. Хорошо подходит стеснительным малышам.';
+    else also = 'Если в семье есть ребёнок, загляните в группу «Юный кинолог»: 5 000 ₽.';
+    document.getElementById('rh').textContent = h; document.getElementById('rp').textContent = p;
+    document.getElementById('rpr').textContent = pr; document.getElementById('ra').textContent = also;
+    document.querySelectorAll('.opts').forEach(function (o) { o.querySelectorAll('button').forEach(function (b) { b.classList.toggle('on', A[o.dataset.q] === b.dataset.v); }); });
+  }
+  document.getElementById('qs').addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; A[b.closest('.opts').dataset.q] = b.dataset.v; result(); });
+  result();
+  function live() { var s = RT.status(); if (!s) return; document.querySelectorAll('[data-live]').forEach(function (e) { e.classList.toggle('is-open', s.open); e.classList.toggle('is-closed', !s.open); }); }
+  document.addEventListener('DOMContentLoaded', live); setInterval(live, 60000);
+
+  window.REEL = {
+    hero: '.hero', heroAt: .5, feature: '#pick', featureOff: 100, featureM: '#res', featureOffM: -60, prices: '#programs', pricesOff: 60,
+    demo: [function () { A = { age: 'teen', size: 'big', goal: 'dom' }; result(); }, function () { A = { age: 'adult', size: 'big', goal: 'leash' }; result(); }, function () { A = { age: 'pup', size: 'small', goal: 'shy' }; result(); }],
+    holds: [45, 40, 45]
+  };
+})();
+</script>
+</body>
+</html>

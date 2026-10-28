@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Космоторт — студия тортов на заказ · Дзержинск, Терешковой, 20</title>
+<meta name="description" content="«Космоторт», студия тортов в Дзержинске: бенто-торты от 1350 ₽, торт 1 кг от 2550 ₽, бисквитные торты от 2 кг по 2000 ₽ за кг, свадебные ярусные торты, медовик, меренговый рулет, капкейки, зефир. Ежедневно 9:00–20:00. Рейтинг 4,9.">
+<meta property="og:title" content="«Космоторт» — торты на заказ, Дзержинск">
+<meta property="og:description" content="Посчитайте торт на число гостей: 200 г на человека.">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/13477341/2a0000018f7205877050d1b53f603c58a21c/XXXL">
+<meta name="theme-color" content="#140B2E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Days+One&amp;family=Comfortaa:wght@500;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Bakery","name":"Космоторт","telephone":"+7 930 813-36-36","address":{"@type":"PostalAddress","streetAddress":"ул. Терешковой, 20","addressLocality":"Дзержинск","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":56.229467,"longitude":43.444791},"openingHours":"Mo-Su 09:00-20:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"126"}}</script>
+<style>
+:root {
+  --sp: #140B2E; --sp-2: #1F1446; --sp-3: #2D1F5E; --neon: #FFE27A; --pink: #FF8FC7; --mint: #8EF3D5; --lav: #B9A6FF; --wh: #FFF9F2; --mut: #B8AEDB; --ok: #8EF3D5; --no: #FF8F8F;
+  --disp: 'Days One', Arial, sans-serif; --neonf: 'Comfortaa', Arial, sans-serif; --body: 'Noto Sans', Arial, sans-serif;
+  --gut: clamp(16px, 4vw, 52px); --ease: cubic-bezier(.2, .75, .2, 1);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--sp); color: var(--wh); font: 400 17px/1.6 var(--body); overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+.space { background-color: var(--sp); background-image: radial-gradient(1.4px 1.4px at 12% 22%, #fff, transparent), radial-gradient(1px 1px at 33% 8%, #fff, transparent), radial-gradient(1.6px 1.6px at 58% 30%, #fff8, transparent), radial-gradient(1px 1px at 76% 14%, #fff, transparent), radial-gradient(1.2px 1.2px at 88% 40%, #fff, transparent), radial-gradient(1px 1px at 22% 60%, #fff9, transparent), radial-gradient(1.4px 1.4px at 46% 76%, #fff, transparent), radial-gradient(1px 1px at 70% 88%, #fff, transparent); background-size: 520px 520px; }
+.neon { font-family: var(--neonf); font-weight: 700; color: #fff8d6; text-shadow: 0 0 4px var(--neon), 0 0 12px var(--neon), 0 0 30px rgba(255,226,122,.7); }
+
+.nav { position: fixed; z-index: 30; top: 0; left: 0; right: 0; display: flex; align-items: center; gap: 18px; padding: 14px var(--gut); background: linear-gradient(rgba(20,11,46,.95), rgba(20,11,46,0)); }
+.nav b { font: 400 20px/1 var(--disp); letter-spacing: .04em; }
+.nav b i { font-style: normal; color: var(--neon); }
+.nav nav { margin-left: auto; display: flex; gap: 20px; font-size: 14.5px; }
+.nav nav a { text-decoration: none; color: var(--mut); }
+.nav nav a:hover { color: #fff; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 24px; border-radius: 40px; background: var(--neon); color: var(--sp); font: 700 15px/1 var(--body); text-decoration: none; border: 0; cursor: pointer; box-shadow: 0 0 24px -4px rgba(255,226,122,.7); }
+.btn.p { background: var(--pink); box-shadow: 0 0 24px -4px rgba(255,143,199,.7); }
+.btn.o { background: transparent; color: #fff; box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.5); }
+@media (max-width: 760px) { .nav nav { display: none; } .nav .btn { margin-left: auto; padding: 11px 16px; } }
+
+/* rocket progress on the left edge */
+.rail { position: fixed; z-index: 25; left: 14px; top: 90px; bottom: 30px; width: 4px; border-radius: 4px; background: rgba(255,255,255,.12); }
+.rail .rk { position: absolute; left: 50%; top: calc(var(--k, 0) * 100%); transform: translate(-50%, -50%) rotate(180deg); font-size: 24px; filter: drop-shadow(0 0 8px rgba(255,226,122,.8)); }
+.rail::before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: calc(var(--k, 0) * 100%); background: linear-gradient(var(--neon), var(--pink)); border-radius: 4px; }
+@media (max-width: 760px) { .rail { display: none; } }
+
+/* hero: the cake planet with a ring */
+.hero { position: relative; height: 220vh; }
+.orb { position: sticky; top: 0; height: 100vh; min-height: 620px; overflow: hidden; display: grid; place-items: center; }
+.planet { position: relative; width: min(46vmin, 440px); aspect-ratio: 1; transform: scale(calc(.6 + .4 * var(--z, 0))) translateY(calc(-3vh - 5vh * var(--z, 0))); }
+.planet .ball { position: absolute; inset: 0; border-radius: 50%; overflow: hidden; box-shadow: inset -30px -30px 60px rgba(20,11,46,.75), 0 0 80px rgba(255,143,199,.35); }
+.planet .ball img { width: 100%; height: 100%; object-fit: cover; transform: rotate(calc(30deg * var(--z, 0))) scale(1.15); }
+.ring { position: absolute; left: -32%; right: -32%; top: 42%; height: 20%; border-radius: 50%; border: 10px solid rgba(255,226,122,.75); transform: rotate(-16deg); box-shadow: 0 0 24px rgba(255,226,122,.6); pointer-events: none; }
+.ring.back { clip-path: inset(0 0 50% 0); z-index: -1; }
+.ring.front { clip-path: inset(50% 0 0 0); z-index: 2; }
+.moon { position: absolute; width: 16%; aspect-ratio: 1; border-radius: 50%; overflow: hidden; box-shadow: 0 0 20px rgba(142,243,213,.5); left: calc(50% + 62% * cos(var(--m))); top: calc(50% + 40% * sin(var(--m))); transform: translate(-50%, -50%); }
+.moon img { width: 100%; height: 100%; object-fit: cover; }
+.signn { position: absolute; top: 14vh; left: 0; right: 0; text-align: center; font-size: clamp(34px, 6vw, 84px); letter-spacing: .08em; line-height: 1; opacity: var(--on, 1); }
+.hbot { position: absolute; left: 0; right: 0; bottom: 6vh; text-align: center; padding: 0 var(--gut); opacity: var(--t, 0); transform: translateY(calc(20px * (1 - var(--t, 0)))); }
+.hbot h1 { margin: 0 0 6px; font: 400 clamp(36px, 6vw, 80px)/1 var(--disp); letter-spacing: .02em; }
+.hbot p { margin: 0 auto 16px; max-width: 560px; color: #ddd4ff; }
+.hbot .row { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+
+section:not(.hero) { scroll-margin-top: 60px; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 0 var(--gut); }
+.kick { display: inline-flex; gap: 8px; align-items: center; font: 700 12px/1 var(--body); letter-spacing: .26em; text-transform: uppercase; color: var(--mint); }
+.kick::before { content: "✦"; color: var(--neon); }
+h2 { margin: 12px 0 16px; font: 400 clamp(32px, 4.6vw, 60px)/1.05 var(--disp); }
+h2 em { font-style: normal; color: var(--neon); }
+.lead { color: var(--mut); max-width: 640px; margin: 0 0 26px; }
+
+/* guest calculator */
+#calc { padding: clamp(80px, 11vw, 140px) 0; }
+.calc { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(20px, 4vw, 56px); align-items: center; }
+.ctrl { background: var(--sp-2); border-radius: 28px; padding: clamp(20px, 3vw, 32px); border: 1px solid var(--sp-3); }
+.guests { display: flex; align-items: baseline; gap: 12px; margin-bottom: 6px; }
+.guests b { font: 400 clamp(56px, 7vw, 90px)/1 var(--disp); color: var(--neon); }
+.guests span { color: var(--mut); }
+.ctrl input[type=range] { width: 100%; accent-color: var(--pink); margin: 6px 0 18px; }
+.seg { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+.seg button { font: 600 14px/1 var(--body); padding: 10px 13px; border-radius: 30px; border: 1px solid var(--sp-3); background: transparent; color: #fff; cursor: pointer; }
+.seg button.on { background: var(--pink); border-color: var(--pink); color: var(--sp); }
+.ctrl small { display: block; color: var(--mut); font-size: 13.5px; }
+.out { position: relative; text-align: center; }
+.out .pl { position: relative; width: min(340px, 70vw); aspect-ratio: 1; margin: 0 auto 16px; border-radius: 50%; overflow: hidden; box-shadow: 0 0 0 8px var(--sp-3), 0 0 60px rgba(255,143,199,.35); }
+.out .pl img { width: 100%; height: 100%; object-fit: cover; transition: opacity .4s; }
+.out .fmt { font: 400 clamp(24px, 3vw, 34px)/1.1 var(--disp); }
+.out .wt { color: var(--mut); margin: 6px 0 10px; }
+.out .pr { display: inline-block; font: 400 clamp(30px, 4vw, 46px)/1 var(--disp); color: var(--neon); }
+.out .note { color: var(--mut); font-size: 14px; margin: 10px auto 16px; max-width: 420px; }
+@media (max-width: 860px) { .calc { grid-template-columns: 1fr; } }
+
+/* menu galaxy */
+#menu { padding: clamp(70px, 10vw, 120px) 0; }
+.gal { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.it { position: relative; background: var(--sp-2); border-radius: 26px; padding: 14px 14px 18px; text-align: center; border: 1px solid var(--sp-3); }
+.it .ph { width: 74%; aspect-ratio: 1; margin: 0 auto 12px; border-radius: 50%; overflow: hidden; box-shadow: 0 0 0 5px var(--sp-3); }
+.it .ph img { width: 100%; height: 100%; object-fit: cover; }
+.it b { display: block; font: 700 16px/1.25 var(--body); min-height: 2.5em; }
+.it span { font: 400 20px/1 var(--disp); color: var(--neon); }
+.it small { display: block; color: var(--mut); font-size: 13px; margin-top: 4px; }
+.it:nth-child(3n+2) .ph { box-shadow: 0 0 0 5px var(--sp-3), 0 0 30px rgba(142,243,213,.3); }
+@media (max-width: 900px) { .gal { grid-template-columns: 1fr 1fr; } }
+
+/* reviews */
+#voices { padding: clamp(70px, 10vw, 120px) 0; }
+.revs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.rv { padding: 20px; border-radius: 24px; background: linear-gradient(160deg, var(--sp-2), var(--sp-3)); }
+.rv p { margin: 0 0 8px; }
+.rv small { color: var(--mut); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; }
+.score { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 24px; }
+.score span { padding: 10px 14px; border-radius: 30px; background: var(--sp-2); border: 1px solid var(--sp-3); }
+.score b { color: var(--neon); }
+@media (max-width: 900px) { .revs { grid-template-columns: 1fr; } }
+
+#visit { padding: clamp(70px, 10vw, 120px) 0; }
+.vis { display: grid; grid-template-columns: 1fr 1.1fr; gap: 26px; align-items: center; }
+.vis .ln { display: flex; justify-content: space-between; gap: 12px; padding: 11px 0; border-bottom: 1px solid var(--sp-3); }
+.vis .ln span { color: var(--mut); }
+.vis .ln b { text-align: right; font-weight: 500; }
+.live { display: inline-flex; align-items: center; gap: 8px; }
+.live i { width: 9px; height: 9px; border-radius: 50%; background: #888; }
+.live.is-open i { background: var(--ok); box-shadow: 0 0 8px var(--ok); } .live.is-closed i { background: var(--no); }
+.mapbox { position: relative; aspect-ratio: 1; max-width: 460px; width: 100%; justify-self: center; border-radius: 50%; overflow: hidden; box-shadow: 0 0 0 8px var(--sp-3), 0 0 60px rgba(142,243,213,.3); }
+.mapbox iframe { position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 140px); border: 0; }
+@media (max-width: 860px) { .vis { grid-template-columns: 1fr; } }
+footer { text-align: center; padding: 30px var(--gut) 40px; color: var(--mut); font-size: 14px; }
+footer b { display: block; margin-bottom: 8px; font-size: 26px; }
+
+.motion [data-in] { opacity: 0; transform: translateY(24px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.motion [data-in].in { opacity: 1; transform: none; }
+.noimg { background: radial-gradient(circle, var(--sp-3), var(--sp)); }
+.noimg img { opacity: 0; }
+</style>
+</head>
+<body class="space" data-hours='{"0":[[9,0,20,0]],"1":[[9,0,20,0]],"2":[[9,0,20,0]],"3":[[9,0,20,0]],"4":[[9,0,20,0]],"5":[[9,0,20,0]],"6":[[9,0,20,0]]}'>
+
+<header class="nav">
+  <b>КОСМО<i>ТОРТ</i></b>
+  <nav><a href="#calc">Сколько торта?</a><a href="#menu">Меню</a><a href="#voices">Отзывы</a><a href="#visit">Адрес</a></nav>
+  <a class="btn" href="tel:+79308133636">Заказать</a>
+</header>
+<div class="rail" id="rail"><span class="rk">🚀</span></div>
+
+<main>
+<section class="hero" id="top">
+  <div class="orb" id="orb">
+    <div class="signn neon" id="sign">ТОРТ ВНУТРИ</div>
+    <div class="planet">
+      <div class="ring back"></div>
+      <div class="ball" data-ph><img src="https://avatars.mds.yandex.net/get-altay/17677530/2a0000019cdbb4bef4a3541ac4c3817ba7d8/XXL" alt="Бенто-торт с цветами" fetchpriority="high"></div>
+      <div class="ring front"></div>
+      <div class="moon" id="moon" data-ph><img src="https://avatars.mds.yandex.net/get-altay/15043309/2a0000019ae4fd8a27dea300da160cabed29/L" alt="Меренговый рулет" fetchpriority="high"></div>
+    </div>
+    <div class="hbot">
+      <h1>Студия тортов «Космоторт»</h1>
+      <p>Торты на заказ, бенто, медовики, меренговые рулеты и капкейки. Дзержинск, Терешковой, 20, каждый день с 9 до 20.</p>
+      <div class="row"><a class="btn" href="#calc">Сколько торта нужно?</a><a class="btn o" href="tel:+79308133636">+7 930 813-36-36</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="calc">
+  <div class="wrap">
+    <span class="kick" data-in>Калькулятор гостей</span>
+    <h2 data-in>Сколько торта <em>на ваш праздник?</em></h2>
+    <p class="lead" data-in>Считаем по правилу, которое «Космоторт» указывает в своей группе ВКонтакте: 200 г торта на человека. Двигайте ползунок, и мы подберём формат и цену «от» по прайсу.</p>
+    <div class="calc">
+      <div class="ctrl" data-in>
+        <div class="guests"><b id="gn">8</b><span id="gl">гостей</span></div>
+        <input type="range" id="gr" min="2" max="60" value="8" aria-label="Число гостей">
+        <div class="seg" id="occ"><button data-o="bd" class="on">День рождения</button><button data-o="kids">Детский праздник</button><button data-o="wed">Свадьба</button></div>
+        <div class="seg" id="lvl"><button data-l="0">С надписью</button><button data-l="1" class="on">Простой рисунок</button><button data-l="2">Сложный рисунок</button><button data-l="3">Уровень «ВАНГОГ»</button></div>
+        <small id="lvn">Уровень оформления влияет на цену бенто и «килограммчика».</small>
+      </div>
+      <div class="out" data-in>
+        <div class="pl"><img id="oi" src="https://avatars.mds.yandex.net/get-sprav-products/13055270/2a0000018f7249620629d5ca25ada7b69647/XXL" alt="Выбранный торт"></div>
+        <div class="fmt" id="of"></div>
+        <div class="wt" id="ow"></div>
+        <div class="pr" id="op"></div>
+        <div class="note" id="on"></div>
+        <a class="btn p" href="tel:+79308133636">Заказать по телефону</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="wrap">
+    <span class="kick" data-in>Меню галактики</span>
+    <h2 data-in>Не только <em>торты</em></h2>
+    <div class="gal">
+      <div class="it" data-in><div class="ph" data-ph><img src="https://avatars.mds.yandex.net/get-sprav-products/8331772/2a0000018fa4c409631034550c669a301ac9/XXL" alt="Меренговый рулет" loading="lazy"></div><b>Меренговый рулет</b><span>2 100 ₽</span></div>
+      <div class="it" data-in><div class="ph" data-ph><img src="https://avatars.mds.yandex.net/get-sprav-products/10324913/2a0000018fa4c4b2e26801a093cd6e530806/XXL" alt="Медовик в крошке" loading="lazy"></div><b>Медовик «в крошке»</b><span>2 100 ₽</span><small>открытый медовик 2 400 ₽</small></div>
+      <div class="it" data-in><div class="ph" data-ph><img src="https://avatars.mds.yandex.net/get-sprav-products/5567679/2a0000018fa5a72d4cb891e3abec1946bb7a/XXL" alt="COSMOШАR" loading="lazy"></div><b>COSMOШАR</b><span>2 000 ₽</span><small>650 г</small></div>
+      <div class="it" data-in><div class="ph" data-ph><img src="https://avatars.mds.yandex.net/get-sprav-products/10324913/2a0000018fa515939fe0d671a6cb27c85164/XXL" alt="Бенто-бокс" loading="lazy"></div><b>Бенто-бокс</b><span>3 450 ₽</span><small>бенто и капкейки</small></div>
+      <div class="it" data-in><div class="ph" data-ph><img src="https://avatars.mds.yandex.net/get-sprav-products/10324913/2a0000018fa51a3a2f0ad922ab873bee7bba/XXL" alt="Капкейки" loading="lazy"></div><b>Капкейки</b><span>300 ₽</span><small>набор из 4 штук 1 200 ₽</small></div>
+      <div class="it" data-in><div class="ph" data-ph><img src="https://avatars.mds.yandex.net/get-sprav-products/10118156/2a0000018fa51d861a0caf2c351331144084/XXL" alt="Трайфлы" loading="lazy"></div><b>Трайфл</b><span>400 ₽</span><small>торт в стаканчике 320 ₽</small></div>
+      <div class="it" data-in><div class="ph" data-ph><img src="https://avatars.mds.yandex.net/get-sprav-products/13059590/2a0000018fa59d2428eeec3e1d2365c339dd/XXL" alt="Зефир ручной работы" loading="lazy"></div><b>Зефир ручной работы</b><span>от 350 ₽</span><small>коробочки 1 200–1 250 ₽</small></div>
+      <div class="it" data-in><div class="ph" data-ph><img src="https://avatars.mds.yandex.net/get-sprav-products/8331772/2a0000018fa5aa0f7ca2acef733a22ebde61/XXL" alt="Кейк-попсы" loading="lazy"></div><b>Кейк-попсы и «Эскимо»</b><span>от 150 ₽</span><small>в бельгийском шоколаде</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="voices">
+  <div class="wrap">
+    <span class="kick" data-in>Отзывы</span>
+    <h2 data-in>4,9 <em>· 126 оценок</em></h2>
+    <div class="score" data-in><span>Торты <b>40/40</b></span><span>Десерты <b>48/48</b></span><span>Еда <b>54/54</b></span><span>Выпечка <b>14/14</b></span></div>
+    <div class="revs">
+      <div class="rv" data-in><p>«Заказывали торт на свадьбу. Начинку выбрали ферреро роше и покрытие из крем-чиза, украшения: просто ягоды. Вес считали по инструкции, 200 г на человека».</p><small>Яндекс Карты</small></div>
+      <div class="rv" data-in><p>«Администратор приняла заявку по интернету даже в праздники. Кондитер изготовила торт по нашему фото! Такой, как мы просили!»</p><small>Яндекс Карты</small></div>
+      <div class="rv" data-in><p>«Нужен был сложный дизайн, за который брались не все кондитеры. Сделали идеально! Праздник прошёл на 10 из 10».</p><small>Яндекс Карты</small></div>
+      <div class="rv" data-in><p>«6-летний сын заказал торт в стиле мема „67“, все дети и взрослые остались в восторге!»</p><small>Яндекс Карты</small></div>
+      <div class="rv" data-in><p>«Меренговый рулет просто обалденный. На доставку работают оперативно и всегда готовы помочь с идеями декора».</p><small>Яндекс Карты</small></div>
+      <div class="rv" data-in><p>«Заказывали бентик, остались в полном восторге! Отклик быстрый, бисквит очень мягкий, пропечённый».</p><small>Яндекс Карты</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap vis">
+    <div>
+      <span class="kick" data-in>Адрес</span>
+      <h2 data-in>Терешковой, <em>20</em></h2>
+      <div class="ln"><span>Адрес</span><b>Дзержинск, ул. Терешковой, 20</b></div>
+      <div class="ln"><span>Часы</span><b>Ежедневно 9:00–20:00</b></div>
+      <div class="ln"><span>Сейчас</span><b class="live" data-live><i></i><span data-status>…</span></b></div>
+      <div class="ln"><span>Телефон</span><b><a href="tel:+79308133636">+7 930 813-36-36</a></b></div>
+      <div class="ln"><span>Получить</span><b>Самовывоз или доставка, есть кофе с собой</b></div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:20px"><a class="btn" href="tel:+79308133636">Позвонить</a><a class="btn o" href="https://wa.me/79308133636" target="_blank" rel="noopener">WhatsApp</a><a class="btn o" href="https://t.me/cosmotort_dzr" target="_blank" rel="noopener">Telegram</a><a class="btn o" href="https://vk.ru/cosmotort_dzr" target="_blank" rel="noopener">ВКонтакте</a></div>
+    </div>
+    <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=43.444791%2C56.229467&amp;z=16&amp;pt=43.444791%2C56.229467%2Cpm2rdm&amp;l=map" title="«Космоторт» на Яндекс Картах" loading="lazy" allowfullscreen></iframe></div>
+  </div>
+</section>
+</main>
+
+<footer><b class="neon">ТОРТ ВНУТРИ</b>Студия тортов «Космоторт» · Дзержинск, ул. Терешковой, 20 · ежедневно 9:00–20:00</footer>
+
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  var hero = document.querySelector('.hero'), orb = document.getElementById('orb'), moon = document.getElementById('moon'), sign = document.getElementById('sign'), rail = document.getElementById('rail');
+  RT.onScroll(function () {
+    var p = RT.motion ? RT.progress(hero) : 1;
+    orb.style.setProperty('--z', RT.ease(RT.clamp(p / .6)));
+    orb.style.setProperty('--t', RT.ease(RT.clamp((p - .35) / .3)));
+    var max = document.documentElement.scrollHeight - innerHeight;
+    rail.style.setProperty('--k', max > 0 ? RT.clamp(scrollY / max) : 0);
+  });
+  // moon orbits, the neon sign flickers on at start
+  RT.loop(function (t) {
+    moon.style.setProperty('--m', (t / 2600) + 'rad');
+    var f = t < 1400 ? (Math.sin(t / 40) > .2 ? 1 : .25) : 1;
+    sign.style.setProperty('--on', f);
+  });
+
+  // guests calculator: 200 g per person
+  var P = {
+    bento: ['https://avatars.mds.yandex.net/get-sprav-products/13055270/2a0000018f724c4db61b52cfaf3038340631/XXL', 'https://avatars.mds.yandex.net/get-sprav-products/13055270/2a0000018f7249620629d5ca25ada7b69647/XXL', 'https://avatars.mds.yandex.net/get-sprav-products/13059590/2a0000018f72447ad5c3240a633722e5bf1d/XXL', 'https://avatars.mds.yandex.net/get-sprav-products/5234963/2a0000019e6407824a40ed3659f6f89550be/XXL'],
+    kilo: ['https://avatars.mds.yandex.net/get-sprav-products/8331772/2a0000018f8cbbb224367bc42d88cd9dd50d/XXL', 'https://avatars.mds.yandex.net/get-sprav-products/10253960/2a0000018f8cbc63ebe45f8c2188102246f6/XXL', 'https://avatars.mds.yandex.net/get-sprav-products/10253960/2a0000018f8cbe0470840c39a4194be9acfa/XXL', 'https://avatars.mds.yandex.net/get-sprav-products/20340178/2a0000019e640fb2834118b44b67d67e67a1/XXL'],
+    bis: 'https://avatars.mds.yandex.net/get-sprav-products/5567679/2a0000018f8cc409eb7ac758dbe0b48ee9d7/XXL', kids: 'https://avatars.mds.yandex.net/get-sprav-products/8331772/2a0000018f8cbfcd88a6a06bd0f414694cad/XXL', wed: 'https://avatars.mds.yandex.net/get-sprav-products/11530991/2a0000018f8cb967fb02ef712a638a2ffc45/XXL'
+  };
+  var BENTO = [1350, 1550, 1850, 2150], KILO = [2550, 2750, 3150, 3350], LVL = ['с надписью', 'с простым рисунком', 'со сложным рисунком', 'уровня «ВАНГОГ»'];
+  var g = 8, occ = 'bd', lvl = 1, gr = document.getElementById('gr');
+  var plural = function (n) { var a = n % 10, b = n % 100; return a === 1 && b !== 11 ? 'гость' : a >= 2 && a <= 4 && (b < 12 || b > 14) ? 'гостя' : 'гостей'; };
+  var kg = function (v) { return String(v).replace('.', ',') + ' кг'; };
+  function calc() {
+    document.getElementById('gn').textContent = g; document.getElementById('gl').textContent = plural(g);
+    document.querySelectorAll('#occ button').forEach(function (b) { b.classList.toggle('on', b.dataset.o === occ); });
+    document.querySelectorAll('#lvl button').forEach(function (b) { b.classList.toggle('on', +b.dataset.l === lvl); });
+    var need = g * .2, f, w, pr, note, img;
+    if (occ === 'wed') {
+      w = Math.max(4, Math.ceil(need * 2) / 2); f = 'Свадебный ярусный торт'; pr = 'от ' + RT.money(w * 2600); img = P.wed;
+      note = 'Ярусные торты делают от 4 кг. Покрытие крем-чиз 2 600 ₽ за кг, ганаш 2 950 ₽ за кг: ' + RT.money(w * 2950) + '.';
+    } else if (g <= 4) {
+      w = .5; f = 'Бенто-торт ' + LVL[lvl]; pr = RT.money(BENTO[lvl]); img = P.bento[lvl];
+      note = 'Небольшой тортик около 500 г, рассчитан на 2–4 человек.';
+    } else if (g <= 5) {
+      w = 1; f = '«Килограммчик» ' + LVL[lvl]; pr = RT.money(KILO[lvl]); img = P.kilo[lvl];
+      note = 'Торт весом 1 кг, надпись до 4 слов, рисунок на выбор.';
+    } else {
+      w = Math.max(2, Math.ceil(need * 2) / 2); f = occ === 'kids' ? 'Детский бисквитный торт' : 'Бисквитный торт'; pr = 'от ' + RT.money(w * 2000); img = occ === 'kids' ? P.kids : P.bis;
+      note = 'Бисквитные торты от 2 кг, вес выбирается с шагом 0,5 кг. 2 000 ₽ за кг, оформление и начинку обсуждают при заказе.';
+    }
+    document.getElementById('of').textContent = f;
+    document.getElementById('ow').textContent = 'Нужно примерно ' + kg(Math.round(need * 10) / 10) + ' · берём ' + kg(w);
+    document.getElementById('op').textContent = pr;
+    document.getElementById('on').textContent = note;
+    var oi = document.getElementById('oi'); if (oi.getAttribute('src') !== img) oi.setAttribute('src', img);
+    document.getElementById('lvl').style.opacity = (occ !== 'wed' && g <= 5) ? 1 : .45;
+  }
+  gr.addEventListener('input', function () { g = +gr.value; calc(); });
+  document.getElementById('occ').addEventListener('click', function (e) { var b = e.target.closest('button'); if (b) { occ = b.dataset.o; calc(); } });
+  document.getElementById('lvl').addEventListener('click', function (e) { var b = e.target.closest('button'); if (b) { lvl = +b.dataset.l; calc(); } });
+  calc();
+  function live() { var s = RT.status(); if (!s) return; document.querySelectorAll('[data-live]').forEach(function (e) { e.classList.toggle('is-open', s.open); e.classList.toggle('is-closed', !s.open); }); }
+  document.addEventListener('DOMContentLoaded', live); setInterval(live, 60000);
+  var set = function (n, o, l) { g = n; gr.value = n; occ = o; if (l != null) lvl = l; calc(); };
+
+  window.REEL = {
+    hero: '.hero', heroAt: .55, feature: '#calc', featureOff: 120, featureM: '.out', featureOffM: -90, prices: '#menu', pricesOff: 60,
+    demo: [function () { set(3, 'bd', 3); }, function () { set(14, 'kids'); }, function () { set(40, 'wed'); }],
+    holds: [45, 45, 45]
+  };
+})();
+</script>
+</body>
+</html>

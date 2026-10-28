@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BeautyRoom (Бьютирум) — брови и ресницы · Дзержинск, Грибоедова, 18</title>
+<meta name="description" content="Студия бровей и ресниц BeautyRoom в Дзержинске: оформление бровей 1000 ₽, ламинирование ресниц с ботоксом 1500 ₽, наращивание ресниц, вельвет, окрашивание хной, обучение мастеров. Ежедневно 9:00–22:00. Рейтинг 5,0, 147 оценок.">
+<meta property="og:title" content="BeautyRoom — брови и ресницы, Дзержинск">
+<meta property="og:description" content="Брови, ламинирование и наращивание ресниц, обучение. Ежедневно 9:00–22:00.">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/5473371/2a0000017d56f5a9bd4fdac37892cb690b29/XXXL">
+<meta name="theme-color" content="#F6E6DE">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&amp;family=Jost:wght@400;500;600&amp;family=Marck+Script&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BeautySalon","name":"BeautyRoom (Бьютирум)","telephone":"+7 960 166-04-34","address":{"@type":"PostalAddress","streetAddress":"ул. Грибоедова, 18","addressLocality":"Дзержинск","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":56.238668,"longitude":43.449324},"openingHours":"Mo-Su 09:00-22:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","ratingCount":"147"}}</script>
+<style>
+:root {
+  --blush: #F6E6DE; --blush-2: #EFD3C6; --peach: #E8B9A4; --rose: #C97C69; --brown: #4A2F26; --brown-2: #8A6253; --ink: #22171A; --wh: #FFFDFB; --ring1: #E9A08B; --ring2: #B9634F; --ok: #4F9C71; --no: #C0533F;
+  --title: 'Tenor Sans', Georgia, serif; --body: 'Jost', Arial, sans-serif; --script: 'Marck Script', cursive;
+  --gut: clamp(14px, 4vw, 40px); --ease: cubic-bezier(.2, .75, .2, 1);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--blush); color: var(--ink); font: 400 17px/1.6 var(--body); overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+
+/* hero: the eye from the logo opens */
+.hero { position: relative; height: 220vh; }
+.eyest { position: sticky; top: 0; height: 100vh; min-height: 600px; overflow: hidden; display: grid; place-items: center; background: var(--blush); }
+.eye { position: relative; width: min(86vw, 900px); aspect-ratio: 2.2; }
+.eye svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.eye .win { position: absolute; inset: 0; clip-path: url(#almond); -webkit-clip-path: url(#almond); }
+.eye .win img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 32%; transform: scale(calc(1.25 - .2 * var(--o, 0))); }
+.lid { fill: var(--blush); }
+.lash { stroke: var(--brown); stroke-width: 5; stroke-linecap: round; fill: none; }
+.lidline { fill: none; stroke: var(--brown); stroke-width: 5; }
+.brow { fill: none; stroke: var(--brown); stroke-width: 18; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: calc(1 - var(--b, 0)); }
+.hname { position: absolute; left: 0; right: 0; bottom: 7vh; text-align: center; }
+.hname .lg { font: 400 clamp(30px, 5vw, 64px)/1 var(--title); letter-spacing: .32em; color: var(--brown); padding-left: .32em; }
+.hname p { margin: 10px 0 0; color: var(--brown-2); font-size: clamp(15px, 1.4vw, 18px); }
+.hname small { display: block; margin-top: 8px; font: 400 clamp(24px, 2.6vw, 32px)/1 var(--script); color: var(--rose); opacity: var(--t, 0); }
+.top { position: absolute; top: 18px; left: var(--gut); right: var(--gut); display: flex; justify-content: space-between; align-items: center; font-size: 14px; color: var(--brown-2); }
+.top a.call { text-decoration: none; padding: 9px 16px; border-radius: 30px; background: var(--brown); color: var(--wh); }
+
+/* stories bar */
+.stories + .post { margin-top: 18px; }
+.stories { position: sticky; top: 0; z-index: 40; background: rgba(255,253,251,.9); backdrop-filter: blur(10px); border-bottom: 1px solid var(--blush-2); }
+.stories .in { max-width: 720px; margin: 0 auto; display: flex; gap: 14px; overflow-x: auto; padding: 12px var(--gut); scrollbar-width: none; }
+.stories .in::-webkit-scrollbar { display: none; }
+.st { flex: 0 0 auto; display: grid; justify-items: center; gap: 4px; text-decoration: none; font-size: 12px; color: var(--brown-2); }
+.st span { width: 62px; height: 62px; border-radius: 50%; padding: 3px; background: conic-gradient(var(--ring1), var(--ring2), var(--peach), var(--ring1)); display: block; }
+.st span i { display: block; width: 100%; height: 100%; border-radius: 50%; border: 3px solid var(--wh); background: var(--blush-2) center/cover no-repeat; }
+.st.seen span { background: #d9c8c0; }
+.st b { font-weight: 500; }
+
+/* feed */
+.post { width: calc(100% - 2 * var(--gut)); max-width: 640px; margin: 0 auto 22px; background: var(--wh); border-radius: 22px; overflow: hidden; box-shadow: 0 20px 40px -30px rgba(74,47,38,.5); scroll-margin-top: 110px; }
+.ph { display: flex; align-items: center; gap: 10px; padding: 12px 14px; }
+.ph .av { width: 38px; height: 38px; border-radius: 50%; background: var(--brown); color: var(--wh); display: grid; place-items: center; font: 400 14px/1 var(--title); letter-spacing: .04em; }
+.ph b { font-weight: 600; font-size: 15px; display: block; line-height: 1.2; }
+.ph small { color: var(--brown-2); font-size: 12.5px; }
+.ph .dots { margin-left: auto; color: var(--brown-2); letter-spacing: 2px; }
+.pm { position: relative; aspect-ratio: 1; background: var(--blush-2); overflow: hidden; }
+.pm img { width: 100%; height: 100%; object-fit: cover; }
+.pm.wide { aspect-ratio: 4/3; }
+.acts { display: flex; gap: 16px; padding: 10px 14px 4px; font-size: 22px; }
+.acts .heart { cursor: pointer; transition: transform .2s; }
+.acts .heart.on { color: var(--no); transform: scale(1.15); }
+.cap { padding: 4px 16px 18px; }
+.cap b { font-weight: 600; }
+.cap h2 { margin: 6px 0 10px; font: 400 clamp(24px, 3.4vw, 34px)/1.15 var(--title); color: var(--brown); }
+.cap p { margin: 0 0 10px; }
+.tags { color: var(--rose); font-size: 14.5px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 13px 22px; border-radius: 40px; background: var(--brown); color: var(--wh); font: 500 15px/1 var(--body); text-decoration: none; border: 0; cursor: pointer; }
+.btn.l { background: transparent; color: var(--brown); box-shadow: inset 0 0 0 1.5px var(--brown); }
+.carousel { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
+.carousel::-webkit-scrollbar { display: none; }
+.carousel figure { flex: 0 0 100%; margin: 0; aspect-ratio: 1; scroll-snap-align: start; }
+.carousel img { width: 100%; height: 100%; object-fit: cover; }
+.cdots { display: flex; gap: 5px; justify-content: center; padding-top: 10px; }
+.cdots i { width: 6px; height: 6px; border-radius: 50%; background: var(--blush-2); }
+.cdots i.on { background: var(--rose); }
+
+/* brow tool */
+.tool { padding: 14px 14px 4px; }
+.shapes { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.shapes button { font: 500 14px/1 var(--body); padding: 9px 13px; border-radius: 30px; border: 1px solid var(--blush-2); background: var(--blush); color: var(--brown); cursor: pointer; }
+.shapes button.on { background: var(--brown); color: var(--wh); border-color: var(--brown); }
+.facebox { position: relative; background: linear-gradient(var(--wh), var(--blush)); border-radius: 18px; }
+.facebox svg { width: 100%; height: auto; display: block; }
+.face { fill: #F3D7C8; stroke: #C99A86; stroke-width: 3; transition: d .6s var(--ease); }
+.bw { fill: none; stroke: var(--brown); stroke-width: 9; stroke-linecap: round; transition: d .6s var(--ease); }
+.map { stroke: var(--rose); stroke-width: 1.6; stroke-dasharray: 5 5; fill: none; }
+.mapdot { fill: var(--rose); }
+.tip { margin: 12px 2px 6px; padding: 14px 16px; border-radius: 14px; background: var(--blush); }
+.tip b { font: 400 20px/1.2 var(--title); color: var(--brown); display: block; margin-bottom: 4px; }
+
+/* price list */
+.plist { padding: 0 16px; }
+.pr { display: flex; justify-content: space-between; gap: 12px; padding: 13px 0; border-bottom: 1px solid var(--blush-2); }
+.pr b { font-weight: 600; white-space: nowrap; }
+.pr span small { display: block; color: var(--brown-2); font-size: 13.5px; }
+
+/* masters */
+.duo { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 0 14px; }
+.duo div { background: var(--blush); border-radius: 18px; padding: 16px; }
+.duo b { font: 400 24px/1 var(--title); color: var(--brown); }
+.duo p { margin: 8px 0 0; font-size: 14.5px; }
+.comm { padding: 12px 16px 0; font-size: 15px; display: grid; gap: 8px; }
+.comm div b { font-weight: 600; margin-right: 6px; }
+.comm div { color: #3b2b2b; }
+
+.live { display: inline-flex; align-items: center; gap: 8px; }
+.live i { width: 9px; height: 9px; border-radius: 50%; background: #aaa; }
+.live.is-open i { background: var(--ok); box-shadow: 0 0 8px var(--ok); } .live.is-closed i { background: var(--no); }
+.mapbox { position: relative; aspect-ratio: 4/3; overflow: hidden; }
+.mapbox iframe { position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 140px); border: 0; }
+.vis { padding: 0 16px; }
+.vis .ln { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--blush-2); font-size: 15.5px; }
+.vis .ln span { color: var(--brown-2); }
+.vis .ln b { font-weight: 600; text-align: right; }
+footer { text-align: center; padding: 10px var(--gut) 40px; color: var(--brown-2); font-size: 13.5px; }
+footer b { font: 400 18px/1 var(--title); letter-spacing: .3em; color: var(--brown); display: block; margin-bottom: 6px; }
+
+.motion [data-in] { opacity: 0; transform: translateY(30px) scale(.98); transition: opacity .8s var(--ease), transform .8s var(--ease); }
+.motion [data-in].in { opacity: 1; transform: none; }
+.noimg { background: linear-gradient(135deg, var(--blush-2), var(--peach)); }
+.noimg img { opacity: 0; }
+</style>
+</head>
+<body data-hours='{"0":[[9,0,22,0]],"1":[[9,0,22,0]],"2":[[9,0,22,0]],"3":[[9,0,22,0]],"4":[[9,0,22,0]],"5":[[9,0,22,0]],"6":[[9,0,22,0]]}'>
+
+<main>
+<section class="hero" id="top">
+  <div class="eyest" id="eyest">
+    <div class="top"><span>Дзержинск · Грибоедова, 18</span><a class="call" href="tel:+79601660434">Записаться</a></div>
+    <div class="eye">
+      <svg viewBox="0 0 880 400" aria-hidden="true">
+        <defs><clipPath id="almond" clipPathUnits="objectBoundingBox"><path d="M0.04 0.62 Q0.5 -0.08 0.96 0.62 Q0.5 1.12 0.04 0.62Z"/></clipPath></defs>
+      </svg>
+      <div class="win" data-ph><img src="https://avatars.mds.yandex.net/get-altay/15289836/2a00000197160b8c2ff7e591ea1989d4d888/XXXL" alt="Брови и ресницы, работа BeautyRoom" fetchpriority="high"></div>
+      <svg viewBox="0 0 880 400" aria-hidden="true">
+        <path class="lid" id="lid" d=""/>
+        <path class="lidline" id="lidline" d=""/>
+        <g id="lashes"></g>
+        <path class="brow" pathLength="1" d="M120 40 Q380 -60 780 30"/>
+        <path class="lidline" d="M35 248 Q440 448 845 248"/>
+      </svg>
+    </div>
+    <div class="hname">
+      <div class="lg">BEAUTYROOM</div>
+      <p>Студия бровей и ресниц · ежедневно 9:00–22:00 · ★ 5,0, 147 оценок</p>
+      <small>самые естественные брови</small>
+    </div>
+  </div>
+</section>
+
+<nav class="stories" aria-label="Разделы">
+  <div class="in" id="stories">
+    <a class="st" href="#studio"><span><i style="background-image:url('https://avatars.mds.yandex.net/get-altay/5473371/2a0000017d56f5a9bd4fdac37892cb690b29/M')"></i></span><b>Студия</b></a>
+    <a class="st" href="#brows"><span><i style="background-image:url('https://avatars.mds.yandex.net/get-altay/15358610/2a00000197160ba65a1b67bae627b3756282/M')"></i></span><b>Форма</b></a>
+    <a class="st" href="#price"><span><i style="background-image:url('https://avatars.mds.yandex.net/get-altay/15413593/2a00000197160b97624bc151690811aa4166/M')"></i></span><b>Цены</b></a>
+    <a class="st" href="#masters"><span><i style="background-image:url('https://avatars.mds.yandex.net/get-altay/5449402/2a0000017d56f5afc41b1f5013c4f50664c8/M')"></i></span><b>Мастера</b></a>
+    <a class="st" href="#study"><span><i style="background-image:url('https://avatars.mds.yandex.net/get-altay/15183726/2a0000019740bbe715242f0cba83714a0946/M')"></i></span><b>Обучение</b></a>
+    <a class="st" href="#where"><span><i style="background-image:url('https://avatars.mds.yandex.net/get-altay/1775373/2a00000185f56befc69f44731c0c7c05fffe/M')"></i></span><b>Адрес</b></a>
+  </div>
+</nav>
+
+<section class="post" id="studio" data-in>
+  <div class="ph"><span class="av">BR</span><div><b>beautyroom_dzr</b><small>Дзержинск, Грибоедова, 18</small></div><span class="dots">•••</span></div>
+  <div class="carousel" id="car1">
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/5473371/2a0000017d56f5a9bd4fdac37892cb690b29/XXL" alt="Рабочие места с зеркалами" loading="lazy"></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/5449402/2a0000017d56f5afc41b1f5013c4f50664c8/XXL" alt="Кушетки для ресниц" loading="lazy"></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/14635327/2a0000019739b0c4dc0d1b4e4ec7721a62a6/XXL" alt="Конфеты и аромадиффузор" loading="lazy"></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/14707892/2a0000019740bbcdf5bb117153831036108f/XXL" alt="Место для фото с кольцевой лампой" loading="lazy"></figure>
+  </div>
+  <div class="cdots" id="cd1"><i class="on"></i><i></i><i></i><i></i></div>
+  <div class="acts"><span class="heart" data-like>♡</span><span>💬</span><span>↗</span></div>
+  <div class="cap">
+    <h2>Комната красоты</h2>
+    <p><b>beautyroom_dzr</b> Брови, ламинирование и наращивание ресниц в уютной студии. Всегда предложат чай или кофе с конфеткой, а в конце процедуры могут налить кофе с собой ☕</p>
+    <p class="tags">#брови #ресницы #дзержинск</p>
+  </div>
+</section>
+
+<section class="post" id="brows" data-in>
+  <div class="ph"><span class="av">BR</span><div><b>beautyroom_dzr</b><small>Подсказка · форма бровей</small></div><span class="dots">•••</span></div>
+  <div class="tool">
+    <div class="shapes" id="shapes">
+      <button data-f="oval" class="on">Овальное</button><button data-f="round">Круглое</button><button data-f="square">Квадратное</button><button data-f="heart">Сердечком</button><button data-f="long">Вытянутое</button>
+    </div>
+    <div class="facebox">
+      <svg viewBox="0 0 400 420" aria-label="Схема лица и бровей">
+        <path class="face" id="face" d=""/>
+        <g id="eyes"><path d="M110 210 Q140 190 170 210 Q140 224 110 210Z" fill="#4A2F26"/><path d="M230 210 Q260 190 290 210 Q260 224 230 210Z" fill="#4A2F26"/></g>
+        <path d="M188 230 Q186 268 176 284 Q200 296 224 284 Q214 268 212 230" fill="none" stroke="#C99A86" stroke-width="3"/>
+        <path d="M168 330 Q200 346 232 330" fill="none" stroke="#C97C69" stroke-width="5" stroke-linecap="round"/>
+        <g id="maps"></g>
+        <path class="bw" id="bl" d=""/><path class="bw" id="br" d=""/>
+      </svg>
+    </div>
+    <div class="tip" id="tip"></div>
+  </div>
+  <div class="cap">
+    <p><b>beautyroom_dzr</b> Выберите форму лица, и мы покажем, какие брови её подчёркивают. Пунктиром нарисована классическая разметка: начало брови, излом и кончик. Это ориентир, а точную форму мастер подберёт на приёме.</p>
+    <a class="btn" href="tel:+79601660434">Записаться на брови</a>
+  </div>
+</section>
+
+<section class="post" id="price" data-in>
+  <div class="ph"><span class="av">BR</span><div><b>beautyroom_dzr</b><small>Закреп · цены</small></div><span class="dots">•••</span></div>
+  <div class="pm wide" data-ph><img src="https://avatars.mds.yandex.net/get-altay/15413593/2a00000197160b97624bc151690811aa4166/XXL" alt="Результат: брови и ресницы" loading="lazy"></div>
+  <div class="cap"><h2>Услуги</h2></div>
+  <div class="plist">
+    <div class="pr"><span>Оформление бровей</span><b>1 000 ₽</b></div>
+    <div class="pr"><span>Ламинирование ресниц с ботоксом</span><b>1 500 ₽</b></div>
+    <div class="pr"><span>Наращивание ресниц<small>цену уточняйте у мастера</small></span><b>по записи</b></div>
+    <div class="pr"><span>Вельвет ресниц и бровей</span><b>по записи</b></div>
+    <div class="pr"><span>Окрашивание бровей хной</span><b>по записи</b></div>
+    <div class="pr"><span>Подарочный сертификат</span><b>есть</b></div>
+  </div>
+  <div class="cap" style="padding-top:14px"><a class="btn" href="tel:+79601660434">+7 960 166-04-34</a></div>
+</section>
+
+<section class="post" id="masters" data-in>
+  <div class="ph"><span class="av">BR</span><div><b>beautyroom_dzr</b><small>Мастера</small></div><span class="dots">•••</span></div>
+  <div class="pm" data-ph><img src="https://avatars.mds.yandex.net/get-altay/15358610/2a00000197160ba65a1b67bae627b3756282/XXL" alt="Естественные брови после оформления" loading="lazy"></div>
+  <div class="acts"><span class="heart" data-like>♡</span><span>💬</span><span>↗</span></div>
+  <div class="duo">
+    <div><b>Валерия</b><p>Брови, ламинирование ресниц, преподаёт. Клиенты зовут её Лерой.</p></div>
+    <div><b>Ксения</b><p>Наращивание и ламинирование ресниц.</p></div>
+  </div>
+  <div class="comm">
+    <div><b>гость_1</b>Никто мне не делал наращивание и ламинирование так быстро, как Ксения и Валерия! Золотые ручки</div>
+    <div><b>гость_2</b>Красивые естественные брови: это сюда! Я всегда к Лере!!!</div>
+    <div><b>гость_3</b>Из Нижнего езжу на брови и ресницы сюда 😏</div>
+  </div>
+  <div class="cap" style="padding-top:12px"><span style="color:var(--brown-2);font-size:13px">Комментарии из отзывов на Яндекс Картах</span></div>
+</section>
+
+<section class="post" id="study" data-in>
+  <div class="ph"><span class="av">BR</span><div><b>beautyroom_dzr</b><small>Обучение мастеров</small></div><span class="dots">•••</span></div>
+  <div class="pm wide" data-ph><img src="https://avatars.mds.yandex.net/get-altay/15183726/2a0000019740bbe715242f0cba83714a0946/XXL" alt="Тетрадь для обучения мастеров" loading="lazy"></div>
+  <div class="cap">
+    <h2>Хотите стать мастером?</h2>
+    <p>В студии учат ламинированию ресниц и работе бровиста. Ученица 2024 года пишет: «Спасибо за восполнение базовых знаний, за показанные фишечки и за демонстрацию правильной подачи фотоконтента. Рекомендую Валерию как мастера и преподавателя».</p>
+    <a class="btn l" href="tel:+79601660434">Спросить про обучение</a>
+  </div>
+</section>
+
+<section class="post" id="where" data-in>
+  <div class="ph"><span class="av">BR</span><div><b>beautyroom_dzr</b><small>Грибоедова, 18</small></div><span class="dots">•••</span></div>
+  <div class="mapbox"><iframe src="https://yandex.ru/map-widget/v1/?ll=43.449324%2C56.238668&amp;z=16&amp;pt=43.449324%2C56.238668%2Cpm2rdm&amp;l=map" title="BeautyRoom на Яндекс Картах" loading="lazy" allowfullscreen></iframe></div>
+  <div class="vis">
+    <div class="ln"><span>Адрес</span><b>Дзержинск, ул. Грибоедова, 18</b></div>
+    <div class="ln"><span>Часы</span><b>Ежедневно 9:00–22:00</b></div>
+    <div class="ln"><span>Сейчас</span><b class="live" data-live><i></i><span data-status>…</span></b></div>
+    <div class="ln"><span>Телефон</span><b><a href="tel:+79601660434">+7 960 166-04-34</a></b></div>
+    <div class="ln"><span>Ещё</span><b>Парковка и велопарковка, оплата картой</b></div>
+  </div>
+  <div class="cap" style="padding-top:16px;display:flex;gap:10px;flex-wrap:wrap"><a class="btn" href="tel:+79601660434">Позвонить</a><a class="btn l" href="https://vk.ru/beautyroom_dzr" target="_blank" rel="noopener">ВКонтакте</a><a class="btn l" href="https://yandex.ru/maps/org/byutirum/103816990043/" target="_blank" rel="noopener">Маршрут</a></div>
+</section>
+</main>
+
+<footer><b>BEAUTYROOM</b>студия бровей и ресниц · Дзержинск, ул. Грибоедова, 18</footer>
+
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  // eye: the upper lid lifts with scroll, lashes follow it
+  var hero = document.querySelector('.hero'), eyest = document.getElementById('eyest'), lid = document.getElementById('lid'), ll = document.getElementById('lidline'), lashes = document.getElementById('lashes');
+  function eye(o) {
+    var cy = 448 - 530 * o; // control point of the upper lid curve
+    var d = 'M35 248 Q440 ' + cy.toFixed(1) + ' 845 248';
+    lid.setAttribute('d', 'M-20 -40 H900 V248 L845 248 Q440 ' + cy.toFixed(1) + ' 35 248 L-20 248Z');
+    ll.setAttribute('d', d);
+    var g = '';
+    for (var i = 1; i < 18; i++) {
+      var t = i / 18, x = (1 - t) * (1 - t) * 35 + 2 * (1 - t) * t * 440 + t * t * 845, y = (1 - t) * (1 - t) * 248 + 2 * (1 - t) * t * cy + t * t * 248;
+      var nx = (t - .5) * 1.4, len = 26 + 26 * Math.sin(t * Math.PI) * (.4 + .6 * o);
+      g += '<path class="lash" d="M' + x.toFixed(1) + ' ' + y.toFixed(1) + ' q ' + (nx * len * .4).toFixed(1) + ' ' + (-len * .6).toFixed(1) + ' ' + (nx * len).toFixed(1) + ' ' + (-len).toFixed(1) + '"/>';
+    }
+    lashes.innerHTML = g;
+  }
+  RT.onScroll(function () {
+    var p = RT.motion ? RT.progress(hero) : 1, o = RT.ease(RT.clamp(p / .55));
+    // a quick blink at the start of the page time is added by the loop below
+    eyest.style.setProperty('--o', o); eyest.style.setProperty('--b', RT.ease(RT.clamp((p - .3) / .35))); eyest.style.setProperty('--t', RT.clamp((p - .5) / .25));
+    eye(Math.max(o, open0));
+  });
+  var open0 = 0;
+  RT.loop(function (t) { var v = RT.clamp((t - 300) / 900) * .35; if (v !== open0) { open0 = v; RT.tick(); } return t < 1300; });
+
+  // stories ring turns grey after the section has been seen
+  var sts = document.querySelectorAll('.st');
+  RT.onScroll(function () { sts.forEach(function (a) { var s = document.querySelector(a.getAttribute('href')); if (s && s.getBoundingClientRect().top < innerHeight * .5) a.classList.add('seen'); }); });
+  document.querySelectorAll('[data-like]').forEach(function (h) { h.addEventListener('click', function () { h.classList.toggle('on'); h.textContent = h.classList.contains('on') ? '♥' : '♡'; }); });
+  var car = document.getElementById('car1'), cd = document.querySelectorAll('#cd1 i');
+  car.addEventListener('scroll', function () { var i = Math.round(car.scrollLeft / car.clientWidth); cd.forEach(function (d, k) { d.classList.toggle('on', k === i); }); }, { passive: true });
+
+  // brow shape helper
+  var F = {
+    oval: { face: 'M200 40 C 300 40 336 140 330 220 C 324 320 270 392 200 392 C 130 392 76 320 70 220 C 64 140 100 40 200 40Z', l: 'M100 178 Q 130 150 168 160', r: 'M232 160 Q 270 150 300 178', t: 'Овальное лицо', p: 'Подходит почти любая форма. Чаще всего выбирают мягкий изгиб, близкий к природной линии.' },
+    round: { face: 'M200 52 C 316 52 350 150 348 230 C 346 320 290 380 200 380 C 110 380 54 320 52 230 C 50 150 84 52 200 52Z', l: 'M98 182 L 140 146 Q 152 140 170 160', r: 'M230 160 Q 248 140 260 146 L 302 182', t: 'Круглое лицо', p: 'Помогают брови с выраженным изломом и чуть приподнятым кончиком: они визуально вытягивают лицо.' },
+    square: { face: 'M200 46 C 300 46 340 90 342 170 C 344 290 330 360 270 384 C 240 394 160 394 130 384 C 70 360 56 290 58 170 C 60 90 100 46 200 46Z', l: 'M98 178 Q 132 140 170 158', r: 'M230 158 Q 268 140 302 178', t: 'Квадратное лицо', p: 'Хорошо смотрится плавная дуга без резких углов: она смягчает линию скул и подбородка.' },
+    heart: { face: 'M200 44 C 312 44 346 120 340 196 C 332 290 260 380 200 396 C 140 380 68 290 60 196 C 54 120 88 44 200 44Z', l: 'M100 180 Q 134 152 170 162', r: 'M230 162 Q 266 152 300 180', t: 'Лицо сердечком', p: 'Подойдут округлые брови с мягкой дугой и невысоким изломом, без резкого подъёма.' },
+    long: { face: 'M200 24 C 290 24 322 120 320 214 C 318 330 268 404 200 404 C 132 404 82 330 80 214 C 78 120 110 24 200 24Z', l: 'M102 176 Q 136 164 170 166', r: 'M230 166 Q 264 164 298 176', t: 'Вытянутое лицо', p: 'Выигрывают почти прямые горизонтальные брови: они визуально «расширяют» лицо.' }
+  };
+  var maps = document.getElementById('maps');
+  function shape(k) {
+    var f = F[k];
+    document.querySelectorAll('#shapes button').forEach(function (b) { b.classList.toggle('on', b.dataset.f === k); });
+    document.getElementById('face').setAttribute('d', f.face);
+    document.getElementById('bl').setAttribute('d', f.l); document.getElementById('br').setAttribute('d', f.r);
+    // mapping lines from the nose wing: start, arch, tail
+    var nose = [[176, 282], [224, 282]], m = '';
+    [[170, 160, 0], [140, 148, 0], [100, 178, 0]].forEach(function (pt, i) { m += '<line class="map" x1="' + nose[0][0] + '" y1="' + nose[0][1] + '" x2="' + pt[0] + '" y2="' + (pt[1] - 20) + '"/><circle class="mapdot" cx="' + pt[0] + '" cy="' + pt[1] + '" r="4"/>'; });
+    maps.innerHTML = m;
+    document.getElementById('tip').innerHTML = '<b>' + f.t + '</b>' + f.p;
+  }
+  document.getElementById('shapes').addEventListener('click', function (e) { var b = e.target.closest('button'); if (b) shape(b.dataset.f); });
+  shape('oval');
+  function live() { var s = RT.status(); if (!s) return; document.querySelectorAll('[data-live]').forEach(function (e) { e.classList.toggle('is-open', s.open); e.classList.toggle('is-closed', !s.open); }); }
+  document.addEventListener('DOMContentLoaded', live); setInterval(live, 60000);
+
+  window.REEL = {
+    hero: '.hero', heroAt: .62, feature: '#brows', featureOff: -20, featureM: '.facebox', featureOffM: -170, prices: '#price', pricesOff: 120,
+    demo: [function () { shape('round'); }, function () { shape('long'); }, function () { shape('heart'); }],
+    holds: [40, 40, 40]
+  };
+})();
+</script>
+</body>
+</html>

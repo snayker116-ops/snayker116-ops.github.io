@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Авто Доктор — автосервис на Самохвалова, 19 · Дзержинск</title>
+<meta name="description" content="Автосервис «Авто Доктор» в Дзержинске: диагностика, ходовая, тормоза, выхлопная система, автоэлектрика, замена ГРМ и масла, промывка инжектора. Мастер Дмитрий. Пн–пт 8:00–17:00, сб 9:00–14:00. Рейтинг 4,8.">
+<meta property="og:title" content="«Авто Доктор» — автосервис, Дзержинск">
+<meta property="og:description" content="Ходовая, тормоза, выхлоп, электрика, диагностика. Пн–пт 8–17, сб 9–14.">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/7695774/2a00000187d04b9114929d651a14bec53e0c/XXXL">
+<meta name="theme-color" content="#0E7C66">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;800;900&amp;family=PT+Mono&amp;family=Caveat:wght@600;700&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"AutoRepair","name":"Авто Доктор","telephone":"+7 920 900-99-44","address":{"@type":"PostalAddress","streetAddress":"ул. Самохвалова, 19","addressLocality":"Дзержинск","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":56.23563,"longitude":43.422593},"openingHours":["Mo-Fr 08:00-12:00","Mo-Fr 13:00-17:00","Sa 09:00-14:00"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","ratingCount":"71"}}</script>
+<style>
+:root {
+  --paper: #FBFAF6; --paper-2: #F1EFE7; --line: #D9D5C8; --ink: #1D2A30; --ink-2: #56656C; --mint: #0E7C66; --mint-2: #19B092; --mint-3: #DFF3EC; --ecg: #3BFF9E; --mon: #071612; --blue: #4FD8FF; --warn: #E8573C;
+  --sans: 'Commissioner', Arial, sans-serif; --mono: 'PT Mono', Consolas, monospace; --hand: 'Caveat', cursive;
+  --gut: clamp(16px, 4vw, 52px); --ease: cubic-bezier(.2, .75, .2, 1);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: #E9E6DC; color: var(--ink); font: 400 17px/1.6 var(--sans); overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+
+/* folder tabs stuck to the right edge */
+.tabs { position: fixed; right: 0; top: 90px; z-index: 30; display: grid; gap: 6px; }
+.tabs a { display: block; padding: 10px 16px 10px 14px; border-radius: 10px 0 0 10px; background: var(--c, #fff); color: var(--ink); font: 700 13px/1 var(--sans); text-decoration: none; box-shadow: -2px 3px 10px rgba(0,0,0,.12); transform: translateX(calc(8px * (1 - var(--on, 0)))); transition: transform .3s var(--ease); border-left: 4px solid rgba(0,0,0,.12); }
+.tabs a.on { --on: 1; padding-right: 22px; }
+.tabs a.call { background: var(--mint); color: #fff; }
+@media (max-width: 900px) { .tabs { top: auto; bottom: 0; left: 0; right: 0; grid-auto-flow: column; gap: 0; } .tabs a { border-radius: 0; text-align: center; padding: 14px 4px; transform: none; font-size: 12px; border-left: 0; } .tabs a:not(.call):not(.k) { display: none; } }
+
+/* hero: ECG monitor */
+.hero { position: relative; height: 200vh; background: var(--mon); }
+.mon { position: sticky; top: 0; height: 100vh; min-height: 600px; overflow: hidden; color: #cfeee3; background: radial-gradient(90% 70% at 50% 40%, #0d2b23, var(--mon)); }
+.mon::before { content: ""; position: absolute; inset: 0; background-image: linear-gradient(rgba(59,255,158,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(59,255,158,.07) 1px, transparent 1px); background-size: 32px 32px; }
+.mon::after { content: ""; position: absolute; inset: 0; background: repeating-linear-gradient(0deg, rgba(0,0,0,.18) 0 1px, transparent 1px 3px); pointer-events: none; }
+.vitals { position: absolute; top: 24px; left: var(--gut); right: calc(var(--gut) + 150px); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font: 400 14px/1.3 var(--mono); z-index: 2; }
+.vitals div b { display: block; font: 800 clamp(26px, 3vw, 40px)/1 var(--sans); color: var(--ecg); }
+.vitals .y b { color: #ffd166; } .vitals .c b { color: var(--blue); }
+#ecg { position: absolute; left: 0; top: 16%; width: 100%; height: 38%; z-index: 1; }
+#ecg path { fill: none; stroke: var(--ecg); stroke-width: 3; stroke-linejoin: round; filter: drop-shadow(0 0 6px rgba(59,255,158,.8)); }
+#ecg .car { stroke: var(--ecg); stroke-width: 3; opacity: var(--car, 0); }
+.hcopy { position: absolute; left: var(--gut); right: var(--gut); bottom: 8vh; z-index: 2; display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: 30px; align-items: end; }
+.hcopy h1 { margin: 0; font: 900 clamp(44px, 7vw, 108px)/.92 var(--sans); color: #fff; letter-spacing: -.02em; }
+.hcopy h1 em { font-style: normal; color: var(--ecg); }
+.hcopy p { margin: 0 0 18px; color: #b9dccf; font-size: clamp(15px, 1.4vw, 18px); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 22px; border-radius: 40px; background: var(--ecg); color: #04140e; font: 800 15px/1 var(--sans); text-decoration: none; border: 0; cursor: pointer; }
+.btn.m { background: var(--mint); color: #fff; }
+.btn.o { background: transparent; color: inherit; box-shadow: inset 0 0 0 2px currentColor; }
+.live { display: inline-flex; align-items: center; gap: 8px; font: 400 14px/1.3 var(--mono); }
+.live i { width: 9px; height: 9px; border-radius: 50%; background: #888; }
+.live.is-open i { background: var(--ecg); box-shadow: 0 0 10px var(--ecg); } .live.is-closed i { background: var(--warn); }
+@media (max-width: 860px) { .hcopy { grid-template-columns: 1fr; bottom: 10vh; } #ecg { top: 22%; height: 30%; } .vitals { font-size: 12px; } }
+
+/* the card */
+.card, main > section:not(.hero) { position: relative; max-width: 1160px; margin: 0 auto; background: var(--paper); z-index: 2; padding-left: clamp(16px, 4vw, 60px); padding-right: clamp(16px, 4vw, 60px); }
+.cardtop { margin-top: -60px; border-radius: 18px 18px 0 0; box-shadow: 0 -10px 40px rgba(0,0,0,.25); }
+main > section:not(.hero)::before { content: ""; position: absolute; top: 0; bottom: 0; left: clamp(40px, 6vw, 80px); width: 2px; background: rgba(232,87,60,.25); }
+.cardhead { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 14px; padding: 26px 0 22px; border-bottom: 2px solid var(--ink); font: 400 14px/1.4 var(--mono); }
+.cardhead b { font: 900 22px/1 var(--sans); letter-spacing: .04em; }
+main > section:not(.hero) { padding-top: clamp(46px, 7vw, 90px); padding-bottom: clamp(36px, 5vw, 60px); padding-left: calc(clamp(16px, 4vw, 60px) + clamp(36px, 5vw, 60px)); border-bottom: 1px dashed var(--line); scroll-margin-top: 20px; }
+.no { font: 400 14px/1 var(--mono); color: var(--warn); letter-spacing: .1em; }
+main h2 { margin: 8px 0 14px; font: 900 clamp(30px, 4.4vw, 58px)/1 var(--sans); letter-spacing: -.02em; }
+main h2 em { font-style: normal; color: var(--mint); }
+.lead { max-width: 680px; color: var(--ink-2); margin: 0 0 26px; }
+.note { font: 700 clamp(22px, 2.4vw, 28px)/1.15 var(--hand); color: #2846a8; transform: rotate(-2deg); display: inline-block; }
+
+/* x-ray */
+.xr { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, .8fr); gap: clamp(16px, 3vw, 34px); align-items: start; }
+.scan { position: relative; border-radius: 16px; overflow: hidden; background: #e8ecef; touch-action: none; cursor: none; box-shadow: inset 0 0 0 2px var(--line); }
+.scan svg { display: block; width: 100%; height: auto; }
+.scan .xray { position: absolute; inset: 0; clip-path: circle(var(--lr, 110px) at var(--lx, 50%) var(--ly, 50%)); background: #04202b; }
+.lens { position: absolute; left: var(--lx, 50%); top: var(--ly, 50%); width: calc(var(--lr, 110px) * 2); height: calc(var(--lr, 110px) * 2); transform: translate(-50%, -50%); border-radius: 50%; box-shadow: 0 0 0 4px #fff, 0 0 0 8px rgba(29,42,48,.25), inset 0 0 30px rgba(79,216,255,.35); pointer-events: none; }
+.lens::after { content: ""; position: absolute; right: -36%; bottom: -36%; width: 46%; height: 12px; border-radius: 8px; background: #2b3a46; transform: rotate(45deg); transform-origin: left center; }
+.xray .part { cursor: pointer; }
+.xray .part * { transition: stroke .2s, fill .2s; }
+.xray .part.sel * { stroke: #ffd166 !important; }
+.xray .part.sel .fillp { fill: rgba(255,209,102,.25) !important; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.chips button { font: 700 14px/1 var(--sans); padding: 10px 14px; border-radius: 30px; border: 2px solid var(--line); background: #fff; cursor: pointer; color: var(--ink); }
+.chips button.on { background: var(--ink); color: #fff; border-color: var(--ink); }
+.rx { background: #fff; border: 2px solid var(--ink); border-radius: 14px; padding: 22px 22px 18px; position: relative; }
+.rx .k { font: 400 13px/1 var(--mono); color: var(--warn); letter-spacing: .14em; text-transform: uppercase; }
+.rx h3 { margin: 8px 0 10px; font: 900 26px/1.1 var(--sans); }
+.rx ul { margin: 0 0 14px; padding: 0; list-style: none; display: grid; gap: 6px; }
+.rx li { padding-left: 22px; position: relative; }
+.rx li::before { content: "Rx"; position: absolute; left: 0; top: 2px; font: 700 11px/1 var(--mono); color: var(--mint); }
+.rx blockquote { margin: 0 0 14px; padding: 10px 14px; background: var(--mint-3); border-radius: 10px; font-size: 15px; }
+.rx small { display: block; color: var(--ink-2); font-size: 13.5px; margin-top: 10px; }
+@media (max-width: 860px) { .xr { grid-template-columns: 1fr; } .scan { cursor: default; } }
+
+/* complaints → treatment */
+.cases { display: grid; gap: 12px; }
+.case { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: #fff; }
+.case div { padding: 16px 18px; }
+.case div:first-child { background: var(--paper-2); border-right: 1px dashed var(--line); }
+.case b { display: block; font: 400 12px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-2); margin-bottom: 6px; }
+.case div:last-child b { color: var(--mint); }
+@media (max-width: 640px) { .case { grid-template-columns: 1fr; } .case div:first-child { border-right: 0; border-bottom: 1px dashed var(--line); } }
+
+/* tools */
+.tools { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.tool { background: #fff; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); }
+.tool figure { margin: 0; aspect-ratio: 1; background: var(--paper-2); overflow: hidden; }
+.tool img { width: 100%; height: 100%; object-fit: cover; }
+.tool p { margin: 0; padding: 12px 14px 14px; font-size: 14.5px; }
+.tool p b { display: block; font-weight: 800; font-size: 15.5px; }
+@media (max-width: 860px) { .tools { grid-template-columns: 1fr 1fr; } }
+
+/* reception */
+.rec { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 24px; }
+.sched { width: 100%; border-collapse: collapse; font: 400 15px/1.3 var(--mono); }
+.sched td { padding: 10px 8px; border-bottom: 1px solid var(--line); }
+.sched td:last-child { text-align: right; }
+.sched tr.today td { background: var(--mint-3); font-weight: 700; }
+.sched tr.off td { color: #a19c8e; }
+.mapbox { position: relative; min-height: 360px; border-radius: 14px; overflow: hidden; border: 2px solid var(--ink); }
+.mapbox iframe { position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 140px); border: 0; }
+@media (max-width: 860px) { .rec { grid-template-columns: 1fr; } }
+footer { max-width: 1160px; margin: 0 auto; background: var(--paper); padding: 22px clamp(16px, 4vw, 60px) 90px; font: 400 13px/1.4 var(--mono); color: var(--ink-2); }
+
+.motion [data-in] { opacity: 0; transform: translateY(22px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.motion [data-in].in { opacity: 1; transform: none; }
+.noimg { background: linear-gradient(135deg, #dfe4e2, #c9cfcc); }
+.noimg img { opacity: 0; }
+</style>
+</head>
+<body data-hours='{"1":[[8,0,12,0],[13,0,17,0]],"2":[[8,0,12,0],[13,0,17,0]],"3":[[8,0,12,0],[13,0,17,0]],"4":[[8,0,12,0],[13,0,17,0]],"5":[[8,0,12,0],[13,0,17,0]],"6":[[9,0,14,0]]}'>
+
+<nav class="tabs" id="tabs">
+  <a href="#xray" class="k" style="--c:#DFF3EC">Рентген</a>
+  <a href="#cases" style="--c:#FFF1C9">Жалобы</a>
+  <a href="#tools" style="--c:#E3ECFF">Обследование</a>
+  <a href="#rec" style="--c:#FFE1DA">Приём</a>
+  <a class="call" href="tel:+79209009944">Позвонить</a>
+</nav>
+
+<main>
+<section class="hero" id="top">
+  <div class="mon" id="mon">
+    <div class="vitals">
+      <div><span>РЕЙТИНГ</span><b>4,8</b>71 оценка</div>
+      <div class="y"><span>ВРЕМЯ ОЖИДАНИЯ</span><b>21/22</b>довольны</div>
+      <div class="c"><span>ПРИЁМ</span><b>пн–сб</b><span class="live" data-live><i></i><span data-status>8:00–17:00</span></span></div>
+    </div>
+    <svg id="ecg" viewBox="0 0 1200 300" preserveAspectRatio="none" aria-hidden="true">
+      <path id="trace" d=""/>
+      <path class="car" d="M330 220 L330 186 Q340 160 384 154 L470 146 Q510 104 580 96 L700 96 Q760 100 800 146 L866 152 Q900 160 904 190 L904 220 M420 220 a36 36 0 1 0 0.1 0 M830 220 a36 36 0 1 0 0.1 0"/>
+    </svg>
+    <div class="hcopy">
+      <h1>Машина <em>заболела?</em><br>На приём к Дмитрию</h1>
+      <div>
+        <p>«Авто Доктор» на Самохвалова, 19: диагностика, ходовая, тормоза, выхлоп и электрика. Поломку находят, даже когда другие отказывались.</p>
+        <a class="btn" href="tel:+79209009944">Записаться: +7 920 900-99-44</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="card cardtop">
+  <div class="cardhead"><b>МЕДКАРТА АВТОМОБИЛЯ</b><span>Автосервис «Авто Доктор» · Дзержинск, ул. Самохвалова, 19</span><span>Лечащий мастер: Дмитрий</span></div>
+</div>
+
+  <section id="xray">
+    <span class="no">01 · РЕНТГЕН</span>
+    <h2>Наведите лупу <em>на машину</em></h2>
+    <p class="lead">Под «рентгеном» видно, что внутри. Нажмите на узел, и мы покажем, что с ним делают в «Авто Докторе». На телефоне выберите узел кнопкой.</p>
+    <div class="xr">
+      <div>
+        <div class="scan" id="scan" data-in>
+          <svg viewBox="0 0 800 330" aria-label="Автомобиль">
+            <rect width="800" height="330" fill="#e8ecef"/>
+            <path d="M40 300 H760" stroke="#c9d0d6" stroke-width="3"/>
+            <path d="M60 248 L60 206 Q68 174 120 166 L250 156 Q300 104 380 96 L520 96 Q590 100 640 154 L742 164 Q786 174 790 212 L790 248 Z" fill="#f7f8f9" stroke="#2b3a46" stroke-width="4"/>
+            <path d="M268 156 Q310 114 380 108 L440 108 L440 156Z M456 108 L520 108 Q572 112 612 156 L456 156Z" fill="#a9bccb" stroke="#2b3a46" stroke-width="3"/>
+            <path d="M440 156 V240 M300 168 H330 M610 168 H640" stroke="#2b3a46" stroke-width="3"/>
+            <circle cx="770" cy="196" r="12" fill="#ffe08a" stroke="#2b3a46" stroke-width="3"/>
+            <rect x="56" y="196" width="18" height="14" fill="#e8573c" stroke="#2b3a46" stroke-width="2"/>
+            <g fill="#1d252c" stroke="#2b3a46" stroke-width="4"><circle cx="190" cy="252" r="54"/><circle cx="640" cy="252" r="54"/></g>
+            <g fill="#c4ccd3"><circle cx="190" cy="252" r="24"/><circle cx="640" cy="252" r="24"/></g>
+          </svg>
+          <div class="xray" id="xl">
+            <svg viewBox="0 0 800 330">
+              <rect width="800" height="330" fill="#04202b"/>
+              <g stroke="rgba(79,216,255,.18)" stroke-width="1">
+                <path d="M0 30H800M0 90H800M0 150H800M0 210H800M0 270H800M100 0V330M220 0V330M340 0V330M460 0V330M580 0V330M700 0V330"/>
+              </g>
+              <path d="M60 248 L60 206 Q68 174 120 166 L250 156 Q300 104 380 96 L520 96 Q590 100 640 154 L742 164 Q786 174 790 212 L790 248 Z" fill="none" stroke="rgba(79,216,255,.55)" stroke-width="3"/>
+              <g class="part" data-p="engine"><rect class="fillp" x="610" y="168" width="140" height="68" rx="8" fill="rgba(79,216,255,.12)" stroke="#4FD8FF" stroke-width="3"/><path d="M630 168 V150 M660 168 V150 M690 168 V150 M720 168 V150 M625 200 H735 M640 236 V250" stroke="#4FD8FF" stroke-width="3"/><circle cx="740" cy="202" r="16" fill="none" stroke="#4FD8FF" stroke-width="3"/></g>
+              <g class="part" data-p="elec"><rect class="fillp" x="540" y="176" width="52" height="34" rx="4" fill="rgba(122,255,170,.12)" stroke="#7AFFAA" stroke-width="3"/><path d="M552 176 v-8 M580 176 v-8 M592 192 C620 192 630 230 690 236 M770 196 C730 150 640 140 590 180" fill="none" stroke="#7AFFAA" stroke-width="2.5"/><circle cx="770" cy="196" r="13" fill="none" stroke="#7AFFAA" stroke-width="3"/></g>
+              <g class="part" data-p="exhaust"><path d="M600 262 H300 Q280 262 270 270 H120" fill="none" stroke="#FF9E7A" stroke-width="6"/><rect class="fillp" x="300" y="252" width="90" height="22" rx="10" fill="rgba(255,158,122,.15)" stroke="#FF9E7A" stroke-width="3"/><rect class="fillp" x="92" y="258" width="64" height="26" rx="12" fill="rgba(255,158,122,.15)" stroke="#FF9E7A" stroke-width="3"/><path d="M92 272 H50" stroke="#FF9E7A" stroke-width="5"/></g>
+              <g class="part" data-p="brakes"><circle class="fillp" cx="190" cy="252" r="34" fill="rgba(255,209,102,.08)" stroke="#FFD166" stroke-width="4"/><circle class="fillp" cx="640" cy="252" r="34" fill="rgba(255,209,102,.08)" stroke="#FFD166" stroke-width="4"/><path d="M210 222 a38 38 0 0 1 20 22 M660 222 a38 38 0 0 1 20 22" fill="none" stroke="#FFD166" stroke-width="10"/></g>
+              <g class="part" data-p="susp"><path d="M190 200 l14 6 -28 8 28 8 -28 8 28 8 -14 6 M640 196 l14 6 -28 8 28 8 -28 8 28 8 -14 6" fill="none" stroke="#C79BFF" stroke-width="4"/><path class="fillp" d="M150 252 H230 M600 252 H680 M150 252 L120 234 M680 252 L710 234" stroke="#C79BFF" stroke-width="5" fill="none"/></g>
+              <g fill="none" stroke="rgba(79,216,255,.35)" stroke-width="3"><circle cx="190" cy="252" r="54"/><circle cx="640" cy="252" r="54"/></g>
+            </svg>
+          </div>
+          <div class="lens" id="lens"></div>
+        </div>
+        <div class="chips" id="chips">
+          <button data-p="engine">Двигатель</button><button data-p="susp">Подвеска</button><button data-p="brakes">Тормоза</button><button data-p="exhaust">Выхлоп</button><button data-p="elec">Электрика</button>
+        </div>
+      </div>
+      <div class="rx" id="rx" data-in>
+        <span class="k" id="rxk"></span>
+        <h3 id="rxh"></h3>
+        <ul id="rxl"></ul>
+        <blockquote id="rxq"></blockquote>
+        <a class="btn m" href="tel:+79209009944">Записаться на осмотр</a>
+        <small>Стоимость называют после осмотра. Запчасти мастер может заказать сам.</small>
+      </div>
+    </div>
+  </section>
+
+  <section id="cases">
+    <span class="no">02 · ЖАЛОБЫ И ЛЕЧЕНИЕ</span>
+    <h2>Истории <em>из отзывов</em></h2>
+    <p class="lead">С чем приезжали клиенты и что сделали. Всё взято из отзывов на Яндекс Картах.</p>
+    <div class="cases">
+      <div class="case" data-in><div><b>Жалоба</b>Изношены колодки, тормоза работают странно.</div><div><b>Лечение</b>Поменяли колодки и нашли причину: порваны чехлы на направляющих, их клинило, поэтому работали только внутренние колодки.</div></div>
+      <div class="case" data-in><div><b>Жалоба</b>Lancer 9, нужно сделать ходовую: сайлентблоки и шаровые, которые там приваривают.</div><div><b>Лечение</b>Договорились по времени, всё сделали качественно, «цены адекватные».</div></div>
+      <div class="case" data-in><div><b>Жалоба</b>Прогорело соединение в выхлопной системе.</div><div><b>Лечение</b>Устранили, мастер задержался на работе в субботу и проверил катализатор эндоскопом.</div></div>
+      <div class="case" data-in><div><b>Жалоба</b>Порвалась гофра.</div><div><b>Лечение</b>Замена минут за 40, запчасть мастер купил сам.</div></div>
+      <div class="case" data-in><div><b>Жалоба</b>Поломку не могли найти в других сервисах.</div><div><b>Лечение</b>«Поломку нашёл быстро, когда другие отказывались. Теперь только к нему».</div></div>
+    </div>
+    <p style="margin-top:22px"><span class="note">«Быстро, качественно, по записи. Ничего сам не навязывает»</span></p>
+  </section>
+
+  <section id="tools">
+    <span class="no">03 · ОБСЛЕДОВАНИЕ</span>
+    <h2>Чем <em>слушают</em> машину</h2>
+    <p class="lead">Инструменты с фотографий сервиса: от стетоскопа до сканера для компьютерной диагностики.</p>
+    <div class="tools">
+      <div class="tool" data-in><figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/7695774/2a00000187d04b9114929d651a14bec53e0c/XL" alt="Мастер слушает двигатель стетоскопом" loading="lazy"></figure><p><b>Стетоскоп</b>Слушают двигатель и находят, откуда стук.</p></div>
+      <div class="tool" data-in><figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/14010724/2a00000194627a81a1cad6dd209282f3eb5d/XL" alt="Сканер Launch X-431" loading="lazy"></figure><p><b>Сканер Launch X-431</b>Компьютерная диагностика.</p></div>
+      <div class="tool" data-in><figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/14234746/2a00000194626916d7fe51f8e36532362a9d/XL" alt="Дымогенератор для поиска утечек" loading="lazy"></figure><p><b>Дымогенератор</b>Помогает найти утечку во впуске или выхлопе.</p></div>
+      <div class="tool" data-in><figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/1001354/2a00000187d04b9081424ead3f264903feaf/XL" alt="Фары до и после полировки" loading="lazy"></figure><p><b>Полировка фар</b>Мутные фары снова прозрачные.</p></div>
+    </div>
+  </section>
+
+  <section id="rec">
+    <span class="no">04 · ПРИЁМ</span>
+    <h2>Часы приёма <em>и адрес</em></h2>
+    <div class="rec">
+      <div data-in>
+        <table class="sched" id="sched"></table>
+        <p style="margin:16px 0"><span class="live" data-live><i></i><span data-status>…</span></span></p>
+        <p style="margin:0 0 16px">Дзержинск, ул. Самохвалова, 19<br><a href="tel:+79209009944">+7 920 900-99-44</a></p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn m" href="tel:+79209009944">Позвонить</a><a class="btn o" href="https://yandex.ru/maps/org/avto_doktor/175057681314/" target="_blank" rel="noopener">Маршрут</a></div>
+      </div>
+      <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=43.422593%2C56.235630&amp;z=16&amp;pt=43.422593%2C56.235630%2Cpm2rdm&amp;l=map" title="«Авто Доктор» на Яндекс Картах" loading="lazy" allowfullscreen></iframe></div>
+    </div>
+  </section>
+</main>
+<footer>«Авто Доктор» · автосервис · Дзержинск, ул. Самохвалова, 19 · пн–пт 8:00–17:00 (обед 12–13), сб 9:00–14:00</footer>
+
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  // ECG trace: the heartbeat flattens into the outline of a car as you scroll
+  var trace = document.getElementById('trace'), ecg = document.getElementById('ecg'), hero = document.querySelector('.hero'), k = 0;
+  function beat(x0) { return ' L' + (x0) + ' 150 L' + (x0 + 20) + ' 140 L' + (x0 + 34) + ' 150 L' + (x0 + 48) + ' 150 L' + (x0 + 58) + ' 60 L' + (x0 + 72) + ' 230 L' + (x0 + 84) + ' 150 L' + (x0 + 120) + ' 150 L' + (x0 + 140) + ' 128 L' + (x0 + 166) + ' 150'; }
+  RT.onScroll(function () { k = RT.motion ? RT.ease(RT.clamp(RT.progress(hero) / .7)) : 1; ecg.style.setProperty('--car', k); });
+  RT.loop(function (t) {
+    var shift = (t / 6) % 300, d = 'M0 150', amp = 1 - k;
+    for (var x = -300; x < 1300; x += 300) { var seg = beat(x + shift); d += seg.replace(/ L([\d.-]+) ([\d.]+)/g, function (_, a, b) { return ' L' + a + ' ' + (150 + (b - 150) * amp).toFixed(1); }); }
+    trace.setAttribute('d', d);
+    trace.style.opacity = 1 - k * .7;
+  });
+
+  // x-ray lens
+  var scan = document.getElementById('scan'), xl = document.getElementById('xl'), sel = 'engine', auto = true;
+  var D = {
+    engine: { k: 'Двигатель', h: 'Двигатель и топливная система', l: ['Замена масла и ГРМ', 'Промывка инжектора, чистка форсунок', 'Ремонт топливной системы', 'Компьютерная диагностика'], q: '«Грамотный специалист быстро и квалифицированно устранил проблему. Спасибо, что не пришлось долго ждать!»', x: .86, y: .62 },
+    susp: { k: 'Ходовая', h: 'Подвеска и ходовая часть', l: ['Ремонт ходовой: сайлентблоки, шаровые', 'Замена пыльника ШРУСа', 'Ремонт карданных валов и моста'], q: '«Производили замену пыльника ШРУСа. Дополнительно проконсультировали по подвеске!»', x: .24, y: .68 },
+    brakes: { k: 'Тормоза', h: 'Тормозная система', l: ['Замена колодок и дисков', 'Ремонт тормозной системы', 'Проверка направляющих суппорта'], q: '«Оказалось, что работали только внутренние колодки: порваны чехлы на направляющих, их клинило».', x: .8, y: .76 },
+    exhaust: { k: 'Выхлоп', h: 'Выхлопная система', l: ['Замена гофры и резонатора', 'Ремонт прогоревших соединений', 'Удаление катализатора', 'Проверка катализатора эндоскопом'], q: '«Менял резонатор на Калине. Всё произошло очень быстро, качественно, дёшево».', x: .44, y: .8 },
+    elec: { k: 'Электрика', h: 'Автоэлектрика и электроника', l: ['Ремонт стартеров и генераторов', 'Ремонт автоэлектрики и электроники', 'Установка парктроника', 'Ремонт и полировка фар'], q: '«Замечательный мастер. Поломку нашёл быстро, когда другие отказывались, сразу видно профи!»', x: .72, y: .56 }
+  };
+  function lens(x, y) { scan.style.setProperty('--lx', x + 'px'); scan.style.setProperty('--ly', y + 'px'); }
+  function rad() { scan.style.setProperty('--lr', Math.max(70, Math.min(130, scan.clientWidth * .15)) + 'px'); }
+  function pick(p, move) {
+    sel = p; var d = D[p];
+    xl.querySelectorAll('.part').forEach(function (g) { g.classList.toggle('sel', g.dataset.p === p); });
+    document.querySelectorAll('#chips button').forEach(function (b) { b.classList.toggle('on', b.dataset.p === p); });
+    document.getElementById('rxk').textContent = 'Направление: ' + d.k;
+    document.getElementById('rxh').textContent = d.h;
+    document.getElementById('rxl').innerHTML = d.l.map(function (x) { return '<li>' + x + '</li>'; }).join('');
+    document.getElementById('rxq').textContent = d.q;
+    if (move) { tx = d.x * scan.clientWidth; ty = d.y * scan.clientHeight; }
+  }
+  var cx = 0, cy = 0, tx = 0, ty = 0;
+  scan.addEventListener('pointermove', function (e) { auto = false; var r = scan.getBoundingClientRect(); tx = e.clientX - r.left; ty = e.clientY - r.top; });
+  xl.addEventListener('click', function (e) { var g = e.target.closest('.part'); if (g) pick(g.dataset.p); });
+  document.getElementById('chips').addEventListener('click', function (e) { var b = e.target.closest('button'); if (b) { auto = false; pick(b.dataset.p, true); } });
+  rad(); addEventListener('resize', rad);
+  pick('engine', true); cx = tx; cy = ty;
+  RT.loop(function (t) {
+    if (auto && RT.motion) { var a = t / 2600; tx = scan.clientWidth * (.5 + .34 * Math.sin(a)); ty = scan.clientHeight * (.66 + .1 * Math.cos(a * 2)); }
+    cx += (tx - cx) * .12; cy += (ty - cy) * .12; lens(cx, cy);
+  });
+
+  // schedule
+  var NAMES = [['Понедельник', 1], ['Вторник', 2], ['Среда', 3], ['Четверг', 4], ['Пятница', 5], ['Суббота', 6], ['Воскресенье', 0]];
+  var now = new Date(Date.now() + new Date().getTimezoneOffset() * 6e4 + 3 * 36e5).getDay();
+  document.getElementById('sched').innerHTML = NAMES.map(function (n) { var t = n[1] === 6 ? '9:00–14:00' : n[1] === 0 ? 'выходной' : '8:00–17:00, обед 12–13'; return '<tr class="' + (n[1] === now ? 'today ' : '') + (n[1] === 0 ? 'off' : '') + '"><td>' + n[0] + '</td><td>' + t + '</td></tr>'; }).join('');
+  function live() { var s = RT.status(); if (!s) return; document.querySelectorAll('[data-live]').forEach(function (e) { e.classList.toggle('is-open', s.open); e.classList.toggle('is-closed', !s.open); }); }
+  document.addEventListener('DOMContentLoaded', live); setInterval(live, 60000);
+
+  // active tab
+  var tabs = document.querySelectorAll('#tabs a[href^="#"]');
+  RT.onScroll(function () { var cur = null; tabs.forEach(function (a) { var s = document.querySelector(a.getAttribute('href')); if (s && s.getBoundingClientRect().top < innerHeight * .4) cur = a; }); tabs.forEach(function (a) { a.classList.toggle('on', a === cur); }); });
+
+  window.REEL = {
+    hero: '.hero', heroAt: .55, feature: '#xray', featureOff: 40, featureM: '#scan', featureOffM: -80, prices: '#cases', pricesOff: 120,
+    demo: [function () { auto = false; pick('exhaust', true); }, function () { pick('brakes', true); }, function () { pick('susp', true); }],
+    holds: [45, 45, 45]
+  };
+})();
+</script>
+</body>
+</html>

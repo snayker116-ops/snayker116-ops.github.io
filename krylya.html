@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Крылья — батутный и развлекательный центр · Дзержинск, проспект Ленина, 68А</title>
+<meta name="description" content="Развлекательный центр «Крылья» в Дзержинске: батуты, верёвочный парк, скалодром, VR, автосимулятор, детская зона. «Детский час» от 700 ₽ в будни, дни рождения от 9500 ₽. Ежедневно 10:00–20:00. Рейтинг 4,9, 390 оценок.">
+<meta property="og:title" content="«Крылья» — батутный центр, Дзержинск">
+<meta property="og:description" content="Батуты, верёвочный парк, скалодром, VR. Ежедневно 10:00–20:00.">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/5495309/2a0000017e02ce9d3ccbe3c9e7528963733e/XXXL">
+<meta name="theme-color" content="#FFC531">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marmelad&amp;family=Nunito:wght@400;600;800;900&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"AmusementPark","name":"Крылья, развлекательный центр","telephone":"+7 910 137-74-74","address":{"@type":"PostalAddress","streetAddress":"просп. Ленина, 68А","addressLocality":"Дзержинск","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":56.238292,"longitude":43.47528},"openingHours":"Mo-Su 10:00-20:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"390"}}</script>
+<style>
+:root {
+  --y: #FFC531; --o: #FF7A2F; --p: #FF4F9A; --v: #7C5CFF; --b: #2BA8FF; --g: #2CCB7A; --bg: #FFF8EC; --ink: #1E1A2E; --mut: #66627A; --ok: #1FAA5E; --no: #E0475E;
+  --fun: 'Marmelad', 'Comic Sans MS', sans-serif; --body: 'Nunito', Arial, sans-serif;
+  --gut: clamp(16px, 4vw, 52px); --ease: cubic-bezier(.2, .75, .2, 1); --bounce: cubic-bezier(.3, 1.7, .5, 1);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17px/1.6 var(--body); overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+
+.nav { position: fixed; z-index: 30; top: 12px; left: var(--gut); right: var(--gut); display: flex; align-items: center; gap: 14px; padding: 8px 8px 8px 18px; border-radius: 30px; background: #fff; box-shadow: 0 10px 30px -14px rgba(30,26,46,.4); }
+.nav b { font: 400 24px/1 var(--fun); background: linear-gradient(90deg, var(--o), var(--p), var(--v)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.nav nav { margin-left: auto; display: flex; gap: 6px; }
+.nav nav a { text-decoration: none; padding: 9px 12px; border-radius: 20px; font: 800 14px/1 var(--body); color: var(--mut); }
+.nav nav a:hover { background: var(--bg); color: var(--ink); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 22px; border-radius: 22px; background: var(--p); color: #fff; font: 900 15px/1 var(--body); text-decoration: none; border: 0; cursor: pointer; box-shadow: 0 5px 0 #C9306F; transition: transform .2s var(--bounce); }
+.btn:hover { transform: translateY(-3px); }
+.btn.y { background: var(--y); color: var(--ink); box-shadow: 0 5px 0 #D99C0B; }
+.btn.v { background: var(--v); box-shadow: 0 5px 0 #5638D6; }
+@media (max-width: 760px) { .nav nav { display: none; } .nav .btn { margin-left: auto; padding: 11px 16px; } }
+
+/* hero: rainbow wings flap around the name */
+.hero { position: relative; height: 220vh; }
+.sky { position: sticky; top: 0; height: 100vh; min-height: 620px; overflow: hidden; display: grid; place-items: center; background: radial-gradient(70% 60% at 50% 50%, #fff, var(--bg)); }
+.wings { opacity: .9; position: absolute; left: 50%; top: 46%; width: min(120vw, 1300px); aspect-ratio: 2.2; transform: translate(-50%, -50%) scale(calc(.7 + .3 * var(--o, 0))); }
+.wing { position: absolute; top: 0; width: 50%; height: 100%; }
+.wing.l { left: 0; transform-origin: 100% 60%; transform: rotate(calc(var(--f, 0deg) * -1)); }
+.wing.r { right: 0; transform-origin: 0 60%; transform: rotate(var(--f, 0deg)); }
+.wing svg { width: 100%; height: 100%; overflow: visible; }
+.htitle { position: relative; z-index: 3; text-align: center; padding: 0 var(--gut); }
+.htitle small { display: inline-block; padding: 8px 14px; border-radius: 20px; background: var(--ink); color: #fff; font: 800 13px/1 var(--body); letter-spacing: .14em; text-transform: uppercase; }
+.htitle h1 { margin: 12px 0 6px; font: 400 clamp(72px, 13vw, 200px)/.9 var(--fun); color: var(--ink); text-shadow: 0 6px 0 var(--y), 0 12px 0 rgba(30,26,46,.12); }
+.htitle p { margin: 0 auto 18px; max-width: 560px; font-weight: 700; color: var(--ink); background: rgba(255,248,236,.92); border-radius: 16px; padding: 8px 14px; }
+.htitle .row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.pic { position: absolute; z-index: 2; width: clamp(110px, 14vw, 200px); aspect-ratio: 1; border-radius: 30px; overflow: hidden; border: 6px solid #fff; box-shadow: 0 20px 30px -16px rgba(30,26,46,.5); transform: translateY(calc(var(--bob, 0px))) rotate(var(--r)) scale(var(--sc, 1)); }
+.pic img { width: 100%; height: 100%; object-fit: cover; }
+.pic.a { left: 6%; top: 18%; --r: -8deg; } .pic.b { right: 7%; top: 16%; --r: 7deg; } .pic.c { left: 9%; bottom: 10%; --r: 6deg; } .pic.d { right: 8%; bottom: 12%; --r: -6deg; }
+@media (max-width: 760px) { .pic { width: 26vw; } .pic.a { top: 12%; } .pic.b { top: 12%; } .pic.c, .pic.d { bottom: 6%; } .htitle h1 { font-size: 22vw; } }
+
+section:not(.hero) { scroll-margin-top: 80px; }
+.wrap { max-width: 1200px; margin: 0 auto; padding: 0 var(--gut); }
+.chip { display: inline-block; padding: 8px 14px; border-radius: 20px; background: var(--c, var(--y)); font: 900 13px/1 var(--body); letter-spacing: .1em; text-transform: uppercase; }
+h2 { margin: 14px 0 14px; font: 400 clamp(38px, 5.4vw, 72px)/1 var(--fun); }
+h2 em { font-style: normal; color: var(--p); }
+.lead { max-width: 640px; color: var(--mut); margin: 0 0 26px; font-weight: 600; }
+
+/* bouncy bento of zones */
+#zones { padding: clamp(80px, 11vw, 140px) 0 clamp(40px, 6vw, 80px); }
+.bento { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 210px; gap: 14px; }
+.tile { position: relative; border-radius: 28px; overflow: hidden; background: var(--c); color: #fff; padding: 18px; display: flex; flex-direction: column; justify-content: flex-end; transition: transform .35s var(--bounce); }
+.tile:hover { transform: translateY(-8px) scale(1.02); }
+.tile img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.tile::after { content: ""; position: absolute; inset: 0; background: linear-gradient(transparent 40%, rgba(30,26,46,.7)); }
+.tile.plain::after { display: none; }
+.tile b, .tile span { position: relative; z-index: 2; }
+.tile b { font: 400 26px/1.05 var(--fun); }
+.tile span { font-size: 14.5px; font-weight: 700; opacity: .95; }
+.tile.w2 { grid-column: span 2; } .tile.h2 { grid-row: span 2; }
+@media (max-width: 900px) { .bento { grid-template-columns: 1fr 1fr; grid-auto-rows: 170px; } }
+.motion .tile[data-in] { opacity: 0; transform: translateY(40px) scale(.9); transition: opacity .5s, transform .7s var(--bounce); }
+.motion .tile[data-in].in { opacity: 1; transform: none; }
+
+/* planner */
+#plan { padding: clamp(60px, 9vw, 120px) 0; }
+.planner { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: clamp(18px, 3vw, 40px); align-items: start; }
+.box { background: #fff; border-radius: 28px; padding: clamp(18px, 2.6vw, 28px); box-shadow: 0 20px 40px -30px rgba(30,26,46,.5); display: grid; gap: 18px; }
+.box h3 { margin: 0 0 8px; font: 400 21px/1 var(--fun); }
+.seg { display: flex; flex-wrap: wrap; gap: 8px; }
+.seg button { font: 800 14.5px/1 var(--body); padding: 12px 14px; border-radius: 18px; border: 2px solid #EFE6D6; background: #fff; color: var(--ink); cursor: pointer; transition: transform .25s var(--bounce); }
+.seg button:hover { transform: translateY(-2px); }
+.seg button.on { background: var(--v); border-color: var(--v); color: #fff; }
+.kids { display: flex; align-items: center; gap: 14px; }
+.kids button { width: 46px; height: 46px; border-radius: 50%; border: 0; background: var(--y); font: 900 22px/1 var(--body); cursor: pointer; }
+.kids b { font: 400 40px/1 var(--fun); min-width: 40px; text-align: center; }
+.adds { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.adds label { display: flex; justify-content: space-between; gap: 10px; align-items: center; padding: 12px 14px; border-radius: 16px; border: 2px solid #EFE6D6; cursor: pointer; font-weight: 700; font-size: 14.5px; user-select: none; }
+.adds label.on { border-color: var(--g); background: #EAFBF2; }
+.adds label small { color: var(--mut); font-weight: 600; white-space: nowrap; }
+.adds input { display: none; }
+.ticket { position: sticky; top: 100px; background: var(--ink); color: #fff; border-radius: 28px; padding: 24px; overflow: hidden; }
+.ticket::before { content: ""; position: absolute; right: -40px; top: -40px; width: 160px; height: 160px; border-radius: 50%; background: radial-gradient(circle, var(--p), transparent 70%); opacity: .6; }
+.ticket .k { font: 900 12px/1 var(--body); letter-spacing: .16em; text-transform: uppercase; color: var(--y); }
+.ticket .sum { font: 400 clamp(44px, 5vw, 60px)/1 var(--fun); margin: 10px 0 6px; }
+.ticket .rows { display: grid; gap: 6px; margin: 14px 0; font-size: 14.5px; }
+.ticket .rows div { display: flex; justify-content: space-between; gap: 10px; border-bottom: 1px dashed rgba(255,255,255,.18); padding-bottom: 6px; }
+.ticket .warn { font-size: 13.5px; color: #FFD9E8; margin-bottom: 14px; }
+@media (max-width: 900px) { .planner { grid-template-columns: 1fr; } .ticket { position: relative; top: 0; } .adds { grid-template-columns: 1fr; } }
+
+/* birthdays */
+#bday { padding: clamp(60px, 9vw, 120px) 0; background: linear-gradient(180deg, var(--bg), #FFEAF3); }
+.packs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; align-items: end; }
+.pk { background: #fff; border-radius: 30px; padding: 24px; text-align: center; box-shadow: 0 24px 40px -30px rgba(30,26,46,.5); border-top: 10px solid var(--c); transition: transform .35s var(--bounce); }
+.pk:hover { transform: translateY(-10px); }
+.pk.top { padding-top: 40px; }
+.pk b { display: block; font: 400 30px/1.1 var(--fun); }
+.pk .pr { font: 400 44px/1 var(--fun); color: var(--c); margin: 12px 0; }
+.pk p { margin: 0; color: var(--mut); font-weight: 600; }
+@media (max-width: 860px) { .packs { grid-template-columns: 1fr; } }
+
+/* reviews */
+#voices { padding: clamp(60px, 9vw, 110px) 0; }
+.revs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.rv { background: #fff; border-radius: 26px; padding: 20px; border-bottom: 6px solid var(--c); }
+.rv p { margin: 0 0 8px; font-weight: 600; }
+.rv small { color: var(--mut); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; }
+@media (max-width: 900px) { .revs { grid-template-columns: 1fr; } }
+.stats { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 22px; }
+.stats span { padding: 10px 14px; border-radius: 18px; background: #fff; font-weight: 800; }
+
+#visit { padding: clamp(60px, 9vw, 110px) 0; }
+.vis { display: grid; grid-template-columns: 1fr 1.2fr; gap: 26px; align-items: center; }
+.vis .ln { display: flex; justify-content: space-between; gap: 12px; padding: 11px 0; border-bottom: 2px dashed #EFE6D6; }
+.vis .ln span { color: var(--mut); }
+.vis .ln b { text-align: right; }
+.live { display: inline-flex; align-items: center; gap: 8px; }
+.live i { width: 9px; height: 9px; border-radius: 50%; background: #aaa; }
+.live.is-open i { background: var(--ok); box-shadow: 0 0 8px var(--ok); } .live.is-closed i { background: var(--no); }
+.mapbox { position: relative; min-height: 400px; border-radius: 30px; overflow: hidden; border: 6px solid #fff; box-shadow: 0 20px 40px -26px rgba(30,26,46,.5); }
+.mapbox iframe { position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 140px); border: 0; }
+@media (max-width: 860px) { .vis { grid-template-columns: 1fr; } }
+footer { text-align: center; padding: 26px var(--gut) 40px; color: var(--mut); font-weight: 600; font-size: 14px; }
+
+.motion [data-in]:not(.tile) { opacity: 0; transform: translateY(24px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.motion [data-in]:not(.tile).in { opacity: 1; transform: none; }
+.noimg { background: linear-gradient(135deg, var(--y), var(--p)); }
+.noimg img { opacity: 0; }
+</style>
+</head>
+<body data-hours='{"0":[[10,0,20,0]],"1":[[10,0,20,0]],"2":[[10,0,20,0]],"3":[[10,0,20,0]],"4":[[10,0,20,0]],"5":[[10,0,20,0]],"6":[[10,0,20,0]]}'>
+
+<header class="nav">
+  <b>Крылья</b>
+  <nav><a href="#zones">Что внутри</a><a href="#plan">Посчитать</a><a href="#bday">День рождения</a><a href="#visit">Адрес</a></nav>
+  <a class="btn" href="tel:+79101377474">Позвонить</a>
+</header>
+
+<main>
+<section class="hero" id="top">
+  <div class="sky" id="sky">
+    <div class="wings" aria-hidden="true">
+      <div class="wing l"><svg viewBox="0 0 600 540" id="wl"></svg></div>
+      <div class="wing r"><svg viewBox="0 0 600 540" id="wr"></svg></div>
+    </div>
+    <div class="pic a" data-ph><img src="https://avatars.mds.yandex.net/get-altay/5495309/2a0000017e02ce9d3ccbe3c9e7528963733e/L" alt="Батутная арена" fetchpriority="high"></div>
+    <div class="pic b" data-ph><img src="https://avatars.mds.yandex.net/get-altay/15358610/2a00000195c49f77cc4e3a19d781d2444ee0/L" alt="Верёвочный парк" fetchpriority="high"></div>
+    <div class="pic c" data-ph><img src="https://avatars.mds.yandex.net/get-altay/5476645/2a0000017e02f23234fdfaf0dc938b6e88eb/L" alt="Детский лабиринт" fetchpriority="high"></div>
+    <div class="pic d" data-ph><img src="https://avatars.mds.yandex.net/get-altay/16338459/2a0000019933f791e9b18913a8a7e56a1252/L" alt="Ростовая кукла с крыльями" fetchpriority="high"></div>
+    <div class="htitle">
+      <small>Развлекательный центр · Дзержинск</small>
+      <h1>Крылья</h1>
+      <p>Батуты, верёвочный парк, скалодром, виртуальная реальность и детский лабиринт. Каждый день с 10 до 20.</p>
+      <div class="row"><a class="btn" href="#plan">Посчитать поход</a><a class="btn y" href="tel:+79101377474">+7 910 137-74-74</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="zones">
+  <div class="wrap">
+    <span class="chip" data-in>Что внутри</span>
+    <h2 data-in>Прыгать, лезть, <em>летать</em></h2>
+    <p class="lead" data-in>Клиенты насчитали два десятка батутов, а ещё зону с надувными препятствиями, бассейн с шариками и горку. Для малышей и для больших.</p>
+    <div class="bento">
+      <div class="tile w2 h2" style="--c:var(--o)" data-in><img src="https://avatars.mds.yandex.net/get-altay/5495309/2a0000017e02ce9d3ccbe3c9e7528963733e/XXL" alt="Батуты" loading="lazy"><b>Батутная арена</b><span>Два десятка батутов, зона с поролоновыми кубиками</span></div>
+      <div class="tile" style="--c:var(--v)" data-in><img src="https://avatars.mds.yandex.net/get-altay/15358610/2a00000195c49f77cc4e3a19d781d2444ee0/XL" alt="Верёвочный парк" loading="lazy"><b>Верёвочный парк</b><span>Можно взять сопровождение инструктора</span></div>
+      <div class="tile plain" style="--c:var(--b)" data-in><b>Скалодром</b><span>350 ₽ в будни</span></div>
+      <div class="tile" style="--c:var(--p)" data-in><img src="https://avatars.mds.yandex.net/get-altay/16914582/2a0000019933f81f95638b5685292c745178/XL" alt="Гоночная трасса" loading="lazy"><b>VR и гонки</b><span>VR-автосимулятор, FutuRift, велогон</span></div>
+      <div class="tile plain" style="--c:var(--g)" data-in><b>Сумо и шарики</b><span>Бассейн с шариками, костюмы сумоистов</span></div>
+      <div class="tile w2" style="--c:var(--y)" data-in><img src="https://avatars.mds.yandex.net/get-altay/5476645/2a0000017e02f23234fdfaf0dc938b6e88eb/XL" alt="Детский лабиринт" loading="lazy"><b>Лабиринт для малышей</b><span>Горки, сетки, яркие уровни</span></div>
+      <div class="tile w2" style="--c:var(--v)" data-in><img src="https://avatars.mds.yandex.net/get-altay/11385489/2a0000018c7cc6eec4592d7514931713d904/XL" alt="Колибри на стене" loading="lazy"><b>Колибри на стене</b><span>И ещё много мест для фото</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="plan">
+  <div class="wrap">
+    <span class="chip" style="--c:var(--b);color:#fff" data-in>Планировщик</span>
+    <h2 data-in>Сколько стоит <em>поход?</em></h2>
+    <p class="lead" data-in>Цены с Яндекс Карт. Для части аттракционов в прайсе указана только одна цена, будни или выходные, такие строки мы честно помечаем «уточните».</p>
+    <div class="planner">
+      <div class="box" data-in>
+        <div><h3>Когда идём?</h3><div class="seg" id="day"><button data-d="wd" class="on">В будни</button><button data-d="we">В выходные</button></div></div>
+        <div><h3>Сколько детей?</h3><div class="kids"><button id="km" aria-label="Меньше">−</button><b id="kn">2</b><button id="kp" aria-label="Больше">+</button></div></div>
+        <div><h3>Тариф</h3><div class="seg" id="tar"><button data-t="dh">Детский час</button><button data-t="du">Детский безлимит</button><button data-t="ah" class="on">«Всё включено» час</button><button data-t="au">«Всё включено» безлимит</button></div></div>
+        <div><h3>Что добавить?</h3><div class="adds" id="adds"></div></div>
+      </div>
+      <div class="ticket" data-in>
+        <span class="k">Билет на компанию</span>
+        <div class="sum" id="sum">0 ₽</div>
+        <div id="sub" style="color:#cfc9e6"></div>
+        <div class="rows" id="rows"></div>
+        <div class="warn" id="warn"></div>
+        <a class="btn y" href="tel:+79101377474">Уточнить и прийти</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="bday">
+  <div class="wrap">
+    <span class="chip" style="--c:var(--p);color:#fff" data-in>Дни рождения</span>
+    <h2 data-in>Праздник <em>с крыльями</em></h2>
+    <p class="lead" data-in>Три готовых пакета на день рождения. Все включают посещение по тарифу «Всё включено». Что ещё входит и сколько гостей, расскажут по телефону.</p>
+    <div class="packs">
+      <div class="pk" style="--c:var(--b)" data-in><b>«Незабываемый»</b><div class="pr">9 500 ₽</div><p>«Всё включено» на 1 час и комната для праздника</p></div>
+      <div class="pk top" style="--c:var(--p)" data-in><b>«Улётный»</b><div class="pr">15 500 ₽</div><p>«Всё включено» на 2 часа и комната для праздника</p></div>
+      <div class="pk" style="--c:var(--v)" data-in><b>«Высший пилотаж»</b><div class="pr">25 000 ₽</div><p>«Всё включено» без ограничения по времени</p></div>
+    </div>
+    <p style="text-align:center;margin-top:26px" data-in><a class="btn v" href="tel:+79101377474">Забронировать праздник</a></p>
+  </div>
+</section>
+
+<section id="voices">
+  <div class="wrap">
+    <span class="chip" data-in>Отзывы</span>
+    <h2 data-in>4,9 <em>· 390 оценок</em></h2>
+    <div class="revs">
+      <div class="rv" style="--c:var(--o)" data-in><p>«Детям всех возрастов интересно: попрыгать на батутах, подурачиться в бассейне с шариками, почувствовать себя сумоистом или в очках VR прокатиться на вагонетке».</p><small>Яндекс Карты</small></div>
+      <div class="rv" style="--c:var(--v)" data-in><p>«Особенно впечатлил верёвочный городок. Спасибо инструктору Егору: чуткий, внимательный, помогает детям преодолевать страх».</p><small>Яндекс Карты</small></div>
+      <div class="rv" style="--c:var(--g)" data-in><p>«Каждый выходной ходим. Главное, что понравилось: постоянное наблюдение персонала за детьми по всей территории».</p><small>Яндекс Карты</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap vis">
+    <div>
+      <span class="chip" data-in>Адрес</span>
+      <h2 data-in>Ленина, <em>68А</em></h2>
+      <div class="ln"><span>Адрес</span><b>Дзержинск, просп. Ленина, 68А</b></div>
+      <div class="ln"><span>Часы</span><b>Ежедневно 10:00–20:00</b></div>
+      <div class="ln"><span>Сейчас</span><b class="live" data-live><i></i><span data-status>…</span></b></div>
+      <div class="ln"><span>Телефоны</span><b><a href="tel:+79101377474">+7 910 137-74-74</a><br><a href="tel:+78313357030">+7 (8313) 35-70-30</a></b></div>
+      <div class="ln"><span>Удобства</span><b>Бесплатная парковка, лифт и пандус</b></div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:20px"><a class="btn" href="tel:+79101377474">Позвонить</a><a class="btn y" href="https://vk.ru/krylyapark" target="_blank" rel="noopener">ВКонтакте</a><a class="btn v" href="https://yandex.ru/maps/org/krylya/15097231888/" target="_blank" rel="noopener">Маршрут</a></div>
+    </div>
+    <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=43.475280%2C56.238292&amp;z=16&amp;pt=43.475280%2C56.238292%2Cpm2rdm&amp;l=map" title="«Крылья» на Яндекс Картах" loading="lazy" allowfullscreen></iframe></div>
+  </div>
+</section>
+</main>
+
+<footer>Развлекательный центр «Крылья» · Дзержинск, проспект Ленина, 68А · ежедневно 10:00–20:00</footer>
+
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  // wings: rainbow feathers fanned from the shoulder
+  var COL = ['#FF4F9A', '#FF7A2F', '#FFC531', '#2CCB7A', '#2BA8FF', '#7C5CFF'], s = '';
+  for (var row = 0; row < 3; row++) for (var i = 0; i < 9; i++) {
+    var a = -70 + i * 13 + row * 4, len = 300 - row * 70 - Math.abs(i - 4) * 8, c = COL[(i + row * 2) % COL.length];
+    s += '<path d="M600 330 q -' + (len * .2).toFixed(0) + ' -24 -' + len + ' 0 q ' + (len * .2).toFixed(0) + ' 24 ' + len + ' 0Z" fill="' + c + '" opacity="' + (.92 - row * .12) + '" transform="rotate(' + a + ' 600 330)"/>';
+  }
+  document.getElementById('wl').innerHTML = s; document.getElementById('wr').innerHTML = '<g transform="translate(600 0) scale(-1 1)">' + s + '</g>';
+  var hero = document.querySelector('.hero'), sky = document.getElementById('sky'), pics = document.querySelectorAll('.pic'), pv = 0;
+  RT.onScroll(function () { pv = RT.motion ? RT.progress(hero) : .5; sky.style.setProperty('--o', RT.ease(RT.clamp(pv / .5))); });
+  RT.loop(function (t) {
+    sky.style.setProperty('--f', (Math.sin(t / 260 + pv * 12) * (8 + 10 * pv)) + 'deg');
+    pics.forEach(function (p, i) { p.style.setProperty('--bob', (Math.abs(Math.sin(t / 420 + i)) * -18) + 'px'); });
+  });
+
+  // planner: weekday / weekend prices from the price list; null = not listed
+  var TAR = { dh: ['«Детский час»', 700, null], du: ['«Детский безлимит»', 900, null], ah: ['«Всё включено» час', 800, null], au: ['«Всё включено» безлимит', 1300, null] };
+  var ADD = [['rope', 'Верёвочный парк', null, 600], ['inst', 'Инструктор на верёвочном парке', 300, 300], ['wall', 'Скалодром', 350, 500], ['vr', 'VR-автосимулятор', 300, 350], ['fr', 'VR FutuRift', 250, 250], ['bike', 'Велогон', 150, 150]];
+  var st = { d: 'wd', k: 2, t: 'ah', a: { wall: 1 } };
+  var $adds = document.getElementById('adds');
+  function draw() {
+    var wd = st.d === 'wd', col = wd ? 1 : 2;
+    document.querySelectorAll('#day button').forEach(function (b) { b.classList.toggle('on', b.dataset.d === st.d); });
+    document.querySelectorAll('#tar button').forEach(function (b) { b.classList.toggle('on', b.dataset.t === st.t); });
+    document.getElementById('kn').textContent = st.k;
+    $adds.innerHTML = ADD.map(function (x) { var p = x[wd ? 2 : 3]; return '<label class="' + (st.a[x[0]] ? 'on' : '') + '" data-a="' + x[0] + '"><span>' + x[1] + '</span><small>' + (p ? RT.money(p) : 'уточните') + '</small></label>'; }).join('');
+    var rows = [], sum = 0, ask = [];
+    var t = TAR[st.t], tp = t[col];
+    if (tp) { rows.push([t[0] + ' × ' + st.k, tp * st.k]); sum += tp * st.k; } else ask.push(t[0] + (wd ? '' : ' в выходные'));
+    ADD.forEach(function (x) { if (!st.a[x[0]]) return; var p = x[wd ? 2 : 3]; if (p) { rows.push([x[1] + ' × ' + st.k, p * st.k]); sum += p * st.k; } else ask.push(x[1] + (wd ? ' в будни' : '')); });
+    document.getElementById('sum').textContent = RT.money(sum);
+    document.getElementById('sub').textContent = st.k + ' ' + (st.k === 1 ? 'ребёнок' : st.k < 5 ? 'ребёнка' : 'детей') + ', ' + (wd ? 'будний день' : 'выходной');
+    document.getElementById('rows').innerHTML = rows.map(function (r) { return '<div><span>' + r[0] + '</span><b>' + RT.money(r[1]) + '</b></div>'; }).join('');
+    document.getElementById('warn').textContent = ask.length ? 'Уточните по телефону: ' + ask.join(', ') + '. В прайсе указано, что в выходные основные тарифы дороже.' : '';
+  }
+  document.getElementById('day').addEventListener('click', function (e) { var b = e.target.closest('button'); if (b) { st.d = b.dataset.d; draw(); } });
+  document.getElementById('tar').addEventListener('click', function (e) { var b = e.target.closest('button'); if (b) { st.t = b.dataset.t; draw(); } });
+  $adds.addEventListener('click', function (e) { var l = e.target.closest('label'); if (l) { e.preventDefault(); st.a[l.dataset.a] = !st.a[l.dataset.a]; draw(); } });
+  document.getElementById('km').addEventListener('click', function () { st.k = Math.max(1, st.k - 1); draw(); });
+  document.getElementById('kp').addEventListener('click', function () { st.k = Math.min(10, st.k + 1); draw(); });
+  draw();
+  function live() { var s = RT.status(); if (!s) return; document.querySelectorAll('[data-live]').forEach(function (e) { e.classList.toggle('is-open', s.open); e.classList.toggle('is-closed', !s.open); }); }
+  document.addEventListener('DOMContentLoaded', live); setInterval(live, 60000);
+
+  window.REEL = {
+    hero: '.hero', heroAt: .5, feature: '#plan', featureOff: 120, featureM: '.ticket', featureOffM: -80, prices: '#bday', pricesOff: 60,
+    demo: [function () { st.k = 3; st.a.vr = 1; draw(); }, function () { st.t = 'au'; st.a.inst = 1; draw(); }, function () { st.d = 'we'; draw(); }],
+    holds: [40, 40, 50]
+  };
+})();
+</script>
+</body>
+</html>

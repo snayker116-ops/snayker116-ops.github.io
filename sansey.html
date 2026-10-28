@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Сансей авто — автосигнализации и автозапуск в Дзержинске, Октябрьская, 34А</title>
+<meta name="description" content="«Сансей авто» (SanSay AvTo) в Дзержинске: установка сигнализаций StarLine и Pandora, автозапуск, GSM и GPS, камеры заднего вида, видеорегистраторы, шумоизоляция, ремонт автоэлектрики. Пн–пт 9:00–18:00. Рейтинг 5,0.">
+<meta property="og:title" content="«Сансей авто» — сигнализации и автозапуск, Дзержинск">
+<meta property="og:description" content="StarLine, Pandora, автозапуск, GSM/GPS. Мастер Александр. Пн–пт 9:00–18:00.">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/12594216/2a00000191eb501e3e7431be667b05a5028a/XXXL">
+<meta name="theme-color" content="#0B0F15">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;700;800;900&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"AutoRepair","name":"Сансей авто","telephone":"+7 951 901-75-95","address":{"@type":"PostalAddress","streetAddress":"Октябрьская ул., 34А","addressLocality":"Дзержинск","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":56.232544,"longitude":43.470366},"openingHours":"Mo-Fr 09:00-18:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","ratingCount":"42"}}</script>
+<style>
+:root {
+  --bg: #0B0F15; --bg-2: #121823; --bg-3: #1B2330; --line: #263142; --cy: #33D6FF; --cy-2: #8BE9FF; --or: #FF8A1F; --ok: #36E28A; --txt: #EEF3FA; --mut: #8B98AC;
+  --disp: 'Exo 2', Arial, sans-serif; --body: 'Inter', Arial, sans-serif;
+  --gut: clamp(16px, 4vw, 52px); --ease: cubic-bezier(.2, .75, .2, 1);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--txt); font: 400 16.5px/1.6 var(--body); overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+.grid-bg { background-image: linear-gradient(rgba(51,214,255,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(51,214,255,.05) 1px, transparent 1px); background-size: 48px 48px; }
+
+/* layout: a sticky phone on the left, the story on the right */
+.app { display: grid; grid-template-columns: minmax(300px, 420px) minmax(0, 1fr); }
+.rail { position: relative; border-right: 1px solid var(--line); }
+.rail .sticky { position: sticky; top: 0; height: 100vh; display: grid; place-items: center; padding: 20px; }
+.phone { position: relative; width: min(330px, 84%); aspect-ratio: 9/19; border-radius: 44px; background: #05070a; padding: 12px; box-shadow: 0 0 0 2px #2a3446, 0 40px 80px rgba(0,0,0,.6), 0 0 80px rgba(51,214,255,calc(.08 + .25 * var(--run, 0))); }
+.screen { position: relative; height: 100%; border-radius: 34px; overflow: hidden; background: radial-gradient(120% 70% at 50% 0, #17304a, #0b1018 70%); }
+.notch { position: absolute; left: 50%; top: 8px; width: 34%; height: 22px; transform: translateX(-50%); background: #05070a; border-radius: 14px; z-index: 5; }
+.scr { position: absolute; inset: 0; padding: 44px 16px 16px; opacity: 0; transform: translateY(10px); transition: opacity .45s var(--ease), transform .45s var(--ease); display: flex; flex-direction: column; gap: 10px; }
+.scr.on { opacity: 1; transform: none; }
+.sbar { display: flex; justify-content: space-between; font: 600 11px/1 var(--body); color: var(--mut); }
+.carcard { position: relative; border-radius: 18px; background: linear-gradient(160deg, #1d2b3f, #0f1622); padding: 12px; }
+.carcard svg { width: 100%; height: auto; display: block; }
+.carcard .hl { fill: #ffe9a8; opacity: var(--run, 0); filter: drop-shadow(0 0 6px #ffd76a); }
+.carcard .beam { fill: url(#beam); opacity: var(--run, 0); }
+.carcard .exh circle { fill: #9fb2c8; opacity: calc(.6 * var(--run, 0)); }
+.state { display: flex; align-items: center; justify-content: space-between; font: 700 13px/1.2 var(--disp); }
+.state b { color: var(--ok); }
+.state .t { font: 800 26px/1 var(--disp); color: #fff; }
+.big { display: grid; place-items: center; margin: 4px auto 0; width: 108px; height: 108px; border-radius: 50%; border: 0; cursor: pointer; background: radial-gradient(circle at 50% 35%, #2a3a52, #121a26); box-shadow: 0 0 0 3px rgba(51,214,255,calc(.25 + .6 * var(--run, 0))), 0 0 30px rgba(51,214,255,calc(.15 + .5 * var(--run, 0))); color: #fff; font: 800 12px/1.2 var(--disp); text-transform: uppercase; letter-spacing: .06em; }
+.big svg { width: 34px; height: 34px; margin-bottom: 2px; fill: none; stroke: var(--cy); stroke-width: 2.5; stroke-linecap: round; }
+.keys { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: auto; }
+.keys span { display: grid; place-items: center; gap: 2px; padding: 10px 4px; border-radius: 12px; background: #141c28; font: 600 10px/1 var(--body); color: var(--mut); }
+.keys span i { font-style: normal; font-size: 18px; color: var(--cy); }
+.feat { display: grid; gap: 8px; }
+.feat div { display: flex; align-items: center; justify-content: space-between; padding: 11px 12px; border-radius: 12px; background: #141c28; font: 600 12.5px/1.2 var(--body); }
+.tg { width: 36px; height: 20px; border-radius: 12px; background: #2a3446; position: relative; transition: background .3s; }
+.tg::after { content: ""; position: absolute; left: 3px; top: 3px; width: 14px; height: 14px; border-radius: 50%; background: #fff; transition: transform .3s var(--ease); }
+.feat .on .tg { background: var(--cy); } .feat .on .tg::after { transform: translateX(16px); }
+.mapmini { flex: 1; border-radius: 16px; background: #0f1a24; position: relative; overflow: hidden; background-image: linear-gradient(rgba(139,233,255,.07) 2px, transparent 2px), linear-gradient(90deg, rgba(139,233,255,.07) 2px, transparent 2px); background-size: 30px 30px; }
+.mapmini .road { position: absolute; left: -10%; right: -10%; top: 55%; height: 14px; background: #1f2d3d; transform: rotate(-18deg); }
+.mapmini .pin { position: absolute; left: 50%; top: 46%; width: 18px; height: 18px; border-radius: 50%; background: var(--or); box-shadow: 0 0 0 calc(10px * var(--pulse, 0)) rgba(255,138,31,calc(.5 - .5 * var(--pulse, 0))); transform: translate(-50%, -50%); }
+.msg { padding: 12px; border-radius: 14px; background: #141c28; font-size: 12.5px; line-height: 1.4; }
+.msg b { display: block; color: var(--cy); font-size: 11px; margin-bottom: 4px; text-transform: uppercase; letter-spacing: .1em; }
+
+.story { min-width: 0; }
+.story section { position: relative; min-height: 100vh; padding: clamp(70px, 9vw, 120px) var(--gut); display: grid; align-content: center; border-bottom: 1px solid var(--line); scroll-margin-top: 0; }
+.tag { display: inline-flex; align-items: center; gap: 10px; font: 700 12px/1 var(--disp); letter-spacing: .24em; text-transform: uppercase; color: var(--cy); }
+.tag::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--cy); box-shadow: 0 0 10px var(--cy); }
+h1, h2 { font-family: var(--disp); font-weight: 900; letter-spacing: -.01em; }
+h1 { margin: 18px 0 16px; font-size: clamp(42px, 6vw, 92px); line-height: .95; }
+h1 em, h2 em { font-style: normal; color: var(--cy); }
+h2 { margin: 14px 0 16px; font-size: clamp(32px, 4.4vw, 62px); line-height: 1; }
+.lead { max-width: 640px; color: #c6d0de; font-size: clamp(16px, 1.4vw, 19px); margin: 0 0 26px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 22px; border-radius: 12px; background: var(--cy); color: #031018; font: 700 15px/1 var(--body); text-decoration: none; border: 0; cursor: pointer; }
+.btn.o { background: transparent; color: var(--txt); box-shadow: inset 0 0 0 1.5px var(--line); }
+.row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.live { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; color: #c6d0de; }
+.live i { width: 9px; height: 9px; border-radius: 50%; background: var(--mut); }
+.live.is-open i { background: var(--ok); box-shadow: 0 0 10px var(--ok); } .live.is-closed i { background: var(--or); }
+.brands { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 30px; }
+.brands span { padding: 8px 14px; border: 1px solid var(--line); border-radius: 30px; font: 700 13px/1 var(--disp); letter-spacing: .08em; color: var(--mut); }
+
+/* picker */
+.pick { display: grid; gap: 10px; max-width: 720px; }
+.q { display: grid; grid-template-columns: 46px 1fr auto; gap: 14px; align-items: center; padding: 14px 16px; border-radius: 14px; background: var(--bg-2); border: 1px solid var(--line); cursor: pointer; user-select: none; }
+.q svg { width: 46px; height: 46px; padding: 10px; border-radius: 12px; background: #172233; fill: none; stroke: var(--cy); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.q b { display: block; font: 700 17px/1.2 var(--disp); }
+.q small { color: var(--mut); font-size: 13.5px; }
+.q.on { border-color: var(--cy); background: #0f2232; }
+.q .tg { width: 44px; height: 24px; } .q .tg::after { width: 18px; height: 18px; }
+.q.on .tg { background: var(--cy); } .q.on .tg::after { transform: translateX(20px); }
+.res { margin-top: 18px; max-width: 720px; padding: 22px 24px; border-radius: 16px; background: linear-gradient(135deg, #10283a, #0e1520); border: 1px solid #1f4a63; }
+.res .k { font: 700 12px/1 var(--disp); letter-spacing: .2em; color: var(--cy); text-transform: uppercase; }
+.res h3 { margin: 10px 0 8px; font: 800 clamp(22px, 2.4vw, 30px)/1.15 var(--disp); }
+.res p { margin: 0 0 14px; color: #c6d0de; }
+.res .ex { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.res .ex span { padding: 6px 10px; border-radius: 8px; background: rgba(51,214,255,.12); color: var(--cy-2); font: 600 13px/1 var(--body); }
+
+/* more */
+.more { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; max-width: 900px; }
+.mo { border-radius: 16px; overflow: hidden; background: var(--bg-2); border: 1px solid var(--line); }
+.mo figure { margin: 0; aspect-ratio: 16/10; background: var(--bg-3); overflow: hidden; }
+.mo img { width: 100%; height: 100%; object-fit: cover; }
+.mo div { padding: 16px 18px 18px; }
+.mo b { font: 800 19px/1.2 var(--disp); }
+.mo p { margin: 6px 0 0; color: #c6d0de; font-size: 15px; }
+.mo.txt { display: grid; align-content: center; padding: 22px; }
+@media (max-width: 640px) { .more { grid-template-columns: 1fr; } }
+
+/* reviews as push notifications */
+.pushes { display: grid; gap: 12px; max-width: 700px; }
+.push { display: grid; grid-template-columns: 40px 1fr; gap: 12px; padding: 14px 16px; border-radius: 18px; background: rgba(27,35,48,.85); border: 1px solid var(--line); backdrop-filter: blur(6px); }
+.push .ic { width: 40px; height: 40px; border-radius: 10px; background: linear-gradient(135deg, var(--cy), #1677ff); display: grid; place-items: center; font: 900 16px/1 var(--disp); color: #031018; }
+.push .hd { display: flex; justify-content: space-between; font: 600 12px/1 var(--body); color: var(--mut); margin-bottom: 4px; }
+.push p { margin: 0; font-size: 15px; }
+.score { display: flex; align-items: center; gap: 18px; margin-bottom: 26px; }
+.score b { font: 900 72px/1 var(--disp); color: var(--cy); }
+
+.vis { display: grid; grid-template-columns: 1fr 1.2fr; gap: 16px; max-width: 980px; }
+.vis .ln { display: flex; justify-content: space-between; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.vis .ln span { color: var(--mut); }
+.vis .ln b { text-align: right; font-weight: 600; }
+.mapbox { position: relative; min-height: 360px; border-radius: 16px; overflow: hidden; border: 1px solid var(--line); }
+.mapbox iframe { position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 140px); border: 0; }
+footer { padding: 22px var(--gut); color: var(--mut); font-size: 13.5px; text-align: center; border-top: 1px solid var(--line); }
+
+@media (max-width: 960px) {
+  .app { grid-template-columns: 1fr; }
+  .rail { display: none; }
+  .story section { min-height: 0; }
+  .vis { grid-template-columns: 1fr; }
+  .mphone { display: block !important; }
+}
+.mphone { display: none; margin: 28px auto 0; width: min(270px, 80%); }
+.mphone .phone { width: 100%; }
+
+.motion [data-in] { opacity: 0; transform: translateY(24px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.motion [data-in].in { opacity: 1; transform: none; }
+.noimg { background: linear-gradient(135deg, #1b2330, #0b0f15); }
+.noimg img { opacity: 0; }
+</style>
+</head>
+<body class="grid-bg" data-hours='{"1":[[9,0,18,0]],"2":[[9,0,18,0]],"3":[[9,0,18,0]],"4":[[9,0,18,0]],"5":[[9,0,18,0]]}'>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <linearGradient id="beam" x1="0" x2="1"><stop offset="0" stop-color="#ffe9a8" stop-opacity=".55"/><stop offset="1" stop-color="#ffe9a8" stop-opacity="0"/></linearGradient>
+  <symbol id="car" viewBox="0 0 320 130"><path d="M20 92 C20 74 34 66 54 62 L96 34 C104 28 116 26 128 26 L196 26 C210 26 222 30 232 38 L262 62 C286 64 300 72 300 90 L300 100 L20 100Z" fill="#2d3c52" stroke="#4b6280" stroke-width="2"/><path d="M104 40 L126 34 L184 34 L186 60 L84 60Z M194 34 L214 36 L244 60 L196 60Z" fill="#0d1520" stroke="#3f5674"/><circle cx="82" cy="100" r="20" fill="#0a0f16" stroke="#4b6280" stroke-width="4"/><circle cx="244" cy="100" r="20" fill="#0a0f16" stroke="#4b6280" stroke-width="4"/></symbol>
+</defs></svg>
+
+<div class="app">
+  <aside class="rail" aria-hidden="true">
+    <div class="sticky">
+      <div class="phone" id="phone">
+        <div class="screen">
+          <div class="notch"></div>
+          <div class="scr on" data-s="home">
+            <div class="sbar"><span>9:41</span><span>SanSay</span><span>●●●</span></div>
+            <div class="carcard"><svg viewBox="0 0 320 150"><path class="beam" d="M300 80 L320 60 L320 112 L300 96Z"/><use href="#car" y="10"/><circle class="hl" cx="292" cy="82" r="6"/><g class="exh"><circle cx="12" cy="98" r="6"/><circle cx="4" cy="90" r="9"/><circle cx="-6" cy="80" r="12"/></g></svg></div>
+            <div class="state"><span>Двигатель<br><b class="eng">заглушен</b></span><span class="t">−9°</span></div>
+            <button class="big" data-start><svg viewBox="0 0 24 24"><path d="M12 3v8M6.3 6.8a8 8 0 1 0 11.4 0"/></svg>Запуск</button>
+            <div class="keys"><span><i>🔒</i>Закрыть</span><span><i>🔓</i>Открыть</span><span><i>📍</i>Где авто</span></div>
+          </div>
+          <div class="scr" data-s="pick">
+            <div class="sbar"><span>9:41</span><span>Настройки</span><span>●●●</span></div>
+            <div class="feat" id="pf"></div>
+            <div class="msg"><b>Подбор</b><span id="pmsg">Включите, что нужно</span></div>
+          </div>
+          <div class="scr" data-s="gps">
+            <div class="sbar"><span>9:41</span><span>Где автомобиль</span><span>●●●</span></div>
+            <div class="mapmini"><div class="road"></div><div class="pin" id="pin"></div></div>
+            <div class="msg"><b>Охрана</b>Автомобиль на охране. Двери закрыты.</div>
+          </div>
+          <div class="scr" data-s="rev">
+            <div class="sbar"><span>9:41</span><span>Уведомления</span><span>●●●</span></div>
+            <div class="msg"><b>★ 5,0 · Яндекс Карты</b>42 оценки, 31 отзыв</div>
+            <div class="msg"><b>Новый отзыв</b>«Сегодня поставила автозапуск на свою ласточку… Александр большой знаток своего дела»</div>
+            <div class="msg"><b>Новый отзыв</b>«Провода аккуратно замотаны. Всё установил, настроил, рассказал, как пользоваться»</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main class="story">
+    <section class="hero" id="top" data-screen="home">
+      <span class="tag">SanSay AvTo · Дзержинск</span>
+      <h1>Утром машина <em>уже тёплая</em></h1>
+      <p class="lead">«Сансей авто» ставит сигнализации StarLine и Pandora, автозапуск, GSM и GPS, камеры и регистраторы. Работает мастер Александр: по отзывам, «живёт своим делом» и всё объясняет до последней кнопки.</p>
+      <div class="row">
+        <a class="btn" href="tel:+79519017595">+7 951 901-75-95</a>
+        <a class="btn o" href="#pick">Подобрать сигнализацию</a>
+        <span class="live" data-live><i></i><span data-status>Пн–пт 9:00–18:00</span></span>
+      </div>
+      <div class="brands"><span>STARLINE</span><span>PANDORA</span><span>АВТОЗАПУСК</span><span>GSM · GPS</span></div>
+      <div class="mphone" id="mphone"></div>
+    </section>
+
+    <section id="pick" data-screen="pick">
+      <span class="tag" data-in>Подбор за минуту</span>
+      <h2 data-in>Что должна <em>уметь</em> ваша сигнализация?</h2>
+      <p class="lead" data-in>Включите то, что вам нужно. Подскажем, какой класс системы искать, и покажем модели из отзывов и с фото мастерской.</p>
+      <div class="pick" id="pick-list">
+        <div class="q on" data-f="guard" data-in><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6z"/></svg><span><b>Охрана с обратной связью</b><small>Брелок покажет, если что-то случилось с машиной</small></span><span class="tg"></span></div>
+        <div class="q" data-f="start" data-in><svg viewBox="0 0 24 24"><path d="M12 3v8M6.3 6.8a8 8 0 1 0 11.4 0"/></svg><span><b>Автозапуск</b><small>Прогреть машину зимой, не выходя из дома</small></span><span class="tg"></span></div>
+        <div class="q" data-f="gsm" data-in><svg viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18h2"/></svg><span><b>Управление со смартфона</b><small>Без ограничения по расстоянию, через GSM-модуль</small></span><span class="tg"></span></div>
+        <div class="q" data-f="gps" data-in><svg viewBox="0 0 24 24"><path d="M12 21s-6-5.6-6-11a6 6 0 1 1 12 0c0 5.4-6 11-6 11z"/><circle cx="12" cy="10" r="2.2"/></svg><span><b>GPS: где машина</b><small>Видно на карте, куда уехал автомобиль</small></span><span class="tg"></span></div>
+      </div>
+      <div class="res" id="res" data-in>
+        <div class="k">Вам подойдёт</div>
+        <h3 id="rT"></h3>
+        <p id="rP"></p>
+        <div class="ex" id="rEx"></div>
+        <a class="btn" href="tel:+79519017595">Обсудить с Александром</a>
+      </div>
+    </section>
+
+    <section id="more" data-screen="gps">
+      <span class="tag" data-in>Кроме сигнализаций</span>
+      <h2 data-in>Тишина в салоне <em>и свет</em> в нужных местах</h2>
+      <div class="more">
+        <div class="mo" data-in><figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/11400692/2a00000190509f5575b219cb8eff2597051e/XL" alt="Шумоизоляция пола салона" loading="lazy"></figure><div><b>Шумоизоляция салона</b><p>Разбирают салон и укладывают материалы на пол, двери и арки.</p></div></div>
+        <div class="mo" data-in><figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/9831576/2a000001906fcda0c778b5b1af313bad1f2c/XL" alt="Комплекс Pandora VX 4G GPS" loading="lazy"></figure><div><b>Охранные комплексы</b><p>StarLine и Pandora: от простой охраны до GSM и GPS.</p></div></div>
+        <div class="mo" data-in><figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/12594216/2a00000191eb501e3e7431be667b05a5028a/XL" alt="Toyota Land Cruiser в мастерской" loading="lazy"></figure><div><b>Камеры и регистраторы</b><p>Камера заднего вида, экран, штатный видеорегистратор с подключением к сигнализации.</p></div></div>
+        <div class="mo txt" data-in><b>Если что-то пошло не так</b><p>Заменят блок управления, если потерян пин-код и пароль. Разберутся с сигнализацией, которую ставил другой мастер, и найдут неисправность автоэлектрики.</p></div>
+      </div>
+    </section>
+
+    <section id="voices" data-screen="rev">
+      <span class="tag" data-in>Отзывы</span>
+      <div class="score" data-in><b>5,0</b><p>42 оценки на Яндекс Картах.<br>Персонал 27 из 28, ремонт 10 из 10.</p></div>
+      <div class="pushes">
+        <div class="push" data-in><span class="ic">S</span><div><div class="hd"><span>Отзыв · Kia Seltos</span><span>Яндекс Карты</span></div><p>«Приезжал два раза: на консультацию и на установку сигнализации, экрана и камеры заднего вида. Александр всё разъяснил, показал и ответил на все вопросы».</p></div></div>
+        <div class="push" data-in><span class="ic">S</span><div><div class="hd"><span>Отзыв · Land Cruiser Prado</span><span>Яндекс Карты</span></div><p>«Знаком с Александром с 2022 года. Ставил мне StarLine E96 и штатный видеорегистратор с подключением к сигналке. Потом то же самое сделал на второй машине».</p></div></div>
+        <div class="push" data-in><span class="ic">S</span><div><div class="hd"><span>Отзыв · автозапуск</span><span>Яндекс Карты</span></div><p>«Поставил автозапуск качественно, быстро и недорого. Через неделю поставили и жене».</p></div></div>
+        <div class="push" data-in><span class="ic">S</span><div><div class="hd"><span>Отзыв · установка</span><span>Яндекс Карты</span></div><p>«Цены адекватные, нет диких очередей на несколько месяцев вперёд. Перед установкой предложили варианты по разным ценам».</p></div></div>
+      </div>
+    </section>
+
+    <section id="visit" data-screen="gps">
+      <span class="tag" data-in>Адрес</span>
+      <h2 data-in>Октябрьская, <em>34А</em></h2>
+      <div class="vis" data-in>
+        <div>
+          <div class="ln"><span>Адрес</span><b>Дзержинск, Октябрьская ул., 34А</b></div>
+          <div class="ln"><span>Часы</span><b>Пн–пт 9:00–18:00</b></div>
+          <div class="ln"><span>Сейчас</span><b class="live" data-live><i></i><span data-status>…</span></b></div>
+          <div class="ln"><span>Телефон</span><b><a href="tel:+79519017595">+7 951 901-75-95</a></b></div>
+          <div class="ln"><span>ВКонтакте</span><b><a href="https://vk.ru/public214233300" target="_blank" rel="noopener">SanSay AvTo</a></b></div>
+          <div class="row" style="margin-top:16px"><a class="btn" href="tel:+79519017595">Позвонить</a><a class="btn o" href="https://yandex.ru/maps/org/sansey_avto/202335969333/" target="_blank" rel="noopener">Маршрут</a></div>
+        </div>
+        <div class="mapbox"><iframe src="https://yandex.ru/map-widget/v1/?ll=43.470366%2C56.232544&amp;z=16&amp;pt=43.470366%2C56.232544%2Cpm2rdm&amp;l=map" title="«Сансей авто» на Яндекс Картах" loading="lazy" allowfullscreen></iframe></div>
+      </div>
+    </section>
+    <footer>«Сансей авто» · SanSay AvTo · автосигнализации и автоэлектрика · Дзержинск, Октябрьская ул., 34А</footer>
+  </main>
+</div>
+
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  var phone = document.getElementById('phone');
+  // on narrow screens the phone moves into the hero
+  var mp = document.getElementById('mphone'); if (mp) mp.appendChild(phone.cloneNode(true));
+  var phones = document.querySelectorAll('.phone');
+  var run = 0, runT = 0;
+  function setRun(v) { run = v; phones.forEach(function (p) { p.style.setProperty('--run', v); p.querySelectorAll('.eng').forEach(function (e) { e.textContent = v > .5 ? 'работает' : 'заглушен'; }); p.querySelectorAll('.t').forEach(function (e) { e.textContent = v > .5 ? 'прогрев' : '−9°'; e.style.fontSize = v > .5 ? '18px' : ''; }); }); }
+  document.addEventListener('click', function (e) { if (e.target.closest('[data-start]')) setRun(run > .5 ? 0 : 1); });
+  // hero scroll starts the engine by itself
+  var hero = document.querySelector('.hero');
+  RT.onScroll(function () {
+    var r = hero.getBoundingClientRect(), k = RT.clamp(-r.top / (r.height * .35));
+    
+    // which section is on screen picks the phone screen
+    var cur = 'home';
+    document.querySelectorAll('[data-screen]').forEach(function (s) { var b = s.getBoundingClientRect(); if (b.top < innerHeight * .5) cur = s.dataset.screen; });
+    phones.forEach(function (p) { p.querySelectorAll('.scr').forEach(function (s) { s.classList.toggle('on', s.dataset.s === (p.closest('.mphone') ? 'home' : cur)); }); });
+  });
+  var manual = false;
+  document.addEventListener('click', function (e) { if (e.target.closest('[data-start]')) manual = true; });
+  var auto = false;
+  RT.loop(function (t) { if (!manual && !auto && t > 1400) { auto = true; setRun(1); } phones.forEach(function (p) { var pin = p.querySelector('.pin'); if (pin) pin.style.setProperty('--pulse', (t / 1400) % 1); }); });
+
+  // picker
+  var F = { guard: 1, start: 0, gsm: 0, gps: 0 };
+  var NAMES = { guard: 'Охрана', start: 'Автозапуск', gsm: 'Смартфон', gps: 'GPS' };
+  function recalc() {
+    document.querySelectorAll('.q').forEach(function (q) { q.classList.toggle('on', !!F[q.dataset.f]); });
+    document.querySelectorAll('#pf').forEach(function (pf) { pf.innerHTML = Object.keys(NAMES).map(function (k) { return '<div class="' + (F[k] ? 'on' : '') + '"><span>' + NAMES[k] + '</span><span class="tg"></span></div>'; }).join(''); });
+    var t, p, ex;
+    if (F.gps) { t = 'Охранный комплекс с GSM и GPS'; p = 'Управление из приложения, автозапуск и место машины на карте. Самый полный вариант.'; ex = ['StarLine S96 v2 GSM GPS', 'Pandora VX 4G GPS']; }
+    else if (F.gsm) { t = 'Сигнализация с GSM-модулем'; p = 'Машиной можно управлять со смартфона из любой точки, где есть связь, и прогревать её через приложение.'; ex = ['StarLine S96 v2 GSM']; }
+    else if (F.start) { t = 'Сигнализация с автозапуском'; p = 'Двигатель запускается с брелока, а охрана сообщает о событиях. Удобно зимой.'; ex = ['StarLine E96']; }
+    else { t = 'Сигнализация с обратной связью'; p = 'Брелок с экраном предупредит, если кто-то тронул машину.'; ex = []; }
+    document.getElementById('rT').textContent = t;
+    document.getElementById('rP').textContent = p + ' Точную модель и цену Александр подберёт по телефону: по отзывам, он предлагает варианты по разным ценам.';
+    document.getElementById('rEx').innerHTML = ex.map(function (x) { return '<span>Например: ' + x + '</span>'; }).join('') || '<span>Модель подберут под бюджет</span>';
+    var m = document.getElementById('pmsg'); if (m) m.textContent = t;
+  }
+  document.getElementById('pick-list').addEventListener('click', function (e) { var q = e.target.closest('.q'); if (q) { F[q.dataset.f] = F[q.dataset.f] ? 0 : 1; recalc(); } });
+  recalc();
+  function live() { var s = RT.status(); if (!s) return; document.querySelectorAll('[data-live]').forEach(function (e) { e.classList.toggle('is-open', s.open); e.classList.toggle('is-closed', !s.open); }); }
+  document.addEventListener('DOMContentLoaded', live); setInterval(live, 60000);
+
+  window.REEL = {
+    hero: '.hero', heroAt: .5, feature: '#pick', featureOff: 120, featureM: '#res', featureOffM: -260, prices: '#more', pricesOff: 60,
+    demo: [function () { F.start = 1; recalc(); }, function () { F.gsm = 1; recalc(); }, function () { F.gps = 1; recalc(); }],
+    holds: [40, 40, 50]
+  };
+})();
+</script>
+</body>
+</html>
