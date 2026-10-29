@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Пит стоп — шинный центр в Арзамасе · шины, диски, шиномонтаж</title>
+<meta name="description" content="Шинный центр «Пит стоп» на 9 Мая, 2/1 в Арзамасе: 200+ дисков в наличии, легковые шины R13–R20, правка и сварка дисков аргоном, балансировка, датчики давления. Пн–сб 9:00–20:00, вс 9:00–19:00. Рейтинг 4,8.">
+<meta property="og:title" content="Пит стоп — шинный центр, Арзамас">
+<meta property="og:description" content="Шины, диски, шиномонтаж, правка и сварка дисков. 9 Мая, 2/1.">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/4612894/2a0000017c60285df6308b6faef72b427d7f/XXXL">
+<meta name="theme-color" content="#0A1124">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@500;700;800;900&amp;family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TireShop","name":"Пит стоп","telephone":"+7 904 063-60-00","address":{"@type":"PostalAddress","streetAddress":"ул. 9 Мая, 2/1","addressLocality":"Арзамас","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":55.394995,"longitude":43.847163},"openingHours":["Mo-Sa 09:00-20:00","Su 09:00-19:00"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","ratingCount":"307"}}</script>
+<style>
+:root {
+  --night: #0A1124; --night2: #111B36; --line: #24304F; --ink: #F3F5FA; --mut: #8F9AB8;
+  --red: #E3262F; --green: #22C55E; --yel: #FFD23F; --purple: #A855F7;
+  --race: 'Saira Extra Condensed', 'Arial Narrow', sans-serif; --body: 'Manrope', Arial, sans-serif;
+  --gut: clamp(16px, 4vw, 56px); --ease: cubic-bezier(.2, .75, .2, 1);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--night); color: var(--ink); font: 400 16.5px/1.6 var(--body); overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+
+/* timing tower: the navigation, like a race broadcast */
+.tower { position: fixed; left: 14px; top: 50%; transform: translateY(-50%); z-index: 40; width: 188px; background: rgba(10,17,36,.88); backdrop-filter: blur(8px); border-radius: 10px; overflow: hidden; box-shadow: 0 20px 40px -20px #000; font-family: var(--race); }
+.tower .hd { display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; background: var(--red); font: 800 15px/1 var(--race); letter-spacing: .08em; }
+.tower .hd span { font-weight: 600; opacity: .9; }
+.tower a { display: grid; grid-template-columns: 22px 6px 1fr auto; align-items: center; gap: 8px; padding: 7px 12px; text-decoration: none; font: 700 17px/1 var(--race); letter-spacing: .04em; text-transform: uppercase; border-top: 1px solid var(--line); color: #cfd5e6; transition: background .3s; }
+.tower a b { color: var(--mut); font-weight: 600; }
+.tower a i { width: 6px; height: 18px; border-radius: 2px; background: var(--c); }
+.tower a em { font-style: normal; font-weight: 600; font-size: 13px; color: var(--mut); }
+.tower a.on { background: #fff; color: var(--night); }
+.tower a.on b, .tower a.on em { color: var(--night); }
+.callbtn { position: fixed; right: 16px; top: 14px; z-index: 40; display: inline-flex; align-items: center; gap: 8px; padding: 11px 16px; border-radius: 8px; background: var(--red); color: #fff; text-decoration: none; font: 800 18px/1 var(--race); letter-spacing: .06em; }
+@media (max-width: 980px) {
+  .tower { left: 8px; right: 8px; top: auto; bottom: 8px; transform: none; width: auto; display: flex; overflow-x: auto; scrollbar-width: none; }
+  .tower .hd { display: none; }
+  .tower a { flex: 1 0 auto; border-top: 0; border-left: 1px solid var(--line); grid-template-columns: auto 5px auto; padding: 10px 12px; font-size: 15px; }
+  .tower a em { display: none; }
+}
+
+/* hero: the start-light gantry goes out and the race begins */
+.hero { position: relative; height: 230vh; }
+.stage { position: sticky; top: 0; height: 100vh; min-height: 600px; overflow: hidden; display: grid; place-items: end center; }
+.stage .bg { position: absolute; inset: 0; }
+.stage .bg img { width: 100%; height: 100%; object-fit: cover; transform: scale(calc(1.12 - .1 * var(--go, 0))); filter: brightness(calc(.32 + .3 * var(--go, 0))) saturate(1.1); }
+.stage .bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,17,36,.75), transparent 35%, rgba(10,17,36,.9)); }
+.gantry { position: absolute; top: 9vh; left: 50%; transform: translateX(-50%); display: flex; gap: clamp(8px, 1.6vw, 22px); padding: 14px clamp(12px, 2vw, 26px); background: #05080F; border-radius: 12px; box-shadow: 0 0 0 3px #1A2238, 0 30px 60px -20px #000; }
+.pod { display: grid; gap: 10px; padding: 10px; background: #0C1120; border-radius: 10px; }
+.pod i { width: clamp(26px, 4vw, 54px); aspect-ratio: 1; border-radius: 50%; background: #2A0E12; box-shadow: inset 0 0 0 3px #1a0609; transition: background .15s, box-shadow .15s; }
+.pod.lit i { background: radial-gradient(circle at 40% 35%, #ff7a7f, var(--red) 55%, #8c0c13); box-shadow: 0 0 22px 4px rgba(227,38,47,.75), inset 0 0 0 3px #ff4a52; }
+.title { position: relative; text-align: center; padding: 0 var(--gut) 10vh; }
+.title .k { font: 700 clamp(15px, 1.6vw, 20px)/1.3 var(--race); letter-spacing: .32em; color: var(--yel); text-transform: uppercase; }
+.title h1 { margin: 12px 0 0; white-space: nowrap; font: 900 clamp(64px, 13vw, 210px)/.86 var(--race); letter-spacing: -.01em; text-transform: uppercase; font-style: italic; transform: translateX(calc((1 - var(--go, 0)) * -6vw)); opacity: calc(.15 + .85 * var(--go, 0)); }
+.title h1 span { color: var(--red); }
+.title .sub { margin: 18px auto 0; max-width: 640px; font-size: clamp(15px, 1.5vw, 19px); color: #c9d0e3; opacity: var(--go, 0); transform: translateY(calc((1 - var(--go, 0)) * 20px)); }
+.title .go { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 26px; opacity: var(--go, 0); }
+.lights-out { position: absolute; left: 50%; top: calc(9vh + clamp(92px, 12vw, 160px)); transform: translateX(-50%); font: 800 clamp(14px, 1.4vw, 18px)/1 var(--race); letter-spacing: .3em; color: var(--mut); text-transform: uppercase; white-space: nowrap; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 15px 22px; border-radius: 8px; background: var(--red); color: #fff; text-decoration: none; font: 800 19px/1 var(--race); letter-spacing: .08em; text-transform: uppercase; border: 0; cursor: pointer; }
+.btn.w { background: #fff; color: var(--night); }
+.btn.o { background: transparent; box-shadow: inset 0 0 0 2px rgba(255,255,255,.5); color: #fff; }
+.chq { position: absolute; left: 0; right: 0; bottom: 0; height: 22px; background: conic-gradient(#fff 25%, #0A1124 0 50%, #fff 0 75%, #0A1124 0) 0 0/22px 22px; opacity: .9; }
+
+/* laps */
+main > section:not(.hero) { position: relative; padding: clamp(80px, 10vw, 130px) var(--gut) clamp(70px, 9vw, 110px) calc(var(--gut) + 200px); scroll-margin-top: 0; }
+@media (max-width: 980px) { main > section:not(.hero) { padding-left: var(--gut); padding-top: 96px; } }
+.lap { display: flex; align-items: center; gap: 14px; font: 800 clamp(15px, 1.4vw, 18px)/1 var(--race); letter-spacing: .24em; text-transform: uppercase; color: var(--yel); }
+.lap::after { content: ""; flex: 1; height: 2px; background: repeating-linear-gradient(90deg, var(--line) 0 14px, transparent 14px 22px); }
+h2 { margin: 16px 0 12px; font: 900 clamp(44px, 6.6vw, 104px)/.88 var(--race); text-transform: uppercase; font-style: italic; letter-spacing: -.005em; }
+h2 em { font-style: italic; color: var(--red); }
+.lead { max-width: 640px; color: #b9c1d8; margin: 0 0 30px; }
+
+/* PCD picker */
+#pcd { background: radial-gradient(1000px 500px at 80% 0%, #17244A, transparent 70%), var(--night); }
+.pcd { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: clamp(20px, 4vw, 60px); align-items: center; max-width: 1180px; }
+.cars { display: flex; flex-wrap: wrap; gap: 8px; }
+.cars button { padding: 10px 14px; border-radius: 6px; border: 0; background: var(--night2); color: #d9deec; font: 700 17px/1 var(--race); letter-spacing: .04em; cursor: pointer; box-shadow: inset 0 0 0 1px var(--line); transition: background .25s, color .25s; }
+.cars button.on { background: var(--red); color: #fff; box-shadow: none; }
+.read { margin-top: 22px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.read div { background: var(--night2); border-radius: 10px; padding: 14px; box-shadow: inset 0 0 0 1px var(--line); }
+.read small { display: block; font: 700 13px/1 var(--race); letter-spacing: .18em; color: var(--mut); text-transform: uppercase; }
+.read b { display: block; margin-top: 8px; font: 900 clamp(30px, 3.4vw, 46px)/1 var(--race); font-style: italic; }
+.note { margin-top: 14px; font-size: 14px; color: var(--mut); }
+.rim { position: relative; aspect-ratio: 1; max-width: 520px; width: 100%; margin: 0 auto; }
+.rim svg { width: 100%; height: 100%; overflow: visible; }
+.rim .spin { transform-origin: 250px 250px; animation: spin 14s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.rim .tag { position: absolute; right: 0; bottom: 6%; background: var(--yel); color: var(--night); border-radius: 8px; padding: 10px 14px; font: 800 20px/1 var(--race); letter-spacing: .04em; transform: rotate(-4deg); }
+@media (max-width: 900px) { .pcd { grid-template-columns: 1fr; } .read { grid-template-columns: 1fr 1fr 1fr; } .read b { font-size: 28px; } }
+
+/* stock */
+#stock { background: #070C1A; }
+.stock { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(18px, 3vw, 40px); max-width: 1180px; align-items: stretch; }
+.stock figure { margin: 0; border-radius: 14px; overflow: hidden; min-height: 420px; position: relative; }
+.stock figure img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.stock figure figcaption { position: absolute; left: 14px; bottom: 14px; background: rgba(10,17,36,.86); padding: 8px 12px; border-radius: 6px; font: 700 16px/1 var(--race); letter-spacing: .1em; text-transform: uppercase; }
+.sectors { display: grid; gap: 10px; }
+.sec { display: grid; grid-template-columns: 8px 1fr auto; gap: 14px; align-items: center; background: var(--night2); border-radius: 12px; padding: 16px 18px; box-shadow: inset 0 0 0 1px var(--line); }
+.sec i { align-self: stretch; border-radius: 3px; background: var(--c); }
+.sec b { display: block; font: 800 24px/1.05 var(--race); text-transform: uppercase; letter-spacing: .02em; }
+.sec span { font-size: 14.5px; color: #aeb7cf; }
+.sec em { font: 900 30px/1 var(--race); font-style: italic; color: var(--c); white-space: nowrap; }
+@media (max-width: 900px) { .stock { grid-template-columns: 1fr; } .stock figure { min-height: 300px; } }
+
+/* timing sheet price list */
+.sheet { max-width: 1060px; background: var(--night2); border-radius: 14px; overflow: hidden; box-shadow: inset 0 0 0 1px var(--line); }
+.row { display: grid; grid-template-columns: 54px 1fr 150px; align-items: center; gap: 12px; padding: 14px 18px; border-top: 1px solid var(--line); }
+.row:first-child { border-top: 0; background: #0A1124; font: 700 13px/1 var(--race); letter-spacing: .2em; color: var(--mut); text-transform: uppercase; }
+.row .p { font: 900 26px/1 var(--race); font-style: italic; color: var(--mut); }
+.row:nth-child(2) .p { color: var(--yel); } .row:nth-child(3) .p { color: #c0c6d6; } .row:nth-child(4) .p { color: #d08a4d; }
+.row b { display: block; font: 800 22px/1.1 var(--race); text-transform: uppercase; letter-spacing: .02em; }
+.row span { font-size: 14px; color: #9aa4c1; }
+.row .t { text-align: right; font: 900 28px/1 var(--race); font-style: italic; }
+.row .t small { font: 600 14px/1 var(--race); color: var(--mut); margin-right: 4px; }
+@media (max-width: 640px) { .row { grid-template-columns: 34px 1fr auto; padding: 12px; } .row .p { font-size: 20px; } .row b { font-size: 19px; } .row .t { font-size: 22px; } }
+.extras { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; max-width: 1060px; }
+.extras span { padding: 8px 12px; border-radius: 6px; background: var(--night2); box-shadow: inset 0 0 0 1px var(--line); font-size: 14px; color: #c9d0e3; }
+
+/* team radio */
+#radio { background: #070C1A; }
+.radio { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; max-width: 1180px; }
+.msg { background: var(--night2); border-radius: 12px; padding: 18px 20px 20px; box-shadow: inset 0 0 0 1px var(--line); position: relative; }
+.msg .who { display: flex; align-items: center; gap: 10px; font: 800 15px/1 var(--race); letter-spacing: .16em; text-transform: uppercase; color: var(--yel); }
+.msg .who::before { content: "RADIO"; background: var(--yel); color: var(--night); padding: 4px 6px; border-radius: 3px; letter-spacing: .1em; }
+.msg .wave { display: flex; gap: 3px; align-items: center; height: 22px; margin: 12px 0 10px; }
+.msg .wave i { width: 3px; border-radius: 2px; background: #5d6b92; height: calc(var(--h) * 1px); }
+.motion .msg.in .wave i { animation: wv 1.2s ease-in-out infinite alternate; animation-delay: calc(var(--d) * -.13s); }
+@keyframes wv { to { height: 4px; } }
+.msg p { margin: 0; font-size: 16px; color: #dfe3ef; }
+.score { display: flex; gap: clamp(16px, 4vw, 48px); flex-wrap: wrap; margin: 0 0 28px; }
+.score div b { display: block; font: 900 clamp(46px, 6vw, 80px)/.9 var(--race); font-style: italic; }
+.score div span { font-size: 14px; color: var(--mut); }
+@media (max-width: 760px) { .radio { grid-template-columns: 1fr; } }
+
+/* finish */
+#finish { padding-bottom: 130px; }
+.fin { display: grid; grid-template-columns: 1fr 1.15fr; gap: clamp(18px, 3vw, 40px); max-width: 1180px; }
+.flag { height: 18px; border-radius: 4px; background: conic-gradient(#fff 25%, #0A1124 0 50%, #fff 0 75%, #0A1124 0) 0 0/18px 18px; margin-bottom: 22px; }
+.li { display: flex; justify-content: space-between; gap: 14px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.li span { color: var(--mut); }
+.li b { text-align: right; font-weight: 700; }
+.live { display: inline-flex; align-items: center; gap: 8px; }
+.live i { width: 10px; height: 10px; border-radius: 50%; background: #666; }
+.live.is-open i { background: var(--green); box-shadow: 0 0 10px var(--green); } .live.is-closed i { background: var(--red); }
+.acts { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+.mapbox { position: relative; min-height: 420px; border-radius: 14px; overflow: hidden; box-shadow: inset 0 0 0 1px var(--line); }
+.mapbox iframe { position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 140px); border: 0; filter: invert(.9) hue-rotate(185deg) saturate(.6); }
+@media (max-width: 900px) { .fin { grid-template-columns: 1fr; } }
+footer { padding: 26px var(--gut) 100px; text-align: center; color: var(--mut); font-size: 14px; border-top: 1px solid var(--line); }
+footer b { display: block; font: 900 26px/1 var(--race); font-style: italic; color: var(--ink); letter-spacing: .04em; margin-bottom: 6px; }
+
+.motion [data-in] { opacity: 0; transform: translateX(-26px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.motion [data-in].in { opacity: 1; transform: none; }
+.noimg { background: linear-gradient(135deg, #1b2a52, #0A1124); }
+.noimg img { opacity: 0; }
+</style>
+</head>
+<body data-hours='{"0":[[9,0,19,0]],"1":[[9,0,20,0]],"2":[[9,0,20,0]],"3":[[9,0,20,0]],"4":[[9,0,20,0]],"5":[[9,0,20,0]],"6":[[9,0,20,0]]}'>
+
+<nav class="tower" id="tower" aria-label="Разделы">
+  <div class="hd">ПИТ СТОП <span>КРУГ <b id="lapn">1</b>/5</span></div>
+  <a href="#pcd" style="--c:var(--red)"><b>P1</b><i></i>Разболтовка<em>диски</em></a>
+  <a href="#stock" style="--c:var(--yel)"><b>P2</b><i></i>Склад<em>200+</em></a>
+  <a href="#price" style="--c:var(--purple)"><b>P3</b><i></i>Цены<em>от 100 ₽</em></a>
+  <a href="#radio" style="--c:var(--green)"><b>P4</b><i></i>Отзывы<em>4,8</em></a>
+  <a href="#finish" style="--c:#fff"><b>P5</b><i></i>Финиш<em>адрес</em></a>
+</nav>
+<a class="callbtn" href="tel:+79040636000">☎ 063-60-00</a>
+
+<main>
+<section class="hero" id="top">
+  <div class="stage" id="stage">
+    <div class="bg" data-ph><img src="https://avatars.mds.yandex.net/get-altay/4612894/2a0000017c60285df6308b6faef72b427d7f/XXXL" alt="Шинный центр «Пит стоп» вечером, улица 9 Мая" fetchpriority="high"></div>
+    <div class="gantry" aria-hidden="true">
+      <div class="pod"><i></i><i></i></div><div class="pod"><i></i><i></i></div><div class="pod"><i></i><i></i></div><div class="pod"><i></i><i></i></div><div class="pod"><i></i><i></i></div>
+    </div>
+    <div class="lights-out" id="lo">Прокрутите: огни гаснут — старт</div>
+    <div class="title">
+      <div class="k">Шинный центр · Арзамас · 9 Мая, 2/1</div>
+      <h1>Пит <span>стоп</span></h1>
+      <p class="sub">Шины и диски в наличии, шиномонтаж, правка и сварка дисков аргоном. Приезжайте без записи: в отзывах пишут, что принимают быстро и ещё угощают кофе.</p>
+      <div class="go"><a class="btn" href="tel:+79040636000">Позвонить</a><a class="btn w" href="#pcd">Подобрать диски</a><a class="btn o" href="https://wa.me/79040636000" target="_blank" rel="noopener">WhatsApp</a></div>
+    </div>
+    <div class="chq"></div>
+  </div>
+</section>
+
+<section id="pcd" data-lap="1">
+  <div class="lap">Круг 1 · Разболтовка</div>
+  <h2>Какие диски <em>встанут</em> на вашу машину?</h2>
+  <p class="lead">Выберите машину, и колесо покажет разболтовку: сколько болтов, на каком диаметре и какое центральное отверстие. С этими цифрами консультант сразу подберёт варианты из 200+ дисков в наличии.</p>
+  <div class="pcd">
+    <div>
+      <div class="cars" id="cars"></div>
+      <div class="read">
+        <div><small>Разболтовка</small><b id="rp">4×100</b></div>
+        <div><small>Центр. отв.</small><b id="rd">60,1</b></div>
+        <div><small>Диаметры</small><b id="rr">R15–16</b></div>
+      </div>
+      <p class="note">Справочные данные для популярных комплектаций. Точно подберём по вашей машине на месте или по телефону.</p>
+      <div class="acts"><a class="btn" href="tel:+79040636000">Уточнить наличие</a><a class="btn o" href="https://wa.me/79040636000" target="_blank" rel="noopener">Спросить в WhatsApp</a></div>
+    </div>
+    <div class="rim">
+      <svg viewBox="0 0 500 500" aria-label="Схема диска с болтами">
+        <defs><radialGradient id="tg" cx="50%" cy="50%" r="50%"><stop offset="78%" stop-color="#121a2f"/><stop offset="100%" stop-color="#05080f"/></radialGradient></defs>
+        <circle cx="250" cy="250" r="246" fill="url(#tg)"/>
+        <g class="spin"><circle cx="250" cy="250" r="200" fill="none" stroke="#2a3657" stroke-width="2" stroke-dasharray="4 10"/></g>
+        <circle cx="250" cy="250" r="176" fill="#1c2747" stroke="#3a4a78" stroke-width="3"/>
+        <g id="spokes"></g>
+        <circle cx="250" cy="250" r="70" fill="#121a2f" stroke="#3a4a78" stroke-width="3"/>
+        <circle id="pcdc" cx="250" cy="250" r="52" fill="none" stroke="#FFD23F" stroke-width="1.5" stroke-dasharray="5 5"/>
+        <g id="bolts"></g>
+        <circle id="hub" cx="250" cy="250" r="24" fill="#05080f" stroke="#E3262F" stroke-width="3"/>
+      </svg>
+      <div class="tag" id="rtag">Lada Vesta</div>
+    </div>
+  </div>
+</section>
+
+<section id="stock" data-lap="2">
+  <div class="lap">Круг 2 · Склад</div>
+  <h2>Купить и <em>сразу</em> поставить</h2>
+  <p class="lead">Сначала выбор, потом шиномонтаж без отдельной записи. Клиенты пишут, что помогают «на любой вкус и кошелёк» и объясняют, какую резину брать.</p>
+  <div class="stock">
+    <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/6998076/2a0000018330f07af82b076fd10f2333e3a9/XXL" alt="Стеллажи с литыми дисками и шинами в зале" loading="lazy"><figcaption>Зал шинного центра</figcaption></figure>
+    <div class="sectors">
+      <div class="sec" data-in style="--c:var(--red)"><i></i><div><b>Литые и штампованные диски</b><span>Больше 200 вариантов, от 13 дюймов</span></div><em>200+</em></div>
+      <div class="sec" data-in style="--c:var(--yel)"><i></i><div><b>Легковые шины</b><span>Большой выбор диаметров с 13 по 20</span></div><em>R13–20</em></div>
+      <div class="sec" data-in style="--c:var(--purple)"><i></i><div><b>Датчики давления</b><span>Подходят почти для всех марок, с прошивкой на месте</span></div><em>TPMS</em></div>
+      <div class="sec" data-in style="--c:var(--green)"><i></i><div><b>Крепёж</b><span>Болты, гайки, установочные кольца всегда в наличии</span></div><em>от 100 ₽</em></div>
+      <div class="sec" data-in style="--c:#fff"><i></i><div><b>Б/у летние шины</b><span>Есть и бюджетный вариант, спросите, что сейчас в наличии</span></div><em>б/у</em></div>
+    </div>
+  </div>
+</section>
+
+<section id="price" data-lap="3">
+  <div class="lap">Круг 3 · Цены</div>
+  <h2>Итоговый <em>протокол</em></h2>
+  <p class="lead">Цены «от» с Яндекс Карт. Точную сумму назовут по вашей машине и состоянию диска.</p>
+  <div class="sheet">
+    <div class="row"><span>Поз.</span><span>Работа</span><span style="text-align:right">Цена</span></div>
+    <div class="row" data-in><span class="p">1</span><div><b>Правка дисков</b><span>Штампованные от 300 ₽, литые до 22 дюйма</span></div><span class="t"><small>от</small>300 ₽</span></div>
+    <div class="row" data-in><span class="p">2</span><div><b>Балансировка</b><span>Легковые диски, за колесо</span></div><span class="t"><small>от</small>300 ₽</span></div>
+    <div class="row" data-in><span class="p">3</span><div><b>Ремонт шины</b><span>Установка жгута, без учёта снятия колеса</span></div><span class="t"><small>от</small>300 ₽</span></div>
+    <div class="row" data-in><span class="p">4</span><div><b>Сварка литых дисков аргоном</b><span>Цена зависит от сложности</span></div><span class="t"><small>от</small>1 200 ₽</span></div>
+    <div class="row" data-in><span class="p">5</span><div><b>Диски литые и штампованные</b><span>Больше 200 вариантов</span></div><span class="t"><small>от</small>1 850 ₽</span></div>
+    <div class="row" data-in><span class="p">6</span><div><b>Датчик давления шин</b><span>Подходит почти для всех марок</span></div><span class="t">3 000 ₽</span></div>
+    <div class="row" data-in><span class="p">7</span><div><b>Колёсный крепёж</b><span>Болты, гайки, кольца</span></div><span class="t"><small>от</small>100 ₽</span></div>
+  </div>
+  <div class="extras" data-in><span>Оплата картой, наличными, по QR и СБП</span><span>Wi-Fi и кофе, пока ждёте</span><span>Можно с собакой</span><span>Бывают скидки и спецпредложения</span></div>
+</section>
+
+<section id="radio" data-lap="4">
+  <div class="lap">Круг 4 · Радио с пит-лейна</div>
+  <h2>Что передают <em>по радио</em></h2>
+  <div class="score" data-in>
+    <div><b data-count="4.8">0</b><span>рейтинг на Яндекс Картах</span></div>
+    <div><b data-count="307">0</b><span>оценок</span></div>
+    <div><b>45/51</b><span>довольны временем ожидания</span></div>
+  </div>
+  <div class="radio" id="radiolist">
+    <div class="msg" data-in><div class="who">Трасса · треснул диск</div><div class="wave"></div><p>«На трассе начало спускать колесо, оказалось, треснул диск. Сказали, это единственные мастера в округе. Всё сделали быстро и по адекватной цене».</p></div>
+    <div class="msg" data-in><div class="who">−20° · примёрзла колодка</div><div class="wave"></div><p>«Зимой помогли, когда стопануло левое заднее колесо в −20. Не отказали в помощи и принесли горячей воды, чтобы колодка отошла».</p></div>
+    <div class="msg" data-in><div class="who">Диски + датчики</div><div class="wave"></div><p>«Купил диски и сразу сделал шиномонтаж и прошивку датчиков давления. Всё чётко, профессионально, быстро».</p></div>
+    <div class="msg" data-in><div class="who">Без записи</div><div class="wave"></div><p>«Приехал без записи, меня приняли быстро. Объяснили, какие работы были выполнены, дали полезные советы по шинам».</p></div>
+    <div class="msg" data-in><div class="who">Яма под Арзамасом</div><div class="wave"></div><p>«Попали в яму, две шины не ремонтопригодны. Ребята подобрали резину и быстро всё поменяли».</p></div>
+    <div class="msg" data-in><div class="who">Кофе в зоне ожидания</div><div class="wave"></div><p>«Обслужили быстро и качественно. Подобрали резину, всё объяснили и напоили кофе».</p></div>
+  </div>
+</section>
+
+<section id="finish" data-lap="5">
+  <div class="lap">Круг 5 · Финиш</div>
+  <h2>9 Мая, <em>2/1</em></h2>
+  <div class="fin">
+    <div>
+      <div class="flag"></div>
+      <div class="li"><span>Адрес</span><b>Арзамас, ул. 9 Мая, 2/1</b></div>
+      <div class="li"><span>Часы</span><b>Пн–сб 9:00–20:00, вс 9:00–19:00</b></div>
+      <div class="li"><span>Сейчас</span><b class="live" data-live><i></i><span data-status>…</span></b></div>
+      <div class="li"><span>Телефон</span><b><a href="tel:+79040636000">+7 904 063-60-00</a></b></div>
+      <div class="li"><span>Оплата</span><b>Карта, наличные, QR, СБП</b></div>
+      <div class="acts"><a class="btn" href="tel:+79040636000">Позвонить</a><a class="btn o" href="https://wa.me/79040636000" target="_blank" rel="noopener">WhatsApp</a><a class="btn o" href="https://t.me/+79040636000" target="_blank" rel="noopener">Telegram</a><a class="btn o" href="https://vk.ru/pitstop_arz" target="_blank" rel="noopener">ВКонтакте</a><a class="btn w" href="https://yandex.ru/maps/org/pit_stop/242497891302/" target="_blank" rel="noopener">Маршрут</a></div>
+    </div>
+    <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=43.847163%2C55.394995&amp;z=16&amp;pt=43.847163%2C55.394995%2Cpm2rdm&amp;l=map" title="«Пит стоп» на Яндекс Картах" loading="lazy" allowfullscreen></iframe></div>
+  </div>
+</section>
+</main>
+
+<footer><b>ПИТ СТОП</b>шинный центр · Арзамас, ул. 9 Мая, 2/1 · пн–сб 9:00–20:00, вс 9:00–19:00</footer>
+
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  // start lights: five pods light up one by one, then all go out
+  var hero = document.querySelector('.hero'), stage = document.getElementById('stage'), pods = document.querySelectorAll('.pod'), lo = document.getElementById('lo');
+  RT.onScroll(function () {
+    var p = RT.motion ? RT.progress(hero) : 1;
+    var lit = p < .62 ? Math.min(5, Math.floor(p / .11)) : 0;
+    pods.forEach(function (d, i) { d.classList.toggle('lit', i < lit); });
+    var go = RT.ease(RT.clamp((p - .62) / .22));
+    stage.style.setProperty('--go', go);
+    lo.style.opacity = 1 - go;
+    lo.textContent = p < .62 ? (lit ? 'Огни: ' + lit + ' из 5' : 'Прокрутите: огни гаснут, и старт') : 'Огни погасли · поехали';
+  });
+
+  // lap counter and tower highlight
+  var laps = document.querySelectorAll('section[data-lap]'), links = document.querySelectorAll('.tower a'), lapn = document.getElementById('lapn');
+  RT.onScroll(function () {
+    var cur = -1;
+    laps.forEach(function (s, i) { if (s.getBoundingClientRect().top < innerHeight * .45) cur = i; });
+    links.forEach(function (a, i) { a.classList.toggle('on', i === cur); });
+    lapn.textContent = Math.max(1, cur + 1);
+  });
+
+  // PCD data: bolts, PCD (mm), centre bore, diameters
+  var CARS = [
+    ['Lada Vesta', 4, 100, '60,1', 'R15–16'],
+    ['Lada Granta', 4, 98, '58,5', 'R14–15'],
+    ['Niva Legend', 5, 139.7, '98,5', 'R15–16'],
+    ['Kia Rio', 4, 100, '54,1', 'R15–16'],
+    ['Hyundai Solaris', 4, 100, '54,1', 'R15–16'],
+    ['Hyundai Creta', 5, 114.3, '67,1', 'R16–17'],
+    ['Renault Logan', 4, 100, '60,1', 'R14–15'],
+    ['Renault Duster', 5, 114.3, '66,1', 'R16–17'],
+    ['VW Polo седан', 5, 100, '57,1', 'R15–16'],
+    ['Skoda Octavia', 5, 112, '57,1', 'R16–17'],
+    ['Toyota Camry', 5, 114.3, '60,1', 'R17–18'],
+    ['Ford Focus', 5, 108, '63,3', 'R15–17'],
+    ['Haval Jolion', 5, 114.3, '64,1', 'R17–18'],
+    ['BMW 3 серии', 5, 112, '66,6', 'R17–19']
+  ];
+  var NS = 'http://www.w3.org/2000/svg', bolts = document.getElementById('bolts'), spokes = document.getElementById('spokes'), pcdc = document.getElementById('pcdc'), hub = document.getElementById('hub');
+  var box = document.getElementById('cars');
+  function el(tag, at) { var e = document.createElementNS(NS, tag); for (var k in at) e.setAttribute(k, at[k]); return e; }
+  function fmt(v) { return String(v).replace('.', ','); }
+  function pick(i) {
+    var c = CARS[i];
+    box.querySelectorAll('button').forEach(function (b, j) { b.classList.toggle('on', j === i); });
+    document.getElementById('rp').textContent = c[1] + '×' + fmt(c[2]);
+    document.getElementById('rd').textContent = c[3];
+    document.getElementById('rr').textContent = c[4];
+    document.getElementById('rtag').textContent = c[0];
+    var r = 34 + (c[2] - 98) * .55; // bolt circle radius on the drawing grows with PCD
+    pcdc.setAttribute('r', r);
+    hub.setAttribute('r', 10 + parseFloat(c[3]) * .22);
+    bolts.innerHTML = ''; spokes.innerHTML = '';
+    for (var k = 0; k < c[1]; k++) {
+      var a = -Math.PI / 2 + k * 2 * Math.PI / c[1];
+      var x = 250 + r * Math.cos(a), y = 250 + r * Math.sin(a);
+      var b = el('circle', { cx: x, cy: y, r: 9, fill: '#FFD23F', stroke: '#05080f', 'stroke-width': 3 });
+      b.style.transition = 'cx .5s, cy .5s'; bolts.appendChild(b);
+      var a2 = a + Math.PI / c[1], sx = 250 + 172 * Math.cos(a2 - .16), sy = 250 + 172 * Math.sin(a2 - .16), ex = 250 + 172 * Math.cos(a2 + .16), ey = 250 + 172 * Math.sin(a2 + .16);
+      var ix = 250 + 72 * Math.cos(a2 - .35), iy = 250 + 72 * Math.sin(a2 - .35), jx = 250 + 72 * Math.cos(a2 + .35), jy = 250 + 72 * Math.sin(a2 + .35);
+      spokes.appendChild(el('path', { d: 'M' + ix + ' ' + iy + ' L' + sx + ' ' + sy + ' A172 172 0 0 1 ' + ex + ' ' + ey + ' L' + jx + ' ' + jy + ' Z', fill: '#0d1428', stroke: '#3a4a78', 'stroke-width': 2 }));
+    }
+  }
+  CARS.forEach(function (c, i) { var b = document.createElement('button'); b.type = 'button'; b.textContent = c[0]; b.addEventListener('click', function () { pick(i); }); box.appendChild(b); });
+  pick(0);
+
+  // radio wave bars
+  document.querySelectorAll('.wave').forEach(function (w, j) {
+    for (var i = 0; i < 34; i++) { var b = document.createElement('i'); b.style.setProperty('--h', 4 + Math.round(Math.abs(Math.sin(i * 1.7 + j)) * 16)); b.style.setProperty('--d', i); w.appendChild(b); }
+  });
+
+  function live() { var s = RT.status(); if (!s) return; document.querySelectorAll('[data-live]').forEach(function (e) { e.classList.toggle('is-open', s.open); e.classList.toggle('is-closed', !s.open); }); }
+  document.addEventListener('DOMContentLoaded', live); setInterval(live, 60000);
+
+  window.REEL = {
+    hero: '.hero', heroAt: .4, feature: '#pcd', featureOff: 40, featureM: '.rim', featureOffM: -60, prices: '#price', pricesOff: 40,
+    demo: [function () { pick(5); }, function () { pick(2); }, function () { pick(13); }],
+    holds: [40, 40, 40]
+  };
+})();
+</script>
+</body>
+</html>

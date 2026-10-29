@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Кофий — кофейня на Соборной площади в Арзамасе</title>
+<meta name="description" content="Кофейня «Кофий» в Арзамасе, Соборная площадь, 9А, с видом на Воскресенский собор: кофе от 140 ₽, авторские напитки 310 ₽, матча, глинтвейн, горячий шоколад, выпечка и десерты, сувениры и арзамасские гуси. Ежедневно 9:00–20:00. Рейтинг 5,0.">
+<meta property="og:title" content="Кофий — кофейня, Арзамас">
+<meta property="og:description" content="Напишем ваше имя на стаканчике по старой орфографии. Соборная пл., 9А. +7 905 665-34-44">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/10766931/2a000001914d26910abb632d508e36857757/XXXL">
+<meta name="theme-color" content="#F3EBDD">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&amp;family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&amp;family=Alegreya+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Кофий","telephone":"+7 905 665-34-44","address":{"@type":"PostalAddress","streetAddress":"Соборная площадь, 9А","addressLocality":"Арзамас","addressRegion":"Нижегородская область","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":55.388069,"longitude":43.814047},"openingHours":"Mo-Su 09:00-20:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"5","ratingCount":"235"}}</script>
+<style>
+:root {
+  --paper: #F3EBDD; --paper2: #E8DCC6; --green: #2F4A3A; --green2: #4C6B55; --sign: #DCE6CF; --gold: #B8893B; --gold2: #D9B26A; --brown: #5A3B26; --ink: #2B2620; --mut: #7A6E5F; --red: #8E2F25;
+  --sign-f: 'Ruslan Display', Georgia, serif; --old: 'Old Standard TT', Georgia, serif; --body: 'Alegreya Sans', Arial, sans-serif;
+  --gut: clamp(16px, 4vw, 56px); --ease: cubic-bezier(.2, .75, .2, 1);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 18px/1.6 var(--body); overflow-x: hidden;
+  background-image: radial-gradient(rgba(90,59,38,.06) 1px, transparent 1.5px); background-size: 7px 7px; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+
+/* nav: little hanging signboards */
+.signs { position: fixed; top: 0; right: 16px; z-index: 50; display: flex; gap: 8px; }
+.signs a { position: relative; display: block; margin-top: 22px; padding: 8px 12px 7px; border-radius: 4px; background: var(--sign); color: var(--green); text-decoration: none; font: 700 14px/1 var(--old); box-shadow: inset 0 0 0 2px var(--green), 0 6px 10px rgba(43,38,32,.2); transform-origin: 50% -22px; animation: sway 4s ease-in-out infinite; animation-delay: var(--d); }
+.signs a::before, .signs a::after { content: ""; position: absolute; top: -22px; width: 1.5px; height: 22px; background: #6b6256; }
+.signs a::before { left: 12px; } .signs a::after { right: 12px; }
+.signs a.on { background: var(--green); color: var(--sign); box-shadow: inset 0 0 0 2px var(--gold2), 0 6px 10px rgba(43,38,32,.3); }
+@keyframes sway { 0%, 100% { transform: rotate(-1.5deg); } 50% { transform: rotate(1.5deg); } }
+@media (prefers-reduced-motion: reduce) { .signs a { animation: none; } }
+@media (max-width: 700px) { .signs { top: auto; bottom: 8px; right: 50%; transform: translateX(50%); gap: 4px; padding: 6px; border-radius: 10px; background: rgba(243,235,221,.95); box-shadow: 0 6px 20px rgba(0,0,0,.15); } .signs a { margin: 0; padding: 8px 8px 7px; font-size: 12.5px; animation: none; } .signs a::before, .signs a::after { display: none; } }
+
+/* hero: facade with the sign, domes, and a goose walking by */
+.hero { position: relative; height: 240vh; }
+.square { position: sticky; top: 0; height: 100vh; min-height: 620px; overflow: hidden; background: linear-gradient(#cfe0e8, #eef1ea 55%, var(--paper) 56%); }
+.domes { position: absolute; right: -4%; width: 62%; bottom: 46%; height: 36%; transform: translateY(calc((1 - var(--d, 0)) * 60px)); opacity: calc(.35 + var(--d, 0) * .65); }
+.domes svg { width: 100%; height: 100%; }
+.facade { position: absolute; left: 50%; bottom: 14%; width: min(980px, 96vw); height: 46%; transform: translateX(-50%); background: #F6F1E7; box-shadow: 0 -2px 0 #d8cfbd inset, 0 30px 40px -30px rgba(0,0,0,.35); }
+.facade .win { position: absolute; bottom: 12%; width: 13%; height: 46%; background: linear-gradient(#9fb6bf, #dbe5e5); box-shadow: inset 0 0 0 5px #fff, inset 0 0 0 7px #cfc5b3; }
+.facade .door { position: absolute; bottom: 0; left: 44%; width: 12%; height: 62%; background: #3b2a20; box-shadow: inset 0 0 0 5px #2a1d15; }
+.facade .awn { position: absolute; left: 41%; bottom: 62%; width: 18%; height: 9%; background: #2a2a2a; clip-path: polygon(8% 100%, 92% 100%, 100% 0, 0 0); }
+.board { position: absolute; left: 50%; top: -14%; width: 66%; padding: 1.4% 3%; transform: translateX(-50%) rotateX(calc((1 - var(--s, 0)) * 85deg)); transform-origin: 50% 0; background: var(--sign); border-radius: 3px; box-shadow: inset 0 0 0 3px var(--green), inset 0 0 0 7px var(--sign), inset 0 0 0 8px var(--green2), 0 8px 14px rgba(0,0,0,.18); text-align: center; perspective: 600px; }
+.board b { display: block; font: 400 clamp(36px, 7vw, 92px)/1 var(--sign-f); letter-spacing: .14em; color: var(--green); }
+.goose { position: absolute; bottom: 9%; left: calc(-14% + var(--g, 0) * 118%); width: clamp(70px, 9vw, 120px); z-index: 3; }
+.goose svg { width: 100%; height: auto; overflow: visible; }
+.goose .lg1 { transform-origin: 50% 0; transform-box: fill-box; transform: rotate(calc(var(--step, 0) * 22deg)); }
+.goose .lg2 { transform-origin: 50% 0; transform-box: fill-box; transform: rotate(calc(var(--step, 0) * -22deg)); }
+.steam path { fill: none; stroke: #fff; stroke-width: 3; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: calc(1 - var(--st, 0)); opacity: .9; }
+.intro { position: absolute; left: 0; right: 0; top: 5vh; text-align: center; z-index: 2; padding: 0 var(--gut); opacity: var(--t, 0); transform: translateY(calc((1 - var(--t, 0)) * -20px)); }
+.intro .k { font: 700 13px/1 var(--body); letter-spacing: .26em; text-transform: uppercase; color: var(--green2); }
+.intro h1 { margin: 8px 0 6px; font: 700 clamp(26px, 3.4vw, 46px)/1.1 var(--old); color: var(--green); }
+.intro p { margin: 0 auto 14px; max-width: 560px; color: #4b4339; font-size: 17px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 22px; border-radius: 4px; background: var(--green); color: var(--sign); text-decoration: none; font: 700 16px/1 var(--old); border: 0; cursor: pointer; box-shadow: inset 0 0 0 2px var(--gold2); }
+.btn.o { background: var(--sign); color: var(--green); box-shadow: inset 0 0 0 2px var(--green); }
+.btns { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+@media (max-width: 700px) { .facade { height: 38%; bottom: 16%; } .board { top: -18%; width: 82%; } .intro { top: 4vh; } .intro p { font-size: 15.5px; } .domes { bottom: 50%; height: 30%; } }
+
+main > section:not(.hero) { position: relative; scroll-margin-top: 10px; padding: clamp(90px, 10vw, 130px) var(--gut) clamp(70px, 8vw, 100px); }
+.wrap { max-width: 1120px; margin: 0 auto; }
+.orn { display: flex; align-items: center; gap: 14px; justify-content: center; font: 700 13px/1 var(--body); letter-spacing: .3em; text-transform: uppercase; color: var(--gold); }
+.orn::before, .orn::after { content: "❦"; font-size: 18px; letter-spacing: 0; }
+h2 { margin: 12px 0 10px; text-align: center; font: 700 clamp(36px, 5vw, 66px)/1.05 var(--old); color: var(--green); }
+h2 small { display: block; margin-top: 6px; font: italic 400 .36em/1.2 var(--old); color: var(--mut); }
+.lead { max-width: 640px; margin: 0 auto 30px; text-align: center; color: #4b4339; }
+.frame { position: relative; padding: clamp(18px, 3vw, 36px); background: #FBF6EC; box-shadow: inset 0 0 0 2px var(--gold), inset 0 0 0 7px #FBF6EC, inset 0 0 0 8px var(--gold), 0 24px 50px -30px rgba(43,38,32,.4); }
+.frame::before, .frame::after { content: "✥"; position: absolute; font-size: 20px; color: var(--gold); }
+.frame::before { left: 14px; top: 10px; } .frame::after { right: 14px; bottom: 10px; }
+
+/* cup lettering */
+.cupw { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(18px, 3vw, 44px); align-items: center; }
+.cup { position: relative; justify-self: center; width: min(100%, 360px); }
+.cup svg { width: 100%; height: auto; display: block; }
+.form label { display: block; margin: 0 0 6px; font: 700 13px/1 var(--body); letter-spacing: .2em; text-transform: uppercase; color: var(--mut); }
+.form input { width: 100%; padding: 14px 16px; border: 2px solid var(--green); border-radius: 4px; background: #fff; font: 400 22px/1.2 var(--old); color: var(--ink); }
+.form input:focus { outline: 3px solid var(--gold2); }
+.out { margin: 16px 0; padding: 14px 16px; border-left: 4px solid var(--gold); background: var(--paper2); }
+.out b { display: block; font: 700 30px/1.15 var(--old); color: var(--green); }
+.out small { display: block; margin-top: 6px; color: var(--mut); font-size: 15px; }
+.drinks { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 0; }
+.drinks button { padding: 10px 14px; border-radius: 30px; border: 1.5px solid var(--green2); background: #fff; color: var(--green); font: 500 15px/1.1 var(--body); cursor: pointer; }
+.drinks button.on { background: var(--green); color: var(--sign); }
+.note { margin-top: 12px; font-size: 14.5px; color: var(--mut); }
+@media (max-width: 860px) { .cupw { grid-template-columns: 1fr; } .cup { width: min(70vw, 280px); } }
+
+/* price list */
+.price { columns: 2 300px; column-gap: 50px; }
+.pi { break-inside: avoid; display: flex; align-items: baseline; gap: 10px; padding: 12px 0; }
+.pi b { font: 700 21px/1.2 var(--old); }
+.pi span { display: block; font-size: 15px; color: var(--mut); }
+.pi i { flex: 1; border-bottom: 2px dotted #b9ab92; min-width: 20px; transform: translateY(-6px); }
+.pi em { font: 700 21px/1 var(--old); font-style: normal; color: var(--red); white-space: nowrap; }
+.drink-names { margin-top: 18px; text-align: center; font: italic 400 18px/1.6 var(--old); color: var(--brown); }
+
+/* geese & reviews */
+.geese { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 14px; }
+.geese figure { margin: 0; position: relative; overflow: hidden; background: #fff; padding: 8px; box-shadow: 0 16px 30px -20px rgba(43,38,32,.6); }
+.geese figure:first-child { grid-row: span 2; }
+.geese img { width: 100%; height: 100%; object-fit: cover; }
+.geese figcaption { position: absolute; left: 16px; bottom: 16px; padding: 4px 10px; background: rgba(251,246,236,.95); font: italic 400 15px/1.2 var(--old); }
+@media (max-width: 760px) { .geese { grid-template-columns: 1fr 1fr; } .geese figure:first-child { grid-column: span 2; grid-row: auto; } }
+.letters { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 26px; }
+.lt { padding: 22px 20px; background: #FBF6EC; box-shadow: inset 0 0 0 1px #d8c9ad; font-size: 16px; }
+.lt b { display: block; margin-bottom: 8px; font: italic 700 17px/1.2 var(--old); color: var(--green); }
+.lt p { margin: 0; }
+@media (max-width: 900px) { .letters { grid-template-columns: 1fr; } }
+
+.vis { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 26px; }
+.addr .r { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px dotted #b9ab92; font-size: 16px; }
+.addr .r span { color: var(--mut); }
+.addr .r b { text-align: right; font-weight: 500; }
+.live { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 6px; font-weight: 700; font-size: 15px; }
+.live i { width: 10px; height: 10px; border-radius: 50%; background: var(--c, #999); }
+.addr .btns { justify-content: flex-start; margin-top: 16px; }
+.mapbox { position: relative; min-height: 420px; overflow: hidden; box-shadow: inset 0 0 0 2px var(--gold); }
+.mapbox iframe { position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 140px); border: 0; filter: sepia(.35); }
+@media (max-width: 860px) { .vis { grid-template-columns: 1fr; } }
+footer { padding: 30px var(--gut) 100px; text-align: center; color: var(--mut); font-size: 15px; }
+footer b { display: block; font: 400 40px/1 var(--sign-f); letter-spacing: .14em; color: var(--green); margin-bottom: 6px; }
+
+.motion [data-in] { opacity: 0; transform: translateY(22px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.motion [data-in].in { opacity: 1; transform: none; }
+.noimg { background: linear-gradient(135deg, #e8dcc6, #f3ebdd); }
+.noimg img { opacity: 0; }
+</style>
+</head>
+<body data-hours='{"0":[[9,0,20,0]],"1":[[9,0,20,0]],"2":[[9,0,20,0]],"3":[[9,0,20,0]],"4":[[9,0,20,0]],"5":[[9,0,20,0]],"6":[[9,0,20,0]]}'>
+
+<nav class="signs" id="signs" aria-label="Разделы">
+  <a href="#top" style="--d:0s">Вывѣска</a><a href="#stakan" style="--d:.4s">Стаканъ</a><a href="#preyskurant" style="--d:.8s">Цѣны</a><a href="#gusi" style="--d:1.2s">Гуси</a><a href="#adres" style="--d:1.6s">Адресъ</a>
+</nav>
+
+<main>
+<section class="hero" id="top">
+  <div class="square" id="sq">
+    <div class="domes" aria-hidden="true">
+      <svg viewBox="0 -30 1200 330" preserveAspectRatio="xMaxYMax meet">
+        <g fill="#F6F1E7" stroke="#cbbfa8" stroke-width="2">
+          <rect x="380" y="150" width="440" height="150"/><rect x="540" y="90" width="120" height="70"/>
+          <rect x="400" y="110" width="60" height="50"/><rect x="740" y="110" width="60" height="50"/>
+          <rect x="230" y="140" width="80" height="160"/><rect x="890" y="140" width="80" height="160"/>
+        </g>
+        <g fill="#5E8A72" stroke="#3f6652" stroke-width="2">
+          <path d="M540 92 C540 40 600 18 600 0 C600 18 660 40 660 92 Z"/>
+          <path d="M400 112 C400 80 430 66 430 50 C430 66 460 80 460 112 Z"/><path d="M740 112 C740 80 770 66 770 50 C770 66 800 80 800 112 Z"/>
+          <path d="M230 142 C230 100 270 84 270 66 C270 84 310 100 310 142 Z"/><path d="M890 142 C890 100 930 84 930 66 C930 84 970 100 970 142 Z"/>
+        </g>
+        <g stroke="#B8893B" stroke-width="3"><line x1="600" y1="0" x2="600" y2="-26"/><line x1="590" y1="-16" x2="610" y2="-16"/><line x1="430" y1="50" x2="430" y2="30"/><line x1="770" y1="50" x2="770" y2="30"/><line x1="270" y1="66" x2="270" y2="44"/><line x1="930" y1="66" x2="930" y2="44"/></g>
+      </svg>
+    </div>
+    <div class="facade" aria-hidden="true">
+      <div class="board"><b>КОФИЙ</b></div>
+      <div class="win" style="left:6%"></div><div class="win" style="left:24%"></div><div class="awn"></div><div class="door"></div><div class="win" style="left:63%"></div><div class="win" style="left:81%"></div>
+    </div>
+    <div class="goose" aria-hidden="true">
+      <svg viewBox="0 0 120 140">
+        <g class="steam"><path pathLength="1" d="M92 26 c-6 -8 6 -12 0 -20"/><path pathLength="1" d="M100 28 c-6 -8 6 -12 0 -20"/></g>
+        <rect x="86" y="30" width="20" height="22" rx="3" fill="#C9A06A"/><rect x="84" y="28" width="24" height="5" rx="2" fill="#fff"/>
+        <path d="M30 70 C30 50 50 46 64 54 L70 30 C72 18 88 16 90 28 L90 34 L104 38 L90 42 C88 60 84 70 82 80 C80 100 60 106 42 102 C26 98 18 86 30 70 Z" fill="#fff" stroke="#3a332b" stroke-width="2.5"/>
+        <path d="M90 34 L104 38 L90 42 Z" fill="#E8862C" stroke="#3a332b" stroke-width="2"/>
+        <circle cx="82" cy="28" r="2.6" fill="#3a332b"/>
+        <path d="M30 76 C22 70 16 72 12 78 C22 80 26 82 30 84" fill="#fff" stroke="#3a332b" stroke-width="2.5"/>
+        <path class="lg1" d="M52 102 L50 128 L58 128" fill="none" stroke="#E8862C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path class="lg2" d="M64 102 L66 128 L74 128" fill="none" stroke="#E8862C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div class="intro">
+      <div class="k">Арзамас · Соборная площадь, 9А</div>
+      <h1>Кофейня съ видомъ на соборъ</h1>
+      <p>Кофе, авторские рафы, матча, горячий шоколад, выпечка и сувениры с арзамасским гусем. Держат кофейню две сестры.</p>
+      <div class="btns"><a class="btn" href="tel:+79056653444">+7 905 665-34-44</a><a class="btn o" href="#stakan">Имя на стаканчике</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="stakan">
+  <div class="wrap">
+    <div class="orn">стаканъ</div>
+    <h2>Ваше имя по-старому<small>«Кофий» и есть старое слово: так писали «кофе» двести лет назад</small></h2>
+    <p class="lead">Напишите имя и выберите напиток: покажем, как бы его вывели на стаканчике до реформы орфографии 1918 года.</p>
+    <div class="frame cupw">
+      <div class="cup" aria-hidden="true">
+        <svg viewBox="0 0 300 380">
+          <defs><linearGradient id="kr" x1="0" x2="1"><stop offset="0" stop-color="#b98f5c"/><stop offset=".45" stop-color="#d8b07b"/><stop offset="1" stop-color="#a57a47"/></linearGradient></defs>
+          <path d="M44 70 L256 70 L232 360 Q150 372 68 360 Z" fill="url(#kr)"/>
+          <rect x="34" y="48" width="232" height="26" rx="8" fill="#F6F1E7" stroke="#cbbfa8"/>
+          <rect x="70" y="36" width="160" height="16" rx="6" fill="#efe8da" stroke="#cbbfa8"/>
+          <circle cx="150" cy="190" r="70" fill="#F6F1E7" stroke="#2F4A3A" stroke-width="3"/>
+          <circle cx="150" cy="190" r="62" fill="none" stroke="#2F4A3A" stroke-width="1"/>
+          <text x="150" y="165" text-anchor="middle" font-family="Ruslan Display" font-size="20" fill="#2F4A3A" letter-spacing="3">КОФИЙ</text>
+          <text x="150" y="246" text-anchor="middle" font-family="Old Standard TT" font-size="12" fill="#2F4A3A" letter-spacing="2">АРЗАМАСЪ</text>
+          <text id="cupName" x="150" y="204" text-anchor="middle" font-family="Old Standard TT" font-style="italic" font-weight="700" font-size="26" fill="#8E2F25">Алексѣй</text>
+          <text id="cupDrink" x="150" y="306" text-anchor="middle" font-family="Old Standard TT" font-size="17" fill="#3a2a18">рафъ</text>
+        </svg>
+      </div>
+      <div class="form">
+        <label for="nm">Ваше имя</label>
+        <input id="nm" type="text" value="Алексей" maxlength="18" autocomplete="off">
+        <div class="out" aria-live="polite"><b id="oldName">Алексѣй</b><small id="rule">…</small></div>
+        <label>Напиток</label>
+        <div class="drinks" id="drinks"></div>
+        <p class="note">Имя на стаканчике пишут бариста: попросите, и Катя напишет. Для детей есть горячий шоколад, можно на безлактозном молоке.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="preyskurant">
+  <div class="wrap">
+    <div class="orn">прейскурантъ</div>
+    <h2>Цѣны<small>по карточке кофейни на Яндекс Картах</small></h2>
+    <div class="frame">
+      <div class="price">
+        <div class="pi" data-in><div><b>Кофе</b><span>эспрессо, американо, латте, капучино, флэт уайт, раф</span></div><i></i><em>от 140 ₽</em></div>
+        <div class="pi" data-in><div><b>Авторские напитки</b><span>только в «Кофии»</span></div><i></i><em>310 ₽</em></div>
+        <div class="pi" data-in><div><b>Матча</b><span>зелёная, розовая, малиновая</span></div><i></i><em>190 ₽</em></div>
+        <div class="pi" data-in><div><b>Глинтвейн</b><span>ароматный, безалкогольный вариант уточняйте</span></div><i></i><em>190 ₽</em></div>
+        <div class="pi" data-in><div><b>Чай</b><span>фруктовый, чёрный, зелёный, ройбуш</span></div><i></i><em>200 ₽</em></div>
+        <div class="pi" data-in><div><b>Выпечка и десерты</b><span>к кофе и с собой</span></div><i></i><em>от 50 ₽</em></div>
+        <div class="pi" data-in><div><b>Сувениры</b><span>открытки, гуси, мерч</span></div><i></i><em>от 100 ₽</em></div>
+        <div class="pi" data-in><div><b>Кофе в зёрнах и молотый</b><span>домой, свой «Кофий»</span></div><i></i><em>по запросу</em></div>
+      </div>
+      <p class="drink-names">Из отзывов: рафъ съ кедровыми орѣшками · рафъ «Дубайскій шоколадъ» · малиновая матча · чай-сердечко · горячій шоколадъ съ горчинкой</p>
+    </div>
+  </div>
+</section>
+
+<section id="gusi">
+  <div class="wrap">
+    <div class="orn">гуси и публика</div>
+    <h2>Арзамасскій гусь<small>мимо плаката с гусем, пишут гости, пройти невозможно</small></h2>
+    <p class="lead">5,0 на Яндекс Картах, 235 оценок. Атмосферу хвалят в 57 отзывах из 57, десерты в 23 из 23.</p>
+    <div class="geese">
+      <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/20336841/2a0000019ecc0e4ccad4ea5d8c0366c1b1b1/XL" alt="Плакат с гусем и стаканчиком кофе" loading="lazy"><figcaption>тот самый гусь</figcaption></figure>
+      <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/16483787/2a0000019a632dce70be1abaf9f6af5a24a0/L" alt="Вязаные гуси и сувениры" loading="lazy"><figcaption>гуси на память</figcaption></figure>
+      <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/10766931/2a000001914d26910abb632d508e36857757/L" alt="Стаканчик Кофий на фоне собора" loading="lazy"><figcaption>с собой к собору</figcaption></figure>
+      <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/16374562/2a0000019a632dcfccfc4e26b85769c5ec89/L" alt="Витрина с выпечкой и сувенирами" loading="lazy"><figcaption>выпечка</figcaption></figure>
+      <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/10238647/2a000001902acc43f113460ce3d143faa0fc/L" alt="Барная стойка у окна" loading="lazy"><figcaption>стойка у окна</figcaption></figure>
+    </div>
+    <div class="letters">
+      <div class="lt" data-in><b>Изъ Подмосковья</b><p>«Зашли за айс-кофе, а в итоге купили ещё милые открытки и сувениры. Хочу отметить профессионализм и отзывчивость хозяек кофейни».</p></div>
+      <div class="lt" data-in><b>Проѣздомъ</b><p>«Раф с кедровыми орешками выше всех похвал, чай-сердечко в самое сердце и крышечка, чтобы чаинки не мешали».</p></div>
+      <div class="lt" data-in><b>О бариста Катѣ</b><p>«Тот случай, когда профессионализм и индивидуальный подход к клиентам сошлись в одном человеке».</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="adres">
+  <div class="wrap vis">
+    <div>
+      <div class="orn" style="justify-content:flex-start">какъ найти</div>
+      <h2 style="text-align:left">Соборная, 9А<small>вид из окна на Воскресенский собор</small></h2>
+      <div class="frame addr">
+        <div class="live" data-live><i></i><span data-status>…</span></div>
+        <div class="r"><span>Адрес</span><b>Арзамас, Соборная площадь, 9А</b></div>
+        <div class="r"><span>Режим</span><b>ежедневно 9:00–20:00</b></div>
+        <div class="r"><span>Телефон</span><b><a href="tel:+79056653444">+7 905 665-34-44</a></b></div>
+        <div class="r"><span>Можно</span><b>с собакой, кофе с собой</b></div>
+        <div class="btns"><a class="btn" href="tel:+79056653444">Позвонить</a><a class="btn o" href="https://wa.me/79056653444" target="_blank" rel="noopener">WhatsApp</a><a class="btn o" href="https://vk.ru/kofiiarz" target="_blank" rel="noopener">ВКонтакте</a></div>
+      </div>
+    </div>
+    <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=43.814047%2C55.388069&amp;z=16&amp;pt=43.814047%2C55.388069%2Cpm2dgm&amp;l=map" title="Кофий на Яндекс Картах" loading="lazy" allowfullscreen></iframe></div>
+  </div>
+</section>
+</main>
+
+<footer><b>КОФИЙ</b>кофейня · Арзамас, Соборная площадь, 9А · +7 905 665-34-44</footer>
+
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  var hero = document.querySelector('.hero'), sq = document.getElementById('sq');
+  RT.onScroll(function () {
+    var p = RT.motion ? RT.progress(hero) : 1;
+    sq.style.setProperty('--s', RT.ease(RT.clamp(p / .3)));
+    sq.style.setProperty('--d', RT.ease(RT.clamp((p - .1) / .35)));
+    var g = RT.clamp((p - .2) / .7);
+    sq.style.setProperty('--g', g); sq.style.setProperty('--step', Math.sin(g * 40));
+    sq.style.setProperty('--st', RT.ease(RT.clamp((p - .3) / .3)));
+    sq.style.setProperty('--t', RT.ease(RT.clamp((p - .35) / .25)));
+  });
+
+  var secs = document.querySelectorAll('main > section'), links = document.querySelectorAll('.signs a');
+  RT.onScroll(function () { var cur = 0; secs.forEach(function (s, i) { if (s.getBoundingClientRect().top < innerHeight * .45) cur = i; }); links.forEach(function (a, i) { a.classList.toggle('on', i === cur); }); });
+
+  // pre-1918 spelling: dictionary for yat and fita, then і before vowels and hard sign after a final consonant
+  var DICT = { 'алексей': 'Алексѣй', 'сергей': 'Сергѣй', 'матвей': 'Матвѣй', 'тимофей': 'Тимоѳей', 'фёдор': 'Ѳедоръ', 'федор': 'Ѳедоръ', 'фома': 'Ѳома', 'марфа': 'Марѳа', 'афанасий': 'Аѳанасій', 'фаддей': 'Ѳаддей', 'андрей': 'Андрей', 'фекла': 'Ѳекла', 'глеб': 'Глѣбъ', 'елизавета': 'Елисавета', 'олег': 'Олегъ', 'ева': 'Ева' };
+  var V = 'аеёиоуыэюяй', CONS = 'бвгджзклмнпрстфхцчшщ';
+  function old(name) {
+    var n = name.trim(); if (!n) return ['', 'введите имя'];
+    var low = n.toLowerCase(), rules = [];
+    if (DICT[low]) { if (/ѣ/.test(DICT[low])) rules.push('буква «ять» (ѣ)'); if (/ѳ/i.test(DICT[low])) rules.push('буква «фита» (ѳ) вместо «ф» в греческих именах'); if (/ъ$/.test(DICT[low])) rules.push('твёрдый знак на конце'); return [DICT[low], rules.length ? rules.join(', ') : 'это имя так и писали']; }
+    var out = '';
+    for (var i = 0; i < n.length; i++) {
+      var ch = n[i], nx = (n[i + 1] || '').toLowerCase();
+      if ((ch === 'и' || ch === 'И') && nx && V.indexOf(nx) >= 0) { out += ch === 'И' ? 'І' : 'і'; if (rules.indexOf('«і» перед гласной') < 0) rules.push('«і» перед гласной'); }
+      else out += ch;
+    }
+    out = out.replace(/ё/g, 'е');
+    if (CONS.indexOf(out.slice(-1).toLowerCase()) >= 0) { out += 'ъ'; rules.push('твёрдый знак на конце'); }
+    return [out.charAt(0).toUpperCase() + out.slice(1), rules.length ? rules.join(', ') : 'это имя так и писали'];
+  }
+  var DR = [['Раф', 'рафъ'], ['Капучино', 'капучино'], ['Матча', 'матча'], ['Горячий шоколад', 'шоколадъ'], ['Глинтвейн', 'глинтвейнъ'], ['Авторский', 'авторскій']];
+  var dsel = 0, nm = document.getElementById('nm'), dbox = document.getElementById('drinks');
+  DR.forEach(function (d, i) { var b = document.createElement('button'); b.type = 'button'; b.textContent = d[0]; b.addEventListener('click', function () { dsel = i; upd(); }); dbox.appendChild(b); });
+  function upd() {
+    var r = old(nm.value);
+    document.getElementById('oldName').textContent = r[0] || '…'; document.getElementById('rule').textContent = r[1];
+    var cn = document.getElementById('cupName'); cn.textContent = r[0]; cn.setAttribute('font-size', r[0].length > 9 ? 20 : 26);
+    document.getElementById('cupDrink').textContent = DR[dsel][1] + ' для ' + (r[0] || 'васъ');
+    dbox.querySelectorAll('button').forEach(function (b, i) { b.classList.toggle('on', i === dsel); });
+  }
+  nm.addEventListener('input', upd); upd();
+  window.__cup = function (n, d) { nm.value = n; dsel = d; upd(); };
+
+  window.REEL = {
+    hero: '.hero', heroAt: .8, feature: '#stakan', featureOff: 20, featureM: '.cup', featureOffM: -20, prices: '#preyskurant', pricesOff: 30,
+    demo: [function () { __cup('Алексей', 0); }, function () { __cup('Мария', 2); }, function () { __cup('Фёдор', 3); }, function () { __cup('Дмитрий', 1); }],
+    holds: [30, 30, 30, 40]
+  };
+})();
+</script>
+</body>
+</html>

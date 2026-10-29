@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Automotiv52 — автосервис в Кстово, пер. Шохина, 41 · без выходных</title>
+<meta name="description" content="Автосервис Automotiv52 в Кстово: двигатель и КПП, тормоза и подвеска, кузовной ремонт, антикоррозийная обработка от 7 500 ₽, перетяжка руля и салона, тюнинг фар, кондиционеры, ТО. Пн–сб 9:00–19:00, вс 10:00–18:00. Рейтинг 4,9.">
+<meta property="og:title" content="Automotiv52 — автосервис, Кстово">
+<meta property="og:description" content="От мехчасти до кузова и перетяжки салона. Работаем без выходных.">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/5496626/2a000001814c7990bc380f85a3731cd4a991/XXXL">
+<meta name="theme-color" content="#0B0D0C">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&amp;family=Exo+2:wght@400;500;600;800&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"AutoRepair","name":"Automotiv52","telephone":"+7 930 070-71-00","address":{"@type":"PostalAddress","streetAddress":"пер. Шохина, 41","addressLocality":"Кстово","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":56.135409,"longitude":44.192464},"openingHours":["Mo-Sa 09:00-19:00","Su 10:00-18:00"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"58"}}</script>
+<style>
+:root {
+  --bk: #0B0D0C; --bk2: #131715; --line: #26302B; --ink: #E9F0EA; --mut: #8E9A92; --neo: #8BE33A; --neo2: #C6FF7A;
+  --logo: 'Russo One', 'Arial Black', sans-serif; --body: 'Exo 2', Arial, sans-serif;
+  --gut: clamp(16px, 4vw, 56px); --ease: cubic-bezier(.2, .75, .2, 1);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bk); color: var(--ink); font: 400 16.5px/1.6 var(--body); overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+
+/* top bar with neon tabs */
+.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 40; display: flex; align-items: center; gap: 6px; padding: 10px var(--gut); background: linear-gradient(180deg, rgba(11,13,12,.95), rgba(11,13,12,0)); }
+.bar .lg { font: 400 18px/1 var(--logo); color: var(--neo); text-shadow: 0 0 10px rgba(139,227,58,.6); text-decoration: none; margin-right: auto; }
+.bar a.t { padding: 8px 12px; border-radius: 6px; text-decoration: none; font: 600 13px/1 var(--body); letter-spacing: .1em; text-transform: uppercase; color: var(--mut); box-shadow: inset 0 0 0 1px var(--line); }
+.bar a.t.on { color: var(--bk); background: var(--neo); box-shadow: 0 0 16px rgba(139,227,58,.5); }
+.bar a.tel { padding: 9px 14px; border-radius: 6px; background: var(--neo); color: var(--bk); text-decoration: none; font: 800 14px/1 var(--body); }
+@media (max-width: 860px) { .bar a.t { display: none; } }
+
+/* hero: the car flies apart into parts and assembles with the scroll; the sign lights up */
+.hero { position: relative; height: 220vh; }
+.bay { position: sticky; top: 0; height: 100vh; min-height: 620px; overflow: hidden; display: grid; grid-template-rows: 1fr auto; padding: 70px var(--gut) 34px; background: radial-gradient(900px 420px at 50% 62%, rgba(139,227,58,.10), transparent 70%), linear-gradient(180deg, #0B0D0C, #0f1311); }
+.bay::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 32%; background: repeating-linear-gradient(90deg, transparent 0 119px, #1a201c 119px 120px), linear-gradient(180deg, transparent, #121614); opacity: .8; pointer-events: none; }
+.sign { position: relative; z-index: 2; align-self: start; text-align: center; font: 400 clamp(46px, 9vw, 150px)/1 var(--logo); letter-spacing: .02em; color: var(--neo); text-shadow: 0 0 calc(var(--on, 0) * 26px) rgba(139,227,58,.9), 0 0 calc(var(--on, 0) * 60px) rgba(139,227,58,.5); opacity: calc(.18 + .82 * var(--on, 0)); margin-top: 2vh; }
+.sign small { display: block; font: 600 clamp(12px, 1.2vw, 15px)/1.4 var(--body); letter-spacing: .32em; text-transform: uppercase; color: var(--mut); text-shadow: none; margin-top: 8px; }
+.carx { position: absolute; z-index: 1; left: 50%; bottom: 13vh; width: min(980px, 92vw); transform: translateX(-50%); }
+.carx svg { width: 100%; overflow: visible; }
+.carx .pt { transform: translate(calc(var(--dx) * (1 - var(--a, 0)) * 1px), calc(var(--dy) * (1 - var(--a, 0)) * 1px)) rotate(calc(var(--dr, 0) * (1 - var(--a, 0)) * 1deg)); transform-box: fill-box; transform-origin: center; }
+@media (max-width: 860px) { .carx { bottom: 40vh; width: 100vw; } }
+.hero .cta { position: relative; z-index: 3; display: flex; justify-content: space-between; align-items: end; gap: 16px; flex-wrap: wrap; }
+.hero .cta p { margin: 0; max-width: 520px; color: #c4cec7; font-size: 16px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 20px; border-radius: 8px; background: var(--neo); color: var(--bk); text-decoration: none; font: 800 15px/1 var(--body); letter-spacing: .04em; text-transform: uppercase; border: 0; cursor: pointer; }
+.btn.o { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1.5px #3b4a41; }
+.btns { display: flex; flex-wrap: wrap; gap: 10px; }
+
+/* the map: sticky car diagram on the left, stations scroll on the right */
+.story { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: clamp(20px, 4vw, 60px); padding: 0 var(--gut); }
+.stick { position: sticky; top: 0; height: 100vh; display: grid; align-content: center; }
+.stick .k { font: 600 13px/1 var(--body); letter-spacing: .28em; text-transform: uppercase; color: var(--neo); margin-bottom: 14px; }
+.stick svg { width: 100%; overflow: visible; }
+.stick .pt path, .stick .pt circle, .stick .pt rect { transition: stroke .4s, fill .4s, filter .4s; }
+.stick .pt.hot path, .stick .pt.hot circle, .stick .pt.hot rect { stroke: var(--neo2); filter: drop-shadow(0 0 8px rgba(139,227,58,.9)); }
+.stick .lbl { font: 600 13px/1.4 var(--body); color: var(--mut); margin-top: 12px; }
+.stick .lbl b { color: var(--neo); }
+.stations { padding: 30vh 0 20vh; display: grid; gap: 40vh; }
+.st { border-radius: 16px; padding: 24px; background: var(--bk2); box-shadow: inset 0 0 0 1px var(--line); }
+.st .n { font: 400 14px/1 var(--logo); color: var(--neo); letter-spacing: .1em; }
+.st h3 { margin: 10px 0 8px; font: 800 clamp(26px, 2.6vw, 36px)/1.05 var(--body); }
+.st p { margin: 0 0 12px; color: #bfc9c2; }
+.st ul { margin: 0 0 14px; padding-left: 18px; color: #d7ded9; }
+.st .pr { display: inline-block; padding: 7px 12px; border-radius: 6px; background: #1c241f; font: 700 15px/1 var(--body); color: var(--neo); }
+.st figure { margin: 14px 0 0; border-radius: 12px; overflow: hidden; aspect-ratio: 16/10; }
+.st figure img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 900px) { .story { grid-template-columns: 1fr; } .stick { top: 56px; height: auto; z-index: 3; background: var(--bk); padding: 8px 0 10px; border-bottom: 1px solid var(--line); } .stick svg { max-height: 26vh; } .stick .k, .stick .lbl { display: none; } .stations { padding: 4vh 0; gap: 16px; } }
+
+section:not(.hero) { scroll-margin-top: 60px; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 0 var(--gut); }
+.lbl2 { font: 600 13px/1 var(--body); letter-spacing: .28em; text-transform: uppercase; color: var(--neo); }
+h2 { margin: 14px 0 14px; font: 800 clamp(34px, 4.8vw, 68px)/1 var(--body); letter-spacing: -.02em; }
+h2 em { font-style: normal; color: var(--neo); }
+.lead { max-width: 640px; color: #b9c3bc; margin: 0 0 30px; }
+
+/* steering wheel atelier */
+#atelier { padding: clamp(80px, 10vw, 130px) 0; background: radial-gradient(800px 500px at 30% 50%, #18201b, transparent 70%); }
+.at { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(20px, 4vw, 60px); align-items: center; }
+.wheel svg { width: 100%; max-width: 480px; display: block; margin: 0 auto; filter: drop-shadow(0 30px 40px rgba(0,0,0,.6)); }
+.opt { margin-bottom: 20px; }
+.opt b { display: block; font: 600 13px/1 var(--body); letter-spacing: .2em; text-transform: uppercase; color: var(--mut); margin-bottom: 10px; }
+.sw { display: flex; flex-wrap: wrap; gap: 8px; }
+.sw button { display: inline-flex; align-items: center; gap: 8px; padding: 9px 12px 9px 9px; border-radius: 30px; border: 0; background: var(--bk2); color: var(--ink); font: 500 14px/1 var(--body); cursor: pointer; box-shadow: inset 0 0 0 1px var(--line); }
+.sw button i { width: 20px; height: 20px; border-radius: 50%; background: var(--c); box-shadow: inset 0 0 0 2px rgba(255,255,255,.15); }
+.sw button.on { box-shadow: inset 0 0 0 2px var(--neo); }
+.res { margin-top: 10px; padding: 16px; border-radius: 12px; background: var(--bk2); box-shadow: inset 0 0 0 1px var(--line); }
+.res p { margin: 0 0 8px; color: #c8d1cb; }
+@media (max-width: 900px) { .at { grid-template-columns: 1fr; } }
+
+/* crew */
+#crew { padding: clamp(80px, 10vw, 130px) 0; }
+.crew { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 18px; }
+.cm { border-radius: 14px; padding: 18px; background: var(--bk2); box-shadow: inset 0 0 0 1px var(--line); }
+.cm b { display: block; font: 400 22px/1.1 var(--logo); color: var(--neo); }
+.cm span { font-size: 14.5px; color: var(--mut); }
+.cm p { margin: 10px 0 0; font-size: 15px; color: #d2dad4; }
+.road { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.road p { margin: 0; border-radius: 14px; padding: 18px; background: #101412; border: 1px dashed #34423a; font-size: 15px; color: #d2dad4; }
+.road p b { display: block; font: 400 15px/1.2 var(--logo); color: var(--neo); margin-bottom: 8px; }
+@media (max-width: 900px) { .crew { grid-template-columns: 1fr 1fr; } .road { grid-template-columns: 1fr; } }
+
+#visit { padding: clamp(80px, 10vw, 130px) 0 120px; }
+.vis { display: grid; grid-template-columns: 1fr 1.15fr; gap: 26px; }
+.li { display: flex; justify-content: space-between; gap: 12px; padding: 11px 0; border-bottom: 1px solid var(--line); }
+.li span { color: var(--mut); }
+.li b { text-align: right; font-weight: 600; }
+.live { display: inline-flex; align-items: center; gap: 8px; }
+.live i { width: 9px; height: 9px; border-radius: 50%; background: #666; }
+.live.is-open i { background: var(--neo); box-shadow: 0 0 8px var(--neo); } .live.is-closed i { background: #E5484D; }
+.mapbox { position: relative; min-height: 400px; border-radius: 16px; overflow: hidden; box-shadow: inset 0 0 0 1px var(--line); }
+.mapbox iframe { position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 140px); border: 0; filter: invert(.9) hue-rotate(60deg) saturate(.5); }
+@media (max-width: 860px) { .vis { grid-template-columns: 1fr; } }
+footer { padding: 26px var(--gut) 50px; text-align: center; color: var(--mut); font-size: 14px; border-top: 1px solid var(--line); }
+footer b { display: block; font: 400 24px/1 var(--logo); color: var(--neo); margin-bottom: 6px; }
+
+.motion [data-in] { opacity: 0; transform: translateY(24px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.motion [data-in].in { opacity: 1; transform: none; }
+.noimg { background: linear-gradient(135deg, #1c241f, #0B0D0C); }
+.noimg img { opacity: 0; }
+</style>
+</head>
+<body data-hours='{"0":[[10,0,18,0]],"1":[[9,0,19,0]],"2":[[9,0,19,0]],"3":[[9,0,19,0]],"4":[[9,0,19,0]],"5":[[9,0,19,0]],"6":[[9,0,19,0]]}'>
+
+<nav class="bar" aria-label="Разделы">
+  <a class="lg" href="#top">AUTOMOTIV52</a>
+  <a class="t" href="#map">Узлы</a><a class="t" href="#atelier">Руль</a><a class="t" href="#crew">Команда</a><a class="t" href="#visit">Адрес</a>
+  <a class="tel" href="tel:+79300707100">070-71-00</a>
+</nav>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="car">
+      <g class="pt" id="p-body" style="--dx:0;--dy:-120"><path d="M60 250 L80 196 Q96 170 140 164 L300 156 Q340 108 410 100 L560 98 Q630 100 690 160 L820 172 Q872 180 884 220 L888 250 Z" fill="#141a16" stroke="#5c6e62" stroke-width="3"/><path d="M330 158 Q360 118 412 112 L470 112 L470 158 Z M486 112 L556 112 Q610 116 650 158 L486 158 Z" fill="#0d110f" stroke="#5c6e62" stroke-width="2"/></g>
+      <g class="pt" id="p-door" style="--dx:30;--dy:-200;--dr:-8"><path d="M478 162 L478 238 L640 238 L654 164 Z" fill="none" stroke="#5c6e62" stroke-width="2.5"/><rect x="600" y="176" width="26" height="6" rx="3" fill="#5c6e62"/></g>
+      <g class="pt" id="p-engine" style="--dx:-260;--dy:-40;--dr:10"><rect x="120" y="182" width="150" height="54" rx="8" fill="#1b231e" stroke="#5c6e62" stroke-width="2.5"/><path d="M140 182 v-14 h26 v14 M184 182 v-14 h26 v14 M228 182 v-14 h26 v14" stroke="#5c6e62" stroke-width="2.5" fill="none"/></g>
+      <g class="pt" id="p-seat" style="--dx:80;--dy:-260;--dr:12"><path d="M520 236 L540 196 Q546 186 556 190 L560 236 Z M512 236 h68" fill="none" stroke="#5c6e62" stroke-width="2.5"/></g>
+      <g class="pt" id="p-light" style="--dx:200;--dy:-60"><path d="M842 196 L880 204 L878 222 L846 216 Z" fill="#1b231e" stroke="#5c6e62" stroke-width="2.5"/></g>
+      <g class="pt" id="p-air" style="--dx:260;--dy:40"><rect x="812" y="226" width="56" height="18" rx="4" fill="none" stroke="#5c6e62" stroke-width="2.5"/><path d="M820 235 h40" stroke="#5c6e62" stroke-width="2" stroke-dasharray="4 4"/></g>
+      <g class="pt" id="p-under" style="--dx:0;--dy:120"><path d="M130 262 H830" stroke="#5c6e62" stroke-width="4" stroke-dasharray="14 8" fill="none"/></g>
+      <g class="pt" id="p-wf" style="--dx:-160;--dy:90;--dr:-90"><circle cx="230" cy="256" r="52" fill="#0f1311" stroke="#5c6e62" stroke-width="5"/><circle cx="230" cy="256" r="30" fill="none" stroke="#5c6e62" stroke-width="3"/><circle cx="230" cy="256" r="8" fill="#5c6e62"/></g>
+      <g class="pt" id="p-wr" style="--dx:160;--dy:90;--dr:90"><circle cx="740" cy="256" r="52" fill="#0f1311" stroke="#5c6e62" stroke-width="5"/><circle cx="740" cy="256" r="30" fill="none" stroke="#5c6e62" stroke-width="3"/><circle cx="740" cy="256" r="8" fill="#5c6e62"/></g>
+    </g>
+  </defs>
+</svg>
+
+<main>
+<section class="hero" id="top">
+  <div class="bay" id="bay">
+    <div class="sign" aria-label="Automotiv52">AUTOMOTIV52<small>Автосервис · Кстово · без выходных</small></div>
+    <div class="carx" aria-hidden="true"><svg viewBox="0 0 940 330" id="hcar"></svg></div>
+    <div class="cta">
+      <p>«Могут всё, от мехчасти до кузовного ремонта и тюнинга фар». Двигатель и КПП, тормоза, кузов и антикор, перетяжка салона, кондиционеры. Ждут даже под закрытие, если вы в пути.</p>
+      <div class="btns"><a class="btn" href="tel:+79300707100">Позвонить</a><a class="btn o" href="#map">Что ремонтируем</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="map" class="story">
+  <div class="stick">
+    <span class="k">Схема узлов</span>
+    <svg viewBox="0 0 940 330" aria-label="Схема машины, подсвечивается узел"><use href="#car"/></svg>
+    <div class="lbl">Сейчас на подъёмнике: <b id="now">двигатель и КПП</b></div>
+  </div>
+  <div class="stations">
+    <div class="st" data-p="p-engine" data-n="двигатель и КПП"><span class="n">УЗЕЛ 01</span><h3>Двигатель и КПП</h3><p>Ищут причину, а не меняют всё подряд: «обратился с проблемой двигателя, выявили причину, сделали всё чётко». Помпа, ролики, ГРМ, коробки.</p><ul><li>Компьютерная диагностика и сканирование ошибок</li><li>Ремонт двигателя, замена помпы и роликов</li><li>Ремонт КПП, замена масла</li></ul><span class="pr">ТО: набор от 3 500 ₽</span></div>
+    <div class="st" data-p="p-wf" data-n="тормоза и подвеска"><span class="n">УЗЕЛ 02</span><h3>Тормоза и подвеска</h3><p>От колодок до тормозных систем с большими дисками. Подвеску, бывает, смотрят бесплатно, пишут клиенты.</p><span class="pr">Тормозной диск от 1 500 ₽</span><figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/18101536/2a0000019bbdbce95caa47b789fe11f10497/XL" alt="Тормозные диски и колодки на верстаке" loading="lazy"></figure></div>
+    <div class="st" data-p="p-under" data-n="кузов и антикор"><span class="n">УЗЕЛ 03</span><h3>Кузов и антикор</h3><p>Кузовной ремонт, сварка, полная и частичная антикоррозийная обработка в короткие сроки.</p><span class="pr">Антикор от 7 500 ₽</span><figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/5235220/2a000001814c97831f6973e9b22f26483814/XL" alt="Машина подготовлена к покраске" loading="lazy"></figure></div>
+    <div class="st" data-p="p-seat" data-n="салон"><span class="n">УЗЕЛ 04</span><h3>Салон и перетяжка</h3><p>Предпродажная подготовка, перетяжка руля, дверных карт, подлокотников. Ниже можно примерить руль.</p><span class="pr">Детейлинг от 1 000 ₽</span></div>
+    <div class="st" data-p="p-light" data-n="свет"><span class="n">УЗЕЛ 05</span><h3>Свет и тюнинг фар</h3><p>Тюнинг фар отмечают в отзывах отдельно: свет становится ярче и аккуратнее.</p><span class="pr">Цена по фаре</span></div>
+    <div class="st" data-p="p-air" data-n="кондиционер"><span class="n">УЗЕЛ 06</span><h3>Кондиционер</h3><p>Заправка и ремонт автокондиционеров, поиск утечек.</p><span class="pr">Цена по машине</span></div>
+  </div>
+</section>
+
+<section id="atelier">
+  <div class="wrap">
+    <span class="lbl2">Ателье · перетяжка</span>
+    <h2>Соберите <em>свой руль</em></h2>
+    <p class="lead">Выберите материал, цвет и строчку: так будет выглядеть руль после перетяжки. Потом покажите картинку мастеру, и он подберёт материалы.</p>
+    <div class="at">
+      <div class="wheel">
+        <svg viewBox="0 0 400 400" aria-label="Руль после перетяжки">
+          <defs><pattern id="perf" width="8" height="8" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r="1.3" fill="rgba(0,0,0,.45)"/></pattern></defs>
+          <circle id="rim" cx="200" cy="200" r="160" fill="none" stroke="#1d1d1d" stroke-width="46"/>
+          <path id="grip" d="M62 150 A150 150 0 0 1 120 70 M338 150 A150 150 0 0 0 280 70" fill="none" stroke="url(#perf)" stroke-width="44" opacity="0"/>
+          <circle id="st1" cx="200" cy="200" r="142" fill="none" stroke="#8BE33A" stroke-width="2.5" stroke-dasharray="6 6"/>
+          <circle id="st2" cx="200" cy="200" r="178" fill="none" stroke="#8BE33A" stroke-width="2.5" stroke-dasharray="6 6"/>
+          <path d="M60 210 Q130 230 160 280 L240 280 Q270 230 340 210 L340 196 Q270 206 240 170 L160 170 Q130 206 60 196 Z" fill="#202322" stroke="#2c302e" stroke-width="2"/>
+          <circle cx="200" cy="225" r="56" fill="#191c1b" stroke="#2c302e" stroke-width="3"/>
+          <text x="200" y="232" text-anchor="middle" font-family="Russo One, Arial" font-size="18" fill="#8BE33A">A52</text>
+          <rect id="mark" x="192" y="36" width="16" height="22" rx="3" fill="#8BE33A"/>
+        </svg>
+      </div>
+      <div>
+        <div class="opt"><b>Материал</b><div class="sw" id="mat"></div></div>
+        <div class="opt"><b>Цвет обода</b><div class="sw" id="col"></div></div>
+        <div class="opt"><b>Строчка</b><div class="sw" id="sti"></div></div>
+        <div class="res"><p id="desc">…</p><div class="btns"><a class="btn" href="tel:+79300707100">Обсудить перетяжку</a></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="crew">
+  <div class="wrap">
+    <span class="lbl2">Команда · из отзывов</span>
+    <h2>Кого благодарят <em>по именам</em></h2>
+    <div class="crew">
+      <div class="cm" data-in><b>Роман</b><span>управляющий</span><p>«Ответил управляющий Роман и переключил на специалиста».</p></div>
+      <div class="cm" data-in><b>Никита</b><span>мастер</span><p>«Опытные парни знают свою работу. Берутся под все работы».</p></div>
+      <div class="cm" data-in><b>Александр</b><span>мастер</span><p>«Сделали временный ремонт, но очень качественно. Я спокойно доехал».</p></div>
+      <div class="cm" data-in><b>Жека</b><span>мастер</span><p>«Делают всё и быстро, по цене тоже всё устраивает. Жека всегда выручит!»</p></div>
+    </div>
+    <div class="road">
+      <p data-in><b>Ночь · трасса · 200 км</b>«Оборвало привод ночью на трассе, в 200 км от дома. Вошли в положение, сделали по высшему разряду».</p>
+      <p data-in><b>Проездом · Татарстан</b>«Приняли под закрытие, просканировали, устранили неполадки быстро. Напоили кофе. Из Татарстана вам салам!»</p>
+      <p data-in><b>Скрип руля · в поездке</b>«Звонила в несколько сервисов, везде занято. Здесь при высокой загрузке нашли пару минут посмотреть автомобиль».</p>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap vis">
+    <div>
+      <span class="lbl2">Адрес</span>
+      <h2>Шохина, <em>41</em></h2>
+      <div class="li"><span>Адрес</span><b>Кстово, пер. Шохина, 41</b></div>
+      <div class="li"><span>Пн–сб</span><b>9:00–19:00</b></div>
+      <div class="li"><span>Воскресенье</span><b>10:00–18:00</b></div>
+      <div class="li"><span>Сейчас</span><b class="live" data-live><i></i><span data-status>…</span></b></div>
+      <div class="li"><span>Телефоны</span><b><a href="tel:+79300707100">+7 930 070-71-00</a><br><a href="tel:+79200545633">+7 920 054-56-33</a></b></div>
+      <div class="li"><span>Рядом</span><b>Большая парковка, заправка, камеры на территории</b></div>
+      <div class="li"><span>Рейтинг</span><b>4,9 · ремонт хвалят в 13 из 13 отзывов</b></div>
+      <div class="btns" style="margin-top:18px"><a class="btn" href="tel:+79300707100">Позвонить</a><a class="btn o" href="https://yandex.ru/maps/org/automotiv52/25607290919/" target="_blank" rel="noopener">Маршрут</a></div>
+    </div>
+    <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=44.192464%2C56.135409&amp;z=16&amp;pt=44.192464%2C56.135409%2Cpm2grm&amp;l=map" title="Automotiv52 на Яндекс Картах" loading="lazy" allowfullscreen></iframe></div>
+  </div>
+</section>
+</main>
+
+<footer><b>AUTOMOTIV52</b>автосервис · Кстово, пер. Шохина, 41 · пн–сб 9:00–19:00, вс 10:00–18:00</footer>
+
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  var hero = document.querySelector('.hero'), bay = document.getElementById('bay');
+  RT.onScroll(function () {
+    var p = RT.motion ? RT.progress(hero) : 1;
+    bay.style.setProperty('--a', RT.ease(RT.clamp(p / .75)));
+    bay.style.setProperty('--on', RT.clamp((p - .55) / .25) > .5 ? 1 : (p > .5 && Math.random() > .5 ? .6 : RT.clamp((p - .55) / .25)));
+  });
+  // stations light up parts of the sticky diagram (the second copy of the car has its own <use> shadow tree, so mark via data attribute on svg)
+  var st = document.querySelectorAll('.st'), stick = document.querySelector('.stick svg'), now = document.getElementById('now');
+  // the sticky diagram needs its own real parts to highlight
+  // both drawings get real copies of the car (styles do not reach inside <use>)
+  var src = document.getElementById('car');
+  [stick, document.getElementById('hcar')].forEach(function (svg) {
+    svg.innerHTML = ''; svg.appendChild(src.cloneNode(true)).removeAttribute('id');
+    svg.querySelectorAll('[id]').forEach(function (e) { e.dataset.part = e.id; e.removeAttribute('id'); });
+  });
+  RT.onScroll(function () {
+    var cur = 0; st.forEach(function (s, i) { if (s.getBoundingClientRect().top < innerHeight * .55) cur = i; });
+    var part = st[cur].dataset.p; now.textContent = st[cur].dataset.n;
+    stick.querySelectorAll('.pt').forEach(function (g) { g.classList.toggle('hot', g.dataset.part === part || (part === 'p-wf' && g.dataset.part === 'p-wr')); });
+    st.forEach(function (s, i) { s.style.opacity = i === cur ? 1 : .45; });
+  });
+  var tabs = document.querySelectorAll('.bar a.t'), secs = [document.getElementById('map'), document.getElementById('atelier'), document.getElementById('crew'), document.getElementById('visit')];
+  RT.onScroll(function () { var cur = -1; secs.forEach(function (s, i) { if (s.getBoundingClientRect().top < innerHeight * .5) cur = i; }); tabs.forEach(function (a, i) { a.classList.toggle('on', i === cur); }); });
+
+  // steering wheel atelier
+  var MAT = [['Гладкая кожа', 0, 'гладкой кожей'], ['Перфорация', 1, 'перфорированной кожей по хватам'], ['Алькантара', 2, 'алькантарой']];
+  var COL = [['Чёрный', '#1d1d1d'], ['Графит', '#3a3f3c'], ['Коньяк', '#7a4a26'], ['Бордо', '#5a1620'], ['Синий', '#1f3354']];
+  var STI = [['Зелёная', '#8BE33A'], ['Красная', '#E5484D'], ['Белая', '#EDEDED'], ['В тон', 'tone']];
+  var s = { m: 0, c: 0, t: 0 };
+  function mk(box, list, key, dot) {
+    list.forEach(function (it, i) { var b = document.createElement('button'); b.type = 'button'; b.innerHTML = (dot ? '<i style="--c:' + (it[1] === 'tone' ? '#555' : it[1]) + '"></i>' : '') + it[0]; b.addEventListener('click', function () { s[key] = i; paint(); }); document.getElementById(box).appendChild(b); });
+  }
+  mk('mat', MAT, 'm', false); mk('col', COL, 'c', true); mk('sti', STI, 't', true);
+  function paint() {
+    var c = COL[s.c][1], t = STI[s.t][1] === 'tone' ? 'rgba(255,255,255,.18)' : STI[s.t][1];
+    var rim = document.getElementById('rim'); rim.setAttribute('stroke', c);
+    rim.style.filter = s.m === 2 ? 'saturate(.7) brightness(1.1)' : '';
+    document.getElementById('grip').setAttribute('opacity', s.m === 1 ? 1 : 0);
+    ['st1', 'st2'].forEach(function (id) { document.getElementById(id).setAttribute('stroke', t); });
+    document.getElementById('mark').setAttribute('fill', t);
+    ['mat', 'col', 'sti'].forEach(function (box, j) { document.querySelectorAll('#' + box + ' button').forEach(function (b, i) { b.classList.toggle('on', i === [s.m, s.c, s.t][j]); }); });
+    document.getElementById('desc').textContent = 'Руль, перетянутый ' + MAT[s.m][2] + ', цвет «' + COL[s.c][0].toLowerCase() + '», строчка ' + (STI[s.t][1] === 'tone' ? 'в тон' : STI[s.t][0].toLowerCase()) + '. Цену назовут после осмотра руля: перетяжка и детейлинг салона от 1 000 ₽.';
+  }
+  paint();
+  window.__w = function (m, c, t) { s = { m: m, c: c, t: t }; paint(); };
+
+  function live() { var x = RT.status(); if (!x) return; document.querySelectorAll('[data-live]').forEach(function (e) { e.classList.toggle('is-open', x.open); e.classList.toggle('is-closed', !x.open); }); }
+  document.addEventListener('DOMContentLoaded', live); setInterval(live, 60000);
+
+  window.REEL = {
+    hero: '.hero', heroAt: .45, feature: '#atelier', featureOff: 40, featureM: '.wheel', featureOffM: -40, prices: '#map', pricesOff: 0,
+    demo: [function () { __w(1, 2, 2); }, function () { __w(2, 3, 0); }, function () { __w(0, 4, 1); }],
+    holds: [40, 40, 40]
+  };
+})();
+</script>
+</body>
+</html>

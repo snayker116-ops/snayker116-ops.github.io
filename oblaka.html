@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Облака — салон красоты в Городце, Пролетарская площадь, 10</title>
+<meta name="description" content="Салон «Облака» в Городце, Пролетарская площадь, 10: лазерная эпиляция (комплексы от 2 300 ₽), массаж лица, косметология, маникюр и педикюр, брови, спа-программы, пирсинг. Ежедневно 10:00–18:00. Рейтинг 5,0, 408 оценок.">
+<meta property="og:title" content="Облака — салон красоты, Городец">
+<meta property="og:description" content="Посчитайте лазерную эпиляцию: зоны, комплексы, курс. Пролетарская пл., 10. +7 950 601-16-76">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/14171651/2a00000193f9ed5ce58e200257b5dcb77d99/XXXL">
+<meta name="theme-color" content="#9CCBFF">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&amp;family=Mulish:wght@400;600;800&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BeautySalon","name":"Облака","telephone":"+7 950 601-16-76","address":{"@type":"PostalAddress","streetAddress":"Пролетарская площадь, 10","addressLocality":"Городец","addressRegion":"Нижегородская область","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":56.646879,"longitude":43.470853},"openingHours":"Mo-Su 10:00-18:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"5","ratingCount":"408"}}</script>
+<style>
+:root {
+  --sky: #9CCBFF; --sky2: #D8ECFF; --sky3: #F4FAFF; --navy: #1D2B53; --navy2: #33447A; --pink: #FF5C8A; --pink2: #FF9DB8; --sun: #FFD15C; --mut: #6A7AA3; --white: #FFFFFF;
+  --head: 'Comfortaa', Arial, sans-serif; --body: 'Mulish', Arial, sans-serif;
+  --gut: clamp(16px, 4vw, 56px); --ease: cubic-bezier(.2, .75, .2, 1);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: linear-gradient(var(--sky) 0, var(--sky2) 40%, var(--sky3) 100%); color: var(--navy); font: 400 17px/1.65 var(--body); overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+
+/* nav: altimeter */
+.alt { position: fixed; right: 14px; top: 50%; transform: translateY(-50%); z-index: 50; height: 320px; width: 74px; padding: 10px 0; border-radius: 40px; background: rgba(255,255,255,.75); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); box-shadow: 0 10px 30px rgba(29,43,83,.15); }
+.alt a { position: absolute; right: 14px; display: flex; align-items: center; gap: 6px; text-decoration: none; font: 800 11px/1 var(--body); color: var(--mut); transform: translateY(-50%); }
+.alt a::after { content: ""; width: 10px; height: 2px; background: currentColor; }
+.alt a.on { color: var(--pink); }
+.alt .needle { position: absolute; left: 8px; width: 0; height: 0; border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-left: 11px solid var(--pink); transform: translateY(-50%); transition: top .5s var(--ease); }
+@media (max-width: 760px) { .alt { top: auto; bottom: 10px; right: 50%; transform: translateX(50%); height: 44px; width: 300px; } .alt a { top: 50% !important; right: auto; font-size: 10px; } .alt a::after { display: none; } .alt .needle { top: 2px !important; border: 0; border-left: 7px solid transparent; border-right: 7px solid transparent; border-top: 9px solid var(--pink); transition: left .5s var(--ease); } }
+
+/* hero: climbing through the clouds */
+.hero { position: relative; height: 260vh; }
+.air { position: sticky; top: 0; height: 100vh; min-height: 620px; overflow: hidden; background: linear-gradient(hsl(212, 90%, calc(62% + var(--p, 0) * 6%)), hsl(205, 95%, calc(80% + var(--p, 0) * 8%))); }
+.ground { position: absolute; left: 0; right: 0; bottom: 0; height: 30vh; transform: translateY(calc(var(--p, 0) * 70vh)); }
+.ground svg { position: absolute; bottom: 0; width: 100%; height: 100%; }
+.cl { position: absolute; left: var(--x); top: var(--y); width: var(--w); transform: translateY(calc(var(--p, 0) * var(--v))); opacity: var(--o, 1); }
+.cl svg { width: 100%; height: auto; display: block; filter: drop-shadow(0 12px 18px rgba(29,43,83,.12)); }
+.meter { position: absolute; left: var(--gut); top: 50%; transform: translateY(-50%); font: 700 clamp(40px, 7vw, 96px)/1 var(--head); color: rgba(255,255,255,.95); text-shadow: 0 4px 24px rgba(29,43,83,.25); opacity: calc(1 - var(--t, 0)); }
+.meter small { display: block; font: 800 13px/1 var(--body); letter-spacing: .24em; text-transform: uppercase; margin-top: 10px; }
+.sunbox { position: absolute; left: 0; right: 0; top: 50%; text-align: center; padding: 0 var(--gut); transform: translateY(calc(-50% + (1 - var(--t, 0)) * 40px)); opacity: var(--t, 0); pointer-events: none; }
+.sunbox.act { pointer-events: auto; }
+.sunbox .sun { width: 120px; height: 120px; margin: 0 auto -40px; border-radius: 50%; background: radial-gradient(circle, #fff6d6, var(--sun) 60%, rgba(255,209,92,0) 72%); }
+.sunbox .k { font: 800 12px/1 var(--body); letter-spacing: .26em; text-transform: uppercase; color: var(--navy2); }
+.sunbox h1 { margin: 10px 0 8px; font: 700 clamp(64px, 11vw, 170px)/1 var(--head); color: #fff; text-shadow: 0 6px 30px rgba(29,43,83,.25); }
+.sunbox p { max-width: 560px; margin: 0 auto 20px; color: var(--navy); font-weight: 600; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 15px 22px; border-radius: 40px; background: var(--navy); color: #fff; text-decoration: none; font: 800 15px/1 var(--body); border: 0; cursor: pointer; }
+.btn.p { background: var(--pink); }
+.btn.o { background: rgba(255,255,255,.85); color: var(--navy); }
+.btns { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.hint { position: absolute; left: 0; right: 0; bottom: 22px; text-align: center; font: 800 12px/1 var(--body); letter-spacing: .22em; text-transform: uppercase; color: #fff; opacity: calc(1 - var(--p, 0) * 4); }
+
+main > section:not(.hero) { position: relative; scroll-margin-top: 10px; padding: clamp(90px, 10vw, 130px) calc(var(--gut) + 80px) clamp(70px, 8vw, 100px) var(--gut); }
+@media (max-width: 760px) { main > section:not(.hero) { padding-right: var(--gut); } }
+.wrap { max-width: 1140px; margin: 0 auto; }
+.lvl { display: inline-flex; align-items: center; gap: 8px; padding: 7px 12px; border-radius: 30px; background: #fff; font: 800 12px/1 var(--body); letter-spacing: .16em; text-transform: uppercase; color: var(--pink); box-shadow: 0 6px 16px rgba(29,43,83,.08); }
+h2 { margin: 16px 0 14px; font: 700 clamp(34px, 4.8vw, 64px)/1.08 var(--head); }
+h2 em { font-style: normal; color: var(--pink); }
+.lead { max-width: 640px; color: var(--navy2); margin: 0 0 30px; }
+.puff { border-radius: 40px; background: #fff; box-shadow: 0 30px 60px -30px rgba(29,43,83,.35); padding: clamp(18px, 3vw, 34px); }
+
+/* laser planner */
+.las { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: clamp(18px, 3vw, 40px); align-items: start; }
+.zones { display: grid; gap: 12px; }
+.zones .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.zones .row > span { width: 90px; font: 800 12px/1 var(--body); letter-spacing: .14em; text-transform: uppercase; color: var(--mut); }
+.zc { position: relative; padding: 13px 18px 12px; border: 0; border-radius: 30px; background: var(--sky3); color: var(--navy); font: 700 15px/1.1 var(--body); cursor: pointer; box-shadow: inset 0 0 0 2px #d7e6fb; transition: background .25s, color .25s, box-shadow .25s; }
+.zc::before, .zc::after { content: ""; position: absolute; border-radius: 50%; background: inherit; box-shadow: inherit; z-index: -1; }
+.zc small { display: block; margin-top: 3px; font: 600 12px/1 var(--body); color: var(--mut); }
+.zc.on { background: var(--pink); color: #fff; box-shadow: 0 0 0 4px rgba(255,92,138,.2), 0 0 24px rgba(255,92,138,.45); }
+.zc.on small { color: #ffe2ea; }
+.calc { position: sticky; top: 24px; padding: 24px; border-radius: 30px; background: var(--navy); color: #fff; }
+.calc .best { font: 700 clamp(36px, 4vw, 48px)/1 var(--head); }
+.calc .was { margin-top: 6px; color: #b9c4e6; font-size: 15px; }
+.calc .was s { color: #8a97c2; }
+.calc .deal { display: inline-block; margin-top: 10px; padding: 6px 12px; border-radius: 30px; background: var(--pink); font: 800 13px/1 var(--body); }
+.calc h4 { margin: 20px 0 8px; font: 800 12px/1 var(--body); letter-spacing: .16em; text-transform: uppercase; color: #b9c4e6; }
+.course { display: flex; gap: 6px; flex-wrap: wrap; }
+.course div { flex: 1 0 64px; padding: 8px 6px; border-radius: 14px; background: #2b3b6c; text-align: center; font-size: 12px; line-height: 1.25; }
+.course div b { display: block; font: 700 15px/1 var(--head); color: var(--pink2); margin-bottom: 2px; }
+.calc small { display: block; margin-top: 12px; color: #9aa7d1; font-size: 13px; }
+.calc .btns { justify-content: flex-start; margin-top: 16px; }
+@media (max-width: 900px) { .las { grid-template-columns: 1fr; } .calc { position: relative; top: 0; } .zones .row > span { width: 100%; } }
+
+/* prices */
+.pr { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.pc { padding: 24px 22px; border-radius: 34px; background: #fff; box-shadow: 0 20px 40px -26px rgba(29,43,83,.4); }
+.pc h3 { margin: 0 0 12px; font: 700 22px/1.15 var(--head); }
+.pc div { display: flex; justify-content: space-between; gap: 10px; padding: 8px 0; border-bottom: 1px dashed #d7e6fb; font-size: 15px; }
+.pc div b { white-space: nowrap; color: var(--pink); }
+@media (max-width: 960px) { .pr { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 620px) { .pr { grid-template-columns: 1fr; } }
+
+/* service + reviews */
+.perks { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-bottom: 26px; }
+.pk { padding: 20px; border-radius: 30px; background: #fff; text-align: center; box-shadow: 0 16px 30px -22px rgba(29,43,83,.4); }
+.pk b { display: block; font: 700 32px/1 var(--head); color: var(--pink); margin-bottom: 8px; }
+.pk span { font-size: 14.5px; color: var(--navy2); }
+@media (max-width: 900px) { .perks { grid-template-columns: 1fr 1fr; } }
+.rv { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.r1 { padding: 20px; border-radius: 30px 30px 30px 6px; background: rgba(255,255,255,.85); }
+.r1 b { font: 700 16px/1.2 var(--head); color: var(--navy2); }
+.r1 p { margin: 8px 0 0; font-size: 15px; }
+@media (max-width: 900px) { .rv { grid-template-columns: 1fr; } }
+.pics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 22px; }
+.pics figure { margin: 0; border-radius: 30px; overflow: hidden; aspect-ratio: 1; }
+.pics img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 760px) { .pics { grid-template-columns: 1fr 1fr; } }
+
+.vis { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 26px; }
+.land .r { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px dashed #d7e6fb; font-size: 15.5px; }
+.land .r span { color: var(--mut); }
+.land .r b { text-align: right; }
+.live { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 6px; font-weight: 800; font-size: 14px; }
+.live i { width: 10px; height: 10px; border-radius: 50%; background: var(--c, #999); }
+.land .btns { justify-content: flex-start; margin-top: 16px; }
+.land .btn.o { box-shadow: inset 0 0 0 1.5px #c9d7f0; }
+.mapbox { position: relative; min-height: 420px; border-radius: 40px; overflow: hidden; box-shadow: 0 30px 60px -30px rgba(29,43,83,.35); }
+.mapbox iframe { position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 140px); border: 0; }
+@media (max-width: 860px) { .vis { grid-template-columns: 1fr; } }
+footer { padding: 30px var(--gut) 100px; text-align: center; color: var(--mut); font-size: 14px; }
+footer b { display: block; font: 700 36px/1 var(--head); color: var(--navy); margin-bottom: 6px; }
+
+.motion [data-in] { opacity: 0; transform: translateY(26px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
+.motion [data-in].in { opacity: 1; transform: none; }
+.noimg { background: linear-gradient(135deg, #d8ecff, #ff9db8); }
+.noimg img { opacity: 0; }
+</style>
+</head>
+<body data-hours='{"0":[[10,0,18,0]],"1":[[10,0,18,0]],"2":[[10,0,18,0]],"3":[[10,0,18,0]],"4":[[10,0,18,0]],"5":[[10,0,18,0]],"6":[[10,0,18,0]]}'>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="cloud" viewBox="0 0 200 100"><path fill="#fff" d="M30 92 C8 92 0 74 10 62 C2 44 22 30 40 38 C46 16 74 8 92 22 C104 4 140 6 148 30 C170 24 192 40 186 60 C200 70 194 92 172 92 Z"/></symbol></defs></svg>
+
+<nav class="alt" id="alt" aria-label="Высоты">
+  <a href="#zvonok" style="top:8%">4000</a><a href="#otzyvy" style="top:29%">3000</a><a href="#ceny" style="top:50%">2000</a><a href="#lazer" style="top:71%">1000</a><a href="#top" style="top:92%">0 м</a>
+  <i class="needle" id="needle"></i>
+</nav>
+
+<main>
+<section class="hero" id="top">
+  <div class="air" id="air">
+    <div class="cl" style="--x:-6%;--y:62%;--w:42vw;--v:-60vh"><svg><use href="#cloud"/></svg></div>
+    <div class="cl" style="--x:58%;--y:70%;--w:46vw;--v:-80vh"><svg><use href="#cloud"/></svg></div>
+    <div class="cl" style="--x:20%;--y:100%;--w:60vw;--v:-130vh"><svg><use href="#cloud"/></svg></div>
+    <div class="cl" style="--x:-10%;--y:120%;--w:55vw;--v:-150vh"><svg><use href="#cloud"/></svg></div>
+    <div class="cl" style="--x:55%;--y:130%;--w:58vw;--v:-160vh"><svg><use href="#cloud"/></svg></div>
+    <div class="cl" style="--x:70%;--y:12%;--w:18vw;--v:20vh;--o:.8"><svg><use href="#cloud"/></svg></div>
+    <div class="cl" style="--x:8%;--y:16%;--w:14vw;--v:30vh;--o:.7"><svg><use href="#cloud"/></svg></div>
+    <div class="ground" aria-hidden="true"><svg viewBox="0 0 1200 300" preserveAspectRatio="none"><path d="M0 300 V170 L60 170 L60 120 L90 96 L120 120 L120 170 L200 170 L200 140 L260 140 L260 170 L340 170 L340 110 L370 70 L400 110 L400 170 L520 170 L520 130 L600 130 L600 90 L612 60 L624 90 L624 130 L700 130 L700 170 L820 170 L820 120 L860 100 L900 120 L900 170 L1000 170 L1000 140 L1080 140 L1080 170 L1200 170 V300 Z" fill="#6f8fc4"/><path d="M0 300 V220 C200 200 400 240 600 220 C800 200 1000 240 1200 220 V300 Z" fill="#5876ad"/></svg></div>
+    <div class="meter"><span id="mv">0</span> м<small>Городец · Пролетарская площадь, 10</small></div>
+    <div class="hint">поднимаемся ↓</div>
+    <div class="sunbox" id="sunbox">
+      <div class="sun" aria-hidden="true"></div>
+      <div class="k">салон красоты · Городец</div>
+      <h1>Облака</h1>
+      <p>Лазерная эпиляция, массаж лица и тела, косметология, ногти, брови и спа. В отзывах пишут: «ощущаешь себя как в облачном раю».</p>
+      <div class="btns"><a class="btn p" href="tel:+79506011676">+7 950 601-16-76</a><a class="btn o" href="#lazer">Посчитать лазер</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="lazer">
+  <div class="wrap">
+    <span class="lvl">высота 1 000 м · лазер</span>
+    <h2>Лазерная эпиляция: <em>посчитаем</em></h2>
+    <p class="lead">Отметьте облака-зоны. Калькулятор сам найдёт выгодный комплекс из прайса салона и покажет, как может выглядеть курс. Лазерную эпиляцию в отзывах хвалят в 32 случаях из 32.</p>
+    <div class="las">
+      <div class="puff zones" id="zones"></div>
+      <div class="calc" aria-live="polite">
+        <div class="best" id="best">0 ₽</div>
+        <div class="was" id="was">за одну процедуру</div>
+        <div id="deal"></div>
+        <h4>Примерный курс</h4>
+        <div class="course" id="course"></div>
+        <small>Обычно нужно 6–8 процедур с перерывом 4–8 недель. Точный план составит мастер на консультации.</small>
+        <div class="btns"><a class="btn p" href="tel:+79506011676">Записаться</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ceny">
+  <div class="wrap">
+    <span class="lvl">высота 2 000 м · цены</span>
+    <h2>Над облаками <em>и по прайсу</em></h2>
+    <p class="lead">Из прайса салона на Яндекс Картах. Каждый месяц бывают акции: о них расскажет администратор.</p>
+    <div class="pr">
+      <div class="pc" data-in><h3>Массаж лица</h3><div><span>Классический, 30 минут</span><b>800 ₽</b></div><div><span>Сплэш-лифтинг</span><b>1 800 ₽</b></div><div><span>Скульптурный</span><b>1 800 ₽</b></div><div><span>Миопластический</span><b>2 000 ₽</b></div><div><span>Авторский</span><b>2 000 ₽</b></div></div>
+      <div class="pc" data-in><h3>Косметология</h3><div><span>Консультация</span><b>500 ₽</b></div><div><span>Мезотерапия лица</span><b>2 000 ₽</b></div><div><span>Биоревитализация</span><b>5 000 ₽</b></div><div><span>Микроигольчатый RF</span><b>5 000 ₽</b></div><div><span>Ботокс, за единицу</span><b>от 250 ₽</b></div></div>
+      <div class="pc" data-in><h3>Руки и ноги</h3><div><span>Комбинированный маникюр</span><b>1 100 ₽</b></div><div><span>Маникюр + покрытие + укрепление</span><b>1 700 ₽</b></div><div><span>Наращивание ногтей</span><b>2 900 ₽</b></div><div><span>Педикюр с покрытием</span><b>2 600 ₽</b></div><div><span>Спа-уход для рук или ног</span><b>500 ₽</b></div></div>
+      <div class="pc" data-in><h3>Брови и ресницы</h3><div><span>Коррекция пинцетом или воском</span><b>500 ₽</b></div><div><span>Окрашивание и коррекция</span><b>800 ₽</b></div><div><span>Ламинирование и окрашивание</span><b>1 500 ₽</b></div><div><span>Окрашивание ресниц</span><b>500 ₽</b></div></div>
+      <div class="pc" data-in><h3>Лазер, комплексы</h3><div><span>S: подмышки + глубокое бикини</span><b>2 300 ₽</b></div><div><span>M: + голень с коленями</span><b>3 800 ₽</b></div><div><span>L: + ноги полностью</span><b>4 000 ₽</b></div><div><span>Любые 5 зон</span><b>5 500 ₽</b></div></div>
+      <div class="pc" data-in><h3>Пирсинг</h3><div><span>Мочки ушей, хрящ или нос</span><b>1 500 ₽</b></div><div><span>Бровь</span><b>1 300 ₽</b></div><div><span>Пупок</span><b>1 800 ₽</b></div><div><span>Делает специалист с медицинским образованием</span><b></b></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="otzyvy">
+  <div class="wrap">
+    <span class="lvl">высота 3 000 м · сервис</span>
+    <h2>Почему здесь <em>как в облаках</em></h2>
+    <p class="lead">5,0 на Яндекс Картах, 408 оценок. Атмосферу хвалят в 97 отзывах из 97, компетентность в 97 из 97.</p>
+    <div class="perks">
+      <div class="pk" data-in><b>⏰</b><span>Напоминания о записи на телефон</span></div>
+      <div class="pk" data-in><b>☕</b><span>Заранее спросят, что приготовить: чай, кофе, лимонад</span></div>
+      <div class="pk" data-in><b>🔌</b><span>Даже предложат зарядку для телефона</span></div>
+      <div class="pk" data-in><b>🎁</b><span>Подарки на день рождения и сертификаты</span></div>
+    </div>
+    <div class="rv">
+      <div class="r1" data-in><b>Из Нижнего Новгорода</b><p>«Специально из Нижнего Новгорода по выходным приезжаю сюда. Массажи, спа, миостимуляции: умеют всё. Не боятся работать после операции».</p></div>
+      <div class="r1" data-in><b>Спа для двоих на 14 февраля</b><p>«В программу были включены фито-баня и массаж всего тела, а после чаепитие с вкусняшками. Девочкам Екатерине и Юлии отдельная благодарность».</p></div>
+      <div class="r1" data-in><b>Проездом в городе</b><p>«Огромное спасибо косметологу Дарье! Мне посоветовали именно это место, ни капли не пожалела».</p></div>
+      <div class="r1" data-in><b>Массаж</b><p>«Спасибо мастеру массажа Еве Колесовой за вводную лекцию на первом посещении. Расслабление на все 100%».</p></div>
+      <div class="r1" data-in><b>Комбо за один раз</b><p>«Массаж, токи и уход за ногами у специалиста Ксении, всё за один визит, очень круто!»</p></div>
+      <div class="r1" data-in><b>Первый маникюр в жизни</b><p>«Было наращивание ногтей, мастеру Кристине отдельное спасибо: сделала аккуратно и быстро».</p></div>
+    </div>
+    <div class="pics">
+      <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/14171651/2a00000193f9ed5ce58e200257b5dcb77d99/L" alt="Лазерная эпиляция" loading="lazy"></figure>
+      <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/10648814/2a0000018aa96066403eb4e9d0663f2e0df4/L" alt="Аппарат для лазерной эпиляции" loading="lazy"></figure>
+      <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/10488540/2a0000018aa960925ac42bacd843d503c984/L" alt="Аппарат для ухода за лицом и LED-маска" loading="lazy"></figure>
+      <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/14271118/2a00000193f9f14056c4e378a4aa2ce2d7fa/L" alt="Сыворотка с гиалуроновой кислотой" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="zvonok">
+  <div class="wrap vis">
+    <div>
+      <span class="lvl">высота 4 000 м · посадка</span>
+      <h2>Пролетарская <em>площадь, 10</em></h2>
+      <div class="puff land">
+        <div class="live" data-live><i></i><span data-status>…</span></div>
+        <div class="r"><span>Адрес</span><b>Городец, Пролетарская площадь, 10</b></div>
+        <div class="r"><span>Режим</span><b>ежедневно 10:00–18:00</b></div>
+        <div class="r"><span>Телефон</span><b><a href="tel:+79506011676">+7 950 601-16-76</a></b></div>
+        <div class="btns"><a class="btn p" href="tel:+79506011676">Позвонить</a><a class="btn" href="https://wa.me/79506011676" target="_blank" rel="noopener">WhatsApp</a><a class="btn o" href="https://vk.ru/oblaka_gorodets" target="_blank" rel="noopener">ВКонтакте</a><a class="btn o" href="https://max.ru/79506011676" target="_blank" rel="noopener">MAX</a></div>
+      </div>
+    </div>
+    <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=43.470853%2C56.646879&amp;z=16&amp;pt=43.470853%2C56.646879%2Cpm2rdm&amp;l=map" title="Облака на Яндекс Картах" loading="lazy" allowfullscreen></iframe></div>
+  </div>
+</section>
+</main>
+
+<footer><b>Облака</b>салон красоты · Городец, Пролетарская площадь, 10 · +7 950 601-16-76</footer>
+
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  var hero = document.querySelector('.hero'), air = document.getElementById('air'), mv = document.getElementById('mv'), sb = document.getElementById('sunbox');
+  RT.onScroll(function () {
+    var p = RT.motion ? RT.progress(hero) : 1;
+    air.style.setProperty('--p', RT.clamp(p / .8));
+    var t = RT.ease(RT.clamp((p - .55) / .25));
+    air.style.setProperty('--t', t); sb.classList.toggle('act', t > .5);
+    mv.textContent = (Math.round(RT.clamp(p / .6) * 3000 / 50) * 50).toLocaleString('ru-RU');
+  });
+
+  // altimeter nav
+  var secs = document.querySelectorAll('main > section'), needle = document.getElementById('needle'), links = [].slice.call(document.querySelectorAll('.alt a')).reverse();
+  function layout() { links.forEach(function (a, i) { if (innerWidth <= 760) { a.style.left = (22 + i * 56) + 'px'; } else a.style.left = ''; }); }
+  layout(); addEventListener('resize', layout);
+  RT.onScroll(function () {
+    var cur = 0; secs.forEach(function (s, i) { if (s.getBoundingClientRect().top < innerHeight * .45) cur = i; });
+    links.forEach(function (a, i) { a.classList.toggle('on', i === cur); });
+    if (innerWidth <= 760) { needle.style.left = (30 + cur * 56) + 'px'; needle.style.top = ''; } else { needle.style.left = ''; needle.style.top = links[cur].style.top; }
+  });
+
+  // laser planner
+  var Z = [
+    ['Лицо', [['lip', 'Верхняя губа', 600], ['chin', 'Подбородок', 600], ['face', 'Лицо полностью', 1100]]],
+    ['Руки', [['arm', 'Подмышки', 800], ['fore', 'Руки до локтя', 1000], ['arms', 'Руки полностью', 1300]]],
+    ['Тело', [['bik', 'Глубокое бикини', 1800], ['bikc', 'Бикини классическое', 1100], ['ar', 'Грудь, ореолы', 400]]],
+    ['Ноги', [['shin', 'Голень', 1200], ['shinK', 'Голень с коленями', 1600], ['hip', 'Бёдра', 1200], ['legs', 'Ноги полностью', 2500]]]
+  ];
+  var P = {}, N = {}; Z.forEach(function (g) { g[1].forEach(function (z) { P[z[0]] = z[2]; N[z[0]] = z[1]; }); });
+  var EXCL = { face: ['lip', 'chin'], lip: ['face'], chin: ['face'], arms: ['fore'], fore: ['arms'], bik: ['bikc'], bikc: ['bik'], legs: ['shin', 'shinK', 'hip'], shin: ['legs', 'shinK'], shinK: ['legs', 'shin'], hip: ['legs'] };
+  var CX = [['S', ['arm', 'bik'], 2300], ['M', ['arm', 'bik', 'shinK'], 3800], ['L', ['arm', 'bik', 'legs'], 4000]];
+  var sel = { arm: 1, bik: 1 };
+  var box = document.getElementById('zones');
+  Z.forEach(function (g) {
+    var row = document.createElement('div'); row.className = 'row'; row.innerHTML = '<span>' + g[0] + '</span>';
+    g[1].forEach(function (z) { var b = document.createElement('button'); b.type = 'button'; b.className = 'zc'; b.dataset.k = z[0]; b.innerHTML = z[1] + '<small>' + RT.money(z[2]) + '</small>'; b.addEventListener('click', function () { if (sel[z[0]]) delete sel[z[0]]; else { sel[z[0]] = 1; (EXCL[z[0]] || []).forEach(function (x) { delete sel[x]; }); } calc(); }); row.appendChild(b); });
+    box.appendChild(row);
+  });
+  function calc() {
+    box.querySelectorAll('.zc').forEach(function (b) { b.classList.toggle('on', !!sel[b.dataset.k]); });
+    var keys = Object.keys(sel), sum = keys.reduce(function (s, k) { return s + P[k]; }, 0), best = sum, how = '';
+    CX.forEach(function (c) { if (c[1].every(function (k) { return sel[k]; })) { var rest = keys.filter(function (k) { return c[1].indexOf(k) < 0; }).reduce(function (s, k) { return s + P[k]; }, 0); if (c[2] + rest < best) { best = c[2] + rest; how = 'комплекс ' + c[0] + (rest ? ' + остальные зоны' : ''); } } });
+    if (keys.length >= 5) { var sorted = keys.map(function (k) { return P[k]; }).sort(function (a, b) { return b - a; }); var v = 5500 + sorted.slice(5).reduce(function (s, x) { return s + x; }, 0); if (v < best) { best = v; how = '«любые 5 зон»' + (keys.length > 5 ? ' + ещё ' + (keys.length - 5) : ''); } }
+    document.getElementById('best').textContent = RT.money(best);
+    document.getElementById('was').innerHTML = keys.length ? (best < sum ? 'за процедуру вместо <s>' + RT.money(sum) + '</s>' : 'за одну процедуру') : 'выберите зоны';
+    document.getElementById('deal').innerHTML = best < sum ? '<span class="deal">' + how + ': выгода ' + RT.money(sum - best) + '</span>' : '';
+    var c = document.getElementById('course'), d = new Date(), M = ['янв', 'фев', 'мар', 'апр', 'мая', 'июн', 'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'], html = '';
+    for (var i = 0; i < 6; i++) { var x = new Date(d.getFullYear(), d.getMonth(), d.getDate() + i * 38); html += '<div><b>' + (i + 1) + '</b>' + x.getDate() + ' ' + M[x.getMonth()] + '</div>'; }
+    c.innerHTML = keys.length ? html : '';
+  }
+  calc();
+  window.__laser = function (ks) { sel = {}; ks.forEach(function (k) { sel[k] = 1; }); calc(); };
+
+  window.REEL = {
+    hero: '.hero', heroAt: .85, feature: '#lazer', featureOff: 20, featureM: '.calc', featureOffM: -20, prices: '#ceny', pricesOff: 30,
+    demo: [function () { __laser(['arm']); }, function () { __laser(['arm', 'bik']); }, function () { __laser(['arm', 'bik', 'legs']); }, function () { __laser(['arm', 'bik', 'legs', 'arms', 'lip']); }],
+    holds: [30, 30, 40, 40]
+  };
+})();
+</script>
+</body>
+</html>

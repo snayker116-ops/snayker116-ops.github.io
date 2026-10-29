@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LeRo — салон красоты в Сарове, Курчатова, 12</title>
+<meta name="description" content="Салон красоты LeRo в Сарове, ул. Курчатова, 12: маникюр от 1 300 ₽, педикюр, маникюр и педикюр в 4 руки 3 200 ₽, наращивание и ламинирование ресниц, брови, массаж, косметология, шугаринг, стрижки. Ежедневно 8:00–20:00. Рейтинг 5,0, 623 оценки.">
+<meta property="og:title" content="LeRo — салон красоты, Саров">
+<meta property="og:description" content="Соберите формулу визита из таблицы услуг. Курчатова, 12. +7 910 897-87-01">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/15074774/2a00000195adf3084e57e94af64f9b582347/XXXL">
+<meta name="theme-color" content="#0E1A14">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&amp;family=Exo+2:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BeautySalon","name":"LeRo","telephone":["+7 910 897-87-01","+7 83130 6-41-40"],"address":{"@type":"PostalAddress","streetAddress":"ул. Курчатова, 12","addressLocality":"Саров","addressRegion":"Нижегородская область","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":54.944802,"longitude":43.331249},"openingHours":"Mo-Su 08:00-20:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"5","ratingCount":"623"}}</script>
+<style>
+:root {
+  --bg: #0E1A14; --bg2: #14251C; --bg3: #1C3226; --neon: #3DFF8F; --neon2: #A9FFC9; --ink: #ECF7F0; --mut: #8FA89A;
+  --g1: #3DD68C; --g2: #2EC4C4; --g3: #B58CFF; --g4: #FF8FB1; --g5: #FFC857; --g6: #7DB4FF;
+  --head: 'Unbounded', Arial, sans-serif; --body: 'Exo 2', Arial, sans-serif;
+  --gut: clamp(16px, 4vw, 56px); --ease: cubic-bezier(.2, .75, .2, 1);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17px/1.6 var(--body); overflow-x: hidden;
+  background-image: linear-gradient(rgba(61,255,143,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(61,255,143,.04) 1px, transparent 1px); background-size: 48px 48px; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+
+/* nav: a row of tiny element cells */
+.mini { position: fixed; left: 14px; bottom: 14px; z-index: 50; display: flex; gap: 4px; padding: 5px; border-radius: 10px; background: rgba(14,26,20,.9); box-shadow: inset 0 0 0 1px #2a4536; }
+.mini a { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 6px; background: var(--bg3); text-decoration: none; font: 600 13px/1 var(--head); color: var(--mut); position: relative; }
+.mini a small { position: absolute; left: 4px; top: 3px; font: 500 8px/1 var(--body); }
+.mini a.on { background: var(--neon); color: #08130d; box-shadow: 0 0 16px rgba(61,255,143,.6); }
+@media (max-width: 700px) { .mini { left: 50%; transform: translateX(-50%); bottom: 8px; } }
+
+/* hero: atom collapses into the LeRo element */
+.hero { position: relative; height: 240vh; }
+.lab { position: sticky; top: 0; height: 100vh; min-height: 620px; overflow: hidden; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(20px, 4vw, 60px); align-items: center; padding: 0 var(--gut); }
+.atom { position: relative; justify-self: center; width: min(100%, 520px); aspect-ratio: 1; }
+.orb { position: absolute; left: 50%; top: 50%; width: 92%; height: 36%; margin: -18% 0 0 -46%; border-radius: 50%; border: 1.5px solid rgba(61,255,143,.45); transform: rotate(var(--r)) scale(calc(1 - var(--c, 0) * .9)); opacity: calc(1 - var(--c, 0)); }
+.orb i { position: absolute; left: 50%; top: -7px; width: 14px; height: 14px; margin-left: -7px; border-radius: 50%; background: var(--neon); box-shadow: 0 0 14px var(--neon); offset-path: ellipse(50% 50% at 50% 50%); animation: orbit var(--d) linear infinite; animation-play-state: var(--play, running); }
+@keyframes orbit { from { offset-distance: 0%; } to { offset-distance: 100%; } }
+.cell { position: absolute; left: 50%; top: 50%; width: calc(26% + var(--c, 0) * 40%); aspect-ratio: .86; transform: translate(-50%, -50%); border-radius: calc(50% - var(--c, 0) * 46%); background: radial-gradient(circle at 35% 30%, #6dffad, #1aa85b); color: #06110b; display: grid; padding: calc(var(--c, 0) * 7%); box-shadow: 0 0 calc(30px + var(--c, 0) * 40px) rgba(61,255,143,.45); overflow: hidden; }
+.cell .in { display: grid; grid-template-rows: auto 1fr auto auto; height: 100%; opacity: var(--c, 0); }
+.cell .tp { display: flex; justify-content: space-between; font: 600 clamp(14px, 1.8vw, 22px)/1 var(--head); }
+.cell .sy { align-self: center; text-align: center; font: 800 clamp(44px, 5.6vw, 88px)/1 var(--head); letter-spacing: -.03em; }
+.cell .nm { text-align: center; font: 700 clamp(14px, 1.6vw, 19px)/1.2 var(--body); }
+.cell .ms { text-align: center; font: 500 clamp(12px, 1.3vw, 15px)/1.4 var(--body); opacity: .75; }
+.copy .k { font: 600 12px/1 var(--head); letter-spacing: .14em; text-transform: uppercase; color: var(--neon); }
+.copy h1 { margin: 16px 0 12px; font: 800 clamp(40px, 5.4vw, 80px)/1 var(--head); letter-spacing: -.02em; }
+.copy h1 span { color: var(--neon); }
+.copy p { color: #c3d6cb; max-width: 500px; margin: 0 0 22px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 15px 22px; border-radius: 10px; background: var(--neon); color: #06110b; text-decoration: none; font: 700 16px/1 var(--body); border: 0; cursor: pointer; }
+.btn.o { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1.5px #3a5a49; }
+.btns { display: flex; flex-wrap: wrap; gap: 10px; }
+@media (max-width: 900px) { .lab { grid-template-columns: 1fr; align-content: start; gap: 6px; padding: 16px var(--gut) 80px; } .atom { width: min(80vw, 330px); } .copy h1 { font-size: 34px; margin: 8px 0 6px; } .copy p { font-size: 15.5px; margin-bottom: 14px; } }
+
+main > section:not(.hero) { position: relative; scroll-margin-top: 10px; padding: clamp(90px, 10vw, 130px) var(--gut) clamp(80px, 9vw, 110px); }
+.wrap { max-width: 1180px; margin: 0 auto; }
+.kk { font: 600 12px/1 var(--head); letter-spacing: .14em; text-transform: uppercase; color: var(--neon); }
+h2 { margin: 14px 0 14px; font: 800 clamp(30px, 4.4vw, 60px)/1.05 var(--head); letter-spacing: -.02em; }
+h2 span { color: var(--neon); }
+.lead { max-width: 680px; color: #c3d6cb; margin: 0 0 26px; }
+
+/* periodic table + equation */
+.legend { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-bottom: 14px; font-size: 14px; color: var(--mut); }
+.legend span::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; background: var(--c); }
+.ptable { display: grid; grid-template-columns: repeat(11, minmax(0, 1fr)); gap: 6px; }
+.el { position: relative; aspect-ratio: .86; padding: 6px; border: 0; border-radius: 8px; background: color-mix(in srgb, var(--c) 18%, var(--bg2)); box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--c) 55%, transparent); color: var(--ink); cursor: pointer; text-align: left; display: grid; grid-template-rows: auto 1fr auto; transition: transform .2s, background .2s, box-shadow .2s; }
+.el:hover { transform: translateY(-2px); }
+.el .n { font: 500 10px/1 var(--body); opacity: .7; }
+.el .s { align-self: center; justify-self: center; font: 800 clamp(16px, 2vw, 26px)/1 var(--head); color: var(--c); }
+.el .p { font: 600 clamp(9px, .9vw, 11.5px)/1.15 var(--body); text-align: center; opacity: .85; }
+.el.on { background: var(--c); color: #06110b; box-shadow: 0 0 18px color-mix(in srgb, var(--c) 70%, transparent); }
+.el.on .s { color: #06110b; }
+@media (max-width: 900px) { .ptable { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
+@media (max-width: 480px) { .ptable { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.eq { margin-top: 18px; padding: 20px 22px; border-radius: 14px; background: var(--bg2); box-shadow: inset 0 0 0 1px #2a4536; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 14px 24px; align-items: center; }
+.eq .f { font: 600 clamp(18px, 2.4vw, 30px)/1.3 var(--head); word-break: break-word; }
+.eq .f b { color: var(--neon); }
+.eq .f sub { font-size: .55em; }
+.eq .t { text-align: right; }
+.eq .t b { display: block; font: 800 clamp(30px, 3.6vw, 44px)/1 var(--head); color: var(--neon); }
+.eq .t small { color: var(--mut); font-size: 13.5px; }
+.eq .notes { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 8px; }
+.eq .notes span { padding: 7px 12px; border-radius: 30px; background: var(--bg3); font-size: 14px; color: var(--neon2); }
+.eq .names { grid-column: 1 / -1; color: #c3d6cb; font-size: 15px; }
+@media (max-width: 700px) { .eq { grid-template-columns: 1fr; } .eq .t { text-align: left; } }
+
+/* price columns */
+.cols { columns: 3 280px; column-gap: 18px; }
+.grp { break-inside: avoid; margin: 0 0 18px; padding: 18px 20px; border-radius: 14px; background: var(--bg2); box-shadow: inset 0 0 0 1px #2a4536; border-top: 4px solid var(--c); }
+.grp h3 { margin: 0 0 8px; font: 600 17px/1.2 var(--head); }
+.grp div { display: flex; justify-content: space-between; gap: 10px; padding: 7px 0; border-bottom: 1px solid #22392d; font-size: 15px; }
+.grp div b { white-space: nowrap; color: var(--neon2); font-weight: 500; }
+
+/* lab staff */
+.perks { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-bottom: 22px; }
+.pk { padding: 18px; border-radius: 14px; background: var(--bg2); box-shadow: inset 0 0 0 1px #2a4536; }
+.pk b { display: block; font: 600 15px/1.25 var(--head); color: var(--neon); margin-bottom: 6px; }
+.pk span { font-size: 14.5px; color: #c3d6cb; }
+@media (max-width: 900px) { .perks { grid-template-columns: 1fr 1fr; } }
+.staff { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+.sf { display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 12px; padding: 16px; border-radius: 14px; background: var(--bg2); box-shadow: inset 0 0 0 1px #2a4536; }
+.sf .e { display: grid; place-items: center; width: 52px; height: 60px; border-radius: 8px; background: var(--c); color: #06110b; font: 800 18px/1 var(--head); }
+.sf b { font: 600 15px/1.2 var(--head); }
+.sf p { margin: 4px 0 0; font-size: 14.5px; color: #c3d6cb; }
+@media (max-width: 900px) { .staff { grid-template-columns: 1fr; } }
+.shots { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; margin-top: 22px; }
+.shots figure { margin: 0; aspect-ratio: .86; border-radius: 10px; overflow: hidden; box-shadow: inset 0 0 0 2px var(--neon); }
+.shots img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 760px) { .shots { grid-template-columns: repeat(3, minmax(0, 1fr)); } .shots figure:nth-child(n+4) { display: none; } }
+
+.vis { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 26px; }
+.card { padding: 22px; border-radius: 14px; background: var(--bg2); box-shadow: inset 0 0 0 1px #2a4536; }
+.card .r { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px solid #22392d; font-size: 15.5px; }
+.card .r span { color: var(--mut); }
+.card .r b { text-align: right; font-weight: 500; }
+.live { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 6px; font-size: 14px; }
+.live i { width: 10px; height: 10px; border-radius: 50%; background: var(--c, #999); box-shadow: 0 0 8px var(--c, transparent); }
+.card .btns { margin-top: 16px; }
+.mapbox { position: relative; min-height: 420px; border-radius: 14px; overflow: hidden; box-shadow: inset 0 0 0 2px var(--neon); }
+.mapbox iframe { position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 140px); border: 0; filter: saturate(.8); }
+@media (max-width: 860px) { .vis { grid-template-columns: 1fr; } }
+footer { padding: 30px var(--gut) 100px; text-align: center; color: var(--mut); font-size: 14px; }
+footer b { display: block; font: 800 30px/1 var(--head); color: var(--neon); margin-bottom: 6px; }
+
+.motion [data-in] { opacity: 0; transform: translateY(22px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.motion [data-in].in { opacity: 1; transform: none; }
+.noimg { background: linear-gradient(135deg, #1c3226, #0e1a14); }
+.noimg img { opacity: 0; }
+</style>
+</head>
+<body data-hours='{"0":[[8,0,20,0]],"1":[[8,0,20,0]],"2":[[8,0,20,0]],"3":[[8,0,20,0]],"4":[[8,0,20,0]],"5":[[8,0,20,0]],"6":[[8,0,20,0]]}'>
+
+<nav class="mini" id="mini" aria-label="Разделы">
+  <a href="#top"><small>1</small>Le</a><a href="#formula"><small>2</small>Fo</a><a href="#prays"><small>3</small>Pr</a><a href="#laboranty"><small>4</small>Lb</a><a href="#adres"><small>5</small>Ad</a>
+</nav>
+
+<main>
+<section class="hero" id="top">
+  <div class="lab" id="lab">
+    <div class="atom" aria-hidden="true">
+      <div class="orb" style="--r:0deg"><i style="--d:3.2s"></i></div>
+      <div class="orb" style="--r:60deg"><i style="--d:4.1s"></i></div>
+      <div class="orb" style="--r:-60deg"><i style="--d:5s"></i></div>
+      <div class="cell"><div class="in"><div class="tp"><span>12</span><span>5,0</span></div><div class="sy">LeRo</div><div class="nm">Леро · салон красоты</div><div class="ms">623 оценки</div></div></div>
+    </div>
+    <div class="copy">
+      <div class="k">Саров · Курчатова, 12</div>
+      <h1>Салон красоты <span>LeRo</span></h1>
+      <p>Le от Леры, Ro от Романа. Маникюр, педикюр и всё это в 4 руки, ресницы и брови, массаж, косметология, шугаринг и стрижки. Ежедневно с 8 до 20.</p>
+      <div class="btns"><a class="btn" href="tel:+79108978701">+7 910 897-87-01</a><a class="btn o" href="#formula">Собрать формулу</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="formula">
+  <div class="wrap">
+    <span class="kk">Таблица LeRo</span>
+    <h2>Формула <span>вашего визита</span></h2>
+    <p class="lead">Нажимайте на элементы: из них сложится формула визита с ценой. Некоторые элементы вступают в выгодные реакции.</p>
+    <div class="legend"><span style="--c:var(--g1)">ногти</span><span style="--c:var(--g2)">стопы</span><span style="--c:var(--g3)">ресницы и брови</span><span style="--c:var(--g4)">лицо и тело</span><span style="--c:var(--g5)">шугаринг</span><span style="--c:var(--g6)">волосы</span></div>
+    <div class="ptable" id="pt"></div>
+    <div class="eq" aria-live="polite"><div class="f" id="ef">…</div><div class="t"><b id="et">0 ₽</b><small>по прайсу</small></div><div class="names" id="en"></div><div class="notes" id="eno"></div></div>
+  </div>
+</section>
+
+<section id="prays">
+  <div class="wrap">
+    <span class="kk">Прайс</span>
+    <h2>Все <span>изотопы</span></h2>
+    <p class="lead">Из прайса салона на Яндекс Картах. Часть цен зависит от категории мастера.</p>
+    <div class="cols">
+      <div class="grp" style="--c:var(--g1)" data-in><h3>Маникюр</h3><div><span>Без покрытия</span><b>1 300 ₽</b></div><div><span>С покрытием</span><b>1 600–2 100 ₽</b></div><div><span>ЭКО-маникюр + глянцевание</span><b>1 600 ₽</b></div><div><span>Наращивание на типсы</span><b>2 600 ₽</b></div><div><span>Наращивание акригелем</span><b>3 100 ₽</b></div><div><span>Снятие чужой работы</span><b>в подарок</b></div></div>
+      <div class="grp" style="--c:var(--g2)" data-in><h3>Педикюр и SPA</h3><div><span>Полный без покрытия</span><b>1 900 ₽</b></div><div><span>Полный с гель-лаком</span><b>2 600 ₽</b></div><div><span>Педикюр плёнками</span><b>2 600 ₽</b></div><div><span>Тайское спа для стоп</span><b>1 900 ₽</b></div><div><span>Маникюр + педикюр в 4 руки</span><b>3 200 ₽</b></div><div><span>SPA для рук или ног к услуге</span><b>700 ₽</b></div></div>
+      <div class="grp" style="--c:var(--g3)" data-in><h3>Ресницы и брови</h3><div><span>Наращивание, классика</span><b>1 800–2 500 ₽</b></div><div><span>Двойной объём</span><b>2 500–2 700 ₽</b></div><div><span>Тройной и 4–5D</span><b>2 800–2 900 ₽</b></div><div><span>Ламинирование ресниц</span><b>1 500 ₽</b></div><div><span>Коррекция и окрашивание бровей</span><b>1 400 ₽</b></div><div><span>Долговременная укладка бровей</span><b>1 500 ₽</b></div></div>
+      <div class="grp" style="--c:var(--g4)" data-in><h3>Массаж</h3><div><span>«Гавайский», 1 час</span><b>3 300 ₽</b></div><div><span>Всё тело, 1,5 часа</span><b>4 550 ₽</b></div><div><span>Спина, ручной + вакуум</span><b>2 400 ₽</b></div><div><span>ШВЗ + голова</span><b>1 650 ₽</b></div><div><span>Гуаша для спины</span><b>1 850 ₽</b></div></div>
+      <div class="grp" style="--c:var(--g4)" data-in><h3>Лицо и тело</h3><div><span>Французский скульптурный массаж + маска</span><b>2 200 ₽</b></div><div><span>Сахарный лифтинг лица</span><b>2 200 ₽</b></div><div><span>Карбоновый пилинг</span><b>1 700 ₽</b></div><div><span>Карбокситерапия</span><b>1 400 ₽</b></div><div><span>Фито-солевое обёртывание</span><b>2 800 ₽</b></div></div>
+      <div class="grp" style="--c:var(--g5)" data-in><h3>Шугаринг и воск</h3><div><span>Подмышки</span><b>550 ₽</b></div><div><span>Глубокое бикини</span><b>1 800 ₽</b></div><div><span>Ноги полностью</span><b>1 900 ₽</b></div><div><span>Голени + подмышки + бикини, сахар</span><b>3 300 ₽</b></div><div><span>Руки, ноги и подмышки, сахар</span><b>3 600 ₽</b></div></div>
+      <div class="grp" style="--c:var(--g6)" data-in><h3>Волосы и мужской зал</h3><div><span>Женская стрижка</span><b>1 200–1 500 ₽</b></div><div><span>Мужская стрижка</span><b>700–900 ₽</b></div><div><span>Руки и ноги в 4 руки для мужчин</span><b>3 200 ₽</b></div><div><span>Укладки, вечерние и свадебные</span><b>по записи</b></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="laboranty">
+  <div class="wrap">
+    <span class="kk">Лаборатория</span>
+    <h2>Лаборанты <span>красоты</span></h2>
+    <p class="lead">5,0 на Яндекс Картах, 623 оценки. Атмосферу хвалят в 175 отзывах из 175, компетентность в 141 из 141, время ожидания в 77 из 78.</p>
+    <div class="perks">
+      <div class="pk" data-in><b>Сменная обувь</b><span>уличную можно сменить на мягкую</span></div>
+      <div class="pk" data-in><b>Напитки</b><span>кофе и чай с конфеткой на выбор</span></div>
+      <div class="pk" data-in><b>Кнопка вызова</b><span>персонала, если что-то нужно</span></div>
+      <div class="pk" data-in><b>Отдельный зал</b><span>для педикюра с удобными креслами</span></div>
+    </div>
+    <div class="staff">
+      <div class="sf" data-in><div class="e" style="--c:var(--g1)">Да</div><div><b>Дарья, маникюр</b><p>«Отнеслась с таким вниманием и аккуратностью, что результат превзошёл все ожидания».</p></div></div>
+      <div class="sf" data-in><div class="e" style="--c:var(--g1)">Ев</div><div><b>Ева, маникюр</b><p>«Работает очень быстро, но аккуратно. Скорость и отличный результат».</p></div></div>
+      <div class="sf" data-in><div class="e" style="--c:var(--g3)">Ан</div><div><b>Анна, ресницы и брови</b><p>«За 1 час наводит красоту, с которой долго не расстаёшься».</p></div></div>
+      <div class="sf" data-in><div class="e" style="--c:var(--g6)">Ал</div><div><b>Алина, стрижки и педикюр</b><p>«Ни единого подёргивания волос, в итоге прекрасный результат».</p></div></div>
+      <div class="sf" data-in><div class="e" style="--c:var(--g4)">На</div><div><b>Наталья, косметолог</b><p>«Внимательно отнеслась к моей проблеме. Очень понравился массаж и маски после него».</p></div></div>
+      <div class="sf" data-in><div class="e" style="--c:var(--g2)">Та</div><div><b>Татьяна, педикюр</b><p>«Для педикюра отдельный зал, удобное кресло, расслабляющая музыка».</p></div></div>
+    </div>
+    <div class="shots">
+      <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/15074774/2a00000195adf3084e57e94af64f9b582347/L" alt="Мастер на фоне неоновой вывески LeRo" loading="lazy"></figure>
+      <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/15037708/2a00000195adf2ee6aa1d6dbc037b29ceaf5/L" alt="Маникюр с сердечками" loading="lazy"></figure>
+      <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/14337779/2a00000195adf2e74a9d54a09580c6035595/L" alt="Красный маникюр" loading="lazy"></figure>
+      <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/15032884/2a00000195adf30b7eb4b46fae3b760b413a/L" alt="Педикюр с рисунком" loading="lazy"></figure>
+      <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/14272474/2a00000195adf2f92d4be01dfc76a6239ddd/L" alt="Нюдовый маникюр" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="adres">
+  <div class="wrap vis">
+    <div>
+      <span class="kk">Координаты</span>
+      <h2>Курчатова, <span>12</span></h2>
+      <div class="card">
+        <div class="live" data-live><i></i><span data-status>…</span></div>
+        <div class="r"><span>Адрес</span><b>Саров, ул. Курчатова, 12</b></div>
+        <div class="r"><span>Режим</span><b>ежедневно 8:00–20:00</b></div>
+        <div class="r"><span>Телефоны</span><b><a href="tel:+79108978701">+7 910 897-87-01</a><br><a href="tel:+78313064140">+7 (83130) 6-41-40</a></b></div>
+        <div class="r"><span>Парковка</span><b>есть</b></div>
+        <div class="btns"><a class="btn" href="tel:+79108978701">Позвонить</a><a class="btn o" href="https://wa.me/79108978701" target="_blank" rel="noopener">WhatsApp</a><a class="btn o" href="https://vk.ru/lero_beauty_comfort" target="_blank" rel="noopener">ВКонтакте</a></div>
+      </div>
+    </div>
+    <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=43.331249%2C54.944802&amp;z=16&amp;pt=43.331249%2C54.944802%2Cpm2gnm&amp;l=map" title="LeRo на Яндекс Картах" loading="lazy" allowfullscreen></iframe></div>
+  </div>
+</section>
+</main>
+
+<footer><b>LeRo</b>салон красоты · Саров, ул. Курчатова, 12 · +7 910 897-87-01</footer>
+
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  var hero = document.querySelector('.hero'), lab = document.getElementById('lab');
+  RT.onScroll(function () {
+    var p = RT.motion ? RT.progress(hero) : 1, c = RT.ease(RT.clamp((p - .1) / .5));
+    lab.style.setProperty('--c', c); lab.style.setProperty('--play', c > .95 || !RT.motion ? 'paused' : 'running');
+  });
+
+  var secs = document.querySelectorAll('main > section'), links = document.querySelectorAll('.mini a');
+  RT.onScroll(function () { var cur = 0; secs.forEach(function (s, i) { if (s.getBoundingClientRect().top < innerHeight * .45) cur = i; }); links.forEach(function (a, i) { a.classList.toggle('on', i === cur); }); });
+
+  // periodic table of services: [symbol, name, price, group]
+  var E = [
+    ['Ma', 'Маникюр с покрытием', 1800, 1], ['Mb', 'Маникюр без покрытия', 1300, 1], ['Ec', 'ЭКО-маникюр', 1600, 1], ['Na', 'Наращивание ногтей', 2600, 1],
+    ['Pe', 'Педикюр с гель-лаком', 2600, 2], ['Pf', 'Педикюр без покрытия', 1900, 2], ['Ts', 'Тайское спа для стоп', 1900, 2], ['Sa', 'SPA для рук или ног', 1300, 2],
+    ['Re', 'Ресницы, классика', 1800, 3], ['Rv', 'Ресницы, 2D', 2500, 3], ['Lr', 'Ламинирование ресниц', 1500, 3], ['Br', 'Брови: коррекция и цвет', 1400, 3], ['Bu', 'Укладка бровей', 1500, 3],
+    ['Fm', 'Французский массаж лица', 2200, 4], ['Sl', 'Сахарный лифтинг лица', 2200, 4], ['Cp', 'Карбоновый пилинг', 1700, 4], ['Ha', '«Гавайский» массаж', 3300, 4], ['Sp', 'Спина: ручной + вакуум', 2400, 4], ['Fs', 'Фито-солевое обёртывание', 2800, 4],
+    ['Sh', 'Шугаринг: голени, подмышки, бикини', 3300, 5], ['Ax', 'Шугаринг подмышек', 550, 5],
+    ['Hc', 'Женская стрижка', 1200, 6]
+  ];
+  var C = ['', 'var(--g1)', 'var(--g2)', 'var(--g3)', 'var(--g4)', 'var(--g5)', 'var(--g6)'];
+  var pt = document.getElementById('pt'), sel = ['Mb', 'Pf'];
+  E.forEach(function (e, i) {
+    var b = document.createElement('button'); b.type = 'button'; b.className = 'el'; b.style.setProperty('--c', C[e[3]]); b.dataset.s = e[0];
+    b.innerHTML = '<span class="n">' + (i + 1) + '</span><span class="s">' + e[0] + '</span><span class="p">' + RT.money(e[2]) + '</span>';
+    b.title = e[1];
+    b.addEventListener('click', function () { var k = sel.indexOf(e[0]); if (k >= 0) sel.splice(k, 1); else sel.push(e[0]); react(); });
+    pt.appendChild(b);
+  });
+  var BY = {}; E.forEach(function (e) { BY[e[0]] = e; });
+  function react() {
+    pt.querySelectorAll('.el').forEach(function (b) { b.classList.toggle('on', sel.indexOf(b.dataset.s) >= 0); });
+    var notes = [], price = {};
+    sel.forEach(function (s) { price[s] = BY[s][2]; });
+    var hands = sel.some(function (s) { return /^(Ma|Mb|Ec|Na)$/.test(s); }), feet = sel.some(function (s) { return /^(Pe|Pf)$/.test(s); });
+    if (sel.indexOf('Sa') >= 0 && (hands || feet)) { price.Sa = 700; notes.push('катализатор: SPA к маникюру или педикюру всего 700 ₽'); }
+    if (sel.indexOf('Mb') >= 0 && sel.indexOf('Pf') >= 0) notes.push('реакция «в 4 руки»: два мастера одновременно, 3 200 ₽ за оба');
+    else if (hands && feet) notes.push('можно в 4 руки: маникюр и педикюр одновременно');
+    if (sel.indexOf('Ma') >= 0 || sel.indexOf('Ec') >= 0) notes.push('снятие работы другого мастера в подарок');
+    var total = sel.reduce(function (s, k) { return s + price[k]; }, 0);
+    var counts = {}; sel.forEach(function (s) { counts[s] = (counts[s] || 0) + 1; });
+    document.getElementById('ef').innerHTML = sel.length ? sel.map(function (s) { return s; }).join(' + ') + ' → <b>LeRo' + (sel.length > 1 ? '<sub>' + sel.length + '</sub>' : '') + '</b>' : 'выберите элементы ↑';
+    document.getElementById('et').textContent = RT.money(total);
+    document.getElementById('en').textContent = sel.map(function (s) { return BY[s][1]; }).join(' · ');
+    document.getElementById('eno').innerHTML = notes.map(function (n) { return '<span>' + n + '</span>'; }).join('');
+  }
+  react();
+  window.__eq = function (a) { sel = a.slice(); react(); };
+
+  window.REEL = {
+    hero: '.hero', heroAt: .85, feature: '#formula', featureOff: 20, featureM: '.eq', featureOffM: -60, prices: '#prays', pricesOff: 30,
+    demo: [function () { __eq(['Mb', 'Pf']); }, function () { __eq(['Ma', 'Sa']); }, function () { __eq(['Re', 'Br', 'Fm']); }, function () { __eq(['Ma', 'Pe', 'Lr', 'Bu', 'Ha']); }],
+    holds: [30, 30, 30, 40]
+  };
+})();
+</script>
+</body>
+</html>

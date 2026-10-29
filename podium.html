@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Подиум — студия красоты в Бору, Маяковского, 1А</title>
+<meta name="description" content="Студия красоты «Подиум» в Бору, ул. Маяковского, 1А: стрижки от 1 000 ₽, окрашивание, маникюр от 1 100 ₽, педикюр и SPA-педикюр, брови, макияж, вечерние и свадебные образы, косметология и коррекция фигуры. Рейтинг 5,0, 458 оценок.">
+<meta property="og:title" content="Подиум — студия красоты, Бор">
+<meta property="og:description" content="Соберите свой образ: волосы, руки, лицо, стопы. Маяковского, 1А. +7 920 006-65-88">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/15286626/2a00000197ef2fae461af07d4ca4a62d2e67/XXXL">
+<meta name="theme-color" content="#0B0A09">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&amp;family=Jost:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BeautySalon","name":"Подиум","telephone":"+7 920 006-65-88","address":{"@type":"PostalAddress","streetAddress":"ул. Маяковского, 1А","addressLocality":"Бор","addressRegion":"Нижегородская область","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":56.333827,"longitude":44.10799},"openingHours":["Mo-Fr 10:00-20:00","Sa-Su 10:00-18:00"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5","ratingCount":"458"}}</script>
+<style>
+:root {
+  --bk: #0B0A09; --bk2: #161412; --bk3: #221F1B; --wh: #F7F3EC; --gold: #D4B26A; --gold2: #F1DCA2; --mut: #A39A8E; --mut2: #6F675D;
+  --head: 'Playfair Display', Georgia, serif; --body: 'Jost', Arial, sans-serif;
+  --gut: clamp(16px, 4vw, 56px); --ease: cubic-bezier(.2, .75, .2, 1);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bk); color: var(--wh); font: 400 17px/1.65 var(--body); overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+
+/* nav: stage announcer "now on the runway" */
+.now { position: fixed; left: 14px; top: 14px; z-index: 50; display: flex; align-items: center; gap: 4px; padding: 6px; border-radius: 40px; background: rgba(11,10,9,.82); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); box-shadow: inset 0 0 0 1px #3a342c; }
+.now button { width: 34px; height: 34px; border: 0; border-radius: 50%; background: var(--bk3); color: var(--gold2); font: 500 16px/1 var(--body); cursor: pointer; }
+.now .lbl { display: flex; align-items: center; gap: 8px; padding: 0 10px; font: 500 12px/1 var(--body); letter-spacing: .2em; text-transform: uppercase; color: var(--mut); white-space: nowrap; }
+.now .lbl i { width: 8px; height: 8px; border-radius: 50%; background: #e0473b; box-shadow: 0 0 10px #e0473b; animation: rec 1.4s infinite; }
+@keyframes rec { 50% { opacity: .3; } }
+.now .lbl b { color: var(--wh); font-weight: 600; min-width: 64px; }
+.call { position: fixed; right: 14px; top: 14px; z-index: 50; padding: 12px 16px; border-radius: 40px; background: var(--gold); color: #1a1408; text-decoration: none; font: 600 14px/1 var(--body); }
+@media (max-width: 640px) { .now { top: auto; bottom: 12px; left: 50%; transform: translateX(-50%); } .call { padding: 10px 13px; font-size: 13px; } }
+
+/* hero: walking down the runway */
+.hero { position: relative; height: 260vh; }
+.show { position: sticky; top: 0; height: 100vh; min-height: 620px; overflow: hidden; perspective: 600px; perspective-origin: 50% 38%; background: radial-gradient(900px 500px at 50% 30%, #2a241c, var(--bk) 70%); }
+.floor { position: absolute; left: 50%; top: 38%; width: 46vw; min-width: 300px; height: 300vh; transform-origin: 50% 0; transform: translateX(-50%) rotateX(78deg); background:
+  linear-gradient(90deg, transparent 0 2%, rgba(241,220,162,.75) 2% 2.6%, transparent 2.6% 97.4%, rgba(241,220,162,.75) 97.4% 98%, transparent 98%),
+  repeating-linear-gradient(180deg, rgba(255,255,255,.07) 0 2px, transparent 2px 120px),
+  linear-gradient(#1d1a16, #3a332a);
+  background-position: 0 0, 0 calc(var(--p, 0) * 2400px), 0 0; }
+.lights { position: absolute; inset: 0; transform-origin: 50% 0; }
+.lamp { position: absolute; width: 10px; height: 10px; border-radius: 50%; background: var(--gold2); box-shadow: 0 0 18px 6px rgba(241,220,162,.6); }
+.beam { position: absolute; top: -10%; width: 34vw; height: 120%; background: linear-gradient(rgba(241,220,162,.18), transparent 80%); clip-path: polygon(45% 0, 55% 0, 100% 100%, 0 100%); mix-blend-mode: screen; transform-origin: 50% 0; }
+.beam.l { left: 4%; transform: rotate(calc(-18deg + var(--p, 0) * 22deg)); }
+.beam.r { right: 4%; transform: rotate(calc(18deg - var(--p, 0) * 22deg)); }
+.logo { position: absolute; left: 0; right: 0; top: 13%; text-align: center; transform: scale(calc(.8 + var(--p, 0) * .5)); opacity: calc(1 - var(--p, 0) * 1.3); }
+.logo b { display: block; font: 300 clamp(54px, 11vw, 170px)/1 var(--body); letter-spacing: .28em; margin-right: -.28em; color: var(--gold2); text-shadow: 0 0 40px rgba(212,178,106,.35); }
+.logo span { display: block; margin-top: 10px; font: 500 13px/1 var(--body); letter-spacing: .5em; text-transform: uppercase; color: var(--mut); }
+.finale { position: absolute; left: 50%; bottom: 7vh; width: min(880px, 92vw); transform: translateX(-50%) translateY(calc((1 - var(--f, 0)) * 40px)) scale(calc(.92 + var(--f, 0) * .08)); opacity: var(--f, 0); text-align: center; }
+.finale figure { margin: 0; border-radius: 6px; overflow: hidden; aspect-ratio: 16/8; box-shadow: 0 0 0 1px #3a342c, 0 40px 80px -30px #000; }
+.finale img { width: 100%; height: 100%; object-fit: cover; object-position: center 35%; }
+.finale h1 { margin: 18px 0 6px; font: 400 clamp(30px, 4vw, 54px)/1.1 var(--head); }
+.finale h1 em { color: var(--gold2); }
+.finale p { margin: 0 auto 16px; max-width: 560px; color: #cfc6b8; font-size: 16px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 15px 22px; border-radius: 40px; background: var(--gold); color: #1a1408; text-decoration: none; font: 600 15px/1 var(--body); letter-spacing: .02em; border: 0; cursor: pointer; }
+.btn.o { background: transparent; color: var(--wh); box-shadow: inset 0 0 0 1px #6f675d; }
+.btns { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.hint { position: absolute; left: 0; right: 0; bottom: 5vh; text-align: center; font: 500 12px/1 var(--body); letter-spacing: .3em; text-transform: uppercase; color: var(--mut2); opacity: calc(1 - var(--p, 0) * 4); }
+@media (max-width: 640px) { .finale { bottom: 86px; } .finale p { font-size: 15px; } .finale figure { aspect-ratio: 4/3; } }
+
+main > section:not(.hero) { position: relative; scroll-margin-top: 10px; padding: clamp(100px, 11vw, 140px) var(--gut) clamp(70px, 8vw, 100px); }
+.wrap { max-width: 1160px; margin: 0 auto; }
+.kk { font: 500 12px/1 var(--body); letter-spacing: .32em; text-transform: uppercase; color: var(--gold); }
+h2 { margin: 14px 0 14px; font: 400 clamp(36px, 5vw, 70px)/1.04 var(--head); }
+h2 em { color: var(--gold2); }
+.lead { max-width: 640px; color: #c3baad; margin: 0 0 30px; }
+
+/* look builder */
+.look { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(20px, 4vw, 56px); align-items: center; }
+.fig { position: relative; border-radius: 6px; background: linear-gradient(#1a1714, #0f0d0b); box-shadow: inset 0 0 0 1px #2c2721; padding: 10px; }
+.fig svg { width: 100%; height: auto; display: block; }
+.zone { fill: none; stroke: #6f675d; stroke-width: 2; transition: stroke .3s, fill .3s, filter .3s; }
+.zone.on { stroke: var(--gold2); fill: rgba(212,178,106,.22); filter: drop-shadow(0 0 8px rgba(241,220,162,.6)); }
+.callout { font: 500 13px/1 'Jost', sans-serif; fill: var(--gold2); opacity: 0; transition: opacity .3s; }
+.callout.on { opacity: 1; }
+.cl { stroke: var(--gold); stroke-width: 1; opacity: 0; transition: opacity .3s; }
+.cl.on { opacity: 1; }
+.pick h3 { margin: 18px 0 10px; font: 500 12px/1 var(--body); letter-spacing: .24em; text-transform: uppercase; color: var(--mut); }
+.pick h3:first-child { margin-top: 0; }
+.row { display: flex; flex-wrap: wrap; gap: 8px; }
+.row button { padding: 10px 14px; border-radius: 30px; border: 0; background: var(--bk3); color: var(--wh); font: 400 15px/1.15 var(--body); cursor: pointer; box-shadow: inset 0 0 0 1px #3a342c; }
+.row button small { color: var(--mut); margin-left: 6px; }
+.row button.on { background: var(--gold); color: #1a1408; box-shadow: none; }
+.row button.on small { color: #4a3a18; }
+.card { margin-top: 22px; padding: 20px 22px; border-radius: 6px; background: var(--wh); color: var(--bk); }
+.card .hd { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; border-bottom: 1px solid #d9d0c2; padding-bottom: 10px; }
+.card .hd b { font: 600 22px/1.1 var(--head); }
+.card .hd span { font: 500 12px/1 var(--body); letter-spacing: .2em; text-transform: uppercase; color: #8a8072; }
+.card ul { list-style: none; margin: 10px 0 0; padding: 0; }
+.card li { display: flex; justify-content: space-between; gap: 10px; padding: 6px 0; font-size: 15.5px; }
+.card li em { font-style: normal; font-weight: 600; white-space: nowrap; }
+.card .tot { display: flex; justify-content: space-between; align-items: baseline; margin-top: 8px; padding-top: 10px; border-top: 1px solid #d9d0c2; }
+.card .tot b { font: 600 30px/1 var(--head); }
+@media (max-width: 900px) { .look { grid-template-columns: 1fr; } .fig { max-width: 250px; margin: 0 auto; width: 100%; } }
+
+/* programme */
+.prog { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.lk { padding: 22px 20px; border-radius: 6px; background: var(--bk2); box-shadow: inset 0 0 0 1px #2c2721; }
+.lk .n { font: italic 400 15px/1 var(--head); color: var(--gold); }
+.lk h3 { margin: 6px 0 12px; font: 400 26px/1.1 var(--head); }
+.lk div { display: flex; justify-content: space-between; gap: 10px; padding: 8px 0; border-bottom: 1px solid #2c2721; font-size: 15px; }
+.lk div span { color: #d6cdbf; }
+.lk div b { font-weight: 500; white-space: nowrap; color: var(--gold2); }
+@media (max-width: 1000px) { .prog { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 620px) { .prog { grid-template-columns: 1fr; } }
+.body-spa { margin-top: 16px; padding: 18px 20px; border-radius: 6px; background: var(--bk2); box-shadow: inset 0 0 0 1px #2c2721; color: #c3baad; font-size: 15px; }
+.body-spa b { color: var(--wh); font-weight: 500; }
+
+/* team */
+.team { display: grid; grid-template-columns: 1.6fr 1fr; gap: 12px; }
+.team figure { margin: 0; border-radius: 6px; overflow: hidden; position: relative; }
+.team figure img { width: 100%; height: 100%; object-fit: cover; }
+.team .big { aspect-ratio: 16/10; }
+.team .side { display: grid; grid-template-rows: 1fr 1fr; gap: 12px; }
+.team figcaption { position: absolute; left: 12px; bottom: 12px; padding: 6px 12px; border-radius: 30px; background: rgba(11,10,9,.8); font: 500 12px/1 var(--body); letter-spacing: .14em; text-transform: uppercase; }
+@media (max-width: 760px) { .team { grid-template-columns: 1fr; } .team .side { grid-template-columns: 1fr 1fr; grid-template-rows: 180px; } }
+.revs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 26px; }
+.rv { padding: 20px; border-radius: 6px; border-top: 2px solid var(--gold); background: var(--bk2); }
+.rv b { display: block; font: italic 400 20px/1.1 var(--head); color: var(--gold2); margin-bottom: 8px; }
+.rv p { margin: 0; font-size: 15px; color: #d6cdbf; }
+@media (max-width: 900px) { .revs { grid-template-columns: 1fr; } }
+
+.vis { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 26px; }
+.bs { padding: 22px; border-radius: 6px; background: var(--bk2); box-shadow: inset 0 0 0 1px #2c2721; }
+.bs .r { display: flex; justify-content: space-between; gap: 12px; padding: 11px 0; border-bottom: 1px solid #2c2721; font-size: 15.5px; }
+.bs .r span { color: var(--mut); }
+.bs .r b { text-align: right; font-weight: 500; }
+.live { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 6px; font-size: 14px; }
+.live i { width: 10px; height: 10px; border-radius: 50%; background: var(--c, #999); }
+.bs .btns { justify-content: flex-start; margin-top: 16px; }
+.mapbox { position: relative; min-height: 420px; border-radius: 6px; overflow: hidden; }
+.mapbox iframe { position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 140px); border: 0; filter: grayscale(.6) sepia(.15); }
+@media (max-width: 860px) { .vis { grid-template-columns: 1fr; } }
+footer { padding: 30px var(--gut) 100px; text-align: center; color: var(--mut); font-size: 14px; }
+footer b { display: block; font: 300 30px/1 var(--body); letter-spacing: .3em; color: var(--gold2); margin-bottom: 8px; }
+
+.motion [data-in] { opacity: 0; transform: translateY(24px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.motion [data-in].in { opacity: 1; transform: none; }
+.noimg { background: linear-gradient(135deg, #2a241c, #0b0a09); }
+.noimg img { opacity: 0; }
+</style>
+</head>
+<body data-hours='{"0":[[10,0,18,0]],"1":[[10,0,20,0]],"2":[[10,0,20,0]],"3":[[10,0,20,0]],"4":[[10,0,20,0]],"5":[[10,0,20,0]],"6":[[10,0,18,0]]}'>
+
+<div class="now" id="now"><button type="button" id="prev" aria-label="Предыдущий раздел">‹</button><span class="lbl"><i></i>сейчас: <b id="nowl">показ</b></span><button type="button" id="next" aria-label="Следующий раздел">›</button></div>
+<a class="call" href="tel:+79200066588">Записаться</a>
+
+<main>
+<section class="hero" id="top" data-name="показ">
+  <div class="show" id="show">
+    <div class="beam l" aria-hidden="true"></div><div class="beam r" aria-hidden="true"></div>
+    <div class="floor" aria-hidden="true"></div>
+    <div class="logo" aria-hidden="true"><b>PODIUM</b><span>студия красоты · Бор</span></div>
+    <div class="hint">выход начинается ↓</div>
+    <div class="finale">
+      <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/15286626/2a00000197ef2fae461af07d4ca4a62d2e67/XXL" alt="Команда студии Подиум у входа"></figure>
+      <h1>Студия красоты <em>«Подиум»</em></h1>
+      <p>Волосы, ногти, брови, макияж, вечерние и свадебные образы, косметология и коррекция фигуры. Бор, Маяковского, 1А.</p>
+      <div class="btns"><a class="btn" href="tel:+79200066588">+7 920 006-65-88</a><a class="btn o" href="#obraz">Собрать образ</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="obraz" data-name="образ">
+  <div class="wrap look">
+    <div class="fig" data-in>
+      <svg viewBox="0 0 300 520" aria-label="Эскиз образа">
+        <g stroke="#3a342c" stroke-width="1"><line x1="150" y1="10" x2="150" y2="510" stroke-dasharray="3 6"/></g>
+        <path class="zone" id="z-hair" d="M120 70 C112 30 188 30 180 70 C192 92 190 128 178 150 C176 120 172 98 162 88 C150 96 136 96 126 88 C124 108 122 128 120 150 C108 126 108 92 120 70 Z"/>
+        <path class="zone" id="z-face" d="M128 86 C128 70 172 70 172 86 L172 108 C172 126 160 136 150 136 C140 136 128 126 128 108 Z"/>
+        <path d="M142 136 L142 150 L158 150 L158 136" fill="none" stroke="#6f675d" stroke-width="2"/>
+        <path d="M118 158 C130 150 170 150 182 158 L192 250 L176 260 L186 400 L114 400 L124 260 L108 250 Z" fill="none" stroke="#6f675d" stroke-width="2"/>
+        <path d="M118 160 L92 250 L84 300" fill="none" stroke="#6f675d" stroke-width="2"/>
+        <path d="M182 160 L208 250 L216 300" fill="none" stroke="#6f675d" stroke-width="2"/>
+        <path class="zone" id="z-hl" d="M76 300 C72 312 78 326 86 326 C94 326 96 312 92 300 Z"/>
+        <path class="zone" id="z-hr" d="M208 300 C204 312 206 326 214 326 C222 326 228 312 224 300 Z"/>
+        <path d="M134 400 L132 482 M166 400 L168 482" fill="none" stroke="#6f675d" stroke-width="2"/>
+        <path class="zone" id="z-fl" d="M120 482 L134 482 L136 496 L116 496 Z"/>
+        <path class="zone" id="z-fr" d="M166 482 L180 482 L184 496 L164 496 Z"/>
+        <line class="cl" id="c-hair" x1="182" y1="60" x2="240" y2="40"/><text class="callout" id="t-hair" x="242" y="44">волосы</text>
+        <line class="cl" id="c-face" x1="128" y1="100" x2="60" y2="96"/><text class="callout" id="t-face" x="14" y="100">лицо</text>
+        <line class="cl" id="c-hands" x1="224" y1="312" x2="260" y2="300"/><text class="callout" id="t-hands" x="240" y="292">руки</text>
+        <line class="cl" id="c-feet" x1="116" y1="490" x2="60" y2="470"/><text class="callout" id="t-feet" x="16" y="466">стопы</text>
+      </svg>
+    </div>
+    <div>
+      <span class="kk">Выход № <span id="ln">01</span></span>
+      <h2>Соберите <em>свой образ</em></h2>
+      <div class="pick">
+        <h3>Повод</h3><div class="row" id="ev"></div>
+        <h3>Волосы</h3><div class="row" id="hair"></div>
+        <h3>Лицо</h3><div class="row" id="face"></div>
+        <h3>Руки</h3><div class="row" id="hands"></div>
+        <h3>Стопы</h3><div class="row" id="feet"></div>
+      </div>
+      <div class="card" aria-live="polite">
+        <div class="hd"><b id="lt">…</b><span>карта образа</span></div>
+        <ul id="ll"></ul>
+        <div class="tot"><span>По прайсу студии</span><b id="lsum">0 ₽</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="programma" data-name="прайс">
+  <div class="wrap">
+    <span class="kk">Программа показа</span>
+    <h2>Цены <em>по выходам</em></h2>
+    <p class="lead">Из прайса студии на Яндекс Картах. Женская стрижка от 1 000 ₽, мужская от 1 500 ₽.</p>
+    <div class="prog">
+      <div class="lk" data-in><div class="n">look 01</div><h3>Волосы</h3><div><span>Стрижки</span><b>от 1 000 ₽</b></div><div><span>Окрашивание</span><b>3 000 ₽</b></div><div><span>Корни</span><b>3 200 ₽</b></div><div><span>В один тон</span><b>4 000 ₽</b></div><div><span>Тонирование</span><b>4 000 ₽</b></div><div><span>Яркое для детей</span><b>4 000 ₽</b></div><div><span>Сложное окрашивание</span><b>9 000 ₽</b></div></div>
+      <div class="lk" data-in><div class="n">look 02</div><h3>Руки</h3><div><span>Маникюр без покрытия</span><b>1 100 ₽</b></div><div><span>Маникюр + гель-лак</span><b>2 000 ₽</b></div><div><span>Наращивание</span><b>3 000 ₽</b></div><div><span>Брови</span><b>800 ₽</b></div></div>
+      <div class="lk" data-in><div class="n">look 03</div><h3>Стопы</h3><div><span>Педикюр</span><b>2 000 ₽</b></div><div><span>SMART + гель-лак</span><b>2 500 ₽</b></div><div><span>Golden Trace + гель-лак</span><b>3 100 ₽</b></div><div><span>SPA-педикюр S</span><b>2 500 ₽</b></div><div><span>SPA-педикюр M</span><b>3 500 ₽</b></div><div><span>SPA-педикюр L</span><b>4 000 ₽</b></div></div>
+      <div class="lk" data-in><div class="n">look 04</div><h3>Образ</h3><div><span>Вечерняя причёска</span><b>2 500 ₽</b></div><div><span>Образы</span><b>2 500 ₽</b></div><div><span>Макияж</span><b>3 500 ₽</b></div><div><span>Свадебный образ</span><b>9 000 ₽</b></div></div>
+    </div>
+    <div class="body-spa" data-in><b>Body &amp; spa:</b> коррекция фигуры, LPG, RF-лифтинг, микротоки, ультразвук, массаж лица, уход за телом. Цены уточняйте у администратора.</div>
+  </div>
+</section>
+
+<section id="komanda" data-name="команда">
+  <div class="wrap">
+    <span class="kk">Команда</span>
+    <h2>Финальный <em>выход</em></h2>
+    <p class="lead">5,0 на Яндекс Картах, 458 оценок. Атмосферу хвалят в 115 отзывах из 115, педикюр в 30 из 30, интерьер в 34 из 34.</p>
+    <div class="team">
+      <figure class="big" data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/20410725/2a0000019e736523b268d409c2fd261b71be/XL" alt="Мастера студии Подиум" loading="lazy"><figcaption>мастера</figcaption></figure>
+      <div class="side">
+        <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/16609617/2a00000197ef2fe006891ab3a739c61a9499/L" alt="Вечерняя причёска с локонами" loading="lazy"><figcaption>вечерний образ</figcaption></figure>
+        <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/19532714/2a0000019db6dcb3669633ac273c9332bec4/L" alt="Маникюр с градиентом" loading="lazy"><figcaption>маникюр</figcaption></figure>
+      </div>
+    </div>
+    <div class="revs">
+      <div class="rv" data-in><b>Любовь, маникюр</b><p>«Всегда прихожу с проблемными ногтями, а она делает из них конфетку. Атмосфера 10/10, сервис 10/10, маникюр 100/10».</p></div>
+      <div class="rv" data-in><b>Ирина, стрижки</b><p>«Помогла подобрать стрижку под мой тип волос и форму лица и дала много советов по укладке и уходу».</p></div>
+      <div class="rv" data-in><b>Татьяна, стрижка и цвет</b><p>«Уже несколько лет хожу в эту студию. Была на стрижке и окрашивании, результат превзошёл ожидания».</p></div>
+      <div class="rv" data-in><b>Диана, маникюр</b><p>«Хожу с маникюром по 4 недели, отслоек нет, всё чётко, ровно, качественно».</p></div>
+      <div class="rv" data-in><b>Светлана, маникюр</b><p>«Покрытие держится отлично, без сколов и трещин, а цвет подошёл идеально».</p></div>
+      <div class="rv" data-in><b>Администраторы</b><p>«Девочки-администраторы приветливые, помогут найти компромисс по времени и дате записи».</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="adres" data-name="адрес">
+  <div class="wrap vis">
+    <div>
+      <span class="kk">Бэкстейдж</span>
+      <h2>Маяковского, <em>1А</em></h2>
+      <div class="bs">
+        <div class="live" data-live><i></i><span data-status>…</span></div>
+        <div class="r"><span>Адрес</span><b>Бор, ул. Маяковского, 1А</b></div>
+        <div class="r"><span>Будни</span><b>10:00–20:00</b></div>
+        <div class="r"><span>Выходные</span><b>10:00–18:00</b></div>
+        <div class="r"><span>Телефон</span><b><a href="tel:+79200066588">+7 920 006-65-88</a></b></div>
+        <div class="r"><span>Парковка</span><b>есть, у салона</b></div>
+        <div class="btns">
+          <a class="btn" href="tel:+79200066588">Позвонить</a>
+          <a class="btn o" href="https://wa.me/79200066588" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn o" href="https://t.me/+79200066588" target="_blank" rel="noopener">Telegram</a>
+          <a class="btn o" href="https://vk.ru/id362654298" target="_blank" rel="noopener">ВКонтакте</a>
+        </div>
+      </div>
+    </div>
+    <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=44.10799%2C56.333827&amp;z=16&amp;pt=44.10799%2C56.333827%2Cpm2dgm&amp;l=map" title="Студия Подиум на Яндекс Картах" loading="lazy" allowfullscreen></iframe></div>
+  </div>
+</section>
+</main>
+
+<footer><b>PODIUM</b>студия красоты · Бор, ул. Маяковского, 1А · +7 920 006-65-88</footer>
+
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  var hero = document.querySelector('.hero'), show = document.getElementById('show');
+  RT.onScroll(function () {
+    var p = RT.motion ? RT.progress(hero) : 1;
+    show.style.setProperty('--p', RT.clamp(p / .7));
+    show.style.setProperty('--f', RT.ease(RT.clamp((p - .55) / .25)));
+  });
+
+  // announcer nav
+  var secs = [].slice.call(document.querySelectorAll('main > section')), cur = 0, nowl = document.getElementById('nowl');
+  RT.onScroll(function () { var c = 0; secs.forEach(function (s, i) { if (s.getBoundingClientRect().top < innerHeight * .45) c = i; }); if (c !== cur || !nowl.textContent) { cur = c; nowl.textContent = secs[c].dataset.name; } });
+  function go(d) { var i = Math.max(0, Math.min(secs.length - 1, cur + d)); secs[i].scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' }); }
+  document.getElementById('prev').addEventListener('click', function () { go(-1); });
+  document.getElementById('next').addEventListener('click', function () { go(1); });
+
+  // look builder
+  var EV = ['Обновиться', 'Вечер', 'Свадьба', 'Фотосессия'];
+  var O = {
+    hair: [['Без волос', 0], ['Стрижка', 1000], ['Тонирование', 4000], ['Сложное окрашивание', 9000], ['Вечерняя причёска', 2500]],
+    face: [['Без лица', 0], ['Брови', 800], ['Макияж', 3500]],
+    hands: [['Без рук', 0], ['Маникюр', 1100], ['Маникюр + гель-лак', 2000], ['Наращивание', 3000]],
+    feet: [['Без стоп', 0], ['SMART + гель-лак', 2500], ['SPA-педикюр M', 3500]]
+  };
+  var st = { ev: 1, hair: 4, face: 2, hands: 2, feet: 0 }, num = 1;
+  function row(id, arr, key) {
+    var box = document.getElementById(id);
+    arr.forEach(function (o, i) { var b = document.createElement('button'); b.type = 'button'; b.innerHTML = Array.isArray(o) ? o[0] + (o[1] ? '<small>' + RT.money(o[1]) + '</small>' : '') : o; b.addEventListener('click', function () { st[key] = i; if (key === 'ev' && i === 2) { st.hair = 0; st.face = 0; } build(); }); box.appendChild(b); });
+  }
+  row('ev', EV, 'ev'); row('hair', O.hair, 'hair'); row('face', O.face, 'face'); row('hands', O.hands, 'hands'); row('feet', O.feet, 'feet');
+  function on(id, v) { ['z-' + id, 'c-' + id, 't-' + id].forEach(function (x) { var e = document.getElementById(x); if (e) e.classList.toggle('on', v); }); }
+  function build() {
+    ['ev', 'hair', 'face', 'hands', 'feet'].forEach(function (k) { document.querySelectorAll('#' + k + ' button').forEach(function (b, i) { b.classList.toggle('on', i === st[k]); }); });
+    var items = [], wed = st.ev === 2;
+    if (wed) items.push(['Свадебный образ: причёска и макияж', 9000]);
+    ['hair', 'face', 'hands', 'feet'].forEach(function (k) { var o = O[k][st[k]]; if (o[1]) items.push([o[0], o[1]]); });
+    on('hair', wed || st.hair > 0); on('face', wed || st.face > 0);
+    on('hands', st.hands > 0); ['z-hl', 'z-hr'].forEach(function (x) { document.getElementById(x).classList.toggle('on', st.hands > 0); });
+    on('feet', st.feet > 0); ['z-fl', 'z-fr'].forEach(function (x) { document.getElementById(x).classList.toggle('on', st.feet > 0); });
+    var sum = items.reduce(function (s, i) { return s + i[1]; }, 0);
+    document.getElementById('lt').textContent = 'Выход «' + EV[st.ev] + '»';
+    document.getElementById('ll').innerHTML = items.length ? items.map(function (i) { return '<li><span>' + i[0] + '</span><em>' + RT.money(i[1]) + '</em></li>'; }).join('') : '<li><span>выберите, что делаем</span><em></em></li>';
+    document.getElementById('lsum').textContent = RT.money(sum);
+    document.getElementById('ln').textContent = String(num++ % 100).padStart(2, '0');
+  }
+  build();
+  window.__look = function (e, h, f, ha, fe) { st = { ev: e, hair: h, face: f, hands: ha, feet: fe }; build(); };
+
+  window.REEL = {
+    hero: '.hero', heroAt: .85, feature: '#obraz', featureOff: 20, featureM: '.card', featureOffM: -60, prices: '#programma', pricesOff: 30,
+    demo: [function () { __look(0, 1, 0, 1, 0); }, function () { __look(1, 4, 2, 2, 1); }, function () { __look(2, 0, 0, 2, 2); }],
+    holds: [40, 40, 40]
+  };
+})();
+</script>
+</body>
+</html>

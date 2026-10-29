@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Провинция — кофейня и магазин чая в Городце, Кирова, 18</title>
+<meta name="description" content="Кофейня «Провинция» в Городце, ул. Кирова, 18: капучино 160 ₽, эспрессо 110 ₽, развесной чай и кофе в зёрнах, супы от 180 ₽, пельмени в горшочке, блины, чизкейки, мороженое-пломбир. Ежедневно 8:00–19:00. Рейтинг 5,0.">
+<meta property="og:title" content="Провинция — кофейня, Городец">
+<meta property="og:description" content="Подберём чай или кофе под настроение. Кирова, 18. +7 950 629-19-77">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/953593/2a0000018810be2ae253432f5a998f6d6298/XXXL">
+<meta name="theme-color" content="#F3E3BF">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&amp;family=Pangolin&amp;family=Noto+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Провинция","telephone":"+7 950 629-19-77","address":{"@type":"PostalAddress","streetAddress":"ул. Кирова, 18","addressLocality":"Городец","addressRegion":"Нижегородская область","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":56.644619,"longitude":43.471029},"openingHours":"Mo-Su 08:00-19:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"5","ratingCount":"318"}}</script>
+<style>
+:root {
+  --ochre: #E9B44C; --ochre2: #F3E3BF; --wood: #D69A3A; --red: #C0392B; --red2: #E2574C; --dark: #2B1D14; --blue: #2E5E8C; --green: #3E7B4F; --white: #FFF9EE; --mut: #7A6248;
+  --head: 'Kelly Slab', Georgia, serif; --hand: 'Pangolin', cursive; --body: 'Noto Sans', Arial, sans-serif;
+  --gut: clamp(16px, 4vw, 56px); --ease: cubic-bezier(.2, .75, .2, 1);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--ochre2); color: var(--dark); font: 400 17px/1.6 var(--body); overflow-x: hidden;
+  background-image: repeating-linear-gradient(90deg, rgba(214,154,58,.08) 0 2px, transparent 2px 90px); }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+
+/* nav: painted kupavka flowers */
+.kup { position: fixed; left: 14px; top: 50%; transform: translateY(-50%); z-index: 50; display: grid; gap: 10px; }
+.kup a { position: relative; display: block; width: 38px; height: 38px; }
+.kup a svg { width: 100%; height: 100%; }
+.kup a .pt { fill: #d8c49a; transition: fill .3s; }
+.kup a.on .pt { fill: var(--red); }
+.kup a span { position: absolute; left: 46px; top: 50%; transform: translateY(-50%); white-space: nowrap; font: 400 16px/1 var(--hand); opacity: 0; transition: opacity .3s; pointer-events: none; }
+.kup:hover a span, .kup a.on span { opacity: 1; }
+@media (max-width: 760px) { .kup { left: 50%; top: auto; bottom: 8px; transform: translateX(-50%); grid-auto-flow: column; padding: 6px 12px; border-radius: 26px; background: rgba(243,227,191,.95); box-shadow: 0 6px 18px rgba(0,0,0,.15); } .kup a span { display: none; } }
+
+/* hero: a board painted in three Gorodets stages */
+.hero { position: relative; height: 260vh; }
+.studio { position: sticky; top: 0; height: 100vh; min-height: 640px; overflow: hidden; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(20px, 4vw, 60px); align-items: center; padding: 0 var(--gut) 0 calc(var(--gut) + 54px); }
+.board { position: relative; justify-self: center; width: min(100%, 640px); }
+.board svg { width: 100%; height: auto; display: block; filter: drop-shadow(0 30px 30px rgba(43,29,20,.3)); }
+.s1 { opacity: var(--a1, 0); }
+.s2 path, .s3 path { stroke-dasharray: 1; }
+.s2 path { stroke-dashoffset: calc(1 - var(--a2, 0)); }
+.s3 path { stroke-dashoffset: calc(1 - var(--a3, 0)); }
+.s3 circle { opacity: var(--a3, 0); }
+.stage { position: absolute; left: 50%; bottom: -14px; transform: translateX(-50%); display: flex; gap: 6px; }
+.stage span { padding: 7px 12px; border-radius: 20px; background: var(--white); font: 400 15px/1 var(--hand); color: var(--mut); box-shadow: 0 4px 10px rgba(43,29,20,.12); transition: background .3s, color .3s; }
+.stage span.on { background: var(--red); color: #fff; }
+.copy .k { font: 600 13px/1 var(--body); letter-spacing: .24em; text-transform: uppercase; color: var(--red); }
+.copy h1 { margin: 12px 0 10px; font: 400 clamp(52px, 7vw, 104px)/1 var(--head); }
+.copy h1 small { display: block; font: 400 .3em/1.2 var(--hand); color: var(--mut); margin-top: 6px; }
+.copy p { max-width: 460px; margin: 0 0 22px; color: #5b4532; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 15px 22px; border-radius: 30px; background: var(--red); color: #fff; text-decoration: none; font: 700 16px/1 var(--body); border: 0; cursor: pointer; box-shadow: inset 0 -3px 0 rgba(0,0,0,.18); }
+.btn.b { background: var(--blue); }
+.btn.o { background: var(--white); color: var(--dark); box-shadow: inset 0 0 0 2px var(--dark); }
+.btns { display: flex; flex-wrap: wrap; gap: 10px; }
+@media (max-width: 900px) { .studio { grid-template-columns: 1fr; align-content: start; gap: 22px; padding: 24px var(--gut) 80px; } .board { width: min(92vw, 420px); } .copy h1 { font-size: 46px; margin: 6px 0; } .copy p { font-size: 15.5px; margin-bottom: 14px; } }
+
+main > section:not(.hero) { position: relative; scroll-margin-top: 10px; padding: clamp(90px, 10vw, 130px) var(--gut) clamp(70px, 8vw, 100px) calc(var(--gut) + 54px); }
+@media (max-width: 760px) { main > section:not(.hero) { padding-left: var(--gut); } }
+.wrap { max-width: 1120px; margin: 0 auto; }
+.kk { font: 600 13px/1 var(--body); letter-spacing: .24em; text-transform: uppercase; color: var(--red); }
+h2 { margin: 12px 0 12px; font: 400 clamp(36px, 5vw, 66px)/1.05 var(--head); }
+h2 em { font: 400 .8em/1 var(--hand); color: var(--blue); font-style: normal; }
+.lead { max-width: 640px; color: #5b4532; margin: 0 0 28px; }
+.plate { position: relative; padding: clamp(18px, 3vw, 34px); border-radius: 28px; background: var(--ochre); box-shadow: inset 0 0 0 6px var(--ochre), inset 0 0 0 9px var(--red), inset 0 0 0 14px var(--ochre), inset 0 0 0 16px var(--dark), 0 30px 50px -30px rgba(43,29,20,.5);
+  background-image: repeating-linear-gradient(100deg, rgba(160,100,30,.12) 0 3px, transparent 3px 22px); }
+
+/* tea by mood */
+.mood { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(18px, 3vw, 40px); align-items: center; }
+.cup { justify-self: center; width: min(100%, 340px); }
+.cup svg { width: 100%; height: auto; display: block; }
+.cup .steam path { fill: none; stroke: #fff; stroke-width: 5; stroke-linecap: round; opacity: .85; animation: rise 2.6s ease-in-out infinite; }
+.cup .steam path:nth-child(2) { animation-delay: .6s; } .cup .steam path:nth-child(3) { animation-delay: 1.2s; }
+@keyframes rise { 0% { transform: translateY(8px); opacity: 0; } 40% { opacity: .9; } 100% { transform: translateY(-14px); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .cup .steam path { animation: none; } }
+.moods { display: flex; flex-wrap: wrap; gap: 8px; }
+.moods button { padding: 11px 15px; border-radius: 30px; border: 0; background: var(--white); color: var(--dark); font: 400 18px/1 var(--hand); cursor: pointer; box-shadow: inset 0 0 0 2px var(--dark); }
+.moods button.on { background: var(--red); color: #fff; box-shadow: none; }
+.rec { margin-top: 18px; padding: 18px 20px; border-radius: 22px; background: var(--white); }
+.rec h3 { margin: 0 0 6px; font: 400 28px/1.15 var(--head); color: var(--red); }
+.rec p { margin: 0 0 10px; color: #5b4532; font-size: 16px; }
+.rec .li { display: flex; justify-content: space-between; gap: 10px; padding: 7px 0; border-bottom: 1.5px dashed #d8c49a; font-size: 16px; }
+.rec .tot { display: flex; justify-content: space-between; align-items: baseline; margin-top: 10px; font: 400 30px/1 var(--head); }
+@media (max-width: 900px) { .mood { grid-template-columns: 1fr; } .cup { width: min(64vw, 260px); } }
+
+/* menu */
+.menu { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.mc { padding: 22px 20px; border-radius: 24px; background: var(--white); box-shadow: 0 16px 30px -22px rgba(43,29,20,.5); }
+.mc h3 { margin: 0 0 10px; font: 400 26px/1.1 var(--head); color: var(--blue); }
+.mc div { display: flex; justify-content: space-between; gap: 10px; padding: 7px 0; border-bottom: 1.5px dotted #d8c49a; font-size: 15.5px; }
+.mc div b { white-space: nowrap; color: var(--red); }
+@media (max-width: 900px) { .menu { grid-template-columns: 1fr; } }
+.shop { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 12px; margin-top: 20px; }
+.shop figure { margin: 0; border-radius: 24px; overflow: hidden; aspect-ratio: 4/3; }
+.shop img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 760px) { .shop { grid-template-columns: 1fr 1fr; } .shop figure:first-child { grid-column: span 2; } }
+
+/* people */
+.ppl { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.pp { padding: 20px; border-radius: 24px; background: var(--white); }
+.pp b { display: block; font: 400 20px/1.2 var(--hand); color: var(--red); margin-bottom: 6px; }
+.pp p { margin: 0; font-size: 15.5px; }
+@media (max-width: 900px) { .ppl { grid-template-columns: 1fr; } }
+.gingers { margin-top: 18px; padding: 18px 20px; border-radius: 24px; background: var(--dark); color: var(--ochre2); }
+.gingers b { color: var(--ochre); }
+
+.vis { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 26px; }
+.card .r { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1.5px dashed rgba(43,29,20,.3); font-size: 16px; }
+.card .r span { color: #6a4f33; }
+.card .r b { text-align: right; font-weight: 600; }
+.live { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 6px; font-weight: 700; font-size: 14px; }
+.live i { width: 10px; height: 10px; border-radius: 50%; background: var(--c, #999); }
+.card .btns { margin-top: 16px; }
+.mapbox { position: relative; min-height: 420px; border-radius: 28px; overflow: hidden; box-shadow: inset 0 0 0 4px var(--dark); }
+.mapbox iframe { position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 140px); border: 0; filter: sepia(.2); }
+@media (max-width: 860px) { .vis { grid-template-columns: 1fr; } }
+footer { padding: 30px var(--gut) 100px; text-align: center; color: var(--mut); font-size: 14px; }
+footer b { display: block; font: 400 36px/1 var(--head); color: var(--red); margin-bottom: 6px; }
+
+.motion [data-in] { opacity: 0; transform: translateY(22px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.motion [data-in].in { opacity: 1; transform: none; }
+.noimg { background: linear-gradient(135deg, #e9b44c, #f3e3bf); }
+.noimg img { opacity: 0; }
+</style>
+</head>
+<body data-hours='{"0":[[8,0,19,0]],"1":[[8,0,19,0]],"2":[[8,0,19,0]],"3":[[8,0,19,0]],"4":[[8,0,19,0]],"5":[[8,0,19,0]],"6":[[8,0,19,0]]}'>
+
+<nav class="kup" id="kup" aria-label="Разделы"></nav>
+
+<main>
+<section class="hero" id="top">
+  <div class="studio" id="studio">
+    <div class="board" aria-hidden="true">
+      <svg viewBox="0 0 640 440" id="bd">
+        <defs><linearGradient id="wd" x1="0" x2="1"><stop offset="0" stop-color="#E2A84A"/><stop offset=".5" stop-color="#EDBE5E"/><stop offset="1" stop-color="#DDA040"/></linearGradient></defs>
+        <path d="M40 60 Q40 30 70 30 L260 30 Q280 30 288 14 Q296 0 320 0 Q344 0 352 14 Q360 30 380 30 L570 30 Q600 30 600 60 L600 400 Q600 430 570 430 L70 430 Q40 430 40 400 Z" fill="url(#wd)" stroke="#8a5a1c" stroke-width="3"/>
+        <circle cx="320" cy="16" r="9" fill="#F3E3BF" stroke="#8a5a1c" stroke-width="3"/>
+        <g stroke="rgba(140,90,28,.25)" stroke-width="2" fill="none"><path d="M60 120 C200 110 420 130 580 116"/><path d="M60 220 C220 230 400 210 580 224"/><path d="M60 330 C200 320 420 344 580 330"/></g>
+        <g id="s1" class="s1"></g><g id="s2" class="s2"></g><g id="s3" class="s3"></g>
+      </svg>
+      <div class="stage" id="stage"><span>подмалёвок</span><span>тенёвка</span><span>оживка</span></div>
+    </div>
+    <div class="copy">
+      <div class="k">Городец · Кирова, 18</div>
+      <h1>Провинция<small>кофейня и магазин чая</small></h1>
+      <p>Кофе крепкий и правильный, развесной чай и кофе в зёрнах, а ещё супы, пельмени в горшочке, блины и пломбир «как в детстве». Ежедневно с 8 до 19.</p>
+      <div class="btns"><a class="btn" href="tel:+79506291977">+7 950 629-19-77</a><a class="btn o" href="#nastroenie">Чай по настроению</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="nastroenie">
+  <div class="wrap">
+    <span class="kk">по настроению</span>
+    <h2>Что вам <em>сегодня налить?</em></h2>
+    <p class="lead">Выберите настроение, а бариста «Провинции» подберёт напиток и что к нему взять. Цены из меню кофейни.</p>
+    <div class="plate mood">
+      <div class="cup" aria-hidden="true">
+        <svg viewBox="0 0 300 300" id="cupsvg">
+          <g class="steam"><path d="M120 70 c-10 -14 10 -22 0 -40"/><path d="M150 66 c-10 -14 10 -22 0 -40"/><path d="M180 70 c-10 -14 10 -22 0 -40"/></g>
+          <path d="M60 100 L240 100 L222 236 Q150 262 78 236 Z" fill="#FFF9EE" stroke="#2B1D14" stroke-width="5"/>
+          <path d="M238 128 C290 126 288 196 228 196" fill="none" stroke="#2B1D14" stroke-width="10"/>
+          <ellipse cx="150" cy="100" rx="90" ry="14" id="liq" fill="#7a4a24" stroke="#2B1D14" stroke-width="5"/>
+          <ellipse cx="150" cy="262" rx="110" ry="14" fill="#E9B44C" stroke="#2B1D14" stroke-width="4"/>
+          <g transform="translate(150 170)"><circle r="30" fill="#C0392B"/><path d="M-20 -6 A20 20 0 0 1 20 -6" fill="none" stroke="#7a1a12" stroke-width="5"/><path d="M-12 -2 A12 12 0 0 1 12 -2" fill="none" stroke="#fff" stroke-width="3"/><circle r="6" fill="#7a1a12"/><path d="M-60 0 C-50 -20 -36 -20 -30 -8" fill="#3E7B4F"/><path d="M60 0 C50 -20 36 -20 30 -8" fill="#3E7B4F"/></g>
+        </svg>
+      </div>
+      <div>
+        <div class="moods" id="moods"></div>
+        <div class="rec" aria-live="polite"><h3 id="rh">…</h3><p id="rp">…</p><div id="rl"></div><div class="tot"><span>итого</span><span id="rt">0 ₽</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="wrap">
+    <span class="kk">меню</span>
+    <h2>Кофе, чай <em>и горячее</em></h2>
+    <p class="lead">«При входе вас может сбить с толку вывеска „Кофейня“, а на самом деле есть сытные горячие блюда», пишут гости. Средний чек 300–500 ₽.</p>
+    <div class="menu">
+      <div class="mc" data-in><h3>Кофе</h3><div><span>Эспрессо</span><b>110 ₽</b></div><div><span>Американо</span><b>140 ₽</b></div><div><span>Капучино</span><b>160 ₽</b></div><div><span>Латте</span><b>160 ₽</b></div><div><span>Глясе</span><b>190 ₽</b></div><div><span>Бамбл</span><b>200 ₽</b></div><div><span>Молочный коктейль</span><b>200 ₽</b></div></div>
+      <div class="mc" data-in><h3>Горячее</h3><div><span>Уха</span><b>180 ₽</b></div><div><span>Солянка</span><b>180 ₽</b></div><div><span>Харчо</span><b>180 ₽</b></div><div><span>Суп куриный или грибной</span><b>190 ₽</b></div><div><span>Плов</span><b>270 ₽</b></div><div><span>Паста карбонара</span><b>300 ₽</b></div><div><span>Пельмени в горшочке, 15 шт.</span><b>300 ₽</b></div></div>
+      <div class="mc" data-in><h3>Сладкое и домой</h3><div><span>Блины с начинкой</span><b>80 ₽</b></div><div><span>Чизкейк</span><b>240 ₽</b></div><div><span>Тирамису</span><b>240 ₽</b></div><div><span>Мороженое, 100 г</span><b>160 ₽</b></div><div><span>Развесной чай, 100 г</span><b>220 ₽</b></div><div><span>Кофе в зёрнах, 100 г</span><b>220 ₽</b></div></div>
+    </div>
+    <div class="shop">
+      <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/953593/2a0000018810be2ae253432f5a998f6d6298/XL" alt="Стойка и полки с чаем" loading="lazy"></figure>
+      <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/6545454/2a00000184b81dc832b69718ed0fa7156af4/L" alt="Глиняные чайники и пуэры" loading="lazy"></figure>
+      <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/9831576/2a000001914629229556a9de00b36f49071e/L" alt="Морковный торт" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="lyudi">
+  <div class="wrap">
+    <span class="kk">люди</span>
+    <h2>Встретили <em>как родных</em></h2>
+    <p class="lead">5,0 на Яндекс Картах, 318 оценок. Атмосферу хвалят в 80 отзывах из 81, интерьер в 12 из 12.</p>
+    <div class="ppl">
+      <div class="pp" data-in><b>Татьяна Алексеевна</b><p>«Мастер крепкого кофе. Под её чутким руководством эспрессо и ристретто получаются по-настоящему волшебными».</p></div>
+      <div class="pp" data-in><b>Бариста Варвара</b><p>«Очень мило поболтали с Варварой, она обстоятельно познакомила с ассортиментом».</p></div>
+      <div class="pp" data-in><b>Уха как уха</b><p>«Здесь реально вкусная уха, которая и правда похожа на уху, а не на водичку с куском рыбы».</p></div>
+      <div class="pp" data-in><b>Туристы</b><p>«Зашли по пути пешего маршрута. Чай жене, себе кофе, и опять в путь. Обжарка отличная, чайный сбор отличный».</p></div>
+      <div class="pp" data-in><b>Палочка-выручалочка</b><p>«Быстро и вкусно перекусить, когда ближайшие кафе закрыты на спецобслуживание».</p></div>
+      <div class="pp" data-in><b>Пломбир</b><p>«Мороженое, белый пломбир, как в детстве! Будем в Городце, обязательно вернёмся».</p></div>
+    </div>
+    <div class="gingers">🍪 <b>С пряниками можно.</b> Гости купили городецкие пряники через дорогу, и им дали тарелки и разрезали. Берите к пряникам чай с имбирём и апельсином.</div>
+  </div>
+</section>
+
+<section id="adres">
+  <div class="wrap vis">
+    <div>
+      <span class="kk">адрес</span>
+      <h2>Кирова, <em>18</em></h2>
+      <div class="plate card">
+        <div class="live" data-live><i></i><span data-status>…</span></div>
+        <div class="r"><span>Адрес</span><b>Городец, ул. Кирова, 18</b></div>
+        <div class="r"><span>Режим</span><b>ежедневно 8:00–19:00</b></div>
+        <div class="r"><span>Телефон</span><b><a href="tel:+79506291977">+7 950 629-19-77</a></b></div>
+        <div class="r"><span>Ещё</span><b>кофе с собой, завтраки, Wi-Fi</b></div>
+        <div class="btns"><a class="btn" href="tel:+79506291977">Позвонить</a><a class="btn b" href="https://wa.me/79506291977" target="_blank" rel="noopener">WhatsApp</a><a class="btn o" href="https://vk.ru/id801338571" target="_blank" rel="noopener">ВКонтакте</a></div>
+      </div>
+    </div>
+    <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=43.471029%2C56.644619&amp;z=16&amp;pt=43.471029%2C56.644619%2Cpm2rdm&amp;l=map" title="Провинция на Яндекс Картах" loading="lazy" allowfullscreen></iframe></div>
+  </div>
+</section>
+</main>
+
+<footer><b>Провинция</b>кофейня и магазин чая · Городец, ул. Кирова, 18 · +7 950 629-19-77</footer>
+
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  var NS = 'http://www.w3.org/2000/svg';
+  function el(t, a, p) { var e = document.createElementNS(NS, t); for (var k in a) e.setAttribute(k, a[k]); if (p) p.appendChild(e); return e; }
+  var s1 = document.getElementById('s1'), s2 = document.getElementById('s2'), s3 = document.getElementById('s3');
+  // Gorodets motif: big rozan in the centre, two kupavkas, leaves and a scalloped border
+  function rozan(x, y, r) {
+    el('circle', { cx: x, cy: y, r: r, fill: '#C0392B' }, s1);
+    el('circle', { cx: x, cy: y - r * .1, r: r * .45, fill: '#E2574C' }, s1);
+    el('path', { pathLength: 1, d: 'M' + (x - r * .8) + ' ' + (y - r * .1) + ' A' + r * .8 + ' ' + r * .8 + ' 0 0 1 ' + (x + r * .8) + ' ' + (y - r * .1), fill: 'none', stroke: '#6e150e', 'stroke-width': r * .16, 'stroke-linecap': 'round' }, s2);
+    el('path', { pathLength: 1, d: 'M' + (x - r * .55) + ' ' + (y - r * .02) + ' A' + r * .55 + ' ' + r * .55 + ' 0 0 1 ' + (x + r * .55) + ' ' + (y - r * .02), fill: 'none', stroke: '#6e150e', 'stroke-width': r * .12, 'stroke-linecap': 'round' }, s2);
+    el('circle', { cx: x, cy: y + r * .12, r: r * .16, fill: '#6e150e' }, s1);
+    for (var k = 0; k < 7; k++) { var a = Math.PI + k / 6 * Math.PI, xx = x + Math.cos(a) * r * .95, yy = y + Math.sin(a) * r * .95; el('path', { pathLength: 1, d: 'M' + xx.toFixed(1) + ' ' + yy.toFixed(1) + ' q ' + (Math.cos(a) * r * .18).toFixed(1) + ' ' + (Math.sin(a) * r * .18 - 4).toFixed(1) + ' ' + (Math.cos(a + .6) * r * .28).toFixed(1) + ' ' + (Math.sin(a + .6) * r * .28).toFixed(1), fill: 'none', stroke: '#FFF9EE', 'stroke-width': 4, 'stroke-linecap': 'round' }, s3); }
+    el('path', { pathLength: 1, d: 'M' + (x - r * .3) + ' ' + (y + r * .05) + ' A' + r * .3 + ' ' + r * .3 + ' 0 0 1 ' + (x + r * .3) + ' ' + (y + r * .05), fill: 'none', stroke: '#FFF9EE', 'stroke-width': 4, 'stroke-linecap': 'round' }, s3);
+    [[-.2, -.4], [.2, -.4], [0, -.55]].forEach(function (d) { el('circle', { cx: x + d[0] * r, cy: y + d[1] * r, r: 3.5, fill: '#FFF9EE' }, s3); });
+  }
+  function kupavka(x, y, r, flip) {
+    var sx = flip ? -1 : 1;
+    el('path', { d: 'M' + x + ' ' + (y + r) + ' C' + (x - r * 1.2) + ' ' + (y + r * .6) + ' ' + (x - r * 1.1) + ' ' + (y - r * 1.1) + ' ' + x + ' ' + (y - r * .7) + ' C' + (x + r * 1.1) + ' ' + (y - r * 1.1) + ' ' + (x + r * 1.2) + ' ' + (y + r * .6) + ' ' + x + ' ' + (y + r) + ' Z', fill: '#2E5E8C' }, s1);
+    el('circle', { cx: x, cy: y + r * .55, r: r * .35, fill: '#E9B44C' }, s1);
+    el('path', { pathLength: 1, d: 'M' + (x - r * .7) + ' ' + (y - r * .2) + ' Q' + x + ' ' + (y + r * .3) + ' ' + (x + r * .7) + ' ' + (y - r * .2), fill: 'none', stroke: '#16304a', 'stroke-width': 6, 'stroke-linecap': 'round' }, s2);
+    el('path', { pathLength: 1, d: 'M' + (x - r * .45) + ' ' + (y - r * .55) + ' Q' + x + ' ' + (y - r * .2) + ' ' + (x + r * .45) + ' ' + (y - r * .55), fill: 'none', stroke: '#FFF9EE', 'stroke-width': 4, 'stroke-linecap': 'round' }, s3);
+    [[-.5, .2], [0, .05], [.5, .2]].forEach(function (d) { el('circle', { cx: x + d[0] * r, cy: y + d[1] * r, r: 3, fill: '#FFF9EE' }, s3); });
+  }
+  function leafG(x, y, a, s) {
+    var t = 'rotate(' + a + ' ' + x + ' ' + y + ')';
+    el('path', { d: 'M' + x + ' ' + y + ' c ' + 20 * s + ' ' + -26 * s + ' ' + 64 * s + ' ' + -26 * s + ' ' + 80 * s + ' 0 c ' + -18 * s + ' ' + 20 * s + ' ' + -60 * s + ' ' + 22 * s + ' ' + -80 * s + ' 0 Z', fill: '#3E7B4F', transform: t }, s1);
+    el('path', { pathLength: 1, d: 'M' + (x + 8 * s) + ' ' + y + ' L' + (x + 70 * s) + ' ' + y, fill: 'none', stroke: '#1d3f26', 'stroke-width': 4, 'stroke-linecap': 'round', transform: t }, s2);
+    el('path', { pathLength: 1, d: 'M' + (x + 24 * s) + ' ' + (y - 8 * s) + ' q ' + 14 * s + ' ' + -8 * s + ' ' + 30 * s + ' ' + -4 * s, fill: 'none', stroke: '#FFF9EE', 'stroke-width': 3, 'stroke-linecap': 'round', transform: t }, s3);
+  }
+  leafG(250, 240, 200, 1.2); leafG(390, 240, -20, 1.2); leafG(270, 300, 150, 1); leafG(370, 300, 30, 1); leafG(300, 170, 250, .9); leafG(340, 170, -70, .9);
+  kupavka(170, 250, 46, false); kupavka(470, 250, 46, true);
+  rozan(320, 236, 78);
+  for (var i = 0; i < 22; i++) { var bx = 70 + i * 23.5; el('path', { d: 'M' + bx + ' 418 a11 11 0 0 1 22 0 Z', fill: '#2E5E8C' }, s1); el('circle', { cx: bx + 11, cy: 411, r: 2.4, fill: '#FFF9EE' }, s3); }
+  for (var j = 0; j < 22; j++) { var tx = 70 + j * 23.5; el('path', { d: 'M' + tx + ' 42 a11 11 0 0 0 22 0 Z', fill: '#C0392B' }, s1); }
+  var hero = document.querySelector('.hero'), studio = document.getElementById('studio'), stg = document.querySelectorAll('#stage span');
+  RT.onScroll(function () {
+    var p = RT.motion ? RT.progress(hero) : 1, a1 = RT.ease(RT.clamp((p - .02) / .22)), a2 = RT.ease(RT.clamp((p - .26) / .22)), a3 = RT.ease(RT.clamp((p - .5) / .22));
+    studio.style.setProperty('--a1', a1); studio.style.setProperty('--a2', a2); studio.style.setProperty('--a3', a3);
+    var c = a3 > .05 ? 2 : a2 > .05 ? 1 : 0; stg.forEach(function (s, i) { s.classList.toggle('on', i === c); });
+  });
+
+  // kupavka nav
+  var NAV = [['top', 'Роспись'], ['nastroenie', 'Настроение'], ['menu', 'Меню'], ['lyudi', 'Люди'], ['adres', 'Адрес']], kup = document.getElementById('kup');
+  NAV.forEach(function (n) { var a = document.createElement('a'); a.href = '#' + n[0]; a.innerHTML = '<svg viewBox="0 0 40 40"><path class="pt" d="M20 36 C2 30 4 6 20 12 C36 6 38 30 20 36 Z"/><circle cx="20" cy="28" r="5" fill="#E9B44C"/><path d="M12 18 Q20 24 28 18" fill="none" stroke="#fff" stroke-width="2"/></svg><span>' + n[1] + '</span>'; kup.appendChild(a); });
+  var secs = document.querySelectorAll('main > section'), links = kup.querySelectorAll('a');
+  RT.onScroll(function () { var cur = 0; secs.forEach(function (s, i) { if (s.getBoundingClientRect().top < innerHeight * .45) cur = i; }); links.forEach(function (a, i) { a.classList.toggle('on', i === cur); }); });
+
+  // tea by mood
+  var M = [
+    ['Согреться', 'Чай с имбирём и апельсином', 'Гости хвалят его отдельно: «очень вкусный». Хорошо идёт с городецким пряником.', [['Чай с имбирём и апельсином', 0], ['Блины с начинкой', 80]], '#b5652a', 'цену чая уточните у бариста'],
+    ['Взбодриться', 'Эспрессо от Татьяны Алексеевны', 'Крепкий, «по-настоящему волшебный». Если мало, просите ристретто.', [['Эспрессо', 110], ['Чизкейк', 240]], '#3a2212', ''],
+    ['В дорогу', 'Американо с собой', 'Туристы заходят за кофе по пути пешего маршрута и идут дальше.', [['Американо', 140]], '#5a3416', ''],
+    ['Пообедать', 'Уха и пельмени в горшочке', 'Уху здесь называют настоящей, а пельмени «неплохими» и сытными.', [['Уха', 180], ['Пельмени в горшочке', 300], ['Капучино', 160]], '#c98a3a', ''],
+    ['Порадоваться', 'Белый пломбир и глясе', 'Мороженое «как в детстве», а глясе как раз с ним и делают.', [['Мороженое, 100 г', 160], ['Глясе', 190]], '#e9d3b0', ''],
+    ['Домой', 'Развесной чай или кофе в зёрнах', 'Чёрный, зелёный, улуны, пуэры и кофе классический или ароматизированный.', [['Чай развесной, 100 г', 220], ['Кофе в зёрнах, 100 г', 220]], '#6b8f4e', '']
+  ];
+  var cur = 0, moods = document.getElementById('moods'), liq = document.getElementById('liq');
+  M.forEach(function (m, i) { var b = document.createElement('button'); b.type = 'button'; b.textContent = m[0]; b.addEventListener('click', function () { cur = i; pour(); }); moods.appendChild(b); });
+  function pour() {
+    var m = M[cur];
+    moods.querySelectorAll('button').forEach(function (b, i) { b.classList.toggle('on', i === cur); });
+    document.getElementById('rh').textContent = m[1]; document.getElementById('rp').textContent = m[2];
+    document.getElementById('rl').innerHTML = m[3].map(function (x) { return '<div class="li"><span>' + x[0] + '</span><span>' + (x[1] ? RT.money(x[1]) : 'у бариста') + '</span></div>'; }).join('');
+    var sum = m[3].reduce(function (s, x) { return s + x[1]; }, 0);
+    document.getElementById('rt').textContent = (m[5] ? 'от ' : '') + RT.money(sum);
+    liq.setAttribute('fill', m[4]);
+  }
+  pour();
+  window.__mood = function (i) { cur = i; pour(); };
+
+  window.REEL = {
+    hero: '.hero', heroAt: .85, feature: '#nastroenie', featureOff: 20, featureM: '.rec', featureOffM: -40, prices: '#menu', pricesOff: 30,
+    demo: [function () { __mood(0); }, function () { __mood(1); }, function () { __mood(3); }, function () { __mood(4); }],
+    holds: [30, 30, 30, 40]
+  };
+})();
+</script>
+</body>
+</html>

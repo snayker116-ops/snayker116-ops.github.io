@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MOS'KA groom — груминг собак и кошек, Нижний Новгород, Родионова, 193к2</title>
+<meta name="description" content="Груминг-салон «Моська» в Нижнем Новгороде, ул. Родионова, 193, корп. 2: стрижка шпица 3 200 ₽, пуделя и мальтипу 3 700 ₽, первый груминг щенка 2 900 ₽, экспресс-линька кошек 2 900 ₽, когти 350 ₽. Без клеток. Ежедневно 10:00–20:00. Рейтинг 5,0.">
+<meta property="og:title" content="MOS'KA groom — груминг, Нижний Новгород">
+<meta property="og:description" content="Выберите породу и посмотрите, что будет после ванны. Родионова, 193к2. +7 903 053-50-30">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/20288375/2a0000019fa75761ff803237414eb8a6d716/XXXL">
+<meta name="theme-color" content="#FDE4E9">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&amp;family=Pacifico&amp;family=Nunito+Sans:wght@400;600;800&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"PetStore","name":"MOS'KA groom","telephone":"+7 903 053-50-30","address":{"@type":"PostalAddress","streetAddress":"ул. Родионова, 193, корп. 2","addressLocality":"Нижний Новгород","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":56.303067,"longitude":44.076783},"openingHours":"Mo-Su 10:00-20:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"5","ratingCount":"123"}}</script>
+<style>
+:root {
+  --pink: #FDE4E9; --pink2: #F7C6CF; --berry: #8E2A5A; --berry2: #B8467A; --lemon: #F7D84A; --mint: #9ED8C6; --cream: #FFF7F3; --ink: #3A2430; --mut: #8C6F7C;
+  --head: 'Balsamiq Sans', Arial, sans-serif; --logo: 'Pacifico', cursive; --body: 'Nunito Sans', Arial, sans-serif;
+  --gut: clamp(16px, 4vw, 56px); --ease: cubic-bezier(.2, .75, .2, 1);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--pink); color: var(--ink); font: 400 17px/1.6 var(--body); overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+
+/* nav: soap bubbles */
+.bub { position: fixed; top: 12px; left: 50%; transform: translateX(-50%); z-index: 50; display: flex; align-items: center; gap: 6px; }
+.bub a { display: grid; place-items: center; min-width: 54px; height: 54px; padding: 0 10px; border-radius: 30px; text-decoration: none; font: 700 13px/1 var(--head); color: var(--berry); background: radial-gradient(circle at 30% 25%, rgba(255,255,255,.95), rgba(255,255,255,.35) 40%, rgba(158,216,198,.35) 70%, rgba(247,198,207,.55)); box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.9), 0 6px 14px rgba(142,42,90,.12); transition: transform .3s var(--ease); }
+.bub a.on { transform: scale(1.15); background: radial-gradient(circle at 30% 25%, #fff, rgba(255,255,255,.4) 40%, rgba(247,216,74,.6) 70%, rgba(184,70,122,.6)); color: var(--ink); }
+@media (max-width: 640px) { .bub { top: auto; bottom: 10px; gap: 4px; } .bub a { min-width: 0; height: 46px; padding: 0 9px; font-size: 11.5px; } }
+
+/* hero: a bubble with the wet dog pops into the groomed one */
+.hero { position: relative; height: 240vh; }
+.bath { position: sticky; top: 0; height: 100vh; min-height: 620px; overflow: hidden; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(20px, 4vw, 60px); align-items: center; padding: 0 var(--gut); background: radial-gradient(circle at 70% 40%, #fff3f6, var(--pink) 60%); }
+.floaty { position: absolute; inset: 0; pointer-events: none; }
+.floaty i { position: absolute; left: var(--x); bottom: -120px; width: var(--s); height: var(--s); border-radius: 50%; background: radial-gradient(circle at 30% 25%, rgba(255,255,255,.95), rgba(255,255,255,.2) 45%, rgba(158,216,198,.25) 75%, rgba(247,198,207,.5)); box-shadow: inset 0 0 0 1px rgba(255,255,255,.8); transform: translateY(calc(var(--p, 0) * var(--v) * -1)); }
+.orb { position: relative; justify-self: center; width: min(100%, 500px); aspect-ratio: 1; }
+.orb .after, .orb .before { position: absolute; inset: 0; border-radius: 50%; overflow: hidden; }
+.orb .after { box-shadow: 0 30px 60px -30px rgba(142,42,90,.5); }
+.orb img { width: 100%; height: 100%; object-fit: cover; }
+.orb .before { transform: scale(calc(1 + var(--pop, 0) * .25)); opacity: calc(1 - var(--pop, 0)); box-shadow: inset 0 0 0 3px rgba(255,255,255,.9); }
+.orb .before::after { content: ""; position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(circle at 30% 22%, rgba(255,255,255,.8), transparent 22%), linear-gradient(135deg, rgba(158,216,198,.25), rgba(247,198,207,.35)); }
+.drops i { position: absolute; left: 50%; top: 50%; width: 12px; height: 12px; margin: -6px; border-radius: 50%; background: rgba(255,255,255,.9); box-shadow: inset 0 0 0 1px #cfe9e1; transform: rotate(var(--a)) translate(calc(var(--pop, 0) * 280px)); opacity: calc(var(--pop, 0) * (1 - var(--pop, 0)) * 4); }
+.tag { position: absolute; z-index: 2; padding: 8px 14px; border-radius: 30px; background: #fff; font: 700 15px/1 var(--head); box-shadow: 0 8px 20px rgba(142,42,90,.15); }
+.tag.b { left: -4%; top: 12%; opacity: calc(1 - var(--pop, 0) * 2); }
+.tag.a { right: -2%; bottom: 10%; opacity: calc(var(--pop, 0) * 2 - 1); color: var(--berry); }
+.copy .logo { font: 400 clamp(46px, 6.4vw, 96px)/1.1 var(--logo); color: var(--berry); }
+.copy .logo small { display: block; margin-top: 8px; font: 700 14px/1 var(--head); letter-spacing: .3em; text-transform: uppercase; color: var(--mut); }
+.copy h1 { margin: 14px 0 10px; font: 700 clamp(26px, 3vw, 40px)/1.15 var(--head); }
+.copy p { max-width: 480px; margin: 0 0 22px; color: #5d4552; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 15px 22px; border-radius: 40px; background: var(--berry); color: #fff; text-decoration: none; font: 700 16px/1 var(--head); border: 0; cursor: pointer; box-shadow: 0 8px 18px -8px rgba(142,42,90,.7); }
+.btn.y { background: var(--lemon); color: var(--ink); }
+.btn.o { background: #fff; color: var(--berry); }
+.btns { display: flex; flex-wrap: wrap; gap: 10px; }
+@media (max-width: 900px) { .bath { grid-template-columns: 1fr; align-content: start; gap: 14px; padding: 24px var(--gut) 80px; } .orb { width: min(72vw, 300px); } .copy .logo { font-size: 44px; } .copy h1 { font-size: 22px; margin: 8px 0 6px; } .copy p { font-size: 15.5px; margin-bottom: 14px; } }
+
+main > section:not(.hero) { position: relative; scroll-margin-top: 10px; padding: clamp(100px, 11vw, 140px) var(--gut) clamp(70px, 8vw, 100px); }
+.wrap { max-width: 1140px; margin: 0 auto; }
+.kk { display: inline-block; padding: 6px 12px; border-radius: 20px; background: #fff; font: 700 13px/1 var(--head); color: var(--berry); }
+h2 { margin: 14px 0 12px; font: 700 clamp(34px, 4.8vw, 62px)/1.05 var(--head); }
+h2 em { font: 400 1em/1 var(--logo); color: var(--berry); font-style: normal; }
+.lead { max-width: 640px; color: #5d4552; margin: 0 0 28px; }
+
+/* bath builder */
+.tub { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(18px, 3vw, 44px); align-items: center; }
+.scene { position: relative; border-radius: 40px; background: linear-gradient(#fff7fa, #ffe9ef); padding: 10px; box-shadow: 0 30px 60px -36px rgba(142,42,90,.5); overflow: hidden; }
+.scene svg { width: 100%; height: auto; display: block; }
+.scene .sb { transition: transform .6s var(--ease), opacity .6s; transform-box: fill-box; transform-origin: center; }
+.scene.wash .sb { animation: foam 1.1s var(--ease); }
+@keyframes foam { 40% { transform: scale(1.5); } 100% { transform: scale(1); } }
+.picker h3 { margin: 16px 0 8px; font: 700 13px/1 var(--head); letter-spacing: .14em; text-transform: uppercase; color: var(--mut); }
+.picker h3:first-child { margin-top: 0; }
+.breeds { display: flex; flex-wrap: wrap; gap: 8px; }
+.breeds button { padding: 10px 14px; border-radius: 30px; border: 0; background: #fff; color: var(--ink); font: 700 15px/1.1 var(--head); cursor: pointer; box-shadow: 0 4px 10px rgba(142,42,90,.08); }
+.breeds button.on { background: var(--berry); color: #fff; }
+.res { margin-top: 18px; padding: 18px 20px; border-radius: 28px; background: #fff; }
+.res .top { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+.res b { font: 700 24px/1.15 var(--head); }
+.res .pr { font: 700 32px/1 var(--head); color: var(--berry); white-space: nowrap; }
+.res p { margin: 8px 0 12px; font-size: 15.5px; color: #5d4552; }
+@media (max-width: 900px) { .tub { grid-template-columns: 1fr; } }
+
+/* prices */
+.plist { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.pr1 { display: grid; grid-template-columns: 56px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 14px 18px 14px 14px; border-radius: 40px; background: #fff; box-shadow: 0 10px 24px -18px rgba(142,42,90,.6); }
+.pr1 i { width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; background: var(--c); font-style: normal; font-size: 26px; }
+.pr1 b { font: 700 16.5px/1.2 var(--head); }
+.pr1 small { display: block; color: var(--mut); font-size: 13.5px; }
+.pr1 em { font: 700 19px/1 var(--head); font-style: normal; color: var(--berry); white-space: nowrap; }
+@media (max-width: 960px) { .plist { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 620px) { .plist { grid-template-columns: 1fr; } }
+.extra { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.extra span { padding: 8px 14px; border-radius: 30px; background: rgba(255,255,255,.7); font-size: 15px; }
+
+/* team & photos */
+.perks { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-bottom: 22px; }
+.pk { padding: 18px; border-radius: 30px; background: #fff; text-align: center; }
+.pk b { display: block; font-size: 28px; }
+.pk span { font: 700 15px/1.25 var(--head); }
+@media (max-width: 900px) { .perks { grid-template-columns: 1fr 1fr; } }
+.pics { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; }
+.pics figure { margin: 0; border-radius: 50%; overflow: hidden; aspect-ratio: 1; box-shadow: 0 0 0 6px #fff, 0 16px 30px -18px rgba(142,42,90,.7); }
+.pics img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 760px) { .pics { grid-template-columns: repeat(3, minmax(0, 1fr)); } .pics figure:nth-child(n+4) { display: none; } }
+.revs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 30px; }
+.rv { position: relative; padding: 20px; border-radius: 30px; background: #fff; }
+.rv::after { content: ""; position: absolute; left: 30px; bottom: -10px; width: 22px; height: 22px; background: #fff; transform: rotate(45deg); border-radius: 4px; }
+.rv b { display: block; font: 700 16px/1.2 var(--head); color: var(--berry); margin-bottom: 6px; }
+.rv p { margin: 0; font-size: 15.5px; }
+@media (max-width: 900px) { .revs { grid-template-columns: 1fr; } }
+
+.vis { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 26px; }
+.card { padding: 24px; border-radius: 40px; background: #fff; }
+.card .r { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 2px dotted var(--pink2); font-size: 15.5px; }
+.card .r span { color: var(--mut); }
+.card .r b { text-align: right; font-weight: 600; }
+.live { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 6px; font-weight: 800; font-size: 14px; }
+.live i { width: 10px; height: 10px; border-radius: 50%; background: var(--c, #999); }
+.card .btns { margin-top: 16px; }
+.mapbox { position: relative; min-height: 420px; border-radius: 40px; overflow: hidden; }
+.mapbox iframe { position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 140px); border: 0; }
+@media (max-width: 860px) { .vis { grid-template-columns: 1fr; } }
+footer { padding: 30px var(--gut) 100px; text-align: center; color: var(--mut); font-size: 14px; }
+footer b { display: block; font: 400 40px/1.2 var(--logo); color: var(--berry); }
+
+.motion [data-in] { opacity: 0; transform: translateY(24px) scale(.97); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.motion [data-in].in { opacity: 1; transform: none; }
+.noimg { background: radial-gradient(circle, #fff, var(--pink2)); }
+.noimg img { opacity: 0; }
+</style>
+</head>
+<body data-hours='{"0":[[10,0,20,0]],"1":[[10,0,20,0]],"2":[[10,0,20,0]],"3":[[10,0,20,0]],"4":[[10,0,20,0]],"5":[[10,0,20,0]],"6":[[10,0,20,0]]}'>
+
+<nav class="bub" id="bub" aria-label="Разделы">
+  <a href="#top">Моська</a><a href="#vanna">Ванна</a><a href="#ceny">Цены</a><a href="#lyudi">Люди</a><a href="#adres">Адрес</a>
+</nav>
+
+<main>
+<section class="hero" id="top">
+  <div class="bath" id="bath">
+    <div class="floaty" aria-hidden="true">
+      <i style="--x:6%;--s:60px;--v:120vh"></i><i style="--x:18%;--s:28px;--v:90vh"></i><i style="--x:34%;--s:90px;--v:150vh"></i><i style="--x:52%;--s:40px;--v:110vh"></i><i style="--x:66%;--s:70px;--v:170vh"></i><i style="--x:80%;--s:34px;--v:95vh"></i><i style="--x:90%;--s:100px;--v:140vh"></i><i style="--x:46%;--s:22px;--v:80vh"></i><i style="--x:26%;--s:46px;--v:200vh"></i><i style="--x:74%;--s:54px;--v:220vh"></i>
+    </div>
+    <div class="orb" aria-hidden="true">
+      <div class="after" data-ph><img src="https://avatars.mds.yandex.net/get-altay/20288375/2a0000019fa75761ff803237414eb8a6d716/XL" alt="Пудель после стрижки"></div>
+      <div class="before" data-ph><img src="https://avatars.mds.yandex.net/get-altay/18112381/2a0000019e8947952fbd91b76d7b8511f9d7/XL" alt="Собака в пенной ванне"></div>
+      <div class="drops"><i style="--a:0deg"></i><i style="--a:40deg"></i><i style="--a:80deg"></i><i style="--a:120deg"></i><i style="--a:160deg"></i><i style="--a:200deg"></i><i style="--a:240deg"></i><i style="--a:280deg"></i><i style="--a:320deg"></i></div>
+      <span class="tag b">до 🫧</span><span class="tag a">после ✨</span>
+    </div>
+    <div class="copy">
+      <div class="logo">Моська<small>MOS'KA groom</small></div>
+      <h1>Груминг собак и кошек на Родионова</h1>
+      <p>Купаем, стрижём, вычёсываем линьку, стрижём когти и чистим зубы. Без клеток, с автопоилкой и лакомствами после процедуры. Находят подход даже к самым пугливым.</p>
+      <div class="btns"><a class="btn" href="tel:+79030535030">+7 903 053-50-30</a><a class="btn o" href="#vanna">В ванну!</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="vanna">
+  <div class="wrap">
+    <span class="kk">🛁 пенная ванна</span>
+    <h2>Кто сегодня <em>купается?</em></h2>
+    <p class="lead">Выберите питомца и нажмите «Помыть и подстричь»: покажем, каким он выйдет, и цену комплекса из прайса салона.</p>
+    <div class="tub">
+      <div class="scene" id="scene"><svg viewBox="0 0 420 340" id="pet" aria-label="Питомец в ванне"></svg></div>
+      <div class="picker">
+        <h3>Порода</h3><div class="breeds" id="breeds"></div>
+        <div class="res" aria-live="polite">
+          <div class="top"><b id="rn">…</b><span class="pr" id="rp">…</span></div>
+          <p id="rd">…</p>
+          <div class="btns"><button class="btn y" type="button" id="wash">🫧 Помыть и подстричь</button><a class="btn" href="tel:+79030535030">Записаться</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ceny">
+  <div class="wrap">
+    <span class="kk">💖 прайс</span>
+    <h2>Цены <em>по породам</em></h2>
+    <p class="lead">Из прайса салона на Яндекс Картах. Для других пород и сложной шерсти цену подскажет администратор.</p>
+    <div class="plist">
+      <div class="pr1" data-in><i style="--c:#FDE4E9">🐶</i><div><b>Первый груминг щенка</b><small>знакомство с грумером</small></div><em>2 900 ₽</em></div>
+      <div class="pr1" data-in><i style="--c:#FFF1B8">🦊</i><div><b>Шпиц</b><small>комплекс</small></div><em>3 200 ₽</em></div>
+      <div class="pr1" data-in><i style="--c:#E3F4EE">🐩</i><div><b>Пудель</b><small>комплекс</small></div><em>3 700 ₽</em></div>
+      <div class="pr1" data-in><i style="--c:#FDE4E9">🧸</i><div><b>Мальтипу</b><small>комплекс</small></div><em>3 700 ₽</em></div>
+      <div class="pr1" data-in><i style="--c:#FFF1B8">🤍</i><div><b>Мальтезе</b><small>комплекс</small></div><em>3 100 ₽</em></div>
+      <div class="pr1" data-in><i style="--c:#E3F4EE">👑</i><div><b>Ши-тцу</b><small>комплекс</small></div><em>3 300 ₽</em></div>
+      <div class="pr1" data-in><i style="--c:#FDE4E9">🐕</i><div><b>Джек-рассел</b><small>тримминг жёсткой шерсти</small></div><em>2 600 ₽</em></div>
+      <div class="pr1" data-in><i style="--c:#FFF1B8">🐺</i><div><b>Овчарка</b><small>экспресс-линька</small></div><em>4 100 ₽</em></div>
+      <div class="pr1" data-in><i style="--c:#E3F4EE">🐱</i><div><b>Кошка</b><small>экспресс-линька</small></div><em>2 900 ₽</em></div>
+    </div>
+    <div class="extra"><span>✂️ когти собакам и кошкам: 350 ₽</span><span>🦷 чистка зубов и ушей</span><span>💎 стразы и креативный груминг</span><span>🏆 выставочный груминг</span><span>🎁 сертификаты</span></div>
+  </div>
+</section>
+
+<section id="lyudi">
+  <div class="wrap">
+    <span class="kk">🐾 люди и хвосты</span>
+    <h2>Мастера <em>с подходом</em></h2>
+    <p class="lead">5,0 на Яндекс Картах, 123 оценки. В отзывах благодарят Полину, Дарью, Катерину, Ариадну и Александру.</p>
+    <div class="perks">
+      <div class="pk" data-in><b>🚫</b><span>без клеток</span></div>
+      <div class="pk" data-in><b>💧</b><span>автопоилка и лежанка</span></div>
+      <div class="pk" data-in><b>🦴</b><span>лакомство после процедуры</span></div>
+      <div class="pk" data-in><b>🎓</b><span>своя школа груминга</span></div>
+    </div>
+    <div class="pics">
+      <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/19392810/2a0000019e8a32d308e2ca19f686e18a9a85/L" alt="Мальтипу после стрижки" loading="lazy"></figure>
+      <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/20308240/2a0000019fb330aa11df682fb37b5dd3b7b9/L" alt="Пудель среди лимонов" loading="lazy"></figure>
+      <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/20089935/2a0000019e89478ae42442b811d78f77d61a/L" alt="Грумер с чихуахуа" loading="lazy"></figure>
+      <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/19539707/2a0000019e89483f1c0ab8b4f763fc552649/L" alt="Собака после креативной стрижки" loading="lazy"></figure>
+      <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/17637863/2a0000019e8a32c8f12fe9eb62423a3f8364/L" alt="Борзая на розовом кресле" loading="lazy"></figure>
+    </div>
+    <div class="revs">
+      <div class="rv" data-in><b>Пугливый кот</b><p>«Котик готов сутками сидеть под диваном, когда приходят гости. Удивительно, как грумеры находят подход даже к самым проблемным животным».</p></div>
+      <div class="rv" data-in><b>Дарья и бивер</b><p>«Сразу нашла общий язык с нашим очень беспокойным бивером, вернула собаку весёлой и не в стрессе».</p></div>
+      <div class="rv" data-in><b>Полина и щенок</b><p>«Подробно уточнила все пожелания. Скидку сделали как щенку и подарили очень крутой бокс».</p></div>
+      <div class="rv" data-in><b>Лапакюр</b><p>«Ходим стричь когти. Миска с водой всегда есть, после процедуры предлагают лакомства».</p></div>
+      <div class="rv" data-in><b>Барни</b><p>«Экспресс-линька, чистка зубов и когти. Шёрстка мягкая, даже стразы наклеены».</p></div>
+      <div class="rv" data-in><b>Домосед</b><p>«Чужие места не любит, переживала, что будет стресс. Всё прошло спокойно, забрала в отличном настроении».</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="adres">
+  <div class="wrap vis">
+    <div>
+      <span class="kk">📍 адрес</span>
+      <h2>Родионова, <em>193к2</em></h2>
+      <div class="card">
+        <div class="live" data-live><i></i><span data-status>…</span></div>
+        <div class="r"><span>Адрес</span><b>Нижний Новгород, ул. Родионова, 193, корп. 2</b></div>
+        <div class="r"><span>Режим</span><b>ежедневно 10:00–20:00</b></div>
+        <div class="r"><span>Телефон</span><b><a href="tel:+79030535030">+7 903 053-50-30</a></b></div>
+        <div class="r"><span>Удобно</span><b>парковка, велопарковка, вход без ступеней</b></div>
+        <div class="btns"><a class="btn" href="tel:+79030535030">Позвонить</a><a class="btn o" href="https://t.me/moska_groom_rodionova" target="_blank" rel="noopener">Telegram</a><a class="btn o" href="https://vk.ru/moska_groom" target="_blank" rel="noopener">ВКонтакте</a></div>
+      </div>
+    </div>
+    <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=44.076783%2C56.303067&amp;z=16&amp;pt=44.076783%2C56.303067%2Cpm2vvm&amp;l=map" title="Моська на Яндекс Картах" loading="lazy" allowfullscreen></iframe></div>
+  </div>
+</section>
+</main>
+
+<footer><b>Моська</b>груминг · Нижний Новгород, ул. Родионова, 193, корп. 2 · +7 903 053-50-30</footer>
+
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  var hero = document.querySelector('.hero'), bath = document.getElementById('bath');
+  RT.onScroll(function () {
+    var p = RT.motion ? RT.progress(hero) : 1;
+    bath.style.setProperty('--p', p);
+    bath.style.setProperty('--pop', RT.ease(RT.clamp((p - .3) / .3)));
+  });
+
+  var secs = document.querySelectorAll('main > section'), links = document.querySelectorAll('.bub a');
+  RT.onScroll(function () { var cur = 0; secs.forEach(function (s, i) { if (s.getBoundingClientRect().top < innerHeight * .45) cur = i; }); links.forEach(function (a, i) { a.classList.toggle('on', i === cur); }); });
+
+  // cartoon pet in the tub: [name, price, colour, ears, fluff, size, cat, note]
+  var B = [
+    ['Шпиц', 3200, '#F2B45C', 'up', 'puff', 1, 0, 'Комплекс для шпица: купание, сушка и аккуратная стрижка «под мишку» или по вашему фото.'],
+    ['Пудель', 3700, '#C77B4A', 'flop', 'curl', 1, 0, 'Пуделя Полина «стрижёт, как просим, учитывает все пожелания», даже у очень активных псов.'],
+    ['Мальтипу', 3700, '#E8B98C', 'flop', 'curl', .95, 0, 'Мягкая стрижка, чтобы мальтипу оставался плюшевым.'],
+    ['Мальтезе', 3100, '#FFFFFF', 'flop', 'silk', .9, 0, 'Белоснежная шерсть после купания и бережной сушки.'],
+    ['Ши-тцу', 3300, '#E9D3B0', 'flop', 'silk', .95, 0, 'Ши-тцу настоящие маленькие аристократы, и стрижка им к лицу.'],
+    ['Джек-рассел', 2600, '#FFFFFF', 'fold', 'none', 1, 0, 'Жёсткую шерсть джека тримминуют, а не стригут.'],
+    ['Овчарка', 4100, '#8A6A45', 'up', 'none', 1.15, 0, 'Экспресс-линька: вычёсываем подшёрсток, дома станет меньше шерсти.'],
+    ['Кошка', 2900, '#9FA3AA', 'cat', 'none', .9, 1, 'Экспресс-линька для кошек. Мастера находят подход даже к тем, кто прячется под диваном.'],
+    ['Щенок', 2900, '#E8C9A0', 'flop', 'none', .8, 0, 'Первый груминг: знакомство с грумером без стресса.']
+  ];
+  var cur = 1, clean = false, NS = 'http://www.w3.org/2000/svg', pet = document.getElementById('pet'), scene = document.getElementById('scene');
+  function el(t, a, p) { var e = document.createElementNS(NS, t); for (var k in a) e.setAttribute(k, a[k]); if (p) p.appendChild(e); return e; }
+  function draw() {
+    var b = B[cur], c = b[2], s = b[5], stroke = '#3A2430';
+    pet.innerHTML = '';
+    el('rect', { x: 0, y: 0, width: 420, height: 340, fill: 'transparent' }, pet);
+    var g = el('g', { transform: 'translate(210 200) scale(' + s + ')' }, pet);
+    // ears
+    if (b[3] === 'up' || b[3] === 'cat') { el('path', { d: 'M-62 -50 L-74 -120 L-22 -78 Z', fill: c, stroke: stroke, 'stroke-width': 4, 'stroke-linejoin': 'round' }, g); el('path', { d: 'M62 -50 L74 -120 L22 -78 Z', fill: c, stroke: stroke, 'stroke-width': 4, 'stroke-linejoin': 'round' }, g); el('path', { d: 'M-58 -66 L-66 -104 L-36 -80 Z M58 -66 L66 -104 L36 -80 Z', fill: '#F7C6CF' }, g); }
+    else if (b[3] === 'fold') { el('path', { d: 'M-60 -70 C-80 -96 -40 -110 -30 -84 Z M60 -70 C80 -96 40 -110 30 -84 Z', fill: '#8A6A45', stroke: stroke, 'stroke-width': 4 }, g); }
+    else { el('ellipse', { cx: -76, cy: -10, rx: 26, ry: 52, fill: c, stroke: stroke, 'stroke-width': 4, transform: 'rotate(14 -76 -10)' }, g); el('ellipse', { cx: 76, cy: -10, rx: 26, ry: 52, fill: c, stroke: stroke, 'stroke-width': 4, transform: 'rotate(-14 76 -10)' }, g); }
+    // fluff around the head: messy before, neat after
+    if (b[4] !== 'none') {
+      var n = 14, r = b[4] === 'curl' ? 22 : 20;
+      for (var i = 0; i < n; i++) { var a = i / n * Math.PI * 2, rr = clean ? 74 : 80 + (i % 3) * 8, cx = Math.cos(a) * rr, cy = Math.sin(a) * rr * .9 - 6; el('circle', { cx: cx.toFixed(1), cy: cy.toFixed(1), r: clean ? r : r + (i % 2) * 6, fill: c, stroke: stroke, 'stroke-width': 3 }, g); }
+    }
+    el('ellipse', { cx: 0, cy: -4, rx: 72, ry: 66, fill: c, stroke: stroke, 'stroke-width': 4 }, g);
+    if (!clean) for (var j = 0; j < 7; j++) el('path', { d: 'M' + (-60 + j * 20) + ' -64 l6 -16 l6 14', fill: 'none', stroke: stroke, 'stroke-width': 3, 'stroke-linecap': 'round' }, g);
+    el('ellipse', { cx: -24, cy: -12, rx: 8, ry: 10, fill: stroke }, g); el('ellipse', { cx: 24, cy: -12, rx: 8, ry: 10, fill: stroke }, g);
+    el('circle', { cx: -21, cy: -16, r: 3, fill: '#fff' }, g); el('circle', { cx: 27, cy: -16, r: 3, fill: '#fff' }, g);
+    if (b[6]) { el('path', { d: 'M-6 14 L6 14 L0 22 Z', fill: '#E58FA0', stroke: stroke, 'stroke-width': 2 }, g); el('path', { d: 'M-14 20 L-60 12 M-14 26 L-60 30 M14 20 L60 12 M14 26 L60 30', stroke: stroke, 'stroke-width': 2 }, g); }
+    else { el('ellipse', { cx: 0, cy: 18, rx: 14, ry: 10, fill: stroke }, g); el('path', { d: 'M-12 32 C-6 40 6 40 12 32', fill: 'none', stroke: stroke, 'stroke-width': 3, 'stroke-linecap': 'round' }, g); if (clean) el('path', { d: 'M-4 36 C-4 48 4 48 4 36', fill: '#E58FA0', stroke: stroke, 'stroke-width': 2 }, g); }
+    el('ellipse', { cx: -46, cy: 16, rx: 10, ry: 6, fill: '#F7C6CF', opacity: .8 }, g); el('ellipse', { cx: 46, cy: 16, rx: 10, ry: 6, fill: '#F7C6CF', opacity: .8 }, g);
+    if (clean) { el('path', { d: 'M30 -70 L60 -86 L58 -56 Z M30 -70 L4 -90 L8 -58 Z', fill: '#B8467A', stroke: stroke, 'stroke-width': 3 }, g); el('circle', { cx: 31, cy: -72, r: 7, fill: '#F7D84A', stroke: stroke, 'stroke-width': 3 }, g); }
+    // paws on the rim and the tub
+    el('ellipse', { cx: -40, cy: 66, rx: 18, ry: 12, fill: c, stroke: stroke, 'stroke-width': 3 }, g); el('ellipse', { cx: 40, cy: 66, rx: 18, ry: 12, fill: c, stroke: stroke, 'stroke-width': 3 }, g);
+    el('path', { d: 'M40 270 L380 270 C376 316 340 330 300 330 L120 330 C80 330 44 316 40 270 Z', fill: '#FFFFFF', stroke: stroke, 'stroke-width': 4 }, pet);
+    el('rect', { x: 30, y: 256, width: 360, height: 20, rx: 10, fill: '#9ED8C6', stroke: stroke, 'stroke-width': 4 }, pet);
+    // foam bubbles
+    var fb = el('g', { opacity: clean ? .55 : 1 }, pet);
+    [[70, 250, 26], [110, 236, 34], [160, 248, 24], [250, 244, 30], [300, 232, 36], [350, 250, 26], [200, 256, 20], [86, 214, 16], [330, 204, 14], [262, 206, 12]].forEach(function (q) { el('circle', { cx: q[0], cy: q[1], r: q[2], fill: 'rgba(255,255,255,.92)', stroke: '#cfe9e1', 'stroke-width': 2, class: 'sb' }, fb); });
+    if (clean) [[70, 60], [350, 80], [330, 30], [90, 110]].forEach(function (q) { el('path', { d: 'M' + q[0] + ' ' + (q[1] - 12) + ' l4 9 9 3 -9 3 -4 9 -4 -9 -9 -3 9 -3 Z', fill: '#F7D84A', stroke: stroke, 'stroke-width': 1.5 }, pet); });
+    document.querySelectorAll('#breeds button').forEach(function (bt, i) { bt.classList.toggle('on', i === cur); });
+    document.getElementById('rn').textContent = b[0] + (clean ? ': готово!' : ': в пене');
+    document.getElementById('rp').textContent = RT.money(b[1]);
+    document.getElementById('rd').textContent = b[7];
+  }
+  var bx = document.getElementById('breeds');
+  B.forEach(function (b, i) { var bt = document.createElement('button'); bt.type = 'button'; bt.textContent = b[0]; bt.addEventListener('click', function () { cur = i; clean = false; draw(); }); bx.appendChild(bt); });
+  document.getElementById('wash').addEventListener('click', function () { scene.classList.remove('wash'); void scene.offsetWidth; scene.classList.add('wash'); setTimeout(function () { clean = true; draw(); }, RT.motion ? 450 : 0); });
+  draw();
+  window.__pet = function (i, c) { cur = i; clean = !!c; draw(); };
+
+  window.REEL = {
+    hero: '.hero', heroAt: .8, feature: '#vanna', featureOff: 20, featureM: '.scene', featureOffM: -20, prices: '#ceny', pricesOff: 30,
+    demo: [function () { __pet(1, 0); }, function () { __pet(1, 1); }, function () { __pet(0, 1); }, function () { __pet(7, 1); }],
+    holds: [30, 40, 30, 40]
+  };
+})();
+</script>
+</body>
+</html>

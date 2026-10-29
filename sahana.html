@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Сахана — спа-салон в Кстове, Магистральная, 10</title>
+<meta name="description" content="Спа-салон «Сахана» в Кстове, Магистральная ул., 10: массаж горячими камнями и апельсинами 2 900 ₽, кедровая бочка 800 ₽, LPG 2 000 ₽, уход за лицом, программа «Инь и Янь» для двоих, мужской спа. Ежедневно 10:00–20:00. Рейтинг 5,0.">
+<meta property="og:title" content="Сахана — спа-салон, Кстово">
+<meta property="og:description" content="Соберите свой ритуал: кедровая бочка, массаж, уход. Магистральная, 10. +7 952 472-08-17">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/19580059/2a0000019d275da4c1c832f1ec982d649494/XXXL">
+<meta name="theme-color" content="#F3EAE0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400&amp;family=Commissioner:wght@300;400;600&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"DaySpa","name":"Сахана","telephone":"+7 952 472-08-17","address":{"@type":"PostalAddress","streetAddress":"Магистральная ул., 10","addressLocality":"Кстово","addressRegion":"Нижегородская область","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":56.154396,"longitude":44.20157},"openingHours":"Mo-Su 10:00-20:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"5","ratingCount":"119"}}</script>
+<style>
+:root {
+  --sand: #F3EAE0; --sand2: #E9DCCD; --em: #1F5745; --em2: #2E7560; --rose: #C27C80; --gold: #C9A35B; --ink: #2C2422; --mut: #7F7069;
+  --head: 'Philosopher', Georgia, serif; --body: 'Commissioner', Arial, sans-serif;
+  --gut: clamp(16px, 4vw, 56px); --ease: cubic-bezier(.2, .75, .2, 1);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--sand); color: var(--ink); font: 400 17px/1.7 var(--body); overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+
+/* nav: a five-petal flower */
+.lotus { position: fixed; right: 16px; top: 16px; z-index: 50; width: 92px; height: 92px; border-radius: 50%; background: rgba(243,234,224,.9); box-shadow: 0 10px 24px rgba(44,36,34,.15); }
+.lotus a { position: absolute; left: 50%; top: 50%; width: 26px; height: 38px; margin: -38px 0 0 -13px; border-radius: 50% 50% 50% 50% / 70% 70% 30% 30%; background: #dccbb8; transform-origin: 50% 100%; transform: rotate(calc(var(--i) * 72deg)); transition: background .3s; }
+.lotus a.on { background: var(--em); }
+.lotus a span { position: absolute; left: 50%; top: -22px; transform: translateX(-50%) rotate(calc(var(--i) * -72deg)); white-space: nowrap; font: 600 11px/1 var(--body); color: var(--em); opacity: 0; transition: opacity .3s; pointer-events: none; }
+.lotus:hover a span, .lotus a.on span { opacity: 1; }
+.lotus i { position: absolute; left: 50%; top: 50%; width: 14px; height: 14px; margin: -7px; border-radius: 50%; background: var(--gold); }
+@media (max-width: 700px) { .lotus { top: auto; bottom: 12px; right: 50%; transform: translateX(50%); width: 78px; height: 78px; } .lotus a { width: 22px; height: 32px; margin: -32px 0 0 -11px; } .lotus a span { display: none; } }
+
+/* hero: mandala draws itself, then breathes */
+.hero { position: relative; height: 230vh; }
+.temple { position: sticky; top: 0; height: 100vh; min-height: 620px; overflow: hidden; display: grid; place-items: center; background: radial-gradient(circle at 50% 48%, #fbf5ee, var(--sand) 55%, var(--sand2)); }
+.mandala { position: absolute; width: min(92vmin, 760px); aspect-ratio: 1; opacity: calc(1 - var(--b, 0) * .5); }
+.center::before { content: ""; position: absolute; left: 50%; top: 50%; width: min(620px, 96vw); aspect-ratio: 1; transform: translate(-50%, -50%); border-radius: 50%; background: radial-gradient(circle, rgba(251,245,238,.97) 0 52%, rgba(251,245,238,0) 70%); opacity: var(--b, 0); z-index: -1; }
+.mandala svg { width: 100%; height: 100%; animation: breathe 8s ease-in-out infinite; animation-play-state: var(--play, paused); }
+@keyframes breathe { 0%, 100% { transform: scale(.94) rotate(0deg); } 50% { transform: scale(1.04) rotate(8deg); } }
+.mandala .ring path, .mandala .ring circle { fill: none; stroke-width: 1.4; stroke-dasharray: 1; stroke-dashoffset: calc(1 - var(--d, 0)); }
+.center { position: relative; z-index: 2; text-align: center; padding: 0 var(--gut); }
+.center .k { font: 600 12px/1 var(--body); letter-spacing: .3em; text-transform: uppercase; color: var(--em); }
+.center h1 { margin: 10px 0 2px; font: 700 clamp(64px, 10vw, 150px)/1 var(--head); color: var(--em); text-shadow: 0 0 30px var(--sand); }
+.center .br { height: 28px; font: italic 400 22px/28px var(--head); color: var(--rose); opacity: var(--b, 0); }
+.center p { max-width: 460px; margin: 10px auto 18px; color: #5c4f4a; opacity: var(--b, 0); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 15px 24px; border-radius: 40px; background: var(--em); color: #f3eae0; text-decoration: none; font: 600 15px/1 var(--body); border: 0; cursor: pointer; }
+.btn.o { background: rgba(243,234,224,.8); color: var(--em); box-shadow: inset 0 0 0 1.5px var(--em); }
+.btn.r { background: var(--rose); color: #fff; }
+.btns { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; opacity: var(--b, 0); }
+
+main > section:not(.hero) { position: relative; scroll-margin-top: 10px; padding: clamp(100px, 11vw, 140px) var(--gut) clamp(70px, 8vw, 100px); }
+.wrap { max-width: 1120px; margin: 0 auto; }
+.ctr { text-align: center; }
+.kk { font: 600 12px/1 var(--body); letter-spacing: .3em; text-transform: uppercase; color: var(--rose); }
+h2 { margin: 14px 0 14px; font: 700 clamp(38px, 5vw, 66px)/1.05 var(--head); color: var(--em); }
+h2 em { font-weight: 400; color: var(--rose); }
+.lead { max-width: 640px; margin: 0 auto 30px; color: #5c4f4a; }
+
+/* ritual wheel */
+.rit { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(20px, 4vw, 56px); align-items: center; }
+.wheel { position: relative; aspect-ratio: 1; width: min(100%, 500px); justify-self: center; }
+.wheel .orbit { position: absolute; inset: 8%; border-radius: 50%; border: 1.5px dashed #cbb59c; }
+.wheel .core { position: absolute; inset: 33%; border-radius: 50%; display: grid; place-items: center; text-align: center; background: var(--em); color: #f3eae0; box-shadow: 0 0 0 10px rgba(31,87,69,.12); }
+.wheel .core b { display: block; font: 700 clamp(26px, 3.4vw, 38px)/1 var(--head); }
+.wheel .core small { display: block; font-size: 13px; opacity: .8; margin-top: 4px; }
+.st { position: absolute; left: 50%; top: 50%; width: 30%; margin: -15% 0 0 -15%; aspect-ratio: 1; border-radius: 50%; display: grid; place-items: center; text-align: center; padding: 8px; background: #fffaf4; box-shadow: 0 14px 30px -14px rgba(44,36,34,.4), inset 0 0 0 2px var(--gold); transform: rotate(var(--a)) translate(calc(var(--r) * 1%)) rotate(calc(var(--a) * -1)); transition: transform .7s var(--ease), opacity .4s; font-size: 13.5px; line-height: 1.25; }
+.st b { display: block; font: 700 15px/1.15 var(--head); color: var(--em); }
+.st em { display: block; margin-top: 4px; font-style: normal; font-weight: 600; color: var(--rose); }
+.st i { position: absolute; top: -6px; left: 50%; width: 24px; height: 24px; margin-left: -12px; border-radius: 50%; background: var(--gold); color: #fff; font: 700 12px/24px var(--body); font-style: normal; }
+.ask h3 { margin: 18px 0 10px; font: 600 12px/1 var(--body); letter-spacing: .24em; text-transform: uppercase; color: var(--mut); }
+.ask h3:first-child { margin-top: 0; }
+.opts { display: flex; flex-wrap: wrap; gap: 8px; }
+.opts button { padding: 11px 16px; border-radius: 30px; border: 0; background: #fffaf4; color: var(--ink); font: 400 15px/1.1 var(--body); cursor: pointer; box-shadow: inset 0 0 0 1.5px #dccbb8; }
+.opts button.on { background: var(--em); color: #f3eae0; box-shadow: none; }
+.why { margin-top: 20px; padding: 18px 20px; border-radius: 20px; background: #fffaf4; box-shadow: inset 0 0 0 1px #e3d4c2; }
+.why b { font: 700 22px/1.2 var(--head); color: var(--em); }
+.why p { margin: 6px 0 12px; color: #5c4f4a; font-size: 15.5px; }
+.why .btns { justify-content: flex-start; opacity: 1; }
+@media (max-width: 900px) { .rit { grid-template-columns: 1fr; } .st { font-size: 11.5px; } .st b { font-size: 12.5px; } }
+
+/* prices: three bowls */
+.bowls { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; text-align: left; }
+.bowl { padding: 34px 22px 22px; border-radius: 200px 200px 24px 24px; background: #fffaf4; box-shadow: inset 0 0 0 1px #e3d4c2; }
+.bowl h3 { margin: 0 0 4px; text-align: center; font: 700 28px/1 var(--head); color: var(--em); }
+.bowl .sub { display: block; text-align: center; font-size: 13px; color: var(--mut); margin-bottom: 14px; }
+.bowl div { display: flex; justify-content: space-between; gap: 10px; padding: 8px 0; border-bottom: 1px dotted #d8c6b2; font-size: 15px; }
+.bowl div b { font-weight: 600; white-space: nowrap; color: var(--rose); }
+@media (max-width: 900px) { .bowls { grid-template-columns: 1fr; } }
+.extra { margin-top: 16px; text-align: center; font-size: 14.5px; color: var(--mut); }
+
+/* reviews */
+.duo { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 20px; align-items: stretch; text-align: left; }
+.yy { position: relative; padding: 28px; border-radius: 28px; background: var(--em); color: #f3eae0; overflow: hidden; }
+.yy::after { content: ""; position: absolute; right: -60px; bottom: -60px; width: 220px; height: 220px; border-radius: 50%; background: radial-gradient(circle at 50% 25%, #f3eae0 0 12%, transparent 12.5%), radial-gradient(circle at 50% 75%, var(--em) 0 12%, transparent 12.5%), linear-gradient(90deg, #f3eae0 50%, #174536 50%); opacity: .25; }
+.yy h3 { margin: 0 0 8px; font: 700 30px/1.1 var(--head); }
+.yy p { margin: 0 0 10px; color: #d9e5df; font-size: 15.5px; }
+.yy ol { margin: 10px 0 14px; padding-left: 20px; }
+.yy .btn { background: var(--gold); color: #2c2422; }
+.ph { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 10px; min-height: 360px; }
+.ph figure { margin: 0; border-radius: 22px; overflow: hidden; }
+.ph figure:first-child { grid-row: span 2; }
+.ph img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 860px) { .duo { grid-template-columns: 1fr; } .ph { min-height: 300px; } }
+.quotes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 20px; text-align: left; }
+.q { padding: 20px; border-radius: 22px; background: #fffaf4; box-shadow: inset 0 0 0 1px #e3d4c2; }
+.q b { font: 700 18px/1 var(--head); color: var(--em); }
+.q p { margin: 8px 0 0; font-size: 15px; color: #5c4f4a; }
+@media (max-width: 900px) { .quotes { grid-template-columns: 1fr; } }
+
+.vis { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 26px; text-align: left; }
+.card { padding: 24px; border-radius: 28px; background: #fffaf4; box-shadow: inset 0 0 0 1px #e3d4c2; }
+.card .r { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px dotted #d8c6b2; font-size: 15.5px; }
+.card .r span { color: var(--mut); }
+.card .r b { text-align: right; font-weight: 600; }
+.live { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 4px; font-size: 14px; font-weight: 600; }
+.live i { width: 10px; height: 10px; border-radius: 50%; background: var(--c, #999); }
+.card .btns { justify-content: flex-start; opacity: 1; margin-top: 16px; }
+.mapbox { position: relative; min-height: 420px; border-radius: 28px; overflow: hidden; }
+.mapbox iframe { position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 140px); border: 0; }
+@media (max-width: 860px) { .vis { grid-template-columns: 1fr; } }
+footer { padding: 30px var(--gut) 110px; text-align: center; color: var(--mut); font-size: 14px; }
+footer b { display: block; font: 700 34px/1 var(--head); color: var(--em); margin-bottom: 6px; }
+
+.motion [data-in] { opacity: 0; transform: translateY(22px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
+.motion [data-in].in { opacity: 1; transform: none; }
+.noimg { background: linear-gradient(135deg, #c27c80, #1f5745); }
+.noimg img { opacity: 0; }
+</style>
+</head>
+<body data-hours='{"0":[[10,0,20,0]],"1":[[10,0,20,0]],"2":[[10,0,20,0]],"3":[[10,0,20,0]],"4":[[10,0,20,0]],"5":[[10,0,20,0]],"6":[[10,0,20,0]]}'>
+
+<nav class="lotus" id="lotus" aria-label="Разделы">
+  <a href="#top" style="--i:0"><span>вдох</span></a><a href="#ritual" style="--i:1"><span>ритуал</span></a><a href="#ceny" style="--i:2"><span>цены</span></a><a href="#gosti" style="--i:3"><span>отзывы</span></a><a href="#adres" style="--i:4"><span>адрес</span></a><i></i>
+</nav>
+
+<main>
+<section class="hero" id="top">
+  <div class="temple" id="temple">
+    <div class="mandala" aria-hidden="true"><svg viewBox="-200 -200 400 400" id="mand"></svg></div>
+    <div class="center">
+      <div class="k">спа-салон · Кстово</div>
+      <h1>Сахана</h1>
+      <div class="br" id="br">вдох</div>
+      <p>Кедровая бочка, массаж горячими камнями и апельсинами, уход за лицом и телом, программы для двоих. Магистральная, 10.</p>
+      <div class="btns"><a class="btn" href="tel:+79524720817">+7 952 472-08-17</a><a class="btn o" href="#ritual">Собрать ритуал</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="ritual">
+  <div class="wrap">
+    <div class="ctr"><span class="kk">Ритуал</span><h2>С чем вы <em>пришли?</em></h2><p class="lead">Выберите настроение и с кем идёте, а мы разложим ритуал по кругу: от тепла к массажу и уходу. Цены из прайса салона.</p></div>
+    <div class="rit">
+      <div class="wheel" id="wheel"><div class="orbit"></div><div class="core"><div><b id="tot">0 ₽</b><small id="tsub">за ритуал</small></div></div></div>
+      <div class="ask">
+        <h3>Настроение</h3><div class="opts" id="mood"></div>
+        <h3>С кем</h3><div class="opts" id="who"></div>
+        <div class="why" aria-live="polite"><b id="wt">…</b><p id="wp">…</p><div class="btns"><a class="btn r" href="tel:+79524720817">Записаться на ритуал</a></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ceny">
+  <div class="wrap">
+    <div class="ctr"><span class="kk">Цены</span><h2>Три <em>чаши</em></h2><p class="lead">Из прайса салона на Яндекс Картах. Стоимость части процедур уточняйте у администратора.</p></div>
+    <div class="bowls">
+      <div class="bowl" data-in><h3>Тело</h3><span class="sub">массажи</span><div><span>Горячими камнями</span><b>2 900 ₽</b></div><div><span>Горячими апельсинами</span><b>2 900 ₽</b></div><div><span>Реабилитационный</span><b>2 500 ₽</b></div><div><span>Китайский точечный</span><b>1 300 ₽</b></div><div><span>Медовый</span><b>1 200 ₽</b></div><div><span>Тейпирование тела</span><b>550 ₽</b></div></div>
+      <div class="bowl" data-in><h3>Лицо</h3><span class="sub">уход и массаж</span><div><span>Японский лифтинг, ReFa</span><b>4 500 ₽</b></div><div><span>Быстрое преображение, 25–30 мин</span><b>4 500 ₽</b></div><div><span>Комбинированная чистка</span><b>3 500 ₽</b></div><div><span>Карбокситерапия</span><b>2 700 ₽</b></div><div><span>Скульптурный или буккальный</span><b>2 500 ₽</b></div><div><span>Гуаша</span><b>2 000 ₽</b></div></div>
+      <div class="bowl" data-in><h3>Тепло</h3><span class="sub">пар и фигура</span><div><span>Кедровая бочка</span><b>800 ₽</b></div><div><span>Инфракрасная сауна</span><b>800 ₽</b></div><div><span>LPG-массаж</span><b>2 000 ₽</b></div><div><span>Лицо и декольте, массаж</span><b>1 500 ₽</b></div><div><span>Дарсонвализация</span><b>1 000 ₽</b></div><div><span>Пилинги</span><b>3 000–3 500 ₽</b></div></div>
+    </div>
+    <p class="extra">Ещё: спа для двоих, мужской спа, детский массаж, депиляция, аппаратная коррекция фигуры, комната эмоциональной разгрузки, подарочные сертификаты.</p>
+  </div>
+</section>
+
+<section id="gosti">
+  <div class="wrap">
+    <div class="ctr"><span class="kk">Гости</span><h2>Инь <em>и Ян</em></h2><p class="lead">5,0 на Яндекс Картах, 119 оценок. Компетентность хвалят в 18 отзывах из 18.</p></div>
+    <div class="duo">
+      <div class="yy" data-in>
+        <h3>Программа «Инь и Ян» для двоих</h3>
+        <p>Самая частая программа в отзывах. Гости описывают её так:</p>
+        <ol><li>кедровая бочка</li><li>скрабирование</li><li>обёртывание</li><li>массаж</li></ol>
+        <p>«В конце программы получили очень милые подарочки, спа-свечи». А мужу одной из гостий бочка понравилась так, что он «хочет поставить её в квартире».</p>
+        <a class="btn" href="tel:+79524720817">Узнать цену для двоих</a>
+      </div>
+      <div class="ph">
+        <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/19580059/2a0000019d275da4c1c832f1ec982d649494/L" alt="Гостьи в халатах в комнате отдыха" loading="lazy"></figure>
+        <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/20245311/2a0000019d26b30585da8c976ab05a1d4b6b/L" alt="Массаж горячими камнями" loading="lazy"></figure>
+        <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/16398472/2a0000019d26d6014e02e7a4e0a333da579c/L" alt="Шезлонги в комнате отдыха" loading="lazy"></figure>
+      </div>
+    </div>
+    <div class="quotes">
+      <div class="q" data-in><b>Екатерина</b><p>«Отдельное спасибо мастеру Екатерине за потрясающий часовой массаж: очень профессионально и с душой».</p></div>
+      <div class="q" data-in><b>Мария</b><p>«Очень расслабляющий массаж получился, записалась сразу на следующий. Приятная медитативная музыка».</p></div>
+      <div class="q" data-in><b>Анастасия</b><p>«Была в других салонах, есть с чем сравнить. Мастер Настя профессионал своего дела».</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="adres">
+  <div class="wrap vis">
+    <div>
+      <span class="kk">Адрес</span>
+      <h2>Магистральная, <em>10</em></h2>
+      <div class="card">
+        <div class="live" data-live><i></i><span data-status>…</span></div>
+        <div class="r"><span>Адрес</span><b>Кстово, Магистральная ул., 10</b></div>
+        <div class="r"><span>Режим</span><b>ежедневно 10:00–20:00</b></div>
+        <div class="r"><span>Телефон</span><b><a href="tel:+79524720817">+7 952 472-08-17</a></b></div>
+        <div class="r"><span>Парковка</span><b>есть</b></div>
+        <div class="btns"><a class="btn" href="tel:+79524720817">Позвонить</a><a class="btn o" href="https://vk.ru/spa_sahana" target="_blank" rel="noopener">ВКонтакте</a><a class="btn o" href="https://max.ru/79524720817" target="_blank" rel="noopener">MAX</a></div>
+      </div>
+    </div>
+    <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=44.20157%2C56.154396&amp;z=16&amp;pt=44.20157%2C56.154396%2Cpm2dgm&amp;l=map" title="Сахана на Яндекс Картах" loading="lazy" allowfullscreen></iframe></div>
+  </div>
+</section>
+</main>
+
+<footer><b>Сахана</b>спа-салон · Кстово, Магистральная ул., 10 · +7 952 472-08-17</footer>
+
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  var NS = 'http://www.w3.org/2000/svg';
+  function el(t, a, p) { var e = document.createElementNS(NS, t); for (var k in a) e.setAttribute(k, a[k]); if (p) p.appendChild(e); return e; }
+  // mandala: rings of petals, each ring draws in its own slice of the scroll
+  var m = document.getElementById('mand'), rings = [];
+  var R = [[12, 60, 82, '#1F5745'], [16, 92, 120, '#C27C80'], [24, 128, 156, '#C9A35B'], [32, 162, 190, '#1F5745']];
+  R.forEach(function (r, ri) {
+    var g = el('g', { class: 'ring' }, m), n = r[0];
+    for (var i = 0; i < n; i++) {
+      var a = i / n * 360, w = (r[2] - r[1]) * .55;
+      el('path', { pathLength: 1, d: 'M0 ' + -r[1] + ' C' + w + ' ' + -(r[1] + (r[2] - r[1]) * .35) + ' ' + w * .6 + ' ' + -(r[2] - 6) + ' 0 ' + -r[2] + ' C' + -w * .6 + ' ' + -(r[2] - 6) + ' ' + -w + ' ' + -(r[1] + (r[2] - r[1]) * .35) + ' 0 ' + -r[1], stroke: r[3], transform: 'rotate(' + a + ')' }, g);
+    }
+    el('circle', { pathLength: 1, r: r[1] - 4, stroke: r[3] }, g);
+    rings.push(g);
+  });
+  var inner = el('g', { class: 'ring' }, m);
+  for (var i = 0; i < 8; i++) el('path', { pathLength: 1, d: 'M0 -8 C12 -22 10 -44 0 -54 C-10 -44 -12 -22 0 -8', stroke: '#C9A35B', transform: 'rotate(' + i * 45 + ')' }, inner);
+  rings.unshift(inner);
+  var hero = document.querySelector('.hero'), temple = document.getElementById('temple'), br = document.getElementById('br');
+  RT.onScroll(function () {
+    var p = RT.motion ? RT.progress(hero) : 1;
+    rings.forEach(function (g, i) { g.style.setProperty('--d', RT.ease(RT.clamp((p - i * .1) / .25))); });
+    var b = RT.ease(RT.clamp((p - .5) / .2));
+    temple.style.setProperty('--b', b);
+    temple.style.setProperty('--play', b > .9 && RT.motion ? 'running' : 'paused');
+  });
+  if (RT.motion) setInterval(function () { br.textContent = br.textContent === 'вдох' ? 'выдох' : 'вдох'; }, 4000);
+
+  var secs = document.querySelectorAll('main > section'), links = document.querySelectorAll('.lotus a');
+  RT.onScroll(function () { var cur = 0; secs.forEach(function (s, i) { if (s.getBoundingClientRect().top < innerHeight * .45) cur = i; }); links.forEach(function (a, i) { a.classList.toggle('on', i === cur); }); });
+
+  // ritual wheel
+  var MOODS = {
+    relax: ['Расслабиться', [['Кедровая бочка', 800], ['Массаж горячими камнями', 2900], ['Классический массаж лица', 2000]], 'Сначала прогреться в кедровой бочке с травяным паром, потом камни снимают зажимы в спине, в конце массаж лица.'],
+    back: ['Спина и шея', [['Инфракрасная сауна', 800], ['Китайский точечный массаж', 1300], ['Реабилитационный массаж', 2500], ['Тейпирование', 550]], 'Тепло, затем точечная работа с болевыми зонами, реабилитационный массаж и тейпы, чтобы эффект держался.'],
+    face: ['Сияние лица', [['Комбинированная чистка', 3500], ['Массаж гуаша', 2000], ['Японский массаж ReFa', 2500]], 'Чистка, затем лимфодренаж скребком и японские массажёры для подтянутого овала.'],
+    body: ['Подтянуть тело', [['Кедровая бочка', 800], ['LPG-массаж', 2000], ['Медовый массаж', 1200]], 'Пар раскрывает кожу, LPG работает с объёмами, медовый массаж усиливает кровообращение.'],
+    warm: ['Согреться', [['Инфракрасная сауна', 800], ['Массаж горячими апельсинами', 2900], ['Медовый массаж', 1200]], 'Для холодного дня: сауна и тёплые апельсины, которые прорабатывают мышцы.']
+  };
+  var MK = Object.keys(MOODS), WHO = ['Одна или один', 'Вдвоём'], st = { mood: 0, who: 0 };
+  var wheel = document.getElementById('wheel'), stones = [];
+  function opts(id, arr, key) { var box = document.getElementById(id); arr.forEach(function (o, i) { var b = document.createElement('button'); b.type = 'button'; b.textContent = o; b.addEventListener('click', function () { st[key] = i; ritual(); }); box.appendChild(b); }); }
+  opts('mood', MK.map(function (k) { return MOODS[k][0]; }), 'mood'); opts('who', WHO, 'who');
+  for (var s = 0; s < 4; s++) { var d = document.createElement('div'); d.className = 'st'; wheel.appendChild(d); stones.push(d); }
+  function ritual() {
+    ['mood', 'who'].forEach(function (k) { document.querySelectorAll('#' + k + ' button').forEach(function (b, i) { b.classList.toggle('on', i === st[k]); }); });
+    var mo = MOODS[MK[st.mood]], steps = mo[1], two = st.who === 1;
+    stones.forEach(function (d, i) {
+      var sp = steps[i];
+      if (!sp) { d.style.opacity = 0; d.style.setProperty('--r', 0); return; }
+      d.style.opacity = 1; d.style.setProperty('--a', (-90 + i * 360 / steps.length) + 'deg'); d.style.setProperty('--r', 118);
+      d.innerHTML = '<i>' + (i + 1) + '</i><div><b>' + sp[0] + '</b><em>' + RT.money(sp[1] * (two ? 2 : 1)) + '</em></div>';
+    });
+    var sum = steps.reduce(function (a, b) { return a + b[1]; }, 0) * (two ? 2 : 1);
+    document.getElementById('tot').textContent = RT.money(sum);
+    document.getElementById('tsub').textContent = two ? 'за двоих' : 'за ритуал';
+    document.getElementById('wt').textContent = mo[0] + (two ? ', вдвоём' : '');
+    document.getElementById('wp').textContent = mo[2] + (two ? ' Для пар есть готовая программа «Инь и Ян»: бочка, скраб, обёртывание и массаж, цену подскажет администратор.' : '');
+  }
+  ritual();
+  window.__rit = function (m, w) { st = { mood: m, who: w }; ritual(); };
+
+  window.REEL = {
+    hero: '.hero', heroAt: .85, feature: '#ritual', featureOff: 20, featureM: '.wheel', featureOffM: -20, prices: '#ceny', pricesOff: 30,
+    demo: [function () { __rit(0, 0); }, function () { __rit(1, 0); }, function () { __rit(2, 0); }, function () { __rit(0, 1); }],
+    holds: [30, 30, 30, 40]
+  };
+})();
+</script>
+</body>
+</html>

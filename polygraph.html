@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polygraph Detailing Studio — детейлинг в Нижнем Новгороде, Варварская, 32</title>
+<meta name="description" content="Polygraph Detailing Studio на Варварской, 32: оклейка полиуретановой плёнкой, антихром, полировка и керамика, двухфазная и трёхфазная мойка, химчистка, реставрация кожи, шумоизоляция, обучение оклейке. Пн–пт 9:00–19:00. Рейтинг 4,9.">
+<meta property="og:title" content="Polygraph Detailing Studio, Нижний Новгород">
+<meta property="og:description" content="Детейлинг, который не врёт. Варварская, 32.">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/5495309/2a00000180840b6d746e3d80c4888c3190eb/XXXL">
+<meta name="theme-color" content="#F4F1EA">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700;900&amp;family=IBM+Plex+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"AutoRepair","name":"Polygraph Detailing Studio","telephone":"+7 930 705-77-85","address":{"@type":"PostalAddress","streetAddress":"Варварская ул., 32","addressLocality":"Нижний Новгород","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":56.322443,"longitude":44.012738},"openingHours":"Mo-Fr 09:00-19:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"127"}}</script>
+<style>
+:root {
+  --paper: #F4F1EA; --grid: rgba(31,138,76,.13); --grid2: rgba(31,138,76,.26); --ink: #1B1B1B; --mut: #6B6A64; --red: #D61F26; --blue: #1E5BD7; --grn: #1F8A4C;
+  --head: 'Onest', Arial, sans-serif; --mono: 'IBM Plex Mono', Consolas, monospace;
+  --gut: clamp(16px, 4vw, 56px); --ease: cubic-bezier(.2, .75, .2, 1);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; color: var(--ink); font: 400 16.5px/1.6 var(--head); overflow-x: hidden;
+  background: var(--paper) linear-gradient(var(--grid2) 1px, transparent 1px) 0 0/100% 50px, var(--paper);
+  background-image: linear-gradient(var(--grid2) 1px, transparent 1px), linear-gradient(90deg, var(--grid2) 1px, transparent 1px), linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+
+/* channel-strip navigation, like the pens of a polygraph */
+.pens { position: fixed; top: 14px; left: 50%; transform: translateX(-50%); z-index: 40; display: flex; gap: 2px; background: var(--ink); padding: 4px; border-radius: 40px; box-shadow: 0 12px 24px -12px rgba(0,0,0,.5); }
+.pens a { display: flex; align-items: center; gap: 7px; padding: 9px 14px; border-radius: 40px; color: #e9e6dd; text-decoration: none; font: 500 13px/1 var(--mono); letter-spacing: .04em; }
+.pens a i { width: 8px; height: 8px; border-radius: 50%; background: var(--c); }
+.pens a.on { background: var(--paper); color: var(--ink); }
+.pens a.tel { background: var(--red); color: #fff; }
+@media (max-width: 760px) { .pens a:not(.tel) span { display: none; } .pens a { padding: 10px 12px; } }
+
+/* hero: three pens scribble across the chart, then calm down */
+.hero { position: relative; height: 200vh; }
+.lab { position: sticky; top: 0; height: 100vh; min-height: 620px; overflow: hidden; display: grid; grid-template-rows: auto 1fr auto; padding: 80px var(--gut) 34px; }
+.lab .top { display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; font: 500 13px/1.4 var(--mono); color: var(--mut); text-transform: uppercase; letter-spacing: .08em; }
+.chart { position: relative; align-self: center; height: min(46vh, 420px); }
+.chart svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.chart .lbl { position: absolute; left: 0; font: 700 12px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; padding: 4px 8px; border-radius: 4px; color: #fff; }
+.word { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(-4deg) scale(calc(1.5 - .5 * var(--st, 0))); font: 900 clamp(64px, 12vw, 190px)/.9 var(--head); letter-spacing: -.04em; color: var(--ink); opacity: var(--st, 0); text-align: center; white-space: nowrap; }
+.word small { display: block; font: 700 clamp(14px, 1.6vw, 22px)/1.2 var(--mono); letter-spacing: .3em; color: var(--red); margin-top: 8px; }
+.bottom { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(16px, 3vw, 40px); align-items: end; }
+.bottom h1 { margin: 0; font: 900 clamp(42px, 6.4vw, 104px)/.86 var(--head); letter-spacing: -.045em; }
+.bottom p { margin: 12px 0 18px; max-width: 520px; color: #43423d; }
+.photo { position: relative; border-radius: 16px; overflow: hidden; aspect-ratio: 16/10; box-shadow: 0 30px 50px -30px rgba(0,0,0,.6); }
+.photo img { width: 100%; height: 100%; object-fit: cover; }
+.photo span { position: absolute; left: 10px; top: 10px; background: var(--red); color: #fff; padding: 5px 9px; border-radius: 4px; font: 700 12px/1 var(--mono); letter-spacing: .1em; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 20px; border-radius: 40px; background: var(--ink); color: var(--paper); text-decoration: none; font: 700 15px/1 var(--head); border: 0; cursor: pointer; }
+.btn.r { background: var(--red); color: #fff; }
+.btn.o { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 2px var(--ink); }
+.btns { display: flex; flex-wrap: wrap; gap: 10px; }
+@media (max-width: 860px) { .bottom { grid-template-columns: 1fr; } .photo { display: none; } .chart { height: 34vh; } }
+
+section:not(.hero) { scroll-margin-top: 70px; padding: clamp(80px, 10vw, 130px) 0; }
+@media (max-width: 760px) { section:not(.hero) { padding-top: 104px; } }
+.wrap { max-width: 1200px; margin: 0 auto; padding: 0 var(--gut); }
+.case { font: 700 13px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--red); }
+h2 { margin: 14px 0 14px; font: 900 clamp(34px, 5vw, 72px)/.95 var(--head); letter-spacing: -.04em; max-width: 920px; }
+h2 em { font-style: normal; color: var(--red); }
+.lead { max-width: 640px; color: #4b4a44; margin: 0 0 30px; }
+
+/* interrogation */
+.test { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(16px, 3vw, 36px); align-items: stretch; }
+.tape { background: #fff; border-radius: 18px; box-shadow: 0 20px 40px -30px rgba(0,0,0,.5), inset 0 0 0 1px #ddd8cc; padding: 18px; display: grid; grid-template-rows: auto 1fr auto; gap: 12px; min-height: 420px; }
+.tape .q { font: 700 13px/1 var(--mono); letter-spacing: .1em; color: var(--mut); text-transform: uppercase; }
+.tape h3 { margin: 6px 0 0; font: 900 clamp(22px, 2.4vw, 32px)/1.1 var(--head); letter-spacing: -.02em; }
+.tape .mini { position: relative; background: var(--paper) linear-gradient(var(--grid2) 1px, transparent 1px) 0 0/100% 20px; border-radius: 10px; min-height: 160px; overflow: hidden; }
+.tape .mini svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.ans { display: flex; gap: 10px; }
+.ans button { flex: 1; padding: 16px; border-radius: 12px; border: 0; font: 900 18px/1 var(--head); cursor: pointer; }
+.ans .y { background: var(--ink); color: var(--paper); } .ans .n { background: #e6e2d7; color: var(--ink); }
+.proto { background: var(--ink); color: #eeeae0; border-radius: 18px; padding: 22px; font: 400 15px/1.55 var(--mono); }
+.proto b.t { display: block; font: 700 13px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: #ff6b70; margin-bottom: 14px; }
+.proto ol { margin: 0; padding-left: 22px; }
+.proto li { margin-bottom: 10px; }
+.proto li span { color: #9ad3ab; }
+.proto .sum { margin-top: 16px; padding-top: 14px; border-top: 1px dashed #555; display: flex; justify-content: space-between; gap: 10px; font-weight: 700; }
+.proto .empty { color: #a4a097; }
+@media (max-width: 900px) { .test { grid-template-columns: 1fr; } }
+
+/* price as an evidence log */
+.log { background: #fff; border-radius: 18px; box-shadow: inset 0 0 0 1px #ddd8cc; overflow: hidden; }
+.log .g { display: grid; grid-template-columns: 160px 1fr; border-top: 1px solid #e6e1d6; }
+.log .g:first-child { border-top: 0; }
+.log .g > b { padding: 18px; font: 700 13px/1.2 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: #fff; background: var(--c); }
+.log .it { display: grid; grid-template-columns: 1fr auto; gap: 4px 16px; padding: 14px 18px; border-top: 1px dashed #e6e1d6; }
+.log .it:first-child { border-top: 0; }
+.log .it span { font-weight: 700; }
+.log .it small { grid-column: 1; color: var(--mut); font-size: 14px; }
+.log .it em { grid-row: 1 / span 2; grid-column: 2; align-self: center; font: 700 18px/1 var(--mono); font-style: normal; white-space: nowrap; }
+@media (max-width: 700px) { .log .g { grid-template-columns: 1fr; } .log .g > b { padding: 10px 18px; } }
+
+/* evidence wall */
+.wall { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.wall figure { position: relative; margin: 0; background: #fff; padding: 8px 8px 34px; box-shadow: 0 14px 24px -18px rgba(0,0,0,.6); transform: rotate(var(--r)); }
+.wall img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.wall figcaption { position: absolute; left: 10px; bottom: 9px; font: 500 12.5px/1 var(--mono); color: var(--mut); }
+.wall figure::before { content: ""; position: absolute; top: -8px; left: 50%; width: 60px; height: 18px; margin-left: -30px; background: rgba(214,31,38,.25); transform: rotate(-3deg); }
+@media (max-width: 800px) { .wall { grid-template-columns: 1fr 1fr; } }
+.wit { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 26px; }
+.wit p { margin: 0; background: #fff; border-radius: 14px; padding: 18px; box-shadow: inset 0 0 0 1px #ddd8cc; font-size: 15.5px; }
+.wit p b { display: block; font: 700 12.5px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--grn); margin-bottom: 8px; }
+@media (max-width: 900px) { .wit { grid-template-columns: 1fr; } }
+
+.vis { display: grid; grid-template-columns: 1fr 1.15fr; gap: 26px; }
+.li { display: flex; justify-content: space-between; gap: 12px; padding: 11px 0; border-bottom: 1px solid #d8d2c4; font-family: var(--mono); font-size: 15px; }
+.li span { color: var(--mut); }
+.li b { text-align: right; font-weight: 500; }
+.live { display: inline-flex; align-items: center; gap: 8px; }
+.live i { width: 9px; height: 9px; border-radius: 50%; background: #999; }
+.live.is-open i { background: var(--grn); } .live.is-closed i { background: var(--red); }
+.mapbox { position: relative; min-height: 400px; border-radius: 18px; overflow: hidden; box-shadow: inset 0 0 0 1px #ccc5b5; }
+.mapbox iframe { position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 140px); border: 0; filter: grayscale(.85) contrast(1.05); }
+@media (max-width: 860px) { .vis { grid-template-columns: 1fr; } }
+footer { padding: 26px var(--gut) 40px; text-align: center; font: 500 13px/1.6 var(--mono); color: var(--mut); border-top: 1px solid #d8d2c4; }
+footer b { display: block; font: 900 26px/1 var(--head); color: var(--ink); letter-spacing: -.03em; margin-bottom: 6px; }
+
+.motion [data-in] { opacity: 0; transform: translateY(20px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.motion [data-in].in { opacity: 1; transform: none; }
+.motion .wall [data-in].in { transform: rotate(var(--r)); }
+.noimg { background: #ddd8cc; }
+.noimg img { opacity: 0; }
+</style>
+</head>
+<body data-hours='{"1":[[9,0,19,0]],"2":[[9,0,19,0]],"3":[[9,0,19,0]],"4":[[9,0,19,0]],"5":[[9,0,19,0]]}'>
+
+<nav class="pens" id="pens" aria-label="Разделы">
+  <a href="#test" style="--c:var(--red)"><i></i><span>Детектор</span></a>
+  <a href="#price" style="--c:var(--blue)"><i></i><span>Цены</span></a>
+  <a href="#cases" style="--c:var(--grn)"><i></i><span>Дела</span></a>
+  <a href="#visit" style="--c:#999"><i></i><span>Адрес</span></a>
+  <a class="tel" href="tel:+79307057785">☎ <span>Позвонить</span></a>
+</nav>
+
+<main>
+<section class="hero" id="top">
+  <div class="lab" id="lab">
+    <div class="top"><span>Полиграф · Варварская, 32</span><span id="clock">Запись: пн–пт 9:00–19:00</span><span>Нижний Новгород</span></div>
+    <div class="chart" id="chart">
+      <svg viewBox="0 0 1200 420" preserveAspectRatio="none" aria-hidden="true"><path id="p0" fill="none" stroke="#D61F26" stroke-width="3"/><path id="p1" fill="none" stroke="#1E5BD7" stroke-width="3"/><path id="p2" fill="none" stroke="#1F8A4C" stroke-width="3"/></svg>
+      <span class="lbl" style="top:8%;background:var(--red)">Блеск</span><span class="lbl" style="top:42%;background:var(--blue)">Сколы</span><span class="lbl" style="top:76%;background:var(--grn)">Салон</span>
+      <div class="word" aria-hidden="true">ПРАВДА<small>Машина как из салона</small></div>
+    </div>
+    <div class="bottom">
+      <div>
+        <h1>POLYGRAPH<br>DETAILING</h1>
+        <p>Детейлинг, который не врёт: полировка и керамика, оклейка полиуретаном и антихром, химчистка, реставрация кожи и шумоизоляция. В отзывах пишут: «будто заводское покрытие».</p>
+        <div class="btns"><a class="btn r" href="tel:+79307057785">Записаться</a><a class="btn o" href="#test">Пройти детектор</a></div>
+      </div>
+      <div class="photo" data-ph><img src="https://avatars.mds.yandex.net/get-altay/5495309/2a00000180840b6d746e3d80c4888c3190eb/XXL" alt="Студия Polygraph сверху: машины в работе" fetchpriority="high"><span>Улика № 1 · студия</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="test">
+  <div class="wrap">
+    <span class="case">Дело № 1 · Детектор</span>
+    <h2>Отвечайте <em>честно</em>: машина всё равно расскажет</h2>
+    <p class="lead">Пять вопросов о вашей машине. Иглы полиграфа реагируют на каждый ответ, а справа собирается протокол: что стоит сделать и сколько это стоит по прайсу студии.</p>
+    <div class="test">
+      <div class="tape" data-in>
+        <div><span class="q" id="qn">Вопрос 1 из 5</span><h3 id="qt">…</h3></div>
+        <div class="mini"><svg viewBox="0 0 600 160" preserveAspectRatio="none"><path id="m0" fill="none" stroke="#D61F26" stroke-width="2.5"/><path id="m1" fill="none" stroke="#1E5BD7" stroke-width="2.5"/></svg></div>
+        <div class="ans"><button class="y" type="button" id="yes">Да</button><button class="n" type="button" id="no">Нет</button></div>
+      </div>
+      <div class="proto" data-in>
+        <b class="t">Протокол осмотра</b>
+        <ol id="plist"><li class="empty">Ответьте на вопросы, и здесь появятся рекомендации.</li></ol>
+        <div class="sum"><span>Итого по прайсу</span><span id="psum">0 ₽</span></div>
+        <div class="btns" style="margin-top:16px"><a class="btn r" href="tel:+79307057785">Обсудить с Максимом</a><button class="btn o" style="color:#eee;box-shadow:inset 0 0 0 2px #777" type="button" id="again">Заново</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="price">
+  <div class="wrap">
+    <span class="case">Дело № 2 · Вещдоки</span>
+    <h2>Прайс <em>без вранья</em></h2>
+    <p class="lead">Цены с Яндекс Карт. «Немного дороже, чем в других местах, но тут это оправдано на все 100%», пишет клиент.</p>
+    <div class="log" data-in>
+      <div class="g" style="--c:var(--blue)"><b>Мойка</b><div>
+        <div class="it"><span>Двухфазная мойка кузова</span><small>Химия первой фазы на кузов, диски, пороги, низ бамперов</small><em>1 500 ₽</em></div>
+        <div class="it"><span>Трёхфазная мойка</span><small>То же плюс кварцевое покрытие</small><em>1 700 ₽</em></div>
+        <div class="it"><span>Мойка мототехники</span><small>Бережно, около часа</small><em>1 300 ₽</em></div>
+        <div class="it"><span>Химчистка дисков</span><small>Включая внутреннюю полку</small><em>8 000 ₽</em></div>
+        <div class="it"><span>Мойка радиаторов</span><small>Со снятием бампера</small><em>12 000 ₽</em></div>
+      </div></div>
+      <div class="g" style="--c:var(--red)"><b>Плёнка</b><div>
+        <div class="it"><span>Полиуретановая плёнка на элемент</span><small>Установка защитной плёнки</small><em>10 000 ₽</em></div>
+        <div class="it"><span>Защита передней части от сколов</span><small>С гарантией на весь срок службы плёнки</small><em>69 170 ₽</em></div>
+        <div class="it"><span>Полная оклейка полиуретаном</span><small>Все окрашенные элементы кузова</small><em>250 000 ₽</em></div>
+      </div></div>
+      <div class="g" style="--c:var(--grn)"><b>Салон и кожа</b><div>
+        <div class="it"><span>Реставрация сиденья</span><small>Потёртости, заломы, прожоги</small><em>5 500 ₽</em></div>
+        <div class="it"><span>Реставрация руля</span><small>Кожа руля как новая</small><em>6 000 ₽</em></div>
+        <div class="it"><span>Ремонт царапин на пластике</span><small>Обшивки, торпедо</small><em>3 000 ₽</em></div>
+        <div class="it"><span>Шумоизоляция дверей</span><small>4 слоя материалами Comfort Mat</small><em>8 500 ₽</em></div>
+      </div></div>
+      <div class="g" style="--c:#1B1B1B"><b>Ещё</b><div>
+        <div class="it"><span>Полировка фар</span><small>Стеклянные, пластиковые фары и ПТФ</small><em>3 000 ₽</em></div>
+        <div class="it"><span>Обучение оклейке</span><small>Полиуретан и винил: кузов, салон, стёкла</small><em>80 000 ₽</em></div>
+        <div class="it"><span>Полировка, керамика, антихром, вмятины без покраски</span><small>Цену назовут после осмотра</small><em>по осмотру</em></div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<section id="cases">
+  <div class="wrap">
+    <span class="case">Дело № 3 · Улики</span>
+    <h2>Фото <em>с места работ</em></h2>
+    <div class="wall">
+      <figure data-ph data-in style="--r:-2deg"><img src="https://avatars.mds.yandex.net/get-altay/5101995/2a0000017c558755e89e2916319859a7fc90/XL" alt="Красный Porsche после детейлинга" loading="lazy"><figcaption>Улика № 2 · блеск</figcaption></figure>
+      <figure data-ph data-in style="--r:1.5deg"><img src="https://avatars.mds.yandex.net/get-altay/10505037/2a0000018fee6b075681da7fc49130e213f7/XL" alt="Синий BMW X3 M крупным планом" loading="lazy"><figcaption>Улика № 3 · цвет</figcaption></figure>
+      <figure data-ph data-in style="--r:-1deg"><img src="https://avatars.mds.yandex.net/get-altay/5598654/2a0000018083e6e3215a752eef9e0df56643/XL" alt="Porsche Macan в боксе оклейки" loading="lazy"><figcaption>Улика № 4 · плёнка</figcaption></figure>
+      <figure data-ph data-in style="--r:2deg"><img src="https://avatars.mds.yandex.net/get-altay/5456749/2a0000018083dfef6715719397d79b4f2b24/XL" alt="Range Rover в студии" loading="lazy"><figcaption>Улика № 5 · кузов</figcaption></figure>
+    </div>
+    <div class="wit">
+      <p data-in><b>Свидетель · полная оклейка</b>«Делала полный кузов плёнкой плюс салонные пластики. Работу выполнили шикарно, всё аккуратно, будто заводское покрытие».</p>
+      <p data-in><b>Свидетель · машине 10+ лет</b>«Был весь в сколах, грязь в салоне, в днище, под капотом. Забрала обновлённый, блестящий, словно из салона!»</p>
+      <p data-in><b>Свидетель · антихром</b>«Поклеил авто в прозрачный полиуретан, с элементами антихрома. Все кромки и швы идеально!»</p>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap vis">
+    <div>
+      <span class="case">Дело № 4 · Адрес</span>
+      <h2>Варварская, <em>32</em></h2>
+      <div class="li"><span>Адрес</span><b>Нижний Новгород, Варварская ул., 32</b></div>
+      <div class="li"><span>Часы</span><b>Пн–пт 9:00–19:00, по записи</b></div>
+      <div class="li"><span>Сейчас</span><b class="live" data-live><i></i><span data-status>…</span></b></div>
+      <div class="li"><span>Телефоны</span><b><a href="tel:+79307057785">+7 930 705-77-85</a><br><a href="tel:+79030447711">+7 903 044-77-11</a></b></div>
+      <div class="li"><span>Оплата</span><b>Карта, наличные, СБП, перевод</b></div>
+      <div class="li"><span>Ещё</span><b>Парковка · подарочные сертификаты · можно с собакой</b></div>
+      <div class="btns" style="margin-top:18px"><a class="btn r" href="tel:+79307057785">Позвонить</a><a class="btn o" href="https://t.me/79307057785" target="_blank" rel="noopener">Telegram</a><a class="btn o" href="https://vk.ru/polygraph_detailing" target="_blank" rel="noopener">ВКонтакте</a><a class="btn o" href="https://yandex.ru/maps/org/polygraph_detailing_studio/17406481791/" target="_blank" rel="noopener">Маршрут</a></div>
+    </div>
+    <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=44.012738%2C56.322443&amp;z=16&amp;pt=44.012738%2C56.322443%2Cpm2rdm&amp;l=map" title="Polygraph Detailing на Яндекс Картах" loading="lazy" allowfullscreen></iframe></div>
+  </div>
+</section>
+</main>
+
+<footer><b>POLYGRAPH DETAILING</b>детейлинг · Нижний Новгород, Варварская ул., 32 · пн–пт 9:00–19:00</footer>
+
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  // pens: noisy traces that calm down with the scroll; amplitude jumps after each answer
+  var P = [0, 1, 2].map(function (i) { return document.getElementById('p' + i); }), M = [0, 1].map(function (i) { return document.getElementById('m' + i); });
+  var hero = document.querySelector('.hero'), lab = document.getElementById('lab'), calm = 0, kick = 0;
+  function trace(t, base, amp, seed, w, h, step) {
+    var d = '';
+    for (var x = 0; x <= w; x += step) {
+      var u = x / w * 9 + t / 600 + seed;
+      var y = base + amp * (Math.sin(u * 1.7) * .5 + Math.sin(u * 4.3 + seed) * .3 + Math.sin(u * 11.1 + seed * 2) * .2 * (amp > 20 ? 1.4 : .6));
+      d += (x ? 'L' : 'M') + x + ' ' + y.toFixed(1);
+    }
+    return d;
+  }
+  RT.onScroll(function () { var p = RT.motion ? RT.progress(hero) : 1; calm = RT.clamp(p / .7); lab.style.setProperty('--st', RT.ease(RT.clamp((p - .55) / .3))); });
+  RT.loop(function (t) {
+    var a = 46 * (1 - calm) + 6;
+    P[0].setAttribute('d', trace(t, 70, a, 0, 1200, 420, 10));
+    P[1].setAttribute('d', trace(t * 1.2, 210, a * .8, 3, 1200, 420, 10));
+    P[2].setAttribute('d', trace(t * .8, 345, a * .6, 7, 1200, 420, 10));
+    kick *= .97;
+    M[0].setAttribute('d', trace(t * 1.5, 52, 6 + kick * 34, 1, 600, 160, 6));
+    M[1].setAttribute('d', trace(t * 1.3, 112, 5 + kick * 24, 5, 600, 160, 6));
+  });
+
+  // interrogation: five questions, each answer adds findings to the protocol
+  var Q = [
+    { q: 'Машине больше пяти лет?', y: ['Восстановительная полировка кузова', 'по осмотру'], n: ['Трёхфазная мойка с кварцем', 1700] },
+    { q: 'На капоте и бампере есть сколы?', y: ['Защита передней части плёнкой', 69170], n: ['Полиуретан на зоны риска, по элементу', 10000] },
+    { q: 'Фары помутнели или пожелтели?', y: ['Полировка фар и ПТФ', 3000], n: null },
+    { q: 'Кожа руля или сиденья потёрлась?', y: ['Реставрация руля', 6000], n: null },
+    { q: 'В салоне шумно на трассе?', y: ['Шумоизоляция дверей, 4 слоя', 8500], n: null }
+  ];
+  var step = 0, found = [];
+  function show() {
+    if (step >= Q.length) { document.getElementById('qn').textContent = 'Допрос окончен'; document.getElementById('qt').textContent = 'Протокол готов. Позвоните, и Максим сверит его с вашей машиной.'; return; }
+    document.getElementById('qn').textContent = 'Вопрос ' + (step + 1) + ' из ' + Q.length;
+    document.getElementById('qt').textContent = Q[step].q;
+  }
+  function render() {
+    var ol = document.getElementById('plist'), sum = 0;
+    ol.innerHTML = found.length ? found.map(function (f) { if (typeof f[1] === 'number') sum += f[1]; return '<li>' + f[0] + ': <span>' + (typeof f[1] === 'number' ? RT.money(f[1]) : f[1]) + '</span></li>'; }).join('') : '<li class="empty">Ответьте на вопросы, и здесь появятся рекомендации.</li>';
+    document.getElementById('psum').textContent = (found.some(function (f) { return typeof f[1] !== 'number'; }) ? 'от ' : '') + RT.money(sum);
+  }
+  function answer(yes) { if (step >= Q.length) return; var r = yes ? Q[step].y : Q[step].n; if (r) found.push(r); kick = yes ? 1 : .45; step++; show(); render(); }
+  document.getElementById('yes').addEventListener('click', function () { answer(true); });
+  document.getElementById('no').addEventListener('click', function () { answer(false); });
+  document.getElementById('again').addEventListener('click', function () { step = 0; found = []; show(); render(); });
+  show(); render();
+
+  var secs = document.querySelectorAll('main > section:not(.hero)'), links = document.querySelectorAll('.pens a:not(.tel)');
+  RT.onScroll(function () { var cur = -1; secs.forEach(function (s, i) { if (s.getBoundingClientRect().top < innerHeight * .5) cur = i; }); links.forEach(function (a, i) { a.classList.toggle('on', i === cur); }); });
+  function live() { var s = RT.status(); if (!s) return; document.querySelectorAll('[data-live]').forEach(function (e) { e.classList.toggle('is-open', s.open); e.classList.toggle('is-closed', !s.open); }); }
+  document.addEventListener('DOMContentLoaded', live); setInterval(live, 60000);
+
+  window.REEL = {
+    hero: '.hero', heroAt: .4, feature: '#test', featureOff: 70, featureM: '.tape', featureOffM: -60, prices: '#price', pricesOff: 70,
+    demo: [function () { answer(true); answer(true); }, function () { answer(true); answer(false); }, function () { answer(true); }],
+    holds: [40, 40, 40]
+  };
+})();
+</script>
+</body>
+</html>

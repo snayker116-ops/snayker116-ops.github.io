@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mot Arz — замена масла в АКПП, вариаторе и DSG · Арзамас</title>
+<meta name="description" content="Автосервис Mot Arz в Арзамасе (мкр. Сосновый): аппаратная замена масла в АКПП от 4 000 ₽, вариатор CVT, DSG, полный привод, тормозные системы, диагностика подвески 800 ₽, компьютерная диагностика 1 500 ₽. Фотоотчёт по каждому узлу. Рейтинг 5,0.">
+<meta property="og:title" content="Mot Arz — коробки, масла, тормоза · Арзамас">
+<meta property="og:description" content="Аппаратная замена масла в АКПП, CVT и DSG. Тормозные системы. Пн–пт 8:30–17:30.">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/11277832/2a0000019135c7cbd872b87be03d773b5d18/XXXL">
+<meta name="theme-color" content="#0E1712">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&amp;family=Golos+Text:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"AutoRepair","name":"Mot Arz","telephone":"+7 987 752-55-51","address":{"@type":"PostalAddress","streetAddress":"микрорайон Сосновый","addressLocality":"Арзамас","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":55.36859,"longitude":43.850077},"openingHours":"Mo-Fr 08:30-17:30","aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","ratingCount":"120"}}</script>
+<style>
+:root {
+  --bg: #0E1712; --bg2: #14211A; --line: #28392F; --ink: #F4EFE2; --mut: #9AA89E; --oil: #E8A317; --oil2: #FFCB4F; --red: #E5484D; --ok: #3DD68C;
+  --head: 'Unbounded', 'Arial Black', sans-serif; --body: 'Golos Text', Arial, sans-serif;
+  --gut: clamp(16px, 4vw, 56px); --ease: cubic-bezier(.2, .75, .2, 1);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 16.5px/1.6 var(--body); overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+
+/* shifter gate: P R N D, the lever follows the page */
+.gate { position: fixed; right: 18px; top: 50%; transform: translateY(-50%); z-index: 40; width: 74px; padding: 14px 0; border-radius: 40px; background: #08100C; box-shadow: inset 0 0 0 2px #23342A, 0 20px 40px -20px #000; display: grid; justify-items: center; gap: 4px; }
+.gate a { position: relative; z-index: 2; width: 46px; height: 46px; display: grid; place-items: center; text-decoration: none; font: 900 20px/1 var(--head); color: #4f6457; transition: color .3s; }
+.gate a.on { color: var(--bg); }
+.gate a small { position: absolute; right: 58px; white-space: nowrap; font: 600 12px/1 var(--body); letter-spacing: .12em; text-transform: uppercase; color: var(--mut); opacity: 0; transition: opacity .3s; pointer-events: none; }
+.gate:hover a small { opacity: 1; }
+.gate .knob { position: absolute; z-index: 1; left: 50%; top: 14px; width: 48px; height: 48px; margin-left: -24px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, var(--oil2), var(--oil) 60%, #a86f00); box-shadow: 0 6px 16px -4px rgba(232,163,23,.7); transform: translateY(calc(var(--g, 0) * 50px)); transition: transform .45s var(--ease); }
+.gate .slot { position: absolute; left: 50%; top: 30px; bottom: 30px; width: 4px; margin-left: -2px; background: #1a2820; border-radius: 2px; }
+.call { position: fixed; left: 18px; top: 16px; z-index: 40; padding: 12px 16px; border-radius: 40px; background: var(--oil); color: #10180F; text-decoration: none; font: 700 14px/1 var(--head); }
+@media (max-width: 820px) {
+  .gate { right: 50%; top: auto; bottom: 10px; transform: translateX(50%); width: auto; padding: 0 14px; grid-auto-flow: column; height: 62px; align-items: center; }
+  .gate .slot { top: 50%; bottom: auto; left: 30px; right: 30px; width: auto; height: 4px; margin: -2px 0 0; }
+  .gate .knob { top: 7px; left: 13px; margin-left: 0; transform: translateX(calc(var(--g, 0) * 50px)); }
+  .gate a small { display: none; }
+}
+
+/* hero: planetary gear set and an oil line rising through the words */
+.hero { position: relative; height: 220vh; }
+.pin { position: sticky; top: 0; height: 100vh; min-height: 620px; overflow: hidden; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .95fr); align-items: center; padding: 0 calc(var(--gut) + 80px) 0 var(--gut); background: radial-gradient(900px 600px at 75% 50%, #1c2e23, transparent 70%); }
+.copy .k { font: 600 13px/1 var(--body); letter-spacing: .26em; text-transform: uppercase; color: var(--oil); }
+.copy h1 { margin: 18px 0 12px; font: 900 clamp(54px, 8vw, 128px)/.9 var(--head); letter-spacing: -.03em; }
+.oilw { position: relative; display: inline-block; font: 900 clamp(26px, 3.6vw, 54px)/1 var(--head); letter-spacing: -.02em; }
+.oilw .bk { color: transparent; -webkit-text-stroke: 1.5px rgba(244,239,226,.35); }
+.oilw .lq { position: absolute; left: 0; top: 0; color: var(--oil); clip-path: inset(calc((1 - var(--fill, 0)) * 100%) 0 0 0); text-shadow: 0 0 24px rgba(232,163,23,.35); }
+.copy p { max-width: 520px; color: #c3cdc6; margin: 20px 0 26px; }
+.copy q { display: block; max-width: 480px; margin-bottom: 24px; font-size: 15px; color: var(--mut); quotes: "«" "»"; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 15px 22px; border-radius: 40px; background: var(--oil); color: #10180F; text-decoration: none; font: 700 14px/1 var(--head); border: 0; cursor: pointer; }
+.btn.o { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1.5px #3b5245; }
+.btns { display: flex; flex-wrap: wrap; gap: 10px; }
+.gears { position: relative; width: 100%; max-width: 620px; aspect-ratio: 1; justify-self: center; }
+.gears svg { width: 100%; height: 100%; overflow: visible; }
+.gears .ring { transform-origin: 300px 300px; transform: rotate(calc(var(--r, 0) * -40deg)); }
+.gears .sun { transform-origin: 300px 300px; transform: rotate(calc(var(--r, 0) * 200deg)); }
+.gears .carrier { transform-origin: 300px 300px; transform: rotate(calc(var(--r, 0) * 60deg)); }
+.gears .pl { transform-box: fill-box; transform-origin: center; transform: rotate(calc(var(--r, 0) * -260deg)); }
+.gears .lbl { position: absolute; font: 600 12px/1.3 var(--body); letter-spacing: .1em; text-transform: uppercase; color: var(--mut); }
+@media (max-width: 860px) { .pin { grid-template-columns: 1fr; padding: 70px var(--gut) 90px; align-content: center; } .gears { position: absolute; right: -30vw; top: 8vh; width: 90vw; opacity: .35; } }
+
+main > section:not(.hero) { padding: clamp(80px, 10vw, 130px) calc(var(--gut) + 90px) clamp(80px, 10vw, 120px) var(--gut); }
+@media (max-width: 820px) { main > section:not(.hero) { padding: 108px var(--gut) 90px; } }
+.gl { display: flex; align-items: center; gap: 14px; }
+.gl b { width: 52px; height: 52px; display: grid; place-items: center; border-radius: 50%; background: var(--oil); color: #10180F; font: 900 22px/1 var(--head); }
+.gl span { font: 600 13px/1 var(--body); letter-spacing: .24em; text-transform: uppercase; color: var(--mut); }
+h2 { margin: 18px 0 14px; font: 900 clamp(30px, 4.4vw, 62px)/1.02 var(--head); letter-spacing: -.03em; max-width: 900px; }
+h2 em { font-style: normal; color: var(--oil); }
+.lead { max-width: 640px; color: #b9c4bd; margin: 0 0 30px; }
+
+/* R: regulation gauge */
+#reg { background: var(--bg2); }
+.tool { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(20px, 4vw, 56px); max-width: 1180px; align-items: center; }
+.seg { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; padding: 6px; border-radius: 40px; background: #0a120d; box-shadow: inset 0 0 0 1px var(--line); }
+.seg button { padding: 12px 8px; border: 0; border-radius: 40px; background: transparent; color: var(--mut); font: 700 13px/1.15 var(--head); cursor: pointer; }
+.seg button.on { background: var(--oil); color: #10180F; }
+.fld { margin-top: 22px; }
+.fld label { display: flex; justify-content: space-between; font: 600 14px/1 var(--body); color: #cdd6d0; margin-bottom: 10px; }
+.fld label b { font: 700 16px/1 var(--head); color: var(--oil); }
+input[type=range] { width: 100%; accent-color: var(--oil); }
+.gauge { position: relative; background: #0a120d; border-radius: 26px; padding: 26px; box-shadow: inset 0 0 0 1px var(--line); text-align: center; }
+.gauge svg { width: 100%; max-width: 420px; }
+.gauge .needle { transform-origin: 200px 200px; transition: transform .7s var(--ease); }
+.gauge h3 { margin: 8px 0 6px; font: 900 26px/1.1 var(--head); }
+.gauge p { margin: 0 auto 14px; color: #c3cdc6; max-width: 380px; }
+.gauge .pr { display: inline-block; padding: 8px 14px; border-radius: 30px; background: #18261d; font: 700 15px/1 var(--head); color: var(--oil); }
+.small { font-size: 13.5px; color: var(--mut); margin-top: 14px; }
+@media (max-width: 900px) { .tool { grid-template-columns: 1fr; } }
+
+/* N: works as fluid capsules */
+.caps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; max-width: 1180px; }
+.cap { position: relative; border-radius: 24px; padding: 22px 22px 20px; background: var(--bg2); box-shadow: inset 0 0 0 1px var(--line); overflow: hidden; }
+.cap::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: calc(var(--lv) * 1%); background: linear-gradient(180deg, rgba(232,163,23,.16), rgba(232,163,23,.04)); }
+.cap > * { position: relative; z-index: 1; }
+.cap b { display: block; font: 700 19px/1.2 var(--head); margin-bottom: 8px; }
+.cap p { margin: 0 0 14px; font-size: 15px; color: #b9c4bd; }
+.cap .p { font: 900 22px/1 var(--head); color: var(--oil); }
+.cap .p small { font: 600 13px/1 var(--body); color: var(--mut); margin-right: 4px; }
+@media (max-width: 960px) { .caps { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .caps { grid-template-columns: 1fr; } }
+.report { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 12px; margin-top: 16px; max-width: 1180px; }
+.report figure { position: relative; margin: 0; border-radius: 20px; overflow: hidden; aspect-ratio: 4/3; }
+.report img { width: 100%; height: 100%; object-fit: cover; }
+.report figcaption { position: absolute; left: 10px; top: 10px; display: flex; gap: 6px; align-items: center; padding: 6px 10px; border-radius: 30px; background: rgba(14,23,18,.85); font: 600 12.5px/1 var(--body); }
+.report figcaption::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--ok); }
+@media (max-width: 760px) { .report { grid-template-columns: 1fr 1fr; } .report figure:first-child { grid-column: span 2; } }
+
+/* D: reviews as a route of distances */
+#drive { background: var(--bg2); }
+.far { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; max-width: 1180px; margin-bottom: 18px; }
+.far div { border-radius: 24px; padding: 22px; background: #0a120d; box-shadow: inset 0 0 0 1px var(--line); }
+.far b { display: block; font: 900 clamp(34px, 4vw, 52px)/1 var(--head); color: var(--oil); letter-spacing: -.03em; }
+.far span { display: block; margin: 8px 0 10px; font: 700 15px/1.2 var(--head); }
+.far p { margin: 0; font-size: 15px; color: #b9c4bd; }
+.quotes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; max-width: 1180px; }
+.quotes p { margin: 0; padding: 18px 20px; border-radius: 20px; background: #0a120d; box-shadow: inset 0 0 0 1px var(--line); color: #dfe5e0; font-size: 15.5px; }
+.quotes p::before { content: "★★★★★"; display: block; color: var(--oil); letter-spacing: .1em; font-size: 13px; margin-bottom: 6px; }
+@media (max-width: 900px) { .far, .quotes { grid-template-columns: 1fr; } }
+
+.vis { display: grid; grid-template-columns: 1fr 1.15fr; gap: 26px; max-width: 1180px; }
+.li { display: flex; justify-content: space-between; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.li span { color: var(--mut); }
+.li b { text-align: right; font-weight: 600; }
+.live { display: inline-flex; align-items: center; gap: 8px; }
+.live i { width: 9px; height: 9px; border-radius: 50%; background: #666; }
+.live.is-open i { background: var(--ok); box-shadow: 0 0 8px var(--ok); } .live.is-closed i { background: var(--red); }
+.mapbox { position: relative; min-height: 400px; border-radius: 24px; overflow: hidden; }
+.mapbox iframe { position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 140px); border: 0; filter: sepia(.25) saturate(.8); }
+@media (max-width: 860px) { .vis { grid-template-columns: 1fr; } }
+footer { padding: 26px var(--gut) 110px; text-align: center; color: var(--mut); font-size: 14px; border-top: 1px solid var(--line); }
+footer b { display: block; font: 900 22px/1 var(--head); color: var(--ink); margin-bottom: 6px; }
+
+.motion [data-in] { opacity: 0; transform: translateY(26px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.motion [data-in].in { opacity: 1; transform: none; }
+.noimg { background: linear-gradient(135deg, #24382c, #0E1712); }
+.noimg img { opacity: 0; }
+</style>
+</head>
+<body data-hours='{"1":[[8,30,17,30]],"2":[[8,30,17,30]],"3":[[8,30,17,30]],"4":[[8,30,17,30]],"5":[[8,30,17,30]]}'>
+
+<nav class="gate" id="gate" aria-label="Разделы">
+  <i class="slot"></i><i class="knob"></i>
+  <a href="#top"><small>Начало</small>P</a>
+  <a href="#reg"><small>Регламент масла</small>R</a>
+  <a href="#works"><small>Работы и цены</small>N</a>
+  <a href="#drive"><small>Отзывы и адрес</small>D</a>
+</nav>
+<a class="call" href="tel:+79877525551">+7 987 752-55-51</a>
+
+<main>
+<section class="hero" id="top">
+  <div class="pin" id="pin">
+    <div class="copy">
+      <div class="k">Арзамас · мкр. Сосновый · пн–пт</div>
+      <h1>MOT ARZ</h1>
+      <div class="oilw"><span class="bk">КАК ПО МАСЛУ</span><span class="lq" aria-hidden="true">КАК ПО МАСЛУ</span></div>
+      <p>Аппаратная замена масла в АКПП, вариаторе и DSG, полный привод, тормозные системы и диагностика. Мастер Алексей присылает фото каждого узла, пока машина в работе.</p>
+      <q>Машину не узнать. Едет совсем по-другому: плавно, тихо. Как по маслу, в прямом и переносном смысле.</q>
+      <div class="btns"><a class="btn" href="tel:+79877525551">Записаться</a><a class="btn o" href="#reg">Пора менять масло?</a></div>
+    </div>
+    <div class="gears" aria-hidden="true">
+      <svg viewBox="0 0 600 600">
+        <defs>
+          <radialGradient id="mg" cx="40%" cy="35%"><stop offset="0" stop-color="#3b5245"/><stop offset="1" stop-color="#16231b"/></radialGradient>
+          <radialGradient id="og" cx="40%" cy="35%"><stop offset="0" stop-color="#FFCB4F"/><stop offset="1" stop-color="#A86F00"/></radialGradient>
+        </defs>
+        <g class="ring" id="ring"></g>
+        <g class="carrier" id="carrier"></g>
+        <g class="sun" id="sun"></g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section id="reg">
+  <div class="gl"><b>R</b><span>Регламент</span></div>
+  <h2>Пора менять масло <em>в коробке?</em></h2>
+  <p class="lead">Многие коробки «на весь срок службы» на деле живут дольше со свежим маслом. Выберите тип и пробег с прошлой замены, а стрелка покажет, что у вас сейчас.</p>
+  <div class="tool">
+    <div>
+      <div class="seg" id="seg"><button type="button" data-t="0" class="on">АКПП</button><button type="button" data-t="1">Вариатор CVT</button><button type="button" data-t="2">Робот DSG</button></div>
+      <div class="fld"><label for="km">Пробег с прошлой замены <b id="kmv">35 000 км</b></label><input id="km" type="range" min="0" max="150000" step="5000" value="35000"></div>
+      <div class="fld"><label>Как ездите</label>
+        <div class="seg" id="mode"><button type="button" data-m="1" class="on">Трасса</button><button type="button" data-m=".8">Город, пробки</button><button type="button" data-m=".65">Такси, прицеп</button></div>
+      </div>
+      <p class="small">Ориентир по практике сервисов, а не замена инструкции к машине. Точно скажем по цвету и запаху масла и по ошибкам блока.</p>
+    </div>
+    <div class="gauge" data-in>
+      <svg viewBox="0 0 400 230" aria-hidden="true">
+        <path d="M40 200 A160 160 0 0 1 360 200" fill="none" stroke="#18261d" stroke-width="26" stroke-linecap="round"/>
+        <path d="M40 200 A160 160 0 0 1 152 47" fill="none" stroke="#3DD68C" stroke-width="26" stroke-linecap="round"/>
+        <path d="M156 46 A160 160 0 0 1 284 64" fill="none" stroke="#E8A317" stroke-width="26"/>
+        <path d="M288 66 A160 160 0 0 1 360 200" fill="none" stroke="#E5484D" stroke-width="26" stroke-linecap="round"/>
+        <g class="needle" id="needle"><path d="M200 200 L200 62" stroke="#F4EFE2" stroke-width="6" stroke-linecap="round"/><circle cx="200" cy="200" r="16" fill="#F4EFE2"/><circle cx="200" cy="200" r="6" fill="#0E1712"/></g>
+        <text x="40" y="228" fill="#9AA89E" font-size="13" font-family="Golos Text,Arial">свежее</text><text x="360" y="228" fill="#9AA89E" font-size="13" text-anchor="end" font-family="Golos Text,Arial">пора</text>
+      </svg>
+      <h3 id="gh">…</h3>
+      <p id="gp">…</p>
+      <span class="pr" id="gpr">Аппаратная замена в АКПП от 4 000 ₽</span>
+      <div class="btns" style="justify-content:center;margin-top:18px"><a class="btn" href="tel:+79877525551">Записаться на замену</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="works">
+  <div class="gl"><b>N</b><span>Работы и цены</span></div>
+  <h2>Чем занимаемся <em>каждый день</em></h2>
+  <p class="lead">Цены с Яндекс Карт. Расходники в наличии, запчасти Алексей заказывает заранее, ещё до приёма машины.</p>
+  <div class="caps">
+    <div class="cap" style="--lv:80" data-in><b>Масло в АКПП</b><p>Аппаратная замена, обслуживание фильтров, промывка системы.</p><span class="p"><small>от</small>4 000 ₽</span></div>
+    <div class="cap" style="--lv:70" data-in><b>Вариатор CVT</b><p>Полная замена масла с фильтром на Outlander, Nissan и других.</p><span class="p" style="font-size:16px">цену назовут по машине</span></div>
+    <div class="cap" style="--lv:60" data-in><b>Робот DSG</b><p>Замена масла с оригинальным фильтром, полный фотоотчёт.</p><span class="p" style="font-size:16px">цену назовут по машине</span></div>
+    <div class="cap" style="--lv:50" data-in><b>Полный привод</b><p>Масла и смазка в раздатке и редукторах, тормозная жидкость.</p><span class="p" style="font-size:16px">по запросу</span></div>
+    <div class="cap" style="--lv:40" data-in><b>Тормозные системы</b><p>Подбор, продажа и установка. Ради этого приезжают за 500 км.</p><span class="p" style="font-size:16px">консультация бесплатно</span></div>
+    <div class="cap" style="--lv:30" data-in><b>Масло в двигателе</b><p>Плановое ТО, фильтры и технические жидкости.</p><span class="p"><small>от</small>1 000 ₽</span></div>
+    <div class="cap" style="--lv:25" data-in><b>Диагностика подвески</b><p>Вывешивание и анализ при разгоне на подъёмнике.</p><span class="p">800 ₽</span></div>
+    <div class="cap" style="--lv:20" data-in><b>Компьютерная диагностика</b><p>Двигатель, коробка и электронные блоки.</p><span class="p">1 500 ₽</span></div>
+    <div class="cap" style="--lv:15" data-in><b>Ремонт по двигателю</b><p>ГРМ, топливная система, промывка инжектора, эндоскопия.</p><span class="p" style="font-size:16px">по диагностике</span></div>
+  </div>
+  <div class="report">
+    <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/902827/2a0000018faf65d915cf502c21a509cfe550/XXL" alt="BMW на подъёмнике, установка тормозов" loading="lazy"><figcaption>Фотоотчёт · тормоза</figcaption></figure>
+    <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/10993309/2a0000018d7f4a9359d4ae9d3d81e3d3186a/XL" alt="Компьютерная диагностика BMW" loading="lazy"><figcaption>Диагностика</figcaption></figure>
+    <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/13299246/2a0000018e62505d0fe3342a2a52b7359222/XL" alt="Porsche Cayenne на подъёмнике" loading="lazy"><figcaption>Подъёмник</figcaption></figure>
+  </div>
+</section>
+
+<section id="drive">
+  <div class="gl"><b>D</b><span>Отзывы и адрес</span></div>
+  <h2>К нам едут <em>издалека</em></h2>
+  <div class="far">
+    <div data-in><b>500 км</b><span>BMW F31 · тормоза</span><p>«Договорились по телефону, подготовили запчасти, выбрали день, и я проехал 500 км для установки. Компетенции 10 из 10».</p></div>
+    <div data-in><b>Ижевск</b><span>Тормозная система</span><p>«Все соединения обработаны смазками, прилегающие поверхности очищены от ржавчины. Был удивлён подходом».</p></div>
+    <div data-in><b>2 000 км</b><span>BMW · поломка в пути</span><p>«За две тысячи километров от дома попал в беду. Случайно нашёл этот автосервис. Устранили неисправность быстро!»</p></div>
+  </div>
+  <div class="quotes">
+    <p data-in>«Меняли масло в коробке CVT, сделали всё качественно с заменой фильтра и полной заменой масла. Есть хорошее оборудование».</p>
+    <p data-in>«Замена масла в DSG на Шкода Йети, быстро и качественно, с полным фотоотчётом. Поставили оригинальный фильтр».</p>
+    <p data-in>«На протяжении всего ремонта присылали фото состояния узлов и проводимых работ».</p>
+    <p data-in>«Обслуживаю у ребят семейные авто разных марок. Запчасти Алексей заказывает сам перед приёмом в работу, это очень удобно».</p>
+  </div>
+  <div class="vis" style="margin-top:60px">
+    <div>
+      <h2 style="margin-top:0">Сосновый, <em>Арзамас</em></h2>
+      <div class="li"><span>Адрес</span><b>Арзамас, микрорайон Сосновый</b></div>
+      <div class="li"><span>Часы</span><b>Пн–пт 8:30–17:30</b></div>
+      <div class="li"><span>Сейчас</span><b class="live" data-live><i></i><span data-status>…</span></b></div>
+      <div class="li"><span>Телефон</span><b><a href="tel:+79877525551">+7 987 752-55-51</a></b></div>
+      <div class="li"><span>Рейтинг</span><b>5,0 · 120 оценок · ремонт хвалят в 61 из 62 отзывов</b></div>
+      <div class="btns" style="margin-top:20px"><a class="btn" href="tel:+79877525551">Позвонить</a><a class="btn o" href="https://vk.ru/mot_arz" target="_blank" rel="noopener">ВКонтакте</a><a class="btn o" href="https://yandex.ru/maps/org/mot_arz/132785705084/" target="_blank" rel="noopener">Маршрут</a></div>
+    </div>
+    <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=43.850077%2C55.36859&amp;z=15&amp;pt=43.850077%2C55.36859%2Cpm2orm&amp;l=map" title="Mot Arz на Яндекс Картах" loading="lazy" allowfullscreen></iframe></div>
+  </div>
+</section>
+</main>
+
+<footer><b>MOT ARZ</b>коробки, масла, тормоза · Арзамас, мкр. Сосновый · пн–пт 8:30–17:30</footer>
+
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  // build gears: ring with inner teeth, sun, three planets on a carrier
+  var NS = 'http://www.w3.org/2000/svg';
+  function gear(cx, cy, r, teeth, depth, fill, inner) {
+    var d = '', n = teeth * 4;
+    for (var i = 0; i < n; i++) {
+      var a = i / n * Math.PI * 2, k = i % 4, rr = (k === 1 || k === 2) ? (inner ? r - depth : r + depth) : r;
+      d += (i ? 'L' : 'M') + (cx + rr * Math.cos(a)).toFixed(1) + ' ' + (cy + rr * Math.sin(a)).toFixed(1);
+    }
+    var p = document.createElementNS(NS, 'path'); p.setAttribute('d', d + 'Z'); p.setAttribute('fill', fill); p.setAttribute('stroke', '#0E1712'); p.setAttribute('stroke-width', '3'); return p;
+  }
+  var ring = document.getElementById('ring'), sun = document.getElementById('sun'), car = document.getElementById('carrier');
+  var outer = document.createElementNS(NS, 'circle'); outer.setAttribute('cx', 300); outer.setAttribute('cy', 300); outer.setAttribute('r', 292); outer.setAttribute('fill', '#2a3d31'); outer.setAttribute('stroke', '#4a6556'); outer.setAttribute('stroke-width', 3); ring.appendChild(outer);
+  var hole = gear(300, 300, 248, 54, 12, '#0a120d', true); ring.appendChild(hole);
+  var arm = document.createElementNS(NS, 'path'); arm.setAttribute('d', 'M300 300 m-14 0 a14 14 0 1 0 28 0 a14 14 0 1 0 -28 0'); car.appendChild(arm);
+  for (var i = 0; i < 3; i++) {
+    var a = -Math.PI / 2 + i * Math.PI * 2 / 3, x = 300 + 166 * Math.cos(a), y = 300 + 166 * Math.sin(a);
+    var g = document.createElementNS(NS, 'g'); g.setAttribute('class', 'pl');
+    g.appendChild(gear(x, y, 72, 18, 10, 'url(#mg)'));
+    var c = document.createElementNS(NS, 'circle'); c.setAttribute('cx', x); c.setAttribute('cy', y); c.setAttribute('r', 16); c.setAttribute('fill', '#0E1712'); g.appendChild(c);
+    car.appendChild(g);
+  }
+  sun.appendChild(gear(300, 300, 84, 20, 10, 'url(#og)'));
+  var hub = document.createElementNS(NS, 'circle'); hub.setAttribute('cx', 300); hub.setAttribute('cy', 300); hub.setAttribute('r', 26); hub.setAttribute('fill', '#0E1712'); sun.appendChild(hub);
+
+  var hero = document.querySelector('.hero'), pin = document.getElementById('pin');
+  RT.onScroll(function () {
+    var p = RT.motion ? RT.progress(hero) : 1;
+    pin.style.setProperty('--r', p * 2);
+    pin.style.setProperty('--fill', RT.ease(RT.clamp(p / .8)));
+  });
+  // idle drift so the gears are never still
+  if (RT.motion) { var t0 = null; RT.loop(function (t) { if (t0 === null) t0 = t; var p = RT.progress(hero); pin.style.setProperty('--r', p * 2 + (t - t0) / 9000); }); }
+
+  // gate lever follows sections
+  var secs = [document.getElementById('top'), document.getElementById('reg'), document.getElementById('works'), document.getElementById('drive')], links = document.querySelectorAll('.gate a'), gate = document.getElementById('gate');
+  RT.onScroll(function () { var cur = 0; secs.forEach(function (s, i) { if (s.getBoundingClientRect().top < innerHeight * .5) cur = i; }); gate.style.setProperty('--g', cur); links.forEach(function (a, i) { a.classList.toggle('on', i === cur); }); });
+
+  // oil regulation gauge
+  var T = [{ n: 'АКПП', iv: 50000, pr: 'Аппаратная замена в АКПП от 4 000 ₽' }, { n: 'вариаторе', iv: 40000, pr: 'Замена масла в вариаторе: цену назовут по машине' }, { n: 'DSG', iv: 60000, pr: 'Замена масла в DSG: цену назовут по машине' }];
+  var st = { t: 0, m: 1 }, km = document.getElementById('km');
+  function fmt(v) { return String(v).replace(/\B(?=(\d{3})+(?!\d))/g, ' '); }
+  function calc() {
+    var k = +km.value, tp = T[st.t], lim = Math.round(tp.iv * st.m / 5000) * 5000, r = k / lim;
+    document.getElementById('kmv').textContent = fmt(k) + ' км';
+    document.getElementById('needle').style.transform = 'rotate(' + (-90 + RT.clamp(r / 1.3) * 180) + 'deg)';
+    var h, p;
+    if (r < .6) { h = 'Масло ещё в порядке'; p = 'До ориентира около ' + fmt(lim - k) + ' км. Если появились толчки или пинки при переключении, приезжайте раньше.'; }
+    else if (r < 1) { h = 'Скоро пора'; p = 'Осталось около ' + fmt(lim - k) + ' км до ориентира в ' + fmt(lim) + ' км. Удобно запланировать замену на ближайшие месяцы.'; }
+    else { h = 'Пора менять'; p = 'Пробег уже больше ориентира в ' + fmt(lim) + ' км для ' + tp.n + ' при вашей езде. Старое масло хуже защищает и даёт рывки.'; }
+    document.getElementById('gh').textContent = h; document.getElementById('gp').textContent = p; document.getElementById('gpr').textContent = tp.pr;
+  }
+  document.querySelectorAll('#seg button').forEach(function (b) { b.addEventListener('click', function () { st.t = +b.dataset.t; document.querySelectorAll('#seg button').forEach(function (x) { x.classList.toggle('on', x === b); }); calc(); }); });
+  document.querySelectorAll('#mode button').forEach(function (b) { b.addEventListener('click', function () { st.m = +b.dataset.m; document.querySelectorAll('#mode button').forEach(function (x) { x.classList.toggle('on', x === b); }); calc(); }); });
+  km.addEventListener('input', calc); calc();
+  window.__set = function (t, m, k) { document.querySelectorAll('#seg button')[t].click(); document.querySelectorAll('#mode button')[m].click(); km.value = k; calc(); };
+
+  function live() { var s = RT.status(); if (!s) return; document.querySelectorAll('[data-live]').forEach(function (e) { e.classList.toggle('is-open', s.open); e.classList.toggle('is-closed', !s.open); }); }
+  document.addEventListener('DOMContentLoaded', live); setInterval(live, 60000);
+
+  window.REEL = {
+    hero: '.hero', heroAt: .5, feature: '#reg', featureOff: 30, featureM: '.gauge', featureOffM: -40, prices: '#works', pricesOff: 30,
+    demo: [function () { __set(1, 1, 45000); }, function () { __set(2, 0, 20000); }, function () { __set(0, 2, 90000); }],
+    holds: [40, 40, 40]
+  };
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Дизель авто — ремонт форсунок и ТНВД в Балахне</title>
+<meta name="description" content="Дизель авто в Балахне (ГК Волга-1, 168): диагностика дизеля и форсунок от 300 ₽, ремонт форсунок Common Rail от 4 000 ₽, форсунки Bosch и Denso для Газели, Валдая, Hyundai County, КАМАЗа, МАЗа, ТНВД. Пн–пт 9:00–18:00. Рейтинг 4,9.">
+<meta property="og:title" content="Дизель авто — форсунки и ТНВД, Балахна">
+<meta property="og:description" content="Ремонт форсунок за 2 часа, стенды, запчасти в наличии.">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/1880524/2a0000016e8d32370bf3f89cbbd67bcc0274/XXXL">
+<meta name="theme-color" content="#121417">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tektur:wght@500;700;900&amp;family=PT+Sans:wght@400;700&amp;family=Roboto+Mono:wght@500;700&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"AutoRepair","name":"Дизель авто","telephone":"+7 920 050-42-50","address":{"@type":"PostalAddress","streetAddress":"территория ГК Волга-1, 168","addressLocality":"Балахна","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":56.52311,"longitude":43.574241},"openingHours":"Mo-Fr 09:00-18:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"77"}}</script>
+<style>
+:root {
+  --bg: #121417; --pn: #1A1D21; --pn2: #22262B; --line: #2E333A; --ink: #ECEEF0; --mut: #8C939C; --fuel: #F2B705; --fuel2: #FFD54A; --lcd: #9BFF6B; --red: #FF5A4E;
+  --head: 'Tektur', 'Arial Black', sans-serif; --body: 'PT Sans', Arial, sans-serif; --mono: 'Roboto Mono', Consolas, monospace;
+  --gut: clamp(16px, 4vw, 56px); --ease: cubic-bezier(.2, .75, .2, 1);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17px/1.55 var(--body); overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+
+/* panel switches: navigation as toggle switches on a bench */
+.sw { position: fixed; right: 16px; top: 50%; transform: translateY(-50%); z-index: 40; display: grid; gap: 8px; padding: 12px; border-radius: 12px; background: #0c0e10; box-shadow: inset 0 0 0 1px var(--line), 0 20px 40px -20px #000; }
+.sw a { display: grid; grid-template-columns: 34px auto; align-items: center; gap: 10px; text-decoration: none; font: 700 12px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--mut); }
+.sw a i { position: relative; width: 34px; height: 18px; border-radius: 9px; background: #2a2f35; }
+.sw a i::after { content: ""; position: absolute; left: 2px; top: 2px; width: 14px; height: 14px; border-radius: 50%; background: #6a717a; transition: transform .3s var(--ease), background .3s; }
+.sw a.on { color: var(--fuel); }
+.sw a.on i::after { transform: translateX(16px); background: var(--fuel); box-shadow: 0 0 8px var(--fuel); }
+.call { position: fixed; left: 16px; top: 16px; z-index: 40; padding: 12px 16px; border-radius: 8px; background: var(--fuel); color: #111; text-decoration: none; font: 700 15px/1 var(--head); }
+@media (max-width: 900px) { .sw { right: 50%; top: auto; bottom: 10px; transform: translateX(50%); grid-auto-flow: column; padding: 10px 12px; } .sw a { grid-template-columns: 34px; justify-items: center; gap: 4px; font-size: 10px; } }
+
+/* hero: a single injector, the spray turns from drops into a fine mist */
+.hero { position: relative; height: 220vh; }
+.bench { position: sticky; top: 0; height: 100vh; min-height: 620px; overflow: hidden; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .9fr); align-items: center; gap: clamp(16px, 4vw, 60px); padding: 0 calc(var(--gut) + 120px) 0 var(--gut); background: radial-gradient(700px 500px at 72% 60%, rgba(242,183,5,.10), transparent 70%); }
+.copy .k { font: 700 13px/1 var(--mono); letter-spacing: .2em; text-transform: uppercase; color: var(--fuel); }
+.copy h1 { margin: 16px 0 10px; font: 900 clamp(52px, 7.6vw, 120px)/.9 var(--head); letter-spacing: -.02em; text-transform: uppercase; }
+.copy h1 span { color: var(--fuel); }
+.copy p { max-width: 520px; color: #c3c8cf; margin: 0 0 22px; }
+.lcd { display: inline-grid; grid-template-columns: auto auto; gap: 4px 18px; padding: 12px 16px; border-radius: 8px; background: #0a120a; box-shadow: inset 0 0 0 2px #1d2a1d; font: 700 15px/1.2 var(--mono); color: var(--lcd); text-shadow: 0 0 8px rgba(155,255,107,.5); margin-bottom: 22px; }
+.lcd span { color: #5a8c49; text-shadow: none; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 15px 22px; border-radius: 8px; background: var(--fuel); color: #111; text-decoration: none; font: 700 16px/1 var(--head); border: 0; cursor: pointer; }
+.btn.o { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 2px #444b54; }
+.btns { display: flex; flex-wrap: wrap; gap: 10px; }
+.inj { position: relative; height: 92vh; }
+.inj svg { position: absolute; top: 0; left: 50%; height: 100%; width: auto; transform: translateX(-50%); overflow: visible; }
+.spray i { position: absolute; left: 50%; top: 52%; width: var(--s); height: var(--s); margin-left: calc(var(--s) / -2); border-radius: 50%; background: var(--fuel2); opacity: 0; }
+.motion .spray i { animation: drop var(--t) linear infinite; animation-delay: var(--d); }
+@keyframes drop { 0% { opacity: .9; transform: translate(0, 0); } 100% { opacity: 0; transform: translate(calc(var(--x) * 1px), calc(var(--y) * 1px)); } }
+@media (max-width: 900px) { .bench { grid-template-columns: 1fr; padding: 70px var(--gut) 90px; } .inj { position: absolute; right: -8vw; top: 4vh; height: 60vh; opacity: .45; } }
+
+section:not(.hero) { scroll-margin-top: 20px; padding: clamp(80px, 10vw, 130px) calc(var(--gut) + 120px) clamp(80px, 10vw, 120px) var(--gut); }
+@media (max-width: 900px) { section:not(.hero) { padding: 90px var(--gut) 90px; } }
+.ch { font: 700 13px/1 var(--mono); letter-spacing: .2em; text-transform: uppercase; color: var(--fuel); }
+h2 { margin: 14px 0 14px; font: 900 clamp(34px, 4.6vw, 66px)/1 var(--head); letter-spacing: -.02em; text-transform: uppercase; max-width: 960px; }
+h2 em { font-style: normal; color: var(--fuel); }
+.lead { max-width: 660px; color: #b9bfc7; margin: 0 0 30px; }
+
+/* test bench with four graduated cylinders */
+.rig { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(18px, 3vw, 40px); max-width: 1200px; }
+.tubes { position: relative; display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(10px, 2vw, 26px); padding: 26px 26px 18px; border-radius: 16px; background: linear-gradient(180deg, #1c2025, #15181c); box-shadow: inset 0 0 0 1px var(--line); }
+.tb { display: grid; justify-items: center; gap: 8px; }
+.glass { position: relative; width: min(74px, 100%); height: 280px; border-radius: 0 0 14px 14px; background: rgba(255,255,255,.04); box-shadow: inset 0 0 0 2px rgba(255,255,255,.22); overflow: hidden; }
+.glass::before { content: ""; position: absolute; inset: 0; background: repeating-linear-gradient(180deg, transparent 0 27px, rgba(255,255,255,.25) 27px 28px); z-index: 2; }
+.glass .f { position: absolute; left: 0; right: 0; bottom: 0; height: calc(var(--lv, 0) * 1%); background: linear-gradient(180deg, var(--fuel2), #c98f00); transition: height 1.6s var(--ease); }
+.glass .f::before { content: ""; position: absolute; left: 0; right: 0; top: -4px; height: 8px; border-radius: 50%; background: #ffe17a; }
+.tb b { font: 700 15px/1 var(--mono); }
+.tb span { font: 700 12px/1 var(--mono); color: var(--mut); }
+.tb.bad b { color: var(--red); }
+.norm { position: absolute; left: 18px; right: 18px; height: 0; border-top: 2px dashed var(--lcd); z-index: 3; bottom: calc(18px + 46px + 280px * var(--n, .5) - 2px); }
+.norm::after { content: "норма"; position: absolute; right: 0; top: -20px; font: 700 11px/1 var(--mono); color: var(--lcd); }
+.ctl { display: grid; gap: 10px; align-content: start; }
+.ctl .sym { display: grid; gap: 8px; }
+.ctl button { text-align: left; padding: 13px 16px; border-radius: 10px; border: 0; background: var(--pn2); color: var(--ink); font: 700 16px/1.2 var(--body); cursor: pointer; box-shadow: inset 0 0 0 1px var(--line); }
+.ctl button.on { background: var(--fuel); color: #111; }
+.ctl .out { margin-top: 6px; padding: 16px; border-radius: 12px; background: #0a120a; box-shadow: inset 0 0 0 2px #1d2a1d; font: 500 15px/1.5 var(--mono); color: #cfe9c2; min-height: 150px; }
+.ctl .out b { color: var(--lcd); }
+@media (max-width: 900px) { .rig { grid-template-columns: 1fr; } .glass { height: 200px; } .norm { bottom: calc(18px + 46px + 200px * var(--n, .5) - 2px); } }
+
+/* catalogue */
+.cat { max-width: 1200px; }
+.find { display: flex; gap: 10px; margin-bottom: 14px; }
+.find input { flex: 1; padding: 15px 16px; border-radius: 10px; border: 0; background: var(--pn2); color: var(--ink); font: 400 17px/1 var(--body); box-shadow: inset 0 0 0 1px var(--line); }
+.find input:focus { outline: 2px solid var(--fuel); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+.chips button { padding: 8px 12px; border-radius: 20px; border: 0; background: var(--pn2); color: var(--mut); font: 700 13px/1 var(--mono); cursor: pointer; }
+.chips button:hover { color: var(--fuel); }
+.rows { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.row { display: grid; grid-template-columns: 1fr auto; gap: 2px 14px; padding: 14px 16px; border-radius: 10px; background: var(--pn); box-shadow: inset 0 0 0 1px var(--line); }
+.row b { font-weight: 700; }
+.row small { color: var(--mut); font: 500 12.5px/1.3 var(--mono); grid-column: 1; }
+.row em { grid-row: 1 / span 2; grid-column: 2; align-self: center; font: 700 18px/1 var(--head); font-style: normal; color: var(--fuel); white-space: nowrap; }
+.row.tn em { color: var(--lcd); }
+.row[hidden] { display: none; }
+.nf { color: var(--mut); padding: 14px 0; }
+@media (max-width: 800px) { .rows { grid-template-columns: 1fr; } }
+
+/* reviews as service log */
+.logs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; max-width: 1200px; }
+.lg { padding: 18px; border-radius: 12px; background: var(--pn); box-shadow: inset 0 0 0 1px var(--line); }
+.lg .h { display: flex; justify-content: space-between; gap: 10px; font: 700 13px/1.3 var(--mono); color: var(--fuel); margin-bottom: 8px; }
+.lg p { margin: 0; color: #cfd3d8; font-size: 16px; }
+.photos { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 16px; max-width: 1200px; }
+.photos figure { margin: 0; border-radius: 12px; overflow: hidden; aspect-ratio: 1; }
+.photos img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 900px) { .logs { grid-template-columns: 1fr; } .photos { grid-template-columns: 1fr 1fr; } }
+
+.vis { display: grid; grid-template-columns: 1fr 1.15fr; gap: 26px; max-width: 1200px; }
+.li { display: flex; justify-content: space-between; gap: 12px; padding: 11px 0; border-bottom: 1px solid var(--line); }
+.li span { color: var(--mut); }
+.li b { text-align: right; font-weight: 700; }
+.live { display: inline-flex; align-items: center; gap: 8px; }
+.live i { width: 9px; height: 9px; border-radius: 50%; background: #666; }
+.live.is-open i { background: var(--lcd); box-shadow: 0 0 8px var(--lcd); } .live.is-closed i { background: var(--red); }
+.mapbox { position: relative; min-height: 400px; border-radius: 14px; overflow: hidden; box-shadow: inset 0 0 0 1px var(--line); }
+.mapbox iframe { position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 140px); border: 0; filter: grayscale(.4) contrast(1.05); }
+@media (max-width: 860px) { .vis { grid-template-columns: 1fr; } }
+footer { padding: 26px var(--gut) 100px; text-align: center; color: var(--mut); font-size: 14px; border-top: 1px solid var(--line); }
+footer b { display: block; font: 900 24px/1 var(--head); color: var(--ink); margin-bottom: 6px; text-transform: uppercase; }
+
+.motion [data-in] { opacity: 0; transform: translateY(24px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.motion [data-in].in { opacity: 1; transform: none; }
+.noimg { background: linear-gradient(135deg, #2b3036, #121417); }
+.noimg img { opacity: 0; }
+</style>
+</head>
+<body data-hours='{"1":[[9,0,18,0]],"2":[[9,0,18,0]],"3":[[9,0,18,0]],"4":[[9,0,18,0]],"5":[[9,0,18,0]]}'>
+
+<nav class="sw" id="sw" aria-label="Разделы">
+  <a href="#stend"><i></i>Стенд</a><a href="#cat"><i></i>Каталог</a><a href="#log"><i></i>Отзывы</a><a href="#visit"><i></i>Адрес</a>
+</nav>
+<a class="call" href="tel:+79200504250">050-42-50</a>
+
+<main>
+<section class="hero" id="top">
+  <div class="bench" id="bench">
+    <div class="copy">
+      <div class="k">Балахна · топливная аппаратура</div>
+      <h1>Дизель <span>авто</span></h1>
+      <p>Ремонтируем дизельные форсунки и ТНВД: Common Rail, Bosch, Denso, Delphi. Проверка на стендах, запчасти в наличии. Клиенты пишут: «ремонт форсунок за 2 часа» и «помогли сэкономить приличную сумму».</p>
+      <div class="lcd" aria-label="Показания стенда"><span>РАСПЫЛ</span><b id="spr">КАПЛИ</b><span>ДАВЛЕНИЕ</span><b id="bar">400 бар</b></div>
+      <div class="btns"><a class="btn" href="tel:+79200504250">Записаться на стенд</a><a class="btn o" href="#cat">Найти свою форсунку</a></div>
+    </div>
+    <div class="inj" aria-hidden="true">
+      <svg viewBox="0 0 200 900">
+        <defs><linearGradient id="steel" x1="0" x2="1"><stop offset="0" stop-color="#5d646d"/><stop offset=".45" stop-color="#d9dee3"/><stop offset="1" stop-color="#4c535b"/></linearGradient></defs>
+        <rect x="70" y="0" width="60" height="140" rx="8" fill="#2b3036"/>
+        <rect x="56" y="120" width="88" height="70" rx="10" fill="url(#steel)"/>
+        <rect x="40" y="150" width="34" height="22" rx="6" fill="#3a4047"/>
+        <rect x="74" y="190" width="52" height="250" rx="6" fill="url(#steel)"/>
+        <rect x="66" y="260" width="68" height="18" rx="4" fill="#E5484D" opacity=".9"/>
+        <path d="M78 440 L122 440 L110 470 L90 470 Z" fill="url(#steel)"/>
+        <path id="cone" d="M100 470 L60 900 L140 900 Z" fill="rgba(255,213,74,.22)" style="transform-origin:100px 470px"/>
+      </svg>
+      <div class="spray" id="spray"></div>
+    </div>
+  </div>
+</section>
+
+<section id="stend">
+  <div class="ch">Канал 1 · Стенд</div>
+  <h2>Как форсунки ведут себя <em>на стенде</em></h2>
+  <p class="lead">Четыре форсунки работают одновременно, и в мензурках видно, сколько топлива уходит в слив. Выберите, что происходит с вашей машиной, и стенд покажет типичную картину.</p>
+  <div class="rig">
+    <div class="tubes" id="tubes">
+      <div class="norm" id="norm"></div>
+    </div>
+    <div class="ctl">
+      <div class="sym" id="sym"></div>
+      <div class="out" id="out">…</div>
+      <div class="btns"><a class="btn" href="tel:+79200504250">Диагностика от 300 ₽</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="cat">
+  <div class="ch">Канал 2 · Каталог</div>
+  <h2>Найдите <em>свою машину</em></h2>
+  <p class="lead">Форсунки и ТНВД из прайса на Яндекс Картах: на обмен или ремонт ваших. Наберите марку или двигатель.</p>
+  <div class="cat">
+    <div class="find"><input id="q" type="search" placeholder="Например: Газель, Cummins, КАМАЗ, Denso" aria-label="Поиск по каталогу"></div>
+    <div class="chips" id="chips"><button type="button">Газель</button><button type="button">Валдай</button><button type="button">Hyundai</button><button type="button">КАМАЗ</button><button type="button">ЯМЗ</button><button type="button">МАЗ</button><button type="button">MAN</button><button type="button">Mitsubishi</button><button type="button">ТНВД</button><button type="button">Все</button></div>
+    <div class="rows" id="rows"></div>
+    <div class="nf" id="nf" hidden>Такой позиции нет в прайсе, но это не значит, что не возьмутся. Позвоните: +7 920 050-42-50.</div>
+  </div>
+</section>
+
+<section id="log">
+  <div class="ch">Канал 3 · Журнал</div>
+  <h2>Записи <em>в журнале</em></h2>
+  <div class="logs">
+    <div class="lg" data-in><div class="h"><span>SsangYong Kyron</span><span>форсунки</span></div><p>«В 2015 году делал форсунки на „Некст“, откатал 360 тысяч, всё отлично. Парни знают свою работу на 5+, лишнего не навязывают».</p></div>
+    <div class="lg" data-in><div class="h"><span>Hyundai Starex</span><span>за 2 дня</span></div><p>«Затроил двигатель. Сняли все форсунки, одна была дохлой, реанимировали, поправили постель. Обошлось в 17 тысяч».</p></div>
+    <div class="lg" data-in><div class="h"><span>Volvo XC90 D5</span><span>топливная</span></div><p>«Починили и продиагностировали добросовестно. Ценовая политика прозрачная, теперь я чётко понимаю, что с автомобилем».</p></div>
+    <div class="lg" data-in><div class="h"><span>Газель Cummins</span><span>диагностика</span></div><p>«Поехал по рекомендации и не ошибся: помогли сэкономить приличную сумму на ремонт топливной системы».</p></div>
+    <div class="lg" data-in><div class="h"><span>Дымила</span><span>форсунки</span></div><p>«Всё проверили, объяснили, отремонтировали форсунки, машина перестала дымить».</p></div>
+    <div class="lg" data-in><div class="h"><span>Из региона</span><span>разбор</span></div><p>«Приехал с региона, разобрали, сделали диагностику, всё оперативно. Оплата по факту».</p></div>
+  </div>
+  <div class="photos">
+    <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/1880524/2a0000016e8d32370bf3f89cbbd67bcc0274/XL" alt="Ряд дизельных форсунок после проверки" loading="lazy"></figure>
+    <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/367512/2a0000015dcb785e5961bcf4d3c2267e46eb/XL" alt="Три форсунки Common Rail" loading="lazy"></figure>
+    <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/14586367/2a0000019b59e73803f4c215d0f19b233d22/XL" alt="Форсунки в упаковке" loading="lazy"></figure>
+    <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/2776652/2a00000173be8c3218d6de2096b3c97b78a8/XL" alt="Машину привезли на эвакуаторе" loading="lazy"></figure>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="ch">Канал 4 · Адрес</div>
+  <h2>ГК «Волга-1», <em>бокс 168</em></h2>
+  <div class="vis">
+    <div>
+      <div class="li"><span>Адрес</span><b>Балахна, территория ГК Волга-1, 168</b></div>
+      <div class="li"><span>Часы</span><b>Пн–пт 9:00–18:00, по записи</b></div>
+      <div class="li"><span>Сейчас</span><b class="live" data-live><i></i><span data-status>…</span></b></div>
+      <div class="li"><span>Телефоны</span><b><a href="tel:+79200504250">+7 920 050-42-50</a><br><a href="tel:+79527890330">+7 952 789-03-30</a></b></div>
+      <div class="li"><span>Оплата</span><b>Наличные, карта, перевод · гарантия</b></div>
+      <div class="btns" style="margin-top:18px"><a class="btn" href="tel:+79200504250">Позвонить</a><a class="btn o" href="https://yandex.ru/maps/org/dizel_avto/199089743854/" target="_blank" rel="noopener">Маршрут</a></div>
+    </div>
+    <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=43.574241%2C56.52311&amp;z=15&amp;pt=43.574241%2C56.52311%2Cpm2ywm&amp;l=map" title="Дизель авто на Яндекс Картах" loading="lazy" allowfullscreen></iframe></div>
+  </div>
+</section>
+</main>
+
+<footer><b>Дизель авто</b>ремонт форсунок и ТНВД · Балахна, ГК Волга-1, 168 · пн–пт 9:00–18:00</footer>
+
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  // spray particles: few big drops at first, many fine ones later
+  var spray = document.getElementById('spray'), N = 46, parts = [];
+  for (var i = 0; i < N; i++) { var e = document.createElement('i'); spray.appendChild(e); parts.push(e); }
+  var hero = document.querySelector('.hero'), cone = document.getElementById('cone'), spr = document.getElementById('spr'), bar = document.getElementById('bar');
+  function setSpray(q) {
+    parts.forEach(function (e, i) {
+      var r = (i * 37 % 100) / 100, ang = (r - .5) * (.25 + q * .45), len = 260 + (i * 53 % 120);
+      var big = q < .5;
+      e.style.setProperty('--s', (big ? 10 - q * 10 + (i % 3) : 2 + (i % 3)) + 'px');
+      e.style.setProperty('--x', Math.round(Math.sin(ang) * len));
+      e.style.setProperty('--y', Math.round(Math.cos(ang) * len * (big ? 1.2 : .9)));
+      e.style.setProperty('--t', (big ? 1.4 : .6 + (i % 5) * .08) + 's');
+      e.style.setProperty('--d', (-(i * .13)) + 's');
+      e.style.display = big && i % 4 ? 'none' : '';
+    });
+    cone.style.transform = 'scaleX(' + (.15 + q * .85) + ')';
+    cone.style.opacity = .2 + q * .8;
+    spr.textContent = q < .35 ? 'КАПЛИ' : q < .75 ? 'СТРУЯ' : 'ТУМАН ✓';
+    bar.textContent = Math.round(400 + q * 1400) + ' бар';
+  }
+  var lastQ = -1;
+  RT.onScroll(function () { var p = RT.motion ? RT.progress(hero) : 1, q = Math.round(RT.clamp(p / .8) * 10) / 10; if (q !== lastQ) { lastQ = q; setSpray(q); } });
+
+  // bench: four cylinders, symptoms decide the picture
+  var tubes = document.getElementById('tubes');
+  for (var t = 0; t < 4; t++) tubes.insertAdjacentHTML('beforeend', '<div class="tb"><div class="glass"><div class="f"></div></div><b>№' + (t + 1) + '</b><span>—</span></div>');
+  var S = [
+    { n: 'Всё в порядке, профилактика', lv: [48, 52, 50, 47], o: 'Все четыре в норме, разброс небольшой. <b>Вывод:</b> форсунки здоровы, достаточно очистки и проверки раз в сезон.' },
+    { n: 'Дымит чёрным', lv: [50, 49, 78, 52], o: 'Форсунка №3 льёт больше остальных: топливо не сгорает и уходит в дым. <b>Вывод:</b> ремонт одной форсунки, остальные проверить. Ремонт Common Rail от 4 000 ₽.' },
+    { n: 'Троит, трясёт на холостых', lv: [52, 22, 50, 49], o: 'Форсунка №2 почти не работает, цилиндр выпадает. Как у клиента с Hyundai Starex: «одна была дохлой, реанимировали». <b>Вывод:</b> ремонт форсунки.' },
+    { n: 'Плохо заводится на горячую', lv: [70, 74, 68, 76], o: 'Большой слив по обратке у всех: давление не набирается. <b>Вывод:</b> проверка всего комплекта и ТНВД, ремонт клапанов форсунок.' },
+    { n: 'Вырос расход', lv: [60, 63, 58, 66], o: 'Все немного выше нормы: износ распылителей. <b>Вывод:</b> ремонт комплекта, расход вернётся. Диагностика форсунок 300 ₽.' }
+  ];
+  var sym = document.getElementById('sym'), out = document.getElementById('out');
+  S.forEach(function (s, i) { var b = document.createElement('button'); b.type = 'button'; b.textContent = s.n; b.addEventListener('click', function () { run(i); }); sym.appendChild(b); });
+  document.getElementById('norm').style.setProperty('--n', .5);
+  function run(i) {
+    var s = S[i];
+    sym.querySelectorAll('button').forEach(function (b, j) { b.classList.toggle('on', j === i); });
+    tubes.querySelectorAll('.tb').forEach(function (tb, j) {
+      var lv = s.lv[j], f = tb.querySelector('.f'); f.style.setProperty('--lv', 0);
+      setTimeout(function () { f.style.setProperty('--lv', lv); }, 60);
+      var bad = Math.abs(lv - 50) > 12; tb.classList.toggle('bad', bad); tb.querySelector('span').textContent = bad ? (lv > 50 ? 'перелив' : 'мало') : 'норма';
+    });
+    out.innerHTML = s.o;
+  }
+  run(1);
+
+  // catalogue: injectors and pumps from the price list
+  var C = [
+    ['Форсунки Газель Cummins', 'Газель Бизнес, Next, Соболь · Cummins ISF 2.8', 4500],
+    ['Форсунки Валдай Cummins 3.8', 'Bosch 0445120134 Евро 3 · Denso 5296723 Евро 4', 8500],
+    ['Форсунки Hyundai County', 'Denso 095000-7140 · 095000-5550 · HD 65, HD 210', 8500],
+    ['Форсунка Bosch 0445110570', 'Проверка, чистка, ремонт', 9000],
+    ['Форсунки ЯМЗ, ГАЗон', 'Bosch 0445120178 · ЯМЗ-534, 536, 530', 9500],
+    ['Форсунки ЯМЗ-53443.10 Евро 5', 'Bosch 0445120460 · обмен или ремонт', 9500],
+    ['Форсунки КАМАЗ Cummins Евро 3', 'Bosch 0445120123', 9500],
+    ['Форсунка КАМАЗ Евро 4', 'Bosch 0445120161 · проверка на стенде', 9500],
+    ['Форсунки МАЗ', 'Bosch 0445120142 · 0445120325 · полный ремонт', 12000],
+    ['Форсунки MAN', 'Bosch 0445120420 · на обмен', 12000],
+    ['Форсунка BAW Fenix, FAW', 'Bosch 0445110291 · 0445110447', 7000],
+    ['Форсунка Mitsubishi 3.2', 'Denso 1465A054 · 095000-5760', 9000],
+    ['Форсунки Ford Transit', 'Полный ремонт', 10000],
+    ['Форсунки Mitsubishi Pajero Sport', '2022 г. · полный ремонт', 10000],
+    ['Форсунки Nissan X-Trail', 'Полный ремонт', 10000],
+    ['ТНВД Газель Cummins ISF 2.8', 'Bosch 0445020119 · Next, Бизнес, Соболь', 25000, 1],
+    ['ТНВД Валдай Cummins ISF 3.8', 'Bosch 0445020122 Евро 3 · 5318651 Евро 4', 30000, 1],
+    ['ТНВД ЯМЗ', 'Bosch 0445020540', 30000, 1],
+    ['ТНВД Opel Antara, Chevrolet Captiva', 'Delphi 28318240 · проверен на стенде', 15000, 1],
+    ['Ремонт дизельных форсунок Common Rail', 'Свой инструмент и запчасти', 4000],
+    ['Диагностика дизельного двигателя', 'и диагностика форсунок на стенде', 300]
+  ];
+  var rows = document.getElementById('rows');
+  C.forEach(function (c) { rows.insertAdjacentHTML('beforeend', '<div class="row' + (c[3] ? ' tn' : '') + '"><b>' + c[0] + '</b><small>' + c[1] + '</small><em>' + (c[2] < 1000 ? 'от ' : 'от ') + RT.money(c[2]) + '</em></div>'); });
+  var q = document.getElementById('q');
+  function filter(v) {
+    v = v.toLowerCase().trim(); var shown = 0;
+    rows.querySelectorAll('.row').forEach(function (r) { var ok = !v || r.textContent.toLowerCase().indexOf(v) >= 0; r.hidden = !ok; if (ok) shown++; });
+    document.getElementById('nf').hidden = !!shown;
+  }
+  q.addEventListener('input', function () { filter(q.value); });
+  document.querySelectorAll('#chips button').forEach(function (b) { b.addEventListener('click', function () { q.value = b.textContent === 'Все' ? '' : b.textContent; filter(q.value); }); });
+
+  var secs = document.querySelectorAll('main > section:not(.hero)'), links = document.querySelectorAll('.sw a');
+  RT.onScroll(function () { var cur = -1; secs.forEach(function (s, i) { if (s.getBoundingClientRect().top < innerHeight * .5) cur = i; }); links.forEach(function (a, i) { a.classList.toggle('on', i === cur); }); });
+  function live() { var s = RT.status(); if (!s) return; document.querySelectorAll('[data-live]').forEach(function (e) { e.classList.toggle('is-open', s.open); e.classList.toggle('is-closed', !s.open); }); }
+  document.addEventListener('DOMContentLoaded', live); setInterval(live, 60000);
+
+  window.REEL = {
+    hero: '.hero', heroAt: .5, feature: '#stend', featureOff: 40, featureM: '.tubes', featureOffM: -40, prices: '#cat', pricesOff: 40,
+    demo: [function () { run(2); }, function () { run(3); }, function () { q.value = 'Газель'; filter('газель'); }],
+    holds: [50, 50, 40]
+  };
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Шиномонтаж «У типографии» — Выкса, ул. Вавилина, 10В</title>
+<meta name="description" content="Шиномонтаж «У типографии» в Выксе: переобувка, балансировка, вулканизация, правка литых и стальных дисков от 1 000 ₽, аргонная сварка дисков, дошиповка от 20 ₽ за шип. Пн–пт 9:00–19:00, сб–вс 9:00–18:00. Рейтинг 4,9.">
+<meta property="og:title" content="Шиномонтаж «У типографии», Выкса">
+<meta property="og:description" content="Шиномонтаж, правка и сварка дисков, дошиповка. Вавилина, 10В.">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/16451045/2a0000019bfd9e8dab4fd2bdbf6a450c958c/XXXL">
+<meta name="theme-color" content="#F2EEE3">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&amp;family=Playfair+Display:ital,wght@0,700;0,900;1,700&amp;family=PT+Serif:ital,wght@0,400;0,700;1,400&amp;family=PT+Sans+Narrow:wght@700&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TireShop","name":"У типографии","telephone":"+7 930 813-14-00","address":{"@type":"PostalAddress","streetAddress":"ул. Вавилина, 10В","addressLocality":"Выкса","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":55.325803,"longitude":42.160579},"openingHours":["Mo-Fr 09:00-19:00","Sa-Su 09:00-18:00"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"172"}}</script>
+<style>
+:root {
+  --paper: #F2EEE3; --paper2: #E8E2D2; --ink: #151412; --mut: #5E5A50; --red: #C8102E; --rule: #151412;
+  --mast: 'Ruslan Display', 'Times New Roman', serif; --head: 'Playfair Display', Georgia, serif; --body: 'PT Serif', Georgia, serif; --cap: 'PT Sans Narrow', Arial Narrow, sans-serif;
+  --gut: clamp(16px, 3.5vw, 48px); --ease: cubic-bezier(.2, .75, .2, 1);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; color: var(--ink); font: 400 17px/1.55 var(--body); overflow-x: hidden; background: var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 .3 0 0 0 0 .25 0 0 0 0 .15 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E"); }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+.paper { max-width: 1240px; margin: 0 auto; padding: 0 var(--gut); }
+
+/* rubric bar */
+.rub { position: sticky; top: 0; z-index: 40; background: var(--paper); border-bottom: 3px double var(--rule); }
+.rub .paper { display: flex; align-items: center; gap: 0; overflow-x: auto; scrollbar-width: none; }
+.rub a { flex: 0 0 auto; padding: 12px 16px; text-decoration: none; font: 700 15px/1 var(--cap); letter-spacing: .14em; text-transform: uppercase; border-right: 1px solid #c9c2b0; }
+.rub a:first-child { border-left: 1px solid #c9c2b0; }
+.rub a.on { background: var(--ink); color: var(--paper); }
+.rub .tel { margin-left: auto; color: var(--red); border: 0; }
+
+/* hero: metal sorts drop into the forme, then the page is printed */
+.hero { position: relative; height: 210vh; }
+.front { position: sticky; top: 46px; height: calc(100vh - 46px); min-height: 560px; overflow: hidden; }
+.front .paper { height: 100%; display: grid; grid-template-rows: auto auto 1fr; padding-top: 16px; }
+.meta { display: flex; justify-content: space-between; gap: 10px; font: 700 13px/1 var(--cap); letter-spacing: .16em; text-transform: uppercase; color: var(--mut); padding-bottom: 8px; border-bottom: 1px solid var(--rule); flex-wrap: wrap; }
+.fwrap { position: relative; width: 100%; height: clamp(70px, 12vw, 170px); margin: clamp(14px, 3vh, 30px) 0 14px; }
+.forme { position: absolute; inset: 0; display: flex; justify-content: center; align-items: stretch; gap: clamp(2px, .5vw, 7px); }
+.sort { position: relative; flex: 0 0 auto; width: clamp(24px, 6vw, 84px); height: 100%; border-radius: 4px; background: linear-gradient(180deg, #8d8f94, #55585e 70%, #3c3e43); box-shadow: inset 0 2px 0 rgba(255,255,255,.35), inset 0 -3px 0 rgba(0,0,0,.35), 0 6px 10px -6px #000; display: grid; place-items: start center; padding-top: 6%; transform: translateY(calc(-70vh * (1 - var(--s, 0)))) rotate(calc((1 - var(--s, 0)) * 12deg)); opacity: calc(var(--s, 0) * (1 - var(--pr, 0))); }
+.sort span { font: 900 clamp(20px, 5.2vw, 74px)/1 var(--head); color: #2a2b2e; transform: scaleX(-1); text-shadow: 0 1px 0 rgba(255,255,255,.3); }
+.sort.gap { width: clamp(8px, 2vw, 26px); background: none; box-shadow: none; }
+.sort.gap::after { display: none; }
+.sort::after { content: ""; position: absolute; left: 50%; bottom: 10%; width: 30%; height: 5px; margin-left: -15%; border-radius: 3px; background: rgba(0,0,0,.35); }
+.print { position: absolute; inset: 0; display: grid; place-items: center; font: 400 clamp(34px, 8vw, 118px)/1 var(--mast); color: var(--red); letter-spacing: .02em; opacity: var(--pr, 0); filter: blur(calc((1 - var(--pr, 0)) * 6px)); white-space: nowrap; }
+.lead-row { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(16px, 3vw, 40px); border-top: 4px solid var(--rule); padding-top: 16px; min-height: 0; }
+.lead-row h1 { margin: 0 0 10px; font: 900 clamp(30px, 4vw, 58px)/1.02 var(--head); }
+.lead-row h1 em { color: var(--red); }
+.lead-row p { margin: 0 0 14px; columns: 2; column-gap: 26px; column-rule: 1px solid #c9c2b0; font-size: 16px; }
+.lead-row p::first-letter { float: left; font: 900 54px/.8 var(--head); padding: 4px 6px 0 0; color: var(--red); }
+.lead-row figure { margin: 0; position: relative; overflow: hidden; min-height: 0; }
+.lead-row figure img { width: 100%; height: 100%; max-height: 42vh; object-fit: cover; filter: grayscale(1) contrast(1.15); mix-blend-mode: multiply; }
+.lead-row figcaption { font: italic 400 13px/1.3 var(--body); color: var(--mut); margin-top: 6px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 13px 18px; background: var(--ink); color: var(--paper); text-decoration: none; font: 700 16px/1 var(--cap); letter-spacing: .12em; text-transform: uppercase; border: 0; cursor: pointer; }
+.btn.r { background: var(--red); color: #fff; }
+.btn.o { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 2px var(--ink); }
+.btns { display: flex; flex-wrap: wrap; gap: 8px; }
+@media (max-width: 820px) { .lead-row { grid-template-columns: 1fr; } .lead-row p { columns: 1; } .lead-row figure { display: none; } .front { top: 42px; } }
+
+section:not(.hero) { scroll-margin-top: 50px; padding: clamp(60px, 8vw, 100px) 0; }
+.kicker { display: flex; align-items: center; gap: 12px; font: 700 14px/1 var(--cap); letter-spacing: .2em; text-transform: uppercase; color: var(--red); }
+.kicker::before, .kicker::after { content: ""; flex: 1; height: 1px; background: var(--rule); }
+h2 { margin: 14px 0 10px; text-align: center; font: 900 clamp(34px, 5vw, 72px)/1 var(--head); }
+h2 em { font-style: italic; color: var(--red); }
+.deck { text-align: center; max-width: 720px; margin: 0 auto 30px; font-style: italic; color: var(--mut); }
+
+/* stud counter: the tread as a printed diagram */
+.studs { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, .75fr); gap: clamp(18px, 3vw, 40px); border-top: 4px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 22px 0; }
+.tread { position: relative; background: #1d1c1a; border-radius: 10px; padding: 18px; }
+.tread svg { width: 100%; display: block; }
+.tread .st { cursor: pointer; }
+.tread .st circle { fill: #c9ccd2; stroke: #6c6f75; stroke-width: 1.5; transition: fill .2s; }
+.tread .st.out circle { fill: #1d1c1a; stroke: var(--red); stroke-dasharray: 3 3; }
+.tread .hint { position: absolute; left: 18px; bottom: 18px; color: #bdb8ab; font: 700 13px/1 var(--cap); letter-spacing: .12em; text-transform: uppercase; }
+.ad { border: 2px solid var(--rule); padding: 18px; display: grid; gap: 12px; align-content: start; }
+.ad .t { font: 700 14px/1 var(--cap); letter-spacing: .18em; text-transform: uppercase; color: var(--mut); }
+.ad .big { font: 900 clamp(46px, 6vw, 80px)/.9 var(--head); }
+.ad .big small { font: 700 18px/1 var(--cap); letter-spacing: .1em; color: var(--mut); }
+.ad .sum { font: 900 34px/1 var(--head); color: var(--red); }
+.ad .row { display: flex; gap: 6px; flex-wrap: wrap; }
+.ad button { padding: 9px 12px; background: transparent; border: 1px solid var(--rule); font: 700 14px/1 var(--cap); letter-spacing: .1em; text-transform: uppercase; cursor: pointer; }
+.ad button:hover { background: var(--ink); color: var(--paper); }
+.ad p { margin: 0; font-size: 14.5px; color: var(--mut); }
+@media (max-width: 860px) { .studs { grid-template-columns: 1fr; } }
+
+/* classifieds price list */
+.cls { columns: 3 280px; column-gap: 18px; column-rule: 1px solid #c9c2b0; border-top: 4px solid var(--rule); padding-top: 18px; }
+.ca { break-inside: avoid; border: 1px solid var(--rule); padding: 14px 16px; margin-bottom: 16px; background: rgba(255,255,255,.25); }
+.ca.inv { background: var(--ink); color: var(--paper); }
+.ca.inv .p { color: #ff5a6e; }
+.ca b { display: block; font: 900 22px/1.1 var(--head); margin-bottom: 6px; text-transform: uppercase; }
+.ca p { margin: 0 0 8px; font-size: 15px; }
+.ca .p { font: 900 26px/1 var(--head); color: var(--red); }
+.ca .p small { font: 700 14px/1 var(--cap); letter-spacing: .08em; }
+.ca.tear { border-style: dashed; text-align: center; }
+.ca.tear .tabs { display: flex; margin: 10px -16px -14px; border-top: 1px dashed var(--rule); }
+.ca.tear .tabs a { flex: 1; padding: 10px 2px; writing-mode: vertical-rl; transform: rotate(180deg); font: 700 13px/1 var(--cap); letter-spacing: .06em; text-decoration: none; border-left: 1px dashed var(--rule); height: 128px; }
+.ca.tear .tabs a:last-child { border-left: 0; }
+.ca figure { margin: 0 0 8px; }
+.ca figure img { width: 100%; aspect-ratio: 4/3; object-fit: cover; filter: grayscale(1) contrast(1.1); mix-blend-mode: multiply; }
+
+/* incidents: reviews as news */
+.news { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 0; border-top: 4px solid var(--rule); }
+.news article { padding: 18px 18px 18px 0; border-right: 1px solid #c9c2b0; }
+.news article + article { padding-left: 18px; }
+.news article:last-child { border-right: 0; }
+.news h3 { margin: 0 0 8px; font: 900 24px/1.1 var(--head); }
+.news article:first-child h3 { font-size: clamp(28px, 3vw, 40px); }
+.news .by { font: 700 12.5px/1 var(--cap); letter-spacing: .16em; text-transform: uppercase; color: var(--red); margin-bottom: 8px; }
+.news p { margin: 0 0 10px; font-size: 15.5px; }
+.stats { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+.stats span { padding: 8px 12px; border: 1px solid var(--rule); font: 700 14px/1 var(--cap); letter-spacing: .08em; }
+@media (max-width: 900px) { .news { grid-template-columns: 1fr; } .news article { padding: 18px 0 !important; border-right: 0; border-bottom: 1px solid #c9c2b0; } }
+
+/* reference desk */
+.ref { display: grid; grid-template-columns: 1fr 1.2fr; gap: 26px; border-top: 4px solid var(--rule); padding-top: 20px; }
+.li { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px dotted var(--rule); }
+.li span { color: var(--mut); }
+.li b { text-align: right; }
+.live { display: inline-flex; align-items: center; gap: 8px; }
+.live i { width: 9px; height: 9px; border-radius: 50%; background: #999; }
+.live.is-open i { background: #2F8F4E; } .live.is-closed i { background: var(--red); }
+.mapbox { position: relative; min-height: 380px; overflow: hidden; border: 2px solid var(--rule); }
+.mapbox iframe { position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 140px); border: 0; filter: grayscale(1) sepia(.3) contrast(1.05); }
+@media (max-width: 860px) { .ref { grid-template-columns: 1fr; } }
+footer { border-top: 3px double var(--rule); padding: 20px var(--gut) 40px; text-align: center; font: 700 13px/1.6 var(--cap); letter-spacing: .12em; text-transform: uppercase; color: var(--mut); }
+footer b { display: block; font: 400 28px/1 var(--mast); color: var(--red); letter-spacing: .02em; margin-bottom: 8px; }
+
+.motion [data-in] { opacity: 0; transform: translateY(16px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.motion [data-in].in { opacity: 1; transform: none; }
+.noimg { background: var(--paper2); }
+.noimg img { opacity: 0; }
+</style>
+</head>
+<body data-hours='{"0":[[9,0,18,0]],"1":[[9,0,19,0]],"2":[[9,0,19,0]],"3":[[9,0,19,0]],"4":[[9,0,19,0]],"5":[[9,0,19,0]],"6":[[9,0,18,0]]}'>
+
+<nav class="rub" aria-label="Рубрики">
+  <div class="paper">
+    <a href="#top">Передовица</a><a href="#kassa">Шипы</a><a href="#ads">Объявления</a><a href="#news">Происшествия</a><a href="#ref">Справочная</a><a class="tel" href="tel:+79308131400">☎ 813-14-00</a>
+  </div>
+</nav>
+
+<main>
+<section class="hero" id="top">
+  <div class="front" id="front">
+    <div class="paper">
+      <div class="meta"><span>Шинный вестник · Выкса</span><span id="today">Сезон переобувки</span><span>Вавилина, 10В</span></div>
+      <div class="fwrap"><div class="forme" id="forme" aria-hidden="true"></div><div class="print" id="print" aria-hidden="true">У ТИПОГРАФИИ</div></div>
+      <div class="lead-row">
+        <div>
+          <h1>Переобуем, выправим, <em>заварим</em></h1>
+          <p>Шиномонтаж «У типографии» работает в Выксе давно: в отзывах пишут «лет пятнадцать туда езжу». Здесь меняют резину по записи и без задержек, правят литые диски со сложной геометрией, варят диски аргоном и дошиповывают зимнюю резину. Колёса после работы ещё и моют.</p>
+          <div class="btns"><a class="btn r" href="tel:+79308131400">Записаться</a><a class="btn o" href="#kassa">Посчитать шипы</a></div>
+        </div>
+        <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/16451045/2a0000019bfd9e8dab4fd2bdbf6a450c958c/XXL" alt="Бокс шиномонтажа: станки и балансировка" fetchpriority="high"><figcaption>Бокс на Вавилина, 10В. Фото с Яндекс Карт</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kassa">
+  <div class="paper">
+    <div class="kicker">Сезон · зимняя резина</div>
+    <h2>Сколько шипов <em>потерялось?</em></h2>
+    <p class="deck">Нажмите на шипы, которых нет на вашей шине: счётчик сразу посчитает дошиповку. Можно отметить и все четыре колеса сразу.</p>
+    <div class="studs" data-in>
+      <div class="tread"><svg id="tread" viewBox="0 0 720 300" aria-label="Протектор зимней шины с шипами"></svg><span class="hint">Нажмите на шип, чтобы отметить, что он выпал</span></div>
+      <div class="ad">
+        <span class="t">Объявление</span>
+        <div class="big"><span id="cnt">0</span> <small>шипов на колесо</small></div>
+        <div class="row"><button type="button" data-k="1">× 1 колесо</button><button type="button" data-k="4">× 4 колеса</button><button type="button" id="auto">Отметить 15%</button><button type="button" id="clr">Сброс</button></div>
+        <div><span class="t">Дошиповка, ориентир</span><div class="sum" id="sum">0 ₽</div></div>
+        <p id="adv">Дошиповка от 20 ₽ за шип. Мастер посмотрит, держит ли резина новые шипы.</p>
+        <a class="btn r" href="tel:+79308131400">Записаться на дошиповку</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ads">
+  <div class="paper">
+    <div class="kicker">Частные объявления · цены</div>
+    <h2>Объявления <em>мастерской</em></h2>
+    <p class="deck">Цены с Яндекс Карт. Остальное назовут по телефону: зависит от радиуса и состояния колеса.</p>
+    <div class="cls">
+      <div class="ca inv" data-in><b>Правлю диски</b><p>Литые и стальные, в том числе со сложной геометрией искривления. «Дископравщики от бога».</p><span class="p"><small>от</small> 1 000 ₽</span></div>
+      <div class="ca" data-in><figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/1132477/2a000001865e40ee17e6f810660cb2f6a041/XL" alt="Станок для правки дисков" loading="lazy"></figure><b>Варю диски</b><p>Аргонодуговая TIG-сварка легкосплавных дисков: трещины и сколы.</p><span class="p"><small>от</small> 1 000 ₽</span></div>
+      <div class="ca" data-in><b>Дошиповка</b><p>Зимние шины, за один шип. Перед сезоном лучше заранее.</p><span class="p"><small>от</small> 20 ₽</span></div>
+      <div class="ca" data-in><b>Шиномонтаж</b><p>Переобувка, балансировка. По предварительной записи, без очереди.</p><span class="p" style="font-size:20px">по радиусу</span></div>
+      <div class="ca" data-in><b>Ремонт колёс</b><p>Вулканизация, латки, жгуты. Прокатка дисков и шиповка.</p><span class="p" style="font-size:20px">по телефону</span></div>
+      <div class="ca" data-in><figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/17043127/2a0000019955f2ffe8e5ab87d7d09b476369/XL" alt="Бокс шиномонтажа изнутри" loading="lazy"></figure><b>Пока ждёте</b><p>Wi-Fi в мастерской. Оплата переводом тоже подходит.</p></div>
+      <div class="ca tear" data-in><b>Записаться</b><p>Оторвите телефон</p><div class="tabs"><a href="tel:+79308131400">813-14-00</a><a href="tel:+79308131400">813-14-00</a><a href="tel:+79519156936">915-69-36</a><a href="tel:+79519156936">915-69-36</a><a href="tel:+79308131400">813-14-00</a></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="news">
+  <div class="paper">
+    <div class="kicker">Происшествия · из отзывов</div>
+    <h2>Что пишут <em>горожане</em></h2>
+    <div class="news">
+      <article data-in><div class="by">Срочно · на дороге</div><h3>«Один звонок, и мастер выехал»</h3><p>«Оказалась в непростой ситуации на дороге, но один звонок, и мастер оперативно выехал на помощь. Всё сделал быстро, качественно и профессионально прямо на месте».</p><p>«Я и раньше обращалась в эту мастерскую, чтобы просто поменять резину».</p></article>
+      <article data-in><div class="by">Город · диски</div><h3>Сложную геометрию выправили</h3><p>«Выправили мне литые диски со сложной геометрией искривления, установили резину, отбалансировали. Отлично всё и быстро».</p></article>
+      <article data-in><div class="by">Хроника · колесо</div><h3>Проверили бесплатно</h3><p>«На следующий день подспустило колесо, заехал обратно, ребята проверили, больше не спускает, денег не взяли».</p><p>«Порадовал момент с помытыми колёсами».</p></article>
+    </div>
+    <div class="stats" data-in><span>★ 4,9 · 172 оценки</span><span>Время ожидания: 27 из 28 довольны</span><span>Шиномонтаж: 29 из 32</span><span>Ремонт: 14 из 15</span></div>
+  </div>
+</section>
+
+<section id="ref">
+  <div class="paper">
+    <div class="kicker">Справочная</div>
+    <h2>Вавилина, <em>10В</em></h2>
+    <div class="ref">
+      <div>
+        <div class="li"><span>Адрес</span><b>Выкса, ул. Вавилина, 10В</b></div>
+        <div class="li"><span>Будни</span><b>9:00–19:00</b></div>
+        <div class="li"><span>Выходные</span><b>9:00–18:00</b></div>
+        <div class="li"><span>Сейчас</span><b class="live" data-live><i></i><span data-status>…</span></b></div>
+        <div class="li"><span>Телефоны</span><b><a href="tel:+79308131400">+7 930 813-14-00</a><br><a href="tel:+79519156936">+7 951 915-69-36</a></b></div>
+        <div class="li"><span>Запись</span><b>Предварительная, по телефону</b></div>
+        <div class="btns" style="margin-top:18px"><a class="btn r" href="tel:+79308131400">Позвонить</a><a class="btn o" href="https://yandex.ru/maps/org/u_tipografii/157240736744/" target="_blank" rel="noopener">Маршрут</a></div>
+      </div>
+      <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=42.160579%2C55.325803&amp;z=16&amp;pt=42.160579%2C55.325803%2Cpm2rdm&amp;l=map" title="«У типографии» на Яндекс Картах" loading="lazy" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><b>У ТИПОГРАФИИ</b>шиномонтаж · Выкса, ул. Вавилина, 10В · пн–пт 9:00–19:00, сб–вс 9:00–18:00</footer>
+
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  // today's date in the masthead
+  var M = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'], d = new Date();
+  document.getElementById('today').textContent = d.getDate() + ' ' + M[d.getMonth()] + ' ' + d.getFullYear() + ' · сезон переобувки';
+
+  // metal sorts: letters set into the forme, then printed
+  var word = 'У ТИПОГРАФИИ', forme = document.getElementById('forme');
+  word.split('').forEach(function (ch, i) {
+    var s = document.createElement('div'); s.className = 'sort' + (ch === ' ' ? ' gap' : ''); s.dataset.i = i;
+    if (ch !== ' ') { var sp = document.createElement('span'); sp.textContent = ch; s.appendChild(sp); }
+    forme.appendChild(s);
+  });
+  var sorts = forme.querySelectorAll('.sort'), hero = document.querySelector('.hero'), front = document.getElementById('front');
+  RT.onScroll(function () {
+    var p = RT.motion ? RT.progress(hero) : 1;
+    sorts.forEach(function (s, i) { s.style.setProperty('--s', RT.ease(RT.clamp(p * 2.2 - i * .07))); });
+    front.style.setProperty('--pr', RT.ease(RT.clamp((p - .68) / .2)));
+  });
+
+  // rubric bar highlight
+  var secs = document.querySelectorAll('main > section'), links = document.querySelectorAll('.rub a:not(.tel)');
+  RT.onScroll(function () { var cur = 0; secs.forEach(function (s, i) { if (s.getBoundingClientRect().top < innerHeight * .4) cur = i; }); links.forEach(function (a, i) { a.classList.toggle('on', i === cur); }); });
+
+  // tread with studs
+  var NS = 'http://www.w3.org/2000/svg', svg = document.getElementById('tread'), studs = [];
+  var bg = document.createElementNS(NS, 'rect'); bg.setAttribute('width', 720); bg.setAttribute('height', 300); bg.setAttribute('rx', 14); bg.setAttribute('fill', '#2a2927'); svg.appendChild(bg);
+  for (var x = -40; x < 760; x += 60) { // tread blocks
+    [[20, 70], [120, 70], [220, 60]].forEach(function (r, j) {
+      var b = document.createElementNS(NS, 'path'); var off = j % 2 ? 30 : 0;
+      b.setAttribute('d', 'M' + (x + off) + ' ' + r[0] + ' l46 0 l-14 ' + r[1] + ' l-46 0 z'); b.setAttribute('fill', '#3a3936'); svg.appendChild(b);
+    });
+  }
+  var n = 0;
+  for (var c = 0; c < 12; c++) for (var r = 0; r < 3; r++) {
+    var g = document.createElementNS(NS, 'g'); g.setAttribute('class', 'st');
+    var cx = 34 + c * 58 + (r % 2 ? 22 : 0), cy = 50 + r * 100;
+    var ci = document.createElementNS(NS, 'circle'); ci.setAttribute('cx', cx); ci.setAttribute('cy', cy); ci.setAttribute('r', 9); g.appendChild(ci);
+    g.addEventListener('click', function () { this.classList.toggle('out'); upd(); });
+    svg.appendChild(g); studs.push(g); n++;
+  }
+  // the drawing shows a part of the tread; a passenger tyre carries about 110 studs
+  var per = 110 / n, k = 1;
+  function upd() {
+    var out = svg.querySelectorAll('.st.out').length, est = Math.round(out * per);
+    document.getElementById('cnt').textContent = est;
+    document.getElementById('sum').textContent = RT.money(est * 20 * k) + (k > 1 ? ' за 4 колеса' : '');
+    var pct = Math.round(out / n * 100);
+    document.getElementById('adv').textContent = pct > 40 ? 'Выпало много: мастер оценит, держит ли ещё резина шипы. Дошиповка от 20 ₽ за шип.' : (pct ? 'Примерно ' + pct + '% шипов. Дошиповка от 20 ₽ за шип, перед сезоном лучше заранее.' : 'Отметьте выпавшие шипы. Дошиповка от 20 ₽ за шип.');
+  }
+  document.querySelectorAll('.ad [data-k]').forEach(function (b) { b.addEventListener('click', function () { k = +b.dataset.k; upd(); }); });
+  function auto(frac) { studs.forEach(function (s, i) { s.classList.toggle('out', ((i * 7) % 36) < 36 * frac); }); upd(); }
+  document.getElementById('auto').addEventListener('click', function () { auto(.15); });
+  document.getElementById('clr').addEventListener('click', function () { auto(0); });
+  upd();
+
+  function live() { var s = RT.status(); if (!s) return; document.querySelectorAll('[data-live]').forEach(function (e) { e.classList.toggle('is-open', s.open); e.classList.toggle('is-closed', !s.open); }); }
+  document.addEventListener('DOMContentLoaded', live); setInterval(live, 60000);
+
+  window.REEL = {
+    hero: '.hero', heroAt: .4, feature: '#kassa', featureOff: 30, featureM: '.ad', featureOffM: -280, prices: '#ads', pricesOff: 30,
+    demo: [function () { auto(.15); }, function () { k = 4; upd(); }, function () { k = 1; auto(.4); }],
+    holds: [40, 40, 40]
+  };
+})();
+</script>
+</body>
+</html>

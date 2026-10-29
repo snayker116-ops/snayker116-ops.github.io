@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Компьютер Сервис — ремонт телефонов, ноутбуков и принтеров в Кстове</title>
+<meta name="description" content="Компьютер Сервис в Кстове, площадь Ленина, 5А (ТЦ «Пирамида»): ремонт телефонов и ноутбуков, сборка компьютеров, ремонт телевизоров и мониторов, заправка картриджей, восстановление данных, пайка. Гарантия. Рейтинг 5,0, 228 оценок.">
+<meta property="og:title" content="Компьютер Сервис — Кстово">
+<meta property="og:description" content="Опишите поломку в чате на сайте и узнайте, что делать. Пл. Ленина, 5А. +7 920 022-77-20">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/7021598/2a0000018875ff7b2bc4aa080fdd2041bc6c/XXXL">
+<meta name="theme-color" content="#0F1029">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;800&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ElectronicsStore","name":"Компьютер Сервис","telephone":["+7 920 022-77-20","+7 950 351-66-10"],"address":{"@type":"PostalAddress","streetAddress":"площадь Ленина, 5А","addressLocality":"Кстово","addressRegion":"Нижегородская область","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":56.150683,"longitude":44.211237},"openingHours":["Mo-Fr 10:00-19:30","Sa-Su 10:00-18:00"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5","ratingCount":"228"}}</script>
+<style>
+:root {
+  --bg: #0F1029; --bg2: #171A3D; --bg3: #222659; --blue: #4F7CFF; --cyan: #22D3EE; --mag: #C04BFF; --ok: #34D399; --ink: #F1F3FF; --mut: #9AA0D0;
+  --f: 'Inter Tight', Arial, sans-serif; --gut: clamp(16px, 4vw, 56px); --ease: cubic-bezier(.2, .75, .2, 1);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17px/1.6 var(--f); overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+
+/* nav: a dock with app icons */
+.dock { position: fixed; left: 50%; bottom: 12px; transform: translateX(-50%); z-index: 50; display: flex; gap: 10px; padding: 9px 12px; border-radius: 26px; background: rgba(34,38,89,.72); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: inset 0 0 0 1px rgba(255,255,255,.12), 0 14px 30px rgba(0,0,0,.4); }
+.dock a { position: relative; display: grid; place-items: center; width: 48px; height: 48px; border-radius: 14px; background: var(--c); text-decoration: none; font-size: 22px; transition: transform .25s var(--ease); }
+.dock a span { position: absolute; bottom: 58px; left: 50%; transform: translateX(-50%); padding: 4px 8px; border-radius: 8px; background: var(--bg3); font: 600 11px/1 var(--f); white-space: nowrap; opacity: 0; transition: opacity .2s; pointer-events: none; }
+.dock a:hover span { opacity: 1; }
+.dock a.on { transform: translateY(-8px) scale(1.08); }
+.dock a.on::after { content: ""; position: absolute; bottom: -9px; width: 5px; height: 5px; border-radius: 50%; background: #fff; }
+@media (max-width: 500px) { .dock { gap: 8px; padding: 7px 9px; } .dock a { width: 42px; height: 42px; font-size: 19px; } }
+
+/* hero: cracked screen heals */
+.hero { position: relative; height: 240vh; }
+.desk { position: sticky; top: 0; height: 100vh; min-height: 640px; overflow: hidden; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(20px, 4vw, 60px); align-items: center; padding: 0 var(--gut); background: radial-gradient(800px 600px at 30% 50%, rgba(79,124,255,calc(.1 + var(--h, 0) * .25)), transparent 70%); }
+.phone { position: relative; justify-self: center; width: min(320px, 70vw); aspect-ratio: 9/19; border-radius: 44px; padding: 12px; background: linear-gradient(145deg, #2a2d4f, #0b0c1c); box-shadow: inset 0 0 0 2px #3a3e72, 0 50px 80px -30px #000; }
+.scr { position: relative; height: 100%; border-radius: 34px; overflow: hidden; background: #05060f; }
+.lock { position: absolute; inset: 0; padding: 46px 14px 16px; background: radial-gradient(circle at 30% 0%, #6a4bff, transparent 60%), radial-gradient(circle at 90% 90%, #12b5d6, transparent 55%), #1a1b4a; opacity: var(--h, 0); }
+.lock .tm { text-align: center; font: 600 64px/1 var(--f); letter-spacing: -.02em; }
+.lock .dt { text-align: center; font: 500 14px/1 var(--f); opacity: .85; margin: 6px 0 20px; }
+.ntf { display: grid; grid-template-columns: 30px minmax(0, 1fr); gap: 8px; align-items: start; margin-bottom: 8px; padding: 10px; border-radius: 16px; background: rgba(255,255,255,.18); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); font-size: 12.5px; line-height: 1.3; transform: translateY(calc((1 - var(--n, 0)) * 20px)); opacity: var(--n, 0); }
+.ntf i { width: 30px; height: 30px; border-radius: 8px; display: grid; place-items: center; background: var(--blue); font-style: normal; font-size: 15px; }
+.ntf b { display: block; font-size: 12.5px; }
+.island { position: absolute; left: 50%; top: 10px; width: 90px; height: 26px; margin-left: -45px; border-radius: 20px; background: #000; z-index: 3; }
+.crack { position: absolute; inset: 0; z-index: 2; pointer-events: none; }
+.crack path { fill: none; stroke: rgba(255,255,255,.85); stroke-width: 1.3; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: var(--h, 0); }
+.crack .glow { stroke: rgba(160,200,255,.35); stroke-width: 4; }
+.copy .k { display: inline-flex; align-items: center; gap: 8px; padding: 7px 12px; border-radius: 30px; background: var(--bg3); font: 600 13px/1 var(--f); color: var(--cyan); }
+.copy h1 { margin: 16px 0 12px; font: 800 clamp(40px, 5.4vw, 78px)/1 var(--f); letter-spacing: -.03em; }
+.copy h1 span { background: linear-gradient(90deg, var(--blue), var(--mag)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.copy p { max-width: 500px; margin: 0 0 22px; color: #c9cdf2; }
+.st { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 18px; font: 600 15px/1 var(--f); color: var(--mut); }
+.st b { color: var(--ok); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 15px 22px; border-radius: 16px; background: var(--blue); color: #fff; text-decoration: none; font: 600 16px/1 var(--f); border: 0; cursor: pointer; }
+.btn.o { background: var(--bg3); }
+.btns { display: flex; flex-wrap: wrap; gap: 10px; }
+@media (max-width: 900px) { .desk { grid-template-columns: 1fr; align-content: start; gap: 18px; padding: 20px var(--gut) 90px; } .phone { width: min(200px, 52vw); border-radius: 32px; padding: 8px; } .scr { border-radius: 26px; } .lock { padding-top: 34px; } .lock .tm { font-size: 40px; } .lock .dt { margin-bottom: 10px; } .ntf { font-size: 10.5px; padding: 7px; } .ntf b { font-size: 10.5px; } .ntf i { width: 22px; height: 22px; font-size: 12px; } .ntf { grid-template-columns: 22px minmax(0, 1fr); } .island { width: 60px; height: 18px; margin-left: -30px; } .copy h1 { font-size: 34px; margin: 10px 0 8px; } .copy p { font-size: 15.5px; margin-bottom: 14px; } .st { margin-bottom: 12px; } }
+
+main > section:not(.hero) { position: relative; scroll-margin-top: 10px; padding: clamp(80px, 10vw, 120px) var(--gut) clamp(90px, 10vw, 120px); }
+.wrap { max-width: 1140px; margin: 0 auto; }
+.kk { font: 600 13px/1 var(--f); letter-spacing: .14em; text-transform: uppercase; color: var(--cyan); }
+h2 { margin: 12px 0 14px; font: 800 clamp(34px, 4.6vw, 62px)/1.04 var(--f); letter-spacing: -.03em; }
+h2 span { color: var(--blue); }
+.lead { max-width: 640px; color: #c9cdf2; margin: 0 0 28px; }
+
+/* chat */
+.chatw { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(18px, 3vw, 40px); align-items: start; }
+.chat { border-radius: 28px; background: var(--bg2); box-shadow: inset 0 0 0 1px #2c3070; overflow: hidden; }
+.chat .hd { display: flex; align-items: center; gap: 10px; padding: 14px 16px; background: var(--bg3); }
+.chat .hd i { width: 38px; height: 38px; border-radius: 50%; display: grid; place-items: center; background: linear-gradient(135deg, var(--blue), var(--mag)); font-style: normal; font-weight: 800; }
+.chat .hd b { display: block; font-size: 15px; }
+.chat .hd small { color: var(--ok); font-size: 12.5px; }
+.msgs { height: 430px; overflow-y: auto; padding: 16px; display: flex; flex-direction: column; gap: 8px; scroll-behavior: smooth; }
+.m { max-width: 82%; padding: 10px 14px; border-radius: 18px; font-size: 15px; line-height: 1.45; animation: pop .35s var(--ease); }
+@keyframes pop { from { opacity: 0; transform: translateY(8px) scale(.98); } }
+.m.s { align-self: flex-start; background: var(--bg3); border-bottom-left-radius: 6px; }
+.m.u { align-self: flex-end; background: var(--blue); border-bottom-right-radius: 6px; }
+.m.s q { display: block; margin-top: 8px; padding-left: 10px; border-left: 3px solid var(--cyan); color: #c9cdf2; font-style: italic; quotes: none; }
+.m.s em { display: block; margin-top: 8px; font-style: normal; color: var(--ok); font-weight: 600; }
+.qr { display: flex; flex-wrap: wrap; gap: 8px; padding: 12px 16px 16px; border-top: 1px solid #2c3070; min-height: 64px; }
+.qr button { padding: 9px 13px; border-radius: 20px; border: 1.5px solid var(--blue); background: transparent; color: var(--ink); font: 500 14.5px/1.1 var(--f); cursor: pointer; }
+.qr button:hover { background: rgba(79,124,255,.2); }
+.side .tip { padding: 20px; border-radius: 22px; background: var(--bg2); box-shadow: inset 0 0 0 1px #2c3070; margin-bottom: 12px; }
+.side .tip b { display: block; font-size: 17px; margin-bottom: 6px; }
+.side .tip p { margin: 0; font-size: 15px; color: #c9cdf2; }
+@media (max-width: 900px) { .chatw { grid-template-columns: 1fr; } .msgs { height: 360px; } }
+
+/* home screen of services */
+.home { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 22px 14px; padding: clamp(20px, 3vw, 34px); border-radius: 34px; background: radial-gradient(circle at 20% 0%, #3b2bb0, transparent 60%), radial-gradient(circle at 100% 100%, #0e7490, transparent 60%), var(--bg2); }
+.app { text-align: center; }
+.app i { display: grid; place-items: center; width: 68px; height: 68px; margin: 0 auto 8px; border-radius: 18px; background: var(--c); font-style: normal; font-size: 30px; box-shadow: 0 10px 20px -10px rgba(0,0,0,.6); }
+.app b { display: block; font-size: 14.5px; line-height: 1.2; }
+.app small { display: block; margin-top: 4px; font-size: 12.5px; color: #c9cdf2; line-height: 1.3; }
+@media (max-width: 900px) { .home { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 480px) { .home { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.brands { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.brands span { padding: 7px 12px; border-radius: 10px; background: var(--bg2); font-size: 14px; color: #c9cdf2; box-shadow: inset 0 0 0 1px #2c3070; }
+
+/* notifications */
+.ntfs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.nt { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 12px; padding: 16px; border-radius: 22px; background: rgba(255,255,255,.07); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: inset 0 0 0 1px rgba(255,255,255,.1); }
+.nt i { width: 40px; height: 40px; border-radius: 11px; display: grid; place-items: center; background: var(--c); font-style: normal; font-size: 19px; }
+.nt .h { display: flex; justify-content: space-between; gap: 10px; font-size: 13.5px; color: var(--mut); }
+.nt .h b { color: var(--ink); font-size: 15px; }
+.nt p { margin: 4px 0 0; font-size: 15px; color: #dfe2ff; }
+@media (max-width: 860px) { .ntfs { grid-template-columns: 1fr; } }
+.gal { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 18px; }
+.gal figure { margin: 0; border-radius: 22px; overflow: hidden; aspect-ratio: 1; }
+.gal img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 760px) { .gal { grid-template-columns: 1fr 1fr; } }
+
+.vis { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 26px; }
+.card { padding: 22px; border-radius: 28px; background: var(--bg2); box-shadow: inset 0 0 0 1px #2c3070; }
+.card .r { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px solid #2c3070; font-size: 15.5px; }
+.card .r span { color: var(--mut); }
+.card .r b { text-align: right; font-weight: 500; }
+.live { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 6px; font-weight: 600; font-size: 14px; }
+.live i { width: 10px; height: 10px; border-radius: 50%; background: var(--c, #999); box-shadow: 0 0 8px var(--c, transparent); }
+.card .btns { margin-top: 16px; }
+.mapbox { position: relative; min-height: 420px; border-radius: 28px; overflow: hidden; }
+.mapbox iframe { position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 140px); border: 0; }
+@media (max-width: 860px) { .vis { grid-template-columns: 1fr; } }
+footer { padding: 26px var(--gut) 110px; text-align: center; color: var(--mut); font-size: 14px; }
+footer b { display: block; font: 800 26px/1 var(--f); color: var(--ink); margin-bottom: 6px; }
+
+.motion [data-in] { opacity: 0; transform: translateY(22px); transition: opacity .6s var(--ease), transform .6s var(--ease); }
+.motion [data-in].in { opacity: 1; transform: none; }
+.noimg { background: linear-gradient(135deg, #222659, #0f1029); }
+.noimg img { opacity: 0; }
+</style>
+</head>
+<body data-hours='{"0":[[10,0,18,0]],"1":[[10,0,19,30]],"2":[[10,0,19,30]],"3":[[10,0,19,30]],"4":[[10,0,19,30]],"5":[[10,0,19,30]],"6":[[10,0,18,0]]}'>
+
+<nav class="dock" id="dock" aria-label="Разделы">
+  <a href="#top" style="--c:linear-gradient(135deg,#4F7CFF,#C04BFF)"><span>Главная</span>📱</a><a href="#chat" style="--c:#34D399"><span>Чат-диагност</span>💬</a><a href="#uslugi" style="--c:#F59E0B"><span>Услуги</span>🛠</a><a href="#otzyvy" style="--c:#EF4444"><span>Отзывы</span>🔔</a><a href="#adres" style="--c:#22D3EE"><span>Адрес</span>📍</a>
+</nav>
+
+<main>
+<section class="hero" id="top">
+  <div class="desk" id="desk">
+    <div class="phone" aria-hidden="true">
+      <div class="scr">
+        <div class="island"></div>
+        <div class="lock">
+          <div class="tm" id="tm">10:00</div><div class="dt" id="dt">…</div>
+          <div class="ntf" style="--n:var(--n1)"><i>✓</i><div><b>Компьютер Сервис</b>Ваш телефон готов, можно забирать</div></div>
+          <div class="ntf" style="--n:var(--n2)"><i style="background:#F59E0B">★</i><div><b>Яндекс Карты</b>5,0 · 228 оценок</div></div>
+          <div class="ntf" style="--n:var(--n3)"><i style="background:#22D3EE">📍</i><div><b>Кстово</b>пл. Ленина, 5А, ТЦ «Пирамида»</div></div>
+        </div>
+        <svg class="crack" viewBox="0 0 100 210" preserveAspectRatio="none" id="crack"></svg>
+      </div>
+    </div>
+    <div class="copy">
+      <span class="k">⚡ Кстово · ТЦ «Пирамида»</span>
+      <h1>Компьютер <span>Сервис</span></h1>
+      <p>Чиним телефоны, ноутбуки, компьютеры, телевизоры, мониторы и принтеры. Заправляем картриджи, достаём данные с убитых флешек, собираем игровые ПК, паяем электронику.</p>
+      <div class="st">● <b>5,0</b> на Яндекс Картах · 228 оценок</div>
+      <div class="btns"><a class="btn" href="tel:+79200227720">+7 920 022-77-20</a><a class="btn o" href="#chat">Что сломалось?</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="chat">
+  <div class="wrap">
+    <span class="kk">Чат-диагност</span>
+    <h2>Расскажите, <span>что сломалось</span></h2>
+    <p class="lead">Выбирайте ответы в чате: подскажем, в чём обычно дело и что взять с собой. Точную причину и цену мастер назовёт после диагностики.</p>
+    <div class="chatw">
+      <div class="chat">
+        <div class="hd"><i>КС</i><div><b>Компьютер Сервис</b><small>обычно отвечает быстро</small></div></div>
+        <div class="msgs" id="msgs" aria-live="polite"></div>
+        <div class="qr" id="qr"></div>
+      </div>
+      <div class="side">
+        <div class="tip" data-in><b>📝 Назовите точную модель</b><p>Модель устройства лучше посмотреть на коробке или в настройках: от неё зависит, какая нужна запчасть и как сбрасывать пароль.</p></div>
+        <div class="tip" data-in><b>🔌 Возьмите зарядку</b><p>Если проблема с питанием, принесите свой кабель и блок: так мастер быстрее найдёт виновника.</p></div>
+        <div class="tip" data-in><b>🛡 Гарантия</b><p>На ремонт даётся гарантия. Оплатить можно наличными, картой или по QR-коду.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="uslugi">
+  <div class="wrap">
+    <span class="kk">Рабочий стол</span>
+    <h2>Что <span>чиним</span></h2>
+    <p class="lead">Цены зависят от модели и поломки, их называют после диагностики. Ещё в магазине при сервисе есть клавиатуры, SSD, флешки и расходники.</p>
+    <div class="home">
+      <div class="app" data-in><i style="--c:#4F7CFF">📱</i><b>Телефоны</b><small>экраны, зарядка, платы</small></div>
+      <div class="app" data-in><i style="--c:#C04BFF">💻</i><b>Ноутбуки</b><small>память, батареи, чистка</small></div>
+      <div class="app" data-in><i style="--c:#EF4444">🎮</i><b>Сборка ПК</b><small>в том числе игровые</small></div>
+      <div class="app" data-in><i style="--c:#F59E0B">🖨</i><b>Принтеры</b><small>ремонт и заправка картриджей</small></div>
+      <div class="app" data-in><i style="--c:#10B981">📺</i><b>ТВ и мониторы</b><small>нет картинки, полосы</small></div>
+      <div class="app" data-in><i style="--c:#22D3EE">💾</i><b>Данные</b><small>флешки и диски</small></div>
+      <div class="app" data-in><i style="--c:#64748B">🔧</i><b>Пайка</b><small>платы, даже приборные панели авто</small></div>
+      <div class="app" data-in><i style="--c:#EC4899">🔐</i><b>Сброс пароля</b><small>для телефонов</small></div>
+      <div class="app" data-in><i style="--c:#8B5CF6">⌨️</i><b>Магазин</b><small>клавиатуры, SSD, кабели</small></div>
+      <div class="app" data-in><i style="--c:#14B8A6">🛡</i><b>Гарантия</b><small>на выполненный ремонт</small></div>
+    </div>
+    <div class="brands"><span>Apple</span><span>Samsung</span><span>Xiaomi</span><span>Honor</span><span>Huawei</span><span>Lenovo</span><span>Acer</span><span>DELL</span><span>HP</span><span>Canon</span><span>Epson</span><span>Brother</span><span>Kyocera</span><span>Xerox</span></div>
+  </div>
+</section>
+
+<section id="otzyvy">
+  <div class="wrap">
+    <span class="kk">Уведомления</span>
+    <h2>Что пишут <span>клиенты</span></h2>
+    <p class="lead">5,0 на Яндекс Картах, 228 оценок. Время ожидания хвалят в 88 отзывах из 95.</p>
+    <div class="ntfs">
+      <div class="nt" data-in><i style="--c:#4F7CFF">📱</i><div><div class="h"><b>Приехала с 2% заряда</b><span>телефон</span></div><p>«Оказалась в городе случайно, телефон перестал заряжаться. Быстро всё починили, случайно задели плёнку и поменяли её бесплатно».</p></div></div>
+      <div class="nt" data-in><i style="--c:#C04BFF">💻</i><div><div class="h"><b>Память за 20 минут</b><span>ноутбук</span></div><p>«Нужно было срочно увеличить оперативную память. Сделали за 20 минут, ничего лишнего не навязывают, бесплатно почистили пыль».</p></div></div>
+      <div class="nt" data-in><i style="--c:#22D3EE">💾</i><div><div class="h"><b>Флешку спасли</b><span>данные</span></div><p>«Повредила флешку, выдрала почти все внутренности. Только здесь помогли восстановить и не потерять информацию».</p></div></div>
+      <div class="nt" data-in><i style="--c:#EF4444">🎮</i><div><div class="h"><b>Игровой ПК</b><span>сборка</span></div><p>«Сборка игрового компьютера на высшем уровне: профессиональные рекомендации и внимание к деталям».</p></div></div>
+      <div class="nt" data-in><i style="--c:#64748B">🔧</i><div><div class="h"><b>Приборка Ford Focus 2</b><span>пайка</span></div><p>«Приносили пропаять приборную панель, сделали быстро и качественно».</p></div></div>
+      <div class="nt" data-in><i style="--c:#10B981">📺</i><div><div class="h"><b>Телевизор, монитор, телефон</b><span>постоянный клиент</span></div><p>«Обращаюсь не первый раз: ремонтировала телевизор, монитор и сотовый. Персонал вежливый, работу свою знают».</p></div></div>
+    </div>
+    <div class="gal">
+      <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/7021598/2a0000018875ff7b2bc4aa080fdd2041bc6c/L" alt="Телефоны до и после замены экрана" loading="lazy"></figure>
+      <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/901763/2a0000018876934c0ffa6984b0d8b630a470/L" alt="Ноутбук в разборе" loading="lazy"></figure>
+      <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/219656/2a0000018732a1bb9ba4f88b37e29ed1730a/L" alt="Витрина с SSD и аксессуарами" loading="lazy"></figure>
+      <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/10373230/2a000001912d15bcdff57ed3106c3bc50b21/L" alt="Сервис в ТЦ Пирамида" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="adres">
+  <div class="wrap vis">
+    <div>
+      <span class="kk">Карты</span>
+      <h2>Площадь Ленина, <span>5А</span></h2>
+      <div class="card">
+        <div class="live" data-live><i></i><span data-status>…</span></div>
+        <div class="r"><span>Адрес</span><b>Кстово, пл. Ленина, 5А, ТЦ «Пирамида»</b></div>
+        <div class="r"><span>Будни</span><b>10:00–19:30</b></div>
+        <div class="r"><span>Выходные</span><b>10:00–18:00</b></div>
+        <div class="r"><span>Телефоны</span><b><a href="tel:+79200227720">+7 920 022-77-20</a><br><a href="tel:+79503516610">+7 950 351-66-10</a></b></div>
+        <div class="r"><span>Можно</span><b>с животными, вход для колясок</b></div>
+        <div class="btns"><a class="btn" href="tel:+79200227720">Позвонить</a><a class="btn o" href="https://vk.ru/computerkstovo" target="_blank" rel="noopener">ВКонтакте</a></div>
+      </div>
+    </div>
+    <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=44.211237%2C56.150683&amp;z=16&amp;pt=44.211237%2C56.150683%2Cpm2blm&amp;l=map" title="Компьютер Сервис на Яндекс Картах" loading="lazy" allowfullscreen></iframe></div>
+  </div>
+</section>
+</main>
+
+<footer><b>Компьютер Сервис</b>Кстово, площадь Ленина, 5А · +7 920 022-77-20</footer>
+
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  // cracks: random branching lines from an impact point, drawn with pathLength=1 so they can retract
+  var NS = 'http://www.w3.org/2000/svg', cr = document.getElementById('crack'), seed = 11;
+  function rnd() { seed = (seed * 9301 + 49297) % 233280; return seed / 233280; }
+  var cx = 62, cy = 70;
+  for (var i = 0; i < 14; i++) {
+    var a = i / 14 * Math.PI * 2 + rnd() * .3, x = cx, y = cy, d = 'M' + x + ' ' + y;
+    for (var s = 0; s < 6; s++) { a += (rnd() - .5) * .7; x += Math.cos(a) * (8 + rnd() * 10); y += Math.sin(a) * (10 + rnd() * 16); d += ' L' + x.toFixed(1) + ' ' + y.toFixed(1); }
+    ['glow', ''].forEach(function (c) { var p = document.createElementNS(NS, 'path'); p.setAttribute('d', d); p.setAttribute('pathLength', 1); if (c) p.setAttribute('class', c); cr.appendChild(p); });
+  }
+  for (var r = 1; r < 4; r++) { var ring = '', n = 9; for (var k = 0; k <= n; k++) { var aa = k / n * Math.PI * 2, rr = r * 7 + rnd() * 3; ring += (k ? ' L' : 'M') + (cx + Math.cos(aa) * rr).toFixed(1) + ' ' + (cy + Math.sin(aa) * rr * 1.4).toFixed(1); } var pr = document.createElementNS(NS, 'path'); pr.setAttribute('d', ring); pr.setAttribute('pathLength', 1); cr.appendChild(pr); }
+  var hero = document.querySelector('.hero'), desk = document.getElementById('desk');
+  RT.onScroll(function () {
+    var p = RT.motion ? RT.progress(hero) : 1, h = RT.ease(RT.clamp((p - .05) / .45));
+    desk.style.setProperty('--h', h);
+    [1, 2, 3].forEach(function (k) { desk.style.setProperty('--n' + k, RT.ease(RT.clamp((p - .45 - k * .07) / .12))); });
+  });
+  function clock() { var d = new Date(); document.getElementById('tm').textContent = String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0'); document.getElementById('dt').textContent = d.toLocaleDateString('ru-RU', { weekday: 'long', day: 'numeric', month: 'long' }); }
+  clock(); setInterval(clock, 30000);
+
+  var secs = document.querySelectorAll('main > section'), links = document.querySelectorAll('.dock a');
+  RT.onScroll(function () { var cur = 0; secs.forEach(function (s, i) { if (s.getBoundingClientRect().top < innerHeight * .45) cur = i; }); links.forEach(function (a, i) { a.classList.toggle('on', i === cur); }); });
+
+  // chat diagnostics
+  var T = {
+    'Телефон': {
+      'Не заряжается': ['Чаще всего виноват разъём зарядки, кабель или контроллер питания. Мастер проверит по шагам.', 'Приехала к ребятам с 2%. Быстро всё починили', 'Возьмите свой кабель и блок питания'],
+      'Разбит экран': ['Меняем дисплей или стекло, подбираем под модель. Можно сразу поклеить защиту.', 'Случайно задели плёнку и поменяли её бесплатно', 'Назовите точную модель, чтобы заказать дисплей'],
+      'Не включается': ['Нужна диагностика платы. Постараемся сохранить фото и контакты.', 'Грозил новый телефон с потерей данных, а он заработал!', 'Не пытайтесь заряжать его несколько часов подряд'],
+      'Забыт пароль': ['Сброс возможен, но на многих моделях он удаляет данные. Важно точно знать модель.', '', 'Посмотрите модель на коробке или в документах']
+    },
+    'Ноутбук': {
+      'Тормозит': ['Обычно помогает добавить оперативной памяти или поставить SSD, плюс чистка от пыли.', 'Увеличили оперативную память за 20 минут, бесплатно почистили пыль', 'Возьмите блок питания'],
+      'Не заряжает': ['Причина может быть в батарее или в контроллере заряда. Диагностика покажет, что именно.', '', 'Возьмите родной блок питания'],
+      'Нет интернета': ['Проверим Wi-Fi модуль и настройки, расскажем варианты.', 'Мастер быстро сделал диагностику, рассказал по стоимости и варианты решения', 'Скажите, к какой сети не подключается'],
+      'Греется и шумит': ['Скорее всего пыль и высохшая термопаста. Чистка вернёт тишину.', '', 'Сохраните важные файлы заранее']
+    },
+    'Компьютер': {
+      'Собрать новый': ['Соберём под задачи и бюджет, в том числе игровой.', 'Сборка игрового компьютера была проведена на высшем уровне', 'Подумайте, в какие игры и программы будете работать'],
+      'Не включается': ['Проверим блок питания, материнскую плату и память.', '', 'Привезите системный блок без монитора'],
+      'Медленно работает': ['Часто помогает SSD и чистка системы. SSD есть в магазине при сервисе.', '', 'Сохраните пароли от почты и аккаунтов']
+    },
+    'Принтер': {
+      'Не печатает': ['Разберёмся с механикой и драйверами. Чиним Canon, HP, Epson, Brother, Kyocera, Xerox и другие.', 'Провозились с принтером часа три, починили', 'Возьмите кабель и картридж'],
+      'Заправить картридж': ['Заправляем картриджи для лазерных и струйных принтеров.', '', 'Принесите сам картридж, принтер не нужен']
+    },
+    'ТВ или монитор': {
+      'Нет изображения': ['Чаще всего подсветка или блок питания. Ремонтируем телевизоры и мониторы.', 'Ремонтировала и телевизор, и монитор. Всё отлично', 'Если большой экран, позвоните заранее']
+    },
+    'Флешка или диск': {
+      'Не читается': ['Попробуем восстановить данные, даже если носитель повреждён.', 'Выдрала почти все внутренности. Только здесь помогли восстановить информацию', 'Не пробуйте форматировать: это может затереть данные']
+    },
+    'Другое': {
+      'Плата или пайка': ['Паяем электронику, даже приборные панели автомобилей.', 'Приносили пропаять приборную панель от Форд Фокус 2, сделали быстро и качественно', 'Позвоните и опишите, что за устройство']
+    }
+  };
+  var msgs = document.getElementById('msgs'), qr = document.getElementById('qr');
+  function say(t, who, extra) { var m = document.createElement('div'); m.className = 'm ' + who; m.innerHTML = t + (extra || ''); msgs.appendChild(m); msgs.scrollTop = msgs.scrollHeight; }
+  function quick(opts, fn) { qr.innerHTML = ''; opts.forEach(function (o) { var b = document.createElement('button'); b.type = 'button'; b.textContent = o; b.addEventListener('click', function () { fn(o); }); qr.appendChild(b); }); }
+  function start() { msgs.innerHTML = ''; say('Здравствуйте! Что у вас сломалось?', 's'); quick(Object.keys(T), device); }
+  function device(d) { say(d, 'u'); setTimeout(function () { say('Понял. Что с ним происходит?', 's'); quick(Object.keys(T[d]), function (s) { symptom(d, s); }); }, RT.motion ? 350 : 0); }
+  function symptom(d, s) {
+    say(s, 'u');
+    var r = T[d][s];
+    setTimeout(function () {
+      say(r[0], 's', (r[1] ? '<q>«' + r[1] + '»</q>' : '') + '<em>С собой: ' + r[2].charAt(0).toLowerCase() + r[2].slice(1) + '.</em>');
+      setTimeout(function () { say('Приносите в ТЦ «Пирамида», пл. Ленина, 5А. Цену назовём после диагностики. Позвонить: <a href="tel:+79200227720">+7 920 022-77-20</a>', 's'); quick(['Начать заново'], start); }, RT.motion ? 450 : 0);
+    }, RT.motion ? 400 : 0);
+  }
+  start();
+  window.__chat = function (d, s) { start(); device(d); setTimeout(function () { symptom(d, s); }, RT.motion ? 500 : 0); };
+
+  window.REEL = {
+    hero: '.hero', heroAt: .85, feature: '#chat', featureOff: 20, featureM: '.chat', featureOffM: -20, prices: '#uslugi', pricesOff: 30,
+    demo: [function () { __chat('Телефон', 'Не заряжается'); }, function () { __chat('Ноутбук', 'Тормозит'); }, function () { __chat('Флешка или диск', 'Не читается'); }],
+    holds: [60, 60, 60]
+  };
+})();
+</script>
+</body>
+</html>

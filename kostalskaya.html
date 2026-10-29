@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Студия красоты Ирины Костальской — перманент, волосы, косметология в Арзамасе</title>
+<meta name="description" content="Студия красоты Ирины Костальской, Арзамас, проспект Ленина, 208: перманентный макияж бровей, губ и век у основателя студии, исправление чужого перманента, стрижки и окрашивание, брови, косметология, мужской зал. Рейтинг 5,0, 195 оценок.">
+<meta property="og:title" content="Студия красоты Ирины Костальской, Арзамас">
+<meta property="og:description" content="Перманент от 13 000 ₽, стрижки от 1 400 ₽, брови от 600 ₽. Ленина, 208. +7 953 567-74-74">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/13609869/2a00000192a62f6f0f5fb514baaf00eb13c3/XXXL">
+<meta name="theme-color" content="#231019">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prata&amp;family=Marck+Script&amp;family=Golos+Text:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BeautySalon","name":"Студия красоты Ирины Костальской","telephone":"+7 953 567-74-74","address":{"@type":"PostalAddress","streetAddress":"просп. Ленина, 208","addressLocality":"Арзамас","addressRegion":"Нижегородская область","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":55.40518,"longitude":43.835842},"openingHours":["Mo-Fr 09:00-20:00","Sa-Su 09:00-18:00"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5","ratingCount":"195"}}</script>
+<style>
+:root {
+  --wall: #231019; --wall2: #2F1622; --plum: #3B1A2A; --bulb: #FFE6AE; --bulb2: #FFC970; --lip: #C8102E; --lip2: #E23A55; --blush: #F4DCD6; --ink: #F7ECE6; --mut: #C7AAB2; --brass: #C9A15B;
+  --head: 'Prata', Georgia, serif; --hand: 'Marck Script', cursive; --body: 'Golos Text', Arial, sans-serif;
+  --gut: clamp(16px, 4vw, 56px); --ease: cubic-bezier(.2, .75, .2, 1);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--wall); color: var(--ink); font: 400 17px/1.6 var(--body); overflow-x: hidden;
+  background-image: repeating-linear-gradient(90deg, rgba(255,255,255,.018) 0 2px, transparent 2px 46px); }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+
+/* nav: a strip of bulbs on the left */
+.strip { position: fixed; left: 14px; top: 50%; transform: translateY(-50%); z-index: 50; display: grid; gap: 16px; padding: 14px 8px; border-radius: 30px; background: #160a10; box-shadow: inset 0 0 0 2px #3d2230; }
+.strip a { position: relative; display: block; width: 20px; height: 20px; border-radius: 50%; background: #5a4048; box-shadow: inset 0 -3px 0 rgba(0,0,0,.3); transition: background .3s, box-shadow .3s; }
+.strip a.on { background: radial-gradient(circle at 40% 35%, #fff, var(--bulb) 45%, var(--bulb2)); box-shadow: 0 0 16px 4px rgba(255,201,112,.55); }
+.strip a span { position: absolute; left: 34px; top: 50%; transform: translateY(-50%); white-space: nowrap; font: 500 13px/1 var(--body); color: var(--bulb); opacity: 0; transition: opacity .3s; pointer-events: none; }
+.strip:hover a span, .strip a.on span { opacity: 1; }
+@media (max-width: 760px) { .strip { left: 50%; top: auto; bottom: 10px; transform: translateX(-50%); grid-auto-flow: column; padding: 10px 14px; } .strip a span { display: none; } }
+
+/* hero: vanity mirror, the bulbs turn on and the name is written in lipstick */
+.hero { position: relative; height: 230vh; }
+.room { position: sticky; top: 0; height: 100vh; min-height: 640px; overflow: hidden; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: clamp(20px, 4vw, 64px); align-items: center; padding: 0 var(--gut) 0 calc(var(--gut) + 44px);
+  background: radial-gradient(900px 700px at 30% 50%, rgba(255,201,112,calc(var(--l, 0) * .16)), transparent 70%); }
+.mirror { position: relative; justify-self: center; width: min(100%, 600px); aspect-ratio: 5/6; padding: 46px; border-radius: 26px; background: linear-gradient(145deg, #1a0d12, #0d0609); box-shadow: inset 0 0 0 3px #3d2230, 0 40px 80px -30px #000; }
+.glass { position: relative; height: 100%; border-radius: 8px; overflow: hidden; background: #2a1e22; box-shadow: inset 0 0 0 2px #574048; }
+.glass img { width: 100%; height: 100%; object-fit: cover; object-position: center 25%; filter: brightness(calc(.18 + var(--l, 0) * .9)) saturate(calc(.4 + var(--l, 0) * .7)); transform: scale(calc(1.08 - var(--l, 0) * .08)); }
+.glass::after { content: ""; position: absolute; inset: 0; background: linear-gradient(115deg, rgba(255,255,255,.12) 0 18%, transparent 18% 30%, rgba(255,255,255,.06) 30% 34%, transparent 34%); pointer-events: none; }
+.lips { position: absolute; left: 6%; right: 6%; bottom: 7%; z-index: 2; font: 400 clamp(40px, 5.4vw, 74px)/.95 var(--hand); color: var(--lip); text-shadow: 0 1px 0 #7a0a1c, 0 0 1px #ff6d84, 0 0 14px rgba(255,255,255,.45); transform: rotate(-6deg); clip-path: inset(-20% calc((1 - var(--w, 0)) * 100%) -20% 0); }
+.lips small { display: block; font-size: .5em; margin: 4px 0 0 30%; }
+.bulb { position: absolute; width: 26px; height: 26px; margin: -13px 0 0 -13px; border-radius: 50%; background: #5a4048; box-shadow: inset 0 -4px 0 rgba(0,0,0,.25); transition: background .25s, box-shadow .25s; }
+.bulb.on { background: radial-gradient(circle at 40% 35%, #fff, var(--bulb) 45%, var(--bulb2)); box-shadow: 0 0 22px 7px rgba(255,201,112,.45); }
+.copy .k { font: 500 13px/1 var(--body); letter-spacing: .24em; text-transform: uppercase; color: var(--bulb2); }
+.copy h1 { margin: 16px 0 14px; font: 400 clamp(36px, 4.4vw, 64px)/1.05 var(--head); }
+.copy h1 em { font: 400 1.18em/1 var(--hand); color: var(--lip2); font-style: normal; }
+.copy p { color: #dcc5cb; max-width: 520px; margin: 0 0 22px; }
+.stars { display: flex; align-items: center; gap: 10px; margin-bottom: 22px; font-size: 15px; color: var(--mut); }
+.stars b { font: 400 30px/1 var(--head); color: var(--bulb); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 15px 22px; border-radius: 40px; background: var(--lip); color: #fff; text-decoration: none; font: 500 16px/1 var(--body); border: 0; cursor: pointer; }
+.btn.o { background: transparent; box-shadow: inset 0 0 0 1.5px #6d4757; color: var(--ink); }
+.btn.b { background: var(--bulb); color: #2a1018; }
+.btns { display: flex; flex-wrap: wrap; gap: 10px; }
+@media (max-width: 900px) {
+  .room { grid-template-columns: 1fr; align-content: start; gap: 14px; padding: 20px var(--gut) 80px; }
+  .mirror { width: min(84vw, 420px); padding: 30px; aspect-ratio: 1; }
+  .bulb { width: 18px; height: 18px; margin: -9px 0 0 -9px; }
+  .copy h1 { font-size: 32px; margin: 10px 0 8px; }
+  .copy p { font-size: 15.5px; margin-bottom: 12px; }
+  .stars { margin-bottom: 14px; }
+  .lips { font-size: 40px; }
+}
+
+main > section:not(.hero) { position: relative; scroll-margin-top: 10px; padding: clamp(90px, 10vw, 130px) var(--gut) clamp(80px, 9vw, 110px) calc(var(--gut) + 44px); }
+@media (max-width: 760px) { main > section:not(.hero) { padding-left: var(--gut); padding-top: 70px; } }
+.wrap { max-width: 1160px; margin: 0 auto; }
+.kk { font: 500 13px/1 var(--body); letter-spacing: .24em; text-transform: uppercase; color: var(--bulb2); }
+h2 { margin: 14px 0 14px; font: 400 clamp(34px, 4.6vw, 64px)/1.05 var(--head); }
+h2 em { font: 400 1.2em/1 var(--hand); color: var(--lip2); font-style: normal; }
+.lead { max-width: 660px; color: #dcc5cb; margin: 0 0 30px; }
+
+/* fears: sticky notes on a mirror, peel one to read the answer */
+.panel { position: relative; border-radius: 22px; padding: clamp(18px, 3vw, 34px); background: linear-gradient(135deg, #e9e2e4, #b9adb2 55%, #ddd3d6); box-shadow: inset 0 0 0 10px #160a10, inset 0 0 0 12px #4a2b38, 0 40px 70px -30px #000; color: #2a1018; }
+.panel::after { content: ""; position: absolute; inset: 12px; border-radius: 12px; background: linear-gradient(115deg, rgba(255,255,255,.45) 0 12%, transparent 12% 24%, rgba(255,255,255,.25) 24% 27%, transparent 27%); pointer-events: none; }
+.notes { position: relative; z-index: 1; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 14px; padding: 10px; }
+.note { position: relative; min-height: 110px; padding: 18px 12px 12px; border: 0; cursor: pointer; text-align: left; font: 400 clamp(20px, 1.8vw, 25px)/1.05 var(--hand); color: #2a1a10; background: var(--c); box-shadow: 0 10px 14px -8px rgba(0,0,0,.45); transform: rotate(var(--r)); transition: transform .4s var(--ease), box-shadow .4s, opacity .4s; }
+.note::before { content: ""; position: absolute; left: 50%; top: -8px; width: 46px; height: 16px; margin-left: -23px; background: rgba(255,255,255,.55); transform: rotate(-3deg); }
+.note:hover { transform: rotate(0) translateY(-4px); }
+.note.on { transform: rotate(calc(var(--r) * -2)) translateY(-10px) scale(1.04); box-shadow: 0 22px 24px -12px rgba(0,0,0,.5); outline: 3px solid var(--lip); outline-offset: 3px; }
+.note.seen:not(.on) { opacity: .55; }
+.answer { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: 24px; align-items: center; margin-top: 18px; padding: 22px 16px 10px; border-top: 2px dashed rgba(42,16,24,.25); }
+.answer h3 { margin: 0 0 10px; font: 400 clamp(34px, 3.6vw, 50px)/1 var(--hand); color: var(--lip); transform: rotate(-2deg); }
+.answer blockquote { margin: 0; font-size: 17px; line-height: 1.55; }
+.answer cite { display: block; margin-top: 8px; font-style: normal; font-size: 13.5px; color: #6a4a55; }
+.answer .tip { padding: 16px; border-radius: 14px; background: rgba(255,255,255,.55); font-size: 15px; }
+.answer .tip b { display: block; font: 400 22px/1.15 var(--head); margin-bottom: 6px; }
+.answer .tip span { display: block; color: #5a3a46; }
+@media (max-width: 960px) { .notes { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 700px) { .notes { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; } .note { min-height: 88px; } .answer { grid-template-columns: 1fr; gap: 14px; } }
+
+/* drawers: price list in the vanity table */
+.table { border-radius: 18px; padding: 14px; background: linear-gradient(#f2e6df, #dccabf); box-shadow: 0 40px 70px -30px #000; color: #2a1018; }
+.dr { margin-bottom: 10px; border-radius: 10px; background: linear-gradient(#efe1d9, #e0cfc5); box-shadow: inset 0 0 0 2px #cbb3a7, 0 3px 0 #b89c8e; overflow: hidden; }
+.dr:last-child { margin-bottom: 0; }
+.dr > button { width: 100%; display: grid; grid-template-columns: minmax(0, 1fr) auto 34px; gap: 14px; align-items: center; padding: 16px 18px; border: 0; background: transparent; cursor: pointer; text-align: left; color: inherit; font: 400 clamp(19px, 2vw, 24px)/1.15 var(--head); }
+.dr > button small { font: 500 14px/1 var(--body); color: #7a5866; white-space: nowrap; }
+.dr > button i { width: 34px; height: 34px; border-radius: 50%; background: radial-gradient(circle at 40% 35%, #f5df9f, var(--brass) 55%, #8b6a2c); box-shadow: 0 3px 4px rgba(0,0,0,.25); transition: transform .4s var(--ease); }
+.dr.open > button i { transform: translateX(-6px) scale(.92); }
+.tray { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .5s var(--ease); background: #2b141f; color: var(--ink); }
+.dr.open .tray { grid-template-rows: 1fr; }
+.tray > div { overflow: hidden; }
+.tray ul { list-style: none; margin: 0; padding: 8px 18px 14px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 30px; }
+.tray li { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px solid #4a2b38; font-size: 15.5px; }
+.tray li b { white-space: nowrap; color: var(--bulb); font-weight: 500; }
+@media (max-width: 760px) { .tray ul { grid-template-columns: 1fr; } .dr > button small { display: none; } }
+
+/* results: polaroids tucked into the mirror frame */
+.board { position: relative; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 18px; }
+.pol { margin: 0; padding: 10px 10px 34px; background: #faf6f2; color: #2a1018; box-shadow: 0 18px 28px -14px #000; transform: rotate(var(--r)); }
+.pol img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.pol figcaption { margin-top: 8px; font: 400 22px/1 var(--hand); text-align: center; }
+@media (max-width: 960px) { .board { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .board { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; } }
+.team { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-top: 36px; }
+.plate { padding: 16px 18px; border-radius: 6px; background: linear-gradient(135deg, #e8cf92, var(--brass) 50%, #a37c38); color: #2a1a08; box-shadow: inset 0 0 0 2px rgba(255,255,255,.35), 0 10px 20px -10px #000; }
+.plate b { display: block; font: 400 22px/1.1 var(--head); }
+.plate span { font-size: 14.5px; }
+@media (max-width: 860px) { .team { grid-template-columns: 1fr 1fr; } }
+
+/* dressing room door */
+.door { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 26px; align-items: stretch; }
+.leaf { position: relative; padding: 34px 28px 28px; border-radius: 16px 16px 6px 6px; background: linear-gradient(90deg, #3b1a2a, #4a2234 50%, #3b1a2a); box-shadow: inset 0 0 0 10px #2a1220, inset 0 0 0 12px #5a2e41; }
+.leaf .star { width: 92px; height: 92px; margin: 0 auto 16px; display: grid; place-items: center; clip-path: polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); background: linear-gradient(135deg, #f5df9f, var(--brass)); color: #2a1a08; font: 400 13px/1 var(--head); }
+.leaf h3 { margin: 0 0 6px; text-align: center; font: 400 30px/1.1 var(--head); }
+.leaf .live { display: flex; justify-content: center; align-items: center; gap: 8px; margin-bottom: 14px; font-size: 14.5px; color: var(--mut); }
+.leaf .live i { width: 10px; height: 10px; border-radius: 50%; background: var(--c, #999); box-shadow: 0 0 10px var(--c, transparent); }
+.row { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px solid #5a2e41; font-size: 15.5px; }
+.row span { color: var(--mut); }
+.row b { text-align: right; font-weight: 500; }
+.mapbox { position: relative; min-height: 440px; border-radius: 16px; overflow: hidden; box-shadow: inset 0 0 0 2px #5a2e41; }
+.mapbox iframe { position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 140px); border: 0; }
+@media (max-width: 860px) { .door { grid-template-columns: 1fr; } .mapbox { min-height: 360px; } }
+footer { padding: 30px var(--gut) 100px; text-align: center; color: var(--mut); font-size: 14px; }
+footer b { display: block; font: 400 34px/1 var(--hand); color: var(--lip2); margin-bottom: 6px; }
+
+.motion [data-in] { opacity: 0; transform: translateY(24px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
+.motion [data-in].in { opacity: 1; transform: none; }
+.motion .pol[data-in] { transform: rotate(var(--r)) translateY(30px); }
+.motion .pol[data-in].in { transform: rotate(var(--r)); }
+.noimg { background: linear-gradient(135deg, #5a2e41, #231019); }
+.noimg img { opacity: 0; }
+</style>
+</head>
+<body data-hours='{"0":[[9,0,18,0]],"1":[[9,0,20,0]],"2":[[9,0,20,0]],"3":[[9,0,20,0]],"4":[[9,0,20,0]],"5":[[9,0,20,0]],"6":[[9,0,18,0]]}'>
+
+<nav class="strip" id="strip" aria-label="Разделы">
+  <a href="#top"><span>Зеркало</span></a><a href="#strahi"><span>Страхи</span></a><a href="#ceny"><span>Цены</span></a><a href="#raboty"><span>Работы</span></a><a href="#grimerka"><span>Адрес</span></a>
+</nav>
+
+<main>
+<section class="hero" id="top">
+  <div class="room" id="room">
+    <div class="mirror" id="mirror">
+      <div class="glass" data-ph><img src="https://avatars.mds.yandex.net/get-altay/18184740/2a00000199a93d49dcfcaa07044ba0ca237e/XXL" alt="Отражение в гримёрном зеркале студии"><div class="lips">Ирина<br>Костальская<small>студия красоты</small></div></div>
+    </div>
+    <div class="copy">
+      <div class="k">Арзамас · Ленина, 208</div>
+      <h1>Студия красоты <em>Ирины Костальской</em></h1>
+      <p>Перманентный макияж у основателя студии, исправление чужого перманента, стрижки, окрашивание, брови, косметология и мужской зал.</p>
+      <div class="stars"><b>5,0</b> 195 оценок на Яндекс Картах · персонал хвалят в 141 из 147 отзывов</div>
+      <div class="btns"><a class="btn" href="tel:+79535677474">Записаться</a><a class="btn o" href="#strahi">Мне страшно</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="strahi">
+  <div class="wrap">
+    <span class="kk">Записки на зеркале</span>
+    <h2>Чего вы <em>боитесь?</em></h2>
+    <p class="lead">Почти каждый отзыв о перманенте начинается со слов «очень переживала». Снимите записку со своим страхом: ответим словами тех, кто уже решился.</p>
+    <div class="panel">
+      <div class="notes" id="notes"></div>
+      <div class="answer" aria-live="polite">
+        <div><h3 id="ah">…</h3><blockquote id="aq">…</blockquote><cite>Отзыв с Яндекс Карт</cite></div>
+        <div class="tip"><b id="tb">…</b><span id="ts">…</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ceny">
+  <div class="wrap">
+    <span class="kk">Ящики туалетного столика</span>
+    <h2>Цены, <em>по ящикам</em></h2>
+    <p class="lead">Выдвиньте нужный ящик. Цены из карточки студии на Яндекс Картах; точную стоимость окрашивания мастер скажет на консультации.</p>
+    <div class="table" id="table"></div>
+  </div>
+</section>
+
+<section id="raboty">
+  <div class="wrap">
+    <span class="kk">Работы и мастера</span>
+    <h2>Заткнуто <em>за раму</em></h2>
+    <div class="board">
+      <figure class="pol" style="--r:-4deg" data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/13609869/2a00000192a62f6f0f5fb514baaf00eb13c3/L" alt="Перманентная стрелка" loading="lazy"><figcaption>стрелка</figcaption></figure>
+      <figure class="pol" style="--r:3deg" data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/14264437/2a00000192a6307472b407e9cd56c45b6f12/L" alt="Перманент губ" loading="lazy"><figcaption>губы</figcaption></figure>
+      <figure class="pol" style="--r:-2deg" data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/11124269/2a00000192a62f6f184f157492a1a7fd4f1a/L" alt="Холодный блонд" loading="lazy"><figcaption>блонд</figcaption></figure>
+      <figure class="pol" style="--r:4deg" data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/14731058/2a00000192a62f6f535af7a0b27b22c61389/L" alt="Каре" loading="lazy"><figcaption>каре</figcaption></figure>
+      <figure class="pol" style="--r:-3deg" data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/15434262/2a00000199198e39eb10214df358dbfb5366/L" alt="Мини-тату" loading="lazy"><figcaption>мини-тату</figcaption></figure>
+      <figure class="pol" style="--r:2deg" data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/16920891/2a00000199a93d3812360e600394faa4b908/L" alt="Команда студии" loading="lazy"><figcaption>команда</figcaption></figure>
+    </div>
+    <div class="team">
+      <div class="plate" data-in><b>Ирина</b><span>основатель студии, перманентный макияж бровей, губ и век</span></div>
+      <div class="plate" data-in><b>Юлия</b><span>стрижки и брови: «показала фото, она меня поняла»</span></div>
+      <div class="plate" data-in><b>Мария</b><span>стрижка и окрашивание: «идеально подобрала оттенок»</span></div>
+      <div class="plate" data-in><b>Андрей</b><span>массаж: «боль ушла прям в момент»</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="grimerka">
+  <div class="wrap door">
+    <div class="leaf">
+      <div class="star">ВАША</div>
+      <h3>Гримёрка на Ленина, 208</h3>
+      <div class="live" data-live><i></i><span data-status>…</span></div>
+      <div class="row"><span>Адрес</span><b>Арзамас, просп. Ленина, 208</b></div>
+      <div class="row"><span>Будни</span><b>9:00–20:00</b></div>
+      <div class="row"><span>Выходные</span><b>9:00–18:00</b></div>
+      <div class="row"><span>Телефон</span><b><a href="tel:+79535677474">+7 953 567-74-74</a></b></div>
+      <div class="row"><span>На ресепшене</span><b>кофе и вода, пока ждёте</b></div>
+      <div class="btns" style="margin-top:18px">
+        <a class="btn" href="tel:+79535677474">Позвонить</a>
+        <a class="btn b" href="https://wa.me/79535677474" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn o" href="https://t.me/irenstudio_ru" target="_blank" rel="noopener">Telegram</a>
+        <a class="btn o" href="https://vk.ru/irinakostalskaya" target="_blank" rel="noopener">ВКонтакте</a>
+      </div>
+    </div>
+    <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=43.835842%2C55.40518&amp;z=16&amp;pt=43.835842%2C55.40518%2Cpm2rdm&amp;l=map" title="Студия Ирины Костальской на Яндекс Картах" loading="lazy" allowfullscreen></iframe></div>
+  </div>
+</section>
+</main>
+
+<footer><b>Ирина Костальская</b>студия красоты · Арзамас, просп. Ленина, 208 · +7 953 567-74-74</footer>
+
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  // bulbs around the mirror frame
+  var mirror = document.getElementById('mirror'), bulbs = [], pos = [];
+  for (var i = 0; i < 5; i++) pos.push([10 + i * 20, 0]);
+  for (i = 0; i < 4; i++) pos.push([100, 15 + i * 23.3]);
+  for (i = 4; i >= 0; i--) pos.push([10 + i * 20, 100]);
+  for (i = 3; i >= 0; i--) pos.push([0, 15 + i * 23.3]);
+  pos.forEach(function (p) { var b = document.createElement('i'); b.className = 'bulb'; b.style.left = 'calc(23px + (100% - 46px) * ' + p[0] / 100 + ')'; b.style.top = 'calc(23px + (100% - 46px) * ' + p[1] / 100 + ')'; mirror.appendChild(b); bulbs.push(b); });
+  function fixBulbs() { var m = innerWidth <= 900 ? 15 : 23; bulbs.forEach(function (b, k) { var p = pos[k]; b.style.left = 'calc(' + m + 'px + (100% - ' + 2 * m + 'px) * ' + p[0] / 100 + ')'; b.style.top = 'calc(' + m + 'px + (100% - ' + 2 * m + 'px) * ' + p[1] / 100 + ')'; }); }
+  fixBulbs(); addEventListener('resize', fixBulbs);
+  var hero = document.querySelector('.hero'), room = document.getElementById('room');
+  RT.onScroll(function () {
+    var p = RT.motion ? RT.progress(hero) : 1, lit = RT.clamp(p / .5), n = Math.round(lit * bulbs.length);
+    bulbs.forEach(function (b, k) { b.classList.toggle('on', k < n); });
+    room.style.setProperty('--l', lit);
+    room.style.setProperty('--w', RT.ease(RT.clamp((p - .45) / .35)));
+  });
+
+  var secs = document.querySelectorAll('main > section'), links = document.querySelectorAll('.strip a');
+  RT.onScroll(function () { var cur = 0; secs.forEach(function (s, k) { if (s.getBoundingClientRect().top < innerHeight * .45) cur = k; }); links.forEach(function (a, k) { a.classList.toggle('on', k === cur); }); });
+
+  // fears on sticky notes
+  var F = [
+    ['Будет больно', '#FFE58A', '-3deg', 'Не больно', '«До этого я долго сомневалась, переживала, что будет больно. Но все страхи оказались напрасными: во время процедуры я не чувствовала дискомфорта».', 'Перманент губ, бровей или век', 'у Ирины, основателя студии: 13 000 ₽, коррекция через месяц 6 500 ₽'],
+    ['Выйдет неестественно', '#FFC6D3', '2deg', 'Естественно', '«Ирина помогла обрести брови натурального оттенка, именно такие, которые подчёркивают черты лица, а не выделяются отдельным тёмным пятном».', 'Сначала разговор', 'форму и пигмент мастер подбирает и объясняет до начала процедуры'],
+    ['Мне уже испортили', '#BDE7D6', '-2deg', 'Исправим', '«У нас было исправление после другого мастера, разница колоссальная!»', 'Перекрытие чужого перманента', '14 000 ₽; удаление лазером 2 000 ₽, ремувером 5 000 ₽, комбо 6 000 ₽'],
+    ['Отёки и корки', '#CFE0FF', '3deg', 'Всё расскажут', '«Начиталась в интернете страшилок, что будет больно, отёк большой, корки. Ирина меня успокоила, очень подробно обо всём рассказала, показала много работ, и я решилась».', 'Уход после процедуры', 'мастер объясняет, что будет происходить по дням и как ухаживать'],
+    ['Не поймут, чего хочу', '#FFD8A8', '-4deg', 'Поймут', '«Показала Юлии фото, какую стрижку я хочу, она меня поняла. Укладывается легко».', 'Стрижка', 'женская от 2 000 ₽, мужская 1 400 ₽, чёлка 700 ₽'],
+    ['Сожгу волосы', '#E6D0FF', '2deg', 'Сначала тест', '«Пришла брюнеткой. Мне сначала сделали тест и посмотрели, как волосы будут реагировать на окрашивание, а затем предложили то, что реально можно сделать».', 'Консультация по окрашиванию', '1 000 ₽; сложное окрашивание от 8 000 ₽']
+  ];
+  var notes = document.getElementById('notes');
+  F.forEach(function (f, k) {
+    var b = document.createElement('button'); b.type = 'button'; b.className = 'note'; b.textContent = f[0];
+    b.style.setProperty('--c', f[1]); b.style.setProperty('--r', f[2]);
+    b.addEventListener('click', function () { pick(k); }); notes.appendChild(b);
+  });
+  function pick(k) {
+    var f = F[k];
+    notes.querySelectorAll('.note').forEach(function (n, j) { n.classList.toggle('on', j === k); if (j === k) n.classList.add('seen'); });
+    document.getElementById('ah').textContent = f[3]; document.getElementById('aq').textContent = f[4];
+    document.getElementById('tb').textContent = f[5]; document.getElementById('ts').textContent = f[6];
+  }
+  pick(0);
+
+  // drawers with prices
+  var D = [
+    ['Перманентный макияж', 'основатель студии', [['Губы, брови или веки', '13 000 ₽'], ['Растушёванная стрелка нижнего века', '13 000 ₽'], ['Коррекция через месяц', '6 500 ₽'], ['Рефреш через 1–2 года', '10 000 ₽'], ['Перекрытие чужого перманента', '14 000 ₽'], ['Коррекция после перекрытия', '7 000 ₽']]],
+    ['Удаление и мини-тату', 'лазер и ремувер', [['Удаление лазером', '2 000 ₽'], ['Удаление ремувером', '5 000 ₽'], ['Комбо: лазер, ремувер, жидкий лазер', '6 000 ₽'], ['Мини-тату', 'от 5 000 ₽'], ['Коррекция мини-тату', 'от 3 500 ₽']]],
+    ['Брови и ресницы', 'от 600 ₽', [['Коррекция формы бровей', '600 ₽'], ['Окрашивание бровей', '600 ₽'], ['Окрашивание ресниц', '600 ₽'], ['Архитектура бровей', '1 200 ₽'], ['Ламинирование бровей с окрашиванием', '1 500 ₽'], ['Удаление воском, 1 зона', '350 ₽']]],
+    ['Волосы', 'стрижки и цвет', [['Стрижка женская', 'от 2 000 ₽'], ['Детская стрижка, 5–12 лет', '1 100 ₽'], ['Сложное окрашивание: Airtouch, шатуш', 'от 8 000 ₽'], ['Тонирование', 'от 6 000 ₽'], ['SPA-восстановление', '1 500–4 500 ₽'], ['Экспресс-образ за 2 часа', '3 000 ₽']]],
+    ['Мужской зал', 'от 250 ₽', [['Стрижка мужская', '1 400 ₽'], ['Оформление бороды', '900 ₽'], ['Камуфляж седины, волосы или борода', '1 200 ₽'], ['Комплекс «папа + сын»', '2 200 ₽'], ['Стрижка, ваксинг и брови', '1 700 ₽'], ['Hair-tattoo', '250 ₽']]],
+    ['Лицо и тело', 'аппаратная косметология', [['УЗ-чистка + альгинатная маска', '2 000 ₽'], ['RF-лифтинг лица + маска', '2 500 ₽'], ['Карбоновый пилинг лица, шеи, декольте', '2 800 ₽'], ['Фракционная мезотерапия', '3 000 ₽'], ['Вакуумный массаж всего тела', '1 700 ₽'], ['Кавитация, 1 зона', '300 ₽']]],
+    ['Обучение', 'для будущих мастеров', [['Курс «Барбер с нуля»', '45 000 ₽'], ['Пробный урок по перманентному макияжу', 'бесплатно']]]
+  ];
+  var table = document.getElementById('table');
+  D.forEach(function (d, k) {
+    var w = document.createElement('div'); w.className = 'dr' + (k === 0 ? ' open' : '');
+    w.innerHTML = '<button type="button" aria-expanded="' + (k === 0) + '"><span>' + d[0] + '</span><small>' + d[1] + '</small><i></i></button><div class="tray"><div><ul>' + d[2].map(function (r) { return '<li><span>' + r[0] + '</span><b>' + r[1] + '</b></li>'; }).join('') + '</ul></div></div>';
+    w.querySelector('button').addEventListener('click', function () { var o = !w.classList.contains('open'); w.classList.toggle('open', o); this.setAttribute('aria-expanded', o); });
+    table.appendChild(w);
+  });
+  window.__drawer = function (k) { table.querySelectorAll('.dr').forEach(function (w, j) { w.classList.toggle('open', j === k); }); };
+
+  window.REEL = {
+    hero: '.hero', heroAt: .85, feature: '#strahi', featureOff: 30, featureM: '.panel', featureOffM: -20, prices: '#ceny', pricesOff: 30,
+    demo: [function () { pick(1); }, function () { pick(2); }, function () { pick(5); }],
+    holds: [40, 40, 40]
+  };
+})();
+</script>
+</body>
+</html>

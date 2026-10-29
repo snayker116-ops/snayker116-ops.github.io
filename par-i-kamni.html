@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Пар &amp; Камни — общественная русская баня на дровах, Кузнечиха, 123А</title>
+<meta name="description" content="«Пар &amp; Камни», общественная русская баня на дровах в Нижнем Новгороде, д. Кузнечиха, 123А: посещение на целый день от 2 000 ₽, женские дни, парение каждый час с разными ароматами, купель, кухня, массаж. Вт–вс 10:00–23:00. Рейтинг 5,0, 2 580 оценок.">
+<meta property="og:title" content="Пар &amp; Камни — баня на дровах">
+<meta property="og:description" content="Соберите банный день: разряд, время, веник. Кузнечиха, 123А. +7 (831) 224-87-37">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/11551715/2a0000019055fa2a9bdac30993774dad6d04/XXXL">
+<meta name="theme-color" content="#151210">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&amp;family=PT+Serif:ital@0;1&amp;family=Ubuntu:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HealthClub","name":"Пар & Камни","telephone":["+7 831 224-87-37","+7 910 128-78-86"],"address":{"@type":"PostalAddress","streetAddress":"д. Кузнечиха, 123А","addressLocality":"Нижний Новгород","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":56.276359,"longitude":44.033372},"openingHours":"Tu-Su 10:00-23:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"5","ratingCount":"2580"}}</script>
+<style>
+:root {
+  --coal: #151210; --coal2: #1F1A16; --wood: #3A2A1E; --wood2: #6B4A30; --ember: #FF7A2E; --ember2: #FFB067; --stone: #7C7670; --steam: #F2EDE6; --mut: #A99C8D; --birch: #9DBF6E;
+  --head: 'Russo One', Arial, sans-serif; --serif: 'PT Serif', Georgia, serif; --body: 'Ubuntu', Arial, sans-serif;
+  --gut: clamp(16px, 4vw, 56px); --ease: cubic-bezier(.2, .75, .2, 1);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--coal); color: var(--steam); font: 400 17px/1.65 var(--body); overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+
+/* nav: thermometer */
+.thermo { position: fixed; left: 16px; top: 50%; transform: translateY(-50%); z-index: 50; width: 24px; height: 320px; }
+.thermo .tube { position: absolute; left: 6px; top: 0; bottom: 18px; width: 12px; border-radius: 8px; background: rgba(242,237,230,.12); box-shadow: inset 0 0 0 1.5px rgba(242,237,230,.35); overflow: hidden; }
+.thermo .hg { position: absolute; left: 0; right: 0; bottom: 0; height: calc(var(--lvl, .1) * 100%); background: linear-gradient(var(--ember), #c2410c); transition: height .5s var(--ease); }
+.thermo .bulb { position: absolute; left: 0; bottom: 0; width: 24px; height: 24px; border-radius: 50%; background: radial-gradient(circle at 40% 35%, var(--ember2), var(--ember) 50%, #c2410c); box-shadow: 0 0 14px rgba(255,122,46,.6); }
+.thermo a { position: absolute; left: 22px; display: flex; align-items: center; gap: 6px; transform: translateY(-50%); text-decoration: none; font: 400 12px/1 var(--head); color: var(--mut); white-space: nowrap; }
+.thermo a::before { content: ""; width: 8px; height: 2px; background: currentColor; }
+.thermo a.on { color: var(--ember2); }
+@media (max-width: 760px) { .thermo { left: 50%; top: auto; bottom: 10px; transform: translateX(-50%); width: 344px; height: 40px; padding: 0; border-radius: 20px; background: rgba(21,18,16,.92); box-shadow: inset 0 0 0 1px #3a2f27; } .thermo .tube, .thermo .bulb { display: none; } .thermo a { top: 50% !important; font-size: 10px; } .thermo a::before { display: none; } }
+
+/* hero: water on hot stones, steam swallows the screen */
+.hero { position: relative; height: 250vh; }
+.stove { position: sticky; top: 0; height: 100vh; min-height: 620px; overflow: hidden; background: radial-gradient(800px 500px at 50% 100%, rgba(255,122,46,calc(.15 + var(--h, 0) * .35)), transparent 70%), linear-gradient(#0e0c0a, var(--coal)); }
+.planks { position: absolute; inset: 0; background: repeating-linear-gradient(180deg, #241c16 0 58px, #1a1410 58px 61px); opacity: .55; }
+.rocks { position: absolute; left: 50%; bottom: -6vh; width: min(1300px, 150vw); transform: translateX(-50%); }
+.rocks svg { width: 100%; height: auto; display: block; }
+.rocks .rk { fill: var(--c); stroke: #0c0a09; stroke-width: 2; }
+.rocks .glow { fill: var(--ember); opacity: calc(var(--h, 0) * .9); filter: blur(10px); }
+.ladle { position: absolute; left: 50%; top: 12%; width: clamp(120px, 16vw, 200px); transform: translateX(-10%) rotate(calc(-10deg - var(--pour, 0) * 50deg)); transform-origin: 20% 30%; }
+.ladle svg { width: 100%; height: auto; }
+.water { position: absolute; left: calc(50% + 2vw); top: 30%; width: 6px; height: calc(var(--pour, 0) * 34vh); background: linear-gradient(rgba(170,210,240,.8), rgba(170,210,240,.2)); border-radius: 3px; opacity: calc(var(--pour, 0) * (1 - var(--s, 0))); }
+.steamv { position: absolute; inset: 0; pointer-events: none; }
+.steamv i { position: absolute; left: var(--x); bottom: 10%; width: var(--w); height: var(--w); border-radius: 50%; background: radial-gradient(circle, rgba(242,237,230,.6), rgba(242,237,230,0) 70%); filter: blur(6px); transform: translateY(calc(var(--s, 0) * var(--v) * -1)) scale(calc(.4 + var(--s, 0) * 1.4)); opacity: calc(var(--s, 0) * .9); }
+.title { position: absolute; left: 0; right: 0; top: 50%; transform: translateY(calc(-50% + (1 - var(--t, 0)) * 30px)); text-align: center; padding: 0 var(--gut); opacity: var(--t, 0); pointer-events: none; }
+.title.act { pointer-events: auto; }
+.title .k { font: 500 13px/1 var(--body); letter-spacing: .3em; text-transform: uppercase; color: var(--ember2); }
+.title h1 { margin: 12px 0 10px; font: 400 clamp(56px, 10vw, 150px)/.95 var(--head); color: var(--steam); text-shadow: 0 0 40px rgba(255,122,46,.35); }
+.title h1 span { color: var(--ember); }
+.title p { max-width: 560px; margin: 0 auto 22px; color: #e3d8cb; font: italic 400 19px/1.5 var(--serif); }
+.intro0 { position: absolute; left: var(--gut); top: 9vh; max-width: 420px; opacity: calc(1 - var(--s, 0) * 1.6); }
+.intro0 b { display: block; font: 400 clamp(28px, 3.4vw, 44px)/1.1 var(--head); }
+.intro0 span { color: var(--mut); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 15px 22px; border-radius: 6px; background: var(--ember); color: #1a0d05; text-decoration: none; font: 700 16px/1 var(--body); border: 0; cursor: pointer; }
+.btn.o { background: transparent; color: var(--steam); box-shadow: inset 0 0 0 1.5px rgba(242,237,230,.45); }
+.btns { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+@media (max-width: 700px) { .ladle { top: 22%; } .title p { font-size: 16.5px; } }
+
+main > section:not(.hero) { position: relative; scroll-margin-top: 10px; padding: clamp(90px, 10vw, 130px) var(--gut) clamp(80px, 9vw, 110px) calc(var(--gut) + 70px); }
+@media (max-width: 760px) { main > section:not(.hero) { padding-left: var(--gut); } }
+.wrap { max-width: 1140px; margin: 0 auto; }
+.kk { font: 500 12.5px/1 var(--body); letter-spacing: .26em; text-transform: uppercase; color: var(--ember2); }
+h2 { margin: 12px 0 14px; font: 400 clamp(34px, 4.8vw, 64px)/1.05 var(--head); }
+h2 em { font: italic 400 .9em/1 var(--serif); color: var(--ember); }
+.lead { max-width: 660px; color: #d6cabd; margin: 0 0 28px; }
+.plank { border-radius: 10px; padding: clamp(18px, 3vw, 32px); background: repeating-linear-gradient(180deg, #2a2019 0 46px, #241b15 46px 48px); box-shadow: inset 0 0 0 1px #3a2f27, 0 30px 60px -30px #000; }
+
+/* banya day builder */
+.day { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(18px, 3vw, 40px); align-items: start; }
+.opt h3 { margin: 16px 0 8px; font: 500 12.5px/1 var(--body); letter-spacing: .2em; text-transform: uppercase; color: var(--mut); }
+.opt h3:first-child { margin-top: 0; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chips button { padding: 10px 14px; border-radius: 6px; border: 0; background: #2e241d; color: var(--steam); font: 500 15px/1.1 var(--body); cursor: pointer; box-shadow: inset 0 0 0 1px #4a3b30; }
+.chips button.on { background: var(--ember); color: #1a0d05; box-shadow: none; }
+.chips button:disabled { opacity: .35; cursor: not-allowed; }
+.chips button small { opacity: .75; margin-left: 4px; }
+.rng { display: grid; grid-template-columns: auto 1fr auto; gap: 10px; align-items: center; }
+.rng input { width: 100%; accent-color: var(--ember); }
+.rng b { font: 400 22px/1 var(--head); color: var(--ember2); min-width: 64px; }
+.timeline { position: relative; margin-top: 4px; padding: 16px 0 6px; }
+.tl { position: relative; height: 70px; border-radius: 8px; background: #1a1410; box-shadow: inset 0 0 0 1px #3a2f27; overflow: hidden; }
+.tl .stay { position: absolute; top: 0; bottom: 0; background: linear-gradient(90deg, rgba(255,122,46,.25), rgba(255,122,46,.12)); }
+.tl .ses { position: absolute; top: 10px; width: 22px; height: 22px; margin-left: -11px; border-radius: 50%; background: radial-gradient(circle at 40% 35%, #fff, var(--ember2) 50%, var(--ember)); box-shadow: 0 0 10px rgba(255,176,103,.7); }
+.tl .lbl { position: absolute; bottom: 6px; font: 500 11px/1 var(--body); color: var(--mut); transform: translateX(-50%); }
+.ticket { padding: 22px; border-radius: 10px; background: var(--steam); color: #2a1f17; }
+.ticket h4 { margin: 0 0 4px; font: 400 26px/1.1 var(--head); }
+.ticket .sub { color: #6b5a4a; font-size: 15px; margin-bottom: 12px; }
+.ticket .li { display: flex; justify-content: space-between; gap: 10px; padding: 7px 0; border-bottom: 1px dashed #cdbfae; font-size: 15.5px; }
+.ticket .tot { display: flex; justify-content: space-between; align-items: baseline; margin-top: 12px; }
+.ticket .tot b { font: 400 34px/1 var(--head); color: #c2410c; }
+.ticket p { margin: 12px 0 0; font-size: 14.5px; color: #6b5a4a; }
+.ticket .btns { justify-content: flex-start; margin-top: 14px; }
+@media (max-width: 900px) { .day { grid-template-columns: 1fr; } }
+
+/* prices */
+.halls { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.hall { padding: 24px 22px; border-radius: 10px; background: linear-gradient(160deg, #2e241d, #1f1914); box-shadow: inset 0 0 0 1px #4a3b30; }
+.hall h3 { margin: 0 0 4px; font: 400 24px/1.1 var(--head); color: var(--ember2); }
+.hall .s { font-size: 14.5px; color: var(--mut); margin-bottom: 12px; }
+.hall div { display: flex; justify-content: space-between; gap: 10px; padding: 8px 0; border-bottom: 1px solid #3a2f27; font-size: 15.5px; }
+.hall div b { white-space: nowrap; font-weight: 500; color: var(--steam); }
+@media (max-width: 900px) { .halls { grid-template-columns: 1fr; } }
+.addons { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+.addons span { padding: 10px 14px; border-radius: 6px; background: #2e241d; font-size: 15px; }
+.addons b { color: var(--ember2); font-weight: 500; }
+
+/* ritual */
+.rit { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-bottom: 22px; }
+.rt { padding: 18px; border-radius: 10px; background: #1f1914; box-shadow: inset 0 0 0 1px #3a2f27; }
+.rt b { display: block; font: 400 32px/1 var(--head); color: var(--ember); margin-bottom: 8px; }
+.rt span { font-size: 15px; color: #e3d8cb; }
+@media (max-width: 900px) { .rit { grid-template-columns: 1fr 1fr; } }
+.pics { display: grid; grid-template-columns: 1.3fr 1fr 1fr; grid-template-rows: 220px 220px; gap: 12px; }
+.pics figure { margin: 0; border-radius: 10px; overflow: hidden; }
+.pics figure:first-child { grid-row: span 2; }
+.pics img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 760px) { .pics { grid-template-columns: 1fr 1fr; grid-template-rows: 220px 160px 160px; } .pics figure:first-child { grid-column: span 2; grid-row: auto; } }
+.quotes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 22px; }
+.q { padding: 20px; border-left: 3px solid var(--ember); background: #1f1914; font: italic 400 16.5px/1.55 var(--serif); color: #e3d8cb; }
+@media (max-width: 900px) { .quotes { grid-template-columns: 1fr; } }
+
+.vis { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 26px; }
+.r { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px solid #3a2f27; font-size: 15.5px; }
+.r span { color: var(--mut); }
+.r b { text-align: right; font-weight: 500; }
+.live { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 6px; font-weight: 500; font-size: 14px; }
+.live i { width: 10px; height: 10px; border-radius: 50%; background: var(--c, #999); box-shadow: 0 0 8px var(--c, transparent); }
+.vis .btns { justify-content: flex-start; margin-top: 16px; }
+.mapbox { position: relative; min-height: 420px; border-radius: 10px; overflow: hidden; }
+.mapbox iframe { position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 140px); border: 0; filter: sepia(.3) brightness(.95); }
+@media (max-width: 860px) { .vis { grid-template-columns: 1fr; } }
+footer { padding: 30px var(--gut) 100px; text-align: center; color: var(--mut); font-size: 14px; }
+footer b { display: block; font: 400 30px/1 var(--head); color: var(--steam); margin-bottom: 6px; }
+footer b span { color: var(--ember); }
+
+.motion [data-in] { opacity: 0; transform: translateY(22px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.motion [data-in].in { opacity: 1; transform: none; }
+.noimg { background: linear-gradient(135deg, #3a2a1e, #151210); }
+.noimg img { opacity: 0; }
+</style>
+</head>
+<body data-hours='{"0":[[10,0,23,0]],"2":[[10,0,23,0]],"3":[[10,0,23,0]],"4":[[10,0,23,0]],"5":[[10,0,23,0]],"6":[[10,0,23,0]]}'>
+
+<nav class="thermo" id="thermo" aria-label="Разделы">
+  <div class="tube"><div class="hg" id="hg"></div></div><div class="bulb"></div>
+  <a href="#adres" style="top:4%">100° адрес</a><a href="#ritual" style="top:24%">80° пар</a><a href="#ceny" style="top:44%">60° цены</a><a href="#den" style="top:64%">40° день</a><a href="#top" style="top:84%">20° вход</a>
+</nav>
+
+<main>
+<section class="hero" id="top">
+  <div class="stove" id="stove">
+    <div class="planks" aria-hidden="true"></div>
+    <div class="intro0"><b>Плеснём?</b><span>прокрутите вниз</span></div>
+    <div class="ladle" aria-hidden="true"><svg viewBox="0 0 200 80"><path d="M10 34 C10 14 60 10 70 34 C70 58 10 58 10 34 Z" fill="#8a5a36" stroke="#2a1a10" stroke-width="3"/><rect x="66" y="28" width="130" height="10" rx="5" fill="#6B4A30" stroke="#2a1a10" stroke-width="3"/></svg></div>
+    <div class="water" aria-hidden="true"></div>
+    <div class="rocks" aria-hidden="true">
+      <svg viewBox="0 0 900 260" id="rocks"><ellipse class="glow" cx="450" cy="200" rx="300" ry="60"/></svg>
+    </div>
+    <div class="steamv" aria-hidden="true">
+      <i style="--x:20%;--w:220px;--v:40vh"></i><i style="--x:40%;--w:300px;--v:60vh"></i><i style="--x:55%;--w:260px;--v:50vh"></i><i style="--x:70%;--w:240px;--v:70vh"></i><i style="--x:30%;--w:180px;--v:80vh"></i><i style="--x:62%;--w:200px;--v:90vh"></i><i style="--x:8%;--w:160px;--v:55vh"></i><i style="--x:84%;--w:180px;--v:65vh"></i>
+    </div>
+    <div class="title" id="title">
+      <div class="k">общественная русская баня на дровах</div>
+      <h1>Пар <span>&amp;</span> Камни</h1>
+      <p>Каждый час общее парение с новым ароматом. Две кирпичные печи, трёхъярусная парилка, купель, кухня и целый день отдыха за один билет.</p>
+      <div class="btns"><a class="btn" href="tel:+78312248737">+7 (831) 224-87-37</a><a class="btn o" href="#den">Собрать банный день</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="den">
+  <div class="wrap">
+    <span class="kk">банный день</span>
+    <h2>Когда <em>идём?</em></h2>
+    <p class="lead">Выберите день, зал и во сколько придёте. Посещение на целый день без ограничения по времени, а сеанс парения с банщиком начинается каждый час. Покажем, сколько их вы застанете.</p>
+    <div class="plank day">
+      <div class="opt">
+        <h3>День недели</h3><div class="chips" id="dw"></div>
+        <h3>Зал</h3><div class="chips" id="hl"></div>
+        <h3>Приду в</h3><div class="rng"><span>10:00</span><input id="arr" type="range" min="10" max="20" step="1" value="13"><span>20:00</span></div>
+        <h3>Пробуду</h3><div class="rng"><span>2 ч</span><input id="dur" type="range" min="2" max="9" step="1" value="5"><span>9 ч</span></div>
+        <h3>Добавить</h3><div class="chips" id="ad"></div>
+      </div>
+      <div>
+        <div class="timeline"><div class="tl" id="tl"></div></div>
+        <div class="ticket" aria-live="polite">
+          <h4 id="tk">…</h4><div class="sub" id="ts">…</div>
+          <div id="tli"></div>
+          <div class="tot"><span>Итого</span><b id="tt">0 ₽</b></div>
+          <p id="tn">Посещение на весь день. Аромат каждого часа свой: травы, отвары, а самый яркий, пишут гости, с чесноком.</p>
+          <div class="btns"><a class="btn" href="tel:+78312248737">Забронировать</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ceny">
+  <div class="wrap">
+    <span class="kk">цены</span>
+    <h2>Разряды <em>и веники</em></h2>
+    <p class="lead">Из прайса бани на Яндекс Картах. Цена за посещение на целый день.</p>
+    <div class="halls">
+      <div class="hall" data-in><h3>«Первый разряд»</h3><div class="s">русская баня на дровах</div><div><span>вторник–четверг</span><b>2 000 ₽</b></div><div><span>пятница–воскресенье</span><b>2 500 ₽</b></div><div><span>подростки 13–18 лет</span><b>1 000 ₽</b></div></div>
+      <div class="hall" data-in><h3>«Высший разряд»</h3><div class="s">среда, четверг, пятница, воскресенье</div><div><span>посещение на день</span><b>3 000 ₽</b></div><div><span>гости пишут</span><b>«без ограничения по времени»</b></div></div>
+      <div class="hall" data-in><h3>Женские дни</h3><div class="s">отдельно для женщин</div><div><span>вторник</span><b>2 000 ₽</b></div><div><span>суббота</span><b>2 500 ₽</b></div></div>
+    </div>
+    <div class="addons"><span>🌿 веник берёзовый <b>500 ₽</b></span><span>🍂 веник дубовый <b>650 ₽</b></span><span>🧢 фирменная шапка из шерсти <b>400 ₽</b></span><span>💆 массаж и обёртывание <b>по записи</b></span><span>🎁 подарочные сертификаты</span></div>
+  </div>
+</section>
+
+<section id="ritual">
+  <div class="wrap">
+    <span class="kk">ритуал</span>
+    <h2>Каждый час <em>новый пар</em></h2>
+    <p class="lead">5,0 на Яндекс Картах, 2 580 оценок. Баню хвалят в 778 отзывах из 882, кухню в 149 из 169.</p>
+    <div class="rit">
+      <div class="rt" data-in><b>3</b><span>яруса в парилке, верхний для самых стойких</span></div>
+      <div class="rt" data-in><b>2</b><span>кирпичные печи, жар разгоняют опахалом</span></div>
+      <div class="rt" data-in><b>∞</b><span>время: билет на целый день</span></div>
+      <div class="rt" data-in><b>❄</b><span>купель с холодной водой и выход на улицу</span></div>
+    </div>
+    <div class="pics">
+      <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/11551715/2a0000019055fa2a9bdac30993774dad6d04/XL" alt="Парилка и бассейн Пар и Камни" loading="lazy"></figure>
+      <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/7760835/2a0000018461d0b9a74a1d2e74d80cce41a4/L" alt="Веники, шапка и камин" loading="lazy"></figure>
+      <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/7695774/2a0000018461d19f43e9ab32e8d659e41a0b/L" alt="Деревянная парная" loading="lazy"></figure>
+      <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/17692458/2a0000019e7f2719cdae56ea4af8d65b9dfe/L" alt="Резное панно" loading="lazy"></figure>
+      <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/7456447/2a000001843f25fe11f71a4f4c398e57744d/L" alt="Зона отдыха" loading="lazy"></figure>
+    </div>
+    <div class="quotes">
+      <div class="q" data-in>«Каждый час приходит баньщик и поддаёт парку. Потом ещё раздувает пар специальным опахалом. Каждый час добавки в воде разные».</div>
+      <div class="q" data-in>«Паша и Саша хорошо пропарят, а массаж от Екатерины после хорошего пара оставит лучшее послевкусие».</div>
+      <div class="q" data-in>«Отдельная благодарность повару за борщ. Официанты рассказали даже, как готовятся самовары на настоящих дровах».</div>
+    </div>
+  </div>
+</section>
+
+<section id="adres">
+  <div class="wrap vis">
+    <div>
+      <span class="kk">как доехать</span>
+      <h2>Кузнечиха, <em>123А</em></h2>
+      <div class="plank">
+        <div class="live" data-live><i></i><span data-status>…</span></div>
+        <div class="r"><span>Адрес</span><b>Нижний Новгород, д. Кузнечиха, 123А</b></div>
+        <div class="r"><span>Режим</span><b>вторник–воскресенье 10:00–23:00</b></div>
+        <div class="r"><span>Понедельник</span><b>выходной</b></div>
+        <div class="r"><span>Телефоны</span><b><a href="tel:+78312248737">+7 (831) 224-87-37</a><br><a href="tel:+79101287886">+7 910 128-78-86</a></b></div>
+        <div class="r"><span>Парковка</span><b>есть</b></div>
+        <div class="btns"><a class="btn" href="tel:+78312248737">Позвонить</a><a class="btn o" href="https://vk.ru/club216830870" target="_blank" rel="noopener">ВКонтакте</a><a class="btn o" href="https://yandex.ru/maps/org/par_i_kamni/78074184644/" target="_blank" rel="noopener">Маршрут</a></div>
+      </div>
+    </div>
+    <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=44.033372%2C56.276359&amp;z=15&amp;pt=44.033372%2C56.276359%2Cpm2orm&amp;l=map" title="Пар и Камни на Яндекс Картах" loading="lazy" allowfullscreen></iframe></div>
+  </div>
+</section>
+</main>
+
+<footer><b>Пар <span>&amp;</span> Камни</b>баня на дровах · д. Кузнечиха, 123А · +7 (831) 224-87-37</footer>
+
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  var NS = 'http://www.w3.org/2000/svg', rocks = document.getElementById('rocks'), seed = 5;
+  function rnd() { seed = (seed * 9301 + 49297) % 233280; return seed / 233280; }
+  var C = ['#5d5650', '#6f6862', '#4b4540', '#7c7670', '#57504a'];
+  for (var row = 0; row < 3; row++) for (var i = 0; i < 9 - row; i++) {
+    var cx = 90 + i * 92 + row * 46 + (rnd() - .5) * 20, cy = 240 - row * 58 + (rnd() - .5) * 10, rx = 54 + rnd() * 16, ry = 34 + rnd() * 10;
+    var e = document.createElementNS(NS, 'ellipse'); e.setAttribute('cx', cx); e.setAttribute('cy', cy); e.setAttribute('rx', rx); e.setAttribute('ry', ry); e.setAttribute('class', 'rk'); e.style.setProperty('--c', C[Math.floor(rnd() * C.length)]); rocks.appendChild(e);
+    var hl = document.createElementNS(NS, 'ellipse'); hl.setAttribute('cx', cx - rx * .3); hl.setAttribute('cy', cy - ry * .4); hl.setAttribute('rx', rx * .35); hl.setAttribute('ry', ry * .2); hl.setAttribute('fill', 'rgba(255,255,255,.08)'); rocks.appendChild(hl);
+  }
+  var hero = document.querySelector('.hero'), stove = document.getElementById('stove'), title = document.getElementById('title');
+  RT.onScroll(function () {
+    var p = RT.motion ? RT.progress(hero) : 1;
+    stove.style.setProperty('--h', RT.clamp(p / .3));
+    stove.style.setProperty('--pour', RT.ease(RT.clamp((p - .1) / .2)));
+    stove.style.setProperty('--s', RT.ease(RT.clamp((p - .28) / .35)));
+    var t = RT.ease(RT.clamp((p - .5) / .2)); stove.style.setProperty('--t', t); title.classList.toggle('act', t > .5);
+  });
+
+  // thermometer
+  var secs = [].slice.call(document.querySelectorAll('main > section')), hg = document.getElementById('hg'), links = {};
+  document.querySelectorAll('.thermo a').forEach(function (a) { links[a.getAttribute('href').slice(1)] = a; });
+  var order = ['top', 'den', 'ceny', 'ritual', 'adres'];
+  function lay() { order.forEach(function (id, i) { links[id].style.left = innerWidth <= 760 ? (10 + i * 66) + "px" : ""; }); }
+  lay(); addEventListener('resize', lay);
+  RT.onScroll(function () {
+    var cur = 0; secs.forEach(function (s, i) { if (s.getBoundingClientRect().top < innerHeight * .45) cur = i; });
+    order.forEach(function (id, i) { links[id].classList.toggle('on', i === cur); });
+    var doc = document.documentElement, f = RT.clamp(scrollY / Math.max(1, doc.scrollHeight - innerHeight));
+    hg.style.height = (8 + f * 92) + '%';
+  });
+
+  // banya day: which halls work on which day and at what price
+  var DAYS = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'];
+  var H = {
+    1: [['Первый разряд', 2000], ['Женский день', 2000]],
+    2: [['Первый разряд', 2000], ['Высший разряд', 3000]],
+    3: [['Первый разряд', 2000], ['Высший разряд', 3000]],
+    4: [['Первый разряд', 2500], ['Высший разряд', 3000]],
+    5: [['Первый разряд', 2500], ['Женский день', 2500]],
+    6: [['Первый разряд', 2500], ['Высший разряд', 3000]]
+  };
+  var AD = [['Берёзовый веник', 500], ['Дубовый веник', 650], ['Шапка из шерсти', 400], ['Подросток 13–18', 1000]];
+  var st = { d: 4, h: 1, ad: { 0: 1 } };
+  var dw = document.getElementById('dw'), hl = document.getElementById('hl'), ad = document.getElementById('ad'), arr = document.getElementById('arr'), dur = document.getElementById('dur');
+  DAYS.forEach(function (d, i) { var b = document.createElement('button'); b.type = 'button'; b.textContent = d; if (i === 0) { b.disabled = true; b.title = 'Понедельник выходной'; } b.addEventListener('click', function () { st.d = i; st.h = Math.min(st.h, 1); calc(); }); dw.appendChild(b); });
+  AD.forEach(function (a, i) { var b = document.createElement('button'); b.type = 'button'; b.innerHTML = a[0] + '<small>' + RT.money(a[1]) + '</small>'; b.addEventListener('click', function () { if (st.ad[i]) delete st.ad[i]; else st.ad[i] = 1; calc(); }); ad.appendChild(b); });
+  arr.addEventListener('input', calc); dur.addEventListener('input', calc);
+  function calc() {
+    var halls = H[st.d] || [];
+    hl.innerHTML = ''; halls.forEach(function (h, i) { var b = document.createElement('button'); b.type = 'button'; b.innerHTML = h[0] + '<small>' + RT.money(h[1]) + '</small>'; if (i === st.h) b.className = 'on'; b.addEventListener('click', function () { st.h = i; calc(); }); hl.appendChild(b); });
+    dw.querySelectorAll('button').forEach(function (b, i) { b.classList.toggle('on', i === st.d); });
+    ad.querySelectorAll('button').forEach(function (b, i) { b.classList.toggle('on', !!st.ad[i]); });
+    var a = +arr.value, d = Math.min(+dur.value, 23 - a), end = a + d, hall = halls[st.h] || halls[0];
+    // timeline 10..23
+    var tl = document.getElementById('tl'), span = 13, html = '<div class="stay" style="left:' + ((a - 10) / span * 100) + '%;width:' + (d / span * 100) + '%"></div>', n = 0;
+    for (var h = 11; h <= 22; h++) { var x = (h - 10) / span * 100; if (h > a && h < end) { html += '<i class="ses" style="left:' + x + '%"></i>'; n++; } if (h % 2 === 0) html += '<span class="lbl" style="left:' + x + '%">' + h + ':00</span>'; }
+    tl.innerHTML = html;
+    var items = [[hall[0] + ', ' + DAYS[st.d].toLowerCase(), hall[1]]];
+    Object.keys(st.ad).forEach(function (k) { items.push(AD[k]); });
+    var sum = items.reduce(function (s, x) { return s + x[1]; }, 0);
+    document.getElementById('tk').textContent = hall[0];
+    document.getElementById('ts').textContent = String(a).padStart(2, '0') + ':00–' + String(end).padStart(2, '0') + ':00 · сеансов парения: ' + n;
+    document.getElementById('tli').innerHTML = items.map(function (x) { return '<div class="li"><span>' + x[0] + '</span><span>' + RT.money(x[1]) + '</span></div>'; }).join('');
+    document.getElementById('tt').textContent = RT.money(sum);
+  }
+  calc();
+  window.__day = function (d, h, a, du, adds) { st = { d: d, h: h, ad: {} }; (adds || []).forEach(function (k) { st.ad[k] = 1; }); arr.value = a; dur.value = du; calc(); };
+
+  window.REEL = {
+    hero: '.hero', heroAt: .85, feature: '#den', featureOff: 20, featureM: '.ticket', featureOffM: -60, prices: '#ceny', pricesOff: 30,
+    demo: [function () { __day(4, 0, 12, 4, [0]); }, function () { __day(6, 1, 11, 8, [1, 2]); }, function () { __day(1, 1, 14, 5, [0]); }],
+    holds: [40, 40, 40]
+  };
+})();
+</script>
+</body>
+</html>
