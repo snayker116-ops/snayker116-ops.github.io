@@ -117,6 +117,14 @@ footer { text-align: center; padding: 26px var(--gut) 40px; color: var(--mut); f
 .motion [data-in].in { opacity: 1; transform: none; }
 .noimg { background: linear-gradient(135deg, var(--acc-2), #fff); }
 .noimg img { opacity: 0; }
+
+.location{display:block;color:var(--acc-3);font-weight:700;font-size:14px;text-decoration:none;margin:0 0 24px}.location span{font-weight:400;color:var(--mut)}
+.hero{height:auto}.walk{position:relative;min-height:720px;height:auto;padding-top:130px;padding-bottom:80px}.hph{transform:none}.htx h1{font-size:clamp(38px,5.5vw,76px)}
+.course-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.course{border-top:1px solid var(--line);padding-top:24px}.course-head{display:flex;align-items:center;justify-content:space-between;height:95px}.course-head img{width:100px;height:95px;object-fit:contain}.course-no{font:700 36px var(--head);color:var(--acc)}h3{font:700 26px/1.3 var(--head);margin:20px 0 10px}.course>p{min-height:56px;color:var(--mut);font-size:16px}.course-link{display:inline-block;margin-top:10px;color:var(--acc-3);font-weight:700;text-underline-offset:5px}
+.media{margin:0}.media video{display:block;width:100%;height:350px;object-fit:contain;background:#17201a;border-radius:20px}.media figcaption,figure figcaption{padding:12px 0;color:var(--mut);font-size:14px}.media-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:28px 0}.media-grid video{height:340px}.work-pair{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:760px}.work-pair figure,.student-pics figure,.route figure{margin:0}.work-pair img{width:100%;height:320px;object-fit:cover;border-radius:22px}.student-pics{display:grid;grid-template-columns:1fr 1fr;gap:24px}.student-pics img{width:100%;height:480px;object-fit:contain;background:var(--acc-2);border-radius:22px}.review-originals{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:24px 0}.review-originals img{height:460px;width:100%;object-fit:contain;background:#fff;border-radius:20px}.professional{color:var(--acc-3);font-weight:700}.route{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}.route img{border-radius:22px;max-height:540px;object-fit:contain}.route>div>img{max-height:350px}.btn:hover{filter:brightness(.92)}a:focus-visible,button:focus-visible,video:focus-visible{outline:3px solid var(--acc-3);outline-offset:5px}
+@media(max-width:860px){.walk{grid-template-columns:1fr;min-height:0;padding-top:90px;gap:24px}.hph{width:230px;aspect-ratio:1;height:230px;order:-1}.htx h1{font-size:clamp(36px,9vw,60px)}.media-grid{grid-template-columns:1fr 1fr}.course>p{min-height:0}.call{display:none}}
+@media(max-width:560px){.course-grid,.route{grid-template-columns:1fr}.sec{padding-top:64px;padding-bottom:40px}.media-grid{gap:10px}.media-grid video{height:260px}.work-pair{gap:10px}.work-pair img{height:220px}.student-pics img{height:280px}.review-originals{grid-template-columns:1fr}.student-pics{gap:12px}.mode{max-width:calc(100vw - 24px)}.location{font-size:13px}.walk{padding-bottom:40px}.htx h1{margin-top:14px}.htx p{font-size:16px}.btn{padding:15px 18px}.route img{max-height:430px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body data-hours='{"0":[[8,0,20,0]],"1":[[8,0,20,0]],"2":[[8,0,20,0]],"3":[[8,0,20,0]],"4":[[8,0,20,0]],"5":[[8,0,20,0]],"6":[[8,0,20,0]]}'>
@@ -127,8 +135,8 @@ footer { text-align: center; padding: 26px var(--gut) 40px; color: var(--mut); f
 
 <div class="mode" role="tablist" aria-label="Для кого сайт">
   <span class="pill"></span>
-  <button class="on" data-mode="client" role="tab">Я клиент</button>
-  <button data-mode="student" role="tab">Я хочу учиться</button>
+  <button class="on" data-mode="client" role="tab" aria-selected="true">Для клиентов</button>
+  <button data-mode="student" role="tab" aria-selected="false">Для мастеров</button>
 </div>
 <a class="call" href="tel:+79877407755">+7 987 740-77-55</a>
 
@@ -141,19 +149,19 @@ footer { text-align: center; padding: 26px var(--gut) 40px; color: var(--mut); f
       <h1 data-m="client">Ножкам станет <em>легче</em></h1>
       <h1 data-m="student">Научу работать <em>со сложной стопой</em></h1>
       <p data-m="client">«Работаю со всеми видами сложных стоп и ногтей»: вросший ноготь, мозоли и натоптыши, трещины, медицинский педикюр. Проспект Ленина, 60, каждый день с 8 до 20.</p>
-      <p data-m="student">Курсы по подологии и смарт-педикюру: много моделей с разными стопами, практика на моделях и поддержка после обучения.</p>
-      <div class="row">
-        <a class="btn" href="tel:+79877407755" data-m="client">Записаться на приём</a>
+      <p data-m="student">От первых шагов в педикюре до работы со сложной стопой. Четыре направления, практика на моделях и поддержка после обучения.</p>
+      <a class="location" href="#visit">2 минуты от метро · первый этаж · вход с улицы<br><span>Нижний Новгород, проспект Ленина, 60 ↗</span></a><div class="row">
+        <a class="btn" href="https://nn.moiprofi.ru/olgaobidina/" target="_blank" rel="noopener" data-m="client">Записаться онлайн ↗</a><a class="btn o" href="tel:+79877407755" data-m="client">Позвонить</a>
         <a class="btn" href="tel:+79877407755" data-m="student">Узнать про курс</a>
-        <a class="btn o" href="#main" data-m="client">Что я лечу</a>
+        
         <a class="btn o" href="#main" data-m="student">Как проходит обучение</a>
       </div>
     </div>
-    <div class="hph" data-ph><img src="https://avatars.mds.yandex.net/get-altay/16404250/2a00000199fd87117adce275bd9132afdf4b/XXL" alt="Подолог Ольга Обидина за работой" fetchpriority="high"></div>
+    <div class="hph" data-ph><img src="obidina-assets/photo-16.jpg" alt="Ольга Обидина с анатомической моделью стопы" fetchpriority="high"></div>
   </div>
 </section>
 
-<section class="sec" id="main">
+<section class="sec" data-m="student" id="courses"><span class="kick">Выберите своё направление</span><h2>От первого шага <em>к мастерству</em></h2><p class="lead">Начните с основ или дополните свою практику новой техникой. Программу, ближайшие даты и стоимость обсудим лично.</p><div class="course-grid"><article class="course"><div class="course-head"><span class="course-no">01</span><img src="obidina-assets/photo-9.jpg" alt="Педикюр с нуля" loading="lazy"></div><h3>Педикюр с нуля</h3><p>Первые шаги в профессии: эстетика педикюра, работа с пальчиками и ногтями.</p><figure class="media"><video controls playsinline preload="none" poster="obidina-assets/poster-4.jpg" aria-label="Педикюр с нуля — знакомство с обучением"><source src="obidina-assets/video-4.mp4" type="video/mp4"></video><figcaption>Педикюр с нуля — знакомство с обучением</figcaption></figure><a class="course-link" href="tel:+79877407755">Обсудить обучение ↗</a></article><article class="course"><div class="course-head"><span class="course-no">02</span><img src="obidina-assets/photo-8.jpg" alt="Фруктовый педикюр" loading="lazy"></div><h3>Фруктовый педикюр</h3><p>Знакомство с техникой фруктового педикюра и её применением в работе.</p><figure class="media"><video controls playsinline preload="none" poster="obidina-assets/poster-9.jpg" aria-label="Фруктовый педикюр — знакомство с обучением"><source src="obidina-assets/video-9.mp4" type="video/mp4"></video><figcaption>Фруктовый педикюр — знакомство с обучением</figcaption></figure><a class="course-link" href="tel:+79877407755">Обсудить обучение ↗</a></article><article class="course"><div class="course-head"><span class="course-no">03</span><img src="obidina-assets/photo-10.jpg" alt="SMART 2.0" loading="lazy"></div><h3>SMART 2.0</h3><p>Работа со стопой и пятками. Обучение у официального инструктора SMART.</p><figure class="media"><video controls playsinline preload="none" poster="obidina-assets/poster-16.jpg" aria-label="SMART 2.0 — знакомство с обучением"><source src="obidina-assets/video-16.mp4" type="video/mp4"></video><figcaption>SMART 2.0 — знакомство с обучением</figcaption></figure><a class="course-link" href="tel:+79877407755">Обсудить обучение ↗</a></article><article class="course"><div class="course-head"><span class="course-no">04</span><img src="obidina-assets/photo-11.jpg" alt="Подология" loading="lazy"></div><h3>Подология</h3><p>Работа со сложной стопой: теория и отработка на моделях.</p><figure class="media"><video controls playsinline preload="none" poster="obidina-assets/poster-7.jpg" aria-label="Подология — знакомство с обучением"><source src="obidina-assets/video-7.mp4" type="video/mp4"></video><figcaption>Подология — знакомство с обучением</figcaption></figure><a class="course-link" href="tel:+79877407755">Обсудить обучение ↗</a></article></div></section><section class="sec" id="main">
   <div data-m="client">
     <span class="kick" data-in>С чем приходят</span>
     <h2 data-in>Проблема <em>и решение</em></h2>
@@ -178,36 +186,36 @@ footer { text-align: center; padding: 26px var(--gut) 40px; color: var(--mut); f
       <div class="st" data-in><b>Сразу ставит руку</b><p>«Сразу ставит руку!» Учит не только обработке проблемных ног, но и тонкостям работы.</p></div>
       <div class="st" data-in><b>Поддержка после</b><p>«Всегда на связи, если вопросы. Поддержка от Ольги в дальнейшем гарантирована».</p></div>
     </div>
-    <div class="courses" data-in><span>Курс «Подология»</span><span>Введение в подологию</span><span>Смарт-педикюр 2.0</span></div>
+    
   </div>
 </section>
 
-<section class="sec" id="olga">
+<section class="sec" data-m="client" id="results"><span class="kick">Примеры работ</span><h2>Забота, которую <em>видно</em></h2><p class="lead">Фотографии и видео из практики Ольги. Результат зависит от исходного состояния и подбирается индивидуально.</p><div class="work-pair"><figure><img src="obidina-assets/photo-3.jpg" alt="Ноготь до процедуры" loading="lazy"><figcaption>До процедуры</figcaption></figure><figure><img src="obidina-assets/photo-15.jpg" alt="Ноготь после процедуры" loading="lazy"><figcaption>После процедуры</figcaption></figure></div><div class="media-grid"><figure class="media"><video controls playsinline preload="none" poster="obidina-assets/poster-12.jpg" aria-label="SMART 2.0 — уход за стопой"><source src="obidina-assets/video-12.mp4" type="video/mp4"></video><figcaption>SMART 2.0 — уход за стопой</figcaption></figure><figure class="media"><video controls playsinline preload="none" poster="obidina-assets/poster-8.jpg" aria-label="Подология — работа с ногтями"><source src="obidina-assets/video-8.mp4" type="video/mp4"></video><figcaption>Подология — работа с ногтями</figcaption></figure><figure class="media"><video controls playsinline preload="none" poster="obidina-assets/poster-13.jpg" aria-label="Стопа до обработки"><source src="obidina-assets/video-13.mp4" type="video/mp4"></video><figcaption>Стопа до обработки</figcaption></figure><figure class="media"><video controls playsinline preload="none" poster="obidina-assets/poster-14.jpg" aria-label="Стопа после обработки"><source src="obidina-assets/video-14.mp4" type="video/mp4"></video><figcaption>Стопа после обработки</figcaption></figure></div><a class="btn" href="https://nn.moiprofi.ru/olgaobidina/" target="_blank" rel="noopener">Выбрать время приёма ↗</a></section><section class="sec" id="olga">
   <div class="olga">
     <div class="pics">
-      <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/16323929/2a00000199fd86f94771be97069e3bd9f9ef/XL" alt="Ольга Обидина" loading="lazy"></figure>
-      <figure data-ph data-in><img src="https://avatars.mds.yandex.net/get-altay/20238055/2a0000019f950d39c91550cd26ceaee270ab/XL" alt="Кресло подолога в кабинете" loading="lazy"></figure>
+      <figure data-ph data-in><img src="obidina-assets/photo-16.jpg" alt="Ольга Обидина" loading="lazy"></figure>
+      <figure data-ph data-in><img src="obidina-assets/photo-0.jpg" alt="Ольга и её кабинет" loading="lazy"></figure>
     </div>
     <div>
       <span class="kick" data-in>Кабинет и мастер</span>
       <h2 data-in>Ольга <em>Обидина</em></h2>
-      <p class="quote" data-in>«Для меня чистота и идеальный порядок: основа качественного педикюра и залог вашего комфорта».</p>
+      <p class="professional" data-in>Подолог · действующая медицинская книжка<br>Официальный инструктор SMART</p><p class="quote" data-in>«Для меня чистота и идеальный порядок: основа качественного педикюра и залог вашего комфорта».</p>
       <p data-m="client" style="color:var(--mut)" data-in>Кабинет в студии красоты на проспекте Ленина, 60. Есть парковка и Wi-Fi. Клиенты пишут, что на приёме «максимально расслабляются», а ножки после него «отдыхают».</p>
       <p data-m="student" style="color:var(--mut)" data-in>Одна из учениц пришла к Ольге клиенткой, а ушла с новой профессией: «Она навела меня на мысль сменить род деятельности, не жалею ни капли».</p>
     </div>
   </div>
 </section>
 
-<section class="sec" id="voices">
+<section class="sec" data-m="student" id="students"><span class="kick">Практика и результаты</span><h2>Учимся <em>руками</em></h2><p class="lead">Реальные занятия, ученицы и их впечатления об обучении.</p><div class="student-pics"><figure><img src="obidina-assets/photo-7.jpg" alt="Ученица курса педикюра с Ольгой и сертификатом" loading="lazy"><figcaption>Педикюр с нуля</figcaption></figure><figure><img src="obidina-assets/photo-2.jpg" alt="Ученица подологии с сертификатом" loading="lazy"><figcaption>Введение в подологию</figcaption></figure></div><div class="media-grid"><figure class="media"><video controls playsinline preload="none" poster="obidina-assets/poster-0.jpg" aria-label="Педикюр с нуля: работа на модели"><source src="obidina-assets/video-0.mp4" type="video/mp4"></video><figcaption>Педикюр с нуля: работа на модели</figcaption></figure><figure class="media"><video controls playsinline preload="none" poster="obidina-assets/poster-3.jpg" aria-label="Ученица SMART 2.0"><source src="obidina-assets/video-3.mp4" type="video/mp4"></video><figcaption>Ученица SMART 2.0</figcaption></figure><figure class="media"><video controls playsinline preload="none" poster="obidina-assets/poster-10.jpg" aria-label="Подология: практика с преподавателем"><source src="obidina-assets/video-10.mp4" type="video/mp4"></video><figcaption>Подология: практика с преподавателем</figcaption></figure><figure class="media"><video controls playsinline preload="none" poster="obidina-assets/poster-5.jpg" aria-label="Впечатления об обучении"><source src="obidina-assets/video-5.mp4" type="video/mp4"></video><figcaption>Впечатления об обучении</figcaption></figure></div></section><section class="sec" id="voices">
   <span class="kick" data-in>Отзывы</span>
-  <h2 data-in>5,0 <em>· 37 оценок</em></h2>
+  <h2 data-in>Слова <em>благодарности</em></h2>
   <div class="revs" data-m="client">
     <div class="rv" data-in><p>«Ножки мои после неё отдыхают, пяточки нежнейшие, и эффект сохраняется очень долго. На приёме я максимально расслабляюсь».</p><small>Яндекс Карты</small></div>
     <div class="rv" data-in><p>«Обратилась с проблемой вросшего ногтя. Оля встретила с улыбкой, успокоила, и за разговором всё было сделано быстро и без боли».</p><small>Яндекс Карты</small></div>
     <div class="rv" data-in><p>«Пептидный педикюр преобразил мои ножки, мастер посоветовала домашний уход за ногами».</p><small>Яндекс Карты</small></div>
     <div class="rv" data-in><p>«Уже много лет прихожу к ней на маникюр и педикюр. Всегда приветлива и доброжелательна».</p><small>Яндекс Карты</small></div>
   </div>
-  <div class="revs" data-m="student">
+  <div class="review-originals" data-m="student"><a href="obidina-assets/photo-5.jpg" target="_blank" rel="noopener"><img src="obidina-assets/photo-5.jpg" alt="Отзыв Анастасии Савкиной о курсе Подология" loading="lazy"></a><a href="obidina-assets/photo-14.jpg" target="_blank" rel="noopener"><img src="obidina-assets/photo-14.jpg" alt="Отзыв Надежды Быстряковой об обучении" loading="lazy"></a></div><div class="revs" data-m="student">
     <div class="rv" data-in><p>«Обучалась у Ольги смарт 2.0. Приятная дружеская обстановка, всё доступно и понятно. Получила лицензию мастера смарт и занесена в реестр».</p><small>Яндекс Карты</small></div>
     <div class="rv" data-in><p>«Проходила курс „Подология“. Ольга с лёгкостью рассказала и показала на примере 12 моделей».</p><small>Яндекс Карты</small></div>
     <div class="rv" data-in><p>«Материал дан доступно, очень много моделей с различными видами стоп. Поддержка от Ольги в дальнейшем гарантирована».</p><small>Яндекс Карты</small></div>
@@ -224,13 +232,13 @@ footer { text-align: center; padding: 26px var(--gut) 40px; color: var(--mut); f
       <div class="ln"><span>Часы</span><b>Ежедневно 8:00–20:00, по записи</b></div>
       <div class="ln"><span>Сейчас</span><b class="live" data-live><i></i><span data-status>…</span></b></div>
       <div class="ln"><span>Телефон</span><b><a href="tel:+79877407755">+7 987 740-77-55</a></b></div>
-      <div class="ln"><span>Удобства</span><b>Парковка, Wi-Fi</b></div>
-      <div class="row" style="margin-top:20px"><a class="btn" href="tel:+79877407755">Позвонить</a><a class="btn o" href="https://yandex.ru/maps/org/podolog_obidina_olga/181403694009/" target="_blank" rel="noopener">Маршрут</a></div>
+      <div class="ln"><span>Как найти</span><b>2 минуты от метро «Двигатель Революции»<br>Первый этаж, вход с улицы</b></div><div class="ln"><span>Удобства</span><b>Парковка, Wi-Fi</b></div>
+      <div class="row" style="margin-top:20px"><a class="btn" href="https://nn.moiprofi.ru/olgaobidina/" target="_blank" rel="noopener">Онлайн-запись ↗</a><a class="btn" href="tel:+79877407755">Позвонить</a><a class="btn o" href="https://yandex.ru/maps/org/podolog_obidina_olga/181403694009/" target="_blank" rel="noopener">Маршрут</a></div>
     </div>
     <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=43.921437%2C56.274969&amp;z=16&amp;pt=43.921437%2C56.274969%2Cpm2rdm&amp;l=map" title="Подолог Обидина Ольга на Яндекс Картах" loading="lazy" allowfullscreen></iframe></div>
   </div>
 </section>
-</main>
+<section class="sec" id="route-video"><span class="kick">Маршрут от метро</span><h2>Как найти <em>кабинет</em></h2><div style="max-width:420px"><figure class="media"><video controls playsinline preload="none" poster="obidina-assets/poster-11.jpg" aria-label="Видео маршрута от метро"><source src="obidina-assets/video-11.mp4" type="video/mp4"></video><figcaption>Ольга показывает дорогу от метро до кабинета</figcaption></figure></div></section><section class="sec route"><div><span class="kick">Вход с улицы</span><h2>Вы уже <em>почти на месте</em></h2><p class="lead">От метро «Двигатель Революции» — две минуты пешком. Ищите вывеску «Студия красоты». Кабинет находится на первом этаже.</p><img src="obidina-assets/photo-13.jpg" alt="Пешеходный маршрут от метро до кабинета" loading="lazy"></div><figure><img src="obidina-assets/photo-12.jpg" alt="Вход в студию красоты на проспекте Ленина, 60" loading="lazy"><figcaption>Вход в студию красоты</figcaption></figure></section></main>
 
 <footer>Подолог Обидина Ольга · Нижний Новгород, проспект Ленина, 60 · ежедневно 8:00–20:00</footer>
 
@@ -367,8 +375,8 @@ footer { text-align: center; padding: 26px var(--gut) 40px; color: var(--mut); f
 (function () {
   // mode switch: the whole site re-themes for clients or students
   function setMode(m) {
-    document.body.classList.toggle('student', m === 'student');
-    document.querySelectorAll('.mode button').forEach(function (b) { b.classList.toggle('on', b.dataset.mode === m); });
+    document.body.classList.toggle('student', m === 'student'); document.querySelectorAll('video').forEach(function(v){v.pause();});
+    document.querySelectorAll('.mode button').forEach(function (b) { b.classList.toggle('on', b.dataset.mode === m); b.setAttribute('aria-selected', String(b.dataset.mode === m)); });
     document.querySelectorAll('[data-m="' + m + '"]').forEach(function (e) { e.classList.remove('swap'); void e.offsetWidth; e.classList.add('swap'); e.classList.add('in'); e.querySelectorAll('[data-in]').forEach(function (x) { x.classList.add('in'); }); });
   }
   document.querySelector('.mode').addEventListener('click', function (e) { var b = e.target.closest('button'); if (b) setMode(b.dataset.mode); });
