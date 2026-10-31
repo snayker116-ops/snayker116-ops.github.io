@@ -48,8 +48,8 @@ body.student .mode .pill { transform: translateX(100%); }
 }
 
 /* hero: footprints walk across the page */
-.hero { position: relative; height: 210vh; }
-.walk { position: sticky; top: 0; height: 100vh; min-height: 640px; overflow: hidden; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); align-items: center; gap: 30px; padding: 90px var(--gut) 40px; background: radial-gradient(70% 60% at 30% 40%, var(--acc-2), var(--bg)); transition: background .5s; }
+.hero { position: relative; }
+.walk { position: relative; height: 100vh; min-height: 640px; max-height: 980px; overflow: hidden; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); align-items: center; gap: 30px; padding: 90px var(--gut) 40px; background: radial-gradient(70% 60% at 30% 40%, var(--acc-2), var(--bg)); transition: background .5s; }
 #steps { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
 #steps use { fill: var(--acc); transition: fill .5s; }
 .htx { position: relative; z-index: 2; }
@@ -74,7 +74,7 @@ body.student .mode .pill { transform: translateX(100%); }
 .hwrap { position: relative; z-index: 2; justify-self: center; }
 .hwrap .tag { position: absolute; z-index: 3; left: 50%; bottom: -14px; transform: translateX(-50%); box-shadow: 0 10px 24px -12px rgba(0,0,0,.4); white-space: nowrap; padding: 8px 14px; border-radius: 30px; background: rgba(255,255,255,.92); font: 700 13px/1 var(--body); color: var(--acc-3); }
 @media (max-width: 860px) {
-  .hero { height: auto; } .walk { position: relative; height: auto; min-height: 0; grid-template-columns: 1fr; padding: 84px var(--gut) 40px; gap: 18px; }
+  .walk { height: auto; max-height: none; min-height: 0; grid-template-columns: 1fr; padding: 84px var(--gut) 40px; gap: 18px; }
   .hwrap { order: -1; } .hph { width: min(62vw, 300px); } .htx h1 { font-size: 10.5vw; }
 }
 
@@ -623,11 +623,16 @@ footer a { color: var(--mut); }
   }
   svg.innerHTML = h;
   var prints = svg.querySelectorAll('use'), hero = document.querySelector('.hero'), walk = document.getElementById('walk'), dock = document.getElementById('dock');
-  RT.onScroll(function () {
-    var p = RT.motion ? RT.progress(hero) : 1, n = (p * 1.4 + .12) * N;
-    if (innerWidth <= 860) n = N * (.35 + RT.clamp(scrollY / 500));
+  // footprints walk in by themselves on load, then keep walking as the page scrolls
+  var intro = RT.motion ? 0 : 1, t0 = null;
+  function paint() {
+    var p = RT.clamp(scrollY / (hero.offsetHeight || 1)), n = Math.min(1.1, intro * .72 + p * .9) * N;
     walk.style.setProperty('--p', p);
     prints.forEach(function (u, i) { var v = RT.clamp(n - i); u.setAttribute('opacity', (v * (.32 + .12 * (i % 2))).toFixed(2)); });
+  }
+  if (RT.motion) RT.loop(function (t) { if (t0 === null) t0 = t; intro = RT.ease(RT.clamp((t - t0) / 2600)); paint(); return intro < 1; });
+  RT.onScroll(function () {
+    paint();
     dock.classList.toggle('on', scrollY > innerHeight * .7);
   });
   function live() { var s = RT.status(); if (!s) return; document.querySelectorAll('[data-live]').forEach(function (e) { e.classList.toggle('is-open', s.open); e.classList.toggle('is-closed', !s.open); }); }
