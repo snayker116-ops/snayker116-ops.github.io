@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Редактор сайта · Подолог Обидина Ольга</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&amp;family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+:root { --acc: #5F9B2F; --acc-2: #EAF4DF; --acc-3: #3E6E1A; --bg: #F4F6F0; --ink: #1F2A1C; --mut: #5E6A5A; --line: #DDE6D3; --warn: #B7791F; --no: #C2412F;
+  --head: 'Comfortaa', Arial, sans-serif; --body: 'Open Sans', Arial, sans-serif; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 15px/1.5 var(--body); }
+button, input, textarea { font: inherit; color: inherit; }
+header { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; padding: 14px clamp(14px, 3vw, 32px); background: #fff; border-bottom: 1px solid var(--line); }
+header h1 { margin: 0 auto 0 0; font: 700 18px/1.2 var(--head); }
+header h1 small { display: block; font: 400 13px/1.3 var(--body); color: var(--mut); }
+.btn { display: inline-flex; align-items: center; gap: 6px; padding: 10px 16px; border-radius: 30px; border: 0; background: var(--acc); color: #fff; font-weight: 700; cursor: pointer; text-decoration: none; }
+.btn.o { background: transparent; color: var(--acc-3); box-shadow: inset 0 0 0 2px var(--acc); }
+.btn:disabled { opacity: .5; cursor: default; }
+.wrap { display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 24px; max-width: 1180px; margin: 0 auto; padding: 24px clamp(14px, 3vw, 32px) 80px; }
+nav { position: sticky; top: 90px; align-self: start; display: grid; gap: 4px; }
+nav a { padding: 9px 12px; border-radius: 12px; text-decoration: none; color: var(--mut); font-weight: 600; }
+nav a:hover, nav a.on { background: #fff; color: var(--ink); }
+nav a b { float: right; min-width: 22px; padding: 0 6px; border-radius: 10px; background: var(--acc); color: #fff; font-size: 12px; text-align: center; }
+.search { width: 100%; padding: 10px 14px; border-radius: 12px; border: 1px solid var(--line); background: #fff; margin-bottom: 8px; }
+.card { background: #fff; border-radius: 20px; border: 1px solid var(--line); margin-bottom: 18px; overflow: hidden; scroll-margin-top: 90px; }
+.card h2 { margin: 0; padding: 16px 20px; font: 700 17px/1.3 var(--head); border-bottom: 1px solid var(--line); background: #FBFCF8; }
+.f { display: grid; grid-template-columns: 220px minmax(0, 1fr) 34px; gap: 14px; align-items: start; padding: 12px 20px; border-bottom: 1px solid var(--line); }
+.f:last-child { border-bottom: 0; }
+.f label { padding-top: 9px; font-weight: 600; font-size: 14px; color: var(--mut); }
+.f textarea, .f input[type=text] { width: 100%; padding: 9px 12px; border-radius: 10px; border: 1px solid var(--line); background: #fff; resize: vertical; min-height: 40px; line-height: 1.45; }
+.f textarea:focus, .f input:focus { outline: 2px solid var(--acc); border-color: transparent; }
+.f.ch textarea, .f.ch input[type=text] { background: #FFFBEB; border-color: #F3D27A; }
+.f .rs { width: 34px; height: 34px; margin-top: 3px; border-radius: 50%; border: 0; background: transparent; cursor: pointer; color: var(--mut); font-size: 18px; visibility: hidden; }
+.f.ch .rs { visibility: visible; }
+.f .rs:hover { background: var(--acc-2); }
+.img { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
+.img img { width: 84px; height: 104px; object-fit: cover; border-radius: 12px; background: var(--acc-2); }
+.hint { font-size: 13px; color: var(--mut); }
+.toast { position: fixed; left: 50%; bottom: 22px; transform: translate(-50%, 140%); max-width: min(92vw, 640px); padding: 14px 18px; border-radius: 16px; background: var(--ink); color: #fff; box-shadow: 0 16px 40px -14px rgba(0,0,0,.5); transition: transform .4s; z-index: 30; }
+.toast.on { transform: translate(-50%, 0); }
+.toast.warn { background: #6B4A12; }
+.intro { padding: 16px 20px; border-radius: 18px; background: var(--acc-2); margin-bottom: 18px; color: var(--acc-3); }
+.intro b { color: var(--ink); }
+.pw { display: none; position: fixed; inset: 0; z-index: 40; background: rgba(20,26,18,.5); place-items: center; }
+.pw.on { display: grid; }
+.pw form { width: min(92vw, 380px); padding: 24px; border-radius: 20px; background: #fff; display: grid; gap: 12px; }
+.pw h3 { margin: 0; font: 700 18px/1.3 var(--head); }
+.pw input { padding: 11px 14px; border-radius: 12px; border: 1px solid var(--line); }
+@media (max-width: 860px) {
+  .wrap { grid-template-columns: 1fr; } nav { position: static; grid-auto-flow: column; overflow-x: auto; }
+  .f { grid-template-columns: 1fr 34px; } .f label { grid-column: 1 / -1; padding: 0; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Редактор сайта<small>Подолог Обидина Ольга</small></h1>
+  <a class="btn o" id="preview" href="obidina.html?preview=1" target="_blank" rel="noopener">Предпросмотр</a>
+  <button class="btn o" id="download">Скачать файл</button>
+  <button class="btn" id="save">Сохранить на сайте</button>
+</header>
+
+<div class="wrap">
+  <nav id="nav"><input class="search" id="q" placeholder="Найти поле…"></nav>
+  <main id="form">
+    <div class="intro">Меняйте текст прямо в полях. Изменённые поля подсвечиваются жёлтым, стрелка ↺ возвращает исходный текст. <b>Предпросмотр</b> показывает сайт с правками только на этом устройстве. <b>Сохранить на сайте</b> публикует правки для всех посетителей.</div>
+  </main>
+</div>
+
+<div class="pw" id="pw">
+  <form>
+    <h3>Пароль администратора</h3>
+    <input type="password" id="pwi" autocomplete="current-password" required>
+    <div style="display:flex;gap:10px;justify-content:flex-end"><button type="button" class="btn o" id="pwc">Отмена</button><button class="btn">Сохранить</button></div>
+  </form>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+(function () {
+  var SITE = 'obidina.html', DATA = 'obidina-content.json', SAVE = 'obidina-save.php', DRAFT = 'obidina-preview';
+  var LINKS = [
+    { k: 'booking', label: 'Ссылка онлайн-записи', def: 'https://nn.moiprofi.ru/olgaobidina/' },
+    { k: 'phone', label: 'Номер для звонка (цифрами)', def: '+7 987 740-77-55' },
+    { k: 'vk', label: 'Страница ВКонтакте', def: 'https://vk.com/id300059746' }
+  ];
+  var IMAGES = [
+    { k: 'hero.photo', label: 'Фото на первом экране' },
+    { k: 'about.photo', label: 'Фото в блоке «Обо мне»' },
+    { k: 'visit.door', label: 'Фото входа' }
+  ];
+  var form = document.getElementById('form'), nav = document.getElementById('nav');
+  var defaults = { texts: {}, links: {}, images: {} }, saved = { texts: {}, links: {}, images: {} }, cur;
+
+  function toast(msg, warn) {
+    var t = document.getElementById('toast'); t.textContent = msg; t.classList.toggle('warn', !!warn); t.classList.add('on');
+    clearTimeout(toast.h); toast.h = setTimeout(function () { t.classList.remove('on'); }, 5200);
+  }
+  function load(url) { return fetch(url, { cache: 'no-store' }).then(function (r) { if (!r.ok) throw r; return r; }); }
+  function grow(ta) { ta.style.height = 'auto'; ta.style.height = ta.scrollHeight + 2 + 'px'; }
+  function store() { try { localStorage.setItem(DRAFT, JSON.stringify(cur)); } catch (e) {} }
+
+  function field(card, kind, key, label, def) {
+    var row = document.createElement('div'); row.className = 'f'; row.dataset.search = (label + ' ' + def).toLowerCase();
+    var lb = document.createElement('label'); lb.textContent = label;
+    var val = cur[kind][key] != null ? cur[kind][key] : def;
+    var inp;
+    if (kind === 'images') {
+      inp = document.createElement('div'); inp.className = 'img';
+      var im = new Image(); im.src = val || def; im.alt = '';
+      var file = document.createElement('input'); file.type = 'file'; file.accept = 'image/*';
+      var hint = document.createElement('span'); hint.className = 'hint'; hint.textContent = 'JPG или PNG, лучше вертикальное фото';
+      file.addEventListener('change', function () {
+        var f = file.files[0]; if (!f) return;
+        shrink(f).then(function (data) { cur.images[key] = data; im.src = data; mark(); store(); });
+      });
+      inp.append(im, file, hint);
+    } else {
+      inp = document.createElement(kind === 'links' ? 'input' : 'textarea');
+      if (kind === 'links') inp.type = 'text';
+      inp.value = val; inp.rows = 1;
+      inp.addEventListener('input', function () { cur[kind][key] = inp.value; mark(); store(); if (inp.tagName === 'TEXTAREA') grow(inp); });
+    }
+    var rs = document.createElement('button'); rs.type = 'button'; rs.className = 'rs'; rs.title = 'Вернуть исходный текст'; rs.textContent = '↺';
+    rs.addEventListener('click', function () {
+      delete cur[kind][key];
+      if (kind === 'images') inp.querySelector('img').src = def; else { inp.value = def; if (inp.tagName === 'TEXTAREA') grow(inp); }
+      mark(); store();
+    });
+    function mark() { row.classList.toggle('ch', cur[kind][key] != null && cur[kind][key] !== def); counts(); }
+    row.append(lb, inp, rs); card.appendChild(row); mark();
+    if (inp.tagName === 'TEXTAREA') requestAnimationFrame(function () { grow(inp); });
+  }
+
+  // photos are resized in the browser before upload or preview
+  function shrink(f) {
+    return new Promise(function (res) {
+      var r = new FileReader();
+      r.onload = function () {
+        var im = new Image();
+        im.onload = function () {
+          var k = Math.min(1, 1400 / Math.max(im.width, im.height)), c = document.createElement('canvas');
+          c.width = Math.round(im.width * k); c.height = Math.round(im.height * k);
+          c.getContext('2d').drawImage(im, 0, 0, c.width, c.height); res(c.toDataURL('image/jpeg', .82));
+        };
+        im.src = r.result;
+      };
+      r.readAsDataURL(f);
+    });
+  }
+
+  function counts() {
+    form.querySelectorAll('.card').forEach(function (c) {
+      var n = c.querySelectorAll('.f.ch').length, a = nav.querySelector('a[href="#' + c.id + '"]');
+      if (a) a.innerHTML = a.dataset.t + (n ? '<b>' + n + '</b>' : '');
+    });
+  }
+
+  function build(doc) {
+    var groups = {}, order = [];
+    function group(name) { if (!groups[name]) { groups[name] = []; order.push(name); } return groups[name]; }
+    var seen = {};
+    doc.querySelectorAll('[data-e]').forEach(function (el) {
+      var k = el.dataset.e; if (seen[k]) return; seen[k] = 1;
+      var b = el.closest('[data-block]'), name = b ? b.dataset.block : 'Шапка и первый экран';
+      defaults.texts[k] = el.textContent.trim();
+      group(name).push({ kind: 'texts', key: k, label: el.dataset.label || k, def: defaults.texts[k] });
+    });
+    var contacts = group('Контакты и ссылки');
+    LINKS.forEach(function (l) { defaults.links[l.k] = l.def; contacts.push({ kind: 'links', key: l.k, label: l.label, def: l.def }); });
+    var photos = group('Фотографии');
+    IMAGES.forEach(function (i) {
+      var el = doc.querySelector('[data-i="' + i.k + '"]'); defaults.images[i.k] = el ? el.getAttribute('src') : '';
+      photos.push({ kind: 'images', key: i.k, label: i.label, def: defaults.images[i.k] });
+    });
+    order.forEach(function (name, n) {
+      var card = document.createElement('section'); card.className = 'card'; card.id = 'b' + n;
+      var h = document.createElement('h2'); h.textContent = name; card.appendChild(h);
+      groups[name].forEach(function (f) { field(card, f.kind, f.key, f.label, f.def); });
+      form.appendChild(card);
+      var a = document.createElement('a'); a.href = '#b' + n; a.dataset.t = name; a.textContent = name; nav.appendChild(a);
+    });
+    counts();
+  }
+
+  document.getElementById('q').addEventListener('input', function () {
+    var q = this.value.trim().toLowerCase();
+    form.querySelectorAll('.f').forEach(function (r) { r.style.display = !q || r.dataset.search.indexOf(q) > -1 ? '' : 'none'; });
+    form.querySelectorAll('.card').forEach(function (c) { c.style.display = [].some.call(c.querySelectorAll('.f'), function (r) { return r.style.display !== 'none'; }) ? '' : 'none'; });
+  });
+
+  function clean() {
+    var out = { texts: {}, links: {}, images: {} };
+    ['texts', 'links', 'images'].forEach(function (k) { Object.keys(cur[k]).forEach(function (x) { if (cur[k][x] !== defaults[k][x]) out[k][x] = cur[k][x]; }); });
+    out.updated = new Date().toISOString();
+    return out;
+  }
+
+  document.getElementById('download').addEventListener('click', function () {
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([JSON.stringify(clean(), null, 2)], { type: 'application/json' }));
+    a.download = DATA; a.click(); toast('Файл ' + DATA + ' скачан. Его можно загрузить на хостинг рядом с сайтом.');
+  });
+
+  var pw = document.getElementById('pw');
+  document.getElementById('save').addEventListener('click', function () { pw.classList.add('on'); document.getElementById('pwi').focus(); });
+  document.getElementById('pwc').addEventListener('click', function () { pw.classList.remove('on'); });
+  pw.querySelector('form').addEventListener('submit', function (e) {
+    e.preventDefault(); pw.classList.remove('on');
+    var btn = document.getElementById('save'); btn.disabled = true;
+    fetch(SAVE, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ password: document.getElementById('pwi').value, content: clean() }) })
+      .then(function (r) { return r.text().then(function (t) { var j = null; try { j = JSON.parse(t); } catch (x) {} return { ok: r.ok, j: j }; }); })
+      .then(function (res) {
+        if (res.j && res.j.ok) { saved = clean(); toast('Сохранено. Посетители уже видят новую версию.'); }
+        else if (res.j && res.j.error) toast(res.j.error, true);
+        else throw 0;
+      })
+      .catch(function () { toast('На этом хостинге сохранение пока не подключено. Правки остались в предпросмотре на этом устройстве, кнопка заработает после переноса сайта на ваш хостинг.', true); })
+      .then(function () { btn.disabled = false; });
+  });
+
+  load(SITE).then(function (r) { return r.text(); }).then(function (html) {
+    var doc = new DOMParser().parseFromString(html, 'text/html');
+    return load(DATA).then(function (r) { return r.json(); }).catch(function () { return null; }).then(function (pub) {
+      saved = pub || saved;
+      var draft = null; try { draft = JSON.parse(localStorage.getItem(DRAFT) || 'null'); } catch (e) {}
+      var base = draft || saved;
+      cur = { texts: Object.assign({}, base.texts), links: Object.assign({}, base.links), images: Object.assign({}, base.images) };
+      build(doc);
+    });
+  }).catch(function () { form.insertAdjacentHTML('beforeend', '<p>Не удалось открыть сайт. Откройте редактор с хостинга, а не с диска.</p>'); });
+})();
+</script>
+</body>
+</html>

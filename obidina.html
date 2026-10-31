@@ -2,13 +2,13 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Подолог Обидина Ольга — Нижний Новгород, проспект Ленина, 60</title>
-<meta name="description" content="Подолог Ольга Обидина в Нижнем Новгороде: вросший ноготь, стержневые мозоли и натоптыши, медицинский педикюр, титановая нить, смарт-педикюр, выезд. Обучение подологии и смарт-педикюру. Ежедневно 8:00–20:00. Рейтинг 5,0.">
+<meta name="description" content="Подолог Ольга Обидина в Нижнем Новгороде: вросший ноготь, мозоли и натоптыши, медицинский педикюр, титановая нить, SMART-педикюр. Обучение: педикюр с нуля, фруктовый педикюр, SMART 2.0, школа подологии. 2 минуты от метро, ежедневно 8:00–20:00.">
+<meta name="robots" content="noindex">
 <meta property="og:title" content="Подолог Обидина Ольга, Нижний Новгород">
-<meta property="og:description" content="Работаю со всеми видами сложных стоп и ногтей. Обучение подологии.">
-<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/16404250/2a00000199fd87117adce275bd9132afdf4b/XXXL">
+<meta property="og:description" content="Работаю со всеми видами сложных стоп и ногтей. Обучаю мастеров.">
+<meta property="og:image" content="obidina-media/olga.jpg">
 <meta name="theme-color" content="#5F9B2F">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,26 +22,34 @@
 }
 body.student { --acc: #7A4FD6; --acc-2: #EFE8FC; --acc-3: #4F2E9A; --line: #E2D9F5; }
 * { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; }
+html { -webkit-text-size-adjust: 100%; overflow-x: clip; }
 body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17px/1.65 var(--body); overflow-x: hidden; transition: background .5s; }
-img { display: block; max-width: 100%; }
+img, video { display: block; max-width: 100%; }
 a { color: inherit; }
+button { font: inherit; color: inherit; }
 body:not(.student) [data-m="student"], body.student [data-m="client"] { display: none !important; }
 .swap { animation: sw .5s var(--ease); }
 @keyframes sw { from { opacity: 0; transform: translateY(12px); } }
 
 /* the mode switch */
 .mode { position: fixed; z-index: 40; top: 14px; left: 50%; transform: translateX(-50%); display: grid; grid-template-columns: 1fr 1fr; padding: 5px; border-radius: 40px; background: #fff; box-shadow: 0 10px 30px -12px rgba(0,0,0,.35); }
-.mode button { position: relative; z-index: 1; border: 0; background: transparent; padding: 11px 18px; border-radius: 30px; font: 700 14px/1 var(--body); color: var(--mut); cursor: pointer; white-space: nowrap; transition: color .3s; }
+.mode button { position: relative; z-index: 1; border: 0; background: transparent; padding: 11px 20px; border-radius: 30px; font: 700 14px/1 var(--body); color: var(--mut); cursor: pointer; white-space: nowrap; transition: color .3s; }
 .mode button.on { color: #fff; }
 .mode .pill { position: absolute; top: 5px; bottom: 5px; left: 5px; width: calc(50% - 5px); border-radius: 30px; background: var(--acc); transition: transform .45s var(--ease), background .45s; }
 body.student .mode .pill { transform: translateX(100%); }
 .call { position: fixed; z-index: 40; top: 18px; right: var(--gut); padding: 11px 16px; border-radius: 30px; background: var(--ink); color: #fff; text-decoration: none; font: 700 14px/1 var(--body); }
-@media (max-width: 760px) { .call { display: none; } .mode button { padding: 10px 12px; font-size: 13px; } }
+.dock { display: none; }
+@media (max-width: 760px) {
+  .call { display: none; } .mode { left: 12px; right: 12px; transform: none; } .mode button { padding: 11px 8px; font-size: 13.5px; }
+  .dock { position: fixed; z-index: 40; left: 12px; right: 12px; bottom: 12px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 6px; border-radius: 22px; background: rgba(255,255,255,.92); backdrop-filter: blur(10px); box-shadow: 0 12px 30px -10px rgba(0,0,0,.35); transform: translateY(140%); transition: transform .45s var(--ease); }
+  .dock.on { transform: none; }
+  .dock .btn { padding: 13px 10px; font-size: 14px; }
+  footer { padding-bottom: 100px !important; }
+}
 
 /* hero: footprints walk across the page */
 .hero { position: relative; height: 210vh; }
-.walk { position: sticky; top: 0; height: 100vh; min-height: 600px; overflow: hidden; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); align-items: center; gap: 30px; padding: 90px var(--gut) 40px; background: radial-gradient(70% 60% at 30% 40%, var(--acc-2), var(--bg)); transition: background .5s; }
+.walk { position: sticky; top: 0; height: 100vh; min-height: 640px; overflow: hidden; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); align-items: center; gap: 30px; padding: 90px var(--gut) 40px; background: radial-gradient(70% 60% at 30% 40%, var(--acc-2), var(--bg)); transition: background .5s; }
 #steps { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
 #steps use { fill: var(--acc); transition: fill .5s; }
 .htx { position: relative; z-index: 2; }
@@ -49,15 +57,35 @@ body.student .mode .pill { transform: translateX(100%); }
 .logo svg { width: 34px; height: 34px; fill: var(--acc); }
 .htx h1 { margin: 16px 0 12px; font: 700 clamp(40px, 6vw, 86px)/1.02 var(--head); letter-spacing: -.02em; }
 .htx h1 em { font-style: normal; color: var(--acc); }
-.htx p { margin: 0 0 24px; max-width: 520px; color: var(--mut); font-size: clamp(16px, 1.4vw, 19px); }
-.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 15px 24px; border-radius: 40px; background: var(--acc); color: #fff; font: 700 15px/1 var(--body); text-decoration: none; border: 0; cursor: pointer; transition: background .5s; }
+.htx p { margin: 0 0 18px; max-width: 520px; color: var(--mut); font-size: clamp(16px, 1.4vw, 19px); }
+.where { display: inline-flex; align-items: center; gap: 12px; margin: 0 0 22px; padding: 8px 16px 8px 8px; border-radius: 40px; background: #fff; text-decoration: none; box-shadow: 0 10px 26px -16px rgba(0,0,0,.4); font-size: 14.5px; line-height: 1.3; transition: transform .3s var(--ease); }
+.where:hover { transform: translateY(-2px); }
+.where .pin { flex: none; width: 38px; height: 38px; border-radius: 50%; background: var(--acc); display: grid; place-items: center; transition: background .5s; }
+.where .pin svg { width: 18px; height: 18px; fill: #fff; }
+.where b { display: block; font-weight: 700; }
+.where span { color: var(--mut); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 15px 24px; border-radius: 40px; background: var(--acc); color: #fff; font: 700 15px/1 var(--body); text-decoration: none; border: 0; cursor: pointer; transition: background .5s, transform .3s var(--ease); }
+.btn:hover { transform: translateY(-2px); }
 .btn.o { background: transparent; color: var(--acc-3); box-shadow: inset 0 0 0 2px var(--acc); }
+.btn.vk { background: #0077FF; }
 .row { display: flex; gap: 10px; flex-wrap: wrap; }
-.hph { position: relative; z-index: 2; justify-self: center; width: min(40vw, 460px); aspect-ratio: 4/5; border-radius: 46% 54% 50% 50% / 40% 40% 60% 60%; overflow: hidden; box-shadow: 0 40px 70px -40px rgba(0,0,0,.5); transform: translateY(calc(-30px * var(--p, 0))); }
-.hph img { width: 100%; height: 100%; object-fit: cover; }
-@media (max-width: 860px) { .walk { grid-template-columns: 1fr; padding-top: 80px; } .hph { width: 56vw; order: -1; } .htx h1 { font-size: 10vw; } }
+.hph { position: relative; z-index: 2; justify-self: center; width: min(38vw, 440px); aspect-ratio: 4/5; border-radius: 46% 54% 50% 50% / 40% 40% 60% 60%; overflow: hidden; box-shadow: 0 40px 70px -40px rgba(0,0,0,.5); transform: translateY(calc(-30px * var(--p, 0))); }
+.hph img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
+.hwrap { position: relative; z-index: 2; justify-self: center; }
+.hwrap .tag { position: absolute; z-index: 3; left: 50%; bottom: -14px; transform: translateX(-50%); box-shadow: 0 10px 24px -12px rgba(0,0,0,.4); white-space: nowrap; padding: 8px 14px; border-radius: 30px; background: rgba(255,255,255,.92); font: 700 13px/1 var(--body); color: var(--acc-3); }
+@media (max-width: 860px) {
+  .hero { height: auto; } .walk { position: relative; height: auto; min-height: 0; grid-template-columns: 1fr; padding: 84px var(--gut) 40px; gap: 18px; }
+  .hwrap { order: -1; } .hph { width: min(62vw, 300px); } .htx h1 { font-size: 10.5vw; }
+}
 
-.sec { padding: clamp(70px, 10vw, 120px) var(--gut); max-width: 1180px; margin: 0 auto; scroll-margin-top: 80px; }
+/* trust strip */
+.trust { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; max-width: 1180px; margin: 0 auto; padding: 0 var(--gut); }
+.trust > div { padding: 22px 16px; background: var(--bg); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.trust b { display: block; font: 700 clamp(20px, 2.2vw, 28px)/1.1 var(--head); color: var(--acc-3); margin-bottom: 6px; }
+.trust span { font-size: 13.5px; color: var(--mut); line-height: 1.35; display: block; }
+@media (max-width: 860px) { .trust { grid-template-columns: 1fr 1fr; } .trust > div:last-child { grid-column: 1 / -1; } }
+
+.sec { padding: clamp(70px, 10vw, 120px) var(--gut); max-width: 1180px; margin: 0 auto; scroll-margin-top: 70px; }
 .kick { font: 700 12px/1 var(--body); letter-spacing: .26em; text-transform: uppercase; color: var(--acc); }
 h2 { margin: 12px 0 14px; font: 700 clamp(30px, 4.4vw, 56px)/1.08 var(--head); letter-spacing: -.02em; }
 h2 em { font-style: normal; color: var(--acc); }
@@ -65,7 +93,8 @@ h2 em { font-style: normal; color: var(--acc); }
 
 /* client: problems → prices */
 .probs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-.pb { background: #fff; border-radius: 22px; padding: 22px; border: 1px solid var(--line); display: grid; gap: 8px; align-content: start; }
+.pb { background: #fff; border-radius: 22px; padding: 22px; border: 1px solid var(--line); display: grid; gap: 8px; align-content: start; transition: transform .35s var(--ease), box-shadow .35s; }
+.pb:hover { transform: translateY(-4px); box-shadow: 0 20px 40px -26px rgba(0,0,0,.35); }
 .pb .ic { width: 46px; height: 46px; border-radius: 14px; background: var(--acc-2); display: grid; place-items: center; font-size: 22px; }
 .pb b { font: 700 19px/1.25 var(--head); }
 .pb p { margin: 0; color: var(--mut); font-size: 15px; }
@@ -74,25 +103,72 @@ h2 em { font-style: normal; color: var(--acc); }
 @media (max-width: 560px) { .probs { grid-template-columns: 1fr; } }
 .note { margin-top: 18px; padding: 14px 16px; border-radius: 14px; background: var(--acc-2); font-size: 14.5px; color: var(--mut); }
 
+/* stories: vertical video cards */
+.reel { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(170px, 1fr); gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 4px 2px 14px; scrollbar-width: thin; }
+.story { position: relative; scroll-snap-align: start; aspect-ratio: 9/16; border: 0; padding: 0; border-radius: 22px; overflow: hidden; background: #111; cursor: pointer; box-shadow: 0 24px 40px -28px rgba(0,0,0,.6); transition: transform .4s var(--ease); }
+.story:hover { transform: translateY(-5px) rotate(-.6deg); }
+.story video, .story img { width: 100%; height: 100%; object-fit: cover; }
+.story::after { content: ""; position: absolute; inset: 0; background: linear-gradient(rgba(0,0,0,.25), transparent 22%); }
+.story .sc { position: absolute; z-index: 1; left: 10px; bottom: 10px; max-width: calc(100% - 20px); padding: 7px 11px; border-radius: 12px; background: rgba(255,255,255,.94); color: var(--ink); font: 700 13px/1.25 var(--body); text-align: left; }
+.story .pl { position: absolute; z-index: 1; top: 12px; right: 12px; width: 34px; height: 34px; border-radius: 50%; background: rgba(255,255,255,.9); display: grid; place-items: center; }
+.story .pl::before { content: ""; margin-left: 3px; border-left: 11px solid var(--acc-3); border-top: 7px solid transparent; border-bottom: 7px solid transparent; }
+.story .bar { position: absolute; z-index: 1; top: 8px; left: 12px; right: 56px; height: 3px; border-radius: 3px; background: rgba(255,255,255,.35); overflow: hidden; }
+.story .bar i { display: block; height: 100%; width: 0; background: #fff; }
+@media (max-width: 760px) { .reel { grid-auto-columns: 46vw; margin: 0 calc(-1 * var(--gut)); padding-left: var(--gut); padding-right: var(--gut); scroll-padding: 0 var(--gut); } }
+
+/* works: photo wall + before/after */
+.works { display: grid; grid-template-columns: 1.15fr 1fr; gap: clamp(20px, 4vw, 48px); align-items: start; }
+.wall { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.wall button { border: 0; padding: 0; border-radius: 18px; overflow: hidden; aspect-ratio: 3/4; cursor: zoom-in; background: var(--acc-2); }
+.wall button:nth-child(3n+2) { transform: translateY(26px); }
+.wall img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s var(--ease); }
+.wall button:hover img { transform: scale(1.06); }
+.ba { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 18px; }
+.ba .story { aspect-ratio: 3/4; }
+.ba .story .sc { font-size: 15px; padding: 8px 14px; }
+@media (max-width: 860px) { .works { grid-template-columns: 1fr; } }
+
 /* student: course path */
-.path { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; counter-reset: c; }
-.st { position: relative; background: #fff; border-radius: 22px; padding: 22px; border: 1px solid var(--line); }
-.st::before { counter-increment: c; content: "0" counter(c); display: block; font: 700 34px/1 var(--head); color: var(--acc); margin-bottom: 10px; }
-.st b { display: block; font: 700 18px/1.25 var(--head); margin-bottom: 6px; }
-.st p { margin: 0; font-size: 15px; color: var(--mut); }
-@media (max-width: 900px) { .path { grid-template-columns: 1fr 1fr; } }
-@media (max-width: 560px) { .path { grid-template-columns: 1fr; } }
-.courses { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
-.courses span { padding: 12px 16px; border-radius: 16px; background: var(--acc-2); font: 700 15px/1.2 var(--head); }
+.track { position: relative; display: grid; gap: 18px; counter-reset: c; }
+.course { position: relative; display: grid; grid-template-columns: 120px minmax(0, 1fr) minmax(0, 1.25fr); gap: clamp(16px, 3vw, 34px); align-items: center; padding: clamp(18px, 3vw, 30px); background: #fff; border-radius: 28px; border: 1px solid var(--line); }
+.course::before { counter-increment: c; content: "0" counter(c); position: absolute; top: 18px; left: 22px; font: 700 13px/1 var(--body); letter-spacing: .2em; color: var(--acc); }
+.course .lg { width: 120px; height: 120px; border-radius: 50%; background: #fff; box-shadow: 0 14px 30px -18px rgba(0,0,0,.4); display: grid; place-items: center; overflow: hidden; margin-top: 14px; }
+.course .lg img { width: 82%; height: 82%; object-fit: contain; }
+.course .lg svg { width: 46px; height: 90px; fill: var(--acc); }
+.course h3 { margin: 0 0 6px; font: 700 clamp(22px, 2.4vw, 30px)/1.15 var(--head); }
+.course .sub { margin: 0 0 12px; font-weight: 700; color: var(--acc-3); font-size: 15px; }
+.course ul { margin: 0 0 16px; padding: 0; list-style: none; display: grid; gap: 6px; }
+.course li { position: relative; padding-left: 22px; font-size: 15px; color: var(--mut); }
+.course li::before { content: ""; position: absolute; left: 0; top: .55em; width: 10px; height: 10px; border-radius: 50%; background: var(--acc-2); box-shadow: inset 0 0 0 3px var(--acc); }
+.course .reel { grid-auto-columns: minmax(130px, 160px); }
+@media (max-width: 960px) { .course { grid-template-columns: 90px 1fr; } .course .lg { width: 90px; height: 90px; } .course .reel { grid-column: 1 / -1; } }
+@media (max-width: 560px) { .course { grid-template-columns: 1fr; } .course .reel { grid-auto-columns: 40vw; } }
+.advice { margin-top: 26px; display: grid; grid-template-columns: auto 1fr; gap: 20px; align-items: center; padding: 26px; border-radius: 26px; background: var(--acc-2); }
+.advice .q { font: 700 64px/1 var(--head); color: var(--acc); }
+.advice p { margin: 0; font: 700 clamp(17px, 1.7vw, 21px)/1.45 var(--head); color: var(--acc-3); }
+.advice small { display: block; margin-top: 8px; font: 400 14px/1.4 var(--body); color: var(--mut); }
+
+/* students */
+.studs { display: grid; grid-template-columns: 1fr 1fr 1.3fr; gap: 14px; align-items: stretch; }
+.studs figure { margin: 0; position: relative; border-radius: 24px; overflow: hidden; min-height: 360px; }
+.studs figure img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.studs figcaption { position: absolute; left: 12px; right: 12px; bottom: 12px; padding: 10px 14px; border-radius: 14px; background: rgba(255,255,255,.9); font-size: 13.5px; line-height: 1.35; }
+.studs .reel { grid-auto-columns: 1fr; grid-auto-flow: row; grid-template-columns: 1fr 1fr; overflow: visible; padding: 0; }
+@media (max-width: 860px) { .studs { grid-template-columns: 1fr 1fr; } .studs .reel { grid-column: 1 / -1; } }
 
 /* Olga */
-.olga { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(20px, 5vw, 60px); align-items: center; }
-.pics { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-.pics figure { margin: 0; border-radius: 22px; overflow: hidden; aspect-ratio: 3/4; background: var(--acc-2); }
-.pics figure:nth-child(2) { margin-top: 40px; }
-.pics img { width: 100%; height: 100%; object-fit: cover; }
-.quote { font: 700 clamp(20px, 2vw, 26px)/1.35 var(--head); color: var(--acc-3); margin: 0 0 16px; }
-@media (max-width: 860px) { .olga { grid-template-columns: 1fr; } }
+.olga { display: grid; grid-template-columns: 1fr 1.1fr; gap: clamp(24px, 5vw, 64px); align-items: center; }
+.olga .ph { position: relative; }
+.olga .ph img { width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: 50% 20%; border-radius: 30px; }
+.olga .ph .story { position: absolute; right: -18px; bottom: -28px; width: 38%; border: 5px solid var(--bg); }
+.quote { font: 700 clamp(20px, 2vw, 26px)/1.35 var(--head); color: var(--acc-3); margin: 0 0 18px; }
+.edu { margin: 18px 0 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+.edu li { display: grid; grid-template-columns: 44px 1fr; gap: 14px; align-items: center; padding: 12px 14px; border-radius: 18px; background: #fff; border: 1px solid var(--line); }
+.edu .ei { width: 44px; height: 44px; border-radius: 12px; background: var(--acc-2); display: grid; place-items: center; overflow: hidden; font-size: 20px; }
+.edu .ei img { width: 100%; height: 100%; object-fit: contain; background: #fff; }
+.edu b { display: block; font-size: 15.5px; line-height: 1.3; }
+.edu span { font-size: 13.5px; color: var(--mut); }
+@media (max-width: 860px) { .olga { grid-template-columns: 1fr; } .olga .ph { max-width: 460px; } .olga .ph .story { right: -6px; } }
 
 /* reviews */
 .revs { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
@@ -101,6 +177,7 @@ h2 em { font-style: normal; color: var(--acc); }
 .rv small { color: var(--mut); font-weight: 700; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; }
 @media (max-width: 760px) { .revs { grid-template-columns: 1fr; } }
 
+/* visit + route */
 .vis { display: grid; grid-template-columns: 1fr 1.2fr; gap: 26px; align-items: center; }
 .vis .ln { display: flex; justify-content: space-between; gap: 12px; padding: 11px 0; border-bottom: 1px solid var(--line); }
 .vis .ln span { color: var(--mut); }
@@ -111,50 +188,57 @@ h2 em { font-style: normal; color: var(--acc); }
 .mapbox { position: relative; min-height: 400px; border-radius: 26px; overflow: hidden; }
 .mapbox iframe { position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 140px); border: 0; }
 @media (max-width: 860px) { .vis { grid-template-columns: 1fr; } }
+.route { display: grid; grid-template-columns: 220px 1fr 1fr; gap: 18px; align-items: stretch; margin-top: 34px; }
+.route .story { aspect-ratio: auto; min-height: 380px; }
+.route .door { position: relative; border-radius: 22px; overflow: hidden; min-height: 380px; }
+.route .door img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.steps { margin: 0; padding: 0; list-style: none; display: grid; gap: 12px; align-content: center; counter-reset: s; }
+.steps li { position: relative; padding: 16px 18px 16px 62px; border-radius: 18px; background: #fff; border: 1px solid var(--line); font-size: 15.5px; }
+.steps li::before { counter-increment: s; content: counter(s); position: absolute; left: 16px; top: 50%; transform: translateY(-50%); width: 32px; height: 32px; border-radius: 50%; background: var(--acc); color: #fff; display: grid; place-items: center; font: 700 15px/1 var(--head); }
+.steps b { display: block; }
+@media (max-width: 860px) { .route { grid-template-columns: 1fr 1fr; } .route .steps { grid-column: 1 / -1; order: -1; } .route .story, .route .door { min-height: 300px; } }
 footer { text-align: center; padding: 26px var(--gut) 40px; color: var(--mut); font-size: 14px; }
+footer a { color: var(--mut); }
+
+/* lightbox */
+.lb { position: fixed; inset: 0; z-index: 90; display: grid; place-items: center; background: rgba(10,14,9,.88); opacity: 0; pointer-events: none; transition: opacity .3s; }
+.lb.on { opacity: 1; pointer-events: auto; }
+.lb .frame { position: relative; height: min(88vh, 860px); max-width: 94vw; aspect-ratio: 9/16; border-radius: 22px; overflow: hidden; background: #000; transform: scale(.94); transition: transform .4s var(--ease); }
+.lb.on .frame { transform: none; }
+.lb.img .frame { aspect-ratio: auto; height: auto; max-height: 88vh; }
+.lb video, .lb img { width: 100%; height: 100%; object-fit: contain; }
+.lb.img img { max-height: 88vh; width: auto; }
+.lb .x, .lb .nav { position: absolute; z-index: 2; border: 0; width: 46px; height: 46px; border-radius: 50%; background: #fff; cursor: pointer; font: 700 22px/1 var(--body); color: var(--ink); }
+.lb .x { top: 18px; right: 18px; }
+.lb .nav { top: 50%; transform: translateY(-50%); }
+.lb .prev { left: 18px; } .lb .next { right: 18px; }
+.lb .cap { position: absolute; left: 0; right: 0; bottom: 18px; text-align: center; color: #fff; font: 700 15px/1.3 var(--head); pointer-events: none; }
+@media (max-width: 760px) { .lb .nav { top: auto; bottom: 18px; transform: none; } .lb .cap { bottom: 78px; } }
 
 .motion [data-in] { opacity: 0; transform: translateY(24px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
 .motion [data-in].in { opacity: 1; transform: none; }
 .noimg { background: linear-gradient(135deg, var(--acc-2), #fff); }
 .noimg img { opacity: 0; }
-
-.location{display:block;color:var(--acc-3);font-weight:700;font-size:14px;text-decoration:none;margin:0 0 24px}.location span{font-weight:400;color:var(--mut)}
-.hero{height:auto}.walk{position:relative;min-height:720px;height:auto;padding-top:130px;padding-bottom:80px}.hph{transform:none}.htx h1{font-size:clamp(38px,5.5vw,76px)}
-.course-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.course{border-top:1px solid var(--line);padding-top:24px}.course-head{display:flex;align-items:center;justify-content:space-between;height:95px}.course-head img{width:100px;height:95px;object-fit:contain}.course-no{font:700 36px var(--head);color:var(--acc)}h3{font:700 26px/1.3 var(--head);margin:20px 0 10px}.course>p{min-height:56px;color:var(--mut);font-size:16px}.course-link{display:inline-block;margin-top:10px;color:var(--acc-3);font-weight:700;text-underline-offset:5px}
-.media{margin:0}.media video{display:block;width:100%;height:350px;object-fit:contain;background:#17201a;border-radius:20px}.media figcaption,figure figcaption{padding:12px 0;color:var(--mut);font-size:14px}.media-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:28px 0}.media-grid video{height:340px}.work-pair{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:760px}.work-pair figure,.student-pics figure,.route figure{margin:0}.work-pair img{width:100%;height:320px;object-fit:cover;border-radius:22px}.student-pics{display:grid;grid-template-columns:1fr 1fr;gap:24px}.student-pics img{width:100%;height:480px;object-fit:contain;background:var(--acc-2);border-radius:22px}.review-originals{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:24px 0}.review-originals img{height:460px;width:100%;object-fit:contain;background:#fff;border-radius:20px}.professional{color:var(--acc-3);font-weight:700}.route{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}.route img{border-radius:22px;max-height:540px;object-fit:contain}.route>div>img{max-height:350px}.btn:hover{filter:brightness(.92)}a:focus-visible,button:focus-visible,video:focus-visible{outline:3px solid var(--acc-3);outline-offset:5px}
-@media(max-width:860px){.walk{grid-template-columns:1fr;min-height:0;padding-top:90px;gap:24px}.hph{width:230px;aspect-ratio:1;height:230px;order:-1}.htx h1{font-size:clamp(36px,9vw,60px)}.media-grid{grid-template-columns:1fr 1fr}.course>p{min-height:0}.call{display:none}}
-@media(max-width:560px){.course-grid,.route{grid-template-columns:1fr}.sec{padding-top:64px;padding-bottom:40px}.media-grid{gap:10px}.media-grid video{height:260px}.work-pair{gap:10px}.work-pair img{height:220px}.student-pics img{height:280px}.review-originals{grid-template-columns:1fr}.student-pics{gap:12px}.mode{max-width:calc(100vw - 24px)}.location{font-size:13px}.walk{padding-bottom:40px}.htx h1{margin-top:14px}.htx p{font-size:16px}.btn{padding:15px 18px}.route img{max-height:430px}}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
-
-/* Open media composition: keep the original brand, let imagery meet the page. */
-h1,h2,h3{text-wrap:balance}.lead{text-wrap:pretty}
-.course-grid{gap:64px 56px;margin-top:44px}.course{border:0;padding:0}.course-head{border-bottom:1px solid var(--line);padding-bottom:18px;height:112px}.course-head img{mix-blend-mode:multiply;width:98px;height:92px}.course-no{font-size:30px;font-weight:500;opacity:.65}.course h3{margin-top:26px}.course>p{max-width:440px;min-height:80px}.course-link{font-size:14px;margin-top:18px;text-decoration-thickness:1px;transition:color .2s,transform .2s}.course-link:hover{transform:translateX(4px)}
-.media,.work-pair figure,.student-pics figure,.route figure{background:none;border:0;box-shadow:none;border-radius:0;overflow:visible}
-.media video,.media-grid video{display:block;width:100%;height:auto;max-height:none;object-fit:contain;background:transparent;border:0;border-radius:0;box-shadow:none}
-.course .media{max-width:310px}.media-grid{gap:32px;align-items:start;margin:44px 0}.media figcaption,figure figcaption{padding:16px 0 0;font-size:13px;line-height:1.5;letter-spacing:.015em}.media-grid .media:nth-child(even){margin-top:42px}
-.work-pair{max-width:850px;gap:36px;margin-top:38px}.work-pair img{height:auto;width:100%;border-radius:0;object-fit:contain}
-.student-pics{gap:80px;align-items:start;margin:40px 0 64px}.student-pics figure{max-width:390px}.student-pics figure:nth-child(2){margin-top:64px}.student-pics img{height:auto;width:100%;object-fit:contain;background:transparent;border-radius:0}
-.review-originals{gap:54px;align-items:start;max-width:850px;margin:36px 0 48px}.review-originals img{height:auto;width:100%;background:none;border-radius:0;mix-blend-mode:multiply}
-.route{gap:68px}.route img,.route>div>img{max-height:none;height:auto;max-width:100%;border-radius:0}.route>div>img{width:230px;margin-top:30px;mix-blend-mode:multiply}.route figure{max-width:380px}
-.work-pair img,.student-pics img,.route figure img{-webkit-mask-image:linear-gradient(to right,transparent,#000 4%,#000 96%,transparent),linear-gradient(to bottom,transparent,#000 3%,#000 97%,transparent);mask-image:linear-gradient(to right,transparent,#000 4%,#000 96%,transparent),linear-gradient(to bottom,transparent,#000 3%,#000 97%,transparent);-webkit-mask-composite:source-in;mask-composite:intersect}
-.pics figure{border-radius:0;background:none;overflow:visible}.pics img{border-radius:0;-webkit-mask-image:linear-gradient(to bottom,transparent,#000 4%,#000 94%,transparent);mask-image:linear-gradient(to bottom,transparent,#000 4%,#000 94%,transparent)}
-#route-video .media{max-width:310px}#results>.btn{margin-top:18px}.btn{transition:transform .2s,background .3s}.btn:active{transform:translateY(1px)}
-@media(max-width:860px){.course-grid{gap:48px 28px}.media-grid{gap:24px}.student-pics{gap:28px}.course>p{min-height:105px}}
-@media(max-width:560px){.course-grid{gap:58px;margin-top:28px}.course>p{min-height:0;margin-bottom:24px}.course .media{max-width:100%;width:82%}.course-head{height:100px}.media-grid{gap:20px 14px;margin-top:30px}.media-grid video{height:auto}.media-grid .media:nth-child(even){margin-top:24px}.work-pair{gap:16px}.work-pair img{height:auto}.student-pics{gap:20px;margin-bottom:40px}.student-pics img{height:auto}.student-pics figure:nth-child(2){margin-top:36px}.review-originals{grid-template-columns:1fr 1fr;gap:16px}.route{gap:32px}.route img{max-height:none}.route figure{width:85%}#route-video .media{width:82%;max-width:310px}.sec{padding-top:72px;padding-bottom:48px}}
 </style>
 </head>
 <body data-hours='{"0":[[8,0,20,0]],"1":[[8,0,20,0]],"2":[[8,0,20,0]],"3":[[8,0,20,0]],"4":[[8,0,20,0]],"5":[[8,0,20,0]],"6":[[8,0,20,0]]}'>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
   <symbol id="foot" viewBox="0 0 40 90"><path d="M20 30 C 30 30, 34 44, 32 60 C 30 78, 24 88, 18 88 C 10 88, 6 78, 8 62 C 10 46, 10 30, 20 30Z"/><circle cx="10" cy="20" r="5.5"/><circle cx="19" cy="14" r="5"/><circle cx="27" cy="13" r="4.4"/><circle cx="33" cy="17" r="3.8"/><circle cx="37" cy="23" r="3.2"/></symbol>
+  <symbol id="pin" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></symbol>
 </defs></svg>
 
 <div class="mode" role="tablist" aria-label="Для кого сайт">
   <span class="pill"></span>
-  <button class="on" data-mode="client" role="tab" aria-selected="true">Для клиентов</button>
-  <button data-mode="student" role="tab" aria-selected="false">Для мастеров</button>
+  <button class="on" data-mode="client" role="tab" data-e="mode.client" data-label="Кнопка режима: клиенты">Для клиентов</button>
+  <button data-mode="student" role="tab" data-e="mode.student" data-label="Кнопка режима: мастера">Для мастеров</button>
 </div>
-<a class="call" href="tel:+79877407755">+7 987 740-77-55</a>
+<a class="call" href="tel:+79877407755" data-l="phone" data-e="contact.phone" data-label="Телефон">+7 987 740-77-55</a>
+<div class="dock" id="dock">
+  <a class="btn" href="https://nn.moiprofi.ru/olgaobidina/" target="_blank" rel="noopener" data-l="booking" data-m="client">Записаться</a>
+  <a class="btn" href="#courses" data-m="student">Курсы</a>
+  <a class="btn o" href="tel:+79877407755" data-l="phone">Позвонить</a>
+</div>
 
 <main>
 <section class="hero" id="top">
@@ -164,99 +248,234 @@ h1,h2,h3{text-wrap:balance}.lead{text-wrap:pretty}
       <span class="logo"><svg viewBox="0 0 40 90"><use href="#foot"/></svg>Подолог Обидина Ольга</span>
       <h1 data-m="client">Ножкам станет <em>легче</em></h1>
       <h1 data-m="student">Научу работать <em>со сложной стопой</em></h1>
-      <p data-m="client">«Работаю со всеми видами сложных стоп и ногтей»: вросший ноготь, мозоли и натоптыши, трещины, медицинский педикюр. Проспект Ленина, 60, каждый день с 8 до 20.</p>
-      <p data-m="student">От первых шагов в педикюре до работы со сложной стопой. Четыре направления, практика на моделях и поддержка после обучения.</p>
-      <a class="location" href="#visit">2 минуты от метро · первый этаж · вход с улицы<br><span>Нижний Новгород, проспект Ленина, 60 ↗</span></a><div class="row">
-        <a class="btn" href="https://nn.moiprofi.ru/olgaobidina/" target="_blank" rel="noopener" data-m="client">Записаться онлайн ↗</a><a class="btn o" href="tel:+79877407755" data-m="client">Позвонить</a>
-        <a class="btn" href="tel:+79877407755" data-m="student">Узнать про курс</a>
-        
-        <a class="btn o" href="#main" data-m="student">Как проходит обучение</a>
+      <p data-m="client" data-e="hero.client.text" data-label="Первый экран: текст для клиентов">Работаю со всеми видами сложных стоп и ногтей: вросший ноготь, мозоли и натоптыши, трещины, медицинский и SMART-педикюр.</p>
+      <p data-m="student" data-e="hero.student.text" data-label="Первый экран: текст для мастеров">Четыре курса от педикюра с нуля до подологии. Много моделей с разными стопами, практика руками и поддержка после обучения.</p>
+      <a class="where" href="#visit">
+        <span class="pin"><svg><use href="#pin"/></svg></span>
+        <span><b data-e="hero.place" data-label="Первый экран: адрес">Ленина, 60 · 2 минуты от метро</b><span data-e="hero.place2" data-label="Первый экран: как найти">первый этаж, вход с улицы · ежедневно 8:00–20:00</span></span>
+      </a>
+      <div class="row">
+        <a class="btn" href="https://nn.moiprofi.ru/olgaobidina/" target="_blank" rel="noopener" data-l="booking" data-m="client">Записаться онлайн</a>
+        <a class="btn o" href="tel:+79877407755" data-l="phone" data-m="client">Позвонить</a>
+        <a class="btn" href="#courses" data-m="student">Выбрать курс</a>
+        <a class="btn o" href="https://vk.com/id300059746" target="_blank" rel="noopener" data-l="vk" data-m="student">Написать во ВКонтакте</a>
       </div>
     </div>
-    <div class="hph" data-ph><img src="obidina-assets/photo-16.jpg" alt="Ольга Обидина с анатомической моделью стопы" fetchpriority="high" width="900" height="1600"></div>
+    <div class="hwrap"><div class="hph" data-ph><img src="obidina-media/olga.jpg" alt="Подолог Ольга Обидина" fetchpriority="high" data-i="hero.photo"></div><span class="tag">★ 5,0 · 37 оценок на Яндекс Картах</span></div>
   </div>
 </section>
 
-<section class="sec" data-m="student" id="courses"><span class="kick">Выберите своё направление</span><h2>От первого шага <em>к мастерству</em></h2><p class="lead">Начните с основ или дополните свою практику новой техникой. Программу, ближайшие даты и стоимость обсудим лично.</p><div class="course-grid"><article class="course"><div class="course-head"><span class="course-no">01</span></div><h3>Педикюр с нуля</h3><p>Первые шаги в профессии: эстетика педикюра, работа с пальчиками и ногтями.</p><figure class="media"><video controls playsinline preload="none" poster="obidina-assets/poster-4.jpg" aria-label="Педикюр с нуля — знакомство с обучением" width="720" height="1280"><source src="obidina-assets/video-4.mp4" type="video/mp4"></video><figcaption>Педикюр с нуля — знакомство с обучением</figcaption></figure><a class="course-link" href="tel:+79877407755">Обсудить обучение ↗</a></article><article class="course"><div class="course-head"><span class="course-no">02</span><img src="obidina-assets/photo-8.jpg" alt="Фруктовый педикюр" loading="lazy" width="1280" height="1280"></div><h3>Фруктовый педикюр</h3><p>Знакомство с техникой фруктового педикюра и её применением в работе.</p><figure class="media"><video controls playsinline preload="none" poster="obidina-assets/poster-9.jpg" aria-label="Фруктовый педикюр — знакомство с обучением" width="716" height="1280"><source src="obidina-assets/video-9.mp4" type="video/mp4"></video><figcaption>Фруктовый педикюр — знакомство с обучением</figcaption></figure><a class="course-link" href="tel:+79877407755">Обсудить обучение ↗</a></article><article class="course"><div class="course-head"><span class="course-no">03</span><img src="obidina-assets/photo-10.jpg" alt="SMART 2.0" loading="lazy" width="900" height="1600"></div><h3>SMART 2.0</h3><p>Работа со стопой и пятками. Обучение у официального инструктора SMART.</p><figure class="media"><video controls playsinline preload="none" poster="obidina-assets/poster-16.jpg" aria-label="SMART 2.0 — знакомство с обучением" width="720" height="1280"><source src="obidina-assets/video-16.mp4" type="video/mp4"></video><figcaption>SMART 2.0 — знакомство с обучением</figcaption></figure><a class="course-link" href="tel:+79877407755">Обсудить обучение ↗</a></article><article class="course"><div class="course-head"><span class="course-no">04</span><img src="obidina-assets/photo-11.jpg" alt="Подология" loading="lazy" width="1254" height="1254"></div><h3>Подология</h3><p>Работа со сложной стопой: теория и отработка на моделях.</p><figure class="media"><video controls playsinline preload="none" poster="obidina-assets/poster-7.jpg" aria-label="Подология — знакомство с обучением" width="720" height="1280"><source src="obidina-assets/video-7.mp4" type="video/mp4"></video><figcaption>Подология — знакомство с обучением</figcaption></figure><a class="course-link" href="tel:+79877407755">Обсудить обучение ↗</a></article></div></section><section class="sec" id="main">
-  <div data-m="client">
-    <span class="kick" data-in>С чем приходят</span>
-    <h2 data-in>Проблема <em>и решение</em></h2>
-    <p class="lead" data-in>Цены с Яндекс Карт. Если не знаете, что вам нужно, начните с консультации.</p>
-    <div class="probs">
-      <div class="pb" data-in><span class="ic">🩹</span><b>Вросший ноготь</b><p>«Очень боялась, что будет больно. А всё было сделано быстро и без боли».</p><span class="pr">2 000 ₽</span></div>
-      <div class="pb" data-in><span class="ic">🔎</span><b>Консультация подолога</b><p>Стержневая мозоль, бородавки, натоптыши: разберёмся, что это и что делать.</p><span class="pr">1 000 ₽</span></div>
-      <div class="pb" data-in><span class="ic">🦶</span><b>Педикюр с особенностями</b><p>Медицинский педикюр, если есть грибок или трещины.</p><span class="pr">4 000 ₽</span></div>
-      <div class="pb" data-in><span class="ic">〰</span><b>Титановая нить</b><p>Коррекционная система для ногтя.</p><span class="pr">3 500 ₽</span></div>
-      <div class="pb" data-in><span class="ic">✨</span><b>Смарт-педикюр 2.0</b><p>Стопы и пальчики с покрытием. Без особенностей: 3 000 ₽, пальцы без покрытия: 2 500 ₽.</p><span class="pr">3 500 ₽</span></div>
-      <div class="pb" data-in><span class="ic">🚗</span><b>Выезд подолога</b><p>Если вам трудно добраться до кабинета.</p><span class="pr">7 000 ₽</span></div>
-    </div>
-    <div class="note" data-in>Есть и маникюр «всё включено» за 2 300 ₽. Если у вас сахарный диабет или острое воспаление, скажите об этом при записи.</div>
+<div class="trust" data-in>
+  <div><b data-count="5.0">5,0</b><span>37 оценок на Яндекс Картах</span></div>
+  <div><b>2 мин</b><span>от метро, первый этаж, вход с улицы</span></div>
+  <div><b>Медкнижка</b><span>действующая, стерильный инструмент</span></div>
+  <div><b>SMART</b><span>официальный инструктор SMART master</span></div>
+  <div><b>Школа</b><span>подологии и ногтевой эстетики, обучение мастеров</span></div>
+</div>
+
+<!-- ============ CLIENTS ============ -->
+<section class="sec" id="main" data-m="client" data-block="Для клиентов: цены">
+  <span class="kick" data-in>С чем приходят</span>
+  <h2 data-in>Проблема <em>и решение</em></h2>
+  <p class="lead" data-in data-e="prices.lead" data-label="Подзаголовок цен">Если не знаете, что вам нужно, начните с консультации: посмотрю стопу и скажу, что делать.</p>
+  <div class="probs">
+    <div class="pb" data-in><span class="ic">🩹</span><b data-e="p1.t" data-label="Услуга 1">Вросший ноготь</b><p data-e="p1.d" data-label="Услуга 1: описание">«Очень боялась, что будет больно. А всё было сделано быстро и без боли».</p><span class="pr" data-e="p1.p" data-label="Услуга 1: цена">2 000 ₽</span></div>
+    <div class="pb" data-in><span class="ic">🔎</span><b data-e="p2.t" data-label="Услуга 2">Консультация подолога</b><p data-e="p2.d" data-label="Услуга 2: описание">Стержневая мозоль, бородавки, натоптыши: разберёмся, что это и что делать.</p><span class="pr" data-e="p2.p" data-label="Услуга 2: цена">1 000 ₽</span></div>
+    <div class="pb" data-in><span class="ic">🦶</span><b data-e="p3.t" data-label="Услуга 3">Педикюр с особенностями</b><p data-e="p3.d" data-label="Услуга 3: описание">Медицинский педикюр, если есть грибок или трещины.</p><span class="pr" data-e="p3.p" data-label="Услуга 3: цена">4 000 ₽</span></div>
+    <div class="pb" data-in><span class="ic">〰</span><b data-e="p4.t" data-label="Услуга 4">Титановая нить</b><p data-e="p4.d" data-label="Услуга 4: описание">Коррекционная система для ногтя, который врастает.</p><span class="pr" data-e="p4.p" data-label="Услуга 4: цена">3 500 ₽</span></div>
+    <div class="pb" data-in><span class="ic">✨</span><b data-e="p5.t" data-label="Услуга 5">SMART-педикюр 2.0</b><p data-e="p5.d" data-label="Услуга 5: описание">Стопы и пальчики с покрытием. Без особенностей: 3 000 ₽, пальцы без покрытия: 2 500 ₽.</p><span class="pr" data-e="p5.p" data-label="Услуга 5: цена">3 500 ₽</span></div>
+    <div class="pb" data-in><span class="ic">🚗</span><b data-e="p6.t" data-label="Услуга 6">Выезд подолога</b><p data-e="p6.d" data-label="Услуга 6: описание">Если вам трудно добраться до кабинета.</p><span class="pr" data-e="p6.p" data-label="Услуга 6: цена">7 000 ₽</span></div>
   </div>
-  <div data-m="student">
-    <span class="kick" data-in>Обучение</span>
-    <h2 data-in>Как проходит <em>курс</em></h2>
-    <p class="lead" data-in>По отзывам учениц. Даты, программу и стоимость Ольга расскажет по телефону.</p>
-    <div class="path">
-      <div class="st" data-in><b>Теория без воды</b><p>«Всё очень грамотно разжёвано, по-другому не сказать».</p></div>
-      <div class="st" data-in><b>Много моделей</b><p>«Самое большое количество моделей для отработки. Такое у меня в первый раз за обучение». На одном курсе показывали на 12 моделях.</p></div>
-      <div class="st" data-in><b>Сразу ставит руку</b><p>«Сразу ставит руку!» Учит не только обработке проблемных ног, но и тонкостям работы.</p></div>
-      <div class="st" data-in><b>Поддержка после</b><p>«Всегда на связи, если вопросы. Поддержка от Ольги в дальнейшем гарантирована».</p></div>
-    </div>
-    
-  </div>
+  <div class="note" data-in data-e="prices.note" data-label="Примечание к ценам">Есть и маникюр «всё включено» за 2 300 ₽. Если у вас сахарный диабет или острое воспаление, скажите об этом при записи.</div>
+  <div class="row" style="margin-top:22px" data-in><a class="btn" href="https://nn.moiprofi.ru/olgaobidina/" target="_blank" rel="noopener" data-l="booking">Выбрать время онлайн</a><a class="btn o" href="tel:+79877407755" data-l="phone">Позвонить</a></div>
 </section>
 
-<section class="sec" data-m="client" id="results"><span class="kick">Примеры работ</span><h2>Забота, которую <em>видно</em></h2><p class="lead">Фотографии и видео из практики Ольги. Результат зависит от исходного состояния и подбирается индивидуально.</p><div class="work-pair"><figure><img src="obidina-assets/photo-3.jpg" alt="Ноготь до процедуры" loading="lazy" width="960" height="1280"><figcaption>До процедуры</figcaption></figure><figure><img src="obidina-assets/photo-15.jpg" alt="Ноготь после процедуры" loading="lazy" width="960" height="1280"><figcaption>После процедуры</figcaption></figure></div><div class="media-grid"><figure class="media"><video controls playsinline preload="none" poster="obidina-assets/poster-12.jpg" aria-label="SMART 2.0 — уход за стопой" width="716" height="1280"><source src="obidina-assets/video-12.mp4" type="video/mp4"></video><figcaption>SMART 2.0 — уход за стопой</figcaption></figure><figure class="media"><video controls playsinline preload="none" poster="obidina-assets/poster-8.jpg" aria-label="Подология — работа с ногтями" width="716" height="1280"><source src="obidina-assets/video-8.mp4" type="video/mp4"></video><figcaption>Подология — работа с ногтями</figcaption></figure><figure class="media"><video controls playsinline preload="none" poster="obidina-assets/poster-13.jpg" aria-label="Стопа до обработки" width="720" height="1280"><source src="obidina-assets/video-13.mp4" type="video/mp4"></video><figcaption>Стопа до обработки</figcaption></figure><figure class="media"><video controls playsinline preload="none" poster="obidina-assets/poster-14.jpg" aria-label="Стопа после обработки" width="720" height="1280"><source src="obidina-assets/video-14.mp4" type="video/mp4"></video><figcaption>Стопа после обработки</figcaption></figure></div><a class="btn" href="https://nn.moiprofi.ru/olgaobidina/" target="_blank" rel="noopener">Выбрать время приёма ↗</a></section><section class="sec" id="olga">
-  <div class="olga">
-    <div class="pics">
-      <figure data-ph data-in><img src="obidina-assets/photo-16.jpg" alt="Ольга Обидина" loading="lazy" width="900" height="1600"></figure>
-      <figure data-ph data-in><img src="obidina-assets/photo-0.jpg" alt="Ольга и её кабинет" loading="lazy" width="1600" height="1600"></figure>
+<section class="sec" id="works" data-m="client" data-block="Для клиентов: работы">
+  <div class="works">
+    <div>
+      <span class="kick" data-in>Работы</span>
+      <h2 data-in>Ножки <em>после приёма</em></h2>
+      <p class="lead" data-in data-e="works.lead" data-label="Работы: подзаголовок">Фото и видео из кабинета. Нажмите, чтобы посмотреть ближе.</p>
+      <div class="wall" data-gallery="nails" data-in>
+        <button data-full="obidina-media/nail-1.jpg"><img src="obidina-media/nail-1.jpg" alt="Работа подолога" loading="lazy"></button>
+        <button data-full="obidina-media/nail-4.jpg"><img src="obidina-media/nail-4.jpg" alt="Работа подолога" loading="lazy"></button>
+        <button data-full="obidina-media/nail-2.jpg"><img src="obidina-media/nail-2.jpg" alt="Работа подолога" loading="lazy"></button>
+        <button data-full="obidina-media/nail-3.jpg"><img src="obidina-media/nail-3.jpg" alt="Работа подолога" loading="lazy"></button>
+        <button data-full="obidina-media/nail-5.jpg"><img src="obidina-media/nail-5.jpg" alt="Работа подолога" loading="lazy"></button>
+        <button data-full="obidina-media/nail-6.jpg"><img src="obidina-media/nail-6.jpg" alt="Работа подолога" loading="lazy"></button>
+      </div>
     </div>
     <div>
-      <span class="kick" data-in>Кабинет и мастер</span>
-      <h2 data-in>Ольга <em>Обидина</em></h2>
-      <p class="professional" data-in>Подолог · действующая медицинская книжка<br>Официальный инструктор SMART</p><p class="quote" data-in>«Для меня чистота и идеальный порядок: основа качественного педикюра и залог вашего комфорта».</p>
-      <p data-m="client" style="color:var(--mut)" data-in>Кабинет в студии красоты на проспекте Ленина, 60. Есть парковка и Wi-Fi. Клиенты пишут, что на приёме «максимально расслабляются», а ножки после него «отдыхают».</p>
-      <p data-m="student" style="color:var(--mut)" data-in>Одна из учениц пришла к Ольге клиенткой, а ушла с новой профессией: «Она навела меня на мысль сменить род деятельности, не жалею ни капли».</p>
+      <div class="ba" data-in>
+        <button class="story" data-v="heel-before" data-cap="Пятки до обработки"><span class="sc">До</span></button>
+        <button class="story" data-v="heel-after" data-cap="Пятки после обработки"><span class="sc">После</span></button>
+      </div>
+      <div class="reel" style="margin-top:12px" data-in>
+        <button class="story" data-v="prosthesis" data-cap="Протезирование ногтя"><span class="sc">Протезирование ногтя</span></button>
+        <button class="story" data-v="smart-2" data-cap="SMART 2.0: уход за стопой"><span class="sc">SMART 2.0</span></button>
+        <button class="story" data-v="olga-skeleton" data-cap="Красивые ногти начинаются не с покрытия"><span class="sc">С чего начинаются красивые ногти</span></button>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="sec" data-m="student" id="students"><span class="kick">Практика и результаты</span><h2>Учимся <em>руками</em></h2><p class="lead">Реальные занятия, ученицы и их впечатления об обучении.</p><div class="student-pics"><figure><img src="obidina-assets/photo-7.jpg" alt="Ученица курса педикюра с Ольгой и сертификатом" loading="lazy" width="1205" height="1600"><figcaption>Педикюр с нуля</figcaption></figure><figure><img src="obidina-assets/photo-2.jpg" alt="Ученица подологии с сертификатом" loading="lazy" width="900" height="1600"><figcaption>Введение в подологию</figcaption></figure></div><div class="media-grid"><figure class="media"><video controls playsinline preload="none" poster="obidina-assets/poster-0.jpg" aria-label="Педикюр с нуля: работа на модели" width="720" height="966"><source src="obidina-assets/video-0.mp4" type="video/mp4"></video><figcaption>Педикюр с нуля: работа на модели</figcaption></figure><figure class="media"><video controls playsinline preload="none" poster="obidina-assets/poster-3.jpg" aria-label="Ученица SMART 2.0" width="716" height="1280"><source src="obidina-assets/video-3.mp4" type="video/mp4"></video><figcaption>Ученица SMART 2.0</figcaption></figure><figure class="media"><video controls playsinline preload="none" poster="obidina-assets/poster-10.jpg" aria-label="Подология: практика с преподавателем" width="720" height="1280"><source src="obidina-assets/video-10.mp4" type="video/mp4"></video><figcaption>Подология: практика с преподавателем</figcaption></figure><figure class="media"><video controls playsinline preload="none" poster="obidina-assets/poster-5.jpg" aria-label="Впечатления об обучении" width="720" height="956"><source src="obidina-assets/video-5.mp4" type="video/mp4"></video><figcaption>Впечатления об обучении</figcaption></figure></div></section><section class="sec" id="voices">
-  <span class="kick" data-in>Отзывы</span>
-  <h2 data-in>Слова <em>благодарности</em></h2>
-  <div class="revs" data-m="client">
-    <div class="rv" data-in><p>«Ножки мои после неё отдыхают, пяточки нежнейшие, и эффект сохраняется очень долго. На приёме я максимально расслабляюсь».</p><small>Яндекс Карты</small></div>
-    <div class="rv" data-in><p>«Обратилась с проблемой вросшего ногтя. Оля встретила с улыбкой, успокоила, и за разговором всё было сделано быстро и без боли».</p><small>Яндекс Карты</small></div>
-    <div class="rv" data-in><p>«Пептидный педикюр преобразил мои ножки, мастер посоветовала домашний уход за ногами».</p><small>Яндекс Карты</small></div>
-    <div class="rv" data-in><p>«Уже много лет прихожу к ней на маникюр и педикюр. Всегда приветлива и доброжелательна».</p><small>Яндекс Карты</small></div>
+<!-- ============ MASTERS ============ -->
+<section class="sec" id="courses" data-m="student" data-block="Для мастеров: курсы">
+  <span class="kick" data-in>Обучение</span>
+  <h2 data-in>Четыре курса: <em>от первого педикюра до подологии</em></h2>
+  <p class="lead" data-in data-e="courses.lead" data-label="Курсы: подзаголовок">Можно пройти всё по порядку или выбрать свой маршрут. Даты, программу и стоимость расскажу лично.</p>
+  <div class="track">
+    <article class="course" data-in>
+      <div class="lg"><svg viewBox="0 0 40 90"><use href="#foot"/></svg></div>
+      <div>
+        <h3 data-e="c1.t" data-label="Курс 1: название">Педикюр с нуля</h3>
+        <p class="sub" data-e="c1.s" data-label="Курс 1: подзаголовок">«Эстетика в педикюре»: работа с пальчиками и ногтями</p>
+        <ul><li data-e="c1.l1" data-label="Курс 1: пункт 1">Для тех, кто только начинает</li><li data-e="c1.l2" data-label="Курс 1: пункт 2">Красивый результат от кончиков пальцев до пяток</li><li data-e="c1.l3" data-label="Курс 1: пункт 3">Практика на моделях, сертификат</li></ul>
+        <a class="btn o" href="https://vk.com/id300059746" target="_blank" rel="noopener" data-l="vk">Узнать даты</a>
+      </div>
+      <div class="reel">
+        <button class="story" data-v="aesthetics-1" data-cap="Курс «Эстетика в педикюре»"><span class="sc">О курсе</span></button>
+        <button class="story" data-v="aesthetics-2" data-cap="Эстетика в педикюре"><span class="sc">Как проходит</span></button>
+      </div>
+    </article>
+    <article class="course" data-in>
+      <div class="lg"><img src="obidina-media/logo-fruit.jpg" alt="Fruit Pedicure" loading="lazy"></div>
+      <div>
+        <h3 data-e="c2.t" data-label="Курс 2: название">Фруктовый педикюр</h3>
+        <p class="sub" data-e="c2.s" data-label="Курс 2: подзаголовок">Fruit Pedicure: мягкий уход за стопой</p>
+        <ul><li data-e="c2.l1" data-label="Курс 2: пункт 1">Фруктовые кислоты вместо агрессивной обработки</li><li data-e="c2.l2" data-label="Курс 2: пункт 2">Новая услуга, которую любят клиенты</li><li data-e="c2.l3" data-label="Курс 2: пункт 3">Подходит мастерам с опытом и без</li></ul>
+        <a class="btn o" href="https://vk.com/id300059746" target="_blank" rel="noopener" data-l="vk">Узнать даты</a>
+      </div>
+      <div class="reel">
+        <button class="story" data-v="fruit" data-cap="Фруктовый педикюр"><span class="sc">Фруктовый педикюр</span></button>
+      </div>
+    </article>
+    <article class="course" data-in>
+      <div class="lg"><img src="obidina-media/logo-smart.jpg" alt="SMART master" loading="lazy"></div>
+      <div>
+        <h3 data-e="c3.t" data-label="Курс 3: название">SMART 2.0</h3>
+        <p class="sub" data-e="c3.s" data-label="Курс 3: подзаголовок">Работа со стопой и пятками. Ольга — официальный инструктор SMART</p>
+        <ul><li data-e="c3.l1" data-label="Курс 3: пункт 1">Аппаратная обработка стопы по системе SMART</li><li data-e="c3.l2" data-label="Курс 3: пункт 2">После курса: лицензия мастера SMART и запись в реестр</li><li data-e="c3.l3" data-label="Курс 3: пункт 3">Дружеская обстановка, всё доступно и понятно</li></ul>
+        <a class="btn o" href="https://vk.com/id300059746" target="_blank" rel="noopener" data-l="vk">Узнать даты</a>
+      </div>
+      <div class="reel">
+        <button class="story" data-v="smart-1" data-cap="Курс SMART 2.0"><span class="sc">История ученицы</span></button>
+        <button class="story" data-v="smart-2" data-cap="SMART 2.0"><span class="sc">SMART 2.0</span></button>
+      </div>
+    </article>
+    <article class="course" data-in>
+      <div class="lg"><img src="obidina-media/logo-school.jpg" alt="Школа подологии и ногтевой эстетики" loading="lazy"></div>
+      <div>
+        <h3 data-e="c4.t" data-label="Курс 4: название">Подология</h3>
+        <p class="sub" data-e="c4.s" data-label="Курс 4: подзаголовок">Школа подологии и ногтевой эстетики</p>
+        <ul><li data-e="c4.l1" data-label="Курс 4: пункт 1">Вросший ноготь, мозоли, сложные стопы</li><li data-e="c4.l2" data-label="Курс 4: пункт 2">Отработка на 12 моделях с разными проблемами</li><li data-e="c4.l3" data-label="Курс 4: пункт 3">Есть короткий курс «Введение в подологию»</li></ul>
+        <a class="btn o" href="https://vk.com/id300059746" target="_blank" rel="noopener" data-l="vk">Узнать даты</a>
+      </div>
+      <div class="reel">
+        <button class="story" data-v="podology-course" data-cap="Курс «Подология»"><span class="sc">Курс «Подология»</span></button>
+        <button class="story" data-v="podology-practice" data-cap="Дни интенсивной практики"><span class="sc">Практика</span></button>
+        <button class="story" data-v="models" data-cap="Показываю на моделях"><span class="sc">На моделях</span></button>
+      </div>
+    </article>
   </div>
-  <div class="review-originals" data-m="student"><a href="obidina-assets/photo-5.jpg" target="_blank" rel="noopener"><img src="obidina-assets/photo-5.jpg" alt="Отзыв Анастасии Савкиной о курсе Подология" loading="lazy" width="900" height="1600"></a><a href="obidina-assets/photo-14.jpg" target="_blank" rel="noopener"><img src="obidina-assets/photo-14.jpg" alt="Отзыв Надежды Быстряковой об обучении" loading="lazy" width="900" height="1600"></a></div><div class="revs" data-m="student">
-    <div class="rv" data-in><p>«Обучалась у Ольги смарт 2.0. Приятная дружеская обстановка, всё доступно и понятно. Получила лицензию мастера смарт и занесена в реестр».</p><small>Яндекс Карты</small></div>
-    <div class="rv" data-in><p>«Проходила курс „Подология“. Ольга с лёгкостью рассказала и показала на примере 12 моделей».</p><small>Яндекс Карты</small></div>
-    <div class="rv" data-in><p>«Материал дан доступно, очень много моделей с различными видами стоп. Поддержка от Ольги в дальнейшем гарантирована».</p><small>Яндекс Карты</small></div>
-    <div class="rv" data-in><p>«Очень понятно всё объясняет, до мелочей, которые очень важны в работе. Подбирает моделей с разными проблемами».</p><small>Яндекс Карты</small></div>
+  <div class="advice" data-in>
+    <span class="q">“</span>
+    <p><span data-e="advice" data-label="Совет Ольги о порядке курсов">Я всегда рекомендую такой путь: сначала «Эстетика в педикюре», затем SMART 2.0. Так обучение складывается в цельную систему. Главное — желание постоянно становиться сильнее как мастер.</span><small>Ольга Обидина</small></p>
   </div>
 </section>
 
-<section class="sec" id="visit">
+<section class="sec" id="students" data-m="student" data-block="Для мастеров: ученицы">
+  <span class="kick" data-in>Ученицы</span>
+  <h2 data-in>Возвращаются <em>снова</em></h2>
+  <p class="lead" data-in data-e="students.lead" data-label="Ученицы: подзаголовок">Для меня обучение — это не просто рассказать материал и выдать сертификат. Лучший показатель: когда ученицы возвращаются.</p>
+  <div class="studs" data-in>
+    <figure data-ph><img src="obidina-media/student-nadezhda.jpg" alt="Ученица с сертификатом курса «Введение в подологию»" loading="lazy"><figcaption>Надежда: «Два дня пролетели незаметно»</figcaption></figure>
+    <figure data-ph><img src="obidina-media/student-smart.jpg" alt="Ольга с ученицей и сертификатом SMART" loading="lazy"><figcaption>Сертификат SMART master</figcaption></figure>
+    <div class="reel">
+      <button class="story" data-v="students-return" data-cap="Ученицы возвращаются"><span class="sc">Возвращаются снова</span></button>
+      <button class="story" data-v="team" data-cap="В моей команде крупных специалистов пополнение"><span class="sc">Пополнение в команде</span></button>
+      <button class="story" data-v="olga-teaching" data-cap="Ольга на обучении"><span class="sc">Как я объясняю</span></button>
+      <button class="story" data-v="models" data-cap="Показываю на моделях"><span class="sc">Разбор на моделях</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOTH ============ -->
+<section class="sec" id="olga" data-block="Обо мне">
+  <div class="olga">
+    <div class="ph" data-in>
+      <img src="obidina-media/olga-cabinet.jpg" alt="Ольга Обидина в кабинете" loading="lazy" data-i="about.photo">
+      <button class="story" data-v="olga-story" data-cap="Ольга Обидина"><span class="sc">Знакомство</span></button>
+    </div>
+    <div>
+      <span class="kick" data-in>Обо мне</span>
+      <h2 data-in>Ольга <em>Обидина</em></h2>
+      <p class="quote" data-in data-e="about.quote" data-label="Обо мне: цитата">«Для меня чистота и идеальный порядок: основа качественного педикюра и залог вашего комфорта».</p>
+      <p data-m="client" style="color:var(--mut);margin:0" data-in data-e="about.client" data-label="Обо мне: текст для клиентов">Кабинет в студии красоты на проспекте Ленина, 60, в двух минутах от метро. Клиенты пишут, что на приёме «максимально расслабляются», а ножки после него «отдыхают».</p>
+      <p data-m="student" style="color:var(--mut);margin:0" data-in data-e="about.student" data-label="Обо мне: текст для мастеров">Одна из учениц пришла ко мне клиенткой, а ушла с новой профессией: «Она навела меня на мысль сменить род деятельности, не жалею ни капли».</p>
+      <ul class="edu" data-in>
+        <li><span class="ei">🩺</span><span><b data-e="edu1.t" data-label="Образование 1">Действующая медицинская книжка</b><span data-e="edu1.d" data-label="Образование 1: пояснение">Санитарные нормы, стерилизация инструмента</span></span></li>
+        <li><span class="ei"><img src="obidina-media/logo-smart.jpg" alt="" loading="lazy"></span><span><b data-e="edu2.t" data-label="Образование 2">Официальный инструктор SMART master</b><span data-e="edu2.d" data-label="Образование 2: пояснение">Обучаю SMART-педикюру 2.0</span></span></li>
+        <li><span class="ei"><img src="obidina-media/logo-school.jpg" alt="" loading="lazy"></span><span><b data-e="edu3.t" data-label="Образование 3">Школа подологии и ногтевой эстетики</b><span data-e="edu3.d" data-label="Образование 3: пояснение">Своя школа: подология, педикюр с нуля</span></span></li>
+        <li><span class="ei"><img src="obidina-media/logo-fruit.jpg" alt="" loading="lazy"></span><span><b data-e="edu4.t" data-label="Образование 4">Fruit Pedicure</b><span data-e="edu4.d" data-label="Образование 4: пояснение">Провожу обучение фруктовому педикюру</span></span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="voices" data-block="Отзывы">
+  <span class="kick" data-in>Отзывы</span>
+  <h2 data-in>5,0 <em>· 37 оценок</em></h2>
+  <div class="revs" data-m="client">
+    <div class="rv" data-in><p data-e="r1" data-label="Отзыв клиента 1">«Ножки мои после неё отдыхают, пяточки нежнейшие, и эффект сохраняется очень долго. На приёме я максимально расслабляюсь».</p><small>Яндекс Карты</small></div>
+    <div class="rv" data-in><p data-e="r2" data-label="Отзыв клиента 2">«Обратилась с проблемой вросшего ногтя. Оля встретила с улыбкой, успокоила, и за разговором всё было сделано быстро и без боли».</p><small>Яндекс Карты</small></div>
+    <div class="rv" data-in><p data-e="r3" data-label="Отзыв клиента 3">«Пептидный педикюр преобразил мои ножки, мастер посоветовала домашний уход за ногами».</p><small>Яндекс Карты</small></div>
+    <div class="rv" data-in><p data-e="r4" data-label="Отзыв клиента 4">«Уже много лет прихожу к ней на маникюр и педикюр. Всегда приветлива и доброжелательна».</p><small>Яндекс Карты</small></div>
+  </div>
+  <div class="revs" data-m="student">
+    <div class="rv" data-in><p data-e="r5" data-label="Отзыв ученицы 1">«Проходила курс „Подология“. Всё очень грамотно было разжёвано, по-другому не сказать. Ольга с лёгкостью рассказала и показала на примере 12 моделей, как это работает в реальности. Применяю знания в работе».</p><small>Анастасия Савкина · Яндекс Карты</small></div>
+    <div class="rv" data-in><p data-e="r6" data-label="Отзыв ученицы 2">«Два дня просто пролетели незаметно. Ольга мастер на 5+ своего дела и очень хороший человек, рекомендую идти на обучение и как специалисту».</p><small>Надежда Быстрякова · Яндекс Карты</small></div>
+    <div class="rv" data-in><p data-e="r7" data-label="Отзыв ученицы 3">«Обучалась у Ольги SMART 2.0. Приятная дружеская обстановка, всё доступно и понятно. Получила лицензию мастера SMART и занесена в реестр».</p><small>Яндекс Карты</small></div>
+    <div class="rv" data-in><p data-e="r8" data-label="Отзыв ученицы 4">«Материал дан доступно, очень много моделей с различными видами стоп. Поддержка от Ольги в дальнейшем гарантирована».</p><small>Яндекс Карты</small></div>
+  </div>
+</section>
+
+<section class="sec" id="visit" data-block="Адрес и маршрут">
   <div class="vis">
     <div>
       <span class="kick" data-in>Адрес</span>
       <h2 data-in>Ленина, <em>60</em></h2>
-      <div class="ln"><span>Адрес</span><b>Нижний Новгород, просп. Ленина, 60</b></div>
-      <div class="ln"><span>Часы</span><b>Ежедневно 8:00–20:00, по записи</b></div>
+      <div class="ln"><span>Адрес</span><b data-e="v.addr" data-label="Адрес">Нижний Новгород, просп. Ленина, 60</b></div>
+      <div class="ln"><span>Метро</span><b data-e="v.metro" data-label="Метро">2 минуты пешком</b></div>
+      <div class="ln"><span>Вход</span><b data-e="v.door" data-label="Вход">Первый этаж, вход с улицы, вывеска «Студия красоты»</b></div>
+      <div class="ln"><span>Часы</span><b data-e="v.hours" data-label="Часы работы">Ежедневно 8:00–20:00, по записи</b></div>
       <div class="ln"><span>Сейчас</span><b class="live" data-live><i></i><span data-status>…</span></b></div>
-      <div class="ln"><span>Телефон</span><b><a href="tel:+79877407755">+7 987 740-77-55</a></b></div>
-      <div class="ln"><span>Как найти</span><b>2 минуты от метро «Двигатель Революции»<br>Первый этаж, вход с улицы</b></div><div class="ln"><span>Удобства</span><b>Парковка, Wi-Fi</b></div>
-      <div class="row" style="margin-top:20px"><a class="btn" href="https://nn.moiprofi.ru/olgaobidina/" target="_blank" rel="noopener">Онлайн-запись ↗</a><a class="btn" href="tel:+79877407755">Позвонить</a><a class="btn o" href="https://yandex.ru/maps/org/podolog_obidina_olga/181403694009/" target="_blank" rel="noopener">Маршрут</a></div>
+      <div class="ln"><span>Телефон</span><b><a href="tel:+79877407755" data-l="phone" data-e="contact.phone2" data-label="Телефон в контактах">+7 987 740-77-55</a></b></div>
+      <div class="row" style="margin-top:20px"><a class="btn" href="https://nn.moiprofi.ru/olgaobidina/" target="_blank" rel="noopener" data-l="booking">Записаться онлайн</a><a class="btn o" href="tel:+79877407755" data-l="phone">Позвонить</a><a class="btn vk" href="https://vk.com/id300059746" target="_blank" rel="noopener" data-l="vk">ВКонтакте</a></div>
     </div>
     <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=43.921437%2C56.274969&amp;z=16&amp;pt=43.921437%2C56.274969%2Cpm2rdm&amp;l=map" title="Подолог Обидина Ольга на Яндекс Картах" loading="lazy" allowfullscreen></iframe></div>
   </div>
+  <div class="route" data-in>
+    <button class="story" data-v="route" data-cap="Дорога от метро до кабинета"><span class="sc">Дорога от метро</span></button>
+    <div class="door" data-ph><img src="obidina-media/entrance.jpg" alt="Вход в студию красоты с улицы" loading="lazy" data-i="visit.door"></div>
+    <ol class="steps">
+      <li><b data-e="s1.t" data-label="Маршрут шаг 1">Выйдите из метро</b><span data-e="s1.d" data-label="Маршрут шаг 1: пояснение">Видео слева показывает дорогу целиком</span></li>
+      <li><b data-e="s2.t" data-label="Маршрут шаг 2">2 минуты пешком</b><span data-e="s2.d" data-label="Маршрут шаг 2: пояснение">до дома 60 на проспекте Ленина</span></li>
+      <li><b data-e="s3.t" data-label="Маршрут шаг 3">Вход с улицы</b><span data-e="s3.d" data-label="Маршрут шаг 3: пояснение">Вывеска «Студия красоты», первый этаж</span></li>
+    </ol>
+  </div>
 </section>
-<section class="sec" id="route-video"><span class="kick">Маршрут от метро</span><h2>Как найти <em>кабинет</em></h2><div style="max-width:420px"><figure class="media"><video controls playsinline preload="none" poster="obidina-assets/poster-11.jpg" aria-label="Видео маршрута от метро" width="720" height="1280"><source src="obidina-assets/video-11.mp4" type="video/mp4"></video><figcaption>Ольга показывает дорогу от метро до кабинета</figcaption></figure></div></section><section class="sec route"><div><span class="kick">Вход с улицы</span><h2>Вы уже <em>почти на месте</em></h2><p class="lead">От метро «Двигатель Революции» — две минуты пешком. Ищите вывеску «Студия красоты». Кабинет находится на первом этаже.</p><img src="obidina-assets/photo-13.jpg" alt="Пешеходный маршрут от метро до кабинета" loading="lazy" width="899" height="1600"></div><figure><img src="obidina-assets/photo-12.jpg" alt="Вход в студию красоты на проспекте Ленина, 60" loading="lazy" width="1052" height="1600"><figcaption>Вход в студию красоты</figcaption></figure></section></main>
+</main>
 
-<footer>Подолог Обидина Ольга · Нижний Новгород, проспект Ленина, 60 · ежедневно 8:00–20:00</footer>
+<footer>Подолог Обидина Ольга · Нижний Новгород, проспект Ленина, 60 · ежедневно 8:00–20:00 · <a href="obidina-admin.html">Вход для администратора</a></footer>
+
+<div class="lb" id="lb" aria-hidden="true">
+  <div class="frame"></div>
+  <button class="x" aria-label="Закрыть">×</button>
+  <button class="nav prev" aria-label="Назад">‹</button>
+  <button class="nav next" aria-label="Дальше">›</button>
+  <div class="cap"></div>
+</div>
 
 <script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
    Every site builds its own layout and motion on top of it. */
@@ -305,26 +524,6 @@ h1,h2,h3{text-wrap:balance}.lead{text-wrap:pretty}
     (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
   };
 
-  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
-  RT.split = function (el) {
-    var i = 0;
-    (function walk(node) {
-      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
-        if (n.nodeType === 3) {
-          var frag = document.createDocumentFragment();
-          n.textContent.split(/(\s+)/).forEach(function (w) {
-            if (!w) return;
-            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
-            var word = document.createElement('span'); word.className = 'w';
-            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
-            frag.appendChild(word);
-          });
-          node.replaceChild(frag, n);
-        } else if (n.nodeType === 1) walk(n);
-      });
-    })(el);
-  };
-
   // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
   var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
   var pad = function (n) { return (n < 10 ? '0' : '') + n; };
@@ -362,14 +561,12 @@ h1,h2,h3{text-wrap:balance}.lead{text-wrap:pretty}
   // count up numbers: <b data-count="168">0</b>
   RT.count = function (el, dur) {
     var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
-    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
     if (!RT.motion) { el.textContent = fmt(to); return; }
     RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
   };
-  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
 
   document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('[data-split]').forEach(RT.split);
     RT.reveal();
     paintStatus(); setInterval(paintStatus, 60000);
     var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
@@ -381,7 +578,6 @@ h1,h2,h3{text-wrap:balance}.lead{text-wrap:pretty}
       a.addEventListener('click', function (e) {
         var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
         if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
-        document.dispatchEvent(new CustomEvent('rt:navigate'));
       });
     });
   });
@@ -389,13 +585,34 @@ h1,h2,h3{text-wrap:balance}.lead{text-wrap:pretty}
 </script>
 <script>
 (function () {
-  // mode switch: the whole site re-themes for clients or students
+  var MEDIA = 'obidina-media/';
+
+  // content from the admin panel: obidina-content.json on the hosting, or a local preview from the admin page
+  function applyContent(c) {
+    if (!c) return;
+    var t = c.texts || {}, l = c.links || {}, im = c.images || {};
+    document.querySelectorAll('[data-e]').forEach(function (el) { var k = el.dataset.e; if (t[k] != null && t[k] !== '') el.textContent = t[k]; });
+    document.querySelectorAll('[data-l]').forEach(function (el) {
+      var v = l[el.dataset.l]; if (!v) return;
+      el.href = el.dataset.l === 'phone' ? 'tel:+' + v.replace(/\D/g, '').replace(/^8/, '7') : v;
+    });
+    document.querySelectorAll('[data-i]').forEach(function (el) { var v = im[el.dataset.i]; if (v) el.src = v; });
+  }
+  try {
+    if (/[?&]preview=1/.test(location.search)) applyContent(JSON.parse(localStorage.getItem('obidina-preview') || 'null'));
+    else fetch('obidina-content.json', { cache: 'no-store' }).then(function (r) { return r.ok ? r.json() : null; }).then(applyContent).catch(function () {});
+  } catch (e) {}
+
+  // mode switch: the whole site re-themes for clients or masters
+  var stories = [];
   function setMode(m) {
-    document.body.classList.toggle('student', m === 'student'); document.querySelectorAll('video').forEach(function(v){v.pause();});
-    document.querySelectorAll('.mode button').forEach(function (b) { b.classList.toggle('on', b.dataset.mode === m); b.setAttribute('aria-selected', String(b.dataset.mode === m)); });
+    document.body.classList.toggle('student', m === 'student');
+    document.querySelectorAll('.mode button').forEach(function (b) { b.classList.toggle('on', b.dataset.mode === m); });
     document.querySelectorAll('[data-m="' + m + '"]').forEach(function (e) { e.classList.remove('swap'); void e.offsetWidth; e.classList.add('swap'); e.classList.add('in'); e.querySelectorAll('[data-in]').forEach(function (x) { x.classList.add('in'); }); });
+    try { history.replaceState(null, '', m === 'student' ? '#masters' : location.pathname + location.search); } catch (e) {}
   }
   document.querySelector('.mode').addEventListener('click', function (e) { var b = e.target.closest('button'); if (b) setMode(b.dataset.mode); });
+  if (location.hash === '#masters') setMode('student');
 
   // footprints along a wavy path, revealed with scroll
   var svg = document.getElementById('steps'), h = '', N = 18;
@@ -405,20 +622,87 @@ h1,h2,h3{text-wrap:balance}.lead{text-wrap:pretty}
     h += '<use href="#foot" width="34" height="76" x="-17" y="-38" data-i="' + i + '" transform="translate(' + (x + side * 14 * Math.cos(a * Math.PI / 180)).toFixed(1) + ' ' + (y + side * 14 * Math.sin(a * Math.PI / 180)).toFixed(1) + ') rotate(' + a.toFixed(1) + ')' + (side > 0 ? ' scale(-1 1)' : '') + '" opacity="0"/>';
   }
   svg.innerHTML = h;
-  var prints = svg.querySelectorAll('use'), hero = document.querySelector('.hero'), walk = document.getElementById('walk');
+  var prints = svg.querySelectorAll('use'), hero = document.querySelector('.hero'), walk = document.getElementById('walk'), dock = document.getElementById('dock');
   RT.onScroll(function () {
     var p = RT.motion ? RT.progress(hero) : 1, n = (p * 1.4 + .12) * N;
+    if (innerWidth <= 860) n = N * (.35 + RT.clamp(scrollY / 500));
     walk.style.setProperty('--p', p);
     prints.forEach(function (u, i) { var v = RT.clamp(n - i); u.setAttribute('opacity', (v * (.32 + .12 * (i % 2))).toFixed(2)); });
+    dock.classList.toggle('on', scrollY > innerHeight * .7);
   });
   function live() { var s = RT.status(); if (!s) return; document.querySelectorAll('[data-live]').forEach(function (e) { e.classList.toggle('is-open', s.open); e.classList.toggle('is-closed', !s.open); }); }
   document.addEventListener('DOMContentLoaded', live); setInterval(live, 60000);
+
+  // stories: muted loops while on screen, full screen with sound on tap
+  document.querySelectorAll('.story[data-v]').forEach(function (b) {
+    var v = document.createElement('video');
+    v.muted = true; v.loop = true; v.playsInline = true; v.setAttribute('playsinline', ''); v.preload = 'none';
+    v.poster = MEDIA + b.dataset.v + '.jpg';
+    b.insertBefore(v, b.firstChild);
+    b.insertAdjacentHTML('beforeend', '<span class="bar"><i></i></span><span class="pl"></span>');
+    var bar = b.querySelector('.bar i');
+    v.addEventListener('timeupdate', function () { if (v.duration) bar.style.width = (v.currentTime / v.duration * 100) + '%'; });
+    stories.push(b);
+  });
+  var vio = 'IntersectionObserver' in window && RT.motion ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) {
+      var v = e.target.querySelector('video');
+      if (e.isIntersecting && e.intersectionRatio > .6) {
+        if (!v.src) v.src = MEDIA + e.target.dataset.v + '.mp4';
+        var pr = v.play(); if (pr && pr.catch) pr.catch(function () {});
+      } else if (v.src) v.pause();
+    });
+  }, { threshold: [0, .6] }) : null;
+  if (vio) stories.forEach(function (b) { vio.observe(b); });
+
+  var lb = document.getElementById('lb'), frame = lb.querySelector('.frame'), cap = lb.querySelector('.cap'), list = [], at = 0;
+  function show(k) {
+    at = (k + list.length) % list.length;
+    var it = list[at];
+    frame.innerHTML = '';
+    lb.classList.toggle('img', !!it.img);
+    if (it.img) { var im = new Image(); im.src = it.img; im.alt = ''; frame.appendChild(im); }
+    else {
+      var v = document.createElement('video');
+      v.src = MEDIA + it.v + '.mp4'; v.poster = MEDIA + it.v + '.jpg'; v.controls = true; v.playsInline = true; v.autoplay = true;
+      frame.appendChild(v); var pr = v.play(); if (pr && pr.catch) pr.catch(function () {});
+    }
+    cap.textContent = it.cap || '';
+    lb.querySelectorAll('.nav').forEach(function (n) { n.style.display = list.length > 1 ? '' : 'none'; });
+  }
+  function open(items, k) {
+    list = items; show(k); lb.classList.add('on'); lb.setAttribute('aria-hidden', 'false'); document.body.style.overflow = 'hidden';
+    stories.forEach(function (b) { var v = b.querySelector('video'); if (v.src) v.pause(); });
+  }
+  function close() { lb.classList.remove('on'); lb.setAttribute('aria-hidden', 'true'); frame.innerHTML = ''; document.body.style.overflow = ''; }
+  document.addEventListener('click', function (e) {
+    var s = e.target.closest('.story[data-v]');
+    if (s) {
+      var group = Array.prototype.slice.call(s.parentNode.querySelectorAll('.story[data-v]'));
+      open(group.map(function (b) { return { v: b.dataset.v, cap: b.dataset.cap }; }), group.indexOf(s));
+      return;
+    }
+    var g = e.target.closest('[data-gallery] button');
+    if (g) {
+      var all = Array.prototype.slice.call(g.parentNode.querySelectorAll('button'));
+      open(all.map(function (b) { return { img: b.dataset.full }; }), all.indexOf(g));
+    }
+  });
+  lb.querySelector('.x').addEventListener('click', close);
+  lb.querySelector('.prev').addEventListener('click', function () { show(at - 1); });
+  lb.querySelector('.next').addEventListener('click', function () { show(at + 1); });
+  lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
+  addEventListener('keydown', function (e) {
+    if (!lb.classList.contains('on')) return;
+    if (e.key === 'Escape') close(); else if (e.key === 'ArrowLeft') show(at - 1); else if (e.key === 'ArrowRight') show(at + 1);
+  });
 
   window.REEL = {
     hero: '.hero', heroAt: .5, feature: '#main', featureOff: 60, featureM: '#main', featureOffM: -60, prices: '#olga', pricesOff: 40,
     demo: [function () { setMode('student'); }, function () { scrollBy(0, 260); }, function () { setMode('client'); }],
     holds: [50, 40, 45]
   };
+  window.setMode = setMode;
 })();
 </script>
 </body>
