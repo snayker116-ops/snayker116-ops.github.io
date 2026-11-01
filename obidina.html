@@ -173,11 +173,11 @@ body.student .mode .pill { transform: translateX(100%); }
 }
 
 /* trust strip */
-.trust { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; max-width: 1180px; margin: 0 auto; padding: 0 var(--gut); }
+.trust { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; max-width: 1180px; margin: 0 auto; padding: 0 var(--gut); }
 .trust > div { padding: 22px 16px; background: var(--bg); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .trust b { display: block; font: 700 clamp(20px, 2.2vw, 28px)/1.1 var(--head); color: var(--acc-3); margin-bottom: 6px; }
 .trust span { font-size: 13.5px; color: var(--mut); line-height: 1.35; display: block; }
-@media (max-width: 860px) { .trust { grid-template-columns: 1fr 1fr; } .trust > div:last-child { grid-column: 1 / -1; } }
+@media (max-width: 860px) { .trust { grid-template-columns: 1fr 1fr; } }
 
 .sec { padding: clamp(70px, 10vw, 120px) var(--gut); max-width: 1180px; margin: 0 auto; scroll-margin-top: 70px; }
 .kick { font: 700 12px/1 var(--body); letter-spacing: .26em; text-transform: uppercase; color: var(--acc); }
@@ -382,8 +382,7 @@ footer p { margin: 0 0 6px; } footer .own { font-size: 12.5px; }
   <div><b data-count="5.0">5,0</b><span>37 оценок на Яндекс Картах</span></div>
   <div><b>2 мин</b><span>от метро, первый этаж, вход с улицы</span></div>
   <div><b>Медкнижка</b><span>действующая, стерильный инструмент</span></div>
-  <div><b>SMART</b><span>официальный инструктор SMART master</span></div>
-  <div><b>Школа</b><span>подологии и ногтевой эстетики, обучение мастеров</span></div>
+  <div><b>Подолог</b><span>официальный инструктор SMART master</span></div>
 </div>
 
 <!-- ============ CLIENTS ============ -->
@@ -392,7 +391,7 @@ footer p { margin: 0 0 6px; } footer .own { font-size: 12.5px; }
   <h2 data-in>Проблема <em>и решение</em></h2>
   <p class="lead" data-in data-e="prices.lead" data-label="Подзаголовок цен">Если не знаете, что вам нужно, начните с консультации: посмотрю стопу и подскажу, с чего начать.</p>
   <div class="probs">
-    <div class="pb" data-in><span class="ic">🩹</span><b data-e="p1.t" data-label="Услуга 1">Сложный ноготь</b><p data-e="p1.d" data-label="Услуга 1: описание">«Очень боялась, что будет больно. А всё было сделано быстро и без боли».</p><span class="pr" data-e="p1.p" data-label="Услуга 1: цена">2 000 ₽</span></div>
+    <div class="pb" data-in><span class="ic">🩹</span><b data-e="p1.t" data-label="Услуга 1">Сложный ноготь</b><p data-e="p1.d" data-label="Услуга 1: описание">Обработка ногтевой пластины. При необходимости удаление вросшей части ногтя без повреждения мягких тканей.</p><span class="pr" data-e="p1.p" data-label="Услуга 1: цена">2 000 ₽</span></div>
     <div class="pb" data-in><span class="ic">🔎</span><b data-e="p2.t" data-label="Услуга 2">Консультация подолога</b><p data-e="p2.d" data-label="Услуга 2: описание">Стержневая мозоль, натоптыши, сложные ногти: посмотрю стопу и дам рекомендации по уходу.</p><span class="pr" data-e="p2.p" data-label="Услуга 2: цена">1 000 ₽</span></div>
     <div class="pb" data-in><span class="ic">🦶</span><b data-e="p3.t" data-label="Услуга 3">Педикюр с особенностями</b><p data-e="p3.d" data-label="Услуга 3: описание">Для проблемных стоп: трещины, утолщённые ногти, огрубевшая кожа.</p><span class="pr" data-e="p3.p" data-label="Услуга 3: цена">4 000 ₽</span></div>
     <div class="pb" data-in><span class="ic">〰</span><b data-e="p4.t" data-label="Услуга 4">Титановая нить</b><p data-e="p4.d" data-label="Услуга 4: описание">Коррекционная система для сложного ногтя.</p><span class="pr" data-e="p4.p" data-label="Услуга 4: цена">3 500 ₽</span></div>
@@ -547,10 +546,10 @@ footer p { margin: 0 0 6px; } footer .own { font-size: 12.5px; }
       <p data-m="client" style="color:var(--mut);margin:0" data-in data-e="about.client" data-label="Обо мне: текст для клиентов">Кабинет в студии красоты на проспекте Ленина, 60, в двух минутах от метро. Клиенты пишут, что на приёме «максимально расслабляются», а ножки после него «отдыхают».</p>
       <p data-m="student" style="color:var(--mut);margin:0" data-in data-e="about.student" data-label="Обо мне: текст для мастеров">Одна из учениц пришла ко мне клиенткой, а ушла с новой профессией: «Она навела меня на мысль сменить род деятельности, не жалею ни капли».</p>
       <ul class="edu" data-in>
-        <li><span class="ei">🩺</span><span><b data-e="edu1.t" data-label="Образование 1">Действующая медицинская книжка</b><span data-e="edu1.d" data-label="Образование 1: пояснение">Санитарные нормы, стерилизация инструмента</span></span></li>
+        <li><span class="ei">🩺</span><span><b data-e="edu1.t" data-label="Образование 1">Имею медицинское образование</b><span data-e="edu1.d" data-label="Образование 1: пояснение">Действующая медицинская книжка, стерильный инструмент</span></span></li>
         <li><span class="ei"><img src="obidina-media/logo-smart.jpg" alt="" loading="lazy"></span><span><b data-e="edu2.t" data-label="Образование 2">Официальный инструктор SMART master</b><span data-e="edu2.d" data-label="Образование 2: пояснение">Обучаю SMART-педикюру 2.0</span></span></li>
-        <li><span class="ei"><img src="obidina-media/logo-school.jpg" alt="" loading="lazy"></span><span><b data-e="edu3.t" data-label="Образование 3">Школа подологии и ногтевой эстетики</b><span data-e="edu3.d" data-label="Образование 3: пояснение">Своя школа: подология, педикюр с нуля</span></span></li>
-        <li><span class="ei"><img src="obidina-media/logo-fruit.jpg" alt="" loading="lazy"></span><span><b data-e="edu4.t" data-label="Образование 4">Fruit Pedicure</b><span data-e="edu4.d" data-label="Образование 4: пояснение">Провожу обучение фруктовому педикюру</span></span></li>
+        <li><span class="ei"><img src="obidina-media/logo-school.jpg" alt="" loading="lazy"></span><span><b data-e="edu3.t" data-label="Образование 3">Инструктор подологии</b><span data-e="edu3.d" data-label="Образование 3: пояснение">Обучаю подологии и педикюру с нуля</span></span></li>
+        <li><span class="ei"><img src="obidina-media/logo-fruit.jpg" alt="" loading="lazy"></span><span><b data-e="edu4.t" data-label="Образование 4">Официальный инструктор Fruit Pedicure</b><span data-e="edu4.d" data-label="Образование 4: пояснение">Обучаю фруктовому педикюру</span></span></li>
       </ul>
     </div>
   </div>
