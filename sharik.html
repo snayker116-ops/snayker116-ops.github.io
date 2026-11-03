@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Шарик — груминг собак и кошек · Кострома, Индустриальная, 14</title>
+<meta name="description" content="Груминг-салон «Шарик» в Костроме: стрижка, тримминг, экспресс-линька, купание собак и кошек, школа груминга, выезд на дом. Цены от 1400 ₽ по породе. Ежедневно 9:00–21:00. 5,0 на Яндекс Картах.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Шарик — груминг в Костроме">
+<meta property="og:description" content="Найдите свою породу в прайсе и узнайте цену стрижки. +7 (915) 925-03-16">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/15037708/2a00000194cbdbd80cee55b367bc3c017cfe/XXL">
+<meta name="theme-color" content="#fff4e8">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Шарик","description":"Груминг собак и кошек","telephone":"+7 915 925-03-16","address":{"@type":"PostalAddress","streetAddress":"Индустриальная ул., 14","addressLocality":"Кострома","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":57.739825,"longitude":41.002668},"openingHours":"Mo-Su 09:00-21:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","ratingCount":"178"}}</script>
+<style>
+:root { --cream: #fff4e8; --peach: #ffd8b8; --coral: #ff7a59; --teal: #1f9e8f; --ink: #2d2520; --mut: #7b6c61; --line: #f1dcc7; --sky: #dff3f0;
+  --head: 'Balsamiq Sans', cursive; --body: 'Nunito', sans-serif; --gut: clamp(16px, 4vw, 56px); --ease: cubic-bezier(.34,1.56,.64,1); }
+* { box-sizing: border-box; } html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--cream); color: var(--ink); font: 400 17px/1.6 var(--body); overflow-x: hidden; }
+img { display: block; max-width: 100%; } a { color: inherit; }
+.dock { position: fixed; z-index: 30; left: 50%; bottom: 14px; transform: translateX(-50%); display: flex; gap: 6px; padding: 6px; border-radius: 30px; background: #fff; box-shadow: 0 14px 30px -14px rgba(0,0,0,.35); }
+.dock a { padding: 11px 16px; border-radius: 24px; text-decoration: none; font: 800 14px/1 var(--body); color: var(--mut); white-space: nowrap; }
+.dock a.call { background: var(--coral); color: #fff; }
+@media (max-width: 520px) { .dock { left: 10px; right: 10px; transform: none; justify-content: space-between; } .dock a { padding: 11px 10px; font-size: 13px; } }
+
+/* hero: paw prints bounce in, photos float like bubbles */
+.hero { position: relative; min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: center; padding: 60px var(--gut); overflow: hidden; }
+.hero h1 { margin: 14px 0 12px; font: 700 clamp(46px, 7.4vw, 108px)/.95 var(--head); }
+.hero h1 em { font-style: normal; color: var(--coral); }
+.pill { display: inline-block; padding: 8px 14px; border-radius: 20px; background: var(--sky); color: var(--teal); font: 800 13px/1 var(--body); }
+.hero p { max-width: 520px; margin: 0 0 24px; color: var(--mut); font-size: clamp(16px, 1.4vw, 19px); }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 15px 24px; border-radius: 30px; background: var(--coral); color: #fff; font: 800 15px/1 var(--body); text-decoration: none; border: 0; cursor: pointer; box-shadow: 0 6px 0 #d95c3e; transition: transform .2s; }
+.btn:active { transform: translateY(4px); box-shadow: 0 2px 0 #d95c3e; }
+.btn.o { background: #fff; color: var(--teal); box-shadow: 0 6px 0 var(--line); }
+.row { display: flex; gap: 12px; flex-wrap: wrap; }
+.bubbles { position: relative; height: min(70vh, 560px); }
+.bubbles figure { position: absolute; margin: 0; border-radius: 50%; overflow: hidden; border: 8px solid #fff; box-shadow: 0 20px 40px -20px rgba(0,0,0,.4); }
+.bubbles img { width: 100%; height: 100%; object-fit: cover; }
+.motion .bubbles figure { animation: float 6s ease-in-out infinite; }
+.bubbles figure:nth-child(1) { width: 58%; aspect-ratio: 1; left: 8%; top: 4%; }
+.bubbles figure:nth-child(2) { width: 38%; aspect-ratio: 1; right: 0; top: 34%; animation-delay: -2s; }
+.bubbles figure:nth-child(3) { width: 32%; aspect-ratio: 1; left: 22%; bottom: 0; animation-delay: -4s; }
+@keyframes float { 50% { transform: translateY(-14px); } }
+.hero > div { position: relative; z-index: 2; }
+.paw { position: absolute; z-index: 0; width: 46px; height: 46px; fill: var(--peach); opacity: 0; }
+.motion .paw { animation: pop .6s var(--ease) forwards; }
+@keyframes pop { from { opacity: 0; transform: scale(.2) rotate(var(--r)); } to { opacity: 1; transform: scale(1) rotate(var(--r)); } }
+@media (max-width: 860px) { .hero { grid-template-columns: 1fr; padding-top: 40px; } .bubbles { height: 330px; order: -1; } }
+
+.sec { padding: clamp(70px, 10vw, 120px) var(--gut); max-width: 1180px; margin: 0 auto; scroll-margin-top: 20px; }
+.kick { font: 800 13px/1 var(--body); letter-spacing: .14em; text-transform: uppercase; color: var(--teal); }
+h2 { margin: 10px 0 10px; font: 700 clamp(32px, 4.6vw, 58px)/1.05 var(--head); }
+h2 + small { display: block; max-width: 640px; color: var(--mut); font-style: italic; margin-bottom: 30px; }
+
+/* feature: find your breed */
+.finder { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; align-items: center; }
+.search { position: relative; }
+.search input { width: 100%; padding: 18px 20px; border-radius: 20px; border: 3px solid var(--line); background: #fff; font: 600 18px/1 var(--body); }
+.search input:focus { outline: none; border-color: var(--coral); }
+.sug { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 8px; }
+.sug button { padding: 9px 14px; border-radius: 20px; border: 0; background: #fff; box-shadow: 0 0 0 2px var(--line) inset; font: 700 14px/1 var(--body); cursor: pointer; }
+.sug button:hover { box-shadow: 0 0 0 2px var(--coral) inset; }
+.card { margin-top: 18px; padding: 22px; border-radius: 26px; background: #fff; box-shadow: 0 20px 40px -26px rgba(0,0,0,.35); min-height: 150px; }
+.card .ty { font: 800 12px/1 var(--body); letter-spacing: .14em; text-transform: uppercase; color: var(--teal); }
+.card b { display: block; font: 700 26px/1.2 var(--head); margin: 8px 0 4px; }
+.card .pr { font: 700 40px/1.1 var(--head); color: var(--coral); }
+.card ul { margin: 12px 0 0; padding: 0; list-style: none; display: grid; gap: 4px; font-size: 15px; color: var(--mut); }
+.ball { position: relative; width: 100%; max-width: 420px; aspect-ratio: 1; justify-self: center; }
+.ball svg { width: 100%; height: 100%; overflow: visible; }
+.fur { fill: #f4c89a; transition: transform .9s var(--ease); transform-origin: 200px 220px; }
+.fur.cut { transform: scale(.78); }
+.motion .ball .body { animation: wob 3s ease-in-out infinite; transform-origin: 200px 260px; }
+@keyframes wob { 50% { transform: scale(1.03, .97); } }
+@media (max-width: 860px) { .finder { grid-template-columns: 1fr; } .ball { max-width: 280px; order: -1; } }
+
+.svc { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.svc div { padding: 20px; border-radius: 24px; background: #fff; }
+.svc b { display: block; font: 700 19px/1.2 var(--head); margin-bottom: 4px; } .svc span { color: var(--mut); font-size: 15px; }
+.svc div:nth-child(4n+1) { background: var(--sky); } .svc div:nth-child(4n+3) { background: #ffe6d6; }
+@media (max-width: 860px) { .svc { grid-template-columns: 1fr 1fr; } }
+.extra { margin-top: 18px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 40px; }
+.it { display: flex; gap: 8px; align-items: baseline; padding: 6px 0; font-size: 15.5px; }
+.it i { flex: 1; border-bottom: 2px dotted var(--line); transform: translateY(-4px); } .it span { font-weight: 800; white-space: nowrap; }
+@media (max-width: 760px) { .extra { grid-template-columns: 1fr; } }
+
+.rate { display: flex; gap: 18px; align-items: baseline; flex-wrap: wrap; margin-bottom: 24px; }
+.rate b { font: 700 clamp(64px, 10vw, 130px)/1 var(--head); color: var(--coral); }
+.revs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.rv { padding: 22px; border-radius: 26px; background: #fff; }
+.rv p { margin: 0 0 10px; } .rv small { color: var(--teal); font-weight: 800; font-size: 13px; }
+@media (max-width: 860px) { .revs { grid-template-columns: 1fr; } }
+
+.vis { display: grid; grid-template-columns: 1fr 1.2fr; gap: 26px; align-items: center; }
+.ln { display: flex; justify-content: space-between; gap: 14px; padding: 11px 0; border-bottom: 2px dotted var(--line); }
+.ln span { color: var(--mut); } .ln b { text-align: right; font-weight: 700; }
+.live i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #aaa; margin-right: 8px; }
+.is-open i { background: var(--teal); } .is-closed i { background: var(--coral); }
+.mapbox { position: relative; min-height: 380px; border-radius: 30px; overflow: hidden; border: 6px solid #fff; }
+.mapbox iframe { position: absolute; inset: 0; width: 100%; height: calc(100% + 140px); border: 0; }
+@media (max-width: 860px) { .vis { grid-template-columns: 1fr; } }
+footer { padding: 40px var(--gut) 110px; text-align: center; color: var(--mut); font-size: 14px; }
+footer b { display: block; font: 700 40px/1 var(--head); color: var(--coral); margin-bottom: 6px; }
+.motion [data-in] { opacity: 0; transform: translateY(24px) scale(.98); transition: opacity .7s, transform .7s var(--ease); }
+.motion [data-in].in { opacity: 1; transform: none; }
+.noimg { background: var(--peach); } .noimg img { opacity: 0; }
+</style>
+</head>
+<body data-hours='{"0":[[9,0,21,0]],"1":[[9,0,21,0]],"2":[[9,0,21,0]],"3":[[9,0,21,0]],"4":[[9,0,21,0]],"5":[[9,0,21,0]],"6":[[9,0,21,0]]}'>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="paw" viewBox="0 0 40 40"><ellipse cx="20" cy="27" rx="10" ry="8"/><circle cx="9" cy="16" r="4.5"/><circle cx="16" cy="9" r="4.5"/><circle cx="24" cy="9" r="4.5"/><circle cx="31" cy="16" r="4.5"/></symbol></svg>
+<nav class="dock" aria-label="Разделы"><a href="#poroda">Цена по породе</a><a href="#uslugi">Услуги</a><a href="#adres">Адрес</a><a class="call" href="tel:+79159250316">Записаться</a></nav>
+<main>
+<section class="hero" id="top">
+  <div>
+    <span class="pill">Груминг · Кострома · Индустриальная, 14</span>
+    <h1>Был лохматым, <em>стал Шариком</em></h1>
+    <p>Стрижём, триммингуем, купаем и вычёсываем собак и кошек. Мастера находят подход даже к пугливым и «с характером», а постоянных гостей помнят по именам.</p>
+    <div class="row"><a class="btn" href="tel:+79159250316">Записаться</a><a class="btn o" href="#poroda">Узнать цену</a></div>
+  </div>
+  <div class="bubbles">
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/15037708/2a00000194cbdbd80cee55b367bc3c017cfe/XL" alt="Собака после груминга" fetchpriority="high"></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/14837019/2a000001962eb5a46bec5beda587557a13f1/XL" alt="Питомец в салоне" loading="lazy"></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/18754568/2a0000019ec51cb02998517f1b4658fb3859/XL" alt="Стрижка в салоне" loading="lazy"></figure>
+  </div>
+</section>
+
+<section class="sec" id="poroda">
+  <span class="kick" data-in>Цена по породе</span>
+  <h2 data-in>Кто у вас?</h2>
+  <small data-in>Начните вводить породу. Цены из прайса салона на Яндекс Картах, итог зависит от состояния шерсти.</small>
+  <div class="finder">
+    <div data-in>
+      <div class="search"><input id="q" list="breeds" placeholder="Например, шпиц или мейн-кун" autocomplete="off" aria-label="Порода"><datalist id="breeds"></datalist></div>
+      <div class="sug" id="sug"></div>
+      <div class="card" id="card" aria-live="polite"></div>
+    </div>
+    <div class="ball" data-in><svg viewBox="0 0 400 400" aria-hidden="true">
+      <g class="body"><g class="fur" id="fur"></g>
+      <circle cx="200" cy="220" r="104" fill="#fbe0c3"/>
+      <ellipse cx="128" cy="140" rx="34" ry="46" fill="#e8b07a" transform="rotate(-24 128 140)"/><ellipse cx="272" cy="140" rx="34" ry="46" fill="#e8b07a" transform="rotate(24 272 140)"/>
+      <circle cx="166" cy="206" r="12" fill="#2d2520"/><circle cx="234" cy="206" r="12" fill="#2d2520"/><circle cx="170" cy="202" r="4" fill="#fff"/><circle cx="238" cy="202" r="4" fill="#fff"/>
+      <ellipse cx="200" cy="244" rx="20" ry="14" fill="#2d2520"/><path d="M180 270 q 20 18 40 0" stroke="#2d2520" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <path d="M188 286 q 12 30 24 0" fill="#ff7a59"/></g>
+    </svg></div>
+  </div>
+</section>
+
+<section class="sec" id="uslugi">
+  <span class="kick" data-in>Услуги</span>
+  <h2 data-in>Всё для пушистых</h2>
+  <div class="svc">
+    <div data-in><b>Стрижка</b><span>Модельная, гигиеническая, под машинку</span></div>
+    <div data-in><b>Тримминг</b><span>Терьеры, шнауцеры, жесткошёрстные</span></div>
+    <div data-in><b>Экспресс-линька</b><span>Лабрадоры, хаски, овчарки, корги</span></div>
+    <div data-in><b>Коты</b><span>Вычёсывание и стрижка, мейн-куны</span></div>
+    <div data-in><b>Щенки до 6 мес.</b><span>Первое знакомство с грумингом</span></div>
+    <div data-in><b>Спа и купание</b><span>Чистка ушей, когти, зубы</span></div>
+    <div data-in><b>Выезд на дом</b><span>Если питомцу трудно в салоне</span></div>
+    <div data-in><b>Школа груминга</b><span>Обучение мастеров</span></div>
+  </div>
+  <div class="extra" data-in>
+    <div class="it">Чистка зубов без наркоза<i></i><span>500 ₽</span></div>
+    <div class="it">Лапакюр<i></i><span>300 ₽</span></div>
+    <div class="it">Разбор колтунов<i></i><span>800 ₽</span></div>
+    <div class="it">Уши: выщипывание и чистка<i></i><span>300 ₽</span></div>
+    <div class="it">Удаление клещей с обработкой<i></i><span>200 ₽</span></div>
+    <div class="it">Вызов на дом<i></i><span>1 000 ₽</span></div>
+  </div>
+</section>
+
+<section class="sec" id="otzyvy">
+  <span class="kick" data-in>Отзывы</span>
+  <div class="rate" data-in><b data-count="5.0">5,0</b><span>178 оценок на Яндекс Картах, 24 свежих отзыва за последние три месяца.</span></div>
+  <div class="revs">
+    <div class="rv" data-in><p>«Нашли к нашей пугливой девочке подход, собака не нервничала. Вышли из салона с настоящей плюшевой принцессой».</p><small>Шпиц</small></div>
+    <div class="rv" data-in><p>«Ходим к Инне с голден дудлем с 5 месяцев. Нашла с нашей капризной дамой общий язык».</p><small>Голдендудль</small></div>
+    <div class="rv" data-in><p>«Были проездом в Костроме. Наш Марсуша довольный, мягкий и благоухающий продолжил путь домой».</p><small>Шпиц-путешественник</small></div>
+  </div>
+</section>
+
+<section class="sec" id="adres">
+  <div class="vis">
+    <div>
+      <span class="kick" data-in>Адрес</span>
+      <h2 data-in>Индустриальная, 14</h2>
+      <div class="ln"><span>Где</span><b>Кострома, Индустриальная ул., 14</b></div>
+      <div class="ln"><span>Сейчас</span><b class="live" data-live><i></i><span data-status>…</span></b></div>
+      <div class="ln"><span>Часы</span><b>Ежедневно 9:00–21:00</b></div>
+      <div class="ln"><span>Телефон</span><b><a href="tel:+79159250316">+7 (915) 925-03-16</a></b></div>
+      <div class="ln"><span>Ещё</span><b>Парковка, Wi-Fi, зоомагазин</b></div>
+      <div class="row" style="margin-top:20px"><a class="btn" href="tel:+79159250316">Позвонить</a><a class="btn o" href="https://vk.ru/grum_sharik2023" target="_blank" rel="noopener">ВКонтакте</a></div>
+    </div>
+    <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=41.002668%2C57.739825&amp;z=16&amp;pt=41.002668%2C57.739825%2Cpm2orm&amp;l=map" title="«Шарик» на Яндекс Картах" loading="lazy"></iframe></div>
+  </div>
+</section>
+</main>
+<footer><b>Шарик</b>Груминг собак и кошек · Кострома, Индустриальная ул., 14 · +7 (915) 925-03-16</footer>
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  // hero paws pop in
+  var hero = document.getElementById('top');
+  [[6, 78, -20], [14, 88, 10], [44, 92, -10], [52, 82, 20], [88, 12, 30], [92, 24, -10]].forEach(function (p, i) {
+    var s = document.createElementNS('http://www.w3.org/2000/svg', 'svg'); s.setAttribute('class', 'paw'); s.setAttribute('aria-hidden', 'true');
+    s.style.left = p[0] + '%'; s.style.top = p[1] + '%'; s.style.setProperty('--r', p[2] + 'deg'); s.style.animationDelay = (.2 + i * .18) + 's';
+    s.innerHTML = '<use href="#paw"/>'; hero.appendChild(s); });
+
+  // fur tufts around the face
+  var fur = document.getElementById('fur'), h = '';
+  for (var i = 0; i < 26; i++) { var a = i / 26 * Math.PI * 2, x = 200 + Math.cos(a) * 140, y = 220 + Math.sin(a) * 130; h += '<circle cx="' + x.toFixed(0) + '" cy="' + y.toFixed(0) + '" r="' + (38 + (i % 3) * 6) + '"/>'; }
+  fur.innerHTML = h;
+
+  // price list from the salon's card: [name, price, type]
+  var B = [['Американский були', 2800, 'Стрижка'], ['Бивер йорк, модельная', 1800, 'Стрижка'], ['Йоркширский терьер, модельная', 1800, 'Стрижка'], ['Йоркширский терьер, в одну насадку', 1600, 'Стрижка'], ['Йоркширский терьер, гигиеническая', 1400, 'Стрижка'], ['Помски', 2200, 'Стрижка'], ['Китайская хохлатая, голая', 1600, 'Стрижка'], ['Американский кокер-спаниель, модельная', 2800, 'Стрижка'], ['Английский спаниель, модельная', 2200, 'Стрижка'], ['Бишон фризе, комплекс по породе', 2500, 'Стрижка'], ['Королевский пудель', 3000, 'Стрижка'], ['Карликовый пудель', 2000, 'Стрижка'], ['Той-пудель', 1800, 'Стрижка'], ['Голдендудль', 4500, 'Стрижка'], ['Кавапу', 3000, 'Стрижка'], ['Кокапу', 2500, 'Стрижка'], ['Мальтипу, модельная', 2500, 'Стрижка'], ['Мальтийская болонка', 2000, 'Стрижка'], ['Шпиц до 3 кг, породная стрижка', 1800, 'Стрижка'], ['Шпиц 6–9 кг, породная стрижка', 2200, 'Стрижка'], ['Померанский шпиц 4–6 кг', 2000, 'Стрижка'], ['Японский шпиц', 2500, 'Стрижка'], ['Вольфшпиц от 12 кг', 5000, 'Стрижка'], ['Ши-тцу, модельная', 2200, 'Стрижка'], ['Пекинес, фасонная', 2200, 'Стрижка'], ['Пшеничный терьер', 5000, 'Стрижка'], ['Чихуахуа длинношёрстный', 1800, 'Стрижка'], ['Русский спаниель', 2200, 'Стрижка'], ['Миттельшнауцер', 4500, 'Тримминг'], ['Цвергшнауцер', 3000, 'Тримминг'], ['Ризеншнауцер', 7500, 'Тримминг'], ['Вест-хайленд-уайт-терьер', 2800, 'Тримминг'], ['Джек-рассел', 2500, 'Тримминг'], ['Фокстерьер', 3500, 'Тримминг'], ['Скотч-терьер', 3500, 'Тримминг'], ['Жесткошёрстная такса', 2500, 'Тримминг'], ['Лабрадор', 3000, 'Экспресс-линька'], ['Золотистый ретривер', 3500, 'Экспресс-линька'], ['Хаски длинношёрстный', 4000, 'Экспресс-линька'], ['Корги со стрижкой', 2300, 'Экспресс-линька'], ['Самоед', 4500, 'Экспресс-линька'], ['Маламут', 5000, 'Экспресс-линька'], ['Шелти', 3000, 'Экспресс-линька'], ['Бигль', 2200, 'Экспресс-линька'], ['Французский бульдог', 2000, 'Экспресс-линька'], ['Такса', 1600, 'Экспресс-линька'], ['Чау-чау', 4500, 'Экспресс-линька'], ['Ньюфаундленд', 6000, 'Крупные породы'], ['Кане-корсо', 3000, 'Крупные породы'], ['Кот, вычёсывание короткошёрстного', 1800, 'Коты'], ['Кот, вычёсывание длинношёрстного', 2000, 'Коты'], ['Мейн-кун, стрижка', 2500, 'Коты'], ['Кот, стрижка', 2000, 'Коты'], ['Щенок йорка до 6 месяцев', 1400, 'Щенки'], ['Щенок шпица до 6 месяцев', 1600, 'Щенки'], ['Щенок мальтипу до 6 месяцев', 1800, 'Щенки']];
+  var INC = { 'Стрижка': ['Мытьё и сушка', 'Стрижка по породе или по вашему фото', 'Уши и когти'], 'Тримминг': ['Выщипывание отмершей шерсти', 'Сохраняет жёсткую шерсть и окрас', 'После 6 месяцев цена выше'], 'Экспресс-линька': ['Быстро убирает подшёрсток', 'Меньше шерсти дома', 'Мытьё и сушка'], 'Крупные породы': ['Для собак от 25–40 кг', 'Мытьё, сушка, вычёсывание'], 'Коты': ['Вычёсывание или стрижка', 'Колтуны разберут отдельно'], 'Щенки': ['Мягкое знакомство с грумингом', 'До 6 месяцев'] };
+  var dl = document.getElementById('breeds'), q = document.getElementById('q'), card = document.getElementById('card'), furEl = document.getElementById('fur');
+  dl.innerHTML = B.map(function (b) { return '<option value="' + b[0] + '">'; }).join('');
+  document.getElementById('sug').innerHTML = ['Шпиц до 3 кг, породная стрижка', 'Йоркширский терьер, модельная', 'Мальтипу, модельная', 'Мейн-кун, стрижка', 'Лабрадор'].map(function (n) { return '<button type="button">' + n.split(',')[0] + '</button>'; }).join('');
+  function show(name) {
+    var l = name.toLowerCase().trim(), b = B.filter(function (x) { return x[0].toLowerCase() === l; })[0] || B.filter(function (x) { return x[0].toLowerCase().indexOf(l) > -1; })[0];
+    if (!l || !b) { card.innerHTML = '<span class="ty">Прайс</span><b>Начните вводить породу</b><p style="margin:0;color:var(--mut)">В прайсе больше 100 позиций. Если вашей породы нет, позвоните, мастер подскажет цену.</p>'; furEl.classList.remove('cut'); return; }
+    card.innerHTML = '<span class="ty">' + b[2] + '</span><b>' + b[0] + '</b><div class="pr">' + RT.money(b[1]) + '</div><ul>' + INC[b[2]].map(function (x) { return '<li>· ' + x + '</li>'; }).join('') + '</ul>';
+    furEl.classList.remove('cut'); void furEl.getBoundingClientRect(); setTimeout(function () { furEl.classList.add('cut'); }, 60);
+  }
+  q.addEventListener('input', function () { show(q.value); });
+  document.getElementById('sug').addEventListener('click', function (e) { var b = e.target.closest('button'); if (b) { q.value = b.textContent; show(b.textContent); } });
+  show('');
+  window.__breed = function (n) { q.value = n; show(n); };
+
+  window.REEL = { hero: '#top', heroAt: 0, feature: '#poroda', featureOff: 30, featureM: '.ball', featureOffM: -60, prices: '#uslugi', pricesOff: 30,
+    demo: [function () { window.__breed('Шпиц до 3 кг'); }, function () { window.__breed('Мейн-кун'); }, function () { window.__breed('Голдендудль'); }], holds: [40, 40, 45] };
+})();
+</script>
+</body>
+</html>

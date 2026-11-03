@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Сад — семейный ресторан с детской комнатой · Владимир, Батурина, 20</title>
+<meta name="description" content="Семейный ресторан «Сад» во Владимире: детская комната с аниматором, детское меню, завтраки, бизнес-ланч, 3 зала для банкетов. Ежедневно 10:00–22:00. 5,0 на Яндекс Картах, 1358 оценок.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Сад — семейный ресторан во Владимире">
+<meta property="og:description" content="С детьми или вдвоём: сайт подстроится под ваш вечер. +7 (906) 613-30-30">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/18806283/2a0000019dde17c679660d61a2c8eba03bd2/XXL">
+<meta name="theme-color" content="#f7f2ea">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,500;0,700;1,500&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"Сад","description":"Семейный ресторан с детской комнатой","telephone":"+7 906 613-30-30","address":{"@type":"PostalAddress","streetAddress":"ул. Батурина, 20","addressLocality":"Владимир","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":56.139934,"longitude":40.407035},"openingHours":"Mo-Su 10:00-22:00","priceRange":"500–1500 ₽","aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","ratingCount":"1358"}}</script>
+<style>
+:root { --cream: #f7f2ea; --sand: #ece2d3; --leaf: #5c7a52; --leaf-2: #2f4a2c; --terra: #c27b55; --ink: #2b2a26; --mut: #6f6a60; --line: #ddd2c0;
+  --head: 'Cormorant Infant', serif; --body: 'Manrope', sans-serif; --gut: clamp(16px, 4vw, 56px); --ease: cubic-bezier(.2,.7,.2,1); }
+body.duo { --leaf: #8a5a3c; --leaf-2: #4a2f20; --terra: #5c7a52; --sand: #e9e0d6; }
+* { box-sizing: border-box; } html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--cream); color: var(--ink); font: 400 17px/1.65 var(--body); overflow-x: hidden; transition: background .5s; }
+img { display: block; max-width: 100%; } a { color: inherit; }
+body:not(.duo) [data-m="duo"], body.duo [data-m="kids"] { display: none !important; }
+.swap { animation: sw .55s var(--ease); } @keyframes sw { from { opacity: 0; transform: translateY(14px); } }
+
+.bar { position: fixed; z-index: 30; top: 14px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 6px; padding: 6px; border-radius: 40px; background: rgba(255,255,255,.92); backdrop-filter: blur(8px); box-shadow: 0 12px 30px -16px rgba(0,0,0,.35); }
+.bar .logo { font: 700 24px/1 var(--head); padding: 0 12px 0 14px; color: var(--leaf-2); }
+.bar button { border: 0; background: transparent; padding: 11px 18px; border-radius: 30px; font: 700 14px/1 var(--body); color: var(--mut); cursor: pointer; transition: background .35s, color .35s; }
+.bar button.on { background: var(--leaf); color: #fff; }
+.call { position: fixed; z-index: 30; top: 18px; right: var(--gut); padding: 11px 16px; border-radius: 30px; background: var(--ink); color: #fff; text-decoration: none; font: 700 14px/1 var(--body); }
+@media (max-width: 760px) { .call { display: none; } .bar { left: 10px; right: 10px; transform: none; justify-content: space-between; } .bar .logo { font-size: 20px; } .bar button { padding: 10px 12px; font-size: 13px; } }
+
+/* hero: arches, the garden grows on scroll */
+.hero { position: relative; height: 200vh; }
+.scene { position: sticky; top: 0; height: 100vh; min-height: 620px; overflow: hidden; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 30px; padding: 90px var(--gut) 40px; }
+.arch { position: relative; justify-self: center; width: min(40vw, 470px); aspect-ratio: 3/4; border-radius: 999px 999px 26px 26px; overflow: hidden; box-shadow: 0 40px 70px -40px rgba(0,0,0,.45); }
+.arch img { width: 100%; height: 100%; object-fit: cover; transform: scale(calc(1.15 - .15 * var(--g, 0))); }
+#vines { position: absolute; z-index: 1; left: 48%; right: 0; bottom: 0; width: 100%; height: 55%; pointer-events: none; opacity: .55; }
+#vines path { fill: none; stroke: var(--leaf); stroke-width: 3; stroke-linecap: round; transition: stroke .5s; }
+#vines .lf { fill: var(--leaf); transition: fill .5s; transform-box: fill-box; transform-origin: 0 100%; }
+.htx { position: relative; z-index: 3; }
+.arch { z-index: 2; }
+.tag { font: 700 12px/1 var(--body); letter-spacing: .22em; text-transform: uppercase; color: var(--terra); }
+h1 { margin: 14px 0 12px; font: 700 clamp(48px, 7vw, 104px)/.95 var(--head); }
+h1 em { font-style: italic; color: var(--leaf); }
+.htx p { max-width: 500px; margin: 0 0 24px; color: var(--mut); font-size: clamp(16px, 1.4vw, 19px); }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 15px 24px; border-radius: 40px; background: var(--leaf); color: #fff; font: 700 15px/1 var(--body); text-decoration: none; border: 0; cursor: pointer; transition: background .5s, transform .3s; }
+.btn:hover { transform: translateY(-2px); } .btn.o { background: transparent; color: var(--leaf-2); box-shadow: inset 0 0 0 2px var(--leaf); }
+.row { display: flex; gap: 10px; flex-wrap: wrap; }
+@media (max-width: 860px) { .hero { height: auto; } .scene { position: relative; height: auto; min-height: 0; grid-template-columns: 1fr; padding-top: 90px; } .arch { width: min(70vw, 320px); order: -1; } }
+
+.sec { padding: clamp(70px, 10vw, 120px) var(--gut); max-width: 1180px; margin: 0 auto; scroll-margin-top: 80px; }
+.kick { font: 700 12px/1 var(--body); letter-spacing: .22em; text-transform: uppercase; color: var(--terra); }
+h2 { margin: 10px 0 10px; font: 700 clamp(34px, 5vw, 64px)/1 var(--head); }
+h2 em { font-style: italic; color: var(--leaf); }
+h2 + small { display: block; max-width: 640px; color: var(--mut); font-style: italic; margin-bottom: 30px; }
+
+/* the evening plan changes with the mode */
+.plan { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; counter-reset: s; }
+.st { position: relative; background: #fff; border-radius: 26px; padding: 24px 20px 20px; border: 1px solid var(--line); }
+.st::before { counter-increment: s; content: counter(s); position: absolute; top: -16px; left: 20px; width: 34px; height: 34px; border-radius: 50%; background: var(--leaf); color: #fff; display: grid; place-items: center; font: 700 16px/1 var(--body); transition: background .5s; }
+.st b { display: block; font: 700 23px/1.15 var(--head); margin: 6px 0 6px; }
+.st p { margin: 0; font-size: 15px; color: var(--mut); }
+@media (max-width: 900px) { .plan { grid-template-columns: 1fr 1fr; gap: 26px 14px; } }
+@media (max-width: 520px) { .plan { grid-template-columns: 1fr; } }
+
+.gal { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; }
+.gal figure { margin: 0; border-radius: 22px; overflow: hidden; background: var(--sand); }
+.gal figure:nth-child(1) { grid-column: span 3; grid-row: span 2; border-radius: 999px 999px 22px 22px; }
+.gal figure:nth-child(2), .gal figure:nth-child(3) { grid-column: span 3; aspect-ratio: 16/10; }
+.gal img { width: 100%; height: 100%; object-fit: cover; }
+.gal figcaption { font: italic 500 18px/1.3 var(--head); padding: 10px 4px; }
+@media (max-width: 760px) { .gal { grid-template-columns: 1fr 1fr; } .gal figure:nth-child(1) { grid-column: span 2; aspect-ratio: 3/4; } .gal figure:nth-child(2), .gal figure:nth-child(3) { grid-column: span 1; aspect-ratio: 1; } }
+
+.perks { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.perks span { padding: 10px 16px; border-radius: 30px; background: #fff; border: 1px solid var(--line); font-size: 14.5px; }
+
+.rate { display: grid; grid-template-columns: auto 1fr; gap: 26px; align-items: center; margin-bottom: 26px; }
+.rate b { font: 700 clamp(70px, 10vw, 130px)/1 var(--head); color: var(--leaf); }
+.meter { display: grid; gap: 8px; }
+.meter div { display: grid; grid-template-columns: 140px 1fr 50px; gap: 12px; align-items: center; font-size: 14.5px; }
+.meter i { display: block; height: 8px; border-radius: 8px; background: var(--sand); overflow: hidden; }
+.meter i::after { content: ""; display: block; height: 100%; width: var(--w); background: var(--leaf); border-radius: 8px; transform-origin: 0 50%; transform: scaleX(0); transition: transform 1.2s var(--ease), background .5s; }
+.in .meter i::after, .meter.in i::after { transform: scaleX(1); }
+.revs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.rv { background: #fff; border-radius: 22px; padding: 22px; border: 1px solid var(--line); }
+.rv p { margin: 0 0 10px; font: italic 500 20px/1.35 var(--head); } .rv small { color: var(--mut); font-size: 13px; }
+@media (max-width: 860px) { .revs { grid-template-columns: 1fr; } .rate { grid-template-columns: 1fr; } .meter div { grid-template-columns: 110px 1fr 44px; } }
+
+.vis { display: grid; grid-template-columns: 1fr 1.2fr; gap: 26px; align-items: center; }
+.ln { display: flex; justify-content: space-between; gap: 14px; padding: 11px 0; border-bottom: 1px solid var(--line); }
+.ln span { color: var(--mut); } .ln b { text-align: right; font-weight: 500; }
+.live i { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: #aaa; margin-right: 8px; }
+.is-open i { background: #4f9a4a; } .is-closed i { background: #c9573f; }
+.mapbox { position: relative; min-height: 380px; border-radius: 999px 999px 26px 26px; overflow: hidden; }
+.mapbox iframe { position: absolute; inset: 0; width: 100%; height: calc(100% + 140px); border: 0; }
+@media (max-width: 860px) { .vis { grid-template-columns: 1fr; } .mapbox { border-radius: 26px; } }
+footer { padding: 40px var(--gut) 110px; text-align: center; color: var(--mut); font-size: 14px; }
+footer b { display: block; font: 700 40px/1 var(--head); color: var(--leaf-2); margin-bottom: 6px; }
+.motion [data-in] { opacity: 0; transform: translateY(24px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
+.motion [data-in].in { opacity: 1; transform: none; }
+.noimg { background: var(--sand); } .noimg img { opacity: 0; }
+</style>
+</head>
+<body data-hours='{"0":[[10,0,22,0]],"1":[[10,0,22,0]],"2":[[10,0,22,0]],"3":[[10,0,22,0]],"4":[[10,0,22,0]],"5":[[10,0,22,0]],"6":[[10,0,22,0]]}'>
+<div class="bar" role="tablist" aria-label="Как вы придёте">
+  <span class="logo">Сад</span>
+  <button class="on" data-mode="kids" role="tab">С детьми</button>
+  <button data-mode="duo" role="tab">Вдвоём или с друзьями</button>
+</div>
+<a class="call" href="tel:+79066133030">+7 (906) 613-30-30</a>
+<main>
+<section class="hero" id="top">
+  <div class="scene" id="scene">
+    <div class="htx">
+      <span class="tag">Семейный ресторан · Владимир, Батурина, 20</span>
+      <h1 data-m="kids">Взрослым ужин, <em>детям игры</em></h1>
+      <h1 data-m="duo">Тихий вечер <em>в саду</em></h1>
+      <p data-m="kids">Пока вы ужинаете, дети играют в просторной детской комнате, а аниматор присматривает за ними. Игровая отгорожена, так что в зале спокойно.</p>
+      <p data-m="duo">Светлые залы с арками и живыми деревьями, японская и европейская кухня, кофе и десерты из витрины.</p>
+      <div class="row"><a class="btn" href="tel:+79066133030">Забронировать стол</a><a class="btn o" href="#vecher">Как пройдёт вечер</a></div>
+    </div>
+    <div class="arch" data-ph><img src="https://avatars.mds.yandex.net/get-altay/18806283/2a0000019dde17c679660d61a2c8eba03bd2/XXL" alt="Зал ресторана «Сад» с деревом и арками" fetchpriority="high"></div>
+    <svg id="vines" viewBox="0 0 1200 500" preserveAspectRatio="none" aria-hidden="true"></svg>
+  </div>
+</section>
+
+<section class="sec" id="vecher">
+  <span class="kick" data-in>Как пройдёт вечер</span>
+  <h2 data-in data-m="kids">Ужин, <em>пока дети играют</em></h2>
+  <h2 data-in data-m="duo">Вечер <em>без суеты</em></h2>
+  <small data-in>Переключите вверху «С детьми» или «Вдвоём», и план вечера подстроится. Всё по отзывам гостей ресторана.</small>
+  <div class="plan" data-m="kids">
+    <div class="st" data-in><b>Детская комната</b><p>Просторная, чистая, с мягким покрытием и игрушками. Её отгородили, и в зале стало тихо.</p></div>
+    <div class="st" data-in><b>Аниматор рядом</b><p>Присматривает за детьми, пока взрослые спокойно общаются.</p></div>
+    <div class="st" data-in><b>Детское меню</b><p>Есть детское меню, детский санузел и стульчики для малышей.</p></div>
+    <div class="st" data-in><b>Десерт на всех</b><p>Пирожные из витрины и кофе. Гости отмечают большие порции.</p></div>
+  </div>
+  <div class="plan" data-m="duo">
+    <div class="st" data-in><b>Светлый зал</b><p>Минимализм, арки, живые деревья и мягкие кресла. Три зала, можно выбрать потише.</p></div>
+    <div class="st" data-in><b>Разная кухня</b><p>От японской до европейской. Завтраки и бизнес-ланч в будни.</p></div>
+    <div class="st" data-in><b>Кофе и витрина</b><p>Капучино и десерты собственной витрины, всё можно взять с собой.</p></div>
+    <div class="st" data-in><b>После прогулки</b><p>Гости заходят пообедать после прогулки по центру и парку.</p></div>
+  </div>
+  <div class="perks" data-in><span>Завтраки</span><span>Бизнес-ланч</span><span>Банкеты в 3 залах</span><span>Доставка и с собой</span><span>Можно с собакой до 35 см</span><span>Подарочный сертификат</span><span>Парковка</span></div>
+</section>
+
+<section class="sec" id="zaly">
+  <span class="kick" data-in>Залы</span>
+  <h2 data-in>Здесь <em>хочется задержаться</em></h2>
+  <div class="gal" data-in>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/16411237/2a00000199a4bcd84b168498cc8c10f9eee1/XL" alt="Интерьер с арками" loading="lazy"></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/19753746/2a0000019dde180dc2d4f30fe3f8ad4ac0b0/XL" alt="Светлый зал у окон" loading="lazy"></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/10637174/2a0000018d0d39b8b5d20bebac5d75f39c50/XL" alt="Детская зона" loading="lazy"></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/13216594/2a0000018e8526986152dc581c08aa6a7c02/XL" alt="Витрина с десертами" loading="lazy"><figcaption>Витрина десертов</figcaption></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/20387359/2a0000019e9cf19f68966fbd5e07acbf97a3/XL" alt="Завтрак" loading="lazy"><figcaption>Завтраки</figcaption></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/17692458/2a0000019e02008b2fae28861ee1438b6d74/XL" alt="Салат" loading="lazy"><figcaption>Кухня</figcaption></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/18148618/2a0000019b98ce5ceaeb1c81147bc761d1d9/XL" alt="Ёлка в зале" loading="lazy"><figcaption>Скоро Новый год</figcaption></figure>
+  </div>
+  <div class="row" style="margin-top:24px" data-in><a class="btn" href="tel:+79066133030">Узнать про банкет</a><a class="btn o" href="https://wa.me/message/LQKQZ2YT7WJUN1" target="_blank" rel="noopener">Написать в WhatsApp</a></div>
+</section>
+
+<section class="sec" id="otzyvy">
+  <span class="kick" data-in>Отзывы</span>
+  <div class="rate">
+    <b data-count="5.0" data-in>5,0</b>
+    <div class="meter" data-in>
+      <div><span>С детьми</span><i style="--w:86%"></i><span>472</span></div>
+      <div><span>Атмосфера</span><i style="--w:93%"></i><span>350</span></div>
+      <div><span>Детская комната</span><i style="--w:83%"></i><span>318</span></div>
+      <div><span>Интерьер</span><i style="--w:93%"></i><span>183</span></div>
+    </div>
+  </div>
+  <div class="revs">
+    <div class="rv" data-in><p>«Детская комната — настоящее спасение для родителей».</p><small>1358 оценок на Яндекс Картах</small></div>
+    <div class="rv" data-in><p>«В Саду всегда спокойно, стильно и очень уютно. Хочется возвращаться снова».</p><small>Из отзывов</small></div>
+    <div class="rv" data-in><p>«Большие порции, прилагается бесплатный напиток, выбрала капучино. Прекрасный кофе».</p><small>После прогулки в парке</small></div>
+  </div>
+</section>
+
+<section class="sec" id="adres">
+  <div class="vis">
+    <div>
+      <span class="kick" data-in>Адрес</span>
+      <h2 data-in>Батурина, <em>20</em></h2>
+      <div class="ln"><span>Где</span><b>Владимир, ул. Батурина, 20</b></div>
+      <div class="ln"><span>Сейчас</span><b class="live" data-live><i></i><span data-status>…</span></b></div>
+      <div class="ln"><span>Часы</span><b>Ежедневно 10:00–22:00</b></div>
+      <div class="ln"><span>Телефон</span><b><a href="tel:+79066133030">+7 (906) 613-30-30</a></b></div>
+      <div class="ln"><span>Средний чек</span><b>500–1500 ₽</b></div>
+      <div class="row" style="margin-top:20px"><a class="btn" href="tel:+79066133030">Позвонить</a><a class="btn o" href="https://vk.ru/garden_family_rest" target="_blank" rel="noopener">ВКонтакте</a></div>
+    </div>
+    <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=40.407035%2C56.139934&amp;z=16&amp;pt=40.407035%2C56.139934%2Cpm2gnm&amp;l=map" title="Ресторан «Сад» на Яндекс Картах" loading="lazy"></iframe></div>
+  </div>
+</section>
+</main>
+<footer><b>Сад</b>Семейный ресторан · Владимир, ул. Батурина, 20 · +7 (906) 613-30-30</footer>
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  function setMode(m) {
+    document.body.classList.toggle('duo', m === 'duo');
+    document.querySelectorAll('.bar button').forEach(function (b) { b.classList.toggle('on', b.dataset.mode === m); });
+    document.querySelectorAll('[data-m="' + m + '"]').forEach(function (e) { e.classList.remove('swap'); void e.offsetWidth; e.classList.add('swap', 'in'); e.querySelectorAll('[data-in]').forEach(function (x) { x.classList.add('in'); }); });
+  }
+  document.querySelector('.bar').addEventListener('click', function (e) { var b = e.target.closest('button'); if (b) setMode(b.dataset.mode); });
+
+  // vines grow from the bottom of the hero while it is pinned
+  var svg = document.getElementById('vines'), hero = document.getElementById('top'), scene = document.getElementById('scene'), V = [], h = '';
+  [[60, 500, 180, 120], [300, 500, 360, 60], [560, 500, 520, 160], [820, 500, 900, 80], [1100, 500, 1040, 140]].forEach(function (v, i) {
+    var d = 'M' + v[0] + ' ' + v[1] + ' C ' + (v[0] + 60) + ' 380, ' + (v[2] - 80) + ' 260, ' + v[2] + ' ' + v[3];
+    h += '<path d="' + d + '" data-v="' + i + '"/>';
+  });
+  svg.innerHTML = h;
+  var paths = [].slice.call(svg.querySelectorAll('path')), leaves = [];
+  paths.forEach(function (p, i) {
+    var L = p.getTotalLength(); p.style.strokeDasharray = L; p.style.strokeDashoffset = L; V.push(L);
+    for (var k = 1; k <= 5; k++) { var pt = p.getPointAtLength(L * k / 6), side = k % 2 ? 1 : -1;
+      var lf = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      lf.setAttribute('d', 'M0 0 C ' + (14 * side) + ' -6, ' + (22 * side) + ' -22, ' + (6 * side) + ' -34 C ' + (-4 * side) + ' -20, ' + (-4 * side) + ' -8, 0 0Z');
+      lf.setAttribute('class', 'lf'); lf.setAttribute('transform', 'translate(' + pt.x.toFixed(1) + ' ' + pt.y.toFixed(1) + ') scale(0)');
+      lf._at = k / 6; lf._x = pt.x; lf._y = pt.y; lf._p = i; svg.appendChild(lf); leaves.push(lf); }
+  });
+  RT.onScroll(function () {
+    var g = RT.motion ? (innerWidth > 860 ? RT.progress(hero) : RT.clamp(scrollY / 600 + .3)) : 1;
+    scene.style.setProperty('--g', g.toFixed(3));
+    paths.forEach(function (p, i) { var k = RT.clamp(g * 1.4 - i * .08); p.style.strokeDashoffset = (V[i] * (1 - k)).toFixed(1); });
+    leaves.forEach(function (lf) { var k = RT.clamp((g * 1.4 - lf._p * .08 - lf._at) * 5); lf.setAttribute('transform', 'translate(' + lf._x.toFixed(1) + ' ' + lf._y.toFixed(1) + ') scale(' + (k * 1.2).toFixed(2) + ')'); });
+  });
+
+  window.REEL = { hero: '#top', heroAt: .75, feature: '#vecher', featureOff: 40, prices: '#zaly', pricesOff: 40,
+    demo: [function () { setMode('duo'); }, function () { setMode('kids'); }], holds: [55, 45] };
+})();
+</script>
+</body>
+</html>

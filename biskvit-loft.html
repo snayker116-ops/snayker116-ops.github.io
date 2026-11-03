@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Бисквит Loft — кофейня и торты на заказ · Иваново, Жиделёва, 1</title>
+<meta name="description" content="Кофейня-кондитерская «Бисквит Loft» в Иваново: кофе (капучино 200–290 ₽), десерты ручной работы, торты и рулеты на заказ, кофе с собой. Пн–пт 8:30–20:00, сб–вс 10:00–20:30. 5,0 на Яндекс Картах, 343 оценки.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Бисквит Loft — кофейня в Иваново">
+<meta property="og:description" content="Сколько у вас минут? Подскажем, что успеть. +7 (920) 379-88-88">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/18184740/2a0000019b1cd0bb80240e80625220dacbe6/XXL">
+<meta name="theme-color" content="#2b1d17">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Бисквит Loft","telephone":"+7 920 379-88-88","address":{"@type":"PostalAddress","streetAddress":"ул. Жиделёва, 1","addressLocality":"Иваново","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":57.007083,"longitude":40.969887},"openingHours":["Mo-Fr 08:30-20:00","Sa-Su 10:00-20:30"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","ratingCount":"343"}}</script>
+<style>
+:root { --brick: #8c3b26; --brick-2: #a8502f; --coal: #2b1d17; --foam: #f6ece0; --latte: #c99b6d; --cream: #fbf6ef; --mut: #8a7666; --line: #e8dacb; --leaf: #4d7a4a;
+  --head: 'Playfair Display', serif; --body: 'IBM Plex Sans', sans-serif; --gut: clamp(16px, 4vw, 56px); --ease: cubic-bezier(.2,.7,.2,1); }
+* { box-sizing: border-box; } html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--cream); color: var(--coal); font: 400 17px/1.6 var(--body); overflow-x: hidden; }
+img { display: block; max-width: 100%; } a { color: inherit; }
+.nav { position: fixed; z-index: 30; top: 0; left: 0; right: 0; display: flex; align-items: center; gap: 22px; padding: 16px var(--gut); color: var(--foam); }
+.nav b { font: italic 600 22px/1 var(--head); margin-right: auto; }
+.nav a { text-decoration: none; font: 600 14px/1 var(--body); }
+.nav .call { padding: 10px 16px; border-radius: 30px; background: var(--foam); color: var(--coal); }
+.nav.solid { background: var(--coal); }
+@media (max-width: 760px) { .nav a:not(.call) { display: none; } }
+
+/* hero: brick wall, a cup where latte art pours itself */
+.hero { position: relative; min-height: 100vh; display: grid; grid-template-columns: 1.05fr .95fr; gap: 30px; align-items: center; padding: 100px var(--gut) 50px; color: var(--foam);
+  background: repeating-linear-gradient(0deg, transparent 0 34px, rgba(0,0,0,.18) 34px 37px), repeating-linear-gradient(90deg, transparent 0 74px, rgba(0,0,0,.18) 74px 77px), linear-gradient(160deg, var(--brick-2), var(--brick) 60%, #6b2c1c); }
+.hero h1 { margin: 14px 0 12px; font: 700 clamp(46px, 7.4vw, 108px)/.95 var(--head); }
+.hero h1 em { font-style: italic; font-weight: 600; color: #f2d2a9; }
+.tag { font: 600 13px/1 var(--body); letter-spacing: .16em; text-transform: uppercase; color: #f2d2a9; }
+.hero p { max-width: 520px; margin: 0 0 24px; font-size: clamp(16px, 1.4vw, 19px); color: #f3e2d1; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 15px 24px; border-radius: 40px; background: var(--foam); color: var(--coal); font: 600 15px/1 var(--body); text-decoration: none; border: 0; cursor: pointer; transition: transform .3s; }
+.btn:hover { transform: translateY(-2px); } .btn.o { background: transparent; color: var(--foam); box-shadow: inset 0 0 0 1.5px rgba(246,236,224,.6); }
+.btn.d { background: var(--coal); color: var(--foam); }
+.row { display: flex; gap: 10px; flex-wrap: wrap; }
+.cup { justify-self: center; width: min(36vw, 420px); aspect-ratio: 1; position: relative; }
+.cup svg { width: 100%; height: 100%; overflow: visible; }
+#art { stroke: var(--foam); stroke-width: 10; fill: none; stroke-linecap: round; }
+@media (max-width: 860px) { .hero { grid-template-columns: 1fr; padding-top: 90px; } .cup { width: 60vw; max-width: 280px; order: -1; } }
+
+.sec { padding: clamp(70px, 10vw, 120px) var(--gut); max-width: 1140px; margin: 0 auto; scroll-margin-top: 70px; }
+.kick { font: 600 12px/1 var(--body); letter-spacing: .2em; text-transform: uppercase; color: var(--brick); }
+h2 { margin: 10px 0 10px; font: 700 clamp(32px, 4.8vw, 60px)/1.05 var(--head); }
+h2 em { font-style: italic; font-weight: 600; color: var(--brick); }
+h2 + small { display: block; max-width: 640px; color: var(--mut); font-style: italic; margin-bottom: 30px; }
+
+/* feature: how many minutes */
+.mins { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 18px; }
+.mins button { padding: 22px 16px; border-radius: 20px; border: 2px solid var(--line); background: #fff; cursor: pointer; text-align: left; transition: background .3s, color .3s, border-color .3s; }
+.mins button b { display: block; font: 700 40px/1 var(--head); }
+.mins button span { font: 600 13px/1.2 var(--body); color: var(--mut); }
+.mins button.on { background: var(--coal); color: var(--foam); border-color: var(--coal); } .mins button.on span { color: #c9b5a2; }
+.plan { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: stretch; }
+.plan figure { margin: 0; border-radius: 24px; overflow: hidden; min-height: 300px; position: relative; background: var(--line); }
+.plan figure img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: opacity .5s; }
+.plan .txt { padding: 26px; border-radius: 24px; background: #fff; }
+.plan .txt b { display: block; font: 700 28px/1.15 var(--head); margin-bottom: 8px; }
+.plan .txt p { margin: 0 0 14px; color: var(--mut); }
+.plan .txt ul { margin: 0 0 18px; padding: 0; list-style: none; display: grid; gap: 6px; }
+.plan .txt li::before { content: "☕ "; }
+@media (max-width: 860px) { .mins button b { font-size: 30px; } .plan { grid-template-columns: 1fr; } }
+
+.vit { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.vit figure { margin: 0; border-radius: 20px; overflow: hidden; aspect-ratio: 3/4; background: var(--line); }
+.vit img { width: 100%; height: 100%; object-fit: cover; }
+.vit figcaption { padding: 8px 2px; font: italic 600 17px/1.2 var(--head); }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.tags span { padding: 9px 14px; border-radius: 20px; border: 1.5px solid var(--line); font-size: 14px; background: #fff; }
+@media (max-width: 760px) { .vit { grid-template-columns: 1fr 1fr; } }
+
+.rate { display: flex; gap: 18px; align-items: baseline; flex-wrap: wrap; margin-bottom: 24px; }
+.rate b { font: 700 clamp(64px, 10vw, 130px)/1 var(--head); color: var(--brick); }
+.revs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.rv { padding: 22px; border-radius: 22px; background: #fff; }
+.rv p { margin: 0 0 10px; font: italic 600 18px/1.45 var(--head); } .rv small { color: var(--mut); font-size: 13px; }
+@media (max-width: 860px) { .revs { grid-template-columns: 1fr; } }
+
+.vis { display: grid; grid-template-columns: 1fr 1.2fr; gap: 26px; align-items: center; }
+.ln { display: flex; justify-content: space-between; gap: 14px; padding: 11px 0; border-bottom: 1px solid var(--line); }
+.ln span { color: var(--mut); } .ln b { text-align: right; font-weight: 600; }
+.live i { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: #aaa; margin-right: 8px; }
+.is-open i { background: var(--leaf); } .is-closed i { background: var(--brick); }
+.mapbox { position: relative; min-height: 380px; border-radius: 24px; overflow: hidden; }
+.mapbox iframe { position: absolute; inset: 0; width: 100%; height: calc(100% + 140px); border: 0; }
+@media (max-width: 860px) { .vis { grid-template-columns: 1fr; } }
+footer { padding: 40px var(--gut) 60px; text-align: center; background: var(--coal); color: #c9b5a2; font-size: 14px; }
+footer b { display: block; font: italic 600 34px/1 var(--head); color: var(--foam); margin-bottom: 8px; }
+.motion [data-in] { opacity: 0; transform: translateY(24px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
+.motion [data-in].in { opacity: 1; transform: none; }
+.noimg { background: var(--line); } .noimg img { opacity: 0; }
+</style>
+</head>
+<body data-hours='{"0":[[10,0,20,30]],"1":[[8,30,20,0]],"2":[[8,30,20,0]],"3":[[8,30,20,0]],"4":[[8,30,20,0]],"5":[[8,30,20,0]],"6":[[10,0,20,30]]}'>
+<nav class="nav" id="nav" aria-label="Разделы"><b>Бисквит Loft</b><a href="#minuty">Сколько у вас минут</a><a href="#vitrina">Витрина</a><a href="#adres">Адрес</a><a class="call" href="tel:+79203798888">Позвонить</a></nav>
+<main>
+<section class="hero" id="top">
+  <div>
+    <span class="tag">Кофейня и кондитерская · Иваново · Жиделёва, 1</span>
+    <h1>Кофе, бисквит <em>и кирпичная стена</em></h1>
+    <p>Десерты ручной работы, торты и рулеты на заказ, кофе с кленовым сиропом. Тихое место, где играет спокойная музыка, а кофе можно взять с собой.</p>
+    <div class="row"><a class="btn" href="#minuty">Сколько у вас минут?</a><a class="btn o" href="tel:+79203798888">Заказать торт</a></div>
+  </div>
+  <div class="cup" aria-hidden="true"><svg viewBox="0 0 400 400">
+    <ellipse cx="200" cy="330" rx="170" ry="34" fill="rgba(0,0,0,.25)"/><ellipse cx="200" cy="318" rx="160" ry="30" fill="#f6ece0"/>
+    <path d="M70 170 C 70 290, 130 320, 200 320 C 270 320, 330 290, 330 170Z" fill="#fbf6ef"/>
+    <path d="M330 190 C 380 190, 380 260, 320 262" stroke="#fbf6ef" stroke-width="18" fill="none"/>
+    <ellipse cx="200" cy="170" rx="130" ry="44" fill="#8a5a36"/><ellipse cx="200" cy="170" rx="112" ry="36" fill="#c99b6d"/>
+    <path id="art" d="M200 196 C 160 176, 150 150, 172 140 C 186 134, 196 144, 200 154 C 204 144, 214 134, 228 140 C 250 150, 240 176, 200 196 M200 196 L 200 212"/>
+  </svg></div>
+</section>
+
+<section class="sec" id="minuty">
+  <span class="kick" data-in>Пока ждёте</span>
+  <h2 data-in>Сколько у вас <em>минут?</em></h2>
+  <small data-in>Гости заходят выпить кофе, пока машина на соседней мойке, или по пути с вокзала. Выберите время, и мы подскажем, что успеть.</small>
+  <div class="mins" id="mins" data-in><button data-m="0" class="on"><b>10</b><span>минут, на бегу</span></button><button data-m="1"><b>30</b><span>минут, посидеть</span></button><button data-m="2"><b>60+</b><span>праздник скоро</span></button></div>
+  <div class="plan" data-in>
+    <figure data-ph id="fig"><img id="pimg" alt="" loading="lazy"></figure>
+    <div class="txt" aria-live="polite" id="ptxt"></div>
+  </div>
+</section>
+
+<section class="sec" id="vitrina">
+  <span class="kick" data-in>Витрина</span>
+  <h2 data-in>Ручная работа <em>каждый день</em></h2>
+  <small data-in>Цен на десерты в карточке нет. По карточке на Яндекс Картах капучино стоит 200–290 ₽, торты и рулеты делают на заказ, стоимость уточняйте при заказе.</small>
+  <div class="vit" data-in>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/18184740/2a0000019b1cd0bb80240e80625220dacbe6/XL" alt="Витрина с десертами" loading="lazy"><figcaption>Витрина</figcaption></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/7383884/2a000001831706c44ad26d426a7bf384fc3b/XL" alt="Красный торт с ягодами" loading="lazy"><figcaption>Торт на заказ</figcaption></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/7456447/2a000001831706dcaaa1d52ba6ffa117b882/XL" alt="Торт с декором" loading="lazy"><figcaption>На праздник</figcaption></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/13791177/2a0000019dd8087672bd401e5cc93253e5b0/XL" alt="Капучино" loading="lazy"><figcaption>Капучино</figcaption></figure>
+  </div>
+  <div class="tags" data-in><span>Торты, шу, эклеры, макарон</span><span>Кофе с собой</span><span>Винная карта</span><span>Можно с собакой</span><span>Доставка</span><span>Предзаказ онлайн</span></div>
+</section>
+
+<section class="sec" id="otzyvy">
+  <span class="kick" data-in>Отзывы</span>
+  <div class="rate" data-in><b data-count="5.0">5,0</b><span>343 оценки на Яндекс Картах. Атмосферу хвалят в 103 отзывах из 105.</span></div>
+  <div class="revs">
+    <div class="rv" data-in><p>«Люблю, когда кофе вкусный, десерты ручной работы, тихо, спокойно и играет приятная музыка».</p><small>Из отзывов</small></div>
+    <div class="rv" data-in><p>«Заказывал рулетик на день рождения девушке: оформил по телефону, продолжили в Телеграме, отчитались по готовности».</p><small>Заказ</small></div>
+    <div class="rv" data-in><p>«Приехала в Иваново на день, несколько кофеен по пути от вокзала не работали, а здесь улыбнулась удача».</p><small>Гостья города</small></div>
+  </div>
+</section>
+
+<section class="sec" id="adres">
+  <div class="vis">
+    <div>
+      <span class="kick" data-in>Адрес</span>
+      <h2 data-in>Жиделёва, <em>1</em></h2>
+      <div class="ln"><span>Где</span><b>Иваново, ул. Жиделёва, 1</b></div>
+      <div class="ln"><span>Сейчас</span><b class="live" data-live><i></i><span data-status>…</span></b></div>
+      <div class="ln"><span>Часы</span><b>пн–пт 8:30–20:00 · сб, вс 10:00–20:30</b></div>
+      <div class="ln"><span>Телефон</span><b><a href="tel:+79203798888">+7 (920) 379-88-88</a></b></div>
+      <div class="row" style="margin-top:20px"><a class="btn d" href="tel:+79203798888">Позвонить</a><a class="btn d" href="https://t.me/biscuit.loft" target="_blank" rel="noopener">Telegram</a><a class="btn d" href="https://vk.ru/biscuit.loft" target="_blank" rel="noopener">ВКонтакте</a></div>
+    </div>
+    <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=40.969887%2C57.007083&amp;z=16&amp;pt=40.969887%2C57.007083%2Cpm2brm&amp;l=map" title="«Бисквит Loft» на Яндекс Картах" loading="lazy"></iframe></div>
+  </div>
+</section>
+</main>
+<footer><b>Бисквит Loft</b>Кофейня и кондитерская · Иваново, ул. Жиделёва, 1 · +7 (920) 379-88-88</footer>
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  var nav = document.getElementById('nav');
+  RT.onScroll(function () { nav.classList.toggle('solid', scrollY > 60); });
+  var art = document.getElementById('art'), L = art.getTotalLength(); art.style.strokeDasharray = L;
+  var t0 = null;
+  if (RT.motion) RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.ease(RT.clamp((t - t0 - 300) / 2200)); art.style.strokeDashoffset = (L * (1 - k)).toFixed(1); return k < 1; }); else art.style.strokeDashoffset = 0;
+
+  var B = 'https://avatars.mds.yandex.net/get-altay/';
+  var M = [
+    { img: '13791177/2a0000019dd8087672bd401e5cc93253e5b0', t: 'Кофе с собой', d: 'Заберите капучино и десерт с витрины, пока машина на мойке.', l: ['Капучино 200–290 ₽', 'Кофе с кленовым сиропом, его хвалят в отзывах', 'Пирожное шу или эклер'] },
+    { img: '16166099/2a000001993e9e7bf41f8daf124fa59de804', t: 'Посидеть у окна', d: 'Сядьте за столик среди зелени, возьмите два разных десерта к кофе.', l: ['Десерты ручной работы', 'Тихая музыка, уютный зал', 'Можно прийти с собакой'] },
+    { img: '7456447/2a000001831706dcaaa1d52ba6ffa117b882', t: 'Заказать торт', d: 'Торт или рулет на праздник: обсудите по телефону, детали можно продолжить в Телеграме.', l: ['Торты и рулеты на заказ', 'Скажут, когда заказ готов', 'Есть доставка'] }
+  ];
+  var img = document.getElementById('pimg'), txt = document.getElementById('ptxt');
+  function set(k) {
+    k = +k; var m = M[k];
+    document.querySelectorAll('#mins button').forEach(function (b) { b.classList.toggle('on', +b.dataset.m === k); });
+    img.style.opacity = 0; setTimeout(function () { img.src = B + m.img + '/XL'; img.alt = m.t; img.style.opacity = 1; }, RT.motion ? 200 : 0);
+    txt.innerHTML = '<b>' + m.t + '</b><p>' + m.d + '</p><ul>' + m.l.map(function (x) { return '<li>' + x + '</li>'; }).join('') + '</ul><a class="btn d" href="tel:+79203798888">' + (k === 2 ? 'Заказать торт' : 'Позвонить') + '</a>';
+  }
+  document.getElementById('mins').addEventListener('click', function (e) { var b = e.target.closest('button'); if (b) set(b.dataset.m); });
+  set(0);
+  window.__mins = set;
+
+  window.REEL = { hero: '#top', heroAt: 0, feature: '#minuty', featureOff: 30, featureM: '#mins', featureOffM: -120, prices: '#vitrina', pricesOff: 30,
+    demo: [function () { set(1); }, function () { set(2); }, function () { set(0); }], holds: [45, 45, 40] };
+})();
+</script>
+</body>
+</html>

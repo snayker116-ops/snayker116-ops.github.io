@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Пламя — гриль-ресторан и банкетный зал · Рязань, Краснорядская, 2</title>
+<meta name="description" content="Ресторан «Пламя» в Рязани: стейки, мясо на гриле, пивные снеки собственного производства, 3 зала для банкетов и корпоративов. Средний счёт 500–800 ₽. 4,8 на Яндекс Картах, 2458 оценок.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Пламя — гриль-ресторан в Рязани">
+<meta property="og:description" content="Выберите прожарку, а мы подскажем блюдо. Банкеты и корпоративы в 3 залах. +7 (4912) 95-95-95">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/11873493/2a000001926d13b4dcea4f57e5416775c435/XXL">
+<meta name="theme-color" content="#120d0a">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Golos+Text:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"Пламя","servesCuisine":"Гриль, стейки","telephone":"+7 4912 95-95-95","address":{"@type":"PostalAddress","streetAddress":"Краснорядская ул., 2","addressLocality":"Рязань","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":54.628698,"longitude":39.736379},"openingHours":["Mo-Th 13:00-23:00","Fr-Sa 13:00-02:00","Su 13:00-23:00"],"priceRange":"500–800 ₽","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","ratingCount":"2458"}}</script>
+<style>
+:root { --coal: #120d0a; --coal-2: #1c1511; --ash: #2a211b; --ember: #ff6a1f; --gold: #ffb347; --cream: #f4e9dc; --mut: #b9a998; --line: rgba(255,179,71,.18);
+  --head: 'Unbounded', sans-serif; --body: 'Golos Text', sans-serif; --mono: 'JetBrains Mono', monospace; --gut: clamp(16px, 4vw, 56px); --ease: cubic-bezier(.2,.7,.2,1); }
+* { box-sizing: border-box; } html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--coal); color: var(--cream); font: 400 17px/1.6 var(--body); overflow-x: hidden; }
+img { display: block; max-width: 100%; } a { color: inherit; }
+.nav { position: fixed; z-index: 30; top: 0; left: 0; right: 0; display: flex; align-items: center; gap: 26px; padding: 16px var(--gut); background: linear-gradient(var(--coal), transparent); }
+.nav b { font: 900 20px/1 var(--head); letter-spacing: .04em; margin-right: auto; }
+.nav b i { font-style: normal; color: var(--ember); }
+.nav a { text-decoration: none; font-size: 14px; color: var(--mut); transition: color .3s; }
+.nav a:hover, .nav a.on { color: var(--gold); }
+.nav .call { padding: 10px 16px; border-radius: 30px; background: var(--ember); color: #1a0d05; font-weight: 700; }
+@media (max-width: 760px) { .nav a:not(.call) { display: none; } }
+
+/* hero: the grill heats up as you scroll */
+.hero { position: relative; height: 220vh; }
+.stage { position: sticky; top: 0; height: 100vh; overflow: hidden; display: grid; align-items: end; padding: 0 var(--gut) 9vh; }
+.stage > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: calc(.35 + .4 * var(--h, 0)); transform: scale(calc(1.12 - .1 * var(--h, 0))); filter: saturate(calc(.6 + .6 * var(--h, 0))); }
+.stage::after { content: ""; position: absolute; inset: 0; background: radial-gradient(80% 60% at 50% 100%, rgba(255,106,31, calc(.45 * var(--h, 0))), transparent 70%), linear-gradient(transparent 30%, var(--coal)); }
+#embers { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; }
+.htx { position: relative; z-index: 2; max-width: 820px; }
+.tag { font: 500 12px/1 var(--mono); letter-spacing: .2em; text-transform: uppercase; color: var(--gold); }
+h1 { margin: 14px 0 14px; font: 900 clamp(46px, 9vw, 128px)/.92 var(--head); letter-spacing: -.02em; }
+h1 span { display: block; color: transparent; -webkit-text-stroke: 2px var(--ember); text-shadow: 0 0 calc(40px * var(--h, 0)) rgba(255,106,31,.6); }
+.htx p { max-width: 560px; margin: 0 0 24px; color: var(--mut); font-size: clamp(16px, 1.5vw, 19px); }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 15px 24px; border-radius: 40px; background: var(--ember); color: #1a0d05; font: 700 15px/1 var(--body); text-decoration: none; border: 0; cursor: pointer; transition: transform .3s var(--ease); }
+.btn:hover { transform: translateY(-2px); }
+.btn.o { background: transparent; color: var(--gold); box-shadow: inset 0 0 0 2px var(--gold); }
+.row { display: flex; gap: 10px; flex-wrap: wrap; }
+
+.sec { padding: clamp(70px, 10vw, 130px) var(--gut); max-width: 1220px; margin: 0 auto; scroll-margin-top: 70px; }
+.kick { font: 500 12px/1 var(--mono); letter-spacing: .2em; text-transform: uppercase; color: var(--ember); }
+h2 { margin: 12px 0 10px; font: 700 clamp(30px, 4.6vw, 60px)/1.04 var(--head); letter-spacing: -.02em; }
+h2 + small { display: block; max-width: 620px; color: var(--mut); font-style: italic; margin-bottom: 34px; }
+
+/* feature: doneness slider */
+.don { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(24px, 4vw, 60px); align-items: center; }
+.steak { position: relative; aspect-ratio: 1.25; }
+.steak svg { width: 100%; height: 100%; overflow: visible; }
+.steak .temp { position: absolute; right: 4%; top: 6%; font: 700 clamp(34px, 5vw, 64px)/1 var(--mono); color: var(--gold); }
+.steak .temp small { font-size: .4em; color: var(--mut); }
+.ctrl label { display: block; font: 500 13px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--mut); margin-bottom: 16px; }
+input[type=range] { -webkit-appearance: none; appearance: none; width: 100%; height: 14px; border-radius: 10px; background: linear-gradient(90deg, #c4324a, #e4705a, #d9886a, #a86f52, #6b4a34); outline: none; }
+input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 34px; height: 34px; border-radius: 50%; background: var(--cream); border: 6px solid var(--ember); cursor: grab; box-shadow: 0 0 22px rgba(255,106,31,.7); }
+input[type=range]::-moz-range-thumb { width: 22px; height: 22px; border-radius: 50%; background: var(--cream); border: 6px solid var(--ember); cursor: grab; }
+.ticks { display: flex; justify-content: space-between; margin: 10px 0 26px; font: 500 11px/1 var(--mono); color: var(--mut); }
+.ticks button { background: none; border: 0; color: inherit; font: inherit; cursor: pointer; padding: 4px 0; }
+.ticks button.on { color: var(--gold); }
+.verdict { padding: 22px; border-radius: 20px; background: var(--coal-2); border: 1px solid var(--line); min-height: 210px; }
+.verdict b { display: block; font: 700 24px/1.2 var(--head); margin-bottom: 6px; }
+.verdict p { margin: 0 0 14px; color: var(--mut); }
+.verdict ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; }
+.verdict li { display: flex; justify-content: space-between; gap: 12px; font-size: 15px; border-bottom: 1px dashed var(--line); padding-bottom: 6px; }
+.verdict li span { font-family: var(--mono); color: var(--gold); white-space: nowrap; }
+@media (max-width: 860px) { .don { grid-template-columns: 1fr; } }
+
+/* menu */
+.menu { columns: 2 380px; column-gap: 50px; }
+.cat { break-inside: avoid; margin-bottom: 30px; }
+.cat h3 { margin: 0 0 10px; font: 700 15px/1.2 var(--head); letter-spacing: .06em; text-transform: uppercase; color: var(--gold); }
+.it { display: flex; align-items: baseline; gap: 8px; padding: 6px 0; font-size: 15.5px; }
+.it i { flex: 1; border-bottom: 2px dotted var(--ash); transform: translateY(-4px); }
+.it span { font-family: var(--mono); white-space: nowrap; }
+.src { margin-top: 10px; font-size: 13px; color: var(--mut); }
+
+/* halls + banquet */
+.halls { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 12px; }
+.halls figure { margin: 0; position: relative; border-radius: 22px; overflow: hidden; aspect-ratio: 3/4; background: var(--ash); }
+.halls figure:first-child { aspect-ratio: auto; grid-row: span 2; }
+.halls img { width: 100%; height: 100%; object-fit: cover; transition: transform 1s var(--ease); }
+.halls figure:hover img { transform: scale(1.05); }
+.halls figcaption { position: absolute; left: 14px; bottom: 12px; font: 500 12px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; }
+.ban { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 10px; }
+.ban span { padding: 10px 16px; border-radius: 30px; border: 1px solid var(--line); font-size: 14.5px; }
+@media (max-width: 760px) { .halls { grid-template-columns: 1fr 1fr; } .halls figure:first-child { grid-column: span 2; aspect-ratio: 4/3; grid-row: auto; } }
+
+/* reviews */
+.rate { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 26px; }
+.rate b { font: 900 clamp(60px, 10vw, 120px)/1 var(--head); color: var(--ember); }
+.rate span { color: var(--mut); }
+.revs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.rv { padding: 22px; border-radius: 20px; background: var(--coal-2); border-top: 3px solid var(--ember); }
+.rv p { margin: 0 0 12px; } .rv small { font: 500 11px/1 var(--mono); letter-spacing: .12em; color: var(--mut); text-transform: uppercase; }
+.bars { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 22px; }
+.bars div { font-size: 14px; color: var(--mut); } .bars b { display: block; font: 700 22px/1.2 var(--head); color: var(--cream); }
+@media (max-width: 860px) { .revs, .bars { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .revs { grid-template-columns: 1fr; } }
+
+/* visit */
+.vis { display: grid; grid-template-columns: 1fr 1.2fr; gap: 26px; align-items: center; }
+.ln { display: flex; justify-content: space-between; gap: 14px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.ln span { color: var(--mut); } .ln b { text-align: right; font-weight: 500; }
+.live i { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: #888; margin-right: 8px; }
+.is-open i { background: #4ccf6b; box-shadow: 0 0 10px #4ccf6b; } .is-closed i { background: #e2533f; }
+.mapbox { position: relative; min-height: 400px; border-radius: 24px; overflow: hidden; filter: invert(.9) hue-rotate(180deg) saturate(.7); }
+.mapbox iframe { position: absolute; inset: 0; width: 100%; height: calc(100% + 140px); border: 0; }
+@media (max-width: 860px) { .vis { grid-template-columns: 1fr; } }
+footer { padding: 40px var(--gut) 110px; text-align: center; color: var(--mut); font-size: 14px; }
+footer b { display: block; font: 900 28px/1 var(--head); color: var(--cream); margin-bottom: 8px; }
+
+.motion [data-in] { opacity: 0; transform: translateY(26px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
+.motion [data-in].in { opacity: 1; transform: none; }
+.noimg { background: linear-gradient(135deg, var(--ash), var(--coal-2)); } .noimg img { opacity: 0; }
+</style>
+</head>
+<body data-hours='{"0":[[13,0,23,0]],"1":[[13,0,23,0]],"2":[[13,0,23,0]],"3":[[13,0,23,0]],"4":[[13,0,23,0]],"5":[[13,0,24,0]],"6":[[13,0,24,0]]}'>
+
+<nav class="nav" aria-label="Разделы">
+  <b>ПЛА<i>М</i>Я</b>
+  <a href="#prozharka">Прожарка</a><a href="#menu">Меню</a><a href="#zaly">Залы и банкеты</a><a href="#adres">Адрес</a>
+  <a class="call" href="tel:+74912959595">95-95-95</a>
+</nav>
+
+<main>
+<section class="hero" id="top">
+  <div class="stage" id="stage">
+    <img src="https://avatars.mds.yandex.net/get-altay/11873493/2a000001926d13b4dcea4f57e5416775c435/XXL" alt="Зал ресторана «Пламя»" fetchpriority="high">
+    <canvas id="embers" aria-hidden="true"></canvas>
+    <div class="htx">
+      <span class="tag">Рязань · Торговые ряды · Краснорядская, 2</span>
+      <h1>Мясо <span>на огне</span></h1>
+      <p>Стейки, копчёности и пивные снеки собственного производства. Три зала для банкетов и корпоративов в центре города.</p>
+      <div class="row"><a class="btn" href="tel:+74912959595">Забронировать стол</a><a class="btn o" href="#prozharka">Выбрать прожарку</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="prozharka">
+  <span class="kick" data-in>Фишка вечера</span>
+  <h2 data-in>Какую прожарку <br>вы любите?</h2>
+  <small data-in>Двигайте ползунок, стейк на картинке «дожарится», а мы подскажем, что взять из меню.</small>
+  <div class="don">
+    <div class="steak" data-in>
+      <svg viewBox="0 0 400 320" aria-hidden="true">
+        <defs><radialGradient id="cut" cx="50%" cy="50%" r="55%"><stop offset="0" id="c0" stop-color="#c4324a"/><stop offset=".62" id="c1" stop-color="#d6655a"/><stop offset=".86" id="c2" stop-color="#8a5638"/><stop offset="1" stop-color="#3b2416"/></radialGradient></defs>
+        <ellipse cx="200" cy="290" rx="170" ry="18" fill="rgba(0,0,0,.45)"/>
+        <path d="M60 170 C 40 90, 140 40, 230 52 C 330 64, 380 130, 350 200 C 320 270, 160 290, 100 250 C 70 230, 66 200, 60 170Z" fill="url(#cut)" stroke="#2a1608" stroke-width="10"/>
+        <path d="M120 120 L 300 150 M 110 170 L 320 200 M 130 220 L 290 240" stroke="#2a1608" stroke-width="9" stroke-linecap="round" opacity=".55"/>
+        <g id="steam" fill="none" stroke="rgba(244,233,220,.5)" stroke-width="5" stroke-linecap="round"><path d="M150 40 q 14 -18 0 -36"/><path d="M210 30 q 14 -18 0 -36"/><path d="M270 40 q 14 -18 0 -36"/></g>
+      </svg>
+      <div class="temp"><span id="t">52</span><small>°C</small></div>
+    </div>
+    <div class="ctrl" data-in>
+      <label for="dn">Степень прожарки</label>
+      <input id="dn" type="range" min="0" max="4" step="1" value="1" aria-describedby="vd">
+      <div class="ticks" id="ticks"><button data-v="0">Rare</button><button data-v="1">Medium rare</button><button data-v="2">Medium</button><button data-v="3">Medium well</button><button data-v="4">Well done</button></div>
+      <div class="verdict" id="vd" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="menu">
+  <span class="kick" data-in>Меню</span>
+  <h2 data-in>Что подают у огня</h2>
+  <small data-in>Часть меню с ценами из карточки ресторана на Яндекс Картах. Полное меню и сезонные позиции уточняйте у официанта.</small>
+  <div class="menu" data-in>
+    <div class="cat"><h3>Горячие блюда</h3>
+      <div class="it">Копчёные свиные рёбра в маринаде<i></i><span>1 290 ₽</span></div>
+      <div class="it">Телячьи щёчки со взбитым картофелем<i></i><span>1 090 ₽</span></div>
+      <div class="it">Томлёная утка с соусом из брусники<i></i><span>990 ₽</span></div>
+      <div class="it">Бифштекс из говядины с яйцом<i></i><span>940 ₽</span></div>
+      <div class="it">Чизбургер с соусом дорблю<i></i><span>1 290 ₽</span></div></div>
+    <div class="cat"><h3>Закуски на компанию</h3>
+      <div class="it">Ассорти домашних колбасок<i></i><span>1 990 ₽</span></div>
+      <div class="it">Плато закусок под пиво<i></i><span>3 390 ₽</span></div>
+      <div class="it">Сырное плато с мёдом и грецкими орехами<i></i><span>1 090 ₽</span></div></div>
+    <div class="cat"><h3>Пивные снеки собственного производства</h3>
+      <div class="it">Мясные чипсы<i></i><span>490 ₽</span></div>
+      <div class="it">Миндаль кимчи<i></i><span>790 ₽</span></div>
+      <div class="it">Криспи халапеньо<i></i><span>390 ₽</span></div>
+      <div class="it">Плато пивных снеков<i></i><span>1 890 ₽</span></div></div>
+    <div class="cat"><h3>Горячие закуски</h3>
+      <div class="it">Куриные крылья копчёные<i></i><span>690 ₽</span></div>
+      <div class="it">Тако со свиной лопаткой и гуакамоле<i></i><span>740 ₽</span></div>
+      <div class="it">Тигровые креветки в темпуре с овощами<i></i><span>1 090 ₽</span></div></div>
+    <div class="cat"><h3>Салаты</h3>
+      <div class="it">Кобб-салат с брискетом<i></i><span>1 490 ₽</span></div>
+      <div class="it">Печёный цыплёнок с пармезаном и вешенками<i></i><span>740 ₽</span></div>
+      <div class="it">Салат с пастрами и огурцом на джине<i></i><span>890 ₽</span></div></div>
+    <div class="cat"><h3>На хлебе</h3>
+      <div class="it">Кубинский сэндвич со рваной свининой<i></i><span>840 ₽</span></div>
+      <div class="it">Ломоть с лососем малой соли и авокадо<i></i><span>940 ₽</span></div>
+      <div class="it">Печёный баклажан со страчателлой<i></i><span>790 ₽</span></div></div>
+    <div class="cat"><h3>Супы</h3>
+      <div class="it">Борщ со сметаной и топлёным смальцем<i></i><span>690 ₽</span></div>
+      <div class="it">Мясная похлёбка<i></i><span>790 ₽</span></div>
+      <div class="it">Том-ям с морепродуктами<i></i><span>940 ₽</span></div></div>
+    <div class="cat"><h3>Десерты</h3>
+      <div class="it">Сан-Себастьян с вареньем из черешни<i></i><span>540 ₽</span></div>
+      <div class="it">Кокосовый мусс с белым шоколадом<i></i><span>590 ₽</span></div>
+      <div class="it">Тирамису<i></i><span>790 ₽</span></div></div>
+  </div>
+  <p class="src">Средний счёт по карточке: 500–800 ₽. Есть доставка и еда навынос.</p>
+</section>
+
+<section class="sec" id="zaly">
+  <span class="kick" data-in>Залы и банкеты</span>
+  <h2 data-in>Три зала под ваш повод</h2>
+  <small data-in>Корпоратив, свадьба, день рождения, деловая встреча. Ресторан помогает с ведущим, DJ, украшением зала и фуршетом.</small>
+  <div class="halls" data-in>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/6222916/2a0000017f44c588ed728a6ff6b8125715bf/XXL" alt="Зал с кирпичными арками" loading="lazy"><figcaption>Под кирпичными сводами</figcaption></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/5380071/2a0000017f44c55c17c1b29e09e3c461d22e/XL" alt="Зал ресторана" loading="lazy"><figcaption>Камерный зал</figcaption></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/16771051/2a0000019ad8e10d6b5944759f0d88fe55bb/XL" alt="Стейк на доске" loading="lazy"><figcaption>Стейки</figcaption></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/18396981/2a0000019ad8e106d3e7e0aab7d94fe6a240/XL" alt="Копчёная грудинка" loading="lazy"><figcaption>Копчёности</figcaption></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/14761495/2a0000019ad8e10678658ade00c81431cfc3/XL" alt="Лосось" loading="lazy"><figcaption>Рыба на гриле</figcaption></figure>
+  </div>
+  <div class="ban" data-in><span>Корпоратив</span><span>Банкет</span><span>Свадьба</span><span>День рождения</span><span>Семейный ужин</span><span>Деловая встреча</span><span>Подарочный сертификат</span><span>Можно с собакой до 35 см</span></div>
+  <div class="row" style="margin-top:24px" data-in><a class="btn" href="tel:+74912959595">Обсудить банкет</a><a class="btn o" href="https://t.me/plamya_gran_rzn" target="_blank" rel="noopener">Написать в Telegram</a></div>
+</section>
+
+<section class="sec" id="otzyvy">
+  <span class="kick" data-in>Отзывы</span>
+  <div class="rate" data-in><b data-count="4.8">4,8</b><span>2458 оценок и 1439 отзывов на Яндекс Картах</span></div>
+  <div class="revs">
+    <div class="rv" data-in><p>«Приятный персонал, красивый интерьер и подача блюд. Все позиции понравились, вкусно».</p><small>Из отзывов на Яндекс Картах</small></div>
+    <div class="rv" data-in><p>«Стейки хорошие. Официанту Дмитрию отдельная благодарность, салат из баклажанов, ммм, вкуснятина».</p><small>Приезжали погулять по городу</small></div>
+    <div class="rv" data-in><p>«Администратор принесла стульчик для малыша и раскраски. Остались очень довольны».</p><small>Семейный обед</small></div>
+  </div>
+  <div class="bars" data-in>
+    <div><b>916</b>хвалят еду</div><div><b>420</b>атмосферу</div><div><b>184</b>интерьер</div><div><b>91</b>стейки</div>
+  </div>
+</section>
+
+<section class="sec" id="adres">
+  <div class="vis">
+    <div>
+      <span class="kick" data-in>Адрес</span>
+      <h2 data-in>Краснорядская, 2</h2>
+      <div class="ln"><span>Где</span><b>Рязань, в торговых рядах</b></div>
+      <div class="ln"><span>Сейчас</span><b class="live" data-live><i></i><span data-status>…</span></b></div>
+      <div class="ln"><span>Часы</span><b>пн–чт, вс 13:00–23:00 · пт, сб до 02:00</b></div>
+      <div class="ln"><span>Телефоны</span><b><a href="tel:+74912959595">+7 (4912) 95-95-95</a><br><a href="tel:+79105698800">+7 (910) 569-88-00</a></b></div>
+      <div class="ln"><span>Удобства</span><b>Парковка, доставка, с собой</b></div>
+      <div class="row" style="margin-top:20px"><a class="btn" href="tel:+74912959595">Позвонить</a><a class="btn o" href="https://vk.ru/plamya_meat" target="_blank" rel="noopener">ВКонтакте</a></div>
+    </div>
+    <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=39.736379%2C54.628698&amp;z=16&amp;pt=39.736379%2C54.628698%2Cpm2orm&amp;l=map" title="«Пламя» на Яндекс Картах" loading="lazy"></iframe></div>
+  </div>
+</section>
+</main>
+<footer><b>ПЛАМЯ</b>Гриль-ресторан и банкетный зал · Рязань, Краснорядская ул., 2 · +7 (4912) 95-95-95</footer>
+
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  // hero: embers rise faster and the hall glows as the page "heats up"
+  var stage = document.getElementById('stage'), hero = document.getElementById('top');
+  var cv = document.getElementById('embers'), cx = cv.getContext('2d'), P = [], heat = 0;
+  function size() { cv.width = stage.clientWidth; cv.height = stage.clientHeight; }
+  size(); addEventListener('resize', size);
+  for (var i = 0; i < 90; i++) P.push({ x: Math.random(), y: Math.random(), r: .6 + Math.random() * 2.2, v: .2 + Math.random() * .8, w: Math.random() * 6.28 });
+  RT.onScroll(function () { heat = RT.motion ? RT.progress(hero) : .7; stage.style.setProperty('--h', heat.toFixed(3)); });
+  var last = RT.now();
+  if (RT.motion) RT.loop(function (t) {
+    var dt = Math.min(50, t - last); last = t;
+    cx.clearRect(0, 0, cv.width, cv.height);
+    var n = Math.round(30 + 60 * heat);
+    for (var i = 0; i < n; i++) { var p = P[i];
+      p.y -= p.v * dt / 9000 * (1 + heat * 2.2); p.w += dt / 700;
+      if (p.y < -0.05) { p.y = 1.05; p.x = Math.random(); }
+      var a = Math.min(1, p.y * 1.4) * (.45 + heat * .55);
+      cx.beginPath(); cx.arc((p.x + Math.sin(p.w) * .01) * cv.width, p.y * cv.height, p.r * (1 + heat), 0, 6.28);
+      cx.fillStyle = 'rgba(255,' + (120 + (p.r * 30 | 0)) + ',40,' + a.toFixed(2) + ')'; cx.fill(); }
+  });
+
+  // feature: doneness → colour of the cut, core temperature and what to order
+  var D = [
+    { n: 'Rare', t: 49, c: ['#b2213e', '#c9475a', '#7a3d2c'], d: 'Ярко-красная середина, сок внутри. Для тех, кто любит чистый вкус говядины.', m: [['Стейк с нужной прожаркой', 'у официанта'], ['Ломоть с пастрами из сердца', '590 ₽'], ['Овощи на открытом огне', '390 ₽']] },
+    { n: 'Medium rare', t: 55, c: ['#c4324a', '#d6655a', '#8a5638'], d: 'Розовая сочная середина. Самая популярная прожарка для стейка.', m: [['Стейк с нужной прожаркой', 'у официанта'], ['Печёный картофель с трюфельной сметаной', '390 ₽'], ['Печёный баклажан со страчателлой', '790 ₽']] },
+    { n: 'Medium', t: 60, c: ['#d0606a', '#d98a70', '#9a6440'], d: 'Розовая полоска по центру, мясо плотнее. Хороший выбор для первого раза.', m: [['Бифштекс из говядины с яйцом', '940 ₽'], ['Телячьи щёчки под демиглас', '1 090 ₽'], ['Брокколи в ореховом соусе', '490 ₽']] },
+    { n: 'Medium well', t: 66, c: ['#b0786a', '#a87a5c', '#7d5236'], d: 'Едва розовая середина. Компромисс для компании, где вкусы разные.', m: [['Томлёная утка с брусникой', '990 ₽'], ['Чизбургер с соусом дорблю', '1 290 ₽'], ['Коу-слоу', '240 ₽']] },
+    { n: 'Well done', t: 72, c: ['#8a6a55', '#7d5a42', '#5a3a24'], d: 'Полностью прожаренное мясо. Тогда смело берите копчёности и плато под пиво.', m: [['Копчёные свиные рёбра в маринаде', '1 290 ₽'], ['Свиные колбаски с тушёной капустой', '1 290 ₽'], ['Плато закусок под пиво', '3 390 ₽']] }
+  ];
+  var range = document.getElementById('dn'), vd = document.getElementById('vd'), tt = document.getElementById('t');
+  var c0 = document.getElementById('c0'), c1 = document.getElementById('c1'), c2 = document.getElementById('c2'), shown = 49;
+  function set(v) {
+    v = +v; range.value = v; var x = D[v];
+    c0.setAttribute('stop-color', x.c[0]); c1.setAttribute('stop-color', x.c[1]); c2.setAttribute('stop-color', x.c[2]);
+    document.querySelectorAll('#ticks button').forEach(function (b) { b.classList.toggle('on', +b.dataset.v === v); });
+    vd.innerHTML = '<b>' + x.n + '</b><p>' + x.d + '</p><ul>' + x.m.map(function (m) { return '<li>' + m[0] + '<span>' + m[1] + '</span></li>'; }).join('') + '</ul>';
+    var from = shown, t0 = null;
+    if (!RT.motion) { tt.textContent = x.t; shown = x.t; return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / 600); shown = Math.round(RT.lerp(from, x.t, RT.ease(k))); tt.textContent = shown; return k < 1; });
+  }
+  range.addEventListener('input', function () { set(range.value); });
+  document.getElementById('ticks').addEventListener('click', function (e) { var b = e.target.closest('button'); if (b) set(b.dataset.v); });
+  set(1);
+  window.__done = set;
+
+  // active menu item
+  var links = [].slice.call(document.querySelectorAll('.nav a[href^="#"]'));
+  RT.onScroll(function () { var cur = null; links.forEach(function (a) { var s = document.querySelector(a.getAttribute('href')); if (s && s.getBoundingClientRect().top < innerHeight * .4) cur = a; }); links.forEach(function (a) { a.classList.toggle('on', a === cur); }); });
+
+  window.REEL = { hero: '#top', heroAt: .7, feature: '#prozharka', featureOff: 40, featureM: '.steak', featureOffM: -70, prices: '#menu', pricesOff: 30,
+    demo: [function () { set(0); }, function () { set(2); }, function () { set(4); }], holds: [40, 40, 45] };
+})();
+</script>
+</body>
+</html>

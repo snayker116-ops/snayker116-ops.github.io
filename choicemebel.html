@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ChoiceMebel — мебельная студия · Саранск, Лодыгина, 17Е</title>
+<meta name="description" content="Мебельная студия ChoiceMebel в Саранске: кухни из МДФ, эмали и массива дуба, спальни, детские, гардеробные, стеновые панели и столярные изделия на заказ. Шоу-рум, дизайн и сборка. Ежедневно 10:00–19:00. 5,0 на Яндекс Картах.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="ChoiceMebel — мебель на заказ в Саранске">
+<meta property="og:description" content="Выберите материал фасада и посмотрите реальный проект студии с ценой. +7 (951) 056-63-65">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/9822373/2a000001936828b0031e567c495427c47c93/XXL">
+<meta name="theme-color" content="#151412">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FurnitureStore","name":"ChoiceMebel","telephone":"+7 951 056-63-65","address":{"@type":"PostalAddress","streetAddress":"ул. Лодыгина, 17Е","addressLocality":"Саранск","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":54.223936,"longitude":45.206517},"openingHours":"Mo-Su 10:00-19:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","ratingCount":"46"}}</script>
+<style>
+:root { --bg: #151412; --bg-2: #1f1d1a; --oak: #b88a57; --oak-2: #d9b386; --ivory: #f2ece2; --ink: #f2ece2; --mut: #a49b8f; --line: rgba(242,236,226,.12);
+  --head: 'Playfair Display', serif; --body: 'Raleway', sans-serif; --gut: clamp(16px, 4vw, 56px); --ease: cubic-bezier(.7,0,.2,1); }
+* { box-sizing: border-box; } html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 16.5px/1.65 var(--body); overflow-x: hidden; }
+img { display: block; max-width: 100%; } a { color: inherit; }
+.nav { position: fixed; z-index: 30; top: 0; left: 0; right: 0; display: flex; align-items: center; gap: 24px; padding: 16px var(--gut); background: rgba(21,20,18,.88); backdrop-filter: blur(8px); }
+.nav b { font: 700 22px/1 var(--head); margin-right: auto; } .nav b i { color: var(--oak-2); }
+.nav a { text-decoration: none; font: 500 13px/1 var(--body); letter-spacing: .1em; text-transform: uppercase; color: var(--mut); }
+.nav .call { padding: 11px 18px; border: 1px solid var(--oak); color: var(--oak-2); }
+@media (max-width: 760px) { .nav a:not(.call) { display: none; } }
+
+/* hero: two wardrobe doors slide apart to reveal the kitchen */
+.hero { position: relative; min-height: 100vh; display: grid; align-items: end; padding: 100px var(--gut) 70px; overflow: hidden; }
+.hero .bgp { position: absolute; inset: 0; }
+.hero .bgp img { width: 100%; height: 100%; object-fit: cover; }
+.hero .bgp::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(21,20,18,.92) 10%, rgba(21,20,18,.3) 60%, rgba(21,20,18,.55)); }
+.door { position: absolute; top: 0; bottom: 0; width: 50.5%; z-index: 2; background: repeating-linear-gradient(90deg, #8a6440 0 3px, #9c7349 3px 9px, #a77c50 9px 14px, #94693f 14px 18px); box-shadow: inset 0 0 80px rgba(0,0,0,.35); }
+.door::after { content: ""; position: absolute; top: 46%; width: 6px; height: 120px; border-radius: 4px; background: #d9c4a0; }
+.door.l { left: 0; } .door.l::after { right: 24px; } .door.r { right: 0; } .door.r::after { left: 24px; }
+.door { transform: translateX(-102%); } .door.r { transform: translateX(102%); }
+.motion .door.l { animation: dl 1.8s var(--ease) .3s both; } .motion .door.r { animation: dr 1.8s var(--ease) .3s both; }
+@keyframes dl { from { transform: none; } to { transform: translateX(-102%); } }
+@keyframes dr { from { transform: none; } to { transform: translateX(102%); } }
+.hero .in { position: relative; z-index: 1; max-width: 720px; }
+.hero h1 { margin: 12px 0 14px; font: 700 clamp(54px, 9vw, 130px)/.95 var(--head); }
+.hero h1 i { font-weight: 500; color: var(--oak-2); }
+.tag { font: 500 12px/1 var(--body); letter-spacing: .22em; text-transform: uppercase; color: var(--oak-2); }
+.hero p { max-width: 540px; margin: 0 0 26px; color: #d6cfc4; font-size: clamp(16px, 1.4vw, 19px); }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 16px 26px; background: var(--oak); color: #151412; font: 700 14px/1 var(--body); letter-spacing: .08em; text-transform: uppercase; text-decoration: none; border: 0; cursor: pointer; transition: background .3s; }
+.btn:hover { background: var(--oak-2); } .btn.o { background: transparent; color: var(--ivory); box-shadow: inset 0 0 0 1px var(--ivory); }
+.row { display: flex; gap: 10px; flex-wrap: wrap; }
+
+.sec { padding: clamp(70px, 10vw, 120px) var(--gut); max-width: 1140px; margin: 0 auto; scroll-margin-top: 70px; }
+.kick { font: 500 12px/1 var(--body); letter-spacing: .22em; text-transform: uppercase; color: var(--oak-2); }
+h2 { margin: 10px 0 10px; font: 500 clamp(36px, 5vw, 62px)/1.05 var(--head); }
+h2 + small { display: block; max-width: 640px; color: var(--mut); font-style: italic; margin-bottom: 30px; }
+
+/* feature: material swatch -> real project from the studio's price list */
+.mat { display: grid; grid-template-columns: .8fr 1.2fr; gap: 30px; align-items: center; }
+.chips { display: grid; gap: 10px; }
+.chips button { display: grid; grid-template-columns: 56px 1fr; gap: 14px; align-items: center; padding: 10px; background: var(--bg-2); border: 1px solid transparent; color: var(--ink); font: 500 15px/1.3 var(--body); text-align: left; cursor: pointer; transition: border-color .3s; }
+.chips button i { width: 56px; height: 56px; }
+.chips button.on { border-color: var(--oak); }
+.chips button small { display: block; color: var(--mut); font-size: 13px; }
+.proj { position: relative; }
+.proj .ph { position: relative; aspect-ratio: 4/3.4; overflow: hidden; background: var(--bg-2); }
+.proj .ph img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: opacity .6s, transform 1.2s var(--ease); }
+.proj .ph img.out { opacity: 0; transform: scale(1.06); }
+.proj .tex { position: absolute; left: -18px; bottom: -18px; width: 110px; height: 110px; border: 6px solid var(--bg); transition: background .6s; }
+.proj .cap { padding: 22px 0 0 110px; }
+.proj .cap b { display: block; font: 500 26px/1.2 var(--head); }
+.proj .cap span { display: block; font: 700 30px/1.2 var(--head); color: var(--oak-2); margin: 6px 0; }
+.proj .cap p { margin: 0; color: var(--mut); font-size: 15px; }
+@media (max-width: 860px) { .mat { grid-template-columns: 1fr; } .proj .cap { padding-left: 0; padding-top: 28px; } .proj .tex { width: 80px; height: 80px; left: auto; right: 10px; bottom: auto; top: 10px; } }
+
+.what { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border-top: 1px solid var(--line); }
+.what div { padding: 22px 18px 22px 0; border-bottom: 1px solid var(--line); }
+.what b { display: block; font: 500 21px/1.2 var(--head); margin-bottom: 4px; } .what span { color: var(--mut); font-size: 15px; }
+@media (max-width: 760px) { .what { grid-template-columns: 1fr 1fr; } }
+.gal { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 28px; }
+.gal figure { margin: 0; overflow: hidden; aspect-ratio: 3/4; background: var(--bg-2); }
+.gal img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 760px) { .gal { grid-template-columns: 1fr 1fr; } }
+
+.rate { display: flex; gap: 18px; align-items: baseline; flex-wrap: wrap; margin-bottom: 24px; }
+.rate b { font: 700 clamp(70px, 10vw, 130px)/1 var(--head); color: var(--oak-2); }
+.revs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.rv { padding: 24px; background: var(--bg-2); }
+.rv p { margin: 0 0 10px; font-family: var(--head); font-style: italic; font-size: 18px; line-height: 1.5; } .rv small { color: var(--oak-2); font-weight: 700; font-size: 13px; }
+@media (max-width: 860px) { .revs { grid-template-columns: 1fr; } }
+
+.vis { display: grid; grid-template-columns: 1fr 1.2fr; gap: 26px; align-items: center; }
+.ln { display: flex; justify-content: space-between; gap: 14px; padding: 11px 0; border-bottom: 1px solid var(--line); }
+.ln span { color: var(--mut); } .ln b { text-align: right; font-weight: 500; }
+.live i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #666; margin-right: 8px; }
+.is-open i { background: #8fc46a; } .is-closed i { background: #c4614a; }
+.mapbox { position: relative; min-height: 380px; overflow: hidden; filter: grayscale(.4) sepia(.3) brightness(.9); }
+.mapbox iframe { position: absolute; inset: 0; width: 100%; height: calc(100% + 140px); border: 0; }
+@media (max-width: 860px) { .vis { grid-template-columns: 1fr; } }
+footer { padding: 40px var(--gut) 60px; text-align: center; color: var(--mut); font-size: 14px; border-top: 1px solid var(--line); }
+footer b { display: block; font: 700 32px/1 var(--head); color: var(--ivory); margin-bottom: 8px; }
+.motion [data-in] { opacity: 0; transform: translateY(26px); transition: opacity 1s var(--ease), transform 1s var(--ease); }
+.motion [data-in].in { opacity: 1; transform: none; }
+.noimg { background: var(--bg-2); } .noimg img { opacity: 0; }
+</style>
+</head>
+<body data-hours='{"0":[[10,0,19,0]],"1":[[10,0,19,0]],"2":[[10,0,19,0]],"3":[[10,0,19,0]],"4":[[10,0,19,0]],"5":[[10,0,19,0]],"6":[[10,0,19,0]]}'>
+<nav class="nav" aria-label="Разделы"><b>Choice<i>Mebel</i></b><a href="#material">Материалы</a><a href="#mebel">Что делают</a><a href="#adres">Шоу-рум</a><a class="call" href="tel:+79510566365">Обсудить проект</a></nav>
+<main>
+<section class="hero" id="top">
+  <div class="bgp" data-ph><img src="https://avatars.mds.yandex.net/get-altay/9822373/2a000001936828b0031e567c495427c47c93/XL" alt="Кухня ChoiceMebel в графитовом цвете" fetchpriority="high"></div>
+  <i class="door l" aria-hidden="true"></i><i class="door r" aria-hidden="true"></i>
+  <div class="in">
+    <span class="tag">Мебельная студия · Саранск · Лодыгина, 17Е</span>
+    <h1>Choice<i>Mebel</i></h1>
+    <p>Кухни, спальни, детские и гардеробные под ваш интерьер. Помогают с материалами и дизайном и ведут проект от первой идеи до сборки. Есть шоу-рум.</p>
+    <div class="row"><a class="btn" href="tel:+79510566365">Обсудить проект</a><a class="btn o" href="#material">Выбрать материал</a></div>
+  </div>
+</section>
+
+<section class="sec" id="material">
+  <span class="kick" data-in>Материалы</span>
+  <h2 data-in>Из чего будет ваша мебель?</h2>
+  <small data-in>Выберите материал, и справа появится реальный проект студии из него с ценой из прайса на Яндекс Картах. Так проще понять, на что рассчитывать.</small>
+  <div class="mat">
+    <div class="chips" id="chips" data-in></div>
+    <div class="proj" data-in><div class="ph" id="ph"></div><i class="tex" id="tex"></i><div class="cap" id="cap" aria-live="polite"></div></div>
+  </div>
+</section>
+
+<section class="sec" id="mebel">
+  <span class="kick" data-in>Что делают</span>
+  <h2 data-in>Мебель и столярка на заказ</h2>
+  <div class="what" data-in>
+    <div><b>Кухни</b><span>МДФ, эмаль, массив, акриловый камень</span></div>
+    <div><b>Спальни и детские</b><span>шкафы, кровати, рабочие места</span></div>
+    <div><b>Гардеробные</b><span>шкафы-купе и системы хранения</span></div>
+    <div><b>Столярные изделия</b><span>стеновые панели, лестницы, подоконники, балки</span></div>
+  </div>
+  <div class="gal" data-in>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/11564583/2a0000018d3b5c58d9c7a36c4bf86275482c/XL" alt="Светлая угловая кухня" loading="lazy"></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/16137047/2a0000019711aae48b4bca985182b45f968e/XL" alt="Шоу-рум студии" loading="lazy"></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/14094067/2a00000196529dfee2e21ad8dc634d00964c/XL" alt="Шкаф-купе с фасадом под бетон" loading="lazy"></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/13944697/2a00000197117815bfb5e98e611bd98600f9/XL" alt="Образцы материалов" loading="lazy"></figure>
+  </div>
+</section>
+
+<section class="sec" id="otzyvy">
+  <span class="kick" data-in>Отзывы</span>
+  <div class="rate" data-in><b data-count="5.0">5,0</b><span>46 оценок на Яндекс Картах. За изготовление на заказ 29 из 29 отзывов положительные.</span></div>
+  <div class="revs">
+    <div class="rv" data-in><p>«Сразу видно, что ребята понимают, как должно быть удобно в жизни, а не просто красиво на картинке».</p><small>Детская стенка</small></div>
+    <div class="rv" data-in><p>«Сопровождение с первого шага задумки, помощь в выборе материалов и в дизайне».</p><small>Не первый год с ними</small></div>
+    <div class="rv" data-in><p>«Материалы качественные, фасады не царапаются и легко очищаются. Дизайн отлично вписался в интерьер».</p><small>Кухня</small></div>
+  </div>
+</section>
+
+<section class="sec" id="adres">
+  <div class="vis">
+    <div>
+      <span class="kick" data-in>Шоу-рум</span>
+      <h2 data-in>Лодыгина, 17Е</h2>
+      <div class="ln"><span>Где</span><b>Саранск, ул. Лодыгина, 17Е</b></div>
+      <div class="ln"><span>Сейчас</span><b class="live" data-live><i></i><span data-status>…</span></b></div>
+      <div class="ln"><span>Часы</span><b>Ежедневно 10:00–19:00</b></div>
+      <div class="ln"><span>Телефон</span><b><a href="tel:+79510566365">+7 (951) 056-63-65</a></b></div>
+      <div class="row" style="margin-top:20px"><a class="btn" href="tel:+79510566365">Позвонить</a><a class="btn o" href="https://vk.ru/choicemebel" target="_blank" rel="noopener">ВКонтакте</a></div>
+    </div>
+    <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=45.206517%2C54.223936&amp;z=16&amp;pt=45.206517%2C54.223936%2Cpm2brm&amp;l=map" title="ChoiceMebel на Яндекс Картах" loading="lazy"></iframe></div>
+  </div>
+</section>
+</main>
+<footer><b>ChoiceMebel</b>Мебельная студия · Саранск, ул. Лодыгина, 17Е · +7 (951) 056-63-65</footer>
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  var Y = 'https://avatars.mds.yandex.net/get-altay/';
+  // [material, note, swatch, project, price, photo]
+  var M = [
+    ['МДФ, крашеный эмалью', 'гладкий, любой цвет', 'linear-gradient(135deg,#ece8e1,#d8d2c8)', 'Кухонный гарнитур с фасадами из МДФ в эмали', 'от 320 000 ₽', '11564583/2a0000018d3b5c58d9c7a36c4bf86275482c'],
+    ['Акриловый камень', 'бесшовная столешница', 'radial-gradient(circle at 30% 30%,#f5f3ef 0 10%,transparent 11%),radial-gradient(circle at 70% 60%,#d4d0c9 0 6%,transparent 7%),#e6e3de', 'Кухня со столешницей из акрилового камня', 'от 399 000 ₽', '9822373/2a000001936828b0031e567c495427c47c93'],
+    ['Массив дуба', 'натуральное дерево', 'repeating-linear-gradient(100deg,#8a6440 0 3px,#a77c50 3px 9px,#94693f 9px 13px)', 'Кухня с фасадами из массива дуба', 'от 454 000 ₽', '14699088/2a0000019494c9fbc4160299baa54558bc32'],
+    ['Шпон дуба + эмаль', 'для спален и гостиных', 'linear-gradient(90deg,#b88a57 0 50%,#efe9df 50%)', 'Полная меблировка спальни', 'от 350 000 ₽', '15037629/2a000001953bc7f6053deb2a15f27e6307d9'],
+    ['ЛДСП для детской', 'практично и прочно', 'linear-gradient(135deg,#c9b9a3,#a89884)', 'Шкаф и рабочее место для двух детей', 'от 215 000 ₽', '9709178/2a00000189408f044c068f1582e693fc4277'],
+    ['Панель с подсветкой', 'интерьерная стена', 'linear-gradient(90deg,#3a332b 0 46%,#ffe1a8 46% 54%,#3a332b 54%)', 'Интерьерная стеновая панель с подсветкой', 'от 180 000 ₽', '16137047/2a0000019711aae48b4bca985182b45f968e']
+  ];
+  var chips = document.getElementById('chips'), ph = document.getElementById('ph'), tex = document.getElementById('tex'), cap = document.getElementById('cap');
+  chips.innerHTML = M.map(function (m, i) { return '<button type="button" data-i="' + i + '"><i style="background:' + m[2] + '"></i><span>' + m[0] + '<small>' + m[1] + '</small></span></button>'; }).join('');
+  function set(k) {
+    k = +k; var m = M[k];
+    chips.querySelectorAll('button').forEach(function (b) { b.classList.toggle('on', +b.dataset.i === k); });
+    var old = ph.querySelector('img'), im = new Image(); im.alt = m[3]; im.src = Y + m[5] + '/XL'; im.className = 'out'; ph.appendChild(im);
+    requestAnimationFrame(function () { requestAnimationFrame(function () { im.className = ''; if (old) { old.className = 'out'; setTimeout(function () { old.remove(); }, 700); } }); });
+    tex.style.background = m[2];
+    cap.innerHTML = '<b>' + m[3] + '</b><span>' + m[4] + '</span><p>Пример из прайса студии. Ваш проект посчитают по размерам и материалам.</p>';
+  }
+  chips.addEventListener('click', function (e) { var b = e.target.closest('button'); if (b) set(b.dataset.i); });
+  set(0);
+  window.__mat = set;
+
+  window.REEL = { hero: '#top', heroAt: 0, feature: '#material', featureOff: 30, featureM: '.proj', featureOffM: -90, prices: '#mebel', pricesOff: 30,
+    demo: [function () { set(2); }, function () { set(1); }, function () { set(3); }], holds: [45, 45, 50] };
+})();
+</script>
+</body>
+</html>

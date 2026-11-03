@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Опаска — барбершоп · Чебоксары, проспект Ленина, 39</title>
+<meta name="description" content="Барбершоп «Опаска» в Чебоксарах: мужская стрижка 1400 ₽, детская 1200 ₽, борода, комплексы «Отец + Сын» и «Друг + Друг». Ежедневно 10:00–21:00. 5,0 на Яндекс Картах, 549 оценок.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Опаска — барбершоп в Чебоксарах">
+<meta property="og:description" content="Выберите, с кем идёте стричься, и посмотрите, сколько сэкономите. +7 (993) 554-00-48">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/16443419/2a0000019ac98cf878762e0cc4b3ed0eddef/XXL">
+<meta name="theme-color" content="#0f0f10">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Onest:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BarberShop","name":"Опаска","telephone":"+7 993 554-00-48","address":{"@type":"PostalAddress","streetAddress":"просп. Ленина, 39","addressLocality":"Чебоксары","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":56.119876,"longitude":47.256428},"openingHours":"Mo-Su 10:00-21:00","priceRange":"от 300 ₽","aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","ratingCount":"549"}}</script>
+<style>
+:root { --black: #0f0f10; --steel: #c9ced6; --blade: #e9edf2; --mut: #8a8f98; --blue: #2f6bff; --red: #e43b3b; --line: rgba(201,206,214,.16); --paper: #f2f2ef;
+  --head: 'Dela Gothic One', sans-serif; --body: 'Onest', sans-serif; --mono: 'JetBrains Mono', monospace; --gut: clamp(16px, 4vw, 56px); --ease: cubic-bezier(.2,.7,.2,1); }
+* { box-sizing: border-box; } html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--black); color: var(--blade); font: 400 17px/1.6 var(--body); overflow-x: hidden; }
+img { display: block; max-width: 100%; } a { color: inherit; }
+.nav { position: fixed; z-index: 30; top: 0; left: 0; right: 0; display: flex; align-items: center; gap: 24px; padding: 16px var(--gut); }
+.nav b { font: 400 22px/1 var(--head); margin-right: auto; }
+.nav a { text-decoration: none; font: 500 13px/1 var(--mono); letter-spacing: .08em; color: var(--mut); }
+.nav a.on { color: var(--blade); }
+.nav .call { padding: 10px 16px; border-radius: 4px; background: var(--blade); color: var(--black); font-weight: 700; }
+.nav.solid { background: rgba(15,15,16,.9); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+@media (max-width: 760px) { .nav a:not(.call) { display: none; } }
+
+/* hero: a straight razor shaves the headline open */
+.hero { position: relative; height: 200vh; }
+.chair { position: sticky; top: 0; height: 100vh; overflow: hidden; display: grid; align-content: center; padding: 0 var(--gut); }
+.chair > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.1); opacity: .35; }
+.cut { position: relative; z-index: 2; }
+.cut h1 { margin: 0; font: 400 clamp(56px, 13vw, 210px)/.9 var(--head); letter-spacing: -.02em; }
+.cut h1 .a { display: block; color: transparent; -webkit-text-stroke: 1.5px var(--steel); }
+.cut h1 .b { display: block; clip-path: inset(0 calc(100% * (1 - var(--s, 0))) 0 0); }
+.razor { position: absolute; z-index: 3; top: 50%; left: calc(var(--gut) + (100% - 2 * var(--gut)) * var(--s, 0)); width: clamp(120px, 18vw, 260px); transform: translate(-30%, -50%) rotate(-12deg); pointer-events: none; filter: drop-shadow(0 10px 20px rgba(0,0,0,.6)); }
+.cut p { max-width: 560px; margin: 24px 0 26px; color: var(--steel); font-size: clamp(16px, 1.5vw, 19px); }
+.tag { font: 500 13px/1 var(--mono); letter-spacing: .12em; color: var(--mut); text-transform: uppercase; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 15px 22px; border-radius: 4px; background: var(--blade); color: var(--black); font: 700 15px/1 var(--body); text-decoration: none; border: 0; cursor: pointer; transition: transform .3s; }
+.btn:hover { transform: translateY(-2px); } .btn.o { background: transparent; color: var(--blade); box-shadow: inset 0 0 0 1.5px var(--steel); }
+.row { display: flex; gap: 10px; flex-wrap: wrap; }
+.pole { position: absolute; right: var(--gut); top: 22%; z-index: 2; width: 22px; height: 46vh; border-radius: 12px; background: repeating-linear-gradient(-45deg, var(--red) 0 14px, #fff 14px 28px, var(--blue) 28px 42px, #fff 42px 56px); background-size: 100% 200%; border: 3px solid var(--steel); }
+.motion .pole { animation: pole 3s linear infinite; } @keyframes pole { to { background-position: 0 -112px; } }
+@media (max-width: 760px) { .pole { display: none; } }
+
+.sec { padding: clamp(70px, 10vw, 120px) var(--gut); max-width: 1180px; margin: 0 auto; scroll-margin-top: 70px; }
+.kick { font: 500 12px/1 var(--mono); letter-spacing: .18em; text-transform: uppercase; color: var(--blue); }
+h2 { margin: 10px 0 10px; font: 400 clamp(32px, 4.8vw, 62px)/1 var(--head); }
+h2 + small { display: block; max-width: 640px; color: var(--mut); font-style: italic; margin-bottom: 30px; }
+
+/* feature: who is coming */
+.who { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 18px; }
+.who button { padding: 22px 14px; border-radius: 6px; border: 1px solid var(--line); background: #17171a; color: var(--blade); font: 400 19px/1.1 var(--head); cursor: pointer; text-align: left; transition: background .3s, border-color .3s; }
+.who button small { display: block; margin-top: 10px; font: 500 12px/1 var(--mono); color: var(--mut); }
+.who button.on { background: var(--blade); color: var(--black); border-color: var(--blade); } .who button.on small { color: #444; }
+.res { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.card { padding: 26px; border-radius: 6px; background: #17171a; border: 1px solid var(--line); }
+.card .lbl { font: 500 12px/1 var(--mono); letter-spacing: .14em; color: var(--mut); text-transform: uppercase; }
+.card .ln { display: flex; justify-content: space-between; gap: 12px; padding: 8px 0; border-bottom: 1px dashed var(--line); }
+.card .ln span:last-child { font-family: var(--mono); }
+.card .tot { display: flex; justify-content: space-between; padding-top: 14px; font: 400 30px/1.1 var(--head); }
+.card.win { background: var(--blue); border-color: var(--blue); }
+.card.win .lbl { color: #cfe0ff; }
+.save { margin-top: 12px; font: 400 clamp(40px, 6vw, 72px)/1 var(--head); }
+.card.win p { margin: 10px 0 0; color: #e8efff; }
+@media (max-width: 860px) { .who { grid-template-columns: 1fr 1fr; } .res { grid-template-columns: 1fr; } }
+
+.price { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 50px; }
+.it { display: flex; align-items: baseline; gap: 8px; padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 16px; }
+.it i { flex: 1; } .it span { font-family: var(--mono); white-space: nowrap; }
+.src { margin-top: 16px; font-size: 13px; color: var(--mut); }
+@media (max-width: 760px) { .price { grid-template-columns: 1fr; } }
+
+.crew { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.crew figure { margin: 0; position: relative; aspect-ratio: 3/4; overflow: hidden; border-radius: 6px; background: #17171a; }
+.crew img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(1); transition: filter .6s, transform .8s var(--ease); }
+.crew figure:hover img { filter: none; transform: scale(1.04); }
+.names { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 8px; }
+.names span { padding: 9px 14px; border-radius: 4px; border: 1px solid var(--line); font: 500 13px/1 var(--mono); }
+@media (max-width: 760px) { .crew { grid-template-columns: 1fr 1fr; } }
+
+.rate { display: flex; gap: 18px; align-items: baseline; flex-wrap: wrap; margin-bottom: 24px; }
+.rate b { font: 400 clamp(64px, 10vw, 130px)/1 var(--head); }
+.revs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.rv { background: var(--paper); color: var(--black); border-radius: 6px; padding: 22px; }
+.rv p { margin: 0 0 10px; } .rv small { font: 500 12px/1 var(--mono); color: #666; }
+@media (max-width: 860px) { .revs { grid-template-columns: 1fr; } }
+
+.vis { display: grid; grid-template-columns: 1fr 1.2fr; gap: 26px; align-items: center; }
+.ln2 { display: flex; justify-content: space-between; gap: 14px; padding: 11px 0; border-bottom: 1px solid var(--line); }
+.ln2 span { color: var(--mut); } .ln2 b { text-align: right; font-weight: 500; }
+.live i { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: #666; margin-right: 8px; }
+.is-open i { background: #4cd07a; } .is-closed i { background: var(--red); }
+.mapbox { position: relative; min-height: 380px; border-radius: 6px; overflow: hidden; filter: grayscale(1) invert(.92); }
+.mapbox iframe { position: absolute; inset: 0; width: 100%; height: calc(100% + 140px); border: 0; }
+@media (max-width: 860px) { .vis { grid-template-columns: 1fr; } }
+footer { padding: 40px var(--gut) 60px; text-align: center; color: var(--mut); font-size: 14px; border-top: 1px solid var(--line); }
+footer b { display: block; font: 400 30px/1 var(--head); color: var(--blade); margin-bottom: 8px; }
+.motion [data-in] { opacity: 0; transform: translateY(24px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.motion [data-in].in { opacity: 1; transform: none; }
+.noimg { background: #17171a; } .noimg img { opacity: 0; }
+</style>
+</head>
+<body data-hours='{"0":[[10,0,21,0]],"1":[[10,0,21,0]],"2":[[10,0,21,0]],"3":[[10,0,21,0]],"4":[[10,0,21,0]],"5":[[10,0,21,0]],"6":[[10,0,21,0]]}'>
+<nav class="nav" id="nav" aria-label="Разделы"><b>ОПАСКА</b><a href="#kto">С кем идёте</a><a href="#prays">Прайс</a><a href="#adres">Адрес</a><a class="call" href="tel:+79935540048">Записаться</a></nav>
+<main>
+<section class="hero" id="top">
+  <div class="chair" id="chair">
+    <img src="https://avatars.mds.yandex.net/get-altay/16454077/2a0000019a77bead8524c9b5043d1a5660d8/XXL" alt="Барбер работает опасной бритвой" fetchpriority="high">
+    <div class="pole" aria-hidden="true"></div>
+    <div class="cut">
+      <span class="tag">Барбершоп · Чебоксары · проспект Ленина, 39</span>
+      <h1><span class="a">Чисто.</span><span class="b">Опаска.</span></h1>
+      <p>Мужские и детские стрижки, борода, камуфляж седины. Стрижём и мальчишек, даже когда в других местах детям отказывают.</p>
+      <div class="row"><a class="btn" href="tel:+79935540048">Записаться</a><a class="btn o" href="#kto">С кем идёте?</a></div>
+    </div>
+    <svg class="razor" viewBox="0 0 260 80" aria-hidden="true"><path d="M10 40 L150 18 C 170 15, 182 30, 176 44 L 150 56 Z" fill="#e9edf2" stroke="#8a8f98" stroke-width="2"/><path d="M150 56 L 176 44 C 200 50, 240 58, 252 66 C 240 74, 200 72, 160 64Z" fill="#1d1d21" stroke="#555" stroke-width="2"/><circle cx="164" cy="42" r="4" fill="#8a8f98"/></svg>
+  </div>
+</section>
+
+<section class="sec" id="kto">
+  <span class="kick" data-in>Комплексы</span>
+  <h2 data-in>С кем идёте стричься?</h2>
+  <small data-in>Выберите компанию, и мы покажем, сколько стоит по отдельности и сколько по комплексу из прайса барбершопа.</small>
+  <div class="who" id="who" data-in>
+    <button data-k="solo">Один<small>мужская стрижка</small></button>
+    <button data-k="beard" class="on">С бородой<small>стрижка + борода</small></button>
+    <button data-k="son">С сыном<small>отец + сын</small></button>
+    <button data-k="friend">С другом<small>друг + друг</small></button>
+  </div>
+  <div class="res" id="res" aria-live="polite"></div>
+</section>
+
+<section class="sec" id="prays">
+  <span class="kick" data-in>Прайс</span>
+  <h2 data-in>Без сюрпризов</h2>
+  <small data-in>Цены из карточки барбершопа на Яндекс Картах.</small>
+  <div class="price" data-in>
+    <div>
+      <div class="it">Мужская стрижка<i></i><span>1 400 ₽</span></div>
+      <div class="it">Студенческая стрижка<i></i><span>1 200 ₽</span></div>
+      <div class="it">Детская стрижка<i></i><span>1 200 ₽</span></div>
+      <div class="it">Стрижка одной насадкой<i></i><span>500 ₽</span></div>
+      <div class="it">Коррекция стрижки<i></i><span>1 000 ₽</span></div>
+      <div class="it">Укладка волос<i></i><span>500 ₽</span></div>
+      <div class="it">Мужская стрижка + борода<i></i><span>2 100 ₽</span></div>
+    </div>
+    <div>
+      <div class="it">Оформление бороды<i></i><span>1 000 ₽</span></div>
+      <div class="it">Окантовка бороды / головы<i></i><span>600 ₽</span></div>
+      <div class="it">Камуфляж бороды<i></i><span>900 ₽</span></div>
+      <div class="it">Камуфляж головы<i></i><span>1 000 ₽</span></div>
+      <div class="it">Коррекция бровей<i></i><span>400 ₽</span></div>
+      <div class="it">Чёрная маска<i></i><span>700 ₽</span></div>
+      <div class="it">Воск<i></i><span>300 ₽</span></div>
+    </div>
+  </div>
+  <p class="src">Можно прийти с животным, вход без ступенек, есть скидки льготным категориям.</p>
+</section>
+
+<section class="sec" id="komanda">
+  <span class="kick" data-in>Команда</span>
+  <h2 data-in>Барберов хвалят по именам</h2>
+  <div class="crew" data-in>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/16330083/2a0000019a77a7e0e1d7f9f50961bd5c2a25/XL" alt="Барбер за работой" loading="lazy"></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/16136444/2a0000019a77a87851844eeede59bd1a2327/XL" alt="Детская стрижка" loading="lazy"></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/16771051/2a0000019a77a920f4715b24d4ab6078f95e/XL" alt="Мужская стрижка" loading="lazy"></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/19579876/2a0000019ce68287ca2e664ad318bcea5701/XL" alt="Интерьер барбершопа" loading="lazy"></figure>
+  </div>
+  <div class="names" data-in><span>Руслан</span><span>Глеб</span><span>Азиз</span><span>Александр</span></div>
+</section>
+
+<section class="sec" id="otzyvy">
+  <span class="kick" data-in>Отзывы</span>
+  <div class="rate" data-in><b data-count="5.0">5,0</b><span>549 оценок на Яндекс Картах.<br>Барберов хвалят в 193 отзывах из 196.</span></div>
+  <div class="revs">
+    <div class="rv" data-in><p>«Искали свободный барбершоп для мальчика 7 лет. В некоторых просто отказали, а здесь стригут».</p><small>Стриг барбер Глеб</small></div>
+    <div class="rv" data-in><p>«Привела сына, Руслан подсказал, какую лучше стрижку выбрать, сыну всё понравилось».</p><small>Из отзывов</small></div>
+    <div class="rv" data-in><p>«Азиз гуру реальный. Стригусь постоянно у него».</p><small>Постоянный клиент</small></div>
+  </div>
+</section>
+
+<section class="sec" id="adres">
+  <div class="vis">
+    <div>
+      <span class="kick" data-in>Адрес</span>
+      <h2 data-in>Ленина, 39</h2>
+      <div class="ln2"><span>Где</span><b>Чебоксары, просп. Ленина, 39</b></div>
+      <div class="ln2"><span>Сейчас</span><b class="live" data-live><i></i><span data-status>…</span></b></div>
+      <div class="ln2"><span>Часы</span><b>Ежедневно 10:00–21:00</b></div>
+      <div class="ln2"><span>Телефоны</span><b><a href="tel:+79935540048">+7 (993) 554-00-48</a><br><a href="tel:+79966443244">+7 (996) 644-32-44</a></b></div>
+      <div class="row" style="margin-top:20px"><a class="btn" href="tel:+79935540048">Позвонить</a><a class="btn o" href="https://vk.ru/barbershop_opaska" target="_blank" rel="noopener">ВКонтакте</a></div>
+    </div>
+    <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=47.256428%2C56.119876&amp;z=16&amp;pt=47.256428%2C56.119876%2Cpm2blm&amp;l=map" title="«Опаска» на Яндекс Картах" loading="lazy"></iframe></div>
+  </div>
+</section>
+</main>
+<footer><b>ОПАСКА</b>Барбершоп · Чебоксары, проспект Ленина, 39 · ежедневно 10:00–21:00 · +7 (993) 554-00-48</footer>
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  var chair = document.getElementById('chair'), hero = document.getElementById('top'), nav = document.getElementById('nav');
+  RT.onScroll(function () {
+    var s = RT.motion ? RT.clamp(RT.progress(hero) * 1.3) : 1;
+    chair.style.setProperty('--s', s.toFixed(3)); nav.classList.toggle('solid', scrollY > 80);
+  });
+
+  // feature: combos from the price list vs. separate services
+  var K = {
+    solo: { t: 'Один', sep: [['Мужская стрижка', 1400]], combo: null, note: 'Для студентов стрижка 1 200 ₽, а стрижка одной насадкой 500 ₽.' },
+    beard: { t: 'С бородой', sep: [['Мужская стрижка', 1400], ['Оформление бороды', 1000]], combo: ['Мужская стрижка + борода', 2100] },
+    son: { t: 'С сыном', sep: [['Мужская стрижка', 1400], ['Детская стрижка', 1200]], combo: ['Отец + Сын', 2200] },
+    friend: { t: 'С другом', sep: [['Мужская стрижка', 1400], ['Мужская стрижка', 1400]], combo: ['Друг + Друг', 2300] }
+  };
+  var res = document.getElementById('res');
+  function pick(k) {
+    var x = K[k], sum = x.sep.reduce(function (a, b) { return a + b[1]; }, 0);
+    document.querySelectorAll('#who button').forEach(function (b) { b.classList.toggle('on', b.dataset.k === k); });
+    var left = '<div class="card"><span class="lbl">По отдельности</span>' + x.sep.map(function (s) { return '<div class="ln"><span>' + s[0] + '</span><span>' + RT.money(s[1]) + '</span></div>'; }).join('') + '<div class="tot"><span>Итого</span><span>' + RT.money(sum) + '</span></div></div>';
+    var right = x.combo ? '<div class="card win"><span class="lbl">Комплекс · ' + x.combo[0] + '</span><div class="tot"><span>Итого</span><span>' + RT.money(x.combo[1]) + '</span></div><div class="save">−' + RT.money(sum - x.combo[1]) + '</div><p>Столько остаётся у вас при записи комплексом.</p></div>'
+      : '<div class="card win"><span class="lbl">Совет</span><p style="font-size:18px">' + x.note + '</p></div>';
+    res.innerHTML = left + right;
+  }
+  document.getElementById('who').addEventListener('click', function (e) { var b = e.target.closest('button'); if (b) pick(b.dataset.k); });
+  pick('beard');
+  window.__who = pick;
+
+  var links = [].slice.call(document.querySelectorAll('.nav a[href^="#"]'));
+  RT.onScroll(function () { var c = null; links.forEach(function (a) { var s = document.querySelector(a.getAttribute('href')); if (s && s.getBoundingClientRect().top < innerHeight * .4) c = a; }); links.forEach(function (a) { a.classList.toggle('on', a === c); }); });
+
+  window.REEL = { hero: '#top', heroAt: .7, feature: '#kto', featureOff: 40, featureM: '#who', featureOffM: -150, prices: '#prays', pricesOff: 30,
+    demo: [function () { pick('son'); }, function () { pick('friend'); }, function () { pick('beard'); }], holds: [45, 45, 40] };
+})();
+</script>
+</body>
+</html>

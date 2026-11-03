@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Счастье — студия красоты и ногтевой сервис · Владимир, Горького, 48</title>
+<meta name="description" content="Студия красоты «Счастье» во Владимире: маникюр с гель-лаком от 1900 ₽, педикюр, дизайн ногтей, брови, ресницы, стрижки и окрашивание, подолог. Ежедневно 9:00–21:00. 5,0 на Яндекс Картах, 561 оценка.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Счастье — студия красоты во Владимире">
+<meta property="og:description" content="Примерьте дизайн ногтей и сразу узнайте цену. +7 (920) 629-69-29">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/20200163/2a000001a0330f297e8e06d73e17de30356d/XXL">
+<meta name="theme-color" content="#f5efe9">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Commissioner:wght@300;400;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BeautySalon","name":"Счастье","telephone":"+7 920 629-69-29","address":{"@type":"PostalAddress","streetAddress":"ул. Горького, 48","addressLocality":"Владимир","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":56.141778,"longitude":40.392904},"openingHours":"Mo-Su 09:00-21:00","priceRange":"от 300 ₽","aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","ratingCount":"561"}}</script>
+<style>
+:root { --milk: #f5efe9; --stone: #e7ddd3; --coal: #1d1a19; --rose: #c98f86; --gold: #b89155; --mut: #77706a; --line: #ddd2c6;
+  --head: 'Prata', serif; --body: 'Commissioner', sans-serif; --gut: clamp(16px, 4vw, 56px); --ease: cubic-bezier(.2,.7,.2,1); }
+* { box-sizing: border-box; } html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--milk); color: var(--coal); font: 300 17px/1.65 var(--body); overflow-x: hidden; }
+img { display: block; max-width: 100%; } a { color: inherit; }
+b, strong { font-weight: 600; }
+.nav { position: fixed; z-index: 30; top: 0; left: 0; right: 0; display: flex; align-items: center; gap: 26px; padding: 18px var(--gut); mix-blend-mode: normal; }
+.nav .lg { font: 400 24px/1 var(--head); margin-right: auto; letter-spacing: .02em; }
+.nav a { text-decoration: none; font: 400 14px/1 var(--body); letter-spacing: .08em; }
+.nav .call { padding: 11px 18px; border-radius: 30px; background: var(--coal); color: var(--milk); }
+.nav.dark { background: rgba(245,239,233,.92); backdrop-filter: blur(8px); }
+@media (max-width: 760px) { .nav a:not(.call) { display: none; } }
+
+/* hero: the letters of the name light up one by one like the chandelier */
+.hero { position: relative; min-height: 100vh; display: grid; grid-template-columns: 1.1fr .9fr; align-items: center; gap: 30px; padding: 100px var(--gut) 50px; }
+.hero h1 { margin: 0 0 6px; font: 400 clamp(64px, 11vw, 170px)/.95 var(--head); letter-spacing: -.02em; }
+.hero h1 .ch { display: inline-block; opacity: .12; transition: opacity .6s, text-shadow .6s; }
+.hero h1 .ch.lit { opacity: 1; text-shadow: 0 0 30px rgba(184,145,85,.35); }
+.hero .sub { font: 400 14px/1 var(--body); letter-spacing: .3em; text-transform: uppercase; color: var(--mut); }
+.hero p { max-width: 520px; margin: 22px 0 26px; color: var(--mut); font-size: clamp(16px, 1.4vw, 19px); }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 15px 26px; border-radius: 40px; background: var(--coal); color: var(--milk); font: 600 15px/1 var(--body); text-decoration: none; border: 0; cursor: pointer; transition: transform .3s; }
+.btn:hover { transform: translateY(-2px); } .btn.o { background: transparent; color: var(--coal); box-shadow: inset 0 0 0 1.5px var(--coal); }
+.row { display: flex; gap: 10px; flex-wrap: wrap; }
+.frame { position: relative; justify-self: center; width: min(36vw, 430px); aspect-ratio: 3/4; }
+.frame img { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; }
+.frame::before { content: ""; position: absolute; inset: -16px 16px 16px -16px; border: 1px solid var(--gold); border-radius: 4px; }
+@media (max-width: 860px) { .hero { grid-template-columns: 1fr; padding-top: 90px; } .frame { width: 70vw; max-width: 320px; order: -1; } }
+
+.sec { padding: clamp(70px, 10vw, 120px) var(--gut); max-width: 1180px; margin: 0 auto; scroll-margin-top: 70px; }
+.kick { font: 400 12px/1 var(--body); letter-spacing: .3em; text-transform: uppercase; color: var(--gold); }
+h2 { margin: 12px 0 10px; font: 400 clamp(32px, 4.8vw, 60px)/1.08 var(--head); }
+h2 + small { display: block; max-width: 640px; color: var(--mut); font-style: italic; margin-bottom: 30px; }
+
+/* feature: nail design try-on */
+.try { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: center; }
+.hand { background: var(--stone); border-radius: 200px 200px 24px 24px; padding: 30px 20px 10px; }
+.hand svg { width: 100%; max-width: 420px; display: block; margin: 0 auto; overflow: visible; }
+.skin { fill: #efcfb8; }
+.nail { transition: fill .5s; }
+.pick h3 { margin: 18px 0 10px; font: 600 13px/1 var(--body); letter-spacing: .16em; text-transform: uppercase; color: var(--mut); }
+.pick h3:first-child { margin-top: 0; }
+.cols { display: flex; flex-wrap: wrap; gap: 10px; }
+.cols button { width: 42px; height: 42px; border-radius: 50%; border: 3px solid #fff; box-shadow: 0 0 0 1px var(--line); cursor: pointer; }
+.cols button.on { box-shadow: 0 0 0 2px var(--coal); }
+.des { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.des button { padding: 12px 8px; border-radius: 14px; border: 1px solid var(--line); background: #fff; font: 400 14px/1.2 var(--body); cursor: pointer; }
+.des button.on { background: var(--coal); color: var(--milk); border-color: var(--coal); }
+.bill { margin-top: 20px; padding: 18px 20px; border-radius: 18px; background: #fff; border: 1px solid var(--line); }
+.bill .ln { display: flex; justify-content: space-between; padding: 5px 0; font-size: 15px; }
+.bill .sum { display: flex; justify-content: space-between; padding-top: 10px; margin-top: 6px; border-top: 1px solid var(--line); font: 400 26px/1.2 var(--head); }
+@media (max-width: 860px) { .try { grid-template-columns: 1fr; } .des { grid-template-columns: 1fr 1fr; } }
+
+.menu { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 50px; }
+.menu h3 { margin: 26px 0 8px; font: 400 22px/1.2 var(--head); }
+.it { display: flex; align-items: baseline; gap: 8px; padding: 5px 0; font-size: 15.5px; }
+.it i { flex: 1; border-bottom: 1px dotted var(--rose); transform: translateY(-4px); }
+.it span { white-space: nowrap; font-weight: 600; }
+.src { margin-top: 18px; font-size: 13px; color: var(--mut); }
+@media (max-width: 760px) { .menu { grid-template-columns: 1fr; } }
+
+.gal { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 12px; }
+.gal figure { margin: 0; border-radius: 4px; overflow: hidden; aspect-ratio: 3/4; background: var(--stone); }
+.gal figure:first-child { grid-row: span 2; aspect-ratio: auto; }
+.gal img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 760px) { .gal { grid-template-columns: 1fr 1fr; } .gal figure:first-child { grid-column: span 2; aspect-ratio: 4/3; grid-row: auto; } }
+
+.rate { display: flex; gap: 22px; align-items: baseline; flex-wrap: wrap; margin-bottom: 24px; }
+.rate b { font: 400 clamp(70px, 10vw, 130px)/1 var(--head); font-weight: 400; }
+.revs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.rv { background: #fff; border-radius: 4px; padding: 24px; border-top: 2px solid var(--gold); }
+.rv p { margin: 0 0 10px; font: 400 17px/1.5 var(--head); } .rv small { color: var(--mut); font-size: 13px; }
+@media (max-width: 860px) { .revs { grid-template-columns: 1fr; } }
+
+.vis { display: grid; grid-template-columns: 1fr 1.2fr; gap: 26px; align-items: center; }
+.ln2 { display: flex; justify-content: space-between; gap: 14px; padding: 11px 0; border-bottom: 1px solid var(--line); }
+.ln2 span { color: var(--mut); } .ln2 b { text-align: right; font-weight: 400; }
+.live i { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: #aaa; margin-right: 8px; }
+.is-open i { background: #6a9a6a; } .is-closed i { background: #c0574b; }
+.mapbox { position: relative; min-height: 380px; border-radius: 4px; overflow: hidden; filter: grayscale(.7); }
+.mapbox iframe { position: absolute; inset: 0; width: 100%; height: calc(100% + 140px); border: 0; }
+@media (max-width: 860px) { .vis { grid-template-columns: 1fr; } }
+footer { padding: 40px var(--gut) 60px; text-align: center; color: var(--mut); font-size: 14px; }
+footer b { display: block; font: 400 40px/1 var(--head); color: var(--coal); margin-bottom: 8px; }
+.motion [data-in] { opacity: 0; transform: translateY(24px); transition: opacity .9s var(--ease), transform .9s var(--ease); }
+.motion [data-in].in { opacity: 1; transform: none; }
+.noimg { background: var(--stone); } .noimg img { opacity: 0; }
+</style>
+</head>
+<body data-hours='{"0":[[9,0,21,0]],"1":[[9,0,21,0]],"2":[[9,0,21,0]],"3":[[9,0,21,0]],"4":[[9,0,21,0]],"5":[[9,0,21,0]],"6":[[9,0,21,0]]}'>
+<nav class="nav" id="nav" aria-label="Разделы"><span class="lg">Счастье</span><a href="#primerka">Примерка</a><a href="#ceny">Цены</a><a href="#adres">Адрес</a><a class="call" href="tel:+79206296929">Записаться</a></nav>
+<main>
+<section class="hero" id="top">
+  <div>
+    <span class="sub">Студия красоты · Владимир · Горького, 48</span>
+    <h1 id="h1" aria-label="Счастье">Счастье</h1>
+    <p>Маникюр и педикюр, брови и ресницы, стрижки и сложное окрашивание. Пока ждёте, предложат чай или кофе, а в клиентские дни здесь ещё и дарят подарки.</p>
+    <div class="row"><a class="btn" href="tel:+79206296929">Записаться</a><a class="btn o" href="#primerka">Примерить дизайн</a></div>
+  </div>
+  <div class="frame" data-ph><img src="https://avatars.mds.yandex.net/get-altay/20200163/2a000001a0330f297e8e06d73e17de30356d/XL" alt="Студия красоты «Счастье» с люстрой" fetchpriority="high"></div>
+</section>
+
+<section class="sec" id="primerka">
+  <span class="kick" data-in>Примерка</span>
+  <h2 data-in>Какие ногти хотите сегодня?</h2>
+  <small data-in>Выберите оттенок и дизайн, рука на картинке перекрасится, а стоимость посчитается по прайсу студии.</small>
+  <div class="try">
+    <div class="hand" data-in><svg viewBox="0 0 400 420" aria-hidden="true">
+      <defs>
+        <linearGradient id="chrome" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset=".5" id="ch2" stop-color="#d9a1a8"/><stop offset="1" stop-color="#fff"/></linearGradient>
+        <pattern id="foil" width="12" height="12" patternUnits="userSpaceOnUse"><rect width="12" height="12" id="fbg" fill="#d9a1a8"/><path d="M2 3 l4 2 -3 4z M8 1 l3 3 -4 1z" fill="#d8b46a"/></pattern>
+        <pattern id="geo" width="14" height="14" patternUnits="userSpaceOnUse"><rect width="14" height="14" id="gbg" fill="#d9a1a8"/><path d="M0 14 L14 0" stroke="#fff" stroke-width="2"/></pattern>
+      </defs>
+      <path class="skin" d="M70 420 C 60 330, 70 260, 96 230 L 96 120 C 96 100, 126 100, 128 120 L 132 210 L 140 80 C 142 58, 176 58, 176 80 L 176 200 L 186 60 C 188 36, 224 36, 224 60 L 222 200 L 236 86 C 238 64, 272 66, 270 88 L 262 230 C 280 210, 300 196, 326 214 C 340 226, 330 246, 318 258 C 290 290, 280 330, 270 420Z"/>
+      <g id="nails"><path class="nail" d="M98 128 C 98 104, 126 104, 126 128 L 124 156 C 112 162, 102 160, 100 156Z"/><path class="nail" d="M142 86 C 142 62, 174 62, 174 86 L 172 118 C 160 124, 146 122, 144 118Z"/><path class="nail" d="M188 66 C 188 40, 222 40, 222 66 L 220 100 C 208 106, 192 104, 190 100Z"/><path class="nail" d="M238 92 C 238 70, 268 72, 268 94 L 266 124 C 254 130, 242 128, 240 124Z"/><path class="nail" d="M300 214 C 312 202, 334 214, 326 230 L 312 244 C 302 246, 296 238, 296 232Z"/></g>
+      <g id="tips" fill="#fff" opacity="0"><path d="M98 128 C 98 104, 126 104, 126 128 L 126 116 C 112 112, 100 114, 98 116Z"/><path d="M142 86 C 142 62, 174 62, 174 86 L 174 74 C 160 70, 144 72, 142 74Z"/><path d="M188 66 C 188 40, 222 40, 222 66 L 222 54 C 208 50, 190 52, 188 54Z"/><path d="M238 92 C 238 70, 268 72, 268 94 L 268 82 C 254 78, 240 80, 238 82Z"/></g>
+      <g id="gems" fill="#fff" opacity="0"><circle cx="112" cy="140" r="4"/><circle cx="158" cy="102" r="4"/><circle cx="205" cy="84" r="5"/><circle cx="252" cy="110" r="4"/></g>
+    </svg></div>
+    <div class="pick" data-in>
+      <h3>Оттенок</h3>
+      <div class="cols" id="cols"><button style="background:#d9a1a8" data-c="#d9a1a8" class="on" aria-label="Пудровый"></button><button style="background:#f1ddd1" data-c="#f1ddd1" aria-label="Нюд"></button><button style="background:#8e1f2c" data-c="#8e1f2c" aria-label="Бордо"></button><button style="background:#1d1a19" data-c="#1d1a19" aria-label="Чёрный"></button><button style="background:#7f9b8a" data-c="#7f9b8a" aria-label="Шалфей"></button><button style="background:#e3c07a" data-c="#e3c07a" aria-label="Золото"></button></div>
+      <h3>Дизайн</h3>
+      <div class="des" id="des"><button data-d="none" class="on">Однотонный</button><button data-d="french">Френч</button><button data-d="chrome">Втирка</button><button data-d="foil">Фольга</button><button data-d="geo">Геометрия</button><button data-d="gems">Стразы</button></div>
+      <div class="bill" id="bill" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="ceny">
+  <span class="kick" data-in>Прайс</span>
+  <h2 data-in>Цены студии</h2>
+  <small data-in>Выборка из прайса в карточке на Яндекс Картах. У мастеров-стажёров есть отдельные цены, их уточняйте у администратора.</small>
+  <div class="menu" data-in>
+    <div><h3>Маникюр</h3>
+      <div class="it">Маникюр с покрытием гель-лак<i></i><span>1 900 ₽</span></div>
+      <div class="it">Маникюр с покрытием гель-лак, нюд<i></i><span>2 300 ₽</span></div>
+      <div class="it">Маникюр без покрытия<i></i><span>1 300 ₽</span></div>
+      <div class="it">Пилочный маникюр с гель-лаком<i></i><span>2 600 ₽</span></div>
+      <div class="it">Наращивание с покрытием гель-лак<i></i><span>3 000 ₽</span></div>
+      <div class="it">Детский маникюр<i></i><span>800 ₽</span></div>
+      <h3>Педикюр</h3>
+      <div class="it">Педикюр полный с гель-лаком<i></i><span>3 000 ₽</span></div>
+      <div class="it">Педикюр пальчики + гель-лак<i></i><span>2 100 ₽</span></div>
+      <div class="it">Маникюр + педикюр в 4 руки, ведущий мастер<i></i><span>5 100 ₽</span></div></div>
+    <div><h3>Брови и ресницы</h3>
+      <div class="it">Архитектура и окрашивание бровей<i></i><span>1 400 ₽</span></div>
+      <div class="it">Коррекция бровей<i></i><span>700 ₽</span></div>
+      <div class="it">Наращивание ресниц, классика<i></i><span>2 000 ₽</span></div>
+      <div class="it">Ламинирование ресниц с окрашиванием<i></i><span>2 200 ₽</span></div>
+      <h3>Волосы</h3>
+      <div class="it">Стрижка женская / мужская<i></i><span>1 200 ₽</span></div>
+      <div class="it">Однотонное окрашивание, короткие<i></i><span>4 000 ₽</span></div>
+      <div class="it">Окрашивание AirTouch<i></i><span>10 000 ₽</span></div>
+      <div class="it">Голливудская укладка<i></i><span>от 2 400 ₽</span></div></div>
+  </div>
+  <p class="src">Есть подолог, шугаринг, SPA-уход, подарочные сертификаты и выезд мастера на дом.</p>
+</section>
+
+<section class="sec" id="studiya">
+  <span class="kick" data-in>Студия</span>
+  <h2 data-in>Красиво не только ногтям</h2>
+  <div class="gal" data-in>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/19838861/2a000001a0330f1269164ff3010a0cd29dbd/XL" alt="Зал студии" loading="lazy"></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/14010724/2a00000193253d313fb4b55f00c2d6d124eb/XL" alt="Маникюр" loading="lazy"></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/14683384/2a000001987b06420d6ac567ae61610b3ab8/XL" alt="Педикюр с дизайном" loading="lazy"></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/20287409/2a000001a0330dcd317b54bf4e63558a4b13/XL" alt="Рабочее место мастера" loading="lazy"></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/19091395/2a000001a0330f2e26ec968abde23c9df421/XL" alt="Зона ожидания" loading="lazy"></figure>
+  </div>
+</section>
+
+<section class="sec" id="otzyvy">
+  <span class="kick" data-in>Отзывы</span>
+  <div class="rate" data-in><b data-count="5.0">5,0</b><span>561 оценка на Яндекс Картах. Атмосферу хвалят в 118 отзывах из 119.</span></div>
+  <div class="revs">
+    <div class="rv" data-in><p>«Маникюр с покрытием сделала всего за час».</p><small>О мастере Александре</small></div>
+    <div class="rv" data-in><p>«Предложили чай, кофе, студия выглядит очень красиво и модно».</p><small>Из отзывов</small></div>
+    <div class="rv" data-in><p>«Благодаря советам мастера Антона у меня теперь длинные, здоровые и красивые волосы».</p><small>Из отзывов</small></div>
+  </div>
+</section>
+
+<section class="sec" id="adres">
+  <div class="vis">
+    <div>
+      <span class="kick" data-in>Адрес</span>
+      <h2 data-in>Горького, 48</h2>
+      <div class="ln2"><span>Где</span><b>Владимир, ул. Горького, 48</b></div>
+      <div class="ln2"><span>Сейчас</span><b class="live" data-live><i></i><span data-status>…</span></b></div>
+      <div class="ln2"><span>Часы</span><b>Ежедневно 9:00–21:00</b></div>
+      <div class="ln2"><span>Телефон</span><b><a href="tel:+79206296929">+7 (920) 629-69-29</a></b></div>
+      <div class="row" style="margin-top:20px"><a class="btn" href="tel:+79206296929">Позвонить</a><a class="btn o" href="https://wa.me/79206296929" target="_blank" rel="noopener">WhatsApp</a><a class="btn o" href="http://vk.ru/club168455907" target="_blank" rel="noopener">ВКонтакте</a></div>
+    </div>
+    <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=40.392904%2C56.141778&amp;z=16&amp;pt=40.392904%2C56.141778%2Cpm2blm&amp;l=map" title="«Счастье» на Яндекс Картах" loading="lazy"></iframe></div>
+  </div>
+</section>
+</main>
+<footer><b>Счастье</b>Студия красоты · Владимир, ул. Горького, 48 · ежедневно 9:00–21:00 · +7 (920) 629-69-29</footer>
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  // hero: letters of «Счастье» light up one after another
+  var h1 = document.getElementById('h1'); RT.split(h1);
+  var chs = [].slice.call(h1.querySelectorAll('.ch')), t0 = null;
+  if (RT.motion) RT.loop(function (t) { if (t0 === null) t0 = t; var n = Math.floor((t - t0 - 300) / 180); chs.forEach(function (c, i) { c.classList.toggle('lit', i <= n); }); return n < chs.length; });
+  else chs.forEach(function (c) { c.classList.add('lit'); });
+  var nav = document.getElementById('nav');
+  RT.onScroll(function () { nav.classList.toggle('dark', scrollY > 60); });
+
+  // feature: try-on with prices from the studio's list
+  var col = '#d9a1a8', des = 'none', bill = document.getElementById('bill');
+  var D = { none: ['Без дизайна', 0], french: ['Френч, 10 ногтей', 400], chrome: ['Втирка, 10 ногтей', 400], foil: ['Фольга, 10 ногтей', 500], geo: ['Геометрия простая, 10 ногтей', 500], gems: ['Стразы, 4 ногтя', 200] };
+  function draw() {
+    var nude = col === '#f1ddd1';
+    document.getElementById('ch2').setAttribute('stop-color', col);
+    document.getElementById('fbg').setAttribute('fill', col);
+    document.getElementById('gbg').setAttribute('fill', col);
+    var fill = des === 'chrome' ? 'url(#chrome)' : des === 'foil' ? 'url(#foil)' : des === 'geo' ? 'url(#geo)' : col;
+    document.querySelectorAll('.nail').forEach(function (n) { n.setAttribute('fill', fill); });
+    document.getElementById('tips').setAttribute('opacity', des === 'french' ? 1 : 0);
+    document.getElementById('gems').setAttribute('opacity', des === 'gems' ? 1 : 0);
+    document.querySelectorAll('#cols button').forEach(function (b) { b.classList.toggle('on', b.dataset.c === col); });
+    document.querySelectorAll('#des button').forEach(function (b) { b.classList.toggle('on', b.dataset.d === des); });
+    var base = nude ? ['Маникюр с гель-лаком, нюд', 2300] : ['Маникюр с покрытием гель-лак', 1900], d = D[des];
+    bill.innerHTML = '<div class="ln"><span>' + base[0] + '</span><span>' + RT.money(base[1]) + '</span></div>' + (d[1] ? '<div class="ln"><span>' + d[0] + '</span><span>' + RT.money(d[1]) + '</span></div>' : '') + '<div class="sum"><span>Итого</span><span>' + RT.money(base[1] + d[1]) + '</span></div>';
+  }
+  document.getElementById('cols').addEventListener('click', function (e) { var b = e.target.closest('button'); if (b) { col = b.dataset.c; draw(); } });
+  document.getElementById('des').addEventListener('click', function (e) { var b = e.target.closest('button'); if (b) { des = b.dataset.d; draw(); } });
+  draw();
+  window.__nails = function (c, d) { col = c; des = d; draw(); };
+
+  window.REEL = { hero: '#top', heroAt: 0, feature: '#primerka', featureOff: 30, featureM: '.hand', featureOffM: -110, prices: '#ceny', pricesOff: 30,
+    demo: [function () { window.__nails('#8e1f2c', 'french'); }, function () { window.__nails('#f1ddd1', 'chrome'); }, function () { window.__nails('#1d1a19', 'foil'); }], holds: [40, 40, 45] };
+})();
+</script>
+</body>
+</html>

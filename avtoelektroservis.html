@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>АвтоЭлектроСервис — автоэлектрик и автосервис · Кострома, Галичская, 100</title>
+<meta name="description" content="АвтоЭлектроСервис в Костроме: автоэлектрика, компьютерная диагностика, заправка и ремонт кондиционеров, стартеры, установка магнитол и парктроников, тонировка, кузовной ремонт. Ежедневно 9:00–18:00. 4,8 на Яндекс Картах, 692 оценки.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="АвтоЭлектроСервис в Костроме">
+<meta property="og:description" content="Нажмите на узел машины и узнайте, чем помогут. +7 (4942) 30-00-10">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/7021598/2a000001849aeef83c5ef0f3a2da49cf37d2/XXL">
+<meta name="theme-color" content="#0e1116">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tektur:wght@500;700;900&family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"AutoRepair","name":"АвтоЭлектроСервис","telephone":"+7 4942 30-00-10","address":{"@type":"PostalAddress","streetAddress":"Галичская ул., 100","addressLocality":"Кострома","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":57.778128,"longitude":40.964354},"openingHours":"Mo-Su 09:00-18:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","ratingCount":"692"}}</script>
+<style>
+:root { --bg: #0e1116; --panel: #161b23; --panel-2: #1d2430; --volt: #ffd400; --cyan: #33d6ff; --txt: #e8edf3; --mut: #8b97a7; --line: rgba(51,214,255,.18); --red: #ff5a4f;
+  --head: 'Tektur', sans-serif; --body: 'IBM Plex Sans', sans-serif; --mono: 'IBM Plex Mono', monospace; --gut: clamp(16px, 4vw, 56px); --ease: cubic-bezier(.2,.7,.2,1); }
+* { box-sizing: border-box; } html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--txt); font: 400 17px/1.6 var(--body); overflow-x: hidden; }
+body::before { content: ""; position: fixed; inset: 0; background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px); background-size: 48px 48px; opacity: .35; pointer-events: none; }
+img { display: block; max-width: 100%; } a { color: inherit; }
+.nav { position: fixed; z-index: 30; top: 0; left: 0; right: 0; display: flex; align-items: center; gap: 24px; padding: 14px var(--gut); background: rgba(14,17,22,.86); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+.nav b { font: 900 18px/1 var(--head); margin-right: auto; } .nav b i { font-style: normal; color: var(--volt); }
+.nav a { font: 500 13px/1 var(--mono); text-decoration: none; color: var(--mut); letter-spacing: .06em; }
+.nav a.on { color: var(--cyan); }
+.nav .call { padding: 10px 14px; border-radius: 8px; background: var(--volt); color: #111; font-weight: 700; }
+@media (max-width: 760px) { .nav a:not(.call) { display: none; } }
+
+/* hero: a wire is drawn across the screen, current runs to the headline */
+.hero { position: relative; min-height: 100vh; display: grid; grid-template-columns: 1.05fr .95fr; gap: 30px; align-items: center; padding: 100px var(--gut) 50px; }
+.hero h1 { margin: 16px 0 14px; font: 900 clamp(40px, 6.8vw, 98px)/.95 var(--head); text-transform: uppercase; }
+.hero h1 span { color: var(--volt); text-shadow: 0 0 calc(30px * var(--v, 0)) rgba(255,212,0,.6); }
+.tag { font: 500 13px/1 var(--mono); color: var(--cyan); letter-spacing: .1em; }
+.hero p { max-width: 520px; margin: 0 0 24px; color: var(--mut); font-size: clamp(16px, 1.4vw, 19px); }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 15px 22px; border-radius: 10px; background: var(--volt); color: #111; font: 700 15px/1 var(--body); text-decoration: none; border: 0; cursor: pointer; }
+.btn.o { background: transparent; color: var(--cyan); box-shadow: inset 0 0 0 2px var(--cyan); }
+.row { display: flex; gap: 10px; flex-wrap: wrap; }
+.photo { position: relative; border-radius: 22px; overflow: hidden; aspect-ratio: 4/5; max-width: 470px; justify-self: center; width: 100%; border: 1px solid var(--line); }
+.photo img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.9) contrast(1.05); }
+.photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(transparent 50%, rgba(14,17,22,.8)); }
+#wire { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; }
+#wire path { fill: none; stroke: var(--volt); stroke-width: 2.5; filter: drop-shadow(0 0 6px rgba(255,212,0,.7)); }
+.hero > div { position: relative; z-index: 1; }
+@media (max-width: 860px) { .hero { grid-template-columns: 1fr; padding-top: 90px; } .photo { max-width: 360px; order: -1; aspect-ratio: 4/3; } }
+
+.sec { position: relative; padding: clamp(70px, 10vw, 120px) var(--gut); max-width: 1220px; margin: 0 auto; scroll-margin-top: 70px; }
+.kick { font: 500 12px/1 var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--volt); }
+h2 { margin: 10px 0 10px; font: 700 clamp(30px, 4.4vw, 56px)/1.05 var(--head); }
+h2 + small { display: block; max-width: 660px; color: var(--mut); font-style: italic; margin-bottom: 30px; }
+
+/* feature: wiring of the car */
+.sch { display: grid; grid-template-columns: 1.25fr .75fr; gap: 22px; align-items: stretch; }
+.board { position: relative; background: var(--panel); border: 1px solid var(--line); border-radius: 24px; padding: 14px; }
+.board svg { width: 100%; height: auto; display: block; }
+.car { fill: none; stroke: #3b4657; stroke-width: 3; }
+.wire { fill: none; stroke: #2a3444; stroke-width: 3; stroke-linecap: round; }
+.wire.on { stroke: var(--volt); stroke-dasharray: 10 12; filter: drop-shadow(0 0 4px rgba(255,212,0,.8)); }
+.motion .wire.on { animation: flow .7s linear infinite; }
+@keyframes flow { to { stroke-dashoffset: -22; } }
+.node { cursor: pointer; }
+.node circle { fill: var(--panel-2); stroke: var(--cyan); stroke-width: 3; transition: fill .3s, stroke .3s; }
+.node text { fill: var(--txt); font: 500 13px var(--mono); pointer-events: none; }
+.node:hover circle, .node.on circle { fill: var(--volt); stroke: var(--volt); }
+.node.on text { fill: var(--volt); }
+.bat { fill: var(--volt); }
+.out { background: var(--panel-2); border: 1px solid var(--line); border-radius: 24px; padding: 24px; }
+.out .k { font: 500 12px/1 var(--mono); color: var(--cyan); letter-spacing: .12em; }
+.out b { display: block; font: 700 26px/1.15 var(--head); margin: 10px 0 8px; }
+.out p { margin: 0 0 14px; color: var(--mut); }
+.out ul { margin: 0 0 16px; padding: 0; list-style: none; display: grid; gap: 6px; }
+.out li { padding-left: 20px; position: relative; font-size: 15px; } .out li::before { content: "›"; position: absolute; left: 0; color: var(--volt); }
+.out .price { font: 500 14px/1.4 var(--mono); color: var(--volt); }
+@media (max-width: 900px) { .sch { grid-template-columns: 1fr; } }
+
+.svc { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 20px; overflow: hidden; }
+.svc div { background: var(--panel); padding: 20px; }
+.svc b { display: block; font: 700 17px/1.2 var(--head); margin-bottom: 6px; } .svc span { color: var(--mut); font-size: 14.5px; }
+.prices { margin-top: 22px; padding: 20px 22px; border-radius: 18px; border: 1px dashed var(--volt); font-family: var(--mono); font-size: 14.5px; }
+.prices div { display: flex; justify-content: space-between; gap: 12px; padding: 4px 0; }
+.prices small { display: block; margin-top: 8px; color: var(--mut); font-family: var(--body); }
+@media (max-width: 860px) { .svc { grid-template-columns: 1fr; } }
+
+.why { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.why div { padding: 22px; border-radius: 20px; background: var(--panel); border-left: 4px solid var(--cyan); }
+.why b { font: 700 20px/1.2 var(--head); display: block; margin-bottom: 6px; } .why p { margin: 0; color: var(--mut); font-size: 15px; }
+.gal { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 18px; }
+.gal figure { margin: 0; border-radius: 16px; overflow: hidden; aspect-ratio: 1; background: var(--panel); }
+.gal img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 860px) { .why { grid-template-columns: 1fr; } .gal { grid-template-columns: 1fr 1fr; } }
+
+.rate { display: flex; gap: 18px; align-items: baseline; margin-bottom: 22px; flex-wrap: wrap; }
+.rate b { font: 900 clamp(60px, 9vw, 120px)/1 var(--head); color: var(--volt); }
+.revs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.rv { padding: 22px; border-radius: 20px; background: var(--panel); border: 1px solid var(--line); }
+.rv p { margin: 0 0 10px; } .rv small { font: 500 12px/1 var(--mono); color: var(--cyan); }
+@media (max-width: 860px) { .revs { grid-template-columns: 1fr; } }
+
+.vis { display: grid; grid-template-columns: 1fr 1.2fr; gap: 26px; align-items: center; }
+.ln { display: flex; justify-content: space-between; gap: 14px; padding: 11px 0; border-bottom: 1px solid var(--line); }
+.ln span { color: var(--mut); } .ln b { text-align: right; font-weight: 500; }
+.live i { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: #666; margin-right: 8px; }
+.is-open i { background: #4cff8a; box-shadow: 0 0 8px #4cff8a; } .is-closed i { background: var(--red); }
+.mapbox { position: relative; min-height: 380px; border-radius: 22px; overflow: hidden; filter: invert(.92) hue-rotate(185deg) saturate(.6); }
+.mapbox iframe { position: absolute; inset: 0; width: 100%; height: calc(100% + 140px); border: 0; }
+@media (max-width: 860px) { .vis { grid-template-columns: 1fr; } }
+footer { position: relative; padding: 40px var(--gut) 60px; text-align: center; color: var(--mut); font-size: 14px; border-top: 1px solid var(--line); }
+footer b { display: block; font: 900 24px/1 var(--head); color: var(--txt); margin-bottom: 8px; }
+.motion [data-in] { opacity: 0; transform: translateY(24px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.motion [data-in].in { opacity: 1; transform: none; }
+.noimg { background: var(--panel-2); } .noimg img { opacity: 0; }
+</style>
+</head>
+<body data-hours='{"0":[[9,0,18,0]],"1":[[9,0,18,0]],"2":[[9,0,18,0]],"3":[[9,0,18,0]],"4":[[9,0,18,0]],"5":[[9,0,18,0]],"6":[[9,0,18,0]]}'>
+<nav class="nav" aria-label="Разделы"><b>АВТО<i>ЭЛЕКТРО</i>СЕРВИС</b><a href="#shema">Схема</a><a href="#raboty">Работы</a><a href="#adres">Адрес</a><a class="call" href="tel:+74942300010">30-00-10</a></nav>
+<main>
+<section class="hero" id="top">
+  <svg id="wire" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true"><path id="wp" d="M-20 820 C 300 820, 260 560, 520 560 S 760 300, 900 300 S 1200 180, 1460 200"/></svg>
+  <div>
+    <span class="tag">Кострома · Галичская, 100 · ежедневно 9–18</span>
+    <h1>Найдём, где <span>пропал ток</span></h1>
+    <p>Автоэлектрика, компьютерная диагностика, кондиционеры, стартеры, магнитолы и парктроники. Принимают и проезжающих: если чек загорелся в дороге, сюда можно без записи.</p>
+    <div class="row"><a class="btn" href="tel:+74942300010">Позвонить мастеру</a><a class="btn o" href="#shema">Что не работает?</a></div>
+  </div>
+  <div class="photo" data-ph><img src="https://avatars.mds.yandex.net/get-altay/7021598/2a000001849aeef83c5ef0f3a2da49cf37d2/XXL" alt="АвтоЭлектроСервис на Галичской, 100" fetchpriority="high"></div>
+</section>
+
+<section class="sec" id="shema">
+  <span class="kick" data-in>Схема машины</span>
+  <h2 data-in>Нажмите, что не работает</h2>
+  <small data-in>По проводам побежит ток к нужному узлу, а справа появится, что с этим делают в сервисе. Цены там, где их назвали в отзывах, остальное уточняйте у мастера.</small>
+  <div class="sch">
+    <div class="board" data-in>
+      <svg viewBox="0 0 700 360" id="car" aria-label="Схема электрики автомобиля">
+        <path class="car" d="M60 250 C 60 200, 110 190, 170 186 L 240 128 C 260 112, 290 104, 330 104 L 470 104 C 510 104, 530 116, 556 140 L 600 186 C 640 192, 660 210, 660 250 L 660 268 L 60 268Z"/>
+        <circle class="car" cx="180" cy="270" r="40"/><circle class="car" cx="540" cy="270" r="40"/>
+        <g id="wires"></g>
+        <rect class="bat" x="324" y="214" width="52" height="30" rx="5"/><text x="350" y="234" text-anchor="middle" font-family="IBM Plex Mono" font-size="13" fill="#111">АКБ</text>
+        <g id="nodes"></g>
+      </svg>
+    </div>
+    <div class="out" data-in aria-live="polite" id="out"></div>
+  </div>
+</section>
+
+<section class="sec" id="raboty">
+  <span class="kick" data-in>Что делают</span>
+  <h2 data-in>Не только электрика</h2>
+  <div class="svc" data-in>
+    <div><b>Автоэлектрика</b><span>Поиск неисправностей, проводка, стартеры</span></div>
+    <div><b>Диагностика</b><span>Компьютерная диагностика, чек на приборной панели</span></div>
+    <div><b>Кондиционер</b><span>Заправка, поиск утечки фреона, ремонт</span></div>
+    <div><b>Магнитолы и парктроники</b><span>Установка и подключение оборудования</span></div>
+    <div><b>Тонировка</b><span>Тонирование автостёкол</span></div>
+    <div><b>ТО и ремонт</b><span>Масло, тормоза, ходовая, выхлоп, развал-схождение</span></div>
+    <div><b>Двигатель</b><span>Ремонт двигателя, чистка форсунок</span></div>
+    <div><b>Кузовной ремонт</b><span>Ремонт пластиковых бамперов, покраска</span></div>
+    <div><b>Подушки безопасности</b><span>Ремонт разъёмов и шлейфов</span></div>
+  </div>
+  <div class="prices" data-in>
+    <div><span>Компьютерная диагностика</span><span>800 ₽</span></div>
+    <div><span>Замена лампы ближнего света со снятием фонаря</span><span>400 ₽</span></div>
+    <div><span>Ремонт разъёма airbag</span><span>800 ₽</span></div>
+    <small>Цены из отзыва клиента за сентябрь 2025 года. Актуальную стоимость назовёт мастер-приёмщик.</small>
+  </div>
+</section>
+
+<section class="sec" id="pochemu">
+  <span class="kick" data-in>Почему едут сюда</span>
+  <h2 data-in>Даже транзитом</h2>
+  <div class="why">
+    <div data-in><b>Без записи в беде</b><p>Водитель ехал через Кострому, загорелся чек: приняли без записи, нашли и устранили быстро.</p></div>
+    <div data-in><b>Объясняют заранее</b><p>Мастер-приёмщик Андрей подробно рассказывает, что и сколько будет стоить.</p></div>
+    <div data-in><b>Комната отдыха</b><p>Пока чинят машину, можно подождать в комнате с телевизором.</p></div>
+  </div>
+  <div class="gal" data-in>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/15043309/2a0000019a0c388703013eb126a205f4d18e/XL" alt="Приёмная" loading="lazy"></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/5527230/2a000001849980b6f7f68c746af26dccc30e/XL" alt="Подъёмник" loading="lazy"></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/7779554/2a00000184997d51d2d00652516dc673c013/XL" alt="Въезд в бокс" loading="lazy"></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/9719535/2a0000018a3d0e6091ac84c70e8a70da01be/XL" alt="Приборная панель" loading="lazy"></figure>
+  </div>
+</section>
+
+<section class="sec" id="otzyvy">
+  <span class="kick" data-in>Отзывы</span>
+  <div class="rate" data-in><b data-count="4.8">4,8</b><span>692 оценки на Яндекс Картах. По времени ожидания довольны в 89 отзывах из 97.</span></div>
+  <div class="revs">
+    <div class="rv" data-in><p>«Был в Костроме транзитом. Загорелся чек. Приняли без записи. Неисправности установили и устранили быстро».</p><small>// транзитом</small></div>
+    <div class="rv" data-in><p>«Обратился с горящим чеком на Ладе Весте. Всё подробно объяснили и дали указания к дальнейшим действиям».</p><small>// диагностика</small></div>
+    <div class="rv" data-in><p>«Мастер Дмитрий заменил подрулевой шлейф очень оперативно и аккуратно».</p><small>// электрика</small></div>
+  </div>
+</section>
+
+<section class="sec" id="adres">
+  <div class="vis">
+    <div>
+      <span class="kick" data-in>Адрес</span>
+      <h2 data-in>Галичская, 100</h2>
+      <div class="ln"><span>Где</span><b>Кострома, Галичская ул., 100</b></div>
+      <div class="ln"><span>Сейчас</span><b class="live" data-live><i></i><span data-status>…</span></b></div>
+      <div class="ln"><span>Часы</span><b>Ежедневно 9:00–18:00</b></div>
+      <div class="ln"><span>Телефоны</span><b><a href="tel:+74942300010">+7 (4942) 30-00-10</a><br><a href="tel:+79036346010">+7 (903) 634-60-10</a></b></div>
+      <div class="ln"><span>Оплата</span><b>Картой и наличными</b></div>
+      <div class="row" style="margin-top:20px"><a class="btn" href="tel:+74942300010">Позвонить</a><a class="btn o" href="https://vk.ru/aeskostroma" target="_blank" rel="noopener">ВКонтакте</a></div>
+    </div>
+    <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=40.964354%2C57.778128&amp;z=16&amp;pt=40.964354%2C57.778128%2Cpm2ylm&amp;l=map" title="АвтоЭлектроСервис на Яндекс Картах" loading="lazy"></iframe></div>
+  </div>
+</section>
+</main>
+<footer><b>АВТОЭЛЕКТРОСЕРВИС</b>Кострома, Галичская ул., 100 · ежедневно 9:00–18:00 · +7 (4942) 30-00-10</footer>
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  // hero wire draws itself while the first screen scrolls away
+  var wp = document.getElementById('wp'), L = wp.getTotalLength(), hero = document.getElementById('top');
+  wp.style.strokeDasharray = L;
+  var t0 = null;
+  function draw(k) { wp.style.strokeDashoffset = (L * (1 - k)).toFixed(1); hero.style.setProperty('--v', k.toFixed(2)); }
+  if (RT.motion) RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.ease(RT.clamp((t - t0) / 1800)); draw(k); return k < 1; }); else draw(1);
+
+  // feature: battery → node wiring
+  var N = [
+    { id: 'fary', x: 610, y: 196, t: 'Фары', h: 'Свет и фары', d: 'Не горит ближний, моргает габарит, перегорают лампы.', w: ['Поиск неисправности в проводке', 'Замена ламп', 'Ремонт автоэлектрики'], p: 'Замена лампы ближнего со снятием фонаря: 400 ₽ по отзыву' },
+    { id: 'start', x: 520, y: 176, t: 'Стартер', h: 'Стартер и зарядка', d: 'Машина не заводится, щёлкает или крутит вяло.', w: ['Диагностика электрики', 'Ремонт стартеров', 'Поиск неисправности'], p: 'Стоимость после диагностики' },
+    { id: 'check', x: 430, y: 128, t: 'Чек', h: 'Горит чек', d: 'Загорелась лампа на приборке. Можно приехать без записи, если вы в дороге.', w: ['Компьютерная диагностика', 'Чистка форсунок', 'Профилактические работы'], p: 'Компьютерная диагностика: 800 ₽ по отзыву' },
+    { id: 'kond', x: 330, y: 150, t: 'Кондиционер', h: 'Кондиционер', d: 'Дует тёплым, пахнет или быстро уходит фреон.', w: ['Заправка кондиционера', 'Поиск утечки, замена прокладок', 'Ремонт системы'], p: 'Стоимость уточняйте у мастера' },
+    { id: 'mag', x: 260, y: 170, t: 'Магнитола', h: 'Магнитола и парктроник', d: 'Нужно поставить новую магнитолу или парктроник.', w: ['Установка магнитол', 'Установка парктроников', 'Подключение доп. оборудования'], p: 'Срок и цену назовут сразу при обращении' },
+    { id: 'air', x: 200, y: 214, t: 'Airbag', h: 'Подушки безопасности', d: 'Горит лампа airbag, не работают кнопки на руле.', w: ['Ремонт разъёмов airbag', 'Замена подрулевого шлейфа'], p: 'Ремонт разъёма airbag: 800 ₽ по отзыву' }
+  ];
+  var wires = document.getElementById('wires'), nodes = document.getElementById('nodes'), wh = '', nh = '';
+  N.forEach(function (n, i) {
+    wh += '<path class="wire" data-w="' + i + '" d="M350 214 C 350 ' + (n.y + 40) + ', ' + n.x + ' ' + (n.y + 50) + ', ' + n.x + ' ' + n.y + '"/>';
+    nh += '<g class="node" data-n="' + i + '" tabindex="0" role="button" aria-label="' + n.h + '"><circle cx="' + n.x + '" cy="' + n.y + '" r="14"/><text x="' + n.x + '" y="' + (n.y - 22) + '" text-anchor="middle">' + n.t + '</text></g>';
+  });
+  wires.innerHTML = wh; nodes.innerHTML = nh;
+  var out = document.getElementById('out');
+  function pick(i) {
+    i = +i; var n = N[i];
+    document.querySelectorAll('.wire').forEach(function (w) { w.classList.toggle('on', +w.dataset.w === i); });
+    document.querySelectorAll('.node').forEach(function (g) { g.classList.toggle('on', +g.dataset.n === i); });
+    out.innerHTML = '<span class="k">УЗЕЛ ' + String(i + 1).padStart(2, '0') + '</span><b>' + n.h + '</b><p>' + n.d + '</p><ul>' + n.w.map(function (x) { return '<li>' + x + '</li>'; }).join('') + '</ul><div class="price">' + n.p + '</div><div class="row" style="margin-top:18px"><a class="btn" href="tel:+74942300010">Записаться</a></div>';
+  }
+  nodes.addEventListener('click', function (e) { var g = e.target.closest('.node'); if (g) pick(g.dataset.n); });
+  nodes.addEventListener('keydown', function (e) { if (e.key === 'Enter') { var g = e.target.closest('.node'); if (g) pick(g.dataset.n); } });
+  pick(2);
+  window.__node = pick;
+
+  var links = [].slice.call(document.querySelectorAll('.nav a[href^="#"]'));
+  RT.onScroll(function () { var c = null; links.forEach(function (a) { var s = document.querySelector(a.getAttribute('href')); if (s && s.getBoundingClientRect().top < innerHeight * .4) c = a; }); links.forEach(function (a) { a.classList.toggle('on', a === c); }); });
+
+  window.REEL = { hero: '#top', heroAt: 0, feature: '#shema', featureOff: 40, featureM: '.board', featureOffM: -110, prices: '#raboty', pricesOff: 30,
+    demo: [function () { pick(0); }, function () { pick(3); }, function () { pick(1); }], holds: [40, 40, 45] };
+})();
+</script>
+</body>
+</html>

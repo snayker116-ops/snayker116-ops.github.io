@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Арсенал — автосервис · Йошкар-Ола, Соловьёва, 22А/1</title>
+<meta name="description" content="Автосервис «Арсенал» в Йошкар-Оле: ремонт ходовой, тормозов, рулевого, двигателя и КПП, замена масла, развал-схождение, шиномонтаж. Легковые, микроавтобусы и автобусы. Пн–пт 8:00–18:00. 5,0 на Яндекс Картах.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Арсенал — автосервис в Йошкар-Оле">
+<meta property="og:description" content="Выберите, что беспокоит в машине, и посмотрите работы с ценами. +7 (902) 430-20-19">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/5584259/2a0000017f9c71f048ac3ea5331da1fcfe85/XXL">
+<meta name="theme-color" content="#14181d">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Roboto+Condensed:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"AutoRepair","name":"Арсенал","telephone":"+7 902 430-20-19","address":{"@type":"PostalAddress","streetAddress":"ул. Соловьёва, 22А/1","addressLocality":"Йошкар-Ола","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":56.625984,"longitude":47.870841},"openingHours":"Mo-Fr 08:00-18:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","ratingCount":"244"}}</script>
+<style>
+:root { --bg: #14181d; --bg-2: #1d232a; --steel: #8b98a6; --yel: #ffc21a; --red: #e5483b; --ink: #eef2f5; --mut: #93a0ad; --line: rgba(238,242,245,.1);
+  --head: 'Russo One', sans-serif; --body: 'Roboto Condensed', sans-serif; --gut: clamp(16px, 4vw, 56px); --ease: cubic-bezier(.2,.8,.2,1); }
+* { box-sizing: border-box; } html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17px/1.55 var(--body); overflow-x: hidden; }
+img { display: block; max-width: 100%; } a { color: inherit; }
+.nav { position: fixed; z-index: 30; top: 0; left: 0; right: 0; display: flex; align-items: center; gap: 22px; padding: 14px var(--gut); background: rgba(20,24,29,.9); backdrop-filter: blur(8px); border-bottom: 3px solid var(--yel); }
+.nav b { font: 400 22px/1 var(--head); margin-right: auto; letter-spacing: .04em; }
+.nav b span { color: var(--yel); }
+.nav a { text-decoration: none; font: 500 15px/1 var(--body); color: var(--mut); text-transform: uppercase; }
+.nav .call { padding: 10px 16px; background: var(--yel); color: #14181d; font-weight: 700; }
+@media (max-width: 760px) { .nav a:not(.call) { display: none; } }
+
+/* hero: the photo rides up on a lift, hazard stripe under it */
+.hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: center; padding: 100px var(--gut) 50px; overflow: hidden; }
+.hero h1 { margin: 12px 0 12px; font: 400 clamp(56px, 9vw, 132px)/.9 var(--head); text-transform: uppercase; }
+.hero h1 span { color: var(--yel); }
+.tag { font: 700 13px/1 var(--body); letter-spacing: .16em; text-transform: uppercase; color: var(--yel); }
+.hero p { max-width: 520px; margin: 0 0 24px; color: var(--mut); font-size: clamp(16px, 1.4vw, 19px); }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 15px 24px; background: var(--yel); color: #14181d; font: 700 16px/1 var(--body); text-transform: uppercase; text-decoration: none; border: 0; cursor: pointer; }
+.btn.o { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 2px var(--line); }
+.row { display: flex; gap: 10px; flex-wrap: wrap; }
+.lift { position: relative; justify-self: center; width: min(40vw, 470px); padding-bottom: 46px; }
+.lift .car { aspect-ratio: 4/3; overflow: hidden; border: 4px solid var(--bg-2); }
+.lift .car img { width: 100%; height: 100%; object-fit: cover; }
+.lift .post { position: absolute; bottom: 0; width: 22px; height: 100%; background: linear-gradient(90deg, #2a6fb8, #3d86d6); }
+.lift .post.l { left: -30px; } .lift .post.r { right: -30px; }
+.lift .floor { position: absolute; left: -50px; right: -50px; bottom: 0; height: 14px; background: repeating-linear-gradient(-45deg, var(--yel) 0 16px, #14181d 16px 32px); }
+.motion .lift .car { animation: up 2.4s var(--ease) .3s both; }
+@keyframes up { from { transform: translateY(46px); } to { transform: none; } }
+@media (max-width: 860px) { .hero { grid-template-columns: 1fr; padding-top: 90px; } .lift { width: 74vw; max-width: 330px; order: -1; } }
+
+.sec { padding: clamp(70px, 10vw, 120px) var(--gut); max-width: 1140px; margin: 0 auto; scroll-margin-top: 70px; }
+.kick { font: 700 13px/1 var(--body); letter-spacing: .16em; text-transform: uppercase; color: var(--yel); }
+h2 { margin: 10px 0 10px; font: 400 clamp(34px, 5vw, 60px)/1.02 var(--head); text-transform: uppercase; }
+h2 + small { display: block; max-width: 640px; color: var(--mut); font-style: italic; margin-bottom: 30px; }
+
+/* feature: symptoms light up a zone of the car */
+.sym { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+.sym button { padding: 12px 16px; background: var(--bg-2); color: var(--ink); border: 2px solid transparent; font: 700 15px/1.1 var(--body); cursor: pointer; text-align: left; }
+.sym button.on { border-color: var(--yel); color: var(--yel); }
+.diag { display: grid; grid-template-columns: 1.1fr .9fr; gap: 24px; align-items: center; }
+.scheme { background: var(--bg-2); padding: 18px; }
+.scheme svg { width: 100%; display: block; overflow: visible; }
+.scheme .z { fill: var(--yel); opacity: 0; transition: opacity .4s; }
+.scheme .z.on { opacity: .9; }
+.motion .scheme .z.on { animation: blink 1s ease-in-out infinite alternate; }
+@keyframes blink { from { opacity: .95; } to { opacity: .35; } }
+.order { background: var(--ink); color: #14181d; padding: 22px; position: relative; }
+.order::before { content: "ЗАКАЗ-НАРЯД"; display: block; font: 400 13px/1 var(--head); letter-spacing: .14em; color: var(--red); margin-bottom: 12px; }
+.order .ln { display: flex; justify-content: space-between; gap: 12px; padding: 8px 0; border-bottom: 1px dashed #c9d1d8; font-size: 16px; }
+.order .ln b { white-space: nowrap; }
+.order p { margin: 12px 0 14px; color: #55616d; font-size: 14px; }
+@media (max-width: 860px) { .diag { grid-template-columns: 1fr; } }
+
+.what { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.what div { padding: 18px; background: var(--bg-2); border-left: 4px solid var(--yel); }
+.what b { display: block; font: 400 18px/1.2 var(--head); margin-bottom: 4px; } .what span { color: var(--mut); font-size: 15px; }
+@media (max-width: 860px) { .what { grid-template-columns: 1fr 1fr; } }
+.gal { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 18px; }
+.gal figure { margin: 0; overflow: hidden; aspect-ratio: 3/4; background: var(--bg-2); }
+.gal img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(.3); }
+@media (max-width: 760px) { .gal { grid-template-columns: 1fr 1fr; } }
+
+.rate { display: flex; gap: 18px; align-items: baseline; flex-wrap: wrap; margin-bottom: 24px; }
+.rate b { font: 400 clamp(70px, 10vw, 130px)/1 var(--head); color: var(--yel); }
+.revs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.rv { padding: 22px; background: var(--bg-2); }
+.rv p { margin: 0 0 10px; } .rv small { color: var(--yel); font-weight: 700; font-size: 13px; }
+@media (max-width: 860px) { .revs { grid-template-columns: 1fr; } }
+
+.vis { display: grid; grid-template-columns: 1fr 1.2fr; gap: 26px; align-items: center; }
+.ln2 { display: flex; justify-content: space-between; gap: 14px; padding: 11px 0; border-bottom: 1px solid var(--line); }
+.ln2 span { color: var(--mut); } .ln2 b { text-align: right; font-weight: 500; }
+.live i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #666; margin-right: 8px; }
+.is-open i { background: #4cd07a; } .is-closed i { background: var(--red); }
+.mapbox { position: relative; min-height: 380px; overflow: hidden; filter: grayscale(.6) contrast(1.05); }
+.mapbox iframe { position: absolute; inset: 0; width: 100%; height: calc(100% + 140px); border: 0; }
+@media (max-width: 860px) { .vis { grid-template-columns: 1fr; } }
+footer { padding: 40px var(--gut) 60px; text-align: center; color: var(--mut); font-size: 14px; border-top: 3px solid var(--yel); }
+footer b { display: block; font: 400 30px/1 var(--head); color: var(--ink); margin-bottom: 8px; }
+.motion [data-in] { opacity: 0; transform: translateX(-24px); transition: opacity .6s, transform .6s var(--ease); }
+.motion [data-in].in { opacity: 1; transform: none; }
+.noimg { background: var(--bg-2); } .noimg img { opacity: 0; }
+</style>
+</head>
+<body data-hours='{"1":[[8,0,18,0]],"2":[[8,0,18,0]],"3":[[8,0,18,0]],"4":[[8,0,18,0]],"5":[[8,0,18,0]]}'>
+<nav class="nav" aria-label="Разделы"><b>Арсе<span>нал</span></b><a href="#simptom">Что беспокоит</a><a href="#raboty">Работы</a><a href="#adres">Адрес</a><a class="call" href="tel:+79024302019">Записаться</a></nav>
+<main>
+<section class="hero" id="top">
+  <div>
+    <span class="tag">Автосервис · Йошкар-Ола · Соловьёва, 22А/1</span>
+    <h1>Арсе<span>нал</span></h1>
+    <p>Ходовая, тормоза, рулевое, двигатель и КПП. Берутся за «проблемные» моторы, от которых отказались другие, и выручают тех, кто сломался проездом.</p>
+    <div class="row"><a class="btn" href="tel:+79024302019">Записаться</a><a class="btn o" href="#simptom">Что стучит?</a></div>
+  </div>
+  <div class="lift" aria-hidden="true"><i class="post l"></i><i class="post r"></i><div class="car" data-ph><img src="https://avatars.mds.yandex.net/get-altay/5584259/2a0000017f9c71f048ac3ea5331da1fcfe85/XL" alt="" fetchpriority="high"></div><i class="floor"></i></div>
+</section>
+
+<section class="sec" id="simptom">
+  <span class="kick" data-in>Что беспокоит</span>
+  <h2 data-in>Опишите симптом</h2>
+  <small data-in>Выберите, что происходит с машиной. Подсветится узел, а в заказ-наряде появятся работы с ценами из прайса сервиса. Точный диагноз поставят на подъёмнике.</small>
+  <div class="sym" id="sym" data-in></div>
+  <div class="diag">
+    <div class="scheme" data-in><svg viewBox="0 0 500 220" aria-hidden="true">
+      <path d="M40 150 L60 110 Q80 70 150 64 L230 40 Q300 30 360 64 L440 84 Q470 92 470 120 L470 150 Z" fill="none" stroke="#8b98a6" stroke-width="4"/>
+      <path d="M170 66 L230 46 L300 46 L340 66 Z" fill="none" stroke="#8b98a6" stroke-width="3"/>
+      <circle cx="130" cy="156" r="34" fill="#14181d" stroke="#8b98a6" stroke-width="4"/><circle cx="390" cy="156" r="34" fill="#14181d" stroke="#8b98a6" stroke-width="4"/>
+      <circle class="z" data-z="br" cx="130" cy="156" r="20"/><circle class="z" data-z="br" cx="390" cy="156" r="20"/>
+      <rect class="z" data-z="sus" x="96" y="108" width="68" height="14" rx="4"/><rect class="z" data-z="sus" x="356" y="108" width="68" height="14" rx="4"/>
+      <circle class="z" data-z="hub" cx="130" cy="156" r="8" style="fill:#e5483b"/><circle class="z" data-z="hub" cx="390" cy="156" r="8" style="fill:#e5483b"/>
+      <rect class="z" data-z="st" x="60" y="128" width="120" height="8" rx="4"/>
+      <rect class="z" data-z="cv" x="150" y="150" width="40" height="10" rx="5"/>
+      <rect class="z" data-z="eng" x="54" y="96" width="80" height="34" rx="6"/>
+      <rect class="z" data-z="ex" x="200" y="172" width="240" height="8" rx="4"/>
+    </svg></div>
+    <div class="order" data-in aria-live="polite" id="order"></div>
+  </div>
+</section>
+
+<section class="sec" id="raboty">
+  <span class="kick" data-in>Работы</span>
+  <h2 data-in>Чем занимаются</h2>
+  <div class="what" data-in>
+    <div><b>Ходовая</b><span>стойки, рычаги, ШРУСы, ступицы</span></div>
+    <div><b>Тормоза</b><span>колодки, диски, ремонт суппортов</span></div>
+    <div><b>Двигатель и КПП</b><span>капремонт, МКПП и АКПП</span></div>
+    <div><b>Обслуживание</b><span>масло, развал-схождение, кондиционер</span></div>
+  </div>
+  <div class="gal" data-in>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/5509094/2a0000017f9c7359001772f3b58134d5ab70/XL" alt="Двигатель на стенде" loading="lazy"></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/6221595/2a0000017f9c73174ea2dba01fa5e7d99d15/XL" alt="Машина на подъёмнике" loading="lazy"></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/5596516/2a0000017f9c737a74be0cddae5dc75c00d5/XL" alt="Ремонт ГРМ" loading="lazy"></figure>
+    <figure data-ph><img src="https://avatars.mds.yandex.net/get-altay/5380071/2a0000017f9c7399c9293b2b79678c90b463/XL" alt="Замена масла" loading="lazy"></figure>
+  </div>
+</section>
+
+<section class="sec" id="otzyvy">
+  <span class="kick" data-in>Отзывы</span>
+  <div class="rate" data-in><b data-count="5.0">5,0</b><span>244 оценки на Яндекс Картах.</span></div>
+  <div class="revs">
+    <div class="rv" data-in><p>«Был проездом, возникла срочная проблема с подвеской. Мастер Евгений оперативно загнал машину на подъёмник, запчасти были в наличии».</p><small>Подвеска</small></div>
+    <div class="rv" data-in><p>«Перетёрло патрубок на турбину, позвонил, сделали максимально оперативно и даже недорого».</p><small>Грузовая машина</small></div>
+    <div class="rv" data-in><p>«Заезжал на большой ремонт. Работают профессионалы, сделали быстро, качественно, ценник приемлемый».</p><small>Большой ремонт</small></div>
+  </div>
+</section>
+
+<section class="sec" id="adres">
+  <div class="vis">
+    <div>
+      <span class="kick" data-in>Адрес</span>
+      <h2 data-in>Соловьёва, 22А/1</h2>
+      <div class="ln2"><span>Где</span><b>Йошкар-Ола, ул. Соловьёва, 22А/1</b></div>
+      <div class="ln2"><span>Сейчас</span><b class="live" data-live><i></i><span data-status>…</span></b></div>
+      <div class="ln2"><span>Часы</span><b>Пн–пт 8:00–18:00</b></div>
+      <div class="ln2"><span>Телефоны</span><b><a href="tel:+79024302019">+7 (902) 430-20-19</a><br><a href="tel:+79021011650">+7 (902) 101-16-50</a></b></div>
+      <div class="row" style="margin-top:20px"><a class="btn" href="tel:+79024302019">Позвонить</a><a class="btn o" href="https://wa.me/79024302019" target="_blank" rel="noopener">WhatsApp</a><a class="btn o" href="https://vk.ru/arsenal.auto12" target="_blank" rel="noopener">ВКонтакте</a></div>
+    </div>
+    <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=47.870841%2C56.625984&amp;z=16&amp;pt=47.870841%2C56.625984%2Cpm2ywm&amp;l=map" title="«Арсенал» на Яндекс Картах" loading="lazy"></iframe></div>
+  </div>
+</section>
+</main>
+<footer><b>Арсенал</b>Автосервис · Йошкар-Ола, ул. Соловьёва, 22А/1 · +7 (902) 430-20-19</footer>
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  // symptom -> zone + works from the service's price list
+  var S = [
+    ['Скрипят тормоза', 'br', [['Замена передних колодок', '600 ₽'], ['Замена передних дисков', '1 700 ₽'], ['Ремонт суппорта, 1–4 поршня', '1 200–2 400 ₽'], ['Обслуживание направляющих, 1 шт.', '120 ₽']]],
+    ['Стучит подвеска', 'sus', [['Стойки стабилизатора', '800 ₽'], ['Втулки стабилизатора', '800 ₽'], ['Шаровая опора', '400–500 ₽'], ['Сайлентблок на снятом рычаге', '500 ₽']]],
+    ['Гул на скорости', 'hub', [['Замена подшипника ступицы', '1 500 ₽'], ['Рычаг подвески, снятие/установка', '800–1 500 ₽']]],
+    ['Хруст при повороте', 'cv', [['Замена ШРУСа', '1 200–1 500 ₽']]],
+    ['Люфт руля', 'st', [['Рулевой наконечник, 1 шт.', '450 ₽'], ['Рулевая тяга, 1 шт.', '1 000 ₽'], ['Рулевая рейка, снятие/установка', '4 000 ₽']]],
+    ['Пора менять масло', 'eng', [['Замена масла ДВС, работа', '450 ₽'], ['Масло Petronas 5W-30, 1 л', '1 450 ₽'], ['Масло Газпром 10W-40, 1 л', '380 ₽']]],
+    ['Рычит глушитель', 'ex', [['Замена глушителя', '1 000 ₽']]]
+  ];
+  var sym = document.getElementById('sym'), order = document.getElementById('order'), Z = document.querySelectorAll('.scheme .z');
+  sym.innerHTML = S.map(function (s, i) { return '<button type="button" data-i="' + i + '">' + s[0] + '</button>'; }).join('');
+  function set(k) {
+    k = +k; var s = S[k];
+    sym.querySelectorAll('button').forEach(function (b) { b.classList.toggle('on', +b.dataset.i === k); });
+    Z.forEach(function (z) { z.classList.toggle('on', z.dataset.z === s[1]); });
+    order.innerHTML = '<b style="font:400 22px/1.2 Russo One,sans-serif">' + s[0] + '</b>' + s[2].map(function (w) { return '<div class="ln"><span>' + w[0] + '</span><b>' + w[1] + '</b></div>'; }).join('') +
+      '<p>Цены за работу по прайсу на Яндекс Картах, запчасти отдельно. Обычно они есть в наличии.</p><a class="btn" href="tel:+79024302019">Записаться на диагностику</a>';
+  }
+  sym.addEventListener('click', function (e) { var b = e.target.closest('button'); if (b) set(b.dataset.i); });
+  set(1);
+  window.__sym = set;
+
+  window.REEL = { hero: '#top', heroAt: 0, feature: '#simptom', featureOff: 30, featureM: '.scheme', featureOffM: -150, prices: '#raboty', pricesOff: 30,
+    demo: [function () { set(0); }, function () { set(4); }, function () { set(2); }], holds: [40, 40, 45] };
+})();
+</script>
+</body>
+</html>

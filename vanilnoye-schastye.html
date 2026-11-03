@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ванильное счастье — кондитерская и кафе, торты на заказ · Иваново, Кудряшова, 71</title>
+<meta name="description" content="«Ванильное счастье» в Иваново: торты на заказ от 1700 до 3000 ₽, пирожные, наполеон и киевский торт, уютное кафе с завтраками и детским меню. Ежедневно 10:00–20:00. 5,0 на Яндекс Картах, 384 оценки.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Ванильное счастье — торты на заказ в Иваново">
+<meta property="og:description" content="Найдите торт, похожий на вашу мечту. +7 (905) 155-88-00">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/15288852/2a000001965803ace74a1d1be61b06e51a0e/XXL">
+<meta name="theme-color" content="#fdf6ec">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Bakery","name":"Ванильное счастье","telephone":"+7 905 155-88-00","address":{"@type":"PostalAddress","streetAddress":"ул. Кудряшова, 71, корп. 1","addressLocality":"Иваново","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":56.966454,"longitude":40.985326},"openingHours":"Mo-Su 10:00-20:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","ratingCount":"384"}}</script>
+<style>
+:root { --vanilla: #fdf6ec; --cream: #f6e7cf; --lilac: #6f5a9e; --lilac-2: #a693cf; --berry: #d4566e; --pistachio: #b9d58c; --ink: #3a2f3d; --mut: #7d7083; --line: #eee0ca;
+  --head: 'Marck Script', cursive; --body: 'Nunito', sans-serif; --gut: clamp(16px, 4vw, 56px); --ease: cubic-bezier(.34,1.4,.64,1); }
+* { box-sizing: border-box; } html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--vanilla); color: var(--ink); font: 400 17px/1.6 var(--body); overflow-x: hidden; }
+img { display: block; max-width: 100%; } a { color: inherit; }
+.nav { position: fixed; z-index: 30; top: 0; left: 0; right: 0; display: flex; align-items: center; gap: 22px; padding: 12px var(--gut); background: var(--lilac); color: #fff; }
+.nav b { font: 400 28px/1 var(--head); margin-right: auto; }
+.nav a { text-decoration: none; font: 700 14px/1 var(--body); opacity: .9; }
+.nav .call { padding: 10px 16px; border-radius: 20px; background: #fff; color: var(--lilac); opacity: 1; }
+@media (max-width: 760px) { .nav a:not(.call) { display: none; } }
+
+/* hero: vanilla sprinkles fall over a cake photo */
+.hero { position: relative; min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: center; padding: 90px var(--gut) 40px; overflow: hidden; }
+#sprinkles { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 2; }
+.hero h1 { margin: 10px 0 10px; font: 400 clamp(60px, 9vw, 140px)/.9 var(--head); color: var(--lilac); }
+.hero .sub { font: 800 13px/1 var(--body); letter-spacing: .16em; text-transform: uppercase; color: var(--berry); }
+.hero p { max-width: 520px; margin: 0 0 24px; color: var(--mut); font-size: clamp(16px, 1.4vw, 19px); }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 15px 24px; border-radius: 30px; background: var(--berry); color: #fff; font: 800 15px/1 var(--body); text-decoration: none; border: 0; cursor: pointer; transition: transform .3s var(--ease); }
+.btn:hover { transform: translateY(-3px) rotate(-1deg); } .btn.o { background: #fff; color: var(--lilac); box-shadow: inset 0 0 0 2px var(--lilac-2); }
+.row { display: flex; gap: 10px; flex-wrap: wrap; }
+.plate { position: relative; justify-self: center; width: min(40vw, 480px); aspect-ratio: 1; border-radius: 50%; padding: 18px; background: #fff; box-shadow: 0 0 0 14px var(--cream), 0 40px 70px -40px rgba(58,47,61,.5); }
+.plate img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+.motion .plate { animation: spin 40s linear infinite; } .motion .plate img { animation: spin 40s linear infinite reverse; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (max-width: 860px) { .hero { grid-template-columns: 1fr; padding-top: 80px; } .plate { width: 72vw; max-width: 330px; order: -1; } }
+
+.sec { padding: clamp(70px, 10vw, 120px) var(--gut); max-width: 1180px; margin: 0 auto; scroll-margin-top: 70px; }
+.kick { font: 800 13px/1 var(--body); letter-spacing: .16em; text-transform: uppercase; color: var(--berry); }
+h2 { margin: 6px 0 10px; font: 400 clamp(44px, 6vw, 80px)/1 var(--head); color: var(--lilac); }
+h2 + small { display: block; max-width: 640px; color: var(--mut); font-style: italic; margin-bottom: 30px; }
+
+/* feature: find a similar cake */
+.themes { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 22px; }
+.themes button { padding: 12px 18px; border-radius: 30px; border: 2px solid var(--line); background: #fff; font: 800 15px/1 var(--body); cursor: pointer; transition: background .3s, color .3s, border-color .3s; }
+.themes button.on { background: var(--lilac); color: #fff; border-color: var(--lilac); }
+.match { display: grid; grid-template-columns: 1.1fr .9fr; gap: 24px; align-items: center; }
+.big { position: relative; border-radius: 30px; overflow: hidden; aspect-ratio: 4/3; background: var(--cream); }
+.big img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: opacity .5s, transform .8s var(--ease); }
+.big img.out { opacity: 0; transform: scale(1.06); }
+.card { padding: 26px; border-radius: 30px; background: #fff; }
+.card b { display: block; font: 400 42px/1 var(--head); color: var(--lilac); margin-bottom: 8px; }
+.card p { margin: 0 0 14px; color: var(--mut); }
+.card .price { font: 800 22px/1.2 var(--body); color: var(--berry); margin-bottom: 16px; }
+@media (max-width: 860px) { .match { grid-template-columns: 1fr; } }
+
+.vit { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.vit div { padding: 22px; border-radius: 26px; background: #fff; }
+.vit div:nth-child(2) { background: var(--cream); }
+.vit b { display: block; font: 400 32px/1 var(--head); color: var(--lilac); margin-bottom: 6px; }
+.vit p { margin: 0; color: var(--mut); font-size: 15.5px; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.tags span { padding: 9px 14px; border-radius: 20px; background: #fff; font-size: 14px; border: 2px solid var(--line); }
+@media (max-width: 860px) { .vit { grid-template-columns: 1fr; } }
+
+.rate { display: flex; gap: 18px; align-items: baseline; flex-wrap: wrap; margin-bottom: 24px; }
+.rate b { font: 400 clamp(80px, 12vw, 150px)/1 var(--head); color: var(--berry); }
+.revs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.rv { padding: 22px; border-radius: 26px; background: #fff; }
+.rv p { margin: 0 0 10px; } .rv small { color: var(--lilac); font-weight: 800; font-size: 13px; }
+@media (max-width: 860px) { .revs { grid-template-columns: 1fr; } }
+
+.vis { display: grid; grid-template-columns: 1fr 1.2fr; gap: 26px; align-items: center; }
+.ln { display: flex; justify-content: space-between; gap: 14px; padding: 11px 0; border-bottom: 2px dotted var(--line); }
+.ln span { color: var(--mut); } .ln b { text-align: right; font-weight: 700; }
+.live i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #aaa; margin-right: 8px; }
+.is-open i { background: #7fb069; } .is-closed i { background: var(--berry); }
+.mapbox { position: relative; min-height: 380px; border-radius: 30px; overflow: hidden; }
+.mapbox iframe { position: absolute; inset: 0; width: 100%; height: calc(100% + 140px); border: 0; }
+@media (max-width: 860px) { .vis { grid-template-columns: 1fr; } }
+footer { padding: 40px var(--gut) 60px; text-align: center; background: var(--lilac); color: #e6defa; font-size: 14px; }
+footer b { display: block; font: 400 44px/1 var(--head); color: #fff; margin-bottom: 6px; }
+.motion [data-in] { opacity: 0; transform: translateY(24px); transition: opacity .7s, transform .7s var(--ease); }
+.motion [data-in].in { opacity: 1; transform: none; }
+.noimg { background: var(--cream); } .noimg img { opacity: 0; }
+</style>
+</head>
+<body data-hours='{"0":[[10,0,20,0]],"1":[[10,0,20,0]],"2":[[10,0,20,0]],"3":[[10,0,20,0]],"4":[[10,0,20,0]],"5":[[10,0,20,0]],"6":[[10,0,20,0]]}'>
+<nav class="nav" aria-label="Разделы"><b>Ванильное счастье</b><a href="#tort">Торт мечты</a><a href="#kafe">Кафе</a><a href="#adres">Адрес</a><a class="call" href="tel:+79051558800">Заказать торт</a></nav>
+<main>
+<section class="hero" id="top">
+  <canvas id="sprinkles" aria-hidden="true"></canvas>
+  <div>
+    <span class="sub">Кондитерская и кафе · Иваново · Кудряшова, 71</span>
+    <h1>Ванильное счастье</h1>
+    <p>Торты на заказ с фигурками и надписями, пирожные, наполеон и киевский торт. А в зале можно посидеть с кофе, заходят целыми семьями.</p>
+    <div class="row"><a class="btn" href="#tort">Найти свой торт</a><a class="btn o" href="tel:+79051558800">Позвонить</a></div>
+  </div>
+  <div class="plate" data-ph><img src="https://avatars.mds.yandex.net/get-altay/15288852/2a000001965803ace74a1d1be61b06e51a0e/XL" alt="Фисташковый торт с малиной" fetchpriority="high"></div>
+</section>
+
+<section class="sec" id="tort">
+  <span class="kick" data-in>Торт мечты</span>
+  <h2 data-in>Какой торт вы хотите?</h2>
+  <small data-in>Выберите тему, и мы покажем похожую работу кондитеров из карточки на Яндекс Картах. Покажите её при заказе, так проще объяснить идею.</small>
+  <div class="themes" id="themes" data-in><button data-t="0" class="on">Детский</button><button data-t="1">Свадебный</button><button data-t="2">Ягодный</button><button data-t="3">С фигурками</button><button data-t="4">Необычный</button></div>
+  <div class="match">
+    <div class="big" data-in id="big"></div>
+    <div class="card" data-in aria-live="polite" id="card"></div>
+  </div>
+</section>
+
+<section class="sec" id="kafe">
+  <span class="kick" data-in>Кафе</span>
+  <h2 data-in>Заходите посидеть</h2>
+  <div class="vit">
+    <div data-in><b>Витрина</b><p>Большой выбор пирожных, тортов и сладких мелочей. Гости особенно хвалят наполеон и киевский торт.</p></div>
+    <div data-in><b>Кухня</b><p>Завтраки и обеды, детское меню. Еду хвалят в 142 отзывах из 148.</p></div>
+    <div data-in><b>Зал</b><p>Светлый уютный зал для семейного отдыха. Есть пандус и туалет для гостей с инвалидностью.</p></div>
+  </div>
+  <div class="tags" data-in><span>Торты на заказ от 1 700 до 3 000 ₽</span><span>Кофе с собой</span><span>Доставка</span><span>Предзаказ онлайн</span><span>Подарочный сертификат</span><span>Парковка</span></div>
+</section>
+
+<section class="sec" id="otzyvy">
+  <span class="kick" data-in>Отзывы</span>
+  <div class="rate" data-in><b data-count="5.0">5,0</b><span>384 оценки на Яндекс Картах. Торты хвалят в 93 отзывах из 98.</span></div>
+  <div class="revs">
+    <div class="rv" data-in><p>«Свадьбу организовали за два дня. Торт казался почти невыполнимой задачей, но кондитер взялся за срочный заказ».</p><small>Свадьба</small></div>
+    <div class="rv" data-in><p>«Старый друг нашей семьи. Много лет заказываем здесь торты, от дня рождения сына до свадьбы».</p><small>Из отзывов</small></div>
+    <div class="rv" data-in><p>«Нежный, мягкий, пропитанный и в меру сладкий, не приторный. Наш сыночек оценил».</p><small>Детский торт</small></div>
+  </div>
+</section>
+
+<section class="sec" id="adres">
+  <div class="vis">
+    <div>
+      <span class="kick" data-in>Адрес</span>
+      <h2 data-in>Кудряшова, 71</h2>
+      <div class="ln"><span>Где</span><b>Иваново, ул. Кудряшова, 71, корп. 1</b></div>
+      <div class="ln"><span>Сейчас</span><b class="live" data-live><i></i><span data-status>…</span></b></div>
+      <div class="ln"><span>Часы</span><b>Ежедневно 10:00–20:00</b></div>
+      <div class="ln"><span>Телефоны</span><b><a href="tel:+79051558800">+7 (905) 155-88-00</a><br><a href="tel:+74932224232">+7 (4932) 22-42-32</a></b></div>
+      <div class="row" style="margin-top:20px"><a class="btn" href="tel:+79051558800">Позвонить</a><a class="btn o" href="https://vk.ru/cafeivanovo" target="_blank" rel="noopener">ВКонтакте</a></div>
+    </div>
+    <div class="mapbox" data-in><iframe src="https://yandex.ru/map-widget/v1/?ll=40.985326%2C56.966454&amp;z=16&amp;pt=40.985326%2C56.966454%2Cpm2vvm&amp;l=map" title="«Ванильное счастье» на Яндекс Картах" loading="lazy"></iframe></div>
+  </div>
+</section>
+</main>
+<footer><b>Ванильное счастье</b>Кондитерская и кафе · Иваново, ул. Кудряшова, 71, корп. 1 · +7 (905) 155-88-00</footer>
+<script>/* RT — shared invisible plumbing for the second batch: clock, scroll hooks, reveal, live status, image fallback.
+   Every site builds its own layout and motion on top of it. */
+(function () {
+  var RT = window.RT = {};
+  var root = document.documentElement;
+  // a render script can drive time through window.__vt, so JS motion stays in sync with captured frames
+  RT.now = function () { return window.__vt != null ? window.__vt : performance.now(); };
+  RT.motion = !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  root.classList.add('js');
+  if (RT.motion) root.classList.add('motion');
+  RT.clamp = function (v, a, b) { a = a == null ? 0 : a; b = b == null ? 1 : b; return Math.min(b, Math.max(a, v)); };
+  RT.ease = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  RT.lerp = function (a, b, t) { return a + (b - a) * t; };
+  // 0 when the element's top touches the viewport top, 1 when its bottom reaches the viewport bottom
+  RT.progress = function (el) {
+    var r = el.getBoundingClientRect(), span = r.height - innerHeight;
+    return span > 0 ? RT.clamp(-r.top / span) : (r.top < 0 ? 1 : 0);
+  };
+  // 0 when the element enters at the bottom, 1 when it leaves at the top
+  RT.pass = function (el) {
+    var r = el.getBoundingClientRect();
+    return RT.clamp((innerHeight - r.top) / (innerHeight + r.height));
+  };
+
+  var hooks = [], queued = false;
+  RT.onScroll = function (fn) { hooks.push(fn); fn(); };
+  RT.tick = function () { queued = false; for (var i = 0; i < hooks.length; i++) hooks[i](); };
+  addEventListener('scroll', function () { if (!queued) { queued = true; requestAnimationFrame(RT.tick); } }, { passive: true });
+  addEventListener('resize', RT.tick);
+
+  // frame loop on the shared clock; a callback that returns false is removed
+  var loops = [];
+  RT.loop = function (fn) { loops.push(fn); if (loops.length === 1) requestAnimationFrame(frame); };
+  function frame() {
+    var t = RT.now();
+    for (var i = loops.length - 1; i >= 0; i--) if (loops[i](t) === false) loops.splice(i, 1);
+    if (loops.length) requestAnimationFrame(frame);
+  }
+
+  // [data-in] → .in when scrolled into view
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -6% 0px' }) : null;
+  RT.reveal = function (scope) {
+    (scope || document).querySelectorAll('[data-in]').forEach(function (el) { if (io && RT.motion) io.observe(el); else el.classList.add('in'); });
+  };
+
+  // [data-split] → letters wrapped in <span class="ch" style="--i:n">
+  RT.split = function (el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (w) {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(w)); return; }
+            var word = document.createElement('span'); word.className = 'w';
+            w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'ch'; s.style.setProperty('--i', i++); s.textContent = c; word.appendChild(s); });
+            frag.appendChild(word);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    })(el);
+  };
+
+  // live status: <body data-hours='{"0":[[10,0,21,0]],"1":[[7,30,21,0]]}'> keys = day of week (0 = Sunday), Moscow time
+  var DAYS = ['в воскресенье', 'в понедельник', 'во вторник', 'в среду', 'в четверг', 'в пятницу', 'в субботу'];
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  RT.status = function () {
+    var raw = document.body.getAttribute('data-hours'); if (!raw) return null;
+    var H = JSON.parse(raw), utc = Date.now() + new Date().getTimezoneOffset() * 6e4, m = new Date(utc + 3 * 36e5);
+    var d = m.getDay(), mins = m.getHours() * 60 + m.getMinutes(), today = H[d] || [];
+    for (var i = 0; i < today.length; i++) {
+      var a = today[i][0] * 60 + today[i][1], b = today[i][2] * 60 + today[i][3];
+      if (mins >= a && mins < b) {
+        var left = b - mins, nextGap = today[i + 1];
+        return { open: true, text: nextGap ? 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]) + ', потом перерыв' : 'Открыто до ' + today[i][2] + ':' + pad(today[i][3]), soon: left <= 45 };
+      }
+      if (mins < a) return { open: false, text: 'Закрыто · откроемся в ' + today[i][0] + ':' + pad(today[i][1]) };
+    }
+    for (var k = 1; k <= 7; k++) {
+      var nd = (d + k) % 7, sl = H[nd];
+      if (sl && sl.length) return { open: false, text: 'Закрыто · откроемся ' + (k === 1 ? 'завтра' : DAYS[nd]) + ' в ' + sl[0][0] + ':' + pad(sl[0][1]) };
+    }
+    return { open: false, text: 'Закрыто' };
+  };
+  function paintStatus() {
+    var s = RT.status(); if (!s) return;
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.textContent = s.text; el.classList.toggle('is-open', s.open); el.classList.toggle('is-closed', !s.open);
+    });
+  }
+
+  // broken photo → the wrapper keeps its colour block instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    var w = t.closest('[data-ph]'); (w || t).classList.add('noimg');
+  }, true);
+
+  // count up numbers: <b data-count="168">0</b>
+  RT.count = function (el, dur) {
+    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
+    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+  };
+  RT.money = function (v) { return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽'; };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-split]').forEach(RT.split);
+    RT.reveal();
+    paintStatus(); setInterval(paintStatus, 60000);
+    var cio = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { RT.count(e.target); cio.unobserve(e.target); } });
+    }) : null;
+    document.querySelectorAll('[data-count]').forEach(function (el) { cio ? cio.observe(el) : RT.count(el); });
+    // same-page links scroll smoothly; the page's own CSS decides the offset with scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href').slice(1), t = id && document.getElementById(id);
+        if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: RT.motion ? 'smooth' : 'auto' });
+        document.dispatchEvent(new CustomEvent('rt:navigate'));
+      });
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  // hero: sprinkles drift down
+  var cv = document.getElementById('sprinkles'), cx = cv.getContext('2d'), hero = document.getElementById('top'), S = [], C = ['#d4566e', '#a693cf', '#b9d58c', '#f2c46d', '#ffffff'];
+  function size() { cv.width = hero.clientWidth; cv.height = hero.clientHeight; } size(); addEventListener('resize', size);
+  for (var i = 0; i < 70; i++) S.push({ x: Math.random(), y: Math.random(), a: Math.random() * 6.28, v: .4 + Math.random(), c: C[i % 5] });
+  var last = RT.now();
+  if (RT.motion) RT.loop(function (t) { var dt = Math.min(50, t - last); last = t; cx.clearRect(0, 0, cv.width, cv.height);
+    S.forEach(function (s) { s.y += s.v * dt / 9000; s.a += dt / 900; if (s.y > 1.05) { s.y = -.05; s.x = Math.random(); }
+      cx.save(); cx.translate(s.x * cv.width, s.y * cv.height); cx.rotate(s.a); cx.fillStyle = s.c; cx.beginPath(); cx.roundRect ? cx.roundRect(-7, -2.5, 14, 5, 3) : cx.rect(-7, -2.5, 14, 5); cx.fill(); cx.restore(); }); });
+
+  // feature: themes → real cakes from the card photos
+  var BASE = 'https://avatars.mds.yandex.net/get-altay/';
+  var T = [
+    { n: 'Детский', img: '14761495/2a00000197a64b39aac0d99b138e83ca1d19', d: 'Котики из мастики и надпись «Моему котёнку». Фигурки и надписи кондитеры делают по вашей идее.' },
+    { n: 'Свадебный', img: '10228783/2a00000194fbc7f2c9f1f66be3c90da26218', d: 'Золотые розы, жемчуг и кольца. Свадебные торты здесь берут даже срочно, за пару дней до торжества.' },
+    { n: 'Ягодный', img: '15288852/2a000001965803ace74a1d1be61b06e51a0e', d: 'Фисташковый крем и свежая малина. Гости пишут, что торты в меру сладкие, не приторные.' },
+    { n: 'С фигурками', img: '14761495/2a00000197a64b39aac0d99b138e83ca1d19', d: 'Котята, сердечки, любимые герои ребёнка. Пришлите картинку, и кондитер повторит идею.' },
+    { n: 'Необычный', img: '16230048/2a000001971d2fab51089492aeb4dc2f634c', d: 'Торт-домик с черепичной крышей и садом. «Мне казалось, это неисполнимо, но заказ с лёгкостью приняли».' }
+  ];
+  var big = document.getElementById('big'), card = document.getElementById('card'), cur = null;
+  function set(k) {
+    k = +k; var t = T[k];
+    document.querySelectorAll('#themes button').forEach(function (b) { b.classList.toggle('on', +b.dataset.t === k); });
+    var img = new Image(); img.alt = 'Торт: ' + t.n.toLowerCase(); img.src = BASE + t.img + '/XL'; img.className = 'out';
+    big.appendChild(img); requestAnimationFrame(function () { requestAnimationFrame(function () { img.classList.remove('out'); }); });
+    if (cur) { var old = cur; old.classList.add('out'); setTimeout(function () { old.remove(); }, 600); }
+    cur = img;
+    card.innerHTML = '<b>' + t.n + '</b><p>' + t.d + '</p><div class="price">Торты на заказ от 1 700 до 3 000 ₽</div><a class="btn" href="tel:+79051558800">Обсудить торт</a>';
+  }
+  document.getElementById('themes').addEventListener('click', function (e) { var b = e.target.closest('button'); if (b) set(b.dataset.t); });
+  set(0);
+  window.__theme = set;
+
+  window.REEL = { hero: '#top', heroAt: 0, feature: '#tort', featureOff: 30, featureM: '#big', featureOffM: -150, prices: '#kafe', pricesOff: 30,
+    demo: [function () { set(1); }, function () { set(4); }, function () { set(2); }], holds: [45, 45, 45] };
+})();
+</script>
+</body>
+</html>
