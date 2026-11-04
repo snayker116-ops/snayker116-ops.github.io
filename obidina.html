@@ -294,7 +294,7 @@ h2 em { font-style: normal; color: var(--acc); }
 .mapbox { position: relative; min-height: 400px; border-radius: 26px; overflow: hidden; }
 .mapbox iframe { position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 140px); border: 0; }
 @media (max-width: 860px) { .vis { grid-template-columns: 1fr; } }
-.route { display: grid; grid-template-columns: 220px 1fr 1fr; gap: 18px; align-items: stretch; margin-top: 34px; }
+.route { display: grid; grid-template-columns: 220px 1fr; gap: 18px; align-items: stretch; margin-top: 34px; }
 .route .story { aspect-ratio: auto; min-height: 380px; }
 .route .door { position: relative; border-radius: 22px; overflow: hidden; min-height: 380px; }
 .route .door img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
@@ -389,16 +389,15 @@ footer p { margin: 0 0 6px; } footer .own { font-size: 12.5px; }
 <section class="sec" id="main" data-m="client" data-block="Для клиентов: цены">
   <span class="kick" data-in>С чем приходят</span>
   <h2 data-in>Проблема <em>и решение</em></h2>
-  <p class="lead" data-in data-e="prices.lead" data-label="Подзаголовок цен">Если не знаете, что вам нужно, начните с консультации: посмотрю стопу и подскажу, с чего начать.</p>
+  <p class="lead" data-in data-e="prices.lead" data-label="Подзаголовок цен">На консультации провожу осмотр, выясняем причину и разрабатываем план действий, вплоть до рекомендаций по домашнему уходу.</p>
   <div class="probs">
-    <div class="pb" data-in><span class="ic">🩹</span><b data-e="p1.t" data-label="Услуга 1">Сложный ноготь</b><p data-e="p1.d" data-label="Услуга 1: описание">Обработка ногтевой пластины. При необходимости удаление вросшей части ногтя без повреждения мягких тканей.</p><span class="pr" data-e="p1.p" data-label="Услуга 1: цена">2 000 ₽</span></div>
     <div class="pb" data-in><span class="ic">🔎</span><b data-e="p2.t" data-label="Услуга 2">Консультация подолога</b><p data-e="p2.d" data-label="Услуга 2: описание">Стержневая мозоль, натоптыши, сложные ногти: посмотрю стопу и дам рекомендации по уходу.</p><span class="pr" data-e="p2.p" data-label="Услуга 2: цена">1 000 ₽</span></div>
-    <div class="pb" data-in><span class="ic">🦶</span><b data-e="p3.t" data-label="Услуга 3">Педикюр с особенностями</b><p data-e="p3.d" data-label="Услуга 3: описание">Для проблемных стоп: трещины, утолщённые ногти, огрубевшая кожа.</p><span class="pr" data-e="p3.p" data-label="Услуга 3: цена">4 000 ₽</span></div>
-    <div class="pb" data-in><span class="ic">〰</span><b data-e="p4.t" data-label="Услуга 4">Титановая нить</b><p data-e="p4.d" data-label="Услуга 4: описание">Коррекционная система для сложного ногтя.</p><span class="pr" data-e="p4.p" data-label="Услуга 4: цена">3 500 ₽</span></div>
-    <div class="pb" data-in><span class="ic">✨</span><b data-e="p5.t" data-label="Услуга 5">SMART-педикюр 2.0</b><p data-e="p5.d" data-label="Услуга 5: описание">Что входит: обработка стоп, пальчиков и покрытие. Все виды педикюра с ценами расписаны в онлайн-записи.</p><span class="pr" data-e="p5.p" data-label="Услуга 5: цена">3 500 ₽</span></div>
-    <div class="pb" data-in><span class="ic">🚗</span><b data-e="p6.t" data-label="Услуга 6">Выезд подолога</b><p data-e="p6.d" data-label="Услуга 6: описание">Если вам трудно добраться до кабинета.</p><span class="pr" data-e="p6.p" data-label="Услуга 6: цена">7 000 ₽</span></div>
+    <div class="pb" data-in><span class="ic">🩹</span><b data-e="p1.t" data-label="Услуга 1">Сложный ноготь</b><p data-e="p1.d" data-label="Услуга 1: описание">Обработка ногтевой пластины. При необходимости удаление вросшей части ногтя без повреждения мягких тканей.</p><span class="pr" data-e="p1.p" data-label="Услуга 1: цена">2 000 ₽</span></div>
+    <div class="pb" data-in><span class="ic">🦶</span><b data-e="p3.t" data-label="Услуга 3">Медицинский педикюр</b><p data-e="p3.d" data-label="Услуга 3: описание">Обработка видоизменённых стоп и ногтей: онихолизис, грибок, мозоли, натоптыши.</p><span class="pr" data-e="p3.p" data-label="Услуга 3: цена">4 000 ₽</span></div>
+    <div class="pb" data-in><span class="ic">〰</span><b data-e="p4.t" data-label="Услуга 4">Титановая нить</b><p data-e="p4.d" data-label="Услуга 4: описание">Коррекционная система для скрученных ногтей.</p><span class="pr" data-e="p4.p" data-label="Услуга 4: цена">3 500 ₽</span></div>
+    <div class="pb" data-in><span class="ic">✨</span><b data-e="p5.t" data-label="Услуга 5">SMART-педикюр 2.0</b><p data-e="p5.d" data-label="Услуга 5: описание">Обработка стоп по технике SMART 2.0, обработка пальчиков и покрытие гель-лаком.</p><span class="pr" data-e="p5.p" data-label="Услуга 5: цена">3 500 ₽</span></div>
+    <div class="pb" data-in><span class="ic">🚗</span><b data-e="p6.t" data-label="Услуга 6">Выезд подолога</b><p data-e="p6.d" data-label="Услуга 6: описание">Педикюр для маломобильных. Если вы или ваш близкий ограничены в движении и уход за стопами стал сложной задачей, я приеду к вам. Помогу деликатно и профессионально.</p><span class="pr" data-e="p6.p" data-label="Услуга 6: цена">7 000 ₽</span></div>
   </div>
-  <div class="note" data-in data-e="prices.note" data-label="Примечание к ценам">Есть и маникюр «всё включено» за 2 300 ₽. Если у вас сахарный диабет, скажите об этом при записи. Услуги не являются медицинскими.</div>
   <p class="warn" data-in>Имеются противопоказания, необходима консультация специалиста.</p>
   <div class="row" style="margin-top:22px" data-in><a class="btn" href="https://nn.moiprofi.ru/olgaobidina/" target="_blank" rel="noopener" data-l="booking">Выбрать время онлайн</a><a class="btn o" href="tel:+79877407755" data-l="phone">Позвонить</a></div>
 </section>
@@ -412,10 +411,7 @@ footer p { margin: 0 0 6px; } footer .own { font-size: 12.5px; }
       <div class="wall" data-gallery="nails" data-in>
         <button data-full="obidina-media/nail-1.jpg"><img src="obidina-media/nail-1.jpg" alt="Работа подолога" loading="lazy"></button>
         <button data-full="obidina-media/nail-4.jpg"><img src="obidina-media/nail-4.jpg" alt="Работа подолога" loading="lazy"></button>
-        <button data-full="obidina-media/nail-2.jpg"><img src="obidina-media/nail-2.jpg" alt="Работа подолога" loading="lazy"></button>
-        <button data-full="obidina-media/nail-3.jpg"><img src="obidina-media/nail-3.jpg" alt="Работа подолога" loading="lazy"></button>
         <button data-full="obidina-media/nail-5.jpg"><img src="obidina-media/nail-5.jpg" alt="Работа подолога" loading="lazy"></button>
-        <button data-full="obidina-media/nail-6.jpg"><img src="obidina-media/nail-6.jpg" alt="Работа подолога" loading="lazy"></button>
       </div>
     </div>
     <div>
@@ -447,7 +443,6 @@ footer p { margin: 0 0 6px; } footer .own { font-size: 12.5px; }
         <a class="btn o" href="https://vk.com/id300059746" target="_blank" rel="noopener" data-l="vk">Узнать даты</a>
       </div>
       <div class="reel">
-        <button class="story" data-v="aesthetics-1" data-cap="Курс «Эстетика в педикюре»"><span class="sc">О курсе</span></button>
         <button class="story" data-v="aesthetics-2" data-cap="Эстетика в педикюре"><span class="sc">Как проходит</span></button>
       </div>
     </article>
@@ -487,7 +482,6 @@ footer p { margin: 0 0 6px; } footer .own { font-size: 12.5px; }
       <div class="reel">
         <button class="story" data-v="podology-course" data-cap="Курс «Подология»"><span class="sc">Курс «Подология»</span></button>
         <button class="story" data-v="podology-practice" data-cap="Дни интенсивной практики"><span class="sc">Практика</span></button>
-        <button class="story" data-v="models" data-cap="Показываю на моделях"><span class="sc">На моделях</span></button>
       </div>
     </article>
   </div>
@@ -505,7 +499,6 @@ footer p { margin: 0 0 6px; } footer .own { font-size: 12.5px; }
     <article class="pfc" data-in>
       <div class="pfm">
         <figure data-ph><img src="obidina-media/student-smart.jpg" alt="Ученица Анна с сертификатом курса «Эстетика в педикюре»" loading="lazy"></figure>
-        <button class="story" data-v="smart-1" data-cap="Анна вернулась на SMART 2.0"><span class="sc">Вернулась снова</span></button>
       </div>
       <div class="pft">
         <h3 data-e="pf1.t" data-label="Ученица 1: имя">Анна</h3>
@@ -516,7 +509,6 @@ footer p { margin: 0 0 6px; } footer .own { font-size: 12.5px; }
     <article class="pfc" data-in>
       <div class="pfm">
         <figure data-ph><img src="obidina-media/student-nadezhda.jpg" alt="Ученица Надежда с сертификатом курса «Введение в подологию»" loading="lazy"></figure>
-        <button class="story" data-v="models" data-cap="Разбор на моделях"><span class="sc">Практика</span></button>
       </div>
       <div class="pft">
         <h3 data-e="pf2.t" data-label="Ученица 2: имя">Надежда</h3>
@@ -526,9 +518,7 @@ footer p { margin: 0 0 6px; } footer .own { font-size: 12.5px; }
     </article>
   </div>
   <div class="reel" style="margin-top:22px" data-in>
-    <button class="story" data-v="students-return" data-cap="Ученицы возвращаются"><span class="sc">Возвращаются снова</span></button>
     <button class="story" data-v="team" data-cap="В моей команде пополнение"><span class="sc">Пополнение в команде</span></button>
-    <button class="story" data-v="aesthetics-2" data-cap="Как проходит обучение"><span class="sc">На обучении</span></button>
   </div>
 </section>
 
@@ -537,6 +527,7 @@ footer p { margin: 0 0 6px; } footer .own { font-size: 12.5px; }
   <div class="olga">
     <div class="ph" data-in>
       <img src="obidina-media/olga-cabinet.jpg" alt="Ольга Обидина в кабинете" loading="lazy" data-i="about.photo">
+      <button class="story" data-v="olga-why" data-cap="Почему выбирают меня"><span class="sc">Почему выбирают меня</span></button>
     </div>
     <div>
       <span class="kick" data-in>Обо мне</span>
@@ -584,16 +575,11 @@ footer p { margin: 0 0 6px; } footer .own { font-size: 12.5px; }
       <div class="ln"><span>Телефон</span><b><a href="tel:+79877407755" data-l="phone" data-e="contact.phone2" data-label="Телефон в контактах">+7 987 740-77-55</a></b></div>
       <div class="row" style="margin-top:20px"><a class="btn" href="https://nn.moiprofi.ru/olgaobidina/" target="_blank" rel="noopener" data-l="booking">Записаться онлайн</a><a class="btn o" href="tel:+79877407755" data-l="phone">Позвонить</a><a class="btn vk" href="https://vk.com/id300059746" target="_blank" rel="noopener" data-l="vk">ВКонтакте</a></div>
     </div>
-    <div class="mapbox" data-in><iframe data-src="https://yandex.ru/map-widget/v1/?ll=43.921437%2C56.274969&amp;z=16&amp;pt=43.921437%2C56.274969%2Cpm2rdm&amp;l=map" title="Подолог Обидина Ольга на Яндекс Картах" allowfullscreen></iframe><button class="mapon" type="button">Показать карту<span>Карта загружается с сервиса Яндекс Карты, он использует cookie</span></button></div>
+    <div class="mapbox" data-in><iframe data-src="https://yandex.ru/map-widget/v1/?ll=43.921232%2C56.274922&amp;z=17&amp;oid=181403694009&amp;ol=biz" title="Подолог Обидина Ольга на Яндекс Картах" allowfullscreen></iframe><button class="mapon" type="button">Показать карту<span>Карта загружается с сервиса Яндекс Карты, он использует cookie</span></button></div>
   </div>
   <div class="route" data-in>
     <button class="story" data-v="route" data-cap="Дорога от метро до кабинета"><span class="sc">Дорога от метро</span></button>
     <div class="door" data-ph><img src="obidina-media/entrance.jpg" alt="Вход в студию красоты с улицы" loading="lazy" data-i="visit.door"></div>
-    <ol class="steps">
-      <li><b data-e="s1.t" data-label="Маршрут шаг 1">Выйдите из метро</b><span data-e="s1.d" data-label="Маршрут шаг 1: пояснение">Видео слева показывает дорогу целиком</span></li>
-      <li><b data-e="s2.t" data-label="Маршрут шаг 2">2 минуты пешком</b><span data-e="s2.d" data-label="Маршрут шаг 2: пояснение">до дома 60 на проспекте Ленина</span></li>
-      <li><b data-e="s3.t" data-label="Маршрут шаг 3">Вход с улицы</b><span data-e="s3.d" data-label="Маршрут шаг 3: пояснение">Вывеска «Студия красоты», первый этаж</span></li>
-    </ol>
   </div>
 </section>
 </main>
