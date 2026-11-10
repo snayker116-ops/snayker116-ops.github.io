@@ -374,12 +374,12 @@ footer p { margin: 0 0 6px; } footer .own { font-size: 12.5px; }
         <a class="btn o" href="https://vk.com/id300059746" target="_blank" rel="noopener" data-l="vk" data-m="student">Написать во ВКонтакте</a>
       </div>
     </div>
-    <div class="hwrap"><div class="hph" data-ph><img src="obidina-media/olga.jpg" alt="Подолог Ольга Обидина" fetchpriority="high" data-i="hero.photo"></div><span class="tag">★ 5,0 · 37 оценок на Яндекс Картах</span></div>
+    <div class="hwrap"><div class="hph" data-ph><img src="obidina-media/olga.jpg" alt="Подолог Ольга Обидина" fetchpriority="high" data-i="hero.photo"></div><span class="tag">★ <span data-e="rating.value" data-label="Рейтинг на Яндексе (например: 5,0)">5,0</span> · <span data-e="rating.count" data-label="Сколько оценок на Яндексе (например: 41 оценка)">37 оценок</span> на Яндекс Картах</span></div>
   </div>
 </section>
 
 <div class="trust" data-in>
-  <div><b data-count="5.0">5,0</b><span>37 оценок на Яндекс Картах</span></div>
+  <div><b data-count="5.0" data-e="rating.value" data-label="Рейтинг на Яндексе (например: 5,0)">5,0</b><span><span data-e="rating.count" data-label="Сколько оценок на Яндексе (например: 41 оценка)">37 оценок</span> на Яндекс Картах</span></div>
   <div><b>2 мин</b><span>от метро, первый этаж, вход с улицы</span></div>
   <div><b>Медкнижка</b><span>действующая, стерильный инструмент</span></div>
   <div><b>Подолог</b><span>официальный инструктор SMART master</span></div>
@@ -550,7 +550,7 @@ footer p { margin: 0 0 6px; } footer .own { font-size: 12.5px; }
 
 <section class="sec" id="voices" data-block="Отзывы">
   <span class="kick" data-in>Отзывы</span>
-  <h2 data-in>5,0 <em>· 37 оценок</em></h2>
+  <h2 data-in><span data-e="rating.value" data-label="Рейтинг на Яндексе (например: 5,0)">5,0</span> <em>· <span data-e="rating.count" data-label="Сколько оценок на Яндексе (например: 41 оценка)">37 оценок</span></em></h2>
   <div class="revs" data-m="client">
     <div class="rv" data-in><p data-e="r1" data-label="Отзыв клиента 1">«Ножки мои после неё отдыхают, пяточки нежнейшие, и эффект сохраняется очень долго. На приёме я максимально расслабляюсь».</p><small>Яндекс Карты</small></div>
     <div class="rv" data-in><p data-e="r2" data-label="Отзыв клиента 2">«Оля встретила с улыбкой, успокоила, и за разговором всё было сделано быстро и без боли».</p><small>Яндекс Карты</small></div>
@@ -688,10 +688,10 @@ footer p { margin: 0 0 6px; } footer .own { font-size: 12.5px; }
 
   // count up numbers: <b data-count="168">0</b>
   RT.count = function (el, dur) {
-    var to = parseFloat(el.getAttribute('data-count')), dec = (el.getAttribute('data-count').split('.')[1] || '').length, t0 = null;
-    var fmt = function (v) { return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
-    if (!RT.motion) { el.textContent = fmt(to); return; }
-    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to * RT.ease(k)); return k < 1; });
+    var t0 = null, to = function () { return parseFloat(el.getAttribute('data-count')) || 0; };
+    var fmt = function (v) { var dec = (el.getAttribute('data-count').split('.')[1] || '').length; return v.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+    if (!RT.motion) { el.textContent = fmt(to()); return; }
+    RT.loop(function (t) { if (t0 === null) t0 = t; var k = RT.clamp((t - t0) / (dur || 1400)); el.textContent = fmt(to() * RT.ease(k)); return k < 1; });
   };
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -719,7 +719,19 @@ footer p { margin: 0 0 6px; } footer .own { font-size: 12.5px; }
   var applyContent = window.applyContent = function (c) {
     if (!c) return;
     var t = c.texts || {}, l = c.links || {}, im = c.images || {};
-    document.querySelectorAll('[data-e]').forEach(function (el) { var k = el.dataset.e; if (t[k] != null && t[k] !== '') el.textContent = t[k]; });
+    document.querySelectorAll('[data-e]').forEach(function (el) {
+      var k = el.dataset.e; if (t[k] == null || t[k] === '') return;
+      el.textContent = t[k];
+      if (el.hasAttribute('data-count')) { var n = parseFloat(String(t[k]).replace(',', '.')); if (!isNaN(n)) el.setAttribute('data-count', n.toFixed(1)); }
+    });
+    // rating for search engines follows the editor too
+    var ld = document.querySelector('script[type="application/ld+json"]');
+    if (ld && (t['rating.value'] || t['rating.count'])) try {
+      var j = JSON.parse(ld.textContent), r = j.aggregateRating || (j.aggregateRating = { '@type': 'AggregateRating' });
+      if (t['rating.value']) r.ratingValue = String(t['rating.value']).replace(',', '.').replace(/[^\d.]/g, '');
+      if (t['rating.count']) r.ratingCount = String(t['rating.count']).replace(/\D/g, '');
+      ld.textContent = JSON.stringify(j);
+    } catch (x) {}
     document.querySelectorAll('[data-l]').forEach(function (el) {
       var v = l[el.dataset.l]; if (!v) return;
       el.href = el.dataset.l === 'phone' ? 'tel:+' + v.replace(/\D/g, '').replace(/^8/, '7') : v;
